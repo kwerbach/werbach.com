@@ -1,0 +1,2204 @@
+<HTML>
+<HEAD>
+   <TITLE>Bare Bones HTML-opas</TITLE>
+</HEAD>
+<BODY>
+
+<H1 ALIGN=CENTER><HR SIZE="8" WIDTH=480 noshade>BARE BONES HTML-OPAS</H1>
+
+<P ALIGN=CENTER><B><A HREF="mailto:barebones@werbach.com">Kevin Werbach</a><BR>
+k&auml;&auml;nn&ouml;s: <A HREF="mailto:juhani.kantee@satama.com">Juhani Kantee</A></B><BR><BR>
+<I>Versio 3.0 -- alkuper&auml;inen 21.7.1996</I>
+
+<HR SIZE="8" WIDTH=480 noshade></P>
+<font size=4>
+<P>Uusin englanninkielinen versio listasta l&ouml;ytyy osoitteesta
+&lt;<A HREF="http://werbach.com/barebones/">http://werbach.com/barebones/</A>&gt;.
+</P>
+
+<P>T&auml;m&auml; opas listaa kaikki yleisimpien selaimien tunnistamat komennot. Oppaaseen on listattu kaikki eritellyt komennot jotka sis&auml;ltyv&auml;t <A HREF="http://www.w3.org/pub/WWW/MarkUp/Wilbur/">HTML 3.2
+-versioon</A>, lis&auml;ksi on esitelty Netscape -laajennukset Navigator 3.0b5 versioon asti. Opas on yritetty tehd&auml; mahdollisimman selke&auml;ksi k&auml;ytt&auml;&auml;. Komentoja k&auml;sitell&auml;&auml;n suomenkielisin&auml; laajemmin mm. <A HREF="http://www.helsinki.fi/~jpackale/html-opas.html">Jukka Packalenin</A> ja <A HREF="http://www.sci.fi/~tunumi/mika/html-opas.html">Mika Tolvasen</A> sivuilla.
+<!-- <P>
+Mika H&auml;m&auml;l&auml;isen suomennos <A HREF="http://werbach.com/barebones/barebone_fi.html">Bare Bones html-opas 2.0</A> versiosta l&ouml;ytyy my&ouml;s osoitteesta &lt;<A HREF="http://werbach.com/barebones/barebone_fi.html">http://werbach.com/barebones/barebone_fi.html</A>&gt;. -->
+<P>
+Kommentteja ja ehdotuksia voi l&auml;hett&auml;&auml; suoraan <A HREF="mailto:barebones@werbach.com">Kevin Werbachille</A> tai <A HREF="mailto:juhani.kantee@satama.com">Juhani Kanteelle</A>.
+</P>
+</font>
+</B>
+<P><BR>
+<A NAME="contents"></A></P>
+<font size=4><b>Sis&auml;llys</b></font>
+
+  <UL>
+      <LI><A HREF="#general"><B>Yleiset komennot</B></A>
+	  (n&auml;m&auml; tulee l&ouml;yty&auml; kaikista html-tiedostoista)
+      
+      <LI><A HREF="#structure"><B>Rakenteellinen m&auml;&auml;rittely</B></A>
+	  (loogiset muotoilukomennot, joiden ulkoasun ja tyylin m&auml;&auml;ritt&auml;&auml; selain)
+      
+      <LI><A HREF="#presentation"><B>Esityksen muotoilu</B></A>
+	  (pakottavat muotoilukomennot, joiden ulkoasun ja tyylin m&auml;&auml;ritt&auml;&auml; tekij&auml;)
+      
+      <LI><A HREF="#links"><B>Linkit ja kuvat</B></A>
+      
+      <LI><A HREF="#dividers"><B>Jakajat</B></A>
+      
+      <LI><A HREF="#lists"><B>Listat</B></A>
+      
+      <LI><A HREF="#color"><B>Taustat ja v&auml;rit</B></A>
+      
+      <LI><A HREF="#special"><B>Erikoismerkit</B></A>
+      
+      <LI><A HREF="#forms"><B>Lomakkeet</B></A>
+      
+      <LI><A HREF="#tables"><B>Taulukot</B></A>
+      
+      <LI><A HREF="#frames"><B>Kehykset</B></A>
+      
+      <LI><A HREF="#java"><B>Java</B></A>
+      
+      <LI><A HREF="#misc"><B>Sekalaiset</B></A>
+   </UL>
+
+   <P><B>HUOM!</B>  Mik&auml;li et ole selvill&auml; HTML 2.0:n, HTML 3.0:n ja HTML 3.2:n eroista sek&auml; Netscape -laajennuksista, k&auml;v&auml;ise lukemassa <A HREF="http://www.w3.org/pub/WWW/MarkUp/Activity">W3C:n selonteko</A> HTML -kielen kehityksest&auml;.
+</P>
+
+<P><BR>
+<H3>Oppaan rakenne<HR></H3>
+<P>
+T&auml;ss&auml; oppaassa komentojen m&auml;&auml;ritykset, joita yleens&auml; voidaan yhdistell&auml; komentojen sis&auml;ll&auml;, on esitetty omilla riveill&auml;&auml;n. Kaikki komennot on kirjoitettu isoilla kirjaimilla lukettavuuden helpottamiseksi, mutta suurin osa komennoista voidaan kirjoittaa joko isoilla tai pienill&auml; kirjaimilla.
+
+
+<P><BR>
+<H3>Oppaassa k&auml;ytetyt symbolit<HR></H3>
+
+<PRE>
+URL     Universal Resource Locator, viittaus toiseen tiedostoon
+?	Haluttu numero, esim. &lt;H?&gt; tarkoittaa &lt;H1&gt; - &lt;H6&gt;
+%	Haluttu prosentti, esim. &lt;HR WIDTH=%&gt; voi olla &lt;HR WIDTH=50%&gt;
+***	Haluttu teksti, esim. ALT=&quot;***&quot; tarkoittaa, ett&auml; t&auml;hdet korvataan tekstill&auml;
+$$$$$$	Haluttu heksa-arvo, esim. COLOR=&quot;#$$$$$$&quot; tarkoittaa COLOR=&quot;#00FF1C&quot; ym.
+, , , 	Pilkkujen m&auml;&auml;r&auml;, esim. COORDS=&quot; . . .&quot; tarkoittaa COORDS=&quot;0,0,50,50&quot;
+| 	Vaihtoehdot, esim. ALIGN=LEFT | RIGHT | CENTER -jokin n&auml;ist&auml;
+[*]	Huomautus
+&nbsp;
+&nbsp;</PRE>
+
+<H3>Yhteensopivuus</H3>
+
+<I>(muista, ett&auml; HTML kehittyy koko ajan ja selaimien tulkinnat vaihtelevat)</I><HR>
+<pre>
+	(ei merkint&auml;&auml;) HTML 3.2 -erittely, pit&auml;isi toimia nykyisiss&auml; selaimissa
+N1.0	Netscape laajennus, esiteltiin Navigator 1.0 versiossa
+N1.1	Netscape laajennus, esiteltiin Navigator 1.1 versiossa
+N2.0	Netscape laajennus, esiteltiin Navigator 2.0 versiossa
+N3.0b	Netscape laajennus, esiteltiin Navigator 3.0beta versiossa
+
+&nbsp;
+&nbsp;</PRE>
+
+<P ALIGN=CENTER>
+<TABLE BORDER=0 CELLPADDING=3 WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4><A NAME="general"></A>
+         <P><FONT SIZE=6>YLEISET KOMENNOT</FONT>
+		 <BR><I>(n&auml;m&auml; tulee l&ouml;yty&auml; kaikista html-dokumentiista)</I><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD width=40>
+      </TD><TD VALIGN=top width=200>
+      </TD><TD VALIGN=top width=160>
+      </TD><TD VALIGN=top>
+      </TD></TR>
+   <TR>
+      <TD>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Dokumentin tyyppi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HTML&gt;&lt;/HTML&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(dokumentin alussa ja lopussa)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Otsikko</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TITLE&gt;&lt;/TITLE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(dokumentin nimi, tulee sijaita tunnisteessa)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Tunniste</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HEAD&gt;&lt;/HEAD&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(dokumentin kuvaus, esim. otsikko)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Runko</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BODY&gt;&lt;/BODY&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(sivun sis&auml;lt&ouml;)
+      </TD></TR>
+
+
+
+   <TR>
+      <TH COLSPAN=4><BR><BR><A NAME="structure"></A>
+         <P><FONT SIZE=6>RAKENTEELLINEN M&Auml;&Auml;RITTELY</FONT><BR>
+		 <I>(loogiset muotoilukomennot, joiden ulkoasun ja tyylin m&auml;&auml;ritt&auml;&auml; selain)</I><HR SIZE="1"
+         noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Otsikkotaso</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;H?&gt;&lt;/H?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(otsikkotasoja on kuusi)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Otsikon sijoittelu</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;H? ALIGN=LEFT|CENTER|RIGHT&gt;&lt;/H?&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#align">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+ <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Jako</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;DIV&gt;&lt;/DIV&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Jaon sijoittelu</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;DIV ALIGN=LEFT|RIGHT|CENTER&gt;&lt;/DIV&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Lainaus</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BLOCKQUOTE&gt;&lt;/BLOCKQUOTE&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#blockquote">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>(sisennetty palsta)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Korostus</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;EM&gt;&lt;/EM&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(yleens&auml; kursiivi)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Vahva korostus</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;STRONG&gt;&lt;/STRONG&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(yleens&auml; lihavoitu)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Sitaatti</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;CITE&gt;&lt;/CITE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(yleens&auml; kursiivi)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Koodi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;CODE&gt;&lt;/CODE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(l&auml;hdekoodin listaus)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Esimerkki</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SAMP&gt;&lt;/SAMP&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(yhdess&auml; &lt;KBD&gt;-komennon kanssa)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>N&auml;pp&auml;ily</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;KBD&gt;&lt;/KBD&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(n&auml;pp&auml;ilt&auml;v&auml;ksi tarkoitettu teksti)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Muuttuja</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;VAR&gt;&lt;/VAR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(yleens&auml; kursiivi)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>M&auml;&auml;rittely</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;DFN&gt;&lt;/DFN&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(harvoin k&auml;ytetty)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Tekij&auml;n osoite</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;ADDRESS&gt;&lt;/ADDRESS&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Iso tekstityyppi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BIG&gt;&lt;/BIG&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Pieni tekstityyppi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SMALL&gt;&lt;/SMALL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+
+
+   <TR>
+      <TH COLSPAN=4><BR><BR><A NAME="presentation"></A>
+         <P><FONT SIZE=6>ESITYKSEN MUOTOILU</FONT><BR>
+<I>(pakottavat muotoilukomennot, joiden ulkoasun ja tyylin m&auml;&auml;ritt&auml;&auml; tekij&auml;)</I>
+<HR SIZE="1"
+         noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Lihavointi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;B&gt;&lt;/B&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Kursiivi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;I&gt;&lt;/I&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Alleviivaus</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;U&gt;&lt;/U&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(ei viel&auml; yleisess&auml; k&auml;yt&ouml;ss&auml;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Yliviivattu teksti</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;STRIKE&gt;&lt;/STRIKE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(ei viel&auml; yleisess&auml; k&auml;yt&ouml;ss&auml;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Yliviivattu teksti</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;S&gt;&lt;/S&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(ei viel&auml; yleisess&auml; k&auml;yt&ouml;ss&auml;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Alaindeksi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SUB&gt;&lt;/SUB&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Yl&auml;indeksi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SUP&gt;&lt;/SUP&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Kirjoituskonetyyli</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TT&gt;&lt;/TT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(k&auml;ytt&auml;&auml; &quot;fixed font&quot; -kirjasinta)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Esimuotoiltu teksti</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;PRE&gt;&lt;/PRE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(k&auml;ytt&auml;&auml; &quot;fixed font&quot; -kirjasinta, n&auml;ytt&auml;&auml; tekstin sellaisena kuin on)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Esimuotoillun tekstin leveys</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;PRE WIDTH=?&gt;&lt;/PRE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(merkkien m&auml;&auml;r&auml;/rivi)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Keskitt&auml;minen</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;CENTER&gt;&lt;/CENTER&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#align">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>(tekstille, kuville ja taulukoille)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.0
+      </TD><TD VALIGN=top>
+         <P><B>Vilkkuminen</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BLINK&gt;&lt;/BLINK&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(kaikkien aikojen pilkatuin komento)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Kirjasinkoko</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FONT SIZE=?&gt;&lt;/FONT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(voi vaihdella v&auml;lill&auml; 1-7)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Kirjasinkoon vaihto</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FONT SIZE="+|-?"&gt;&lt;/FONT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.0
+      </TD><TD VALIGN=top>
+         <P><B>Peruskirjasinkoko</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BASEFONT SIZE=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(v&auml;lill&auml; 1-7, oletusarvo 3)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Kirjasimen v&auml;ri</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FONT COLOR="#$$$$$$"&gt;&lt;/FONT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Kirjasintyyppi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FONT FACE="***"&gt;&lt;/FONT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Palstoitus</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;MULTICOL COLS=?&gt;&lt;/MULTICOL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Palstojen v&auml;li</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;MULTICOL GUTTER=?&gt;&lt;/MULTICOL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(oletusarvo 10 pikseli&auml;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Palstan leveys</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;MULTICOL WIDTH=?&gt;&lt;/MULTICOL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Tyhj&auml; tila</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SPACER&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Tilan tyyppi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SPACER TYPE=horizontal| vertical|block&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Tilan koko</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SPACER SIZE=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Tilan ulottuvuudet</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SPACER WIDTH=? HEIGHT=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Tilan sijoittelu</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SPACER ALIGN=left|right|center&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+
+
+   <TR>
+      <TH COLSPAN=4><BR><BR><A NAME="links"></A>
+         <P><FONT SIZE=6>LINKIT JA KUVAT</FONT><HR SIZE="1"
+         noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Linkki</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;A HREF="URL"&gt;&lt;/A&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Linkki kohteeseen</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;A HREF="URL#***"&gt;&lt;/A&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(toiseen dokumenttiin)
+      </TD></TR>
+   <TR><TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Linkki kohteeseen</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;A HREF="#***"&gt;&lt;/A&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(samassa dokumentissa)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Kohdeikkuna</B>
+      </TD><TD COLSPAN="2" VALIGN="TOP">
+         <P><TT>&lt;A HREF="URL" TARGET="***| |_blank|_self|_parent|_top"&gt;&lt;/A&gt;</TT>
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Kohteen nime&auml;minen</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;A NAME="***"&gt;&lt;/A&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+      
+    <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Suhde (yhteys)</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;A REL="***"&gt;&lt;/A&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(harvoin k&auml;ytetty)
+      </TD></TR>
+  <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>K&auml;&auml;nteinen suhde (yhteys)</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;A REV="***"&gt;&lt;/A&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(harvoin k&auml;ytetty)
+      </TD></TR>
+ 
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>N&auml;yt&auml; kuva</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;IMG SRC="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Kuvan sijoittelu</B>
+      </TD><TD COLSPAN="2" VALIGN="TOP">
+         <P><TT>&lt;IMG SRC="URL" ALIGN=TOP|BOTTOM|MIDDLE|LEFT|RIGHT&gt;</TT>
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.0
+      </TD><TD VALIGN=top>
+         <P><B>Kuvan sijoittelu</B>
+      </TD><TD COLSPAN="2" VALIGN="TOP">
+         <P><TT>&lt;IMG SRC="URL" ALIGN=TEXTTOP| ABSMIDDLE|BASELINE|ABSBOTTOM&gt;</TT>
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Kuvan korvaava teksti</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;IMG SRC="URL" ALT="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(jos kuva ei n&auml;y)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Kuvakartta</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;IMG SRC="URL" ISMAP&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(vaatii skriptin)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Client-Side kuvakartta</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;IMG SRC="URL" USEMAP="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Kartan kuvaus</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;MAP NAME="***"&gt;&lt;/MAP&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Kartan osa</B>
+      </TD><TD COLSPAN="2" VALIGN="TOP">
+         <P><TT>&lt;AREA SHAPE="RECT" COORDS=",,," HREF="URL"|NOHREF&gt;</TT>
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Kuvan koon m&auml;&auml;ritys</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;IMG SRC="URL" WIDTH=? HEIGHT=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(pikselein&auml;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Kuvan reunus</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;IMG SRC="URL" BORDER=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(pikselein&auml;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Kuvan marginaali</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;IMG SRC="URL" HSPACE=? VSPACE=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(pikselein&auml;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.0
+      </TD><TD VALIGN=top>
+         <P><B>Matalaresoluutioinen aloituskuva</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;IMG SRC="URL" LOWSRC="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.1
+      </TD><TD VALIGN=top>
+         <P><B>Sivun uudelleenlataus</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;META HTTP-EQUIV="Refresh" CONTENT="?; URL=URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(voi my&ouml;s avata uuden sivun automaattisesti)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Liit&auml; objekti</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;EMBED SRC="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(upottaa objektin sivulle)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Objektin koko</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;EMBED SRC="URL" WIDTH=? HEIGHT=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+
+
+   <TR>
+      <TH COLSPAN=4><BR><BR><A NAME="dividers"></A>
+         <P><FONT SIZE=6>JAKAJAT</FONT><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Kappale</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;P&gt;&lt;/P&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#paragraph">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>(yleens&auml; kaksi rivinvaihtoa, lopetuskomento ei ole v&auml;ltt&auml;m&auml;t&ouml;n)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Tekstin sijoittelu</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;P ALIGN=LEFT|CENTER|RIGHT&gt;&lt;/P&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#align">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Rivin lopetus</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(rivinvaihto)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Tekstikierr&auml;tyksen lopetus</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BR CLEAR=LEFT|RIGHT|ALL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Vaakaviiva</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Viivan sijoittelu</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HR ALIGN=LEFT|RIGHT|CENTER&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Viivan koko</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HR SIZE=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(pikselein&auml;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Viivan leveys</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HR WIDTH=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(pikselein&auml;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.0
+      </TD><TD VALIGN=top>
+         <P><B>Viivan leveys</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HR WIDTH="%"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(prosentteina sivun leveydest&auml;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Varjostamaton viiva</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HR NOSHADE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(yksiv&auml;rinen, ei 3D-efekti&auml;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.0
+      </TD><TD VALIGN=top>
+         <P><B>Rivinvaihdon esto</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;NOBR&gt;&lt;/NOBR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.0
+      </TD><TD VALIGN=top>
+         <P><B>Sanav&auml;li</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;WBR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(kun tarvitaan rivinvaihtoa)
+      </TD></TR>
+
+
+   <TR>
+      <TH COLSPAN=4><BR><BR><A NAME="lists"></A>
+         <P><FONT SIZE=6>LISTAT</FONT><BR>
+		 <I>(listoja voidaan asettaa my&ouml;s sis&auml;kk&auml;in)</I><HR SIZE="1" noshade>
+      </TH><TH>
+         <P ALIGN=LEFT>&nbsp;
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>J&auml;rjest&auml;m&auml;t&ouml;n lista (&quot;ranskalaiset viivat&quot;)</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;UL&gt;&lt;LI&gt;&lt;/UL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(<TT>&lt;LI&gt;</TT> ennen jokaista listan kohdetta)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+        <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Tiivistetty j&auml;rjest&auml;m&auml;t&ouml;n lista</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;UL COMPACT&gt;&lt;/UL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(normaalia tiiviimpi lista)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Merkin tyyppi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;UL TYPE=DISC|CIRCLE|SQUARE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(koko listalle)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR><TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Merkin tyyppi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;LI TYPE=DISC|CIRCLE|SQUARE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(t&auml;lle ja seuraaville)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Numeroitu lista</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;OL&gt;&lt;LI&gt;&lt;/OL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(<TT>&lt;LI&gt;</TT> ennen jokaista listan kohdetta)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+              <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Tiivistetty numeroitu lista</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;OL COMPACT&gt;&lt;/OL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(normaalia tiiviimpi lista)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>J&auml;rjestysmerkin tyyppi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;OL TYPE=A|a|I|i|1&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(koko listalle, A (isot aakkoset), a (pienet aakkoset), I (isot roomalaiset numerot), i (pienet roomalaiset numerot)) 
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR><TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>J&auml;rjestysmerkin tyyppi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;LI TYPE=A|a|I|i|1&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(t&auml;lle ja seuraaville)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top ROWSPAN=2>
+         <P>&nbsp;
+      </TD><TD VALIGN=top ROWSPAN=2>
+         <P><B>Aloitusmerkki</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;OL START=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(koko listalle)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR><TD VALIGN=top>
+         <P><TT>&lt;LI VALUE=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(t&auml;lle ja seuraaville)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>M&auml;&auml;rittelylista</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;DL&gt;&lt;DT&gt;&lt;DD&gt;&lt;/DL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(<TT>&lt;DT&gt;=termi, &lt;DD&gt;</TT>=m&auml;&auml;rittely)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+              <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Tiivis m&auml;&auml;rittelylista</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;DL COMPACT&gt;&lt;/DL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(normaalia tiiviimpi lista)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Valikkolista</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;MENU&gt;&lt;LI&gt;&lt;/MENU&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(<TT>&lt;LI&gt;</TT> ennen jokaista listan kohdetta)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+              <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Tiivis valikkolista</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;MENU COMPACT&gt;&lt;/MENU&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(normaalia tiiviimpi lista)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Hakemistolista</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;DIR&gt;&lt;LI&gt;&lt;/DIR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(<TT>&lt;LI&gt;</TT> ennen jokaista listan kohdetta)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+              <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Tiivis hakemistolista</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;DIR COMPACT&gt;&lt;/DIR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(normaalia tiiviimpi lista)
+      </TD></TR>
+
+
+   <TR>
+      <TH COLSPAN=4><BR><BR><A NAME="color"></A>
+         <P><FONT SIZE=6>TAUSTAT JA V&Auml;RIT</FONT><HR SIZE="1"
+         noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Taustakuva</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BODY BACKGROUND="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+    <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Taustav&auml;ri</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BODY BGCOLOR="#$$$$$$"&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#color">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>(j&auml;rjestyksess&auml; punainen/vihre&auml;/sininen)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Tekstin v&auml;ri</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BODY TEXT="#$$$$$$"&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#color">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Linkin v&auml;ri</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BODY LINK="#$$$$$$"&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#color">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>K&auml;ydyn linkin v&auml;ri</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BODY VLINK="#$$$$$$"&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#color">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Aktivoidun linkin v&auml;ri</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BODY ALINK="#$$$$$$"&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#color">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+   <TD></TD>
+      <TD VALIGN=top COLSPAN=3><BR><I>Lis&auml;tietoja osoitteesta <A HREF="http://werbach.com/web/wwwhelp.html#color">         http://werbach.com/web/wwwhelp.html#color</A></I>
+      </TD></TR>
+
+
+   <TR>
+      <TH COLSPAN=4><BR><BR><A NAME="special"></A>
+         <P><FONT SIZE=6>ERIKOISMERKIT</FONT><BR>
+		 <I>(tulee kirjoittaa pienill&auml; kirjaimilla)</I><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Erikoismerkki</B>
+      </TD><TD VALIGN=top>
+         <P>&amp;#?;
+      </TD><TD VALIGN=top>
+         <P>(jossa ? kuuluu ISO 8859-1 merkist&ouml;&ouml;n)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&lt;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;lt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&gt;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&amp;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;amp;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>"</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;quot;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&aring;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amparing;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+	   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&Aring;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&ampAring;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&auml;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&ampauml;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+	   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&Auml;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&ampAuml;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&ouml;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&ampouml;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+	   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&Ouml;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&ampOuml;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Rekister&ouml;ity tuotemerkki</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;reg;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Copyright -merkki</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;copy;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Tyhj&auml; tila</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;nbsp;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+   <TD></TD>
+      <TD VALIGN=top COLSPAN=3><BR>
+         <I>T&auml;ydellinen (englanninkielinen) lista erikoismerkeist&auml; osoitteessa <A HREF="http://www.uni-passau.de/%7Eramsch/iso8859-1.html">http://www.uni-passau.de/%7Eramsch/iso8859-1.html</A></I>
+      </TD></TR>
+
+
+   <TR>
+      <TH COLSPAN=4><BR><BR><A NAME="forms"></A>
+         <P><FONT SIZE=6>LOMAKKEET </FONT><BR>
+		 <I>(kenttien sis&auml;lt&ouml; v&auml;litet&auml;&auml;n palvelimella olevalle ohjelmalle)</I><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Lomakkeen m&auml;&auml;rittely</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FORM ACTION="URL" METHOD=GET|POST&gt;&lt;/FORM&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Liitedokumentti</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FORM
+         ENCTYPE="multipart/form-data"&gt;&lt;/FORM&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Kent&auml;n m&auml;&auml;rittely</B>
+      </TD><TD COLSPAN="2" VALIGN="TOP">
+         <P><TT>&lt;INPUT TYPE="TEXT|PASSWORD|CHECKBOX|RADIO| IMAGE|HIDDEN|SUBMIT|RESET"&gt;</TT>
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Kent&auml;n nimi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;INPUT NAME="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Kent&auml;n oletusarvo</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;INPUT VALUE="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Esivalinta</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;INPUT CHECKED&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(CHECKBOX ja RADIO)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Kent&auml;n koko</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;INPUT SIZE=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(merkkein&auml;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Kent&auml;n maksimipituus</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;INPUT MAXLENGTH=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(merkkein&auml;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Valintalista</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SELECT&gt;&lt;/SELECT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Valintalistan nimi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SELECT NAME="***"&gt;&lt;/SELECT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Vaihtoehtojen lukum&auml;&auml;r&auml;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SELECT SIZE=?&gt;&lt;/SELECT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Monivalinta</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SELECT MULTIPLE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(voidaan valita useampia)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Vaihtoehto</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;OPTION&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(valittavat vaihtoehdot)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Oletusvaihtoehto</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;OPTION SELECTED&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Tekstialueen koko</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TEXTAREA ROWS=? COLS=?&gt;&lt;/TEXTAREA&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Tekstialueen nimi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TEXTAREA NAME="***"&gt;&lt;/TEXTAREA&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Tekstialueen rivinvaihto</B>
+      </TD><TD COLSPAN="2" VALIGN="TOP">
+         <P><TT>&lt;TEXTAREA WRAP=OFF|VIRTUAL|PHYSICAL&gt;&lt;/TEXTAREA&gt;</TT>
+      </TD></TR>
+
+
+   <TR>
+      <TH COLSPAN=4><BR><BR><A NAME="tables"></A>
+         <P><FONT SIZE=6>TAULUKOT</FONT><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Taulukon m&auml;&auml;rittely</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TABLE&gt;&lt;/TABLE&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#tables">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Taulukon reunus</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TABLE BORDER=?&gt;&lt;/TABLE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Solujen v&auml;li</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TABLE CELLSPACING=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Solun marginaali</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TABLE CELLPADDING=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Taulukon leveys</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TABLE WIDTH=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(pikselein&auml;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Taulukon leveys prosentteina</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TABLE WIDTH="%"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(prosenttia sivun leveydest&auml;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Taulukon rivi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TR&gt;&lt;/TR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Taulukon rivin asettelu</B>
+      </TD><TD COLSPAN="2" VALIGN="TOP">
+         <P><TT>&lt;TR ALIGN=LEFT|RIGHT| CENTER|MIDDLE|BOTTOM <br>VALIGN=TOP|BOTTOM|MIDDLE&gt;</TT>
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Taulukon solu</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TD&gt;&lt;/TD&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(sijaitsee taulukon rivin (&lt;TR&gt;&lt;/TR&gt;) sis&auml;ll&auml;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Taulukon solun asettelu</B>
+      </TD><TD COLSPAN="2" VALIGN="TOP">
+         <P><TT>&lt;TD ALIGN=LEFT|RIGHT| CENTER|MIDDLE|BOTTOM <br>VALIGN=TOP|BOTTOM|MIDDLE&gt;</TT>
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ei rivinvaihtoa</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TD NOWRAP&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Leveys soluina</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TD COLSPAN=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Korkeus rivein&auml;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TD ROWSPAN=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.1
+      </TD><TD VALIGN=top>
+         <P><B>Solun leveys</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TD WIDTH=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(pikselein&auml;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.1
+      </TD><TD VALIGN=top>
+         <P><B>Solun leveys prosentteina</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TD WIDTH="%"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(prosenttia taulukon leveydest&auml;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Solun taustav&auml;ri</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TD BGCOLOR="#$$$$$$"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Taulukon otsikko</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TH&gt;&lt;/TH&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(sis&auml;lt&ouml; keskitettyn&auml; ja lihavoituna)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Taulukon otsikon sijoittelu</B>
+      </TD><TD COLSPAN="2" VALIGN="TOP">
+         <P><TT>&lt;TH ALIGN=LEFT|RIGHT| CENTER|MIDDLE|BOTTOM <br>VALIGN=TOP|BOTTOM|MIDDLE&gt;</TT>
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ei rivinvaihtoja</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TH NOWRAP&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Leveys soluina</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TH COLSPAN=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Korkeus rivein&auml;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TH ROWSPAN=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.1
+      </TD><TD VALIGN=top>
+         <P><B>Solun leveys</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TH WIDTH=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(pikselein&auml;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.1
+      </TD><TD VALIGN=top>
+         <P><B>Solun leveys prosentteina</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TH WIDTH="%"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(prosenttia taulukon leveydest&auml;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Solun taustav&auml;ri</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TH BGCOLOR="#$$$$$$"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Taulukon oheisteksti</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;CAPTION&gt;&lt;/CAPTION&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(koko taulukon otsikkoteksti)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Taulukon oheistekstin sijoittelu</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;CAPTION ALIGN=TOP|BOTTOM&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(taulukon yl&auml;- tai alapuolella)
+      </TD></TR>
+
+
+   <TR>
+      <TH COLSPAN=4><BR><BR><A NAME="frames"></A>
+         <P><FONT SIZE=6>KEHYKSET</FONT><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Kehyssivun m&auml;&auml;rittely</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET&gt;&lt;/FRAMESET&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(<TT>&lt;BODY&gt;</TT> komennon sijaan)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Kehyksen korkeus</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET ROWS=,,,&gt;&lt;/FRAMESET&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(rivim&auml;&auml;rittelyt pikselein&auml; tai prosentteina)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Kehyksen korkeus</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET ROWS=*&gt;&lt;/FRAMESET&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(* = suhteellinen koko)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Kehyksen leveys</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET COLS=,,,&gt;&lt;/FRAMESET&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(sarakem&auml;&auml;rittelyt pikselein&auml; tai prosentteina)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Kehyksen leveys</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET COLS=*&gt;&lt;/FRAMESET&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(* = suhteellinen koko)
+      </TD></TR>
+         <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Kehyksen reunuksen koko</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET BORDER=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+         <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Kehyksen reunus</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET FRAMEBORDER="yes|no"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(yes=reunus n&auml;kyy, no=ei reunaviivaa)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Kehyksen reunuksen v&auml;ri</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET BORDERCOLOR="#$$$$$$"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Kehyksen sis&auml;ll&ouml;n m&auml;&auml;rittely</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(yksitt&auml;isen kehyksen sis&auml;lt&ouml; FRAMESET-komennon sis&auml;ll&auml;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>N&auml;yt&auml; dokumentti</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME SRC="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Kehyksen nimi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME NAME="***"|_blank|_self| _parent|_top&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Marginaalin leveys</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME MARGINWIDTH=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(vasen ja oikea reuna)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Marginaalin korkeus</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME MARGINHEIGHT=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(yl&auml;- ja alareuna)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Vierityspalkin asetukset</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME SCROLLING="YES|NO|AUTO"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Kehyksen koko sidottu</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME NORESIZE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+    <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Kehyksen reunus</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME FRAMEBORDER="yes|no"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(yes=reunus n&auml;kyy, no=ei reunaviivaa)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Kehyksen reunuksen v&auml;ri</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME BORDERCOLOR="#$$$$$$"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+  <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Kehyksett&ouml;mien sivujen sis&auml;lt&ouml;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;NOFRAMES&gt;&lt;/NOFRAMES&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(selaimille jotka eiv&auml;t tue kehyksi&auml;)
+      </TD></TR>
+
+
+   <TR>
+      <TH COLSPAN=4><BR><BR><A NAME="java"></A>
+         <P><FONT SIZE=6>JAVA</FONT><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Appletti (sovellus)</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET&gt;&lt;/APPLET&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Applettidokumentin nimi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET CODE="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(ajettavan sovelluksen nimi)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Appletin parametrit</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET PARAM NAME="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Appletin sijainti</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET CODEBASE="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Appletin tunniste</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET NAME="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(viittaus muualle dokumentissa)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Korvaava teksti</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET ALT="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(selaimille jotka eiv&auml;t tue Javaa)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Appletin sijoittelu</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET ALIGN="LEFT|RIGHT|CENTER"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Appletin koko</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET WIDTH=? HEIGHT=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(varattavan tilan koko pikselein&auml;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Appletin marginaali</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET HSPACE=? VSPACE=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(pikselein&auml;)
+      </TD></TR>
+
+
+   <TR>
+      <TH COLSPAN=4><BR><BR><A NAME="misc"></A>
+         <P><FONT SIZE=6>SEKALAISET</FONT><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Kommentti</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;!-- *** --&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(ei n&auml;y sivulla)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Dokumentin tyyppi (Prologi)</B>
+      </TD><TD COLSPAN="2" VALIGN="TOP">
+         <P><TT>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN"&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#prologue">[*]</A></B>
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Haettavissa oleva tietokanta</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;ISINDEX&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(viittaa haettavissa olevaan luetteloon, k&auml;ytet&auml;&auml;n yleens&auml; CGI-ohjelmissa)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Kehoteteksti</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;ISINDEX PROMPT="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(sy&ouml;tt&ouml;&auml; osoittava teksti)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>L&auml;het&auml; haku</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;A HREF="URL?***"&gt;&lt;/a&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(k&auml;yt&auml; oikeaa kysymysmerkki&auml;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Dokumentin osoite</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BASE HREF="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(t&auml;ytyy sijaita tunniste-osiossa)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Oletusikkunan nimi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BASE TARGET="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(t&auml;ytyy sijaita tunniste-osiossa)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Yhteys</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;LINK REV="***" REL="***" HREF="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(t&auml;ytyy sijaita tunniste-osiossa)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Meta Informaatio</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;META&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(t&auml;ytyy sijaita tunniste-osiossa)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Muotoillut lomakkeet</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;STYLE&gt;&lt;/STYLE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(ei viel&auml; yleisess&auml; k&auml;yt&ouml;ss&auml;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Skriptit</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SCRIPT&gt;&lt;/SCRIPT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>
+      </TD></TR>
+
+   <TR>
+      <TD COLSPAN="4" VALIGN="TOP"><BR><BR>
+         <P>Copyright &copy;1995, 1996
+         <A HREF="mailto:barebones@werbach.com">Kevin Werbach</A>.
+         Noncommercial redistribution permitted. This Guide is not a
+         product of <A HREF="http://www.barebones.com">Bare Bones
+         Software</A>; the similarity of names is purely
+         coincidental.
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER>&nbsp;</PRE>
+
+<P ALIGN=CENTER>
+<A HREF="http://werbach.com/home.html">Kevin's Home Page</A></P>
+</BODY>
+</HTML>

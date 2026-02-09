@@ -1,0 +1,102 @@
+<HTML>
+<HEAD>
+<TITLE>Avgnagd Guide till HTML: Kommentarer</TITLE>
+</HEAD>
+<BODY>
+
+<hr>
+<p>
+<a name="HTML"><h2>Utvecklingen av HTML</h2></a>
+</p>
+
+<p>HTML &auml;r kontrollspr&aring;ket som anv&auml;nds f&ouml;r att skapa World Wide Web-dokument.  Ut&ouml;ver de officiella HTML-specifikationerna st&ouml;der m&aring;nga browsrar egna taggar som inte &auml;r definierade i n&aring;gon standard.  Oftast, n&auml;r folk fr&aring;gar efter en lista &ouml;ver &quot;alla HTML-taggar&quot;, vill de veta vilka taggar de kan anv&auml;nda p&aring; sina sidor f&ouml;r att vara n&aring;gots&aring;n&auml;r s&auml;kra p&aring; att de som tittar verkligen ser det som det &auml;r t&auml;nkt att se ut.  <em>Avgnagd Guide till HTML</em> &auml;r gjord f&ouml;r detta.  Jag har f&ouml;rs&ouml;kt att ta med alla taggar som st&ouml;ds av de st&ouml;rre browsrarna idag, men det finns ett antal sm&aring; skillnader som g&ouml;r detta sv&aring;rare och sv&aring;rare att beskriva exakt.</p>
+ 
+<p>
+<a href="http://www.w3.org/">World Wide Web Consortium</a> (W3C) &auml;r den officiella HTML-standardiseringsf&ouml;rsamlingen och &auml;r en del av <a href="http://www.ietf.org/">Internet
+Engineering Task Force</a> (IETF). W3C har publicerat flera versioner av HTML-specifikationen; HTML 2.0, HTML 3.0 och nu senast HTML 3.2.  Samtidigt har &aring; andra sidan browsertillverkare som Netscape och Microsoft utvecklat sina egna "till&auml;gg" till HTML utanf&ouml;r strandardiseringsprocessen och petat in dessa i sina egna browsrar.  I vissa fall, s&aring;som Netscapes &lt;CENTER&gt;-tag, har dessa blivit <i>de facto</i>-standarder anammade av andra browsertillverkare.</p>
+
+<p><a href="http://www.w3.org/pub/WWW/MarkUp/html-spec/">HTML 2.0</a> gjorde HTMLs tillst&aring;nd i juni 1994 officiellt och &auml;r den standard som alla browsrar idag -- inklusive textbaserade browsrar -- b&ouml;r st&ouml;dja. HTML 2.0 speglar den ursprungliga tanken med HTML som ett spr&aring;k som visar hur informationen &auml;r organiserad, snarare &auml;n att specificera en exakt layout av sidorna. Om du vill vara s&auml;ker p&aring; att alla anv&auml;ndare ska kunna se allting p&aring; dina sidor ska du endast anv&auml;nda HTML 2.0-taggar.</p>
+
+<p><a href="http://www.w3.org/pub/WWW/MarkUp/html3/">Utkastet till HTML 3.0</a>, publicerat 1995, var ett f&ouml;rs&ouml;k att bygga p&aring; HTML 2.0 med till&auml;gg som tabeller och st&ouml;rre kontroll &ouml;ver textfl&ouml;de runt bilder. En del HTML 3.0-finesser anammades av browsertillverkare, men m&aring;nga inte.  I vissa fall blev alternativa l&ouml;sningar fr&aring;n browsertillverkare mer spridda &auml;n de &quot;officiella&quot; taggarna. Utkastet till HTML 3.0 har nu utg&aring;tt och &auml;r d&auml;rmed inte l&auml;ngre officiell standard.
+
+<p>I maj 1996 sl&auml;ppte W3C ett <a href="http://www.w3.org/pub/WWW/MarkUp/Wilbur/">utkast till HTML 3.2</a>, t&auml;nkt att reflektera och standardisera allm&auml;n praxis.  D&auml;rf&ouml;r inneh&aring;ller HTML 3.2 de HTML 3.0-taggar som implementerats av browsertillverkare som Netscape och Microsoft, s&aring; v&auml;l som andra allm&auml;nt spridda till&auml;gg till HTML.  I sin <a href="http://www.w3.org/pub/WWW/MarkUp/Wilbur/">redog&ouml;relse f&ouml;r st&aring;ndpunkt ang. HTML</a> rekommenderar W3C att man f&ouml;ljer HTML 3.2-specifikationen. D&auml;rf&ouml;r tar version 3.0 av Avgnagd Guide till HTML upp alla HTML 3.2-taggar. De senaste versionerna av de st&ouml;rre browsrarna ska sklara alla eller i alla fall n&auml;stan alla dessa taggar.</p>
+
+<p>Det finns ocks&aring; n&aring;gra Netscape- och Microsofttill&auml;gg till HTML som inte tas upp i utkastet till HTML 3.2 antingen f&ouml;r att de inte anv&auml;nds s&auml;rskilt mycket eller f&ouml;r att de implementerades efter att HTML 3.2-specifikationen sammanst&auml;lldes.  Eftersom Netscape Navigator var bland de f&ouml;rsta browsrar att klara vissa delar av HTML 3.0 och Netscape har ungef&auml;r 70% av browsermarknaden, tror m&aring;nga felaktigt att alla Netscapetill&auml;gg (t.ex. Frames och taggar som &lt;BLINK&gt;) h&ouml;r till HTML 3.0 eller HTML 3.2.</p>
+
+<p>N&auml;r du best&auml;mmer dig f&ouml;r huruvida du ska anv&auml;nda n&aring;gra taggar som listas som Netscape- eller Microsofttill&auml;gg, t&auml;nk p&aring; att folk som anv&auml;nder andra browsrar kanske inte ser dina sidor p&aring; det s&auml;tt du t&auml;nkt dig.  Du ska ocks&aring; t&auml;nka p&aring; att det inte finns n&aring;gra garantier f&ouml;r att icke-standardiserade taggar st&ouml;ds av framtida browsrar.  Det &auml;r helt upp till dig om du vill anv&auml;nda Netscape- och Microsofttaggar.  M&aring;nga k&auml;nner starkt f&ouml;r eller emot anv&auml;ndandet av taggar som inte h&ouml;r till den officiella HTML-standarden.  Min &aring;sikt &auml;r att s&aring; l&auml;nge du &auml;r medveten om skillnaden b&ouml;r du g&ouml;ra vad som passar dig och din m&aring;lgrupp b&auml;st.  Avgnagd Guide till HTML speglar denna inst&auml;llning.  Guiden &auml;r inte n&aring;gon officiell specifikation, men den b&ouml;r ge dig en id&eacute; om vilka taggar som &auml;r !
+ allm&a
+uml;nt implementerade och vilken standard de h&ouml;r till.</p>
+
+<p align=center>
+<a href="barebone.html">Tillbaka till Guiden</a>
+</p> 
+
+
+<hr>
+<br>
+<a name="prologue"><h2>Prolog</h2></a>
+
+<p>Prologen ska st&aring; allra f&ouml;rst i filen.  Prologen &auml;r inte n&ouml;dv&auml;ndig f&ouml;r att browsern ska f&ouml;rst&aring; att det r&ouml;r sig om ett HTML-dokument, men den kan ge browsern och de som l&auml;ser din k&auml;llkod en id&eacute; om vilka taggar den inneh&aring;ller. Den exakta syntaxen beror p&aring; vilken version av HTML DTD (dokumenttyp-definition) du anv&auml;nder.  Jag har bifogat den prolog du kan anv&auml;nda om ditt dokument h&aring;ller sig inom HTML 3.2 och allts&aring; inte anv&auml;nder Netscapes eller Microsofts till&auml;gg.
+
+<p align=center>
+<a href="barebone.html">Tillbaka till Guiden</a>
+</p> 
+
+<hr>
+<br>
+
+<a name="xmp"><h2>&lt;XMP&gt;</h2></a>
+
+<p>Den g&auml;llande HTML-specifikationen rekommenderar att man inte anv&auml;nder &lt;XMP&gt;taggen eftersom den orsakar &quot;ett antal olyckliga krockar med processmetoder och tenderar att implementeras motstridigt.&quot;  &lt;PRE&gt; b&ouml;r anv&auml;ndas ist&auml;llet.</p>
+
+<p align=center>
+<a href="barebone.html">Tillbaka till Guiden</a>
+</p> 
+
+<hr><br>
+
+<a name="blockquote"><h2>&lt;BLOCKQUOTE&gt;</h2></a>
+
+<p>Det rekommenderade s&auml;ttet att visa &lt;BLOCKQUOTE&gt;taggen &auml;r att dra in b&aring;de h&ouml;ger och v&auml;nster marginal, och denna tag anv&auml;nds ocks&aring; ofta f&ouml;r att &aring;stadkomma indrag (n&aring;got som HTML 2.0 annars inte har n&aring;gra direkta metoder f&ouml;r) snarare &auml;n f&ouml;r att citera.  Var medveten om att alla browsrar inte visar denna tag med indrag &auml;ven om fler och fler verkar g&ouml;ra det allteftersom.</p>
+
+<p align=center>
+<a href="barebone.html">Tillbaka till Guiden</a>
+</p> 
+<hr><br>
+
+<a name="align"><h2>Justeringstaggar</h2></a>
+
+<p>Utkastet till HTML 3.2 st&ouml;der b&aring;de justeringsattribut f&ouml;r styckes- och huvudtaggar och &lt;CENTER&gt;taggen, ursprungligen p&aring;hittad av Netscape.  Nuf&ouml;rtiden anv&auml;nds &lt;CENTER&gt; fr&auml;mst i situationer d&auml;r det inte finns n&aring;gon tagg att ge ett justeringsattribut (t.ex. att centrera en tabell i Netscape Navigator).</p>
+
+<p>Det st&ouml;rsta problemet med &lt;CENTER&gt; &auml;r att den g&ouml;r nytt stycke f&ouml;re och efter den centrerade texten, men att browsrar som inte har &lt;CENTER&gt;taggen ignorerar den helt och h&aring;llet och d&auml;rmed inte visar dokumentet som konstrukt&ouml;ren t&auml;nkt sig.  Eftersom fler browsrar idag st&ouml;der justeringsattribut &auml;r &lt;P ALIGN=CENTER&gt;&lt;/P&gt; att f&ouml;redra framf&ouml;r den icke-standard &lt;CENTER&gt;taggen.
+
+<p align=center>
+<a href="barebone.html">Tillbaka till Guiden</a>
+</p> 
+<hr><br>
+
+<a name="paragraph"><h2>&lt;P&gt;taggen</h2></a>
+
+<p>De flesta HTML-taggar &auml;r &quot;omslutande&quot;, de har b&aring;de en start- och en sluttag med text mittemellan (t.ex. &lt;B&gt;Det &auml;r &auml;r fetstil&lt;/B&gt;).  &lt;P&gt;taggen &aring; andra sidan, var ursprungligen definierad som en ensam tag att indikera utrymme mellan stycken i texten. Problemet med denna l&ouml;sning var att det inte till&auml;t funktioner som centrering eller h&ouml;gerst&auml;llning av stycken eftersom det inte fanns n&aring;got s&auml;tt att markera start och slut p&aring; texten som skulle justeras.  D&auml;rf&ouml;r har HTML 3.0 &auml;nda sedan de tidigaste skisserna definierat &lt;P&gt; som en omslutande tag s&aring; att stycken kan definieras &lt;P&gt;H&auml;r e're text&lt;/P&gt; och att starttaggen kan inneh&aring;lla justerings- och andra attribut.  Sluttaggen &lt;/P&gt; kan ofta utel&auml;mnas om du inte justerar texten, men det blir tydligare vilken text som h&ouml;r vart i din HTML-k&auml;llkod om du anv&auml;nder den.</p>
+
+
+<p align=center>
+<a href="barebone.html">Tillbaka till Guiden</a>
+</p> 
+
+<hr><br
+<a name="tables"><h2>Tabelltaggar</h2></a>
+
+<p>Tabelltaggarna diskuteras fortfarande, i synnerhet det att Netscape till&aring;ter tabell- och kollumnbredd att anges i procent s&aring;v&auml;l som i bildpunkter.  I &ouml;vrigt implementerar de st&ouml;rre browsrarna nu tabeller p&aring; samma s&auml;tt.</p>
+
+<p align=center>
+<a href="barebone.html">Tillbaka till Guiden</a>
+</p> 
+<hr>
+
+<p align=center>Copyright &#169; 1995-1997 Kevin Werbach.<br>
+&Ouml;vers&auml;ttningen Copyright &#169; 1996 Ola Jaensson<br>
+Senast uppdaterad 20 juli 1996. &Ouml;vers&auml;ttningen 18 Augusti 1996.</p>
+</BODY>
+</HTML>
+

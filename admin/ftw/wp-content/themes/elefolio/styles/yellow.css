@@ -1,0 +1,11 @@
+body { background-image: url(yellow/bg.png); }
+.post .tags, .post .post-more span.tags{ background-image:url(yellow/ico-tag.png);  }
+.post .post-more span.comments { background-image:url(yellow/ico-comments.png); }
+.post .post-more span.shorturl { background-image:url(yellow/ico-url.png); }
+.nav-entries .nav-prev { background-image: url(yellow/ico-prev.png); }
+.nav-entries .nav-next { background-image: url(yellow/ico-next.png);}
+a:link, a:visited, .nav li a:hover,.nav li a:focus,.nav li.current_page_item a ,.nav li ul li a:hover, .widget_woo_flickr a:hover img, .post .post-meta, .post .post-meta a  { color: #988f26; }
+#about .bio p, .dribbbles strong { color: #665d12; }
+a.button, a.comment-reply-link, #commentform #submit, #contact-page .submit, a.button:hover, a.button.hover, a.button.active, a.comment-reply-link:hover, #commentform #submit:hover, #contact-page .submit:hover { background: #b8bc46;border-color:#b8bc46;}
+a.button:hover, a.button.hover, a.button.active, a.comment-reply-link:hover, #commentform #submit:hover, #contact-page .submit:hover { opacity:0.9; }
+

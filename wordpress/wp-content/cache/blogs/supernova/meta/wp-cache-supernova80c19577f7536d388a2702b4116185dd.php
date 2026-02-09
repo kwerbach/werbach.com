@@ -1,0 +1,1 @@
+<?php die(); ?>{"headers":{"Vary":"Vary: Cookie","Content-Type":"Content-Type: text\/html; charset=UTF-8","X-Pingback":"X-Pingback: http:\/\/werbach.com\/wordpress\/xmlrpc.php","Last-Modified":"Last-Modified: Tue, 13 Jun 2017 09:25:53 GMT"},"uri":"werblog.com\/supernova\/","blog_id":1,"post":1502,"key":"supernovawerblog.com80\/supernova\/8dc297f87f1dc9e9783a9f0d59ab4ba0"}

@@ -1,0 +1,666 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+           B A R E   B O N E S   H T M L   K I L A V U Z U
+
+
+
+                              by Kevin Werbach
+
+                            <http://werbach.com/>
+
+
+
+                      SÅrÅm 3.0  --  Temmuz 21, 1996
+
+
+
+                                 TÅrkáesi
+
+                            Ahmet Tevfik òNAN
+
+                  <http://www.ce.yildiz.edu.tr/csemem.html>
+
+                      SÅrÅm 3.0TR  --  Temmuz 25, 1996
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+Bu dîkÅman <http://werbach.com/barebones/> adresinden temin edilebilir.
+
+
+
+
+
+Bare Bones HTML Kçlavuzu yaygçn kullançmç olan web tarayçcçalrçnçn
+
+tançdçßç komutlarç iáermektedir.
+
+DîkÅmana HTML 3.2 îzelliklerine uygun komutlarçn yanç sçra Netscape 3.0b5 
+
+sÅrÅmÅne kadar olan Netscape uzantçlarçnç da dahil ettim.
+
+Kçlavuzun tasarçmç sçrasçnda mÅmkÅn oldußunca basit olmasçna îzen gîsterildißi
+
+iáin farklç komutlarçn nasçl kullançldçklarçna iliükin bilgi yoktur.
+
+Adçm adçm HTML anlatan pekáok dîkÅman vardçr. Bunalarçn bir listesini
+
+<http://werbach.com/web/wwwhelp.html> adresinden temin edebilirisiniz.
+
+
+
+
+
+Yorum ve eleütirilerimizi <barebones@werbach.com> adresine bekleriz.
+
+TÅrkáe dîkÅmana ait yorum ve eleütirlerinizi <tevfik@vm4381.ce.yildiz.edu.tr>
+
+adresine yazabilirsiniz.
+
+
+
+
+
+
+
+
+
+DôKöMANIN FORMATI
+
+---------------------------------------------------------------------------
+
+Bu dîkÅman tek aralçklç olarak dÅzgÅn gîrÅnmektedir.
+
+
+
+Kolay anlaüçlabilmesi iáin ayni komut iáin geáerli olan farklç nitelikler
+
+ayrç satçrlara yazçlmçütçr. Genelde birkaá îzellik aynç komut satçrç iáinde
+
+verilebilmektedir.
+
+
+
+Komutlar okuma kolaylçßç saßlamak Åzere bÅyÅk harf olarak yazçlmçütçr.
+
+Komutlar HTML dosyasçna kÅáÅk/bÅyÅk harf ayçrçmç yapçlmadan yazçlabilir.
+
+
+
+
+
+KULLANILAN SEMBOLLER
+
+---------------------------------------------------------------------------
+
+
+
+URL    Dosyançn URL'si
+
+?      Rasgele numara (îrnek. <H?> yazçnca <H1>, <H2>, <H3>, gibi)
+
+%      Rasgele yÅzde (îrnek. <HR WIDTH="%"> yazçnca <HR WIDTH="50%">, gibi)
+
+***    Rasgele metin (îrnek ALT="***" yazçnca metin ile doldurulmasç gibi)
+
+$$$$$$ Rasgele onaltçlç sayç (îrnek BGCOLOR="#$$$$$$", BGCOLOR="#00FF1C", gibi.)
+
+,,,    VirgÅl ile ayrçlmçü (îrnek COORDS=",,," , COORDS="0,0,50,50",gibi)
+
+|      Alternati (îrnek ALIGN=LEFT|RIGHT|CENTER yazçnca biri seáilir)
+
+
+
+
+
+UYUMLULUK (HTML geliümekte ve web tarayçcçlarç farklçlçklar gîstermektedir)
+
+---------------------------------------------------------------------------
+
+       (boü) HTML 3.2 îzellißinde
+
+N1.0   Netscape uzantçsç  (Navigator version 1.0)
+
+N1.1   Netscape uzantçsç  (Navigator version 1.1)
+
+N2.0   Netscape uzantçsç  (Navigator version 2.0)
+
+N3.0B  Netscape uzantçsç  (Navigator version 3.0 beta)
+
+
+
+===========================================================================
+
+===========================================================================
+
+
+
+
+
+
+
+GENEL (her HTML dîkÅmanç bunlara sahip olmalçdçr)
+
+---------------------------------------------------------------------------
+
+       DîkÅman Tipi     <HTML></HTML>      (dosya baüçnda ve sonunda)
+
+       Konu Baülçßç     <TITLE></TITLE>    (baülçk iáinde olmalçdçr)
+
+       Baülçk           <HEAD></HEAD>      (aáçlayçcç bilgi,îrnek Konu baülçßç)
+
+       Gîvde            <BODY></BODY>      (sayfançn geri kalan kçsmç)
+
+
+
+
+
+YAPISAL TANIMLAR (web tarayçcçsç tercihleri tarafçndan kontrol edilir)
+
+---------------------------------------------------------------------------
+
+       Baülçk           <H?></H?>          (6 seviyelidir)
+
+         Ayarlç Baülçk    <H? ALIGN=LEFT|CENTER|RIGHT></H?>
+
+       BîlÅm            <DIV></DIV>
+
+         Ayarlç BîlÅm     <DIV ALIGN=LEFT|RIGHT|CENTER|JUSTIFY></DIV>
+
+       Äift Tçrnak      <BLOCKQUOTE></BLOCKQUOTE>    (genelde iáerden gîrÅnÅr)
+
+       Vurgulu          <EM></EM>                    (genelde italik gîrÅnÅr)
+
+       Aüçrç Vurgulu    <STRONG></STRONG>            (genelde koyu gîrÅnÅr)
+
+       Referans         <CITE></CITE>                (genelde italik gîrÅnÅr)
+
+       Kod              <CODE></CODE>                (program áçktçlarç iáin)
+
+       ôrnek Äçkçü      <SAMP></SAMP>
+
+       Klavyeden Giriü  <KBD></KBD>
+
+       Deßiüken         <VAR></VAR>
+
+       Tançmlama        <DFN></DFN>                  (yaygçn kullançmç yoktur)
+
+       Yazar Adresi     <ADDRESS></ADDRESS>
+
+       Geniü Font       <BIG></BIG>
+
+       Ufak  Font       <SMALL></SMALL>
+
+
+
+
+
+SUNU FORMATLAMA (yazar tarafçndan metinin gîrÅntÅsÅnÅn ayarç)
+
+---------------------------------------------------------------------------
+
+       Koyu             <B></B>
+
+       Italik           <I></I>
+
+N3.0b  Altáizgi         <U></U>              (yaygçn kullançmç yoktur)
+
+       Strikeout        <STRIKE></STRIKE>    (yaygçn kullançmç yoktur)
+
+N3.0b  Strikeout        <S></S>              (yaygçn kullançmç yoktur)
+
+       Altyazç          <SUB></SUB>
+
+       östyazç          <SUP></SUP>
+
+       Yazç Makinasç    <TT></TT>            (tek aralçklç olarak gîrÅnÅr)
+
+       ôn Formatlç      <PRE></PRE>          (oldußu gibi gîrÅnÅr)
+
+         Geniülik       <PRE WIDTH=?></PRE>  (karakter cinsinden)
+
+       Ortalç           <CENTER></CENTER>    (metin ve grafikler iáin)
+
+N1.0   Yançp Sînme      <BLINK></BLINK>
+
+       Punto            <FONT SIZE=?></FONT> (1-7 arasçnda)
+
+       Punto Deßiütirme <FONT SIZE="+|-?"></FONT>
+
+N1.0   Temel Punto      <BASEFONT SIZE=?>    (1-7 arasçnda esas deßeri 3 dÅr)
+
+       Font Rengi       <FONT COLOR="#$$$$$$"></FONT>
+
+N3.0b  Font Seáme       <FONT FACE="***"></FONT>
+
+N3.0b  Äok Kolonlu Metin<MULTICOL COLS=?></MULTICOL>
+
+N3.0b    Kolon Marjç      <MULTICOL GUTTER=?></MULTICOL>
+
+N3.0b    Kolon Geniülißi  <MULTICOL WIDTH=?></MULTICOL>
+
+N3.0b  Boüluk           <SPACER>
+
+N3.0b    Boüluk Tipi      <SPACER TYPE=horizontal|vertical|block>
+
+N3.0b    Boüluk Boyutu    <SPACER SIZE=?>
+
+N3.0b    Boüluk Derinlißi <SPACER WIDTH=? HEIGHT=?>
+
+N3.0b    Boüluk Ayarç     <SPACER ALIGN=left|right|center>
+
+
+
+
+
+LINKLER VE GRAFòKLER
+
+---------------------------------------------------------------------------
+
+       Herhangi bir Link <A HREF="URL"></A>
+
+         Hedefe Link      <A HREF="URL#***"></A>  (baüka dîkÅman iáinde ise)
+
+                          <A HREF="#***"></A>     (aynç dîkÅman iáinde ise)
+
+N2.0     Hedef Belirleme  <A HREF="URL" TARGET="***"></A>
+
+       Hedef Belirleme  <A NAME="***"></A>
+
+       Resim Gîsterme   <IMG SRC="URL">
+
+         Ayarlar          <IMG SRC="URL" ALIGN=TOP|BOTTOM|MIDDLE|LEFT|RIGHT>
+
+N1.0     Ayarlar          <IMG SRC="URL" ALIGN=TEXTTOP|ABSMIDDLE|
+
+                             BASELINE|ABSBOTTOM>
+
+         Alternatif       <IMG SRC="URL" ALT="***"> (resim gîsterilemiyor ise)
+
+         Boyut            <IMG SRC="URL" WIDTH=? HEIGHT=?>  (pixel cinsinden)
+
+         BordÅr           <IMG SRC="URL" BORDER=?>          (pixel cinsinden)
+
+         Äeráeve Boülußu  <IMG SRC="URL" HSPACE=? VSPACE=?> (pixel cinsinden)
+
+N1.0     Low-Res Proxy    <IMG SRC="URL" LOWSRC="URL">
+
+         Imagemap         <IMG SRC="URL" ISMAP>             (program gerektirir)
+
+         Imagemap         <IMG SRC="URL" USEMAP="URL">
+
+       Harita           <MAP NAME="***"></MAP>   (Harita tarifler)
+
+       BîlÅm            <AREA SHAPE="RECT" COORDS=",,," HREF="URL"|NOHREF>
+
+N1.1   Client Pull      <META HTTP-EQUIV="Refresh" CONTENT="?; URL=URL">
+
+N2.0   BÅtÅnleüik Obje  <EMBED SRC="URL">  (obje, sayfa iáine yerleütirilir)
+
+N2.0     Obje Boyutu      <EMBED SRC="URL" WIDTH=? HEIGHT=?>
+
+
+
+
+
+BôLöCöLER
+
+---------------------------------------------------------------------------
+
+       Paragraf         <P></P>     (komutun kapatçlmasç genelde gereksizdir)
+
+         Ayarlç Metin     <P ALIGN=LEFT|CENTER|RIGHT></P>
+
+       Satçr Baüç       <BR>
+
+         Clear Textwrap   <BR CLEAR=LEFT|RIGHT|ALL>
+
+       Yatay Äizgi      <HR>
+
+         Ayarlar          <HR ALIGN=LEFT|RIGHT|CENTER>
+
+         Kalçnlçk         <HR SIZE=?>     (pixel cinsinden)
+
+         Geniülik         <HR WIDTH=?>    (pixel cinsinden)
+
+         Geniülik YÅzdesi <HR WIDTH="%">  (sayfa geniülißi yÅzdesi)
+
+        òái Dolu Äizgi   <HR NOSHADE>     (3 boyutlu gîrÅnmez)
+
+N1.0   Satçr Baüç Yok   <NOBR></NOBR>     (satçr baüçnç engeller)
+
+N1.0   Kelime Bîlme     <WBR>             (satçr baüç yapçlmasç gereken yerde)
+
+
+
+
+
+LISTELER
+
+----------------------------------------------------------------------------
+
+       Sçrasçz Liste    <UL><LI></UL>      (<LI> her liste elemançndan înce)
+
+         Compact          <UL COMPACT></UL>
+
+         Noktalç Tip      <UL TYPE=DISC|CIRCLE|SQUARE>  (bÅtÅn liste iáin)
+
+                          <LI TYPE=DISC|CIRCLE|SQUARE>
+
+       Sçralç Liste     <OL><LI></OL>      (<LI> her liste elemançndan înce)
+
+         Compact          <OL COMPACT></OL>
+
+         Numralç Tip    <OL TYPE=A|a|I|i|1>      (bÅtÅn liste iáin)
+
+                          <LI TYPE=A|a|I|i|1>
+
+         Baülanßçá No     <OL START=?>           (bÅtÅn liste iáin)
+
+                          <LI VALUE=?>
+
+       Tançm Listesi    <DL><DT><DD></DL>        (<DT>=terim, <DD>=tançm)
+
+         Compact          <DL COMPACT></DL>
+
+       Menu Listesi     <MENU><LI></MENU>  (<LI> her liste elemançndan înce)
+
+         Compact          <MENU COMPACT></MENU>
+
+       Dizin Listesi    <DIR><LI></DIR>    (<LI> her liste elemançndan înce)
+
+         Compact          <DIR COMPACT></DIR>
+
+
+
+
+
+ARKAPLAN VE RENKLER
+
+---------------------------------------------------------------------------
+
+       Arkaplan         <BODY BACKGROUND="URL">
+
+       Arkaplan Rengi   <BODY BGCOLOR="#$$$$$$"> (sçra kçrmçzç/yeüil/mavi)
+
+         Metin Rengi      <BODY TEXT="#$$$$$$">
+
+         Link Rengi       <BODY LINK="#$$$$$$">
+
+         Ziyaret Edilen L.<BODY VLINK="#$$$$$$">
+
+         Actif Link       <BODY ALINK="#$$$$$$">
+
+(Daha fazla bilgi iáin <http://werbach.com/web/wwwhelp.html#color>)
+
+
+
+
+
+ôZEL KARAKTERLER  (hepsi kÅáÅk harf olmalç)
+
+---------------------------------------------------------------------------
+
+       ôzel Karakter     &#?;            (?,ISO 8859-1 kodudur)
+
+       <                 &lt;
+
+       >                 &gt;
+
+       &                 &amp;
+
+       "                 &quot;
+
+       Registered TM     &#174;
+
+       Registered TM     &reg;
+
+       Copyright         &#169;
+
+       Copyright         &copy;
+
+       Non-Breaking Spc  &nbsp
+
+(Tam Liste iáin  <http://www.uni-passau.de/%7Eramsch/iso8859-1.html>)
+
+(Yerel kopyasç iáin <http://www.ce.yildiz.edu.tr/iso88591.html>)
+
+
+
+
+
+FORMLAR (genelde áalçümasç iáin bir program gereklidir.)
+
+---------------------------------------------------------------------------
+
+       Form TAnçmla     <FORM ACTION="URL" METHOD=GET|POST></FORM>
+
+N2.0     Dosya YÅkleme    <FORM ENCTYPE="multipart/form-data></FORM>
+
+       Giriü Alanç      <INPUT TYPE="TEXT|PASSWORD|CHECKBOX|RADIO|
+
+                          IMAGE|HIDDEN|SUBMIT|RESET">
+
+         Alan òsmi        <INPUT NAME="***">
+
+         Alan Deßeri      <INPUT VALUE="***">
+
+         òüaretli ?       <INPUT CHECKED>      (kutu ve yuvarlak)
+
+         Alan Boyutu      <INPUT SIZE=?>       (karakter cinsinden)
+
+         Max Uzunluk      <INPUT MAXLENGTH=?>  (karakter cinsinden)
+
+       Seáenek Listesi  <SELECT></SELECT>
+
+         Liste òsmi       <SELECT NAME="***"></SELECT>
+
+         Seáenek Nosu     <SELECT SIZE=?></SELECT>
+
+         Coklu Seáenek    <SELECT MULTIPLE>    (birden fazla seáenek seáilir)
+
+       Opsiyon          <OPTION>
+
+         Belirlenmis Seáenek  <OPTION SELECTED>
+
+       Giriü Kutusu Boyuttu <TEXTAREA ROWS=? COLS=?></TEXTAREA>
+
+         Kutu òsmi        <TEXTAREA NAME="***"></TEXTAREA>
+
+N2.0     Baüa Dînen Metin <TEXTAREA WRAP=OFF|VIRTUAL|PHYSICAL></TEXTAREA>
+
+
+
+
+
+TABLOLAR
+
+---------------------------------------------------------------------------
+
+       Tablo Tançmlama  <TABLE></TABLE>
+
+         Tablo BordÅrÅ    <TABLE BORDER></TABLE>    (var yada yok)
+
+         Tablo BordÅrÅ    <TABLE BORDER=?></TABLE>  (deßeri ayarlanabilir)
+
+         HÅcre Boülußu    <TABLE CELLSPACING=?>
+
+         HÅcre Aralçklarç <TABLE CELLPADDING=?>
+
+         òstenen Geniülik <TABLE WIDTH=?>           (pixel cinsinden)
+
+         Geniülik YÅzdesi <TABLE WIDTH=%>           (sayfa yÅzdesi)
+
+       Tablo Satçrç     <TR></TR>
+
+         Ayarlar          <TR ALIGN=LEFT|RIGHT|CENTER
+
+                              VALIGN=TOP|MIDDLE|BOTTOM>
+
+       Tablo HÅcresi    <TD></TD>          (tablo satçrçnçn iáinde olmalç)
+
+         Ayarlar          <TD ALIGN=LEFT|RIGHT|CENTER
+
+                             VALIGN=TOP|MIDDLE|BOTTOM>
+
+         Satçr Baüç Yok   <TD NOWRAP>
+
+         Kaá Kolon östÅne <TD COLSPAN=?>
+
+         Kaá Satçr östÅne <TD ROWSPAN=?>
+
+N1.1     òstenen Gemiülik <TD WIDTH=?>              (pixel cinsinden)
+
+N1.1     Geniülik YÅzdesi <TD WIDTH="%">            (tablo yÅzdesi)
+
+N3.0b    HÅcre Rengi      <TD BGCOLOR="#$$$$$$">
+
+       Tablo Baülçßç    <TH></TH>
+
+         Ayarlar          <TH ALIGN=LEFT|RIGHT|CENTER
+
+                              VALIGN=TOP|MIDDLE|BOTTOM>
+
+         Satçr Baüç Yok   <TH NOWRAP>
+
+         Kaá Kolon östÅne <TH COLSPAN=?>
+
+         Kaá Satçr östÅne <TH ROWSPAN=?>            
+
+N1.1     òstenen Geniülik <TH WIDTH=?>              (pixel cinsinden)
+
+N1.1     Geniülik YÅzdesi <TH WIDTH="%">            (tablo yÅzdesi)
+
+N3.0b    HÅcre Rengi      <TH BGCOLOR="#$$$$$$">
+
+       Table Caption    <CAPTION></CAPTION>
+
+         Ayarlar          <CAPTION ALIGN=TOP|BOTTOM>(tablo ÅstÅde/altçnda)
+
+
+
+
+
+ÄERÄEVELER (ekrançn belirlenen bîlgelerini kontrol etmeye yarar)
+
+---------------------------------------------------------------------------
+
+N2.0   Äeráeve DîkÅmanç <FRAMESET></FRAMESET>            (<BODY> yerine)
+
+N2.0     Satçr YÅkseklißi <FRAMESET ROWS=,,,></FRAMESET> (pixel veya %)
+
+N2.0     Satçr YÅkseklißi <FRAMESET ROWS=*></FRAMESET>   (* = baßçl ebat)
+
+N2.0     Kolon Geniülißi  <FRAMESET COLS=,,,></FRAMESET> (pixel veya %)
+
+N2.0     Kolon Geniülißi  <FRAMESET COLS=*></FRAMESET>   (* = baßçl ebat)
+
+N3.0b    BordÅr           <FRAMESET FRAMEBORDER="yes|no">
+
+N3.0b    BordÅr Geniülißi <FRAMESET BORDER=?>
+
+N3.0b    BordÅr Rengi     <FRAMESET BORDERCOLOR="#$$$$$$">
+
+N2.0   Äeráeve Tançmlama<FRAME>           (Baßçmsçz áeráeve iáerißi)
+
+N2.0     DîkÅman Gîsterme <FRAME SRC="URL">
+
+N2.0     Äeráeve òsmi     <FRAME NAME="***"|_blank|_self|_parent|_top>
+
+N2.0     Marj Geniülißi   <FRAME MARGINWIDTH=?>          (sol ve saß marj)
+
+N2.0     Marj YÅkseklißi  <FRAME MARGINHEIGHT=?>         (Åst ve alt marj)
+
+N2.0     Scrollbar?       <FRAME SCROLLING="YES|NO|AUTO">
+
+N2.0     Ebatlandçrçlamaz <FRAME NORESIZE>
+
+N3.0b    BordÅr           <FRAME FRAMEBORDER="yes|no">
+
+N3.0b    BordÅr Rengi     <FRAME BORDERCOLOR="#$$$$$$">
+
+N2.0   BîlÅnemez òáerik <NOFRAMES></NOFRAMES> (frame desteklemeyen web
+
+                                               tarayçcçlarç iáin)
+
+
+
+
+
+JAVA
+
+---------------------------------------------------------------------------
+
+       Applet           <APPLET></APPLET> 
+
+         Dosya òsmi       <APPLET CODE="***">
+
+         Parametereler    <APPLET PARAM NAME="***">
+
+         Applet Yeri      <APPLET CODEBASE="URL">
+
+         Applet Tançmlayçcç <APPLET NAME="***">        (referans iáin)
+
+         Alternatif Metin <APPLET ALT="***">  (Java desteklemeyen tarayçcç)
+
+         Ayarlar          <APPLET ALIGN="LEFT|RIGHT|CENTER">
+
+         Boyut            <APPLET WIDTH=? HEIGHT=?>    (pixel cinsinden)
+
+         Boüluk           <APPLET HSPACE=? VSPACE=?>   (pixel cinsinden)
+
+
+
+
+
+Dò¶ER
+
+---------------------------------------------------------------------------
+
+       Comment          <!-- *** -->   (web tarayçcç tarafçndan gîsterilmez)
+
+       ônsîz            <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+       Aranabilirlik    <ISINDEX>          (aranabilir indisi belirler)
+
+        Prompt           <ISINDEX PROMPT="***">
+
+       Arama Baülatma   <A HREF="URL?***"></a>  (? iüareti kullançlçr)
+
+       Dosyançn URL'si  <BASE HREF="URL">       (baülçk iáinde olmalç)
+
+N2.0   Temel Pencere òsmi <BASE TARGET="***">   (baülçk iáinde olmalç)
+
+       òlinti           <LINK REV="***" REL="***" HREF="URL">
+
+                                                (baülçk iáinde olmalç)
+
+       Meta Bilgi       <META>                  (baülçk iáinde olmalç)
+
+       Stil Sayfasç     <STYLE></STYLE>         (yaygçn kullançmç yoktur)
+
+       Scripts          <SCRIPT></SCRIPT>       (yaygçn kullançmç yoktur)
+
+
+
+
+
+
+
+
+
+
+
+===========================================================================
+
+Copyright (c) 1995-1997 Kevin Werbach.  Ticari kullançm dçüçnda daßçtçlmasç
+
+serbesttir. Bu kçlavuz  Bare Bones Software'in ÅrÅnÅ deßildir. òsim benzerlißi
+
+bir raslantçdçr.Daha fazla bilgi iáin yazar ile temasa geáiniz.
+

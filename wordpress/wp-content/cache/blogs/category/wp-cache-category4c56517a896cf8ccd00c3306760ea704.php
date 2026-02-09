@@ -1,0 +1,152 @@
+<?php die(); ?><?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Personal &#8211; Werblog</title>
+	<atom:link href="http://werblog.com/category/personal/feed/" rel="self" type="application/rss+xml" />
+	<link>http://werblog.com</link>
+	<description>The World According to Kevin Werbach</description>
+	<lastBuildDate>Fri, 19 Aug 2016 21:51:08 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.4.4</generator>
+	<item>
+		<title>New photo album</title>
+		<link>http://werblog.com/2004/02/new-photo-album/</link>
+		<pubDate>Sun, 29 Feb 2004 20:21:33 +0000</pubDate>
+		<dc:creator><![CDATA[kwerb]]></dc:creator>
+				<category><![CDATA[Baby]]></category>
+
+		<guid isPermaLink="false">http://werbach.com/wordpress/?p=1113</guid>
+		<description><![CDATA[I finally had a chance to upload the last two months of photos.&#160; Album 10 has pictures of both Eli and Esther.&#160; It looks different from the prior albums because I&#8217;m trying a different application.]]></description>
+				<content:encoded><![CDATA[<p>I finally had a chance to upload the last two months of photos.&nbsp; <a href="http://werbach.com/baby/album10/index.html">Album 10</a> has pictures of both Eli and Esther.&nbsp; It looks different from the prior albums because I&#8217;m trying a different application.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Esther&#039;s photo album #2 [1]&#8230;</title>
+		<link>http://werblog.com/2004/01/esthers-photo-album-2-1/</link>
+		<pubDate>Tue, 06 Jan 2004 15:27:14 +0000</pubDate>
+		<dc:creator><![CDATA[kwerb]]></dc:creator>
+				<category><![CDATA[Baby]]></category>
+
+		<guid isPermaLink="false">http://werbach.com/wordpress/?p=1062</guid>
+		<description><![CDATA[Esther&#8217;s photo album #2 is online, with shots from Esther at home.]]></description>
+				<content:encoded><![CDATA[<p>Esther&#8217;s <a href="http://werbach.com/baby/esther2/pages/index001.html">photo album #2</a> is online, with shots from Esther at home.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Coming home</title>
+		<link>http://werblog.com/2003/12/coming-home/</link>
+		<pubDate>Tue, 30 Dec 2003 19:08:54 +0000</pubDate>
+		<dc:creator><![CDATA[kwerb]]></dc:creator>
+				<category><![CDATA[Baby]]></category>
+
+		<guid isPermaLink="false">http://werbach.com/wordpress/?p=1058</guid>
+		<description><![CDATA[We took Esther home from the hospital today. She&#8217;s a tremendous joy, and a wonderful New Year&#8217;s present for our family. Thank you to everyone who sent email or commented on the previous entry!]]></description>
+				<content:encoded><![CDATA[<p><img vspace="5" hspace="5" border="0" src="http://werbach.com/images/coming_home.jpg"></p>
+<p>We took Esther home from the hospital today.  She&#8217;s a tremendous<br />
+joy, and a wonderful New Year&#8217;s present for our family.</p>
+<p>Thank you<br />
+to everyone who sent email or commented on the previous entry!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Esther Ann Werbach</title>
+		<link>http://werblog.com/2003/12/esther-ann-werbach-2/</link>
+		<pubDate>Fri, 26 Dec 2003 22:34:53 +0000</pubDate>
+		<dc:creator><![CDATA[kwerb]]></dc:creator>
+				<category><![CDATA[Baby]]></category>
+
+		<guid isPermaLink="false">http://werbach.com/wordpress/?p=1057</guid>
+		<description><![CDATA[Our daughter Esther was born today at 12:56pm.&#160; We&#8217;re all doing well, and feeling very excited about the new addition to the family.&#160; Here are some photos.]]></description>
+				<content:encoded><![CDATA[<p>Our daughter Esther was born today at 12:56pm.&nbsp; We&#8217;re all doing<br />
+well, and feeling very excited about the new addition to the<br />
+family.&nbsp; Here are some <a href="http://werbach.com/baby/esther/pages/index001.html">photos</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>The next little W</title>
+		<link>http://werblog.com/2003/12/the-next-little-w/</link>
+		<pubDate>Wed, 24 Dec 2003 14:59:23 +0000</pubDate>
+		<dc:creator><![CDATA[kwerb]]></dc:creator>
+				<category><![CDATA[Baby]]></category>
+
+		<guid isPermaLink="false">http://werbach.com/wordpress/?p=1054</guid>
+		<description><![CDATA[We&#8217;re getting ready for the arrival of Eli&#8217;s brother or sister, aka &#8220;Little W in training.&#8221;&#160; The delivery is scheduled for December 26.&#160; I&#8217;ll post photos here as soon as I can!]]></description>
+				<content:encoded><![CDATA[<p>We&#8217;re getting ready for the arrival of Eli&#8217;s brother or sister, aka<br />
+&#8220;Little W in training.&#8221;&nbsp; The delivery is scheduled for December<br />
+26.&nbsp; I&#8217;ll post photos here as soon as I can!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Eli&#039;s cousin Mila</title>
+		<link>http://werblog.com/2003/09/elis-cousin-mila/</link>
+		<pubDate>Mon, 29 Sep 2003 14:42:48 +0000</pubDate>
+		<dc:creator><![CDATA[kwerb]]></dc:creator>
+				<category><![CDATA[Baby]]></category>
+
+		<guid isPermaLink="false">http://werbach.com/wordpress/?p=903</guid>
+		<description><![CDATA[Eli has a new cousin, Mila Cassidy Werbach.&#160; Isn&#8217;t she cute!]]></description>
+				<content:encoded><![CDATA[<p>Eli has a new cousin<a href="http://www.mcwerbach.com/mt/">, Mila Cassidy Werbach</a>.&nbsp; Isn&#8217;t she cute!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Album #5</title>
+		<link>http://werblog.com/2003/06/album-5/</link>
+		<pubDate>Wed, 04 Jun 2003 02:16:07 +0000</pubDate>
+		<dc:creator><![CDATA[kwerb]]></dc:creator>
+				<category><![CDATA[Baby]]></category>
+
+		<guid isPermaLink="false">http://werbach.com/wordpress/?p=785</guid>
+		<description><![CDATA[Album 5, with photos from March through the end of May, including Eli&#8217;s first birthday party, is now online.]]></description>
+				<content:encoded><![CDATA[<p><a href="http://werbach.com/baby/album5/pages/index001.html">Album 5</a>, with photos from March through the end of May, including Eli&#8217;s first birthday party, is now online.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>I&#039;ve added a fourth photo</title>
+		<link>http://werblog.com/2003/03/ive-added-a-fourth-photo/</link>
+		<pubDate>Sun, 09 Mar 2003 13:46:01 +0000</pubDate>
+		<dc:creator><![CDATA[kwerb]]></dc:creator>
+				<category><![CDATA[Baby]]></category>
+
+		<guid isPermaLink="false">http://werbach.com/wordpress/?p=652</guid>
+		<description><![CDATA[I&#8217;ve added a fourth photo album with pictures of Eli from January, February, and early March 2003.]]></description>
+				<content:encoded><![CDATA[<p>I&#8217;ve added a fourth photo album with pictures of Eli from January, February, and early March 2003.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>The next milestone</title>
+		<link>http://werblog.com/2003/02/the-next-milestone/</link>
+		<pubDate>Wed, 19 Feb 2003 22:41:03 +0000</pubDate>
+		<dc:creator><![CDATA[kwerb]]></dc:creator>
+				<category><![CDATA[Baby]]></category>
+
+		<guid isPermaLink="false">http://werbach.com/wordpress/?p=575</guid>
+		<description><![CDATA[Eli is crawling now. It&#8217;s wonderful to watch him trundle about exploring his world. On the other hand, this means you can no longer put him down somewhere and expect he&#8217;ll stay there!]]></description>
+				<content:encoded><![CDATA[<p>Eli is crawling now.  It&#8217;s wonderful to watch him trundle about exploring his world.  On the other hand, this means you can no longer put him down somewhere and expect he&#8217;ll stay there!</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>I&#039;ve added a new album</title>
+		<link>http://werblog.com/2002/12/ive-added-a-new-album/</link>
+		<pubDate>Thu, 19 Dec 2002 16:21:30 +0000</pubDate>
+		<dc:creator><![CDATA[kwerb]]></dc:creator>
+				<category><![CDATA[Baby]]></category>
+
+		<guid isPermaLink="false">http://werbach.com/wordpress/?p=343</guid>
+		<description><![CDATA[I&#8217;ve added a new album of Eli pictures from September through December. Enjoy!]]></description>
+				<content:encoded><![CDATA[<p>I&#8217;ve added a <a href="http://werbach.com/baby/album3/pages/index001.html">new album</a> of Eli pictures from September through December.  Enjoy!</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>
+
+<!-- Dynamic page generated in 0.606 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2016-08-27 03:22:28 -->

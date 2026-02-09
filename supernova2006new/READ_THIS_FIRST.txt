@@ -1,0 +1,13 @@
+Welcome to ExpressionEngine!
+
+The documentation and installation instructions can be found online by visiting this page:
+
+http://eedocs.pmachine.com/
+
+If you prefer to have your own local version of the documentation you can download it here:
+
+https://secure.pmachine.com/download.php
+
+If you have questions or problems, please visit the pMachine Support page at  http://pmachine.com/support.php
+
+Enjoy...

@@ -1,0 +1,220 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+WERBLIST
+Kevin Werbach's periodic email newsletter
+
+November 20, 2002
+
+YOU ARE WELCOME TO RE-SEND THIS MESSAGE TO ANY NUMBER OF COLLEAGUES.
+Please cc: werblist@werbach.com.  To subscribe or unsubscribe 
+directly, visit http://two.pairlist.net/mailman/listinfo/werblist/. 
+Please send your comments to kevin@werbach.com.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+I'm busy these days with final preparations for Supernova, which is 
+coming up in less than three weeks.  It's going to be a fantastic 
+event -- see http://www.pulver.com/supernova/ for details.  
+
+This month, a piece I wrote for Slate.com about how spam will change 
+email, and an essay on why both sides of the broadband content debate 
+are wrong.  Plus interesting links I've recently come across.
+
+Werblist is an evolving experiment.  I welcome your feedback at 
+kevin@werbach.com.
+
+-k-
+Kevin Werbach
+
+
+----------------------------------------------------------------------
+In this Issue:
+
+- How Spam May Kill Email
+- Supernova Update
+- The Broadband Myth
+- Links of the Month
+----------------------------------------------------------------------
+
+DEATH BY SPAM
+The e-mail you know and love is about to vanish
+
+(Originally published November 18, 2002 in Slate)
+
+
+One-third of the 30 billion e-mails sent worldwide each day are spam. 
+That's 10 billion daily pitches for herbal Viagra, Nigerian scams, and 
+genital-enlarging creams piling up in our inboxes. Neither legislation 
+nor litigation against spammers has stemmed the tide, and they're not 
+going to have much of an effect in the future, either. It's time to 
+give up: Despite the best efforts of legislators, lawyers, and 
+computer programmers, spam has won. Spam is killing e-mail.
+
+Or at least it's about to destroy the e-mail we're used to: the tool 
+that lets a stranger respond to something you posted on your Web site 
+or that lets a potential client contact you after reading an article 
+you wrote. E-mail is pervasive because it's simple to use, remarkably 
+flexible, and it reaches everyone. The trouble is that e-mail is too 
+good at that third task. Because e-mail inboxes are open to anyone, 
+longtime Internet users now receive hundreds of spams per day, making 
+e-mail virtually unusable without countermeasures.
+
+The most common countermeasure, server-side filtering, has serious 
+limitations. No automated system can identify spam as well as a human 
+can. Internet service providers certainly try: They block known 
+spammer addresses and use algorithms to identify spam based on an e-
+mail's contents, subject line, or other headers. AOL and MSN both 
+trumpet spam filtering systems like this in their latest software, and 
+Yahoo! and Microsoft's Hotmail offer junk-mail filters for their Web-
+based e-mail services. But the filters are running out of gas. The 
+spammers keep multiplying, and they keep finding clever ways to fool 
+the systems designed to stop them. Promising newcomers such as 
+CloudMark, which taps the collective power of e-mail recipients to 
+identify spam, may improve things for a while. But there will always 
+be a trade-off between catching all the spam and ensuring that every 
+piece of legitimate e-mail gets through.
+
+So, sophisticated Internet users are turning to a new approach. 
+Instead of trying to block spam while allowing everything else, these 
+users employ software that blocks everything except messages from 
+already known, accepted senders. These systems, called "whitelists," 
+change e-mail from an open system to a closed one.
+
+Whitelist applications available today include MailFrontier, 
+ChoiceMail from DigiPortal, Vanquish, and the freeware Tagged Message 
+Delivery Agent. There's also a whitelist option built into Hotmail, 
+known as the "exclusive" setting. Though it's hidden in the 
+preferences menu (click "Options," then "Junk Mail Filter"), more than 
+10 percent of Hotmail users reportedly invoke it. Before long, expect 
+all e-mail applications to offer this function.
+
+Whitelists typically allow e-mail from everyone in a user's existing 
+address book. Other, unknown senders receive an automated reply, 
+asking them to take further action, such as explain who they are. Or 
+senders may be asked to identify a partially obscured image of a word. 
+A person can make out the word, but automated spammer software can't.
+
+Whitelists are rare today, but they will become more common. The 
+relentless growth of spam guarantees it. A filter that catches 80 
+percent of spam sounds great, and it is great if you get 10 spams a 
+day. But when you get 500 a day, that same filter leaves you sorting 
+through 100 opportunities to Make Money Fast!!!!!
+
+Like it or not, the only way to kill spam is for an element of e-mail 
+to die as well. There's always been something charming and casual 
+about e-mail. The informality comes through in the style people use to 
+write messages, but also in where they send them. You've probably sent 
+an e-mail to someone you'd never call on the phone, approach in 
+person, or even write a letter to. Losing this aspect of e-mail is a 
+shame, but it's inevitable. E-mail will become more like instant 
+messaging, with its defined "buddy lists."
+
+E-mail's openness is doomed when faced with massive traffic and a few 
+bad actors. The next time you try to reach out and touch someone 
+electronically, you may need to know who that person is. Otherwise, 
+you might be reaching out to no one.
+
+
+----------------------------------------------------------------------
+*SUPERNOVA 2002*: December 9-10 in Palo Alto, CA
+
+Time is running out to register for Supernova!
+
+http://www.pulver.com/supernova/
+
+We've added legendary Lotus founder Mitch Kapor to a speaker roster 
+that already included Google's Sergey Brin, P2P thinker Clay Shirky, 
+Microsoft's Dan'l Lewin, visionary Howard Rheingold, IBM's Rod Smith, 
+and telecom provocateur David Isenberg.  Supernova will be the first 
+public presentation of Chandler, Kapor's audacious plan to turn 
+productivity software upside down.  
+
+Supernova is the only place you'll learn how WiFi, collaborative 
+software, Weblogs, broadband media, and Web services may undermine 
+your business... or create powerful growth opportunities.  Some of the 
+smartest and most successful people in tech are coming for a blast of 
+fresh thinking and useful insights.  Can you afford to miss it?
+----------------------------------------------------------------------
+
+
+The Broadband Content Myth
+
+The idea that solving the digital copyright mess is crucial to 
+broadband adoption has become conventional wisdom. I first saw this 
+argument in a column by law professor Lawrence Lessig in the Industry 
+Standard. He used it to point the finger of blame at the content 
+owners. Yet the content owners use the same argument!  They blame the 
+greedy technology industry for balking at the digital rights 
+management technologies that will usher in movies on demand.
+
+Both sides are mistaken. Digital entertainment will be a big part of 
+the broadband market, but we should be skeptical any time someone 
+tells us they can foresee a "killer app". Video on demand is actually 
+a hoary example of an app that didn't kill, despite lavish funding and 
+high expectations. It was the centerpiece of the hyped video dialtone 
+networks of the 1990s, remember? You probably don't. That's the point.
+
+Real killer apps tend to surprise people. No one in the early 1990s 
+thought that interoperable email would be the driver of the Internet 
+boom. And who would have predicted that the most successful of the 
+countless Internet startups was the one that made it easy for people 
+to swap Pez dispensers? eBay looks obvious only in hindsight.
+
+Broadband isn't an application; it's a platform. No magic bullet will 
+suddently convince everyone to adopt it. That's also the fallacy of 
+legislation such as the Tauzin-Dingell bill that pretends one legal 
+change, whether deregulating the incumbent phone companies or 
+regulating them more, will transform the market overnight. Sure, we 
+can do things that will speed up or slow down broadband. The 
+difference matters to investors and to companies. It's dangerous, 
+though, to set up a straw-man broadband nirvana and fight an all-or-
+nothing battle about it.
+
+There will indeed be killer apps on broadband platforms. However, I 
+suspect multiplayer gaming, personal videoblogging, voice telephony 
+and on-demand do-it-yourself and personal-improvement videos will rank 
+far above downloadable movies on the list.
+
+Don't get me wrong. By insisting on extreme restrictions on content, 
+the copyright holders, especially in the movie industry, have done a 
+disservice to their customers and to the economy. There's a middle 
+ground that addresses realistic concerns about piracy, while not 
+throwing the baby out with the bathwater. I personally think the 
+content owners' intransigence is the primary reason we haven't gotten 
+there. Yet both sides are guilty of ratcheting up the doomsday 
+rhetoric instead of negotiating. And that's why the "killer app" 
+question matters.
+
+If you think your opponents are the only thing standing in the way of 
+immediate ubiquitous broadband, you're going to fight tooth-and-nail 
+for your point of view. If you have a healthy humility about your 
+ability to foresee killer apps, you'll do what the founding Internet 
+technologists did. They built a network on the principle of end-to-
+end, meaning that the network didn't pre-suppose the applications. 
+Now, more than ever, we should adhere to that approach.
+
+
+----------------------------------------------------------------------
+LINKS OF THE MONTH
+
+Amazing Map of Manhattan WiFi Access Points (Marcos Lara)
+http://werbach.com/blog/images/PIPsurvey.gif
+
+FCC Spectrum Policy Task Force Report
+http://hraunfoss.fcc.gov/edocs_public/attachmatch/DOC-228542A1.pdf
+
+Introducing the Microcontent Client (Anil Dash)
+http://tinyurl.com/2v5s
+
+Letter to FCC Chairman Michael Powell Promoting Network Neutrality
+http://www.mediaaccess.org/programs/broadband/CBUIfinalletter.pdf
+
+
+----------------------------------------------------------------------
+Please forward this email to others, and copy werblist@werbach.com;
+we will provide them with a subscription. To join or leave the list,
+visit http://two.pairlist.net/mailman/listinfo/werblist/ or send
+"subscribe" or "unsubscribe" to werblist-request@werbach.com.  Send
+your comments and feedback to kevin@werbach.com.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+(c) 2002 Kevin Werbach. All Rights Reserved

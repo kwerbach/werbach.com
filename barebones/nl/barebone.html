@@ -1,0 +1,5312 @@
+<HTML>
+
+<HEAD>
+
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.02 [en] (Win95; I) [Netscape]">
+
+   <TITLE> Bare Bones Guide to HTML </TITLE>
+
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+
+&nbsp;
+
+<TABLE BORDER=0 WIDTH="100%" >
+
+<TR>
+
+<TD BGCOLOR="#CCCCCC">
+
+<HR SIZE="4" WIDTH="480" NOSHADE>
+
+<CENTER>
+
+<H1>
+
+HTML KORT EN KRACHTIG</H1></CENTER>
+
+
+
+<CENTER><B>door <A HREF="mailto:barebones@werbach.com">Kevin Werbach</A>&nbsp;</B></CENTER>
+
+
+
+<CENTER><I>Versie 4.0 -geformatteerd -- Februari 1999&nbsp;</I></CENTER>
+
+
+
+<CENTER>
+
+<HR SIZE="4" WIDTH="480" NOSHADE></CENTER>
+
+</TD>
+
+</TR>
+
+</TABLE>
+
+
+
+
+
+<P>De meest recente versie van dit document is beschikbaar op <A HREF="http://werbach.com/barebones/">http://werbach.com/barebones/</A>,
+
+daar vindt u ook de platte-tekst-versie, vertalingen en achtergrondmateriaal.
+
+<BR>Deze gids somt alle codes op die door de huidige versies van de meeste
+
+browsers waarschijnlijk herkend worden. Ik heb alle codes opgenomen die
+
+voorkomen in de offici&euml;le aanbeveling voor&nbsp; HTML 4.0 met hun algemene
+
+kenmerken en die welke voorkomen in de uitgebreidere sets van Netscape
+
+en Microsoft. Dit document is bedoeld om snel iets na te slaan, het is
+
+geen complete specificatie. Voor offici&euml;le informatie over&nbsp; HTML&nbsp;
+
+en de ontwikkeling ervan kunt u terecht op de site van het World Wide Web
+
+Consortium op <A HREF="http://www.w3.org/MarkUp/">http://www.w3.org/MarkUp/</A>.
+
+
+
+<P>Deze Gids is zo beknopt mogelijk gehouden en gaat daarom niet tot in
+
+detail in op het gebruik van de verschillende tags. Bij een paar tags is
+
+een link opgenomen naar opmerkingen waarin veelgestelde vragen worden behandeld.
+
+Als u meer gedetailleerde informatie zoekt kunt u terecht op mijn&nbsp;
+
+<A HREF="http://werbach.com/web/wwwhelp.html">WWW Help Page</A>.
+
+
+
+<P><A NAME="contents"></A>
+
+<BR><B><FONT SIZE=+1>Inhoud</FONT></B>
+
+<OL>
+
+<LI>
+
+<B>INLEIDENDE TEKSTEN</B></LI>
+
+
+
+<UL>
+
+<LI>
+
+<B><A HREF="intro.html#unique">Wat is er&nbsp; uniek aan deze gids</A></B></LI>
+
+
+
+<LI>
+
+<B><A HREF="intro.html#included">Welke HTML-tags zijn opgenomen</A></B></LI>
+
+
+
+<LI>
+
+<B><A HREF="intro.html#formatting">Over de vorm van dit document&nbsp;
+
+</A></B>(met een beschrijving van tekens en afkortingen)</LI>
+
+</UL>
+
+
+
+<LI>
+
+<B>HTML TAGS</B></LI>
+
+
+
+<UL>
+
+<LI>
+
+<B><A HREF="#general">basis-elementen </A></B>(moeten voorkomen in alle
+
+HTML-documenten)</LI>
+
+
+
+<LI>
+
+<B><A HREF="#structure">structurele opmaak</A></B> (hoe het getoond wordt
+
+is afhankelijk van de browser)</LI>
+
+
+
+<LI>
+
+<B><A HREF="#presentation">typografische opmaak </A></B>(de auteur bepaalt
+
+hoe het getoond wordt)</LI>
+
+
+
+<LI>
+
+<B><A HREF="#links">links, plaatjes en geluid</A></B></LI>
+
+
+
+<LI>
+
+<B><A HREF="#positioning">positionering</A></B></LI>
+
+
+
+<LI>
+
+<B><A HREF="#dividers">pagina-indeling</A></B></LI>
+
+
+
+<LI>
+
+<B><A HREF="#lists">lijsten</A></B></LI>
+
+
+
+<LI>
+
+<B><A HREF="#color">achtergrond en kleuren</A></B></LI>
+
+
+
+<LI>
+
+<B><A HREF="#special">speciale tekens</A></B></LI>
+
+
+
+<LI>
+
+<B><A HREF="#forms">formulieren</A></B></LI>
+
+
+
+<LI>
+
+<B><A HREF="#tables">tabellen</A></B></LI>
+
+
+
+<LI>
+
+<B><A HREF="#frames">frames</A></B></LI>
+
+
+
+<LI>
+
+<B><A HREF="#java">scripts en java</A></B></LI>
+
+
+
+<LI>
+
+<B><A HREF="#miscellaneous">allerlei</A></B></LI>
+
+</UL>
+
+<B></B>
+
+
+
+<P><B>NB: </B>Als u niet goed op de hoogte bent van de verschillen tussen
+
+de verschillende versies van&nbsp; HTML, dan kunt u eerst mijn verhandeling
+
+over&nbsp; <A HREF="notes.html#HTML">de ontwikkeling van&nbsp; HTML</A>
+
+lezen, of&nbsp; het <A HREF="http://www.w3.org/pub/WWW/MarkUp/Activity">World
+
+Wide Web Consortium HTML activity statement.</A></OL>
+
+
+
+<CENTER><A NAME="general"></A></CENTER>
+
+
+
+<TABLE BORDER=0 WIDTH="100%" >
+
+<TR>
+
+<TH COLSPAN="4"><FONT SIZE=+3>BASIS-ELEMENTEN&nbsp;</FONT>&nbsp;
+
+<HR SIZE="1" NOSHADE></TH>
+
+</TR>
+
+
+
+<TR>
+
+<TD WIDTH="40">&nbsp;</TD>
+
+
+
+<TD WIDTH="120"><B>Documenttype&nbsp;</B></TD>
+
+
+
+<TD WIDTH="200"><TT>&lt;HTML>&lt;/HTML>&nbsp;</TT></TD>
+
+
+
+<TD>(begin en eind van het bestand)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Titel&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;TITLE>&lt;/TITLE>&nbsp;</TT></TD>
+
+
+
+<TD>(moet binnen het kopgedeelte vallen)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Kopgedeelte&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;HEAD>&lt;/HEAD>&nbsp;</TT></TD>
+
+
+
+<TD>(beschrijvende informatie, zoals de titel)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Inhoud&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;BODY>&lt;/BODY>&nbsp;</TT></TD>
+
+
+
+<TD>(wat zichtbaar is op het paginabeeld)&nbsp;</TD>
+
+</TR>
+
+</TABLE>
+
+
+
+<CENTER><A NAME="structure"></A></CENTER>
+
+
+
+<TABLE BORDER=0 WIDTH="100%" >
+
+<TR>
+
+<TH COLSPAN="4"><FONT SIZE=+3>STRUCTURELE OPMAAK</FONT>&nbsp;
+
+<HR SIZE="1" NOSHADE></TH>
+
+</TR>
+
+
+
+<TR>
+
+<TD WIDTH="40">&nbsp;</TD>
+
+
+
+<TD WIDTH="120"><B>Kop&nbsp;</B></TD>
+
+
+
+<TD WIDTH="200"><TT>&lt;H?>&lt;/H?>&nbsp;</TT></TD>
+
+
+
+<TD>(tot 6 niveaus diep)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Kop uitlijnen&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;H? ALIGN=LEFT|CENTER|RIGHT>&lt;/H?>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Speciaal gedeelte (blok)</B></TD>
+
+
+
+<TD><TT>&lt;DIV>&lt;/DIV>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Gedeelte uitlijnen&nbsp;</B></TD>
+
+
+
+<TD COLSPAN="2"><TT>&lt;DIV ALIGN=LEFT|RIGHT|CENTER|JUSTIFY>&lt;/DIV>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Inhoud met afwijkende structuur&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;SPAN>&lt;/SPAN>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B><A HREF="notes.html#blockquote">Citaatblok</A>&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;BLOCKQUOTE>&lt;/BLOCKQUOTE>&nbsp;</TT></TD>
+
+
+
+<TD>(meestal inspringend)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Aanhaling&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;Q>&lt;/Q>&nbsp;</TT></TD>
+
+
+
+<TD>(voor korte aanhalingen)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Citaat&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;Q CITE="URL">&lt;/Q>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Nadruk&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;EM>&lt;/EM>&nbsp;</TT></TD>
+
+
+
+<TD>(gewoonlijk getoond als cursief)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Sterke nadruk</B></TD>
+
+
+
+<TD><TT>&lt;STRONG>&lt;/STRONG>&nbsp;</TT></TD>
+
+
+
+<TD>(gewoonlijk getoond als vet)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Citaat</B></TD>
+
+
+
+<TD><TT>&lt;CITE>&lt;/CITE>&nbsp;</TT></TD>
+
+
+
+<TD>(gewoonlijk cursief)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Code&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;CODE>&lt;/CODE>&nbsp;</TT></TD>
+
+
+
+<TD>(broncode van software)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Voorbeeld output&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;SAMP>&lt;/SAMP>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Invoer van toetsenbord</B></TD>
+
+
+
+<TD><TT>&lt;KBD>&lt;/KBD>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Variable&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;VAR>&lt;/VAR>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Definitie&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;DFN>&lt;/DFN>&nbsp;</TT></TD>
+
+
+
+<TD>(niet veel toegepast)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Adres van auteur</B></TD>
+
+
+
+<TD><TT>&lt;ADDRESS>&lt;/ADDRESS>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Groot lettertype&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;BIG>&lt;/BIG>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Klein lettertype</B></TD>
+
+
+
+<TD><TT>&lt;SMALL>&lt;/SMALL>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Invoeging</B></TD>
+
+
+
+<TD><TT>&lt;INS>&lt;/INS>&nbsp;</TT></TD>
+
+
+
+<TD>(markeert toevoeging in nieuwe versie)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Tijdstip van wijziging</B></TD>
+
+
+
+<TD><TT>&lt;INS DATETIME=":::">&lt;/INS>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Commentaar</B></TD>
+
+
+
+<TD><TT>&lt;INS CITE="URL">&lt;/INS>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Wissen</B></TD>
+
+
+
+<TD><TT>&lt;DEL>&lt;/DEL>&nbsp;</TT></TD>
+
+
+
+<TD>(markeert verwijderingen in een nieuwe versie)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Tijdstip van wijziging</B></TD>
+
+
+
+<TD><TT>&lt;DEL DATETIME=":::">&lt;/DEL>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Commentaar</B></TD>
+
+
+
+<TD><TT>&lt;DEL CITE="URL">&lt;/DEL>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Acroniem&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;ACRONYM>&lt;/ACRONYM>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Afkorting</B></TD>
+
+
+
+<TD><TT>&lt;ABBR>&lt;/ABBR>&nbsp;</TT></TD>
+
+</TR>
+
+</TABLE>
+
+
+
+<CENTER><A NAME="presentation"></A></CENTER>
+
+
+
+<TABLE BORDER=0 WIDTH="100%" >
+
+<TR>
+
+<TH COLSPAN="4"><FONT SIZE=+3>TYPOGRAFISCHE OPMAAK&nbsp;</FONT>&nbsp;
+
+<HR SIZE="1" NOSHADE></TH>
+
+</TR>
+
+
+
+<TR>
+
+<TD WIDTH="40">&nbsp;</TD>
+
+
+
+<TD WIDTH="120"><B>Vet&nbsp;</B></TD>
+
+
+
+<TD WIDTH="200"><TT>&lt;B>&lt;/B>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Cursief&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;I>&lt;/I>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Onderstrepen&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;U>&lt;/U>&nbsp;</TT></TD>
+
+
+
+<TD>(niet veel toegepast)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Doorhalen</B></TD>
+
+
+
+<TD><TT>&lt;STRIKE>&lt;/STRIKE>&nbsp;</TT></TD>
+
+
+
+<TD>(niet veel toegepast)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Doorhalen</B></TD>
+
+
+
+<TD><TT>&lt;S>&lt;/S>&nbsp;</TT></TD>
+
+
+
+<TD>(niet veel toegepast)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Subscript&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;SUB>&lt;/SUB>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Superscript&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;SUP>&lt;/SUP>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Typemachineschrift</B></TD>
+
+
+
+<TD><TT>&lt;TT>&lt;/TT>&nbsp;</TT></TD>
+
+
+
+<TD>(gelijke schriftdeling)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B><A HREF="notes.html#xmp">Vooraf opgemaakt</A>&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;PRE>&lt;/PRE>&nbsp;</TT></TD>
+
+
+
+<TD>(toont spati&euml;ring zoals die is)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Breedte&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;PRE WIDTH=?>&lt;/PRE>&nbsp;</TT></TD>
+
+
+
+<TD>(in aantal tekens)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B><A HREF="notes.html#align">Centreren</A>&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;CENTER>&lt;/CENTER>&nbsp;</TT></TD>
+
+
+
+<TD>(zowel voor tekst als voor plaatjes)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N1&nbsp;</TD>
+
+
+
+<TD><B>Knipperen&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;BLINK>&lt;/BLINK>&nbsp;</TT></TD>
+
+
+
+<TD>(de meest bespotte tag tot nu toe)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Lettergrootte&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;FONT SIZE=?>&lt;/FONT>&nbsp;</TT></TD>
+
+
+
+<TD>(loopt van 1-7)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Verander lettergrootte&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;FONT SIZE="+|-?">&lt;/FONT>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Tekstkleur</B></TD>
+
+
+
+<TD><TT>&lt;FONT COLOR="#$$$$$$">&lt;/FONT>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Selecteer lettertype</B></TD>
+
+
+
+<TD><TT>&lt;FONT FACE="***">&lt;/FONT>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N4&nbsp;</TD>
+
+
+
+<TD><B>Corpus (tekengrootte)</B></TD>
+
+
+
+<TD><TT>&lt;FONT POINT-SIZE=?>&lt;/FONT>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N4&nbsp;</TD>
+
+
+
+<TD><B>Weight&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;FONT WEIGHT=?>&lt;/FONT>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Basis-lettergrootte</B></TD>
+
+
+
+<TD><TT>&lt;BASEFONT SIZE=?>&nbsp;</TT></TD>
+
+
+
+<TD>(van 1-7; default is 3)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>MS&nbsp;</TD>
+
+
+
+<TD><B>Bewegende tekst</B></TD>
+
+
+
+<TD><TT>&lt;MARQUEE>&lt;/MARQUEE>&nbsp;</TT></TD>
+
+</TR>
+
+</TABLE>
+
+
+
+<CENTER><A NAME="positioning"></A></CENTER>
+
+
+
+<TABLE BORDER=0 WIDTH="100%" >
+
+<TR>
+
+<TH COLSPAN="4"><FONT SIZE=+3>POSITIONERING&nbsp;</FONT>&nbsp;
+
+<HR SIZE="1" NOSHADE></TH>
+
+</TR>
+
+
+
+<TR>
+
+<TD WIDTH="40">N3&nbsp;</TD>
+
+
+
+<TD WIDTH="120"><B>Meerdere kolommen&nbsp;</B></TD>
+
+
+
+<TD WIDTH="200"><TT>&lt;MULTICOL COLS=?>&lt;/MULTICOL>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N3&nbsp;</TD>
+
+
+
+<TD><B>Kolomafstand</B></TD>
+
+
+
+<TD><TT>&lt;MULTICOL GUTTER=?>&lt;/MULTICOL>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N3&nbsp;</TD>
+
+
+
+<TD><B>Kolombreedte&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;MULTICOL WIDTH=?>&lt;/MULTICOL>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N3&nbsp;</TD>
+
+
+
+<TD><B>Uitvuller&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;SPACER>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N3&nbsp;</TD>
+
+
+
+<TD><B>Soort uitvuller&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;SPACER TYPE=HORIZONTAL|VERTICAL|BLOCK>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N3&nbsp;</TD>
+
+
+
+<TD><B>Grootte&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;SPACER SIZE=?>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N3&nbsp;</TD>
+
+
+
+<TD><B>Afmetingen</B></TD>
+
+
+
+<TD><TT>&lt;SPACER WIDTH=? HEIGHT=?>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N3&nbsp;</TD>
+
+
+
+<TD><B>Uitlijning</B></TD>
+
+
+
+<TD><TT>&lt;SPACER ALIGN=LEFT|RIGHT|CENTER>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N4&nbsp;</TD>
+
+
+
+<TD><B>Laag&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;LAYER>&lt;/LAYER>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N4&nbsp;</TD>
+
+
+
+<TD><B>Naam</B></TD>
+
+
+
+<TD><TT>&lt;LAYER ID="***">&lt;/LAYER>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N4&nbsp;</TD>
+
+
+
+<TD><B>Locatie</B></TD>
+
+
+
+<TD><TT>&lt;LAYER LEFT=? TOP=?>&lt;/LAYER>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N4&nbsp;</TD>
+
+
+
+<TD><B>Relatieve positie</B></TD>
+
+
+
+<TD><TT>&lt;LAYER PAGEX=? PAGEY=?>&lt;/LAYER>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N4&nbsp;</TD>
+
+
+
+<TD><B>Bronbestand&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;LAYER SRC="***">&lt;/LAYER>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N4&nbsp;</TD>
+
+
+
+<TD><B>Hierarchische volgorde&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;LAYER Z-INDEX=?>&lt;/LAYER>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N4&nbsp;</TD>
+
+
+
+<TD><B>Plaats in de volgorde</B></TD>
+
+
+
+<TD><TT>&lt;LAYER ABOVE="***" BELOW="***">&lt;/LAYER>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N4&nbsp;</TD>
+
+
+
+<TD><B>Afmetingen&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;LAYER HEIGHT=? WIDTH=?>&lt;/LAYER>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N4&nbsp;</TD>
+
+
+
+<TD><B>Zichtbaar gedeelte in pixelcoordinaten</B></TD>
+
+
+
+<TD><TT>&lt;LAYER CLIP=,,,>&lt;/LAYER>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N4&nbsp;</TD>
+
+
+
+<TD><B>Zichtbaarheid&nbsp;</B></TD>
+
+
+
+<TD COLSPAN="2"><TT>&lt;LAYER VISIBILITY=SHOW|HIDDEN|INHERIT>&lt;/LAYER>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N4&nbsp;</TD>
+
+
+
+<TD><B>Achtergrond&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;LAYER BACKGROUND="$$$$$$">&lt;/LAYER>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N4&nbsp;</TD>
+
+
+
+<TD><B>Achtergrondkleur</B></TD>
+
+
+
+<TD><TT>&lt;LAYER BGCOLOR="$$$$$$">&lt;/LAYER>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N4&nbsp;</TD>
+
+
+
+<TD><B>Inline Laag</B></TD>
+
+
+
+<TD><TT>&lt;ILAYER>&lt;/ILAYER>&nbsp;</TT></TD>
+
+
+
+<TD>(heeft dezelfde kenmerken als LAYER)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N4&nbsp;</TD>
+
+
+
+<TD><B>Alternatieve inhoud</B></TD>
+
+
+
+<TD><TT>&lt;NOLAYER>&lt;/NOLAYER>&nbsp;</TT></TD>
+
+</TR>
+
+</TABLE>
+
+
+
+<CENTER><A NAME="links"></A></CENTER>
+
+
+
+<TABLE BORDER=0 WIDTH="100%" >
+
+<TR>
+
+<TH COLSPAN="4"><FONT SIZE=+3>LINKS, PLAATJES EN GELUID&nbsp;</FONT>&nbsp;
+
+<HR SIZE="1" NOSHADE></TH>
+
+</TR>
+
+
+
+<TR>
+
+<TD WIDTH="40">&nbsp;</TD>
+
+
+
+<TD WIDTH="120"><B>Link&nbsp;</B></TD>
+
+
+
+<TD WIDTH="200"><TT>&lt;A HREF="URL">&lt;/A>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Link naar anker&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;A HREF="URL#***">&lt;/A>&nbsp;</TT></TD>
+
+
+
+<TD>(in een ander document)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD></TD>
+
+
+
+<TD><TT>&lt;A HREF="#***">&lt;/A>&nbsp;</TT></TD>
+
+
+
+<TD>(binnen een document)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Doelvenster (in frame)</B></TD>
+
+
+
+<TD><TT>&lt;A HREF="URL" TARGET="***">&lt;/A>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Actie bij klikken&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;A HREF="URL" ONCLICK="***">&lt;/A>&nbsp;</TT></TD>
+
+
+
+<TD>(Javascript)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Actie bij passeren muis</B></TD>
+
+
+
+<TD><TT>&lt;A HREF="URL" ONMOUSEOVER="***">&lt;/A>&nbsp;</TT></TD>
+
+
+
+<TD>(Javascript)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Actie als muis weer weg is</B></TD>
+
+
+
+<TD><TT>&lt;A HREF="URL" ONMOUSEOUT="***">&lt;/A>&nbsp;</TT></TD>
+
+
+
+<TD>(Javascript)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Link naar e-mail-adres</B></TD>
+
+
+
+<TD><TT>&lt;A HREF="mailto:@">&lt;/A>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N, MS&nbsp;</TD>
+
+
+
+<TD><B>Geef onderwerp van mail</B></TD>
+
+
+
+<TD><TT>&lt;A HREF="mailto:@?SUBJECT=***">&lt;/A>&nbsp;</TT></TD>
+
+
+
+<TD>&sect;&iquest;&nbsp;</TD>
+
+
+
+<TD>(gebruik een echt vraagteken)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Definieer anker&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;A NAME="***">&lt;/A>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Toon plaatje</B></TD>
+
+
+
+<TD><TT>&lt;IMG SRC="URL">&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Uitlijning</B></TD>
+
+
+
+<TD COLSPAN="2"><TT>&lt;IMG SRC="URL" ALIGN=TOP|BOTTOM|MIDDLE|LEFT|RIGHT>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N1&nbsp;</TD>
+
+
+
+<TD><B>Uitlijning&nbsp;</B></TD>
+
+
+
+<TD COLSPAN="2"><TT>&lt;IMG SRC="URL" ALIGN=TEXTTOP|ABSMIDDLE|BASELINE|ABSBOTTOM>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Alternatieve tekst</B></TD>
+
+
+
+<TD><TT>&lt;IMG SRC="URL" ALT="***">&nbsp;</TT></TD>
+
+
+
+<TD>(als het plaatje niet getoond wordt)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Afmetingen&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;IMG SRC="URL" WIDTH=? HEIGHT=?>&nbsp;</TT></TD>
+
+
+
+<TD>(in pixels)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD></TD>
+
+
+
+<TD><TT>&lt;IMG SRC="URL" WIDTH=% HEIGHT=%>&nbsp;</TT></TD>
+
+
+
+<TD>(als percentage van hoogte/breedte pagina)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Rand&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;IMG SRC="URL" BORDER=?>&nbsp;</TT></TD>
+
+
+
+<TD>(in pixels)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Vrije ruimte buiten rand&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;IMG SRC="URL" HSPACE=? VSPACE=?>&nbsp;</TT></TD>
+
+
+
+<TD>(in pixels)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N1&nbsp;</TD>
+
+
+
+<TD><B>Voorproef-plaatje met lage resolutie</B></TD>
+
+
+
+<TD><TT>&lt;IMG SRC="URL" LOWSRC="URL">&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Aanklikbaar kaartje</B></TD>
+
+
+
+<TD><TT>&lt;IMG SRC="URL" ISMAP>&nbsp;</TT></TD>
+
+
+
+<TD>(script vereist)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Aanklikbaar kaartje</B></TD>
+
+
+
+<TD><TT>&lt;IMG SRC="URL" USEMAP="URL">&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>MS&nbsp;</TD>
+
+
+
+<TD><B>Film-clip&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;IMG DYNSRC="***" START="***" LOOP=?>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>MS&nbsp;</TD>
+
+
+
+<TD><B>Achtergrondgeluid&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;BGSOUND SRC="***" LOOP=?|INFINITE>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Aanklikbaar kaartje (client-side)</B></TD>
+
+
+
+<TD><TT>&lt;MAP NAME="***">&lt;/MAP>&nbsp;</TT></TD>
+
+
+
+<TD>(beschrijft de kaart)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Kaartgedeelte&nbsp;</B></TD>
+
+
+
+<TD COLSPAN="2"><TT>&lt;AREA SHAPE="DEFAULT|RECT|CIRCLE|POLY" COORDS=",,,"
+
+HREF="URL"|NOHREF>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N1&nbsp;</TD>
+
+
+
+<TD><B>Automatisch opgeroepen volgende bladzij</B></TD>
+
+
+
+<TD COLSPAN="2"><TT>&lt;META HTTP-EQUIV="Refresh" CONTENT="?; URL=URL">&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N2&nbsp;</TD>
+
+
+
+<TD><B>Ingebed object&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;EMBED SRC="URL">&nbsp;</TT></TD>
+
+
+
+<TD>(voeg object in in pagina)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N2&nbsp;</TD>
+
+
+
+<TD><B>Afmeting object</B></TD>
+
+
+
+<TD><TT>&lt;EMBED SRC="URL" WIDTH=? HEIGHT=?>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Object&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;OBJECT>&lt;/OBJECT>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Parameters&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;PARAM>&nbsp;</TT></TD>
+
+</TR>
+
+</TABLE>
+
+
+
+<CENTER><A NAME="dividers"></A></CENTER>
+
+
+
+<TABLE BORDER=0 WIDTH="100%" >
+
+<TR>
+
+<TH COLSPAN="4"><FONT SIZE=+3>PAGINA-INDELING&nbsp;</FONT>&nbsp;
+
+<HR SIZE="1" NOSHADE></TH>
+
+</TR>
+
+
+
+<TR>
+
+<TD WIDTH="40">&nbsp;</TD>
+
+
+
+<TD WIDTH="120"><B><A HREF="notes.html#paragraph">Alinea</A>&nbsp;</B></TD>
+
+
+
+<TD WIDTH="200"><TT>&lt;P>&lt;/P>&nbsp;</TT></TD>
+
+
+
+<TD>(afsluitende&nbsp; tag vaak niet nodig)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B><A HREF="notes.html#align">Tekst uitlijnen</A></B></TD>
+
+
+
+<TD><TT>&lt;P ALIGN=LEFT|CENTER|RIGHT>&lt;/P>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N&nbsp;</TD>
+
+
+
+<TD><B>Tekst uitvullen&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;P ALIGN=JUSTIFY>&lt;/P>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Regel afbreken</B></TD>
+
+
+
+<TD><TT>&lt;BR>&nbsp;</TT></TD>
+
+
+
+<TD>(&eacute;&eacute;n enkele return)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Voorbij plaatje</B></TD>
+
+
+
+<TD><TT>&lt;BR CLEAR=LEFT|RIGHT|ALL>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Horizontale lijn</B></TD>
+
+
+
+<TD><TT>&lt;HR>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Positie</B></TD>
+
+
+
+<TD><TT>&lt;HR ALIGN=LEFT|RIGHT|CENTER>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Dikte</B></TD>
+
+
+
+<TD><TT>&lt;HR SIZE=?>&nbsp;</TT></TD>
+
+
+
+<TD>(in pixels)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Breedte</B></TD>
+
+
+
+<TD><TT>&lt;HR WIDTH=?>&nbsp;</TT></TD>
+
+
+
+<TD>(in pixels)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>% breedte</B></TD>
+
+
+
+<TD><TT>&lt;HR WIDTH="%">&nbsp;</TT></TD>
+
+
+
+<TD>(als&nbsp; percentage van de pagina-breedte)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Massieve lijnd</B></TD>
+
+
+
+<TD><TT>&lt;HR NOSHADE>&nbsp;</TT></TD>
+
+
+
+<TD>(zonder driedimensionaal uiterlijk)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N1&nbsp;</TD>
+
+
+
+<TD><B>Niet afbreken</B></TD>
+
+
+
+<TD><TT>&lt;NOBR>&lt;/NOBR>&nbsp;</TT></TD>
+
+
+
+<TD>(voorkomt afbreken regel)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N1&nbsp;</TD>
+
+
+
+<TD><B>Hier afbreken&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;WBR>&nbsp;</TT></TD>
+
+
+
+<TD>(bij dit woord afbreken indien nodig.)&nbsp;</TD>
+
+</TR>
+
+</TABLE>
+
+
+
+<CENTER><A NAME="lists"></A></CENTER>
+
+
+
+<TABLE BORDER=0 WIDTH="100%" >
+
+<TR>
+
+<TH COLSPAN="4"><FONT SIZE=+3>LIJSTEN&nbsp;</FONT>&nbsp;
+
+<HR SIZE="1" NOSHADE></TH>
+
+</TR>
+
+
+
+<TR>
+
+<TD WIDTH="40">&nbsp;</TD>
+
+
+
+<TD WIDTH="120"><B>Ongenummerde lijst</B></TD>
+
+
+
+<TD WIDTH="200"><TT>&lt;UL>&lt;LI>&lt;/UL>&nbsp;</TT></TD>
+
+
+
+<TD>(&#171;LI&#187; v&oacute;&oacute;r elk element)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Compact</B></TD>
+
+
+
+<TD><TT>&lt;UL COMPACT>&lt;/UL>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Symbooltje</B></TD>
+
+
+
+<TD><TT>&lt;UL TYPE=DISC|CIRCLE|SQUARE>&nbsp;</TT></TD>
+
+
+
+<TD>(voor de hele lijstt)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Symbooltje&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;LI TYPE=DISC|CIRCLE|SQUARE>&nbsp;</TT></TD>
+
+
+
+<TD>(deze en volgende)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Genummerde lijst&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;OL>&lt;LI>&lt;/OL>&nbsp;</TT></TD>
+
+
+
+<TD>(&#171;LI&#187; v&oacute;&oacute;r elk element)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Compact</B></TD>
+
+
+
+<TD><TT>&lt;OL COMPACT>&lt;/OL>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Systeem van nummering&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;OL TYPE=A|a|I|i|1>&nbsp;</TT></TD>
+
+
+
+<TD>(voor de hele lijst)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Systeem van nummering</B></TD>
+
+
+
+<TD><TT>&lt;LI TYPE=A|a|I|i|1>&nbsp;</TT></TD>
+
+
+
+<TD>(deze en volgendet)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Eerste nummer</B></TD>
+
+
+
+<TD><TT>&lt;OL START=?>&nbsp;</TT></TD>
+
+
+
+<TD>(voor de hele lijst)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Eerste nummer</B></TD>
+
+
+
+<TD><TT>&lt;LI VALUE=?>&nbsp;</TT></TD>
+
+
+
+<TD>(deze en volgende)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Definitielijst</B></TD>
+
+
+
+<TD><TT>&lt;DL>&lt;DT>&lt;DD>&lt;/DL>&nbsp;</TT></TD>
+
+
+
+<TD>(&lt;DT>=term, &lt;DD>=definitie)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Compact</B></TD>
+
+
+
+<TD><TT>&lt;DL COMPACT>&lt;/DL>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Menulijst</B></TD>
+
+
+
+<TD><TT>&lt;MENU>&lt;LI>&lt;/MENU>&nbsp;</TT></TD>
+
+
+
+<TD>(&#171;LI&#187; v&oacute;&oacute;r elk element)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Compact&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;MENU COMPACT>&lt;/MENU>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Bestandenlijst</B></TD>
+
+
+
+<TD><TT>&lt;DIR>&lt;LI>&lt;/DIR>&nbsp;</TT></TD>
+
+
+
+<TD>(&#171;LI&#187; v&oacute;&oacute;r elk element)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Compact&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;DIR COMPACT>&lt;/DIR>&nbsp;</TT></TD>
+
+</TR>
+
+</TABLE>
+
+
+
+<CENTER><A NAME="color"></A></CENTER>
+
+
+
+<TABLE BORDER=0 WIDTH="100%" >
+
+<TR>
+
+<TH COLSPAN="4"><FONT SIZE=+3>ACHTERGROND EN <A HREF="notes.html#color">KLEUREN</A>&nbsp;</FONT>&nbsp;
+
+<HR SIZE="1" NOSHADE></TH>
+
+</TR>
+
+
+
+<TR>
+
+<TD WIDTH="40">&nbsp;</TD>
+
+
+
+<TD WIDTH="120"><B>Tegel-achtergrondpatroon</B></TD>
+
+
+
+<TD WIDTH="200"><TT>&lt;BODY BACKGROUND="URL">&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>MS&nbsp;</TD>
+
+
+
+<TD><B>Watermerk&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;BODY BGPROPERTIES="FIXED">&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Achtergrondkleur</B></TD>
+
+
+
+<TD><TT>&lt;BODY BGCOLOR="#$$$$$$">&nbsp;</TT></TD>
+
+
+
+<TD>(volgorde is rood/groen/blauw)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Tekstkleur</B></TD>
+
+
+
+<TD><TT>&lt;BODY TEXT="#$$$$$$">&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Kleur van de links</B></TD>
+
+
+
+<TD><TT>&lt;BODY LINK="#$$$$$$">&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Bezochte link</B></TD>
+
+
+
+<TD><TT>&lt;BODY VLINK="#$$$$$$">&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Actieve link</B></TD>
+
+
+
+<TD><TT>&lt;BODY ALINK="#$$$$$$">&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD COLSPAN="4">(Meer informatie op <A HREF="http://werbach.com/web/wwwhelp.html#color">http://werbach.com/web/wwwhelp.html#color</A>)&nbsp;</TD>
+
+</TR>
+
+</TABLE>
+
+
+
+<CENTER><A NAME="special"></A></CENTER>
+
+
+
+<TABLE BORDER=0 WIDTH="100%" >
+
+<TR>
+
+<TH COLSPAN="4"><FONT SIZE=+3>SPECIALE TEKENS&nbsp;</FONT>&nbsp;
+
+<HR SIZE="1" NOSHADE></TH>
+
+</TR>
+
+
+
+<TR>
+
+<TD WIDTH="40">&nbsp;</TD>
+
+
+
+<TD WIDTH="120"><B>Speciaal teken</B></TD>
+
+
+
+<TD WIDTH="60"><TT>&amp;#?;&nbsp;</TT></TD>
+
+
+
+<TD>(? is de ISO 8859-1 code)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>&lt;&nbsp;</B></TD>
+
+
+
+<TD><TT>&amp;lt;&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>>&nbsp;</B></TD>
+
+
+
+<TD><TT>&amp;gt;&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>&amp;&nbsp;</B></TD>
+
+
+
+<TD><TT>&amp;amp;&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>"&nbsp;</B></TD>
+
+
+
+<TD><TT>&amp;quot;&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Geregistreed handelsmerk</B></TD>
+
+
+
+<TD><TT>&amp;#174;&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Gereistreerd handelsmerk</B></TD>
+
+
+
+<TD><TT>&amp;reg;&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Copyright&nbsp;</B></TD>
+
+
+
+<TD><TT>&amp;#169;&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Copyright&nbsp;</B></TD>
+
+
+
+<TD><TT>&amp;copy;&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Vaste spatie&nbsp;</B></TD>
+
+
+
+<TD><TT>&amp;nbsp;&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD COLSPAN="4">(Complete lijst op <A HREF="http://www.uni-passau.de/%7Eramsch/iso8859-1.html">http://www.uni-passau.de/%7Eramsch/iso8859-1.html</A>)&nbsp;</TD>
+
+</TR>
+
+</TABLE>
+
+
+
+<CENTER><A NAME="forms"></A></CENTER>
+
+
+
+<TABLE BORDER=0 WIDTH="100%" >
+
+<TR>
+
+<TH COLSPAN="4"><FONT SIZE=+3>FORMULIEREN&nbsp;</FONT>&nbsp;
+
+<HR SIZE="1" NOSHADE></TH>
+
+</TR>
+
+
+
+<TR>
+
+<TD WIDTH="40">&nbsp;</TD>
+
+
+
+<TD WIDTH="120"><B>Definieer formulier</B></TD>
+
+
+
+<TD WIDTH="200"><TT>&lt;FORM ACTION="URL" METHOD=GET|POST>&lt;/FORM>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Zend bestand</B></TD>
+
+
+
+<TD COLSPAN="2"><TT>&lt;FORM ENCTYPE="multipart/form-data">&lt;/FORM>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Input-veld</B></TD>
+
+
+
+<TD COLSPAN="2"><TT>&lt;INPUT TYPE="TEXT|PASSWORD|CHECKBOX|RADIO|&nbsp;</TT>&nbsp;
+
+<BR><TT>FILE|BUTTON|IMAGE|HIDDEN|SUBMIT|RESET">&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Veldnaam</B></TD>
+
+
+
+<TD><TT>&lt;INPUT NAME="***">&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Veldwaarde</B></TD>
+
+
+
+<TD><TT>&lt;INPUT VALUE="***">&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Aangekruist&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;INPUT CHECKED>&nbsp;</TT></TD>
+
+
+
+<TD>(voor hokjes en rondjes)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Veldgrootte</B></TD>
+
+
+
+<TD><TT>&lt;INPUT SIZE=?>&nbsp;</TT></TD>
+
+
+
+<TD>(in aantal tekens)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Maximale lengte&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;INPUT MAXLENGTH=?>&nbsp;</TT></TD>
+
+
+
+<TD>(in aantal tekens)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Knop</B></TD>
+
+
+
+<TD><TT>&lt;BUTTON>&lt;/BUTTON>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Knopnaam</B></TD>
+
+
+
+<TD><TT>&lt;BUTTON NAME="***">&lt;/BUTTON>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Soort knop</B></TD>
+
+
+
+<TD COLSPAN="2"><TT>&lt;BUTTON TYPE="SUBMIT|RESET|BUTTON">&lt;/BUTTON>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Standaardwaarde&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;BUTTON VALUE="***">&lt;/BUTTON>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Etiket</B></TD>
+
+
+
+<TD><TT>&lt;LABEL>&lt;/LABEL>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Etiketteren voor</B></TD>
+
+
+
+<TD><TT>&lt;LABEL FOR="***">&lt;/LABEL>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Keuzelijst</B></TD>
+
+
+
+<TD><TT>&lt;SELECT>&lt;/SELECT>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Naam van lijst</B></TD>
+
+
+
+<TD><TT>&lt;SELECT NAME="***">&lt;/SELECT>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Aantal keuzemogelijkheden</B></TD>
+
+
+
+<TD><TT>&lt;SELECT SIZE=?>&lt;/SELECT>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Mervoudige keuze</B></TD>
+
+
+
+<TD><TT>&lt;SELECT MULTIPLE>&nbsp;</TT></TD>
+
+
+
+<TD>(kiezen van meer dan een optie mogelijk)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Keuzemogelijkheid</B></TD>
+
+
+
+<TD><TT>&lt;OPTION>&nbsp;</TT></TD>
+
+
+
+<TD>(dingen die geselecteerd kunnen worden)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Standaardkeuze</B></TD>
+
+
+
+<TD><TT>&lt;OPTION SELECTED>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Keuzewaarde</B></TD>
+
+
+
+<TD><TT>&lt;OPTION VALUE="***">&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Keuzegroep</B></TD>
+
+
+
+<TD><TT>&lt;OPTGROUP LABEL="***">&lt;/OPTGROUP>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Input-venster (&#187; 1 regel)</B></TD>
+
+
+
+<TD><TT>&lt;TEXTAREA ROWS=? COLS=?>&lt;/TEXTAREA>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Naam</B></TD>
+
+
+
+<TD><TT>&lt;TEXTAREA NAME="***">&lt;/TEXTAREA>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N2&nbsp;</TD>
+
+
+
+<TD><B>Regels afbreken</B></TD>
+
+
+
+<TD COLSPAN="2"><TT>&lt;TEXTAREA WRAP=OFF|HARD|SOFT>&lt;/TEXTAREA>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Groep verwante velden&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;FIELDSET>&lt;/FIELDSET>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Legenda</B></TD>
+
+
+
+<TD><TT>&lt;LEGEND>&lt;/LEGEND>&nbsp;</TT></TD>
+
+
+
+<TD>(bijschrift voor groep velden)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Uitlijning</B></TD>
+
+
+
+<TD COLSPAN="2"><TT>&lt;LEGEND ALIGN="TOP|BOTTOM|LEFT|RIGHT">&lt;/LEGEND>&nbsp;</TT></TD>
+
+</TR>
+
+</TABLE>
+
+
+
+<CENTER><A NAME="tables"></A></CENTER>
+
+
+
+<TABLE BORDER=0 WIDTH="100%" >
+
+<TR>
+
+<TH COLSPAN="4"><FONT SIZE=+3>TABELLEN&nbsp;</FONT>&nbsp;
+
+<HR SIZE="1" NOSHADE></TH>
+
+</TR>
+
+
+
+<TR>
+
+<TD WIDTH="40">&nbsp;</TD>
+
+
+
+<TD WIDTH="120"><B>DefinieerTabe l</B></TD>
+
+
+
+<TD WIDTH="200"><TT>&lt;TABLE>&lt;/TABLE>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Tabel uitlijnen&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;TABLE ALIGN=LEFT|RIGHT|CENTER>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Tabelrand</B></TD>
+
+
+
+<TD><TT>&lt;TABLE BORDER>&lt;/TABLE>&nbsp;</TT></TD>
+
+
+
+<TD>(aan of uit)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Tabelrand</B></TD>
+
+
+
+<TD><TT>&lt;TABLE BORDER=?>&lt;/TABLE>&nbsp;</TT></TD>
+
+
+
+<TD>(waarde kan bepaald worden)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Afstand tussen de cellen&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;TABLE CELLSPACING=?>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Vrije ruimte binnen celrand</B></TD>
+
+
+
+<TD><TT>&lt;TABLE CELLPADDING=?>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Gewenste breedte</B></TD>
+
+
+
+<TD><TT>&lt;TABLE WIDTH=?>&nbsp;</TT></TD>
+
+
+
+<TD>(in pixels)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Breedte als percentage</B></TD>
+
+
+
+<TD><TT>&lt;TABLE WIDTH=%>&nbsp;</TT></TD>
+
+
+
+<TD>(percentage van pagina)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Achtergrondkleur tabel</B></TD>
+
+
+
+<TD><TT>&lt;TABLE BGCOLOR="$$$$$$">&lt;/TABLE>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Zichtbaarheid tabelrand</B></TD>
+
+
+
+<TD COLSPAN="2"><TT>&lt;TABLE FRAME=VOID|ABOVE|BELOW|HSIDES|LHS|RHS|&nbsp;</TT>&nbsp;
+
+<BR><TT>VSIDES|BOX|BORDER>&lt;/TABLE>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Lijnen tussen de cellen</B></TD>
+
+
+
+<TD COLSPAN="2"><TT>&lt;TABLE RULES=NONE|GROUPS|ROWS|COLS|ALL>&lt;/TABLE>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>MS&nbsp;</TD>
+
+
+
+<TD><B>Randkleur</B></TD>
+
+
+
+<TD><TT>&lt;TABLE BORDERCOLOR="$$$$$$">&lt;/TABLE>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>MS&nbsp;</TD>
+
+
+
+<TD><B>Donkere rand&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;TABLE BORDERCOLORDARK="$$$$$$">&lt;/TABLE>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>MS&nbsp;</TD>
+
+
+
+<TD><B>Lichte rand</B></TD>
+
+
+
+<TD><TT>&lt;TABLE BORDERCOLORLIGHT="$$$$$$">&lt;/TABLE>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Rij</B></TD>
+
+
+
+<TD><TT>&lt;TR>&lt;/TR>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Uitlijning</B></TD>
+
+
+
+<TD COLSPAN="2"><TT>&lt;TR ALIGN=LEFT|RIGHT|CENTER|MIDDLE|BOTTOM>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Cel</B></TD>
+
+
+
+<TD><TT>&lt;TD>&lt;/TD>&nbsp;</TT></TD>
+
+
+
+<TD>(moet binnen een rij vallen)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Uitlijning&nbsp;</B></TD>
+
+
+
+<TD COLSPAN="2"><TT>&lt;TD ALIGN=LEFT|RIGHT|CENTER VALIGN=TOP|MIDDLE|BOTTOM>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Regels niet afbreken</B></TD>
+
+
+
+<TD><TT>&lt;TD NOWRAP>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Overspanning in kolommen&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;TD COLSPAN=?>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Overspanning in rijen</B></TD>
+
+
+
+<TD><TT>&lt;TD ROWSPAN=?>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Gewenste breedte</B></TD>
+
+
+
+<TD><TT>&lt;TD WIDTH=?>&nbsp;</TT></TD>
+
+
+
+<TD>(in pixels)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N3&nbsp;</TD>
+
+
+
+<TD><B>Breedte als percentage</B></TD>
+
+
+
+<TD><TT>&lt;TD WIDTH="%">&nbsp;</TT></TD>
+
+
+
+<TD>(percentage van tabel)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Celkleur</B></TD>
+
+
+
+<TD><TT>&lt;TD BGCOLOR="#$$$$$$">&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Rij- of kolomkop&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;TH>&lt;/TH>&nbsp;</TT></TD>
+
+
+
+<TD>(zelfde als gewone cel, maar vet en gecentreerd)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Uitlijning</B></TD>
+
+
+
+<TD COLSPAN="2"><TT>&lt;TH ALIGN=LEFT|RIGHT|CENTER|MIDDLE|BOTTOM>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Regels niet afbreken&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;TH NOWRAP>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Overspanning in kolommen</B></TD>
+
+
+
+<TD><TT>&lt;TH COLSPAN=?>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Overspanning in rijen</B></TD>
+
+
+
+<TD><TT>&lt;TH ROWSPAN=?>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Gewenste breedte</B></TD>
+
+
+
+<TD><TT>&lt;TH WIDTH=?>&nbsp;</TT></TD>
+
+
+
+<TD>(in pixels)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N3&nbsp;</TD>
+
+
+
+<TD><B>Breedte als percentage</B></TD>
+
+
+
+<TD><TT>&lt;TH WIDTH="%">&nbsp;</TT></TD>
+
+
+
+<TD>(percentage van tabel)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Celkleur</B></TD>
+
+
+
+<TD><TT>&lt;TH BGCOLOR="#$$$$$$">&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Tekstgedeelte van tabel</B></TD>
+
+
+
+<TD><TT>&lt;TBODY>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Tabelvoet</B></TD>
+
+
+
+<TD><TT>&lt;TFOOT>&lt;/TFOOT>&nbsp;</TT></TD>
+
+
+
+<TD>(moet v&oacute;&oacute;r <TT>THEAD</TT> staan</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Tabelkop</B></TD>
+
+
+
+<TD><TT>&lt;THEAD>&lt;/THEAD>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Tabelbijschrift</B></TD>
+
+
+
+<TD><TT>&lt;CAPTION>&lt;/CAPTION>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Uitlijning</B></TD>
+
+
+
+<TD><TT>&lt;CAPTION ALIGN=TOP|BOTTOM|LEFT|RIGHT>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Kolom</B></TD>
+
+
+
+<TD><TT>&lt;COL>&lt;/COL>&nbsp;</TT></TD>
+
+
+
+<TD>(groepeert kolomeigenschappen)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Aantal overspannen kolommen&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;COL SPAN=?>&lt;/COL>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Kolombreedte</B></TD>
+
+
+
+<TD><TT>&lt;COL WIDTH=?>&lt;/COL>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Kolombreedte als percentage</B></TD>
+
+
+
+<TD><TT>&lt;COL WIDTH="%">&lt;/COL>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Groepeer kolommen</B></TD>
+
+
+
+<TD><TT>&lt;COLGROUP>&lt;/COLGROUP>&nbsp;</TT></TD>
+
+
+
+<TD>(groepeert kolomstructuur)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Aantal overspannen kolommen&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;COLGROUP SPAN=?>&lt;/COLGROUP>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Groepsbreedte</B></TD>
+
+
+
+<TD><TT>&lt;COLGROUP WIDTH=?>&lt;/COLGROUP>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Breedte als percentage</B></TD>
+
+
+
+<TD><TT>&lt;COLGROUP WIDTH="%">&lt;/COLGROUP>&nbsp;</TT></TD>
+
+</TR>
+
+</TABLE>
+
+
+
+<CENTER><A NAME="frames"></A></CENTER>
+
+
+
+<TABLE BORDER=0 WIDTH="100%" >
+
+<TR>
+
+<TH COLSPAN="4"><FONT SIZE=+3>FRAMES&nbsp;</FONT>&nbsp;
+
+<HR SIZE="1" NOSHADE></TH>
+
+</TR>
+
+
+
+<TR>
+
+<TD WIDTH="40">4.0*&nbsp;</TD>
+
+
+
+<TD WIDTH="120"><B>Framegedeelte</B></TD>
+
+
+
+<TD WIDTH="200"><TT>&lt;FRAMESET>&lt;/FRAMESET>&nbsp;</TT></TD>
+
+
+
+<TD>(in plaats van &lt;BODY>)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Rijhoogten</B></TD>
+
+
+
+<TD><TT>&lt;FRAMESET ROWS=,,,>&lt;/FRAMESET>&nbsp;</TT></TD>
+
+
+
+<TD>(pixels of %)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Rijhoogten</B></TD>
+
+
+
+<TD><TT>&lt;FRAMESET ROWS=*>&lt;/FRAMESET>&nbsp;</TT></TD>
+
+
+
+<TD>(* = relatieve grootte)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Kolombreedtes&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;FRAMESET COLS=,,,>&lt;/FRAMESET>&nbsp;</TT></TD>
+
+
+
+<TD>(pixels of %)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Kolombreedtes</B></TD>
+
+
+
+<TD><TT>&lt;FRAMESET COLS=*>&lt;/FRAMESET>&nbsp;</TT></TD>
+
+
+
+<TD>(* = relatieve grootte)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Randen</B></TD>
+
+
+
+<TD COLSPAN="2"><TT>&lt;FRAMESET FRAMEBORDER="yes|no">&lt;/FRAMESET>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Randdbreedte</B></TD>
+
+
+
+<TD><TT>&lt;FRAMESET BORDER=?>&lt;/FRAMESET>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Randkleur</B></TD>
+
+
+
+<TD COLSPAN="2"><TT>&lt;FRAMESET BORDERCOLOR="#$$$$$$">&lt;/FRAMESET>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N3&nbsp;</TD>
+
+
+
+<TD><B>Afstand tussen de frames&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;FRAMESET FRAMESPACING=?>&lt;/FRAMESET>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Framedefinitie</B></TD>
+
+
+
+<TD><TT>&lt;FRAME>&nbsp;</TT></TD>
+
+
+
+<TD>(inhoud van een specifiek frame)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Toon document in frame</B></TD>
+
+
+
+<TD><TT>&lt;FRAME SRC="URL">&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Framenaam</B></TD>
+
+
+
+<TD COLSPAN="2"><TT>&lt;FRAME NAME="***"|_blank|_self|_parent|_top>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Breedte marges</B></TD>
+
+
+
+<TD><TT>&lt;FRAME MARGINWIDTH=?>&nbsp;</TT></TD>
+
+
+
+<TD>(linker en rechter marge)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Hoogte marges</B></TD>
+
+
+
+<TD><TT>&lt;FRAME MARGINHEIGHT=?>&nbsp;</TT></TD>
+
+
+
+<TD>(boven- en ondermarge)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Schuifbalk?&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;FRAME SCROLLING="YES|NO|AUTO">&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Vaste grootte</B></TD>
+
+
+
+<TD><TT>&lt;FRAME NORESIZE>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Randen</B></TD>
+
+
+
+<TD><TT>&lt;FRAME FRAMEBORDER="yes|no">&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Randkleur</B></TD>
+
+
+
+<TD><TT>&lt;FRAME BORDERCOLOR="#$$$$$$">&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Unframed Content&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;NOFRAMES>&lt;/NOFRAMES>&nbsp;</TT></TD>
+
+
+
+<TD>(als browser geen frames ondersteunt)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Inline Frame&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;IFRAME>&lt;/IFRAME>&nbsp;</TT></TD>
+
+
+
+<TD>(frame midden in de tekst, heeft dezelfde attributen als FRAME)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Afmetingen</B></TD>
+
+
+
+<TD><TT>&lt;IFRAME WIDTH=? HEIGHT=?>&lt;/IFRAME>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Afmetingen</B></TD>
+
+
+
+<TD><TT>&lt;IFRAME WIDTH="%" HEIGHT="%">&lt;/IFRAME>&nbsp;</TT></TD>
+
+</TR>
+
+</TABLE>
+
+
+
+<CENTER><A NAME="java"></A></CENTER>
+
+
+
+<TABLE BORDER=0 WIDTH="100%" >
+
+<TR>
+
+<TH COLSPAN="4"><FONT SIZE=+3>SCRIPTS EN JAVA&nbsp;</FONT>&nbsp;
+
+<HR SIZE="1" NOSHADE></TH>
+
+</TR>
+
+
+
+<TR>
+
+<TD WIDTH="40">&nbsp;</TD>
+
+
+
+<TD WIDTH="120"><B>Script&nbsp;</B></TD>
+
+
+
+<TD WIDTH="200"><TT>&lt;SCRIPT>&lt;/SCRIPT>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Locatie</B></TD>
+
+
+
+<TD><TT>&lt;SCRIPT SRC="URL">&lt;/SCRIPT>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Type&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;SCRIPT TYPE="***">&lt;/SCRIPT>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Programmeertaal</B></TD>
+
+
+
+<TD><TT>&lt;SCRIPT LANGUAGE="***">&lt;/SCRIPT>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Alternatieve inhoud</B></TD>
+
+
+
+<TD><TT>&lt;NOSCRIPT>&lt;/NOSCRIPT>&nbsp;</TT></TD>
+
+
+
+<TD>(als scripts niet ondersteund worden)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Applet&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;APPLET>&lt;/APPLET>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>File-naam applet</B></TD>
+
+
+
+<TD><TT>&lt;APPLET CODE="***">&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Parameters&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;APPLET PARAM NAME="***">&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Locatie</B></TD>
+
+
+
+<TD><TT>&lt;APPLET CODEBASE="URL">&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Identifier&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;APPLET NAME="***">&nbsp;</TT></TD>
+
+
+
+<TD>(voor referenties)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>AlternatieveTekst</B></TD>
+
+
+
+<TD><TT>&lt;APPLET ALT="***">&nbsp;</TT></TD>
+
+
+
+<TD>( voor browsers die Java niet ondersteunen)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Uitlijning</B></TD>
+
+
+
+<TD><TT>&lt;APPLET ALIGN="LEFT|RIGHT|CENTER">&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Afmetingen</B></TD>
+
+
+
+<TD><TT>&lt;APPLET WIDTH=? HEIGHT=?>&nbsp;</TT></TD>
+
+
+
+<TD>(in pixels)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Ruimte rondom</B></TD>
+
+
+
+<TD><TT>&lt;APPLET HSPACE=? VSPACE=?>&nbsp;</TT></TD>
+
+
+
+<TD>(in pixels)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N4&nbsp;</TD>
+
+
+
+<TD><B>Server Script&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;SERVER>&lt;/SERVER>&nbsp;</TT></TD>
+
+</TR>
+
+</TABLE>
+
+
+
+<CENTER><A NAME="miscellaneous"></A></CENTER>
+
+
+
+<TABLE BORDER=0 WIDTH="100%" >
+
+<TR>
+
+<TH COLSPAN="4"><FONT SIZE=+3>ALLERLEI</FONT>&nbsp;
+
+<HR SIZE="1" NOSHADE></TH>
+
+</TR>
+
+
+
+<TR>
+
+<TD WIDTH="40">&nbsp;</TD>
+
+
+
+<TD WIDTH="120"><B>Commentaar</B></TD>
+
+
+
+<TD WIDTH="200"><TT>&lt;!-- *** -->&nbsp;</TT></TD>
+
+
+
+<TD>(wordt niet getoond door de browser)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B><A HREF="notes.html#prologue">Proloog</A></B></TD>
+
+
+
+<TD COLSPAN="2"><TT>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Doorzoekbaar</B></TD>
+
+
+
+<TD><TT>&lt;ISINDEX>&nbsp;</TT></TD>
+
+
+
+<TD>(geeft een doorzoekbare index aan)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Prompt&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;ISINDEX PROMPT="***">&nbsp;</TT></TD>
+
+
+
+<TD>(tekst waarmee om input gevraagd wordt)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Verzend zoekactie</B></TD>
+
+
+
+<TD><TT>&lt;A HREF="URL?***">&lt;/a>&nbsp;</TT></TD>
+
+
+
+<TD>(gebruik een echt vraagteken)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>URL van deze pagina</B></TD>
+
+
+
+<TD><TT>&lt;BASE HREF="URL">&nbsp;</TT></TD>
+
+
+
+<TD>(moet in kopgedeelte staan)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0*&nbsp;</TD>
+
+
+
+<TD><B>Standaard doelvenster&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;BASE TARGET="***">&nbsp;</TT></TD>
+
+
+
+<TD>(moet in kopgedeelte staan)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Relatie</B></TD>
+
+
+
+<TD><TT>&lt;LINK REV="***" REL="***" HREF="URL">&nbsp;</TT></TD>
+
+
+
+<TD>(in kopgedeelte)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>N4&nbsp;</TD>
+
+
+
+<TD><B>Gelinkt bestand</B></TD>
+
+
+
+<TD><TT>&lt;LINK TYPE="***" SRC="***">&lt;/LINK>&nbsp;</TT></TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Meta-informatie&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;META>&nbsp;</TT></TD>
+
+
+
+<TD>(moet in kopgedeelte staan)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+
+
+<TD><B>Stijlbladen</B></TD>
+
+
+
+<TD><TT>&lt;STYLE>&lt;/STYLE>&nbsp;</TT></TD>
+
+
+
+<TD>(toepassingen varieren)&nbsp;</TD>
+
+</TR>
+
+
+
+<TR>
+
+<TD>4.0&nbsp;</TD>
+
+
+
+<TD><B>Bidirect Off&nbsp;</B></TD>
+
+
+
+<TD><TT>&lt;BDO DIR=LTR|RTL>&lt;/BDO>&nbsp;</TT></TD>
+
+
+
+<TD>(tekstrichting, voor bepaalde tekensets)&nbsp;</TD>
+
+</TR>
+
+</TABLE>
+
+
+
+<PRE>&nbsp;</PRE>
+
+
+
+<TABLE BORDER=0 CELLPADDING=6 WIDTH="100%" BGCOLOR="#CCCCCC" >
+
+<TR>
+
+<TD>
+
+<CENTER>Copyright &copy;1995-1999 <A HREF="mailto:barebones@werbach.com">Kevin
+
+Werbach</A>. Verspreiding van dit document is toegestaan zolang dit gratis
+
+gebeurt, en het document in zijn geheel en zonder wijzigingen wordt doorgegeven.
+
+Deze Gids is geen product van Bare Bones Software. Meer informatie is
+
+beschikbaar op<A HREF="http://werbach.com/barebones">http://werbach.com/barebones</A>.&nbsp;</CENTER>
+
+
+
+<CENTER><A HREF="http://validator.w3.org/"><IMG SRC="http://validator.w3.org/images/vh40.gif" ALT="Valid HTML 4.0!" BORDER=0 HEIGHT=31 WIDTH=88></A><A HREF="http://validator.w3.org/">&nbsp;</A></CENTER>
+
+</TD>
+
+</TR>
+
+</TABLE>
+
+&nbsp;
+
+</BODY>
+
+</HTML>
+

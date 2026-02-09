@@ -1,0 +1,38 @@
+.form_label {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+/*	Chirs, if you did this I am sorry for commenting it out - please let me know.
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-color: #FF9900;
+	border-right-color: #FF9900;
+	border-bottom-color: #FF9966;
+	border-left-color: #FF9966;
+*/
+}
+.required {
+	color: #FF6600;
+	font-weight: bolder;
+	font-size: 14px;
+}
+.button {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	background-color: #FFA813;
+	border: 1px #FFAA10;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+input {
+	background-color: #FFFFFF;
+}
+.highlight {
+	background-color: #FFAA10;
+}
+
+.highlight .form_label {
+	background-color: #FFAA10;
+}

@@ -1,0 +1,534 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           L A   G U I D A   B A R E   B O N E S   D I   H T M L
+
+                              di Kevin Werbach
+                            <http://werbach.com/>
+
+                         Versione 4.0 -- Gennaio 1999
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+L'ultima versione di questo documento e' disponibile all'indirizzo 
+<http://werbach.com/barebones/>, dove puoi trovare la versione in formato 
+HTML, le traduzioni e altri documenti di riferimento.
+
+La guida Bare Bones di HTML elenca tutti i comandi supportati nelle versioni 
+attuali della maggioranza dei browser. Ho incluso tutti i comandi, con i 
+relativi attributi generali, presenti nelle specifiche ufficiali di HTML 4.0  
+e le estensioni create da Netscape e Microsoft. Questo documento e' una scheda 
+di riferimento, non un manuale completo; per le informazioni ufficiali in 
+merito al linguaggio HTML ed alla sua evoluzione, consulta il sito del World 
+Wide Web Consortium all'indirizzo <http://www.w3.org/MarkUp/>.
+
+Questa guida e' stata ideata per essere il piu' sintetica possibile, e quindi 
+non comprende alcun dettaglio sulle modalita' di utilizzo dei vari comandi. 
+Per le informazioni di riferimento ad alcune valide guide HTML passo per 
+passo, vedi l'indirizzo <http://werbach.com/web/wwwhelp.html>.
+
+
+
+IMPAGINAZIONE DI QUESTO DOCUMENTO
+----------------------------------------------------------------------------
+Questo documento viene visualizzato meglio utilizzando un font a spaziatura 
+fissa.
+
+Per chiarezza, ho diviso gli attributi dello stesso comando in righe separate.
+In generale, molti attributi possono essere conatenati nello stesso comando.
+
+I comandi sono elencati in carattere maiuscolo solo per facilitare la lettura; 
+la maggior parte dei comandi possono essere scritti indifferentemente in 
+minuscolo o maiuscolo.
+
+
+
+SIMBOLI UTILIZZATI
+----------------------------------------------------------------------------
+URL    URL di un file esterno (oppure solo il nome del file se presente 
+       nello stesso indirizzario)
+?      Numero arbitrario (ad esempio: <H?> significa <H1>,<H2>,<H3>,ecc.)
+%      Percentuale arbitraria (ad esempio: <HR WIDTH=%> significa
+       <HR WIDTH=50%>, ecc.)
+***    Testo arbitrario (ad esempio: ALT="***" significa spazio da riempire
+       con testo)
+$$$$$$ Numeri esadecimali (hex) arbitrari (ad esempio: BGCOLOR="#$$$$$$" 
+       significa BGCOLOR="#00FF1C", ecc.)
+:::    Data arbitraria (ad esempio DATETIME=":::" significa 
+       "1994-11-05T08:15:30" ecc.)
+@      Indirizzo email (ad esempio "mailto:@" significa 
+       "mailto:kevin@werbach.com" ecc.)
+,,,    Valori separati da virgole (ad esempio COORDS=",,," significa
+       COORDS="0,0,50,50", ecc.)
+|      In alternativa (ad esempio: ALIGN=LEFT|RIGHT|CENTER significa scegli
+       una di queste tre variabili)
+
+
+
+COMPATIBILITA' (da ricordare che il linguaggio HTML e' in continua
+                evoluzione e gli impieghi dei browser variano)
+----------------------------------------------------------------------------
+     (nessuna nota) nelle specifiche di HTML 3.2; dovrebbe funzionare con
+     tutti i browser
+4.0  Introdotto nelle specifiche di HTML 4.0
+N1   Estensione di Netscape introdotta nella versione 1.0 o 1.1 di Navigator
+N2   Estensione di Netscape introdotta nella versione 2.0 di Navigator
+N3   Estensione di Netscape introdotta nella versione 3.0 di Navigator
+N4   Estensione di Netscape introdotta nella versione 4.0 di Communicator
+MS   Estensione di Microsoft Internet Explorer
+*    Estensione di Netscape attualmente inclusa nelle specifiche di HTML 4.0
+
+
+===========================================================================
+===========================================================================
+
+
+
+ELEMENTI DI BASE   (tutti i documenti HTML devono contenere questi comandi)
+----------------------------------------------------------------------------
+       Tipo documento   <HTML></HTML>      (all'inizio e alla fine del file)
+       Titolo           <TITLE></TITLE>    (deve essere nella testata)
+       Testata          <HEAD></HEAD>      (informazioni descrittive; come
+                                            il titolo)
+       Corpo            <BODY></BODY>      (contenuto della pagina)
+
+
+
+FORMATO DI STRUTTURA   (le caratteristiche di visualizzazione sono definite
+                        dal browser)
+----------------------------------------------------------------------------
+       Titoli           <H?></H?>         (sono definiti 6 livelli)
+         allineamento     <H? ALIGN=LEFT|CENTER|RIGHT></H?>
+                                    (sinistra|centrato|destra)
+       Separazione      <DIV></DIV>
+         allineamento     <DIV ALIGN=LEFT|RIGHT|CENTER|JUSTIFY></DIV>
+                                    (sinistra|centrato|destra|giustificato)
+4.0    Contenuto        <SPAN></SPAN>
+       Citazione        <BLOCKQUOTE></BLOCKQUOTE>    
+                                          (in genere visualizzato come 
+                                           blocco di testo rientrato)
+4.0    Citazione        <Q></Q>           (per citazioni brevi)
+4.0      con URL          <Q CITE="URL"></Q> 
+       Evidenziato      <EM></EM>         (in genere visualizzato in corsivo)
+       Molto 
+         evidenziato    <STRONG></STRONG> (in genere visualizzato in neretto)
+       Citazione        <CITE></CITE>     (in genere visualizzato in corsivo)
+       Codice           <CODE></CODE>     (per listati di programmazione)
+       Esempio di
+         output         <SAMP></SAMP>
+       Immissione da
+         tastiera       <KBD></KBD>
+       Variabile        <VAR></VAR>
+       Definizione      <DFN></DFN>       (poco utilizzato)
+       Indirizzo
+       dell'autore      <ADDRESS></ADDRESS>
+       Font molto
+         grande         <BIG></BIG>
+       Font molto
+         piccolo        <SMALL></SMALL>
+4.0    Inserito         <INS></INS>       (segna le modifiche introdotte 
+                                           in una nuova versione)
+4.0      data modifica    <INS DATETIME=":::"></INS>
+4.0      commenti         <INS CITE="URL"></INS>
+4.0    Cancellato       <DEL></DEL>       (segna le cancellazioni apportate
+                                           in una nuova versione)
+4.0      data modifica    <DEL DATETIME=":::"></DEL>
+4.0      commenti         <DEL CITE="URL"></DEL>
+4.0    Acronimo          <ACRONYM></ACRONYM>
+4.0    Abbreviazione     <ABBR></ABBR>
+
+
+
+FORMATO DI PRESENTAZIONE (le caratteristiche di visualizzazione sono 
+                          specificate dall'autore)
+----------------------------------------------------------------------------
+       Neretto          <B></B>
+       Corsivo          <I></I>
+4.0*   Sottolineato     <U></U>                           (poco utilizzato)
+       Barrato          <STRIKE></STRIKE>                 (poco utilizzato)
+4.0*     Barrato          <S></S>                         (poco utilizzato)
+       Pendice          <SUB></SUB>
+       Apice            <SUP></SUP>
+       Macchina da
+         scrivere       <TT></TT>         (visualizzato a spaziatura fissa)
+       Preformattato    <PRE></PRE>             (visualizzato tale e quale)
+         larghezza        <PRE WIDTH=?></PRE>                (in caratteri)
+       Centrato         <CENTER></CENTER>      (sia per testo che immagini)
+N1     Lampeggiante     <BLINK></BLINK>           (il comando piu' ridicolo)
+       Font misura      <FONT SIZE=?></FONT>              (valori da 1 a 7)
+         modifica misura  <FONT SIZE="+|-?"></FONT>
+         colore           <FONT COLOR="#$$$$$$"></FONT>
+4.0*     tipo             <FONT FACE="***"></FONT>
+N4       misura in punti  <FONT POINT-SIZE=?></FONT>
+N4       spessore         <FONT WEIGHT=?></FONT>      (valori da 100 a 900)
+4.0*   Font misura base <BASEFONT SIZE=?>      (da 1 a 7; valore default 3)
+MS     Testo scorrevole <MARQUEE></MARQUEE>
+
+COLLOCAZIONE
+----------------------------------------------------------------------------
+
+N3     Multicolonne     <MULTICOL COLS=?></MULTICOL>
+N3       spazio tra colonne <MULTICOL GUTTER=?></MULTICOL>
+N3       larghezza colonna  <MULTICOL WIDTH=?></MULTICOL>
+N3     Spazio           <SPACER>
+N3       tipo             <SPACER TYPE=HORIZONTAL|VERTICAL|BLOCK>
+                                  (orizzontale|verticale|blocco)
+N3       misura           <SPACER SIZE=?>
+N3       dimensioni       <SPACER WIDTH=? HEIGHT=?>
+                                  (larghezza altezza)  
+N3       allineamento     <SPACER ALIGN=LEFT|RIGHT|CENTER>
+                                  (sinistra|destra|centrato)
+N4     Layer (strato)  <LAYER></LAYER>
+N4       nome             <LAYER ID="***"></LAYER>
+N4       ubicazione       <LAYER LEFT=? TOP=?></LAYER>
+N4       posizione (x,y)  <LAYER PAGEX=? PAGEY=?></LAYER>
+N4       file sorgente    <LAYER SRC="***"></LAYER>
+N4       stacking (z)     <LAYER Z-INDEX=?></LAYER>
+N4       posizione stack  <LAYER ABOVE="***" BELOW="***"></LAYER>
+N4       dimensioni       <LAYER HEIGHT=? WIDTH=?></LAYER>
+N4       ritaglio         <LAYER CLIP=,,,></LAYER>
+N4       visibile ?       <LAYER VISIBILITY=SHOW|HIDDEN|INHERIT></LAYER>
+N4       colore sfondo    <LAYER BACKGROUND="$$$$$$"></LAYER>
+N4       colore sfondo    <LAYER BGCOLOR="$$$$$$"></LAYER>
+N4     Inline Layer     <ILAYER></ILAYER> (con gli stessi attributi di LAYER)
+N4     Contenuto in 
+         alternativa    <NOLAYER</NOLAYER>
+
+
+COLLEGAMENTI, IMMAGINI E SUONI
+----------------------------------------------------------------------------
+       Collegamento a:
+         un documento   <A HREF="URL"></A>        
+         un riferimento   <A HREF="URL#***"></A>  (in un altro documento)
+                          <A HREF="#***"></A>     (nello stesso documento)
+4.0*     una finestra     <A HREF="URL" TARGET="***"></A>
+4.0*     mouse click       <A HREF="URL" ONCLICK="***"></A>     (Javascript)
+4.0*     mouse selezione   <A HREF="URL" ONMOUSEOVER="***"></A> (Javascript)
+4.0*     mouse deselezione <A HREF="URL" ONMOUSEOUT="***"></A>  (Javascript)
+         indirizzo email  <A HREF="mailto:@"></A>
+           con oggetto
+           del messaggio    <A HREF="mailto:@?SUBJECT=***"></A> 
+                                                 (utilizzare il carattere ?)
+       Definizione del
+         riferimento    <A NAME="***"></A> 
+       Visualizzazione
+         immagine       <IMG SRC="URL">   
+         allineamento     <IMG SRC="URL" ALIGN=TOP|BOTTOM|MIDDLE|LEFT|RIGHT>    
+N1       allineamento     <IMG SRC="URL" ALIGN=TEXTTOP|ABSMIDDLE|
+                                               BASELINE|ABSBOTTOM>
+         testo in 
+         alternativa      <IMG SRC="URL" ALT="***"> 
+                                      (se l'immagine non viene visualizzata)
+         dimensioni       <IMG SRC="URL" WIDTH=? HEIGHT=?>        (in pixel)
+                          <IMG SRC="URL" WIDTH=% HEIGHT=%>  (in percentuale
+                                    della larghezza e altezza della pagina)
+         bordo            <IMG SRC="URL" BORDER=?>                (in pixel)
+         spazio 
+         perimetrale      <IMG SRC="URL" HSPACE=? VSPACE=?>       (in pixel)
+N1       prima a bassa
+           risoluzione    <IMG SRC="URL" LOWSRC="URL">    
+         mappa            <IMG SRC="URL" ISMAP>        (richiede uno script)
+         mappa URL        <IMG SRC="URL" USEMAP="URL">
+MS       clip di film     <IMG DYNSRC="***" START="***" LOOP=?>
+MS     Suono di fondo   <BGSOUND SRC="***" LOOP=?|INFINITE>
+       Definizione della
+         mappa          <MAP NAME="***"></MAP>     (descrizione della mappa)
+           sezioni      <AREA SHAPE="DEFAULT|RECT|CIRCLE|POLY" 
+                            COORDS=",,," HREF="URL"|NOHREF> 
+N1     Metodo per la 
+         richiesta 
+         automatica
+         di un URL      <META HTTP-EQUIV="Refresh" CONTENT="?; URL=URL">
+                                        (dopo ? indicare i secondi di attesa)
+N2     Incorporazione 
+         oggetti        <EMBED SRC="URL">  (inserisce l'oggetto nella pagina)
+N2         misure         <EMBED SRC="URL" WIDTH=? HEIGHT=?>
+4.0    Oggetto          <OBJECT></OBJECT>
+4.0      parametri      <PARAM>
+
+
+DIVISORI
+----------------------------------------------------------------------------
+       Paragrafo        <P></P>           (spesso il comando di chiusura 
+                                           viene omesso)
+         allineamento     <P ALIGN=LEFT|CENTER|RIGHT></P>
+N        giustificazione  <P ALIGN=JUSTIFY></P>
+       Interruzione
+       riga             <BR>                (singolo ritorno a capo)
+         pulizia
+         margini          <BR CLEAR=LEFT|RIGHT|ALL>
+       Riga
+       orizzontale      <HR>
+         allineamento     <HR ALIGN=LEFT|RIGHT|CENTER>
+         spessore         <HR SIZE=?>       (in pixel)
+         larghezza        <HR WIDTH=?>      (in pixel)
+         larghezza %      <HR WIDTH="%">    (come percentuale rispetto alla
+                                            larghezza della pagina)
+         piena            <HR NOSHADE>      (senza l'effetto ombra)
+N1     Senza
+       interruzione     <NOBR></NOBR>   (per evitare l'interruzione
+                                         automatica della riga)
+N1     Interruzione     <WBR>           (per inserire l'interruzione in NOBR)
+
+
+
+LISTE  (le liste possono essere annidate)
+----------------------------------------------------------------------------
+       Liste senza
+       ordine           <UL><LI></UL>        (<LI> prima di ogni elemento)
+         compatta         <UL COMPACT></UL>
+         tipo di 
+         puntatore      <UL TYPE=DISC|CIRCLE|SQUARE>    (per tutta la lista)
+                          <LI TYPE=DISC|CIRCLE|SQUARE>  (questo e successivi)
+       Liste numerate   <OL><LI></OL>        (<LI> prima di ogni elemento)
+         compatta         <OL COMPACT></OL>
+         tipo di numero   <OL TYPE=A|a|I|i|1>        (per tutta la lista)
+                          <LI TYPE=A|a|I|i|1>        (questo e successivi)
+         num. di partenza <OL START=?>               (per tutta la lista)
+                          <LI VALUE=?>               (questo e successivi)
+       Lista di
+       definizioni      <DL><DT><DD></DL>    (<DT>=termine, <DD>=definizione)
+         compatta         <DL COMPACT></DL>
+       Lista tipo Menu  <MENU><LI></MENU>    (<LI> prima di ogni elemento)
+         compatta         <MENU COMPACT></MENU>
+       Lista tipo
+       indirizzario     <DIR><LI></DIR>      (<LI> prima di ogni elemento)
+         compatta         <DIR COMPACT></DIR>
+
+SFONDI E COLORI
+---------------------------------------------------------------------------
+       Immagine di
+       sfondo           <BODY BACKGROUND="URL">
+MS       fissa (senza 
+         scorrimento
+         verticale)     <BODY BGPROPERTIES="FIXED">
+       Colore di sfondo <BODY BGCOLOR="#$$$$$$">    (codice Red/Green/Blue)
+         del testo        <BODY TEXT="#$$$$$$">
+         dei collegamenti <BODY LINK="#$$$$$$">
+         dei collegamenti
+         visitati         <BODY VLINK="#$$$$$$">
+         del collegamento
+         selezionato      <BODY ALINK="#$$$$$$">
+
+(Sono disponibili maggiori informazioni all'indirizzo  
+ <http://werbach.com/web/wwwhelp.html#color>)
+
+
+
+CARATTERI SPECIALI         (devono essere digitati in caratteri minuscoli)
+---------------------------------------------------------------------------
+       Carattere speciale       &#?;   (dove ? indica il codice ISO 8859-1)
+       <                        &lt;
+       >                        &gt;
+       &                        &amp;
+       "                        &quot;
+       Marchio registrato (TM)  &#174;
+       Marchio registrato (TM)  &reg;
+       Copyright                &copy;
+       Spazio da mantenere      &nbsp;
+
+(La lista completa e' disponibile all'indirizzo 
+<http://www.uni-passau.de/%7Eramsch/iso8859-1.html>)
+
+
+
+
+MODULI (generalmente richiedono uno script sul server)
+---------------------------------------------------------------------------
+       Definizione      <FORM ACTION="URL" METHOD=GET|POST></FORM>
+4.0*     Upload file      <FORM ENCTYPE="multipart/form-data"></FORM>
+       campo di
+       immissione       <INPUT TYPE="TEXT|PASSWORD|CHECKBOX|RADIO|
+                            FILE|BUTTON|IMAGE|HIDDEN|SUBMIT|RESET">
+         nome del campo   <INPUT NAME="***">
+         valore del campo <INPUT VALUE="***">
+         segnato ?        <INPUT CHECKED>        (checkbox e radio)
+         misura           <INPUT SIZE=?>         (in caratteri)
+         lunghezza
+         massima          <INPUT MAXLENGTH=?>    (in caratteri)
+4.0    Bottone            <BUTTON></BUTTON>
+4.0      nome             <BUTTON NAME="***"></BUTTON>
+4.0      tipo             <BUTTON TYPE="SUBMIT|RESET|BUTTON"></BUTTON>
+4.0      valore iniziale  <BUTTON VALUE="***"></BUTTON>
+4.0    Etichetta        <LABEL></LABEL>    
+4.0      elemento         <LABEL FOR="***"></LABEL>
+       Lista di
+       selezione        <SELECT></SELECT>
+         nome della lista <SELECT NAME="***"></SELECT>
+         numero di
+         opzioni          <SELECT SIZE=?></SELECT>
+         scelta multipla  <SELECT MULTIPLE>       (per selezionare piu' di
+                                                   un elemento)
+       Opzioni          <OPTION>    (elementi che possono essere selezionati)
+         opz.iniziale     <OPTION SELECTED>
+         valore           <OPTION VALUE="***">
+4.0    Gruppo di opz.   <OPTGROUP LABEL="***"></OPTGROUP>       
+       Area di
+       immissione       <TEXTAREA ROWS=? COLS=?></TEXTAREA>
+         nome dell'area   <TEXTAREA NAME="***"></TEXTAREA>
+N2       ritorno a capo
+         nel testo        <TEXTAREA WRAP=OFF|VIRTUAL|PHYSICAL></TEXTAREA>
+4.0    Gruppo di campi  <FIELDSET></FIELDSET>  
+4.0    Legenda          <LEGEND></LEGEND>     (didascalia per i fieldset)
+4.0      allineamento     <LEGEND ALIGN="TOP|BOTTOM|LEFT|RIGHT"></LEGEND>
+
+
+TABELLE
+---------------------------------------------------------------------------
+       Definizione      <TABLE></TABLE>
+4.0*     allineamento     <TABLE ALIGN=LEFT|RIGHT|CENTER>
+         bordo            <TABLE BORDER=?></TABLE>
+         bordo            <TABLE BORDER></TABLE>             (con o senza)
+         spessore bordo   <TABLE BORDER=?></TABLE>           (valore)
+         spazio
+         tra celle        <TABLE CELLSPACING=?>
+         spazio 
+         nella cella      <TABLE CELLPADDING=?>
+         larghezza        <TABLE WIDTH=?>           (in pixel)
+         larghezza %      <TABLE WIDTH="%">         (in percentuale rispetto 
+                                                     alla pagina)
+4.0*     colore sfondo    <TABLE BGCOLOR="$$$$$$"></TABLE>
+4.0      cornice          <TABLE FRAME=VOID|ABOVE|BELOW|HSIDES|LHS|RHS|
+                              VSIDES|BOX|BORDER></TABLE> 
+4.0      regole           <TABLE RULES=NONE|GROUPS|ROWS|COLS|ALL></TABLE>
+MS       colore bordo     <TABLE BORDERCOLOR="$$$$$$"></TABLE>
+MS       colore scuro     <TABLE BORDERCOLORDARK="$$$$$$"></TABLE>
+MS       colore chiaro    <TABLE BORDERCOLORLIGHT="$$$$$$"></TABLE>
+       Riga             <TR></TR>
+         allineamento     <TR ALIGN=LEFT|RIGHT|CENTER  
+                              VALIGN=TOP|MIDDLE|BOTTOM>
+       Cella            <TD></TD>     (deve essere all'interno di una riga)
+         allineamento     <TD ALIGN=LEFT|RIGHT|CENTER
+                             VALIGN=TOP|MIDDLE|BOTTOM>
+         senza
+         interruzione     <TD NOWRAP>
+         unione colonne   <TD COLSPAN=?>
+         unione righe     <TD ROWSPAN=?>
+4.0*     larghezza        <TD WIDTH=?>    (in pixel)
+N3       larghezza %      <TD WIDTH="%">  (in percentuale rispetto 
+                                           alla tabella)
+4.0*     colore di sfondo
+         della cella      <TD BGCOLOR="#$$$$$$">
+
+       Titolo           <TH></TH>           (uguale alle celle di dati, 
+                                             ma in neretto e centrate)
+         allineamento     <TH ALIGN=LEFT|RIGHT|CENTER
+                              VALIGN=TOP|MIDDLE|BOTTOM>
+         senza
+         interruzione     <TH NOWRAP>
+         unione colonne   <TH COLSPAN=?>
+         unione righe     <TH ROWSPAN=?>
+4.0*     larghezza        <TH WIDTH=?>        (in pixel)
+N3       larghezza %      <TH WIDTH="%">      (in percentuale rispetto 
+                                               alla tabella)
+4.0*     colore di sfondo
+         della cella      <TH BGCOLOR="#$$$$$$">
+4.0    Corpo tabella    <TBODY>
+4.0    Pie' di pagina   <TFOOT></TFOOT>      (deve essere indicato 
+                                              prima di THEAD)
+4.0    Titolo           <THEAD></THEAD>
+       Legenda          <CAPTION></CAPTION>
+         allineamento     <CAPTION ALIGN=TOP|BOTTOM> (sopra o sotto 
+                                                      alla tabella)
+4.0    Colonna          <COL></COL>             (attributi per gruppi
+                                                 di colonne)
+4.0      unione colonne   <COL SPAN=?></COL>
+4.0      larghezza        <COL WIDTH=?></COL>
+4.0      larghezza %      <COL WIDTH="%"></COL>
+4.0    Gruppo colonne   <COLGROUP></COLGROUP>   (struttura di gruppi
+                                                 di colonne)
+4.0      unione colonne   <COLGROUP SPAN=?></COLGROUP>
+4.0      larghezza        <COLGROUP WIDTH=?></COLGROUP>
+4.0      larghezza %      <COLGROUP WIDTH="%"></COLGROUP>
+
+
+
+FRAME  (definizione e gestione di specifiche sezioni della finestra)
+---------------------------------------------------------------------------
+4.0*   Documento Frame  <FRAMESET></FRAMESET>           (al posto di <BODY>)
+4.0*     altezza in
+         righe            <FRAMESET ROWS=,,,></FRAMESET>         (pixel o %)
+4.0*     altezza in
+         righe            <FRAMESET ROWS=*></FRAMESET> (* = misura relativa)
+4.0*     larghezza in
+         colonne          <FRAMESET COLS=,,,></FRAMESET>         (pixel o %)
+4.0*     larghezza in
+         colonne          <FRAMESET COLS=*></FRAMESET> (* = misura relativa)
+4.0*     cornice          <FRAMESET FRAMEBORDER="yes|no"></FRAMESET>
+4.0*     larghezza        <FRAMESET BORDER=?>
+4.0*     colore           <FRAMESET BORDERCOLOR="#$$$$$$">
+N3       spaziatura       <FRAMESET FRAMESPACING=?></FRAMESET>
+4.0*   Definizione del
+       Frame            <FRAME>        (contenuto di una sezione)
+4.0*     documento da
+         visualizzare     <FRAME SRC="URL">
+4.0*     denominazione    <FRAME NAME="***"|_blank|_self|_parent|_top>
+4.0*     larghezza dei
+         margini          <FRAME MARGINWIDTH=?>   (margine destro e sinistro)
+4.0*     altezza dei
+         margini          <FRAME MARGINHEIGHT=?>  (margine alto e basso)
+4.0*     barra di
+         scorrimento ?    <FRAME SCROLLING="YES|NO|AUTO">
+4.0*     dimensione non
+         modificabile     <FRAME NORESIZE>
+4.0*     cornice          <FRAME FRAMEBORDER="yes|no">
+4.0*     colore della
+         cornice          <FRAME BORDERCOLOR="#$$$$$$">
+4.0*   Contenuto in
+       assenza di frame <NOFRAMES></NOFRAMES>        (per i browser che non
+                                                     supportano i frame)
+4.0    Inline Frame     <IFRAME></IFRAME> (con gli stessi attributi di FRAME)
+4.0      dimensioni       <IFRAME WIDTH=? HEIGHT=?></IFRAME>
+4.0      dimensioni %     <IFRAME WIDTH="%" HEIGHT="%"></IFRAME>
+
+
+
+SCRIPT E JAVA
+----------------------------------------------------------------------------
+       Script          <SCRIPT></SCRIPT>  
+         Ubicazione      <SCRIPT SRC="URL"></SCRIPT>
+         Tipo            <SCRIPT TYPE="***"></SCRIPT>
+         Linguaggio      <SCRIPT LANGUAGE="***"></SCRIPT>
+4.0*   Contenuto alt.   <NOSCRIPT></NOSCRIPT>        (se il browser non 
+                                                      supporta gli script)        
+       Applet           <APPLET></APPLET>
+         nome del file    <APPLET CODE="***">
+         parametri        <APPLET PARAM NAME="***">
+         ubicazione       <APPLET CODEBASE="URL">
+         denominazione    <APPLET NAME="***">        (per riferimenti)
+         testo in
+         alternativa      <APPLET ALT="***">         (per i browser che non
+                                                      supportano Java)
+         allineamento     <APPLET ALIGN="LEFT|RIGHT|CENTER">
+         dimensioni       <APPLET WIDTH=? HEIGHT=?>    (in pixel)
+         spaziatura       <APPLET HSPACE=? VSPACE=?>   (in pixel)
+N4     Server Script    <SERVER></SERVER>
+
+
+
+
+VARI
+---------------------------------------------------------------------------
+       Commenti          <!-- *** -->        (non visualizzati dal browser)
+       Prologo           <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+       Ricerca           <ISINDEX>         (indica un documento indice)
+         Prompt            <ISINDEX PROMPT="***">  (testo da anteporre alla
+                                                    casella di inserimento)
+       Invio ricerca     <A HREF="URL?***"></a> (usare il punto di domanda)
+       URL di base per
+       questo file       <BASE HREF="URL">      (deve essere nella testata)
+4.0*   Nome della 
+       finestra di base  <BASE TARGET="***">    (deve essere nella testata)
+N4     Relazioni         <LINK REV="***" REL="***" HREF="URL"> (deve essere
+                                                               nella testata)
+       Meta Informazioni <META>                 (deve essere nella testata)
+       Fogli di stile    <STYLE></STYLE>        (varie modalita' di impiego)
+4.0    Bidirect Off     <BDO DIR=LTR|RTL></BDO> (per alcuni set di caratteri)
+
+===========================================================================
+Copyright (c) 1995-1999 Kevin Werbach.  E' permessa la distribuzione, a 
+condizione che non venga richiesto alcun corrispettivo economico e non venga 
+apportata alcuna modifica al documento integrale. Questa guida non e' un 
+prodotto di Bare Bones Software. Maggiori informazioni sono disponibili 
+all'indirizzo <http://werbach.com/barebones>.
+
+---------------------------------------------------------------------------
+Traduzione a cura di Kay Martha Quittan <kay@kmq.inet.it> 
+(per informazioni vedi <http://www.interactiva.it/kay>)

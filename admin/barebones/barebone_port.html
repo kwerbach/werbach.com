@@ -1,0 +1,2201 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <TITLE>Bare Bones Guide to HTML</TITLE>
+</HEAD>
+<BODY>
+
+<CENTER>
+<H1>
+
+<HR SIZE="8" WIDTH=480 noshade>GUIA BARE BONES HTML</H1></CENTER>
+
+<CENTER><B><I>by</I> <A HREF="mailto:barebones@werbach.com">Kevin Werbach</A></B></CENTER>
+
+<CENTER><B><I>traduzido por</I>: <A HREF="mailto:wolff@cyberdude.com">Maur&iacute;cio
+Wolff</A></B></CENTER>
+
+<CENTER><I>Vers&atilde;o 3.0 Formatada -- 21 de julho de 1996</I></CENTER>
+
+<CENTER>
+<HR SIZE="8" WIDTH=480 noshade></CENTER>
+
+<CENTER><FONT SIZE=+1>A &uacute;ltima vers&atilde;o deste documento est&aacute;
+dispon&iacute;vel em:</FONT></CENTER>
+
+<CENTER><FONT SIZE=+1>&lt;<A HREF="http://werbach.com/barebones/">http://werbach.com/barebones/</A>>.</FONT></CENTER>
+
+
+<P><FONT SIZE=+1>O Guia lista todas as tags que as vers&otilde;es correntes
+da maioria dos browsers pode reconhecer. Inclu&iacute; todas as tags da
+<A HREF="http://www.w3.org/pub/WWW/MarkUp/Wilbur/">especifica&ccedil;&atilde;o
+de HTML 3.2</A>, assim como as extens&otilde;es da Netscape inclu&iacute;das
+nas vers&otilde;es do Netscape Navigator 3.05b em diante. Este Guia foi
+feito da forma mais concisa poss&iacute;vel; mais informa&ccedil;&otilde;es
+sobre HTML est&atilde;o dispon&iacute;veis na minha <A HREF="http://werbach.com/web/wwwhelp.html#guides">WWW
+Help Page</A>. Coment&aacute;rios e sugest&otilde;es s&atilde;o sempre
+bem-vindos.</FONT>
+
+<P><A NAME="contents"></A>
+<BR><B><FONT SIZE=+1>Sum&aacute;rio</FONT></B>
+<OL>
+<LI>
+<B>MATERIAL INTRODUT&Oacute;RIO</B></LI>
+
+<UL>
+<LI>
+<B><A HREF="http://werbach.com/barebones/barebone_introduction.html#unique">O
+que &eacute; &uacute;nico neste guia</A></B></LI>
+
+<LI>
+<B><A HREF="http://werbach.com/barebones/barebone_introduction.html#included">Quais
+tags HTML est&atilde;o inclu&iacute;das</A></B></LI>
+
+<LI>
+<B><A HREF="http://werbach.com/barebones/barebone_introduction.html#formatting">Como
+este documento est&aacute; formatado</A></B> (inclu&iacute;ndo uma descri&ccedil;&atilde;o
+de s&iacute;mbolos e abrevia&ccedil;&otilde;es)</LI>
+</UL>
+
+<LI>
+<B>TAGS HTML</B></LI>
+
+<UL>
+<LI>
+<B><A HREF="#general">elementos b&aacute;sicos</A></B> (todo documento
+HTML deve ter isso)</LI>
+
+<LI>
+<B><A HREF="#structure">defini&ccedil;&atilde;o estrutural</A></B> (apar&ecirc;ncia
+controlada pelas prefer&ecirc;ncias do navegador)</LI>
+
+<LI>
+<B><A HREF="#presentation">formata&ccedil;&atilde;o de apresenta&ccedil;&atilde;o</A></B>
+(o autor especifica a aprar&ecirc;ncia do texto)</LI>
+
+<LI>
+<B><A HREF="#links">links e gr&aacute;ficos</A></B></LI>
+
+<LI>
+<B><A HREF="#dividers">divisores</A></B></LI>
+
+<LI>
+<B><A HREF="#lists">listas</A></B></LI>
+
+<LI>
+<B><A HREF="#color">fundo de tela (backgrounds) e cores</A></B></LI>
+
+<LI>
+<B><A HREF="#special">caracteres especiais</A></B></LI>
+
+<LI>
+<B><A HREF="#forms">formul&aacute;rios</A></B></LI>
+
+<LI>
+<B><A HREF="#tables">tabelas</A></B></LI>
+
+<LI>
+<B><A HREF="#frames">frames (traduzidos como "molduras" no Netscape 4)</A></B></LI>
+
+<LI>
+<B><A HREF="#java">java</A></B></LI>
+
+<LI>
+<B><A HREF="#misc">diversos</A></B></LI>
+</UL>
+<B>Importante:</B> Se voc&ecirc; n&atilde;o est&aacute; certo das diferen&ccedil;as
+entre HTML 2.0, HTML 3.0, HTML 3.2, e extens&otilde;es do Netscape , sugiro
+que voc&ecirc; leia a <A HREF="http://www.w3.org/pub/WWW/MarkUp/Activity">declara&ccedil;&atilde;o
+doW3C</A> sobre o desenvolvimento do HTML.</OL>
+
+<CENTER><A NAME="general"></A></CENTER>
+
+<TABLE BORDER=0 CELLPADDING=3 WIDTH="100%" >
+<TR>
+<TH COLSPAN="4"><FONT SIZE=+3>ELEMENTOS B&Aacute;SICOS</FONT>&nbsp;
+<HR SIZE="1" noshade></TH>
+</TR>
+
+<TR>
+<TD WIDTH="40">&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="120"><B>Tipo de Documento</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="140"><TT>&lt;HTML>&lt;/HTML></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(come&ccedil;o e final de um arquivo)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>T&iacute;tulo</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;TITLE>&lt;/TITLE></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(deve estar no cabe&ccedil;alho <FONT SIZE=-2>&lt;HEAD></FONT>)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Cabe&ccedil;alho</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;HEAD>&lt;/HEAD></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(Informa&ccedil;&atilde;o descritiva, como o t&iacute;tulo)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Corpo</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;BODY>&lt;/BODY></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(conte&uacute;do da p&aacute;gina)&nbsp;</TD>
+</TR>
+</TABLE>
+
+<CENTER><PRE>&nbsp;</PRE></CENTER>
+
+<CENTER><A NAME="structure"></A></CENTER>
+
+<TABLE BORDER=0 CELLPADDING=3 WIDTH="100%" >
+<TR>
+<TH COLSPAN="4"><FONT SIZE=+3>DEFINI&Ccedil;&Atilde;O ESTRUTURAL&nbsp;</FONT>&nbsp;
+<HR SIZE="1"
+         noshade></TH>
+</TR>
+
+<TR>
+<TD VALIGN=TOP WIDTH="40">&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="140"><B>Cabe&ccedil;alho</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="240"><TT>&lt;H?>&lt;/H?></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(a especifica&ccedil;&atilde;o define 6 n&iacute;veis)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Alinhar Cabe&ccedil;alho</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;H? ALIGN=LEFT|CENTER|RIGHT>&lt;/H?></TT> <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#align">[*]</A></B>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Divis&atilde;o</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;DIV>&lt;/DIV></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Alinhar Divis&atilde;o</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;DIV ALIGN=LEFT|RIGHT|CENTER>&lt;/DIV></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Cita&ccedil;&atilde;o de Bloco</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;BLOCKQUOTE>&lt;/BLOCKQUOTE></TT> <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#blockquote">[*]</A></B>&nbsp;</TD>
+
+<TD VALIGN=TOP>(geralmente mostrado como indetado)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>&Ecirc;nfase</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;EM>&lt;/EM></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(geralmente mostrado como it&aacute;lico)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>&Ecirc;nfase forte</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;STRONG>&lt;/STRONG></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(geralmente mostrado como bold)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Cita&ccedil;&atilde;o</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;CITE>&lt;/CITE></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(geralmente it&aacute;lico)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>C&oacute;digo</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;CODE>&lt;/CODE></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(para listagens de c&oacute;digo fonte)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Exemplo</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;SAMP>&lt;/SAMP></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Entrada de Teclado</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;KBD>&lt;/KBD></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Vari&aacute;vel</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;VAR>&lt;/VAR></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Defini&ccedil;&atilde;o</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;DFN>&lt;/DFN></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(n&atilde;o amplamente implementado)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Endere&ccedil;o do Autor</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;ADDRESS>&lt;/ADDRESS></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Tamanho de Fonte Grande</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;BIG>&lt;/BIG></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Tamanho de Fonte Pequena</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;SMALL>&lt;/SMALL></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+</TABLE>
+
+<CENTER><PRE>&nbsp;</PRE></CENTER>
+
+<CENTER><A NAME="presentation"></A></CENTER>
+
+<TABLE BORDER=0 CELLPADDING=3 WIDTH="100%" >
+<TR>
+<TH COLSPAN="4"><FONT SIZE=+3>FORMATA&Ccedil;&Atilde;O DE APRESENTA&Ccedil;&Atilde;O&nbsp;</FONT>&nbsp;
+<HR SIZE="1"
+         noshade></TH>
+</TR>
+
+<TR>
+<TD VALIGN=TOP WIDTH="40">&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="140"><B>Negrito</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="220"><TT>&lt;B>&lt;/B></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>It&aacute;lico</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;I>&lt;/I></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N3.0b&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Sublinhado</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;U>&lt;/U></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(ainda n&atilde;o amplamente implementado)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Riscado</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;STRIKE>&lt;/STRIKE></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(ainda n&atilde;o amplamente implementado)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N3.0b&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Strikeout</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;S>&lt;/S></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(ainda n&atilde;o amplamente implementado)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Subscrito</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;SUB>&lt;/SUB></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Superescrito</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;SUP>&lt;/SUP></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Teletipo</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;TT>&lt;/TT></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(mostra em fonte de tamanho &uacute;nico)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Pr&eacute;-formatado</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;PRE>&lt;/PRE></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(mant&eacute;m o espa&ccedil;amento original)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Largura</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;PRE WIDTH=?>&lt;/PRE></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(em caracteres)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Centraliza</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;CENTER>&lt;/CENTER></TT> <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#align">[*]</A></B>&nbsp;</TD>
+
+<TD VALIGN=TOP>(funciona em texto e imagens)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N1.0&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Piscar</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;BLINK>&lt;/BLINK></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(a tag mais zombada de toda a hist&oacute;ria)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Tamanho de Fonte</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;FONT SIZE=?>&lt;/FONT></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(varia de 1 a 7)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Mudar Tamanho de Fonte</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;FONT SIZE="+|-?">&lt;/FONT></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N1.0&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Tamanho de Fonte Padr&atilde;o</B></TD>
+
+<TD VALIGN=TOP><TT>&lt;BASEFONT SIZE=?></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(de 1 a 7; padr&atilde;o &eacute; 3)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Cor da Fonte</B></TD>
+
+<TD VALIGN=TOP><TT>&lt;FONT COLOR="#$$$$$$">&lt;/FONT></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N3.0b&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Selecionar Fonte</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;FONT FACE="***">&lt;/FONT></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N3.0b&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Texto Colunado</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;MULTICOL COLS=?>&lt;/MULTICOL></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N3.0b&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Espa&ccedil;o entre Colunas</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;MULTICOL GUTTER=?>&lt;/MULTICOL></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(padr&atilde;o &eacute; 10 pixels)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N3.0b&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Largura das Colunas</B></TD>
+
+<TD VALIGN=TOP><TT>&lt;MULTICOL WIDTH=?>&lt;/MULTICOL></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N3.0b&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Espa&ccedil;ador</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;SPACER></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N3.0b&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Tipo de Espa&ccedil;ador</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="220"><TT>&lt;SPACER TYPE=horizontal| vertical|block></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N3.0b&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Tamanho do Espa&ccedil;ador</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;SPACER SIZE=?></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N3.0b&nbsp;</TD>
+
+<TD VALIGN=TOP width140><B>Dimens&otilde;es do Espa&ccedil;ador</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;SPACER WIDTH=? HEIGHT=?></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N3.0b&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Alinhamento do Espa&ccedil;ador</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;SPACER ALIGN=left|right|center></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+</TABLE>
+
+<CENTER><PRE>&nbsp;</PRE></CENTER>
+
+<CENTER><A NAME="links"></A></CENTER>
+
+<TABLE BORDER=0 CELLPADDING=3 WIDTH="100%" >
+<TR>
+<TH COLSPAN="4"><FONT SIZE=+3>LINKS E GR&Aacute;FICOS</FONT>&nbsp;
+<HR SIZE="1"
+         noshade></TH>
+</TR>
+
+<TR>
+<TD VALIGN=TOP WIDTH="40">&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="140"><B>Linkar algo</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="220"><TT>&lt;A HREF="URL">&lt;/A></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP ROWSPAN="2">&nbsp;</TD>
+
+<TD VALIGN=TOP ROWSPAN="2"><B>Linkar &agrave; &acirc;ncora</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;A HREF="URL#***">&lt;/A></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(caso em outro documento)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP><TT>&lt;A HREF="#***">&lt;/A></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(caso no documento)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N2.0&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Janela de Destino</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="220"><TT>&lt;A HREF="URL" TARGET="***| |_blank|_self|_parent|_top">&lt;/A></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Definir &acirc;ncora</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;A NAME="***">&lt;/A></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Relacionamento</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;A REL="***">&lt;/A></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(n&atilde;o amplamente implementado)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Relacionamento Reverso</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;A REV="***">&lt;/A></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(n&atilde;o amplamente implementado)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Mostra Imagem</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;IMG SRC="URL"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Alignment</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="220"><TT>&lt;IMG SRC="URL" ALIGN=TOP|BOTTOM|MIDDLE|LEFT|RIGHT></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N1.0&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Alinhamento</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="220"><TT>&lt;IMG SRC="URL" ALIGN=TEXTTOP| ABSMIDDLE|BASELINE|ABSBOTTOM></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Texto Alternativo</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;IMG SRC="URL" ALT="***"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(se a imagem n&atilde;o for mostrada)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Mapa de Imagem</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;IMG SRC="URL" ISMAP></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(requer um script)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Mapa de Imagem/Cliente</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;IMG SRC="URL" USEMAP="URL"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Descri&ccedil;&atilde;o do Mapa</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;MAP NAME="***">&lt;/MAP></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Se&ccedil;&otilde;es do Mapa</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="220"><TT>&lt;AREA SHAPE="RECT" COORDS=",,," HREF="URL"|NOHREF></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Dimens&otilde;es</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="220"><TT>&lt;IMG SRC="URL" WIDTH=? HEIGHT=?></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(em pixels)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Borda</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;IMG SRC="URL" BORDER=?></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(em pixels)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Espa&ccedil;o em torno da Imagem</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="220"><TT>&lt;IMG SRC="URL" HSPACE=? VSPACE=?></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(em pixels)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N1.0&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Imagem de baixa resolu&ccedil;&atilde;o</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;IMG SRC="URL" LOWSRC="URL"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;(carrega antes da imagem normal)</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N1.1&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Client Pull</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="220"><TT>&lt;META HTTP-EQUIV="Refresh" CONTENT="?;
+URL=URL"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N2.0&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Objeto Embutido</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;EMBED SRC="URL"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(insere um objeto na p&aacute;gina)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N2.0&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Tamanho do Objeto</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="220"><TT>&lt;EMBED SRC="URL" WIDTH=? HEIGHT=?></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+</TABLE>
+
+<CENTER><PRE>&nbsp;</PRE></CENTER>
+
+<CENTER><A NAME="dividers"></A></CENTER>
+
+<TABLE BORDER=0 CELLPADDING=3 WIDTH="100%" >
+<TR>
+<TH COLSPAN="4"><FONT SIZE=+3>DIVISORES</FONT>&nbsp;
+<HR SIZE="1" noshade></TH>
+</TR>
+
+<TR>
+<TD VALIGN=TOP WIDTH="40">&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="140"><B>Par&aacute;gafos</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="240"><TT>&lt;P>&lt;/P></TT> <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#paragraph">[*]</A></B>&nbsp;</TD>
+
+<TD VALIGN=TOP>(tag de fechamento &agrave;s vezes desnecess&aacute;ria)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Alinhamento de Texto</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;P ALIGN=LEFT|CENTER|RIGHT>&lt;/P></TT> <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#align">[*]</A></B>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Quebra de Linha</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;BR></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(Para de escrever na linha corrente)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Limpar Fluidez de Texto</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;BR CLEAR=LEFT|RIGHT|ALL></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Barra Horizontal</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;HR></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Alinhamento</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;HR ALIGN=LEFT|RIGHT|CENTER></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Densidade</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;HR SIZE=?></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(em pixels)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Largura</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;HR WIDTH=?></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(em pixels)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N1.0&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Largura em Porcentagem</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;HR WIDTH="%"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(em rela&ccedil;&atilde;o &agrave; p&aacute;gina)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Barra S&oacute;lida</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;HR NOSHADE></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(Sem o visual 3D)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N1.0&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Sem Quebra</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;NOBR>&lt;/NOBR></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(previne quebras de p&aacute;gina)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N1.0&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Quebra de Palavra</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;WBR></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(quando quebrar uma palavra, se preciso.)&nbsp;</TD>
+</TR>
+</TABLE>
+
+<CENTER><PRE>&nbsp;</PRE></CENTER>
+
+<CENTER><A NAME="lists"></A></CENTER>
+
+<TABLE BORDER=0 CELLPADDING=3 WIDTH="100%" >
+<TR>
+<TH COLSPAN="4"><FONT SIZE=+3>LISTAS&nbsp;</FONT>&nbsp;
+<HR SIZE="1" noshade></TH>
+
+<TH>&nbsp;</TH>
+</TR>
+
+<TR>
+<TD VALIGN=TOP WIDTH="40">&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="140"><B>Lista com Marcadores</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="240"><TT>&lt;UL>&lt;LI>&lt;/UL></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(<TT>&lt;LI></TT> antes de cada item da lista)&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Compacta</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;UL COMPACT>&lt;/UL></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP ROWSPAN="2">&nbsp;</TD>
+
+<TD VALIGN=TOP ROWSPAN="2"><B>Tipo de Marcador</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;UL TYPE=DISC|CIRCLE|SQUARE></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(para toda lista)&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP><TT>&lt;LI TYPE=DISC|CIRCLE|SQUARE></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(esta e subsequentes)&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Lista Ordenada</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;OL>&lt;LI>&lt;/OL></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(<TT>&lt;LI></TT> antes de cada item da lista)&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Compacta</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;OL COMPACT>&lt;/OL></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP ROWSPAN="2">&nbsp;</TD>
+
+<TD VALIGN=TOP ROWSPAN="2"><B>Tipo de Numera&ccedil;&atilde;o</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;OL TYPE=A|a|I|i|1></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(para toda lista)&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP><TT>&lt;LI TYPE=A|a|I|i|1></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(esta e subsequentes)&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP ROWSPAN="2">&nbsp;</TD>
+
+<TD VALIGN=TOP ROWSPAN="2"><B>N&uacute;mero de In&iacute;cio</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;OL START=?></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(para toda lista)&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP><TT>&lt;LI VALUE=?></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(esta e subsequentes)&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Lista de Defini&ccedil;&atilde;o</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;DL>&lt;DT>&lt;DD>&lt;/DL></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(<TT>&lt;DT>=termo, &lt;DD></TT>=defini&ccedil;&atilde;o)&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Compacta</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;DL COMPACT>&lt;/DL></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Lista de Menu</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;MENU>&lt;LI>&lt;/MENU></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(<TT>&lt;LI></TT> antes de cada item da lista)&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Compact</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;MENU COMPACT>&lt;/MENU></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Lista de Diret&oacute;rio</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;DIR>&lt;LI>&lt;/DIR></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(<TT>&lt;LI></TT> antes de cada item da lista)&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Compacta</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;DIR COMPACT>&lt;/DIR></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+</TABLE>
+
+<CENTER><PRE>&nbsp;</PRE></CENTER>
+
+<CENTER><A NAME="color"></A></CENTER>
+
+<TABLE BORDER=0 CELLPADDING=3 WIDTH="100%" >
+<TR>
+<TH COLSPAN="4"><FONT SIZE=+3>FUNDOS DE TELA E CORES</FONT>&nbsp;
+<HR SIZE="1"
+         noshade></TH>
+</TR>
+
+<TR>
+<TD VALIGN=TOP WIDTH="40">&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="140"><B>Imagem de Fundo</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="240"><TT>&lt;BODY BACKGROUND="URL"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Cor de Fundo</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;BODY BGCOLOR="#$$$$$$"></TT> <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#color">[*]</A></B>&nbsp;</TD>
+
+<TD VALIGN=TOP>(a ordem &eacute; RGB)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Cor do Texto</B></TD>
+
+<TD VALIGN=TOP><TT>&lt;BODY TEXT="#$$$$$$"></TT> <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#color">[*]</A></B>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Cor do Link</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;BODY LINK="#$$$$$$"></TT> <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#color">[*]</A></B>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Cor do Link</B> <B>Visitado</B></TD>
+
+<TD VALIGN=TOP><TT>&lt;BODY VLINK="#$$$$$$"></TT> <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#color">[*]</A></B>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Link</B> <B>Ativo</B></TD>
+
+<TD VALIGN=TOP><TT>&lt;BODY ALINK="#$$$$$$"></TT> <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#color">[*]</A></B>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD ALIGN=CENTER VALIGN=TOP COLSPAN="4">
+<CENTER>(Mais informa&ccedil;&otilde;es em <A HREF="http://werbach.com/web/wwwhelp.html#color">http://werbach.com/web/wwwhelp.html#color</A>)&nbsp;</CENTER>
+</TD>
+</TR>
+</TABLE>
+
+<CENTER><PRE>&nbsp;</PRE></CENTER>
+
+<CENTER><A NAME="special"></A></CENTER>
+
+<TABLE BORDER=0 CELLPADDING=3 WIDTH="100%" >
+<TR>
+<TH COLSPAN="4"><FONT SIZE=+3>CARACTERES ESPECIAIS</FONT>&nbsp;
+<BR><I>(estes devem estar em min&uacute;sculas)</I>&nbsp;
+<HR SIZE="1" noshade></TH>
+</TR>
+
+<TR>
+<TD VALIGN=TOP WIDTH="40">&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="140"><B>Caracteres</B> <B>Especiais</B></TD>
+
+<TD VALIGN=TOP WIDTH="240">&amp;#?;&nbsp;</TD>
+
+<TD VALIGN=TOP>(onde <B>?</B> vai o c&oacute;digo ISO 8859-1)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>&lt;</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&amp;lt;</TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>></B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&amp;gt;</TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>&amp;</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&amp;amp;</TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>"</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&amp;quot;</TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Marca Registrada (TM)</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&amp;reg;</TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Direitos Autorais</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&amp;copy;</TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Espa&ccedil;o sem quebra</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&amp;nbsp;</TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD ALIGN=CENTER VALIGN=TOP COLSPAN="4">
+<CENTER>(Lista completa em <A HREF="http://www.uni-passau.de/%7Eramsch/iso8859-1.html">http://www.uni-passau.de/%7Eramsch/iso8859-1.html</A>)&nbsp;</CENTER>
+</TD>
+</TR>
+</TABLE>
+
+<CENTER><PRE>&nbsp;</PRE></CENTER>
+
+<CENTER><A NAME="forms"></A></CENTER>
+
+<TABLE BORDER=0 CELLPADDING=3 WIDTH="100%" >
+<TR>
+<TH COLSPAN="4"><FONT SIZE=+3>FORMUL&Aacute;RIOS&nbsp;</FONT>&nbsp;
+<HR SIZE="1" noshade></TH>
+</TR>
+
+<TR>
+<TD VALIGN=TOP WIDTH="40">&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="140"><B>Definir Formul&aacute;rio</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="240"><TT>&lt;FORM ACTION="URL" METHOD=GET|POST>&lt;/FORM></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N2.0&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Upload</B> <B>de Arquivo</B></TD>
+
+<TD VALIGN=TOP><TT>&lt;FORM ENCTYPE="multipart/form-data">&lt;/FORM></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Campo de Entrada <FONT SIZE=-2>(Input)</FONT></B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="220"><TT>&lt;INPUT TYPE="TEXT|PASSWORD|CHECKBOX|RADIO|
+IMAGE|HIDDEN|SUBMIT|RESET"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Nome de Campo</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;INPUT NAME="***"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Valor do Campo</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;INPUT VALUE="***"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Checado?</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;INPUT CHECKED></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(caixas de op&ccedil;&atilde;o e r&aacute;dio)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Tamanho do Campo</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;INPUT SIZE=?></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(caracteres)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>M&aacute;xima Qtd de Dados</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;INPUT MAXLENGTH=?></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(caracteres)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Lista de Selec&atilde;o</B></TD>
+
+<TD VALIGN=TOP><TT>&lt;SELECT>&lt;/SELECT></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Nome da Lista</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="220"><TT>&lt;SELECT NAME="***">&lt;/SELECT></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B># de Op&ccedil;&otilde;es</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="220"><TT>&lt;SELECT SIZE=?>&lt;/SELECT></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Multipla Escolha</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;SELECT MULTIPLE></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(pode-se selecionar mais de uma op&ccedil;&atilde;o)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Op&ccedil;&atilde;o</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;OPTION></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(Podem ser selecionados)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Op&ccedil;&atilde;o Padr&atilde;o</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;OPTION SELECTED></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Tamanho da &Aacute;rea de Texto</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;TEXTAREA ROWS=? COLS=?>&lt;/TEXTAREA></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Nome do Campo</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;TEXTAREA NAME="***">&lt;/TEXTAREA></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N2.0&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Quebra de Texto</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="220"><TT>&lt;TEXTAREA WRAP=OFF|VIRTUAL|PHYSICAL>&lt;/TEXTAREA></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+</TABLE>
+
+<CENTER><PRE>&nbsp;</PRE></CENTER>
+
+<CENTER><A NAME="tables"></A></CENTER>
+
+<TABLE BORDER=0 CELLPADDING=3 WIDTH="100%" >
+<TR>
+<TH COLSPAN="4"><FONT SIZE=+3>TABELAS</FONT>&nbsp;
+<HR SIZE="1" noshade></TH>
+</TR>
+
+<TR>
+<TD VALIGN=TOP WIDTH="40">&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="140"><B>Definir Tabela</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="240"><TT>&lt;TABLE>&lt;/TABLE></TT> <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#tables">[*]</A></B>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Borda da Tabela</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;TABLE BORDER=?>&lt;/TABLE></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Espa&ccedil;o entre as C&eacute;lulas</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;TABLE CELLSPACING=?></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Cell Padding</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;TABLE CELLPADDING=?></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Largura Desejada</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;TABLE WIDTH=?></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(em pixels)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Largura em Porcentagem</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;TABLE WIDTH="%"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(porcentagem da p&aacute;gina)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Linha da Tabela</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;TR>&lt;/TR></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Alinhamento</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="220"><TT>&lt;TR ALIGN=LEFT|RIGHT| CENTER|MIDDLE|BOTTOM&nbsp;</TT>&nbsp;
+<BR><TT>VALIGN=TOP|BOTTOM|MIDDLE></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>C&eacute;lula</B> <B>da Tabela</B></TD>
+
+<TD VALIGN=TOP><TT>&lt;TD>&lt;/TD></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(deve aparecer entre Linhas da Tabela)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Alinhamento</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="220"><TT>&lt;TD ALIGN=LEFT|RIGHT| CENTER|MIDDLE|BOTTOM&nbsp;</TT>&nbsp;
+<BR><TT>VALIGN=TOP|BOTTOM|MIDDLE></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Sem Quebra de Linhas</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;TD NOWRAP></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Ocupar ? C&eacute;lulas</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;TD COLSPAN=?></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Ocupar ? Linhas</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;TD ROWSPAN=?></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N1.1&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Desired Width</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;TD WIDTH=?></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(em pixels)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N1.1&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Largura em Porcentagem</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;TD WIDTH="%"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(porcentagem da tabela)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N3.0b&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Cor da C&eacute;lula</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;TD BGCOLOR="#$$$$$$"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Cabe&ccedil;alho de Tabela</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;TH>&lt;/TH></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(negrito e centralizado)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Alinhamento</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="220"><TT>&lt;TH ALIGN=LEFT|RIGHT| CENTER|MIDDLE|BOTTOM&nbsp;</TT>&nbsp;
+<BR><TT>VALIGN=TOP|BOTTOM|MIDDLE></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Sem quebras de Linha</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;TH NOWRAP></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Ocupar ? C&eacute;lulas</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;TH COLSPAN=?></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Ocupar ? Linhas</B></TD>
+
+<TD VALIGN=TOP><TT>&lt;TH ROWSPAN=?></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N1.1&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Largura desejada</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;TH WIDTH=?></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(en pixels)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N1.1&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Largura em Porcentagem</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;TH WIDTH="%"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(porcentagem da tabela)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N3.0b&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Cor da C&eacute;lula</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;TH BGCOLOR="#$$$$$$"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Legenda da Tabela</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;CAPTION>&lt;/CAPTION></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Alinhamento</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;CAPTION ALIGN=TOP|BOTTOM></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(acima/abaixo da tabela)&nbsp;</TD>
+</TR>
+</TABLE>
+
+<CENTER><PRE>&nbsp;</PRE></CENTER>
+
+<CENTER><A NAME="frames"></A></CENTER>
+
+<TABLE BORDER=0 CELLPADDING=3 WIDTH="100%" >
+<TR>
+<TH COLSPAN="4"><FONT SIZE=+3>FRAMES (MOLDURAS)&nbsp;</FONT>&nbsp;
+<HR SIZE="1" noshade></TH>
+</TR>
+
+<TR>
+<TD VALIGN=TOP WIDTH="40">N2.0&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="140"><B>Documento em Frame</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="240"><TT>&lt;FRAMESET>&lt;/FRAMESET></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(ao inv&eacute;s de <TT>&lt;BODY></TT>)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N2.0&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Altura de Linhas</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;FRAMESET ROWS=,,,>&lt;/FRAMESET></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(pixels ou %)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N2.0&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Altura de Linhas</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;FRAMESET ROWS=*>&lt;/FRAMESET></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(* = tamanho relativo)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N2.0&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Largura das Colunas</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;FRAMESET COLS=,,,>&lt;/FRAMESET></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(pixels ou %)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N2.0&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Largura das Colunas</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;FRAMESET COLS=*>&lt;/FRAMESET></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(* = tamanho relativo)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N3.0b&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Largura da Borda</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;FRAMESET BORDER=?></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N3.0b&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Bordas</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;FRAMESET FRAMEBORDER="yes|no"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N3.0b&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Cor das Bordas</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;FRAMESET BORDERCOLOR="#$$$$$$"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N2.0&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Definir Frame</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;FRAME></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(o conte&uacute;do de cada frame, individualmente)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N2.0&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Mostrar Documento</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;FRAME SRC="URL"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N2.0&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Nome do Frame</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="220"><TT>&lt;FRAME NAME="***"|_blank|_self| _parent|_top></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N2.0&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Largura da Margem</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;FRAME MARGINWIDTH=?></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(margens esquerda e direita)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N2.0&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Altura da Margem</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;FRAME MARGINHEIGHT=?></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(margens superior e inferior)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N2.0&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Barras de Rolagem?</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;FRAME SCROLLING="YES|NO|AUTO"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N2.0&nbsp;</TD>
+
+<TD VALIGN=TOP><B>N&atilde;o Mudar Tamanho</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;FRAME NORESIZE></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N3.0b&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Bordas</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;FRAME FRAMEBORDER="yes|no"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N3.0b&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Cor de Bordas</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;FRAME BORDERCOLOR="#$$$$$$"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N2.0&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Conte&uacute;do sem Frames</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;NOFRAMES>&lt;/NOFRAMES></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(para Navegadores que n&atilde;o mostram frames)&nbsp;</TD>
+</TR>
+</TABLE>
+
+<CENTER>&nbsp;</CENTER>
+
+<CENTER><A NAME="java"></A></CENTER>
+
+<TABLE BORDER=0 CELLPADDING=3 WIDTH="100%" >
+<TR>
+<TH COLSPAN="4"><FONT SIZE=+3>JAVA</FONT>&nbsp;
+<HR SIZE="1" noshade></TH>
+</TR>
+
+<TR>
+<TD VALIGN=TOP WIDTH="40">&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="140"><B>Applet</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="240"><TT>&lt;APPLET>&lt;/APPLET></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Nome de Arquivo do Applet</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;APPLET CODE="***"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Par&acirc;metros</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;APPLET PARAM NAME="***"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Localiza&ccedil;&atilde;o do Applet</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;APPLET CODEBASE="URL"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Identificador de Applet</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;APPLET NAME="***"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(para refer&ecirc;ncias futuras na p&aacute;gina)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Texto Alternativo</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;APPLET ALT="***"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(para Navegadores sem Java)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Alinhamento</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;APPLET ALIGN="LEFT|RIGHT|CENTER"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Tamanho</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;APPLET WIDTH=? HEIGHT=?></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(em pixels)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Espa&ccedil;amento</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;APPLET HSPACE=? VSPACE=?></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(em pixels)&nbsp;</TD>
+</TR>
+</TABLE>
+
+<CENTER>&nbsp;</CENTER>
+
+<CENTER><A NAME="misc"></A></CENTER>
+
+<TABLE BORDER=0 CELLPADDING=3 WIDTH="100%" >
+<TR>
+<TH COLSPAN="4"><FONT SIZE=+3>DIVERSOS</FONT>&nbsp;
+<HR SIZE="1" noshade></TH>
+</TR>
+
+<TR>
+<TD VALIGN=TOP WIDTH="40">&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="140"><B>Coment&aacute;rios</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="240"><TT>&lt;!-- *** --></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(n&atilde;o s&atilde;o mostrados no Navegador)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Pr&oacute;logo HTML 3.2</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="220"><TT>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML
+3.2//EN"></TT> <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#prologue">[*]</A></B>&nbsp;</TD>
+
+<TD VALIGN=TOP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Pesquis&aacute;vel</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;ISINDEX></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(indica um &iacute;ndice que pode se fazer buscas )&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Lembrete </B><FONT SIZE=-1>(Prompt)</FONT>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;ISINDEX PROMPT="***"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(texto para colocar na entrada de dados)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Envia Busca</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;A HREF="URL?***">&lt;/a></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(use&nbsp; interroga&ccedil;&atilde;o - <B>?</B>)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>URL dessa p&aacute;gina</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;BASE HREF="URL"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(deve estar no cabe&ccedil;alho)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>N2.0&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Janela/Frame Base</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;BASE TARGET="***"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(deve estar no cabe&ccedil;alho)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Relacionamento</B>&nbsp;</TD>
+
+<TD VALIGN=TOP WIDTH="220"><TT>&lt;LINK REV="***" REL="***" HREF="URL"></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(deve estar no cabe&ccedil;alho)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Meta-Informa&ccedil;&atilde;o</B></TD>
+
+<TD VALIGN=TOP><TT>&lt;META></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(deve estar no cabe&ccedil;alho)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Folhas de Estilo</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;STYLE>&lt;/STYLE></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(ainda n&atilde;o amplamente suportadas)&nbsp;</TD>
+</TR>
+
+<TR>
+<TD VALIGN=TOP>&nbsp;</TD>
+
+<TD VALIGN=TOP><B>Scripts</B>&nbsp;</TD>
+
+<TD VALIGN=TOP><TT>&lt;SCRIPT>&lt;/SCRIPT></TT>&nbsp;</TD>
+
+<TD VALIGN=TOP>(ainda n&atilde;o amplamente suportadas)&nbsp;</TD>
+</TR>
+</TABLE>
+
+<CENTER><PRE>&nbsp;</PRE></CENTER>
+
+<TABLE BORDER CELLPADDING=5 WIDTH="100%" >
+<TR>
+<TD VALIGN=TOP>Copyright &copy;1995, 1996 <A HREF="mailto:barebones@werbach.com">Kevin
+Werbach</A>. Redistribui&ccedil;&atilde;o n&atilde;o-comercial permitida.
+Este guia n&atilde;o &eacute; um produto da&nbsp; <A HREF="http://www.barebones.com">Bare
+Bones Software</A>; a similaridade dos nomes &eacute; pura coincid&ecirc;ncia.&nbsp;</TD>
+</TR>
+</TABLE>
+
+<CENTER><PRE>&nbsp;</PRE></CENTER>
+
+<CENTER><A HREF="#contents">Conte™do</A> | <A HREF="#general">LISTA DE TAGS</A>
+| <A HREF="http://werbach.com/barebones/barebone.txt">Vers“o em Texto</A>
+| <A HREF="http://werbach.com/home.html">Home Page do Kevin</A></CENTER>
+
+</BODY>
+</HTML>

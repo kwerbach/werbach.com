@@ -1,0 +1,1 @@
+<?php die(); ?>{"headers":{"Vary":"Vary: Cookie","Content-Type":"Content-Type: text\/html; charset=UTF-8","Last-Modified":"Last-Modified: Thu, 13 Jul 2017 17:44:40 GMT"},"uri":"werblog.com\/?paged=2&s=bitcoin&submit=search","blog_id":1,"post":0,"key":"blogwerblog.com80\/?paged=2&s=bitcoin&submit=search"}

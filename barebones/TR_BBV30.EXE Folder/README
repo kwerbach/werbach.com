@@ -1,0 +1,37 @@
+
+Hi,
+You will find the Turkish translation of the Bare Bone Guide to HTML.
+
+1-) As in V2.0 I add the Turkish character chart to the HTML document.
+
+2-)I made the TEXT file translation but people  may have some difficulties
+to look at just by typing it from the DOS prompt. So I included a file
+named DOS2WIN.EXE which converts DOS based Turkish character to WINDOWS based
+Turkish charecters.
+
+3-)Would you please add a simple line to your page
+to warn people who want to retrieve the plain text version. If they can not
+get any results from TR_BBV30.TXT they need to convers the document by using
+DOS2WIN.EXE and try any word processor to display. (Lets hope that this
+will work for every body ...)
+
+4-)There is a mising anchor in you original document. On BACKGROUNDS AN COLOR
+division you are pointing to /barebone_annotation#color . But there is no
+anchor named color within the annotaion file ..would you please check it?
+
+5-)this is the list of the files and their size
+
+
+DOS2WIN  EXE       8.224 27/10/94   12:23
+TR_BBANN HTM      11.394 25/07/96   13:03
+TR_BBINT HTM      15.409 25/07/96   12:46
+TR_BBV30 HTM      66.251 25/07/96   13:11
+TR_BBV30 TXT      16.772 25/07/96   13:22
+README            This file
+
+
+ahmet tevfik inan
+yildiz technical university
+istanbul/Turkey
+
+<mailto:tevfik@vm4381.ce.yildiz.edu.tr>

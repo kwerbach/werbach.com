@@ -1,0 +1,323 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                  H T M L  Í  H N O T S K U R N
+                   The Bare Bones Guide to HTML      
+ 
+                          by Kevin Werbach
+                        <http://werbach.com/>
+
+                      Útgáfa 3.0  --  21 júlí, 1996
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+Frumútgáfa þessa skjals er á: <http://werbach.com/barebones/>. 
+
+HTML Í HNOTSKURN er listi með HTML skipunum sem flestir vefskoðarar skilja.
+Þetta eru skipanir á HTML 3.2 staðlinum, auk þess Netscape aukaskipanir til og með
+útgáfu 3.0b5. Þessi vefsíða fer ekki í smáatriði yfir notkun skipananna. En hentar vel sem
+samanþjappað uppsláttarverk.
+Höfundur hefur tekið saman lista yfir aðrar HTML síður:
+<http://werbach.com/web/wwwhelp.html>
+Þetta er listi þýðanda: <http://www.ifi.uio.no/~arsaellb/ishtml.html>
+
+Ykkur er velkomið að senda höfundi athugasemdir:  <barebones@werbach.com>.  
+Eða þýðanda: <arsaellb@ifi.uio.no>
+
+
+GERÐ ÞESSARAR VEFSÍÐU
+---------------------------------------------------------------------------
+Vefsíðan lítur best út með jafnrýmuðu letri(monospaced).  
+
+Til glöggvunar eru mismunandi stillingar(attributes) sem hægt er að nota
+með sömu skipun, aðskildar. Það er oftast nær hægt að nota margar stillingar
+samtímis í sömu skipun.
+
+Skipanir eru skrifaðar með stórum stöfum á þessari vefsíðu til glöggvunar,
+en það skiptir nær aldrei máli hvort skipanirnar eru skrifað með stórum eða litlum stöfum í HTML skjali.
+
+
+
+TÁKN ÚTSKÍRÐ
+---------------------------------------------------------------------------
+URL    URL af ytra skjali (eða bara nafnið á skjalinu ef skjalið er í sömu möppu)
+?      Númmer (t.d. <H?> táknar <H1>, <H2>, <H3>, os.frv.)
+%      Prósentutala (t.d. <HR WIDTH="%"> táknar <HR WIDTH="50%">, os.frv.)
+***    Texti (t.d. ALT="***" táknar að skrifa eigi einhvern texta)    
+$$$$$$ Hexadesimal númmer (t.d. BGCOLOR="#$$$$$$" táknar BGCOLOR="#00FF1C", os.frv.)
+,,,    Brot (t.d. COORDS=",,," táknar COORDS="0,0,50,50", os.frv.)
+|      Valkostir (t.d. ALIGN=LEFT|RIGHT|CENTER táknar að þú eigir að velja einn valkostinn)
+
+
+SAMHÆFNI (hafa verður í huga að táknmálið HTML er stöðugt í þróun, og einnig að túlkun mismunandi veflesara er ólik)
+---------------------------------------------------------------------------
+(engin athugasemd) skrifað skv HTML 3.2 staðlinum.; ætti að skiljast af flestum vefslesurum 
+N1.0   Netscape aukaskipun, fyrst notað í Netscape útgáfu 1.0
+N1.1   Netscape aukaskipun, fyrst notað í Netscape útgáfu  1.1
+N2.0   Netscape aukaskipun, fyrst notað í Netscape útgáfu 2.0 
+N3.0B  Netscape aukaskipun, fyrst notað í Netscape útgáfu 3.0 beta
+
+===========================================================================
+===========================================================================
+
+
+
+GRUNNSKIPANIR  
+--------------------------------------------------------------------------- 
+       Gerð skjals    <HTML></HTML>      (byrjun og endir skjals)
+       Titill         <TITLE></TITLE>    (sett í haus<head>)
+       Haus           <HEAD></HEAD>      (með lýsandi opplýsingar s.s. titil)
+       Aðalhluti      <BODY></BODY>      (megnið af síðunni kemur hér)
+
+
+
+UPPBYGGINGARSKILGREINING  (útlit stjórnað af veflesaranum)
+---------------------------------------------------------------------------
+       Fyrirsögn          <H?></H?>          (the spec. defines 6 levels)
+       Staðsetning        <H? ALIGN=LEFT|CENTER|RIGHT></H?>
+       Skipting           <DIV></DIV>
+       Staðsetning        <DIV ALIGN=LEFT|RIGHT|CENTER|JUSTIFY></DIV>
+       Tilvitnun          <BLOCKQUOTE></BLOCKQUOTE>    (oftast aukagreinaskil)
+       Áhersluauki        <EM></EM>          (oftast skáletrað)
+       Meiri áhersluauki  <STRONG></STRONG>  (oftast feitletrað)
+       Tilvitnun          <CITE></CITE>      (oftast skáletrað)
+       Skipanalisti       <CODE></CODE>      (fyrir skipanalista)
+       Sýnishornskipun    <SAMP></SAMP>
+       Innsláttur frá lyklaborði   <KBD></KBD>
+       Breyta            <VAR></VAR>
+       Skilgreining       <DFN></DFN>        (ekki allir vefskoðarar skilja þessa skipun)
+       Netfang höfundar   <ADDRESS></ADDRESS>
+       Stórir bókstafir  <BIG></BIG>
+       Litlir bókstafir  <SMALL></SMALL>
+
+
+ÚTLITSSKILGREINING  (textaútlit stjórnað af höfundi)
+---------------------------------------------------------------------------
+       Feitletrun          <B></B>
+       Skáletrun           <I></I>
+N3.0b  Undirstrikun        <U></U>            (ekki allir veflesarar skilja þessa skipun)
+       Yfirstrikun         <STRIKE></STRIKE>  (ekki allir veflesarar skilja þessa skipun)
+N3.0b  Yfirstrikun         <S></S>            (ekki allir veflesarar skilja þessa skipun)
+       Undirsettur texti   <SUB></SUB>
+       Yfirsettur texti    <SUP></SUP>
+       Vélritunarskrift    <TT></TT>          (dæmi um jafnstórt letur(monospace))
+       Forsniðinn texti    <PRE></PRE>        (textinn kemur fram eins og hann er settur upp)
+         Leturbreidd       <PRE WIDTH=?></PRE>   
+       Miðjustilling       <CENTER></CENTER>  (for bæði texta og myndir)
+N1.0   Blikkandi texti     <BLINK></BLINK>    (notist með varúð)
+       Leturstærð          <FONT SIZE=?></FONT>       (frá 1-7)
+       Breyta leturstærð   <FONT SIZE="+|-?"></FONT>
+N1.0   Grunnletur stærð   <BASEFONT SIZE=?>  (frá 1-7; grunntala er 3)
+       Leturlitur         <FONT COLOR="#$$$$$$"></FONT>
+N3.0b  Velja leturgerð      <FONT FACE="***"></FONT>
+N3.0b  Fleir-dálkatexti     <MULTICOL COLS=?></MULTICOL>
+N3.0b    Breidd á milli dálka    <MULTICOL GUTTER=?></MULTICOL>
+N3.0b    Dálkabreidd       <MULTICOL WIDTH=?></MULTICOL>
+N3.0b  Rými                <SPACER>
+N3.0b    Rými-gerð         <SPACER TYPE=horizontal|vertical|block>
+N3.0b    Rými-stærð           <SPACER SIZE=?>
+N3.0b    Hæð/breidd rýmis     <SPACER WIDTH=? HEIGHT=?>
+N3.0b    Rými-staðsetning      <SPACER ALIGN=left|right|center>
+
+
+TENGINGAR OG MYNDIR
+---------------------------------------------------------------------------
+       Tenging   <A HREF="URL"></A>        
+       Tengja við ákveðinn stað   <A HREF="URL#***"></A>  (ef staðurinn er í öðru skjali)
+                          <A HREF="#***"></A>     (ef staðurinn er í sama skjali)
+N2.0   Bent á mark í ramma    <A HREF="URL" TARGET="***"></A>
+       Skilgreining á marki    <A NAME="***"></A> 
+       Birta mynd    <IMG SRC="URL">   
+         Staðsetning        <IMG SRC="URL" ALIGN=TOP|BOTTOM|MIDDLE|LEFT|RIGHT>    
+N1.0     Staðsetning        <IMG SRC="URL" ALIGN=TEXTTOP|ABSMIDDLE|
+                             BASELINE|ABSBOTTOM>
+         Texti í stað myndar        <IMG SRC="URL" ALT="***"> (ef mynd kemur ekki fram)
+         Breidd og hæð myndar       <IMG SRC="URL" WIDTH=? HEIGHT=?>   (í pixlum)
+         Kantur myndar           <IMG SRC="URL" BORDER=?>             (í pixlum)
+         Rými umhverfis mynd  <IMG SRC="URL" HSPACE=? VSPACE=?>      (í pixlum)
+N1.0     Mynd með minni upplausn innifalin    <IMG SRC="URL" LOWSRC="URL">    
+         Mynd með vísunum         <IMG SRC="URL" ISMAP>     (þarf map-forrit)
+         Mynd með vísunum         <IMG SRC="URL" USEMAP="URL">
+         Kort              <MAP NAME="***"></MAP>   (lýsing á kortinu)
+         Hluti          <AREA SHAPE="RECT" COORDS=",,," HREF="URL"|NOHREF> 
+N1.1     Togun(Client Pull)      <META HTTP-EQUIV="Refresh" CONTENT="?; URL=URL">
+N2.0     Innsetning hlutar     <EMBED SRC="URL">  (setja hlut á síðu, t.d. hljóð)
+N2.0     Stærð hlutar      <EMBED SRC="URL" WIDTH=? HEIGHT=?>   
+
+
+SKIL
+---------------------------------------------------------------------------
+       Málsgrein        <P></P>            (</p> er oft ekki nauðsynlegt)
+       Staðsetning     <P ALIGN=LEFT|CENTER|RIGHT></P>
+       Greinaskil       <BR>               
+       Rými við greinaskil   <BR CLEAR=LEFT|RIGHT|ALL>   
+       Lárétt lína     <HR>
+       Staðsetning      <HR ALIGN=LEFT|RIGHT|CENTER>
+       Hæð            <HR SIZE=?>      (í pixlum)
+       Breidd          <HR WIDTH=?>     (í pixlum)
+       Breidd        <HR WIDTH="%">     (prósenta af vefsíðu)
+      "Mött" lína       <HR NOSHADE>     (án þrívíddarútlits)    
+N1.0   Hindrun greinaskila         <NOBR></NOBR>       
+N1.0   Orðaskil       <WBR>              (greinaskil þar sem þörf er á)  
+
+
+LISTAR
+----------------------------------------------------------------------------
+       Ónúmeraður listi   <UL><LI></UL>      (<LI> er sett fyrir fram hvert atriði á lista)
+       Samanþjappaður listi          <UL COMPACT></UL>
+       Gerð hnappa      <UL TYPE=DISC|CIRCLE|SQUARE>  (fyrir allan listann)
+                          <LI TYPE=DISC|CIRCLE|SQUARE>  (fyrir þennan lista og áframhald)
+       Númeraður listi     <OL><LI></OL>      (<LI> er sett á undan hverju atriði á lista)
+       Samanþjappaður listi          <OL COMPACT></OL>
+       Gerð númers <OL TYPE=A|a|I|i|1>      (fyrir allan listann)
+                          <LI TYPE=A|a|I|i|1>      (fyrir þennan lista og áframhald)
+       Byrjunarnúmer  <OL START=?>             (fyrir allan listann)
+                          <LI VALUE=?>             (fyrir þennan lista og áframhald)
+       Skilgreiningarlisti  <DL><DT><DD></DL>  (<DT>=hugtak, <DD>=skilgreining)
+       Samanþjappaður listi          <DL COMPACT></DL>
+       Ónúmeraður listi        <MENU><LI></MENU>  (<LI> er sett á undan hverju atriði á lista)
+       Samanþjappaður listi          <MENU COMPACT></MENU>
+       Ónúmeraður listi   <DIR><LI></DIR>    (<LI> er sett fyrir framan hvert atriði á lista)
+       Samanþjappaður listi          <DIR COMPACT></DIR>
+
+
+BAKGRUNNAR OG LITUR
+---------------------------------------------------------------------------
+       Bakgrunnslitur   <BODY BACKGROUND="URL">  
+       Bakgrunnslitur   <BODY BGCOLOR="#$$$$$$"> (order is red/green/blue)
+         Texta litur       <BODY TEXT="#$$$$$$">
+         Tengingalitur       <BODY LINK="#$$$$$$">
+         Notuð tenging     <BODY VLINK="#$$$$$$">
+         Virk tenging      <BODY ALINK="#$$$$$$">
+(Nánari uppl. á <http://werbach.com/web/wwwhelp.html#color>)
+
+
+SÉRTÁKN  (notið litla bókstafi)
+---------------------------------------------------------------------------
+       Sértákn &#?;            (where ? is the ISO 8859-1 code)
+       <                 &lt;
+       >                 &gt;
+       &                 &amp;  
+       "                 &quot;
+       Registered TM     &#174;
+       Registered TM     &reg;
+       Copyright         &#169;
+       Copyright         &copy;
+       Non-Breaking Spc  &nbsp;
+(Complete list at <http://www.uni-passau.de/%7Eramsch/iso8859-1.html>)
+
+
+INNSLÁTTARFORM  (þarf oftast nær CGI-forrit til að gera gagn)
+---------------------------------------------------------------------------
+       Skilgreining      <FORM ACTION="URL" METHOD=GET|POST></FORM>      
+N2.0   File Upload      <FORM ENCTYPE="multipart/form-data></FORM>
+       Gerð innsláttar      <INPUT TYPE="TEXT|PASSWORD|CHECKBOX|RADIO|
+                          IMAGE|HIDDEN|SUBMIT|RESET">
+       Nafn innsláttar       <INPUT NAME="***">
+       Gildi innsláttar      <INPUT VALUE="***">
+       Valinn?         <INPUT CHECKED>  (reitur til að merkja við valkost)     
+       Stærð reitar       <INPUT SIZE=?>       (fjöldi bókstafa)
+       Hámarks lengd       <INPUT MAXLENGTH=?>  (fjöldi bókstafa)
+       Valkostalisti   <SELECT></SELECT>
+       Nafn á lista     <SELECT NAME="***"></SELECT>
+       # of Options     <SELECT SIZE=?></SELECT>
+       Fjölval  <SELECT MULTIPLE>    (hægt að velja meir enn einn valkost)  
+       Valkostir           <OPTION>           (valkostir sem eru í boði)
+       Fyrirfram valinn valkostur   <OPTION SELECTED>
+       Stærð innsláttarreits   <TEXTAREA ROWS=? COLS=?></TEXTAREA>
+       Nafn innsláttarreits      <TEXTAREA NAME="***"></TEXTAREA>
+N2.0   Samanþjöppun texta        <TEXTAREA WRAP=OFF|VIRTUAL|PHYSICAL></TEXTAREA>
+
+
+TÖFLUR
+---------------------------------------------------------------------------
+       Skilgreining     <TABLE></TABLE>
+       Rammi kringum töfluna     <TABLE BORDER></TABLE>    (af eða á)
+       Rammi kringum töfluna     <TABLE BORDER=?></TABLE>  (gildi eftir breidd ramma)
+       Rýmd í ramma töflunnar     <TABLE CELLSPACING=?>
+       Rýmd á milli ramma og innihalds     <TABLE CELLPADDING=?>
+       Töflubreidd    <TABLE WIDTH=?>           (í pixlum)
+       Töflubreidd    <TABLE WIDTH=%>           (í prósentum)
+       Töfluröð        <TR></TR>
+       Staðsetning        <TR ALIGN=LEFT|RIGHT|CENTER  
+                              VALIGN=TOP|MIDDLE|BOTTOM>
+       Skilgreinir einstaka töflureit       <TD></TD>          (sett innan töfluraðar)
+       Staðsetning innihalds í töflureit        <TD ALIGN=LEFT|RIGHT|CENTER
+                             VALIGN=TOP|MIDDLE|BOTTOM>
+       Hindrun greinaskila    <TD NOWRAP>
+       Dálkar að spanna  <TD COLSPAN=?>
+       Raðir að spanna     <TD ROWSPAN=?>
+N1.1   Breidd reitar    <TD WIDTH=?>     (í pixlum)
+N1.1   Breidd reitar    <TD WIDTH="%">     (í prósentum)
+N3.0b  Cell Color       <TD BGCOLOR="#$$$$$$">
+       Töfluhaus     <TH></TH>     
+       Staðsetning        <TH ALIGN=LEFT|RIGHT|CENTER
+                              VALIGN=TOP|MIDDLE|BOTTOM>
+       Hindrun greinaskila    <TH NOWRAP>
+       Dálkar að spanna  <TH COLSPAN=?>
+       Raðir að spanna     <TH ROWSPAN=?>
+N1.1   Breidd reitar    <TH WIDTH=?>     (í pixlum)
+N1.1   Breidd reitar    <TH WIDTH="%">     (í prósentum)
+N3.0b  Bakgrunnslitur reitar       <TH BGCOLOR="#$$$$$$">
+       Merking á töflu    <CAPTION></CAPTION>
+       Staðsetning        <CAPTION ALIGN=TOP|BOTTOM>   (yfir/undir töflu)
+
+
+RAMMAR  (FRAMES)
+---------------------------------------------------------------------------
+N2.0   Skjal rammans   <FRAMESET></FRAMESET>           (í stað <BODY>)
+N2.0   Hæð raða      <FRAMESET ROWS=,,,></FRAMESET>      (í pixlum eða %)
+N2.0   Hæð raða      <FRAMESET ROWS=*></FRAMESET>  (* = hlutfallsleg stærð)
+N2.0   Breidd dálka    <FRAMESET COLS=,,,></FRAMESET>      (í pixlum eða %)
+N2.0   Breidd dálka    <FRAMESET COLS=*></FRAMESET>  (* = hlutfallsleg stærð)
+N3.0b  Kantar          <FRAMESET FRAMEBORDER="yes|no">
+N3.0b  Breidd jaðars     <FRAMESET BORDER=?>
+N3.0b  Litur jaðars     <FRAMESET BORDERCOLOR="#$$$$$$">
+N2.0   Skilgreina ramma     <FRAME>           (innihald einstaka ramma)
+N2.0   Sýning á skjali <FRAME SRC="URL">
+N2.0   Nafn ramma       <FRAME NAME="***"|_blank|_self|_parent|_top>
+N2.0   Breidd jaðars     <FRAME MARGINWIDTH=?>    (hægri og vinstri jaðar)
+N2.0   Hæð jaðars    <FRAME MARGINHEIGHT=?>   (efsti og neðsti jaðar)
+N2.0   Flettikantur eða ekki?       <FRAME SCROLLING="YES|NO|AUTO">
+N2.0   Óbreytanleg stærð    <FRAME NORESIZE>
+N3.0b  Kantar          <FRAME FRAMEBORDER="yes|no">
+N3.0b  Litur kants     <FRAME BORDERCOLOR="#$$$$$$">
+N2.0   Innihald utan ramma <NOFRAMES></NOFRAMES>     (fyrir veflesara sem styðja ekki ramma)
+
+
+JAVA
+---------------------------------------------------------------------------
+       Java-forrit(Applet)           <APPLET></APPLET> 
+       Nafn á skjali javaforrits        <APPLET CODE="***"> 
+       Parameters       <APPLET PARAM NAME="***"> 
+       Staðsetning java-forrits         <APPLET CODEBASE="URL"> 
+       Einkenni java-forrits       <APPLET NAME="***">        (svo hægt sé að kalla á forritið)
+       Varatexti         <APPLET ALT="***">         (fyrir veflesara sem styðja ekki java) 
+       Staðsetning        <APPLET ALIGN="LEFT|RIGHT|CENTER"> 
+       Stærð             <APPLET WIDTH=? HEIGHT=?>  (í pixlum) 
+       Rými          <APPLET HSPACE=? VSPACE=?> (í pixlum) 
+
+
+ÝMISLEGT
+---------------------------------------------------------------------------
+       Athugasemdir          <!-- *** -->       (kemur ekki fram í veflesara)   
+       HTML 3.2 fyrirsögn         <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+       Leit möguleg       <ISINDEX>          (gefur til kynna leitanlegt HTML-skjal)   
+        Aðgerð(prompt)           <ISINDEX PROMPT="***">    (texti sem kynnir innslátt)
+       Leitun send      <A HREF="URL?***"></a>  (notaðu raunverulegt spurningamerki) 
+       URL í þessu skjali <BASE HREF="URL">  (staðsett í haus)   
+N2.0   Nafn á grunnramma <BASE TARGET="***">(staðsett í haus)
+       Samband     <LINK REV="***" REL="***" HREF="URL">  (í haus)
+       Viðbótarbreyta <META>             (staðsett í haus)
+       Úlitsskjal     <STYLE></STYLE>    (ekki allir veflesarar skilja þessa skipun)
+       Forrit          <SCRIPT></SCRIPT>  (ekki allir veflesarar skilja þessa skipun)
+
+
+
+
+
+===========================================================================
+Copyright (c) 1995-1997 Kevin Werbach.  Noncommercial redistribution is
+permitted.  This Guide is not a product of Bare Bones Software.  Contact the 
+author for more information.
+
+
+

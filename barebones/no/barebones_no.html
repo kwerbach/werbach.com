@@ -1,0 +1,3648 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+	<TITLE> Bare Bones Guide to HTML </TITLE> 
+
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<TABLE WIDTH="100%" BORDER="0">
+	<TR>
+		<TD BGCOLOR="#CCCCCC">
+			<HR SIZE="4" WIDTH="480" NOSHADE>
+			<H1 ALIGN="CENTER"> THE BARE BONES GUIDE TO HTML </H1> 
+			<P ALIGN="CENTER">
+				<B> av <A HREF="mailto:barebones@werbach.com"> Kevin Werbach</A> </B><br><br>
+ 				 oversatt av <A HREF="mailto:sondre@webmagi.no"> Sondre Skaug Bj&oslash;rnebekk</A> 
+            <I>
+					<BR><br>
+					Versjon 4.0 Formatert -- Februar 1999 </I>
+				<BR>
+				<HR SIZE="4" WIDTH="480" NOSHADE>
+		</TD>
+	</TR>
+</TABLE>
+<P>
+Den siste versjonen av dette dokumentet er tilgjengelig p&aring; <A HREF="http://werbach.com/barebones/">
+http://werbach.com/barebones/</A>,  der finner du ogs&aring; tekstversjonen av dokumentet, oversettelser og bakgrunnsmateriale.
+</P>
+The Bare Bones Guide to HTML gir en oversikt over alle elementer det er sannsynlig at 
+dagens nettlesere vil forst&aring;.  Jeg har tatt med alle elementene i den offisielle HTML 4.0
+anbefalingen med vanlige attributter, samt Netscapes og Microsofts utvidelser. Dette
+dokumentet er en konsis oversikt, ikke en komplett spesifikasjon; for offisiell
+informasjon om HTML og dets utvikling, referer til websiden til World Wide Web Consortium
+(W3C) p&aring; <a href="http://www.w3.org/MarkUp/">http://www.w3.org/MarkUp/</a>.
+<P>
+Guiden er skrevet med tanke p&aring; &aring; v&aelig;re s&aring; konsis som mulig, derfor g&aring;r den ikke i detalj 
+ang&aring;ende bruken av de ulike elementene. Du finner linker til gode steg-for-steg HTML
+guider p&aring; <A HREF="http://werbach.com/web/wwwhelp.html">http://werbach.com/web/wwwhelp.html</A>.
+
+<P>
+<P>
+	<A NAME="contents"> </A> 
+</P>
+<FONT SIZE="4"> <B> Innholdsfortegnelse </B> </FONT>
+<OL>
+	<LI>
+		<B> INTRODUKSJON </B>
+		<UL>
+			<LI>
+				<A HREF="http://werbach.com/barebones/intro.html#unique"> <B> Hva gj&oslash;r denne guiden unik ? </B> </A>
+			<LI>
+				<A HREF="http://werbach.com/barebones/intro.html#included"> <B> Hvilke HTML elementer er med ? </B> </A>
+			<LI>
+				<A HREF="http://werbach.com/barebones/intro.html#formatting"> <B> Hvordan er dokumentet formatert ? </B> </A>
+           (med en forklaring av symboler og forkortinger)
+		</UL>
+		<P>
+	<LI>
+		<B> HTML ELEMENTER (TAGS) </B>
+		<UL>
+			<LI>
+				<A HREF="#general"> <B> generelt (grunnleggende elementer) </B> </A> (alle HTML dokumenter b&oslash;r ha disse)
+			<LI>
+				<A HREF="#structure"> <B> strukturdefinisjoner </B> </A> (utseende styres av nettleserens forh&aring;ndsinnstillinger)
+			<LI>
+				<A HREF="#presentation"> <B> presentasjonsformatering </B> </A> (forfatteren spesifiserer utseende)
+			<LI>
+				<A HREF="#links"> <B> linker, grafikk og lyd </B> </A>
+			<LI>
+				<A HREF="#positioning"> <B> posisjonering </B> </A>
+			<LI>
+				<A HREF="#dividers"> <B> inndelinger </B> </A>
+			<LI>
+				<A HREF="#lists"> <B> lister </B> </A>
+			<LI>
+				<A HREF="#color"> <B> bakgrunnerog farger </B> </A>
+			<LI>
+				<A HREF="#special"> <B> spesialtegn </B> </A>
+			<LI>
+				<A HREF="#forms"> <B> skjemaer (forms) </B> </A>
+			<LI>
+				<A HREF="#tables"> <B> tabeller </B> </A>
+			<LI>
+				<A HREF="#frames"> <B> rammer (frames) </B> </A>
+			<LI>
+				<A HREF="#java"> <B> script og java </B> </A>
+			<LI>
+				<A HREF="#miscellaneous"> <B> diverse </B> </A>
+		</UL>
+		<P>
+			<B> Viktig: </B> Hvis du er usikker p&aring; forskjellene mellom de ulike HTML-versjonene,
+        foresl&aring;r jeg at du leser min vurdering av <a href="http://werbach.com/barebones/notes.html#HTML">HTMLs utvikling</a>, eller fra W3C: <A HREF="http://www.w3.org/pub/WWW/MarkUp/Activity">World Wide Web Consortium HTML activity statement.</A></P>
+</OL>
+<P ALIGN="CENTER">
+	<A NAME="general"> </A>
+<TABLE BORDER="0" WIDTH="100%">
+	<TR>
+		<TH COLSPAN="4">
+			<FONT SIZE="6"> GENERELT </FONT>
+			<HR SIZE="1" NOSHADE>
+		</TH>
+	</TR>
+	<TR>
+		<TD WIDTH="40">
+			&nbsp; 
+		</TD>
+		<TD WIDTH="120">
+			<B> Type dokument </B> 
+		</TD>
+		<TD WIDTH="200">
+			<TT> &lt;HTML&gt;&lt;/HTML&gt; </TT> 
+		</TD>
+		<TD>
+			(begynnelse og slutt p&aring; filen)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Tittel </B> 
+		</TD>
+		<TD>
+			<TT> &lt;TITLE&gt;&lt;/TITLE&gt; </TT> 
+		</TD>
+		<TD>
+			 (skal v&aelig;re i dokumenthodet)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Dokumenthode </B> 
+		</TD>
+		<TD>
+			<TT> &lt;HEAD&gt;&lt;/HEAD&gt; </TT> 
+		</TD>
+		<TD> 
+			(Beskrivende info, f.eks. tittel)	
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>       Dokumentkropp     </B> 
+		</TD>
+		<TD>
+			<TT> &lt;BODY&gt;&lt;/BODY&gt; </TT> 
+		</TD>
+		<TD>
+		      (hoveddelen av siden)
+		</TD>
+	</TR>
+</TABLE>
+<P ALIGN="CENTER">
+	<A NAME="structure"> </A> 
+<TABLE BORDER="0" WIDTH="100%">
+	<TR>
+		<TH COLSPAN="4">
+			<FONT SIZE="6"> STRUKTURDEFINISJONER  </FONT> 
+			<HR SIZE="1" NOSHADE>
+		</TH>
+	</TR>
+	<TR>
+		<TD WIDTH="40">
+			&nbsp; 
+		</TD>
+		<TD WIDTH="120">
+			<B>       Overskrift    </B> 
+		</TD>
+		<TD WIDTH="200">
+			<TT> &lt;H?&gt;&lt;/H?&gt; </TT> 
+		</TD>
+		<TD>
+		 (spesifikasjonen definerer 6 niv&aring;er)		
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Juster overskrift  </B> 
+		</TD>
+		<TD>
+			<TT> &lt;H? ALIGN=LEFT|CENTER|RIGHT&gt;&lt;/H?&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>       Inndeling (blokk)    </B> 
+		</TD>
+		<TD>
+			<TT> &lt;DIV&gt;&lt;/DIV&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Juster inndeling </B> 
+		</TD>
+		<TD COLSPAN="2">
+			<TT> &lt;DIV ALIGN=LEFT|RIGHT|CENTER|JUSTIFY&gt;&lt;/DIV&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Inndeling (inline) </B> 
+		</TD>
+		<TD>
+			<TT> &lt;SPAN&gt;&lt;/SPAN&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> <A HREF="http://werbach.com/barebones/notes.html#blockquote">      Sitatblokk    </A> </B> 
+		</TD>
+		<TD>
+			<TT> &lt;BLOCKQUOTE&gt;&lt;/BLOCKQUOTE&gt; </TT> 
+		</TD>
+		<TD>
+			    (vises som regel innrykket)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B>  Sitat </B> 
+		</TD>
+		<TD>
+			<TT> &lt;Q&gt;&lt;/Q&gt; </TT> 
+		</TD>
+		<TD>
+		   (for korte sitater)		
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Henvisning  </B> 
+		</TD>
+		<TD>
+			<TT> &lt;Q CITE="URL"&gt;&lt;/Q&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Utheving     </B> 
+		</TD>
+		<TD>
+			<TT> &lt;EM&gt;&lt;/EM&gt; </TT> 
+		</TD>
+		<TD>
+		          (vises vanligvis i kursiv)		
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>       Sterk utheving   </B> 
+		</TD>
+		<TD>
+			<TT> &lt;STRONG&gt;&lt;/STRONG&gt; </TT> 
+		</TD>
+		<TD>
+		  (vises vanligvis med fete typer)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>       Henvisning        </B> 
+		</TD>
+		<TD>
+			<TT> &lt;CITE&gt;&lt;/CITE&gt; </TT> 
+		</TD>
+		<TD>
+			(vises vanligvis i kursiv)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>       Kildekode         </B> 
+		</TD>
+		<TD>
+			<TT> &lt;CODE&gt;&lt;/CODE&gt; </TT> 
+		</TD>
+		<TD>
+			(for opplistinger av kildekode)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>       Eks. p&aring; utskrift  </B> 
+		</TD>
+		<TD>
+			<TT> &lt;SAMP&gt;&lt;/SAMP&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>   Eks. p&aring; innles.  </B> 
+		</TD>
+		<TD>
+			<TT> &lt;KBD&gt;&lt;/KBD&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>       Variabel         </B> 
+		</TD>
+		<TD>
+			<TT> &lt;VAR&gt;&lt;/VAR&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>       Definisjon       </B> 
+		</TD>
+		<TD>
+			<TT> &lt;DFN&gt;&lt;/DFN&gt; </TT> 
+		</TD>
+		<TD>
+			(ikke utbredt implementert)		
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>       Forfatteradresse  </B> 
+		</TD>
+		<TD>
+			<TT> &lt;ADDRESS&gt;&lt;/ADDRESS&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>  Stor skriftstr. </B> 
+		</TD>
+		<TD>
+			<TT> &lt;BIG&gt;&lt;/BIG&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>       Liten skriftstr. </B> 
+		</TD>
+		<TD>
+			<TT> &lt;SMALL&gt;&lt;/SMALL&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B>  Innsetting </B> 
+		</TD>
+		<TD>
+			<TT> &lt;INS&gt;&lt;/INS&gt; </TT> 
+		</TD>
+		<TD>
+		(viser tillegg i en ny versjon)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Endringstidspunkt</B> 
+		</TD>
+		<TD>
+			<TT> &lt;INS DATETIME=":::"&gt;&lt;/INS&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Kommentar</B> 
+		</TD>
+		<TD>
+			<TT> &lt;INS CITE="URL"&gt;&lt;/INS&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B>   Sletting          </B> 
+		</TD>
+		<TD>
+			<TT> &lt;DEL&gt;&lt;/DEL&gt; </TT> 
+		</TD>
+		<TD>
+			(viser sletting i en ny versjon)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Endringstidspunkt  </B> 
+		</TD>
+		<TD>
+			<TT> &lt;DEL DATETIME=":::"&gt;&lt;/DEL&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Kommentar</B> 
+		</TD>
+		<TD>
+			<TT> &lt;DEL CITE="URL"&gt;&lt;/DEL&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Forkortelse       </B> 
+		</TD>
+		<TD>
+			<TT> &lt;ACRONYM&gt;&lt;/ACRONYM&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Forkortelse   </B> 
+		</TD>
+		<TD>
+			<TT> &lt;ABBR&gt;&lt;/ABBR&gt; </TT> 
+		</TD>
+		<TD>
+		 (Uttalbar forkortelse slik som NUPI)
+		</TD>
+	</TR>
+</TABLE>
+<P ALIGN="CENTER">
+	<A NAME="presentation"> </A> 
+<TABLE BORDER="0" WIDTH="100%">
+	<TR>
+		<TH COLSPAN="4">
+			<FONT SIZE="6"> PRESENTASJONSFORMATERING  </FONT> 
+			<HR SIZE="1" NOSHADE>
+		</TH>
+	</TR>
+	<TR>
+		<TD WIDTH="40">
+			&nbsp; 
+		</TD>
+		<TD WIDTH="120">
+			<B> Fet skrift </B> 
+		</TD>
+		<TD WIDTH="200">
+			<TT> &lt;B&gt;&lt;/B&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Kursiv  </B> 
+		</TD>
+		<TD>
+			<TT> &lt;I&gt;&lt;/I&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B> Understreking    </B> 
+		</TD>
+		<TD>
+			<TT> &lt;U&gt;&lt;/U&gt; </TT> 
+		</TD>
+		<TD>
+	           (ikke fullt ut implementert)		
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>       Gjennomstreking   </B> 
+		</TD>
+		<TD>
+			<TT> &lt;STRIKE&gt;&lt;/STRIKE&gt; </TT> 
+		</TD>
+		<TD>
+			(ikke fullt ut implementert)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B> Gjennomstreking   </B> 
+		</TD>
+		<TD>
+			<TT> &lt;S&gt;&lt;/S&gt; </TT> 
+		</TD>
+		<TD>
+			(ikke fullt ut implementert)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Senket skrift    </B> 
+		</TD>
+		<TD>
+			<TT> &lt;SUB&gt;&lt;/SUB&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Hevet skrift     </B> 
+		</TD>
+		<TD>
+			<TT> &lt;SUP&gt;&lt;/SUP&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>       Skrivemaskin      </B> 
+		</TD>
+		<TD>
+			<TT> &lt;TT&gt;&lt;/TT&gt; </TT> 
+		</TD>
+		<TD>
+	          (eng: typewriter, vises monospaced)		
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> <A HREF="http://werbach.com/barebones/notes.html#xmp">      Preformatert     </A> </B> 
+		</TD>
+		<TD>
+			<TT> &lt;PRE&gt;&lt;/PRE&gt; </TT> 
+		</TD>
+		<TD>
+        		(viser mellomrom i teksten der det er) 		
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Bredde </B> 
+		</TD>
+		<TD>
+			<TT> &lt;PRE WIDTH=?&gt;&lt;/PRE&gt; </TT> 
+		</TD>
+		<TD>
+			(i antall tegn)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> <A HREF="http://werbach.com/barebones/notes.html#align">Sentrert         </A> </B> 
+		</TD>
+		<TD>
+			<TT> &lt;CENTER&gt;&lt;/CENTER&gt; </TT> 
+		</TD>
+		<TD>
+			(for b&aring;de tekst og bilder)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N1 
+		</TD>
+		<TD>
+			<B> Blinkende tekst   </B> 
+		</TD>
+		<TD>
+			<TT> &lt;BLINK&gt;&lt;/BLINK&gt; </TT> 
+		</TD>
+		<TD>
+			(den mest misbrukte tag noensinne)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>       Skriftst&oslash;rrelse   </B> 
+		</TD>
+		<TD>
+			<TT> &lt;FONT SIZE=?&gt;&lt;/FONT&gt; </TT> 
+		</TD>
+		<TD>
+		      (en verdi i omr&aring;det 1-7)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Endre skriftstr.</B> 
+		</TD>
+		<TD>
+			<TT> &lt;FONT SIZE="+|-?"&gt;&lt;/FONT&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Skriftfarge </B> 
+		</TD>
+		<TD>
+			<TT> &lt;FONT COLOR="#$$$$$$"&gt;&lt;/FONT&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B> Velg skrifttype   </B> 
+		</TD>
+		<TD>
+			<TT> &lt;FONT FACE="***"&gt;&lt;/FONT&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N4 
+		</TD>
+		<TD>
+			<B> St&oslash;rrelse i pkt  </B> 
+		</TD>
+		<TD>
+			<TT> &lt;FONT POINT-SIZE=?&gt;&lt;/FONT&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N4 
+		</TD>
+		<TD>
+			<B> Tykkelse </B> 
+		</TD>
+		<TD>
+			<TT> &lt;FONT WEIGHT=?&gt;&lt;/FONT&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B> Grunnst&oslash;rrelse   </B> 
+		</TD>
+		<TD>
+			<TT> &lt;BASEFONT SIZE=?&gt; </TT> 
+		</TD>
+		<TD>
+			(fra 1-7; standard er 3)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			MS 
+		</TD>
+		<TD>
+			<B> Rullende tekst    </B> 
+		</TD>
+		<TD>
+			<TT> &lt;MARQUEE&gt;&lt;/MARQUEE&gt; </TT> 
+		</TD>
+	</TR>
+</TABLE>
+<P ALIGN="CENTER">
+	<A NAME="positioning"> </A> 
+<TABLE BORDER="0" WIDTH="100%">
+	<TR>
+		<TH COLSPAN="4">
+			<FONT SIZE="6"> POSISJONERING </FONT> 
+			<HR SIZE="1" NOSHADE>
+		</TH>
+	</TR>
+	<TR>
+		<TD WIDTH="40">
+			N3 
+		</TD>
+		<TD WIDTH="120">
+			<B> Flere kolonner     </B> 
+		</TD>
+		<TD WIDTH="200">
+			<TT> &lt;MULTICOL COLS=?&gt;&lt;/MULTICOL&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N3 
+		</TD>
+		<TD>
+			<B> Marg              </B> 
+		</TD>
+		<TD>
+			<TT> &lt;MULTICOL GUTTER=?&gt;&lt;/MULTICOL&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N3 
+		</TD>
+		<TD>
+			<B> Kolonnebredde </B> 
+		</TD>
+		<TD>
+			<TT> &lt;MULTICOL WIDTH=?&gt;&lt;/MULTICOL&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N3 
+		</TD>
+		<TD>
+			<B> Mellomrom </B> 
+		</TD>
+		<TD>
+			<TT> &lt;SPACER&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N3 
+		</TD>
+		<TD>
+			<B> Type mellomrom </B> 
+		</TD>
+		<TD>
+			<TT> &lt;SPACER TYPE=HORIZONTAL|VERTICAL|BLOCK&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N3 
+		</TD>
+		<TD>
+			<B> St&oslash;rrelse </B> 
+		</TD>
+		<TD>
+			<TT> &lt;SPACER SIZE=?&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N3 
+		</TD>
+		<TD>
+			<B> Dimensjoner </B> 
+		</TD>
+		<TD>
+			<TT> &lt;SPACER WIDTH=? HEIGHT=?&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N3 
+		</TD>
+		<TD>
+			<B> Justering </B> 
+		</TD>
+		<TD>
+			<TT> &lt;SPACER ALIGN=LEFT|RIGHT|CENTER&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N4 
+		</TD>
+		<TD>
+			<B> Lagdeling </B> 
+		</TD>
+		<TD>
+			<TT> &lt;LAYER&gt;&lt;/LAYER&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N4 
+		</TD>
+		<TD>
+			<B> Navn</B> 
+		</TD>
+		<TD>
+			<TT> &lt;LAYER ID="***"&gt;&lt;/LAYER&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N4 
+		</TD>
+		<TD>
+			<B> Plassering  </B> 
+		</TD>
+		<TD>
+			<TT> &lt;LAYER LEFT=? TOP=?&gt;&lt;/LAYER&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N4 
+		</TD>
+		<TD>
+			<B> Rel. Posisjon </B> 
+		</TD>
+		<TD>
+			<TT> &lt;LAYER PAGEX=? PAGEY=?&gt;&lt;/LAYER&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N4 
+		</TD>
+		<TD>
+			<B> Kildefil </B> 
+		</TD>
+		<TD>
+			<TT> &lt;LAYER SRC="***"&gt;&lt;/LAYER&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N4 
+		</TD>
+		<TD>
+			<B> Stablingsorden </B> 
+		</TD>
+		<TD>
+			<TT> &lt;LAYER Z-INDEX=?&gt;&lt;/LAYER&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N4 
+		</TD>
+		<TD>
+			<B> Plass i stabel </B> 
+		</TD>
+		<TD>
+			<TT> &lt;LAYER ABOVE="***" BELOW="***"&gt;&lt;/LAYER&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N4 
+		</TD>
+		<TD>
+			<B> Dimensjoner </B> 
+		</TD>
+		<TD>
+			<TT> &lt;LAYER HEIGHT=? WIDTH=?&gt;&lt;/LAYER&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N4 
+		</TD>
+		<TD>
+			<B> Opptegningsomr&aring;de </B> 
+		</TD>
+		<TD>
+			<TT> &lt;LAYER CLIP=,,,&gt;&lt;/LAYER&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N4 
+		</TD>
+		<TD>
+			<B> Synlig?      </B> 
+		</TD>
+		<TD COLSPAN="2">
+			<TT> &lt;LAYER VISIBILITY=SHOW|HIDDEN|INHERIT&gt;&lt;/LAYER&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N4 
+		</TD>
+		<TD>
+			<B> Bakgrunn     </B> 
+		</TD>
+		<TD>
+			<TT> &lt;LAYER BACKGROUND="$$$$$$"&gt;&lt;/LAYER&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N4 
+		</TD>
+		<TD>
+			<B> Farge              </B> 
+		</TD>
+		<TD>
+			<TT> &lt;LAYER BGCOLOR="$$$$$$"&gt;&lt;/LAYER&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N4 
+		</TD>
+		<TD>
+			<B>  Lagdeling (inline)   </B> 
+		</TD>
+		<TD>
+			<TT> &lt;ILAYER&gt;&lt;/ILAYER&gt; </TT> 
+		</TD>
+		<TD>
+			(tar samme attributter som LAYER)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N4 
+		</TD>
+		<TD>
+			<B>  Alternativt Innhold </B> 
+		</TD>
+		<TD>
+			<TT> &lt;NOLAYER&gt;&lt;/NOLAYER&gt; </TT> 
+		</TD>
+	</TR>
+</TABLE>
+<P ALIGN="CENTER">
+	<A NAME="links"> </A> 
+<TABLE BORDER="0" WIDTH="100%">
+	<TR>
+		<TH COLSPAN="4">
+			<FONT SIZE="6"> LINKER, GRAFIKK OG LYD</FONT> 
+			<HR SIZE="1" NOSHADE>
+		</TH>
+	</TR>
+	<TR>
+		<TD WIDTH="40">
+			&nbsp; 
+		</TD>
+		<TD WIDTH="120">
+			<B> Link til noe </B> 
+		</TD>
+		<TD WIDTH="200">
+			<TT> &lt;A HREF="URL"&gt;&lt;/A&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>         Link til bokmerke    </B> 
+		</TD>
+		<TD>
+			<TT> &lt;A HREF="URL#***"&gt;&lt;/A&gt; </TT> 
+		</TD>
+		<TD>
+				(hvis i et annet dokument)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> </B> 
+		</TD>
+		<TD>
+			<TT> &lt;A HREF="#***"&gt;&lt;/A&gt; </TT> 
+		</TD>
+		<TD>
+			(hvis i samme dokument)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B> M&aring;lvindu         </B> 
+		</TD>
+		<TD>
+			<TT> &lt;A HREF="URL" TARGET="***"&gt;&lt;/A&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B> Hendelse v/klikk </B> 
+		</TD>
+		<TD>
+			<TT> &lt;A HREF="URL" ONCLICK="***"&gt;&lt;/A&gt; </TT> 
+		</TD>
+		<TD>
+			(Javascript) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B> Hendelse v/pek  </B> 
+		</TD>
+		<TD>
+			<TT> &lt;A HREF="URL" ONMOUSEOVER="***"&gt;&lt;/A&gt; </TT> 
+		</TD>
+		<TD>
+			(Javascript) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B> Hendelse v/pek vekk </B> 
+		</TD>
+		<TD>
+			<TT> &lt;A HREF="URL" ONMOUSEOUT="***"&gt;&lt;/A&gt; </TT> 
+		</TD>
+		<TD>
+			(Javascript) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Link til E-post</B> 
+		</TD>
+		<TD>
+			<TT> &lt;A HREF="mailto:@"&gt;&lt;/A&gt; </TT> 
+		</TD>
+	</TR>
+		<TR>
+		<TD>
+			N, MS 
+		</TD>
+		<TD>
+			<B> Spesifiser emne </B> 
+		</TD>
+		<TD>
+			<TT> &lt;A HREF="mailto:@?SUBJECT=***"&gt;&lt;/A&gt; </TT> 
+		</TD>
+		<td>
+			(virkelig '?')		
+		</td>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Definer bokemerke  </B> 
+		</TD>
+		<TD>
+			<TT> &lt;A NAME="***"&gt;&lt;/A&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Vis bilde     </B> 
+		</TD>
+		<TD>
+			<TT> &lt;IMG SRC="URL"&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Justering </B> 
+		</TD>
+		<TD COLSPAN="2">
+			<TT> &lt;IMG SRC="URL" ALIGN=TOP|BOTTOM|MIDDLE|LEFT|RIGHT&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N1 
+		</TD>
+		<TD>
+			<B> Justering </B> 
+		</TD>
+		<TD COLSPAN="2">
+			<TT> &lt;IMG SRC="URL" ALIGN=TEXTTOP|ABSMIDDLE|BASELINE|ABSBOTTOM&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Alternativ tekst </B> 
+		</TD>
+		<TD>
+			<TT> &lt;IMG SRC="URL" ALT="***"&gt; </TT> 
+		</TD>
+		<TD>
+			(hvis bildet ikke vises)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Dimensjoner (str)      </B> 
+		</TD>
+		<TD>
+			<TT> &lt;IMG SRC="URL" WIDTH=? HEIGHT=?&gt; </TT> 
+		</TD>
+		<TD>
+			(i bildepunkter)	 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> </B> 
+		</TD>
+		<TD>
+			<TT> &lt;IMG SRC="URL" WIDTH=% HEIGHT=%&gt; </TT> 
+		</TD>
+		<TD>
+			(i prosent) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>  Kantlinje </B> 
+		</TD>
+		<TD>
+			<TT> &lt;IMG SRC="URL" BORDER=?&gt; </TT> 
+		</TD>
+		<TD>
+		(i bildepunkter)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Plass rundt </B> 
+		</TD>
+		<TD>
+			<TT> &lt;IMG SRC="URL" HSPACE=? VSPACE=?&gt; </TT> 
+		</TD>
+		<TD>
+			(i bildepunkter) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N1 
+		</TD>
+		<TD>
+			<B> Lav-oppl&oslash;s. alt. </B> 
+		</TD>
+		<TD>
+			<TT> &lt;IMG SRC="URL" LOWSRC="URL"&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Bildekart</B> 
+		</TD>
+		<TD>
+			<TT> &lt;IMG SRC="URL" ISMAP&gt; </TT> 
+		</TD>
+		<TD>
+			(serverside imagemap)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Bildekart      </B> 
+		</TD>
+		<TD>
+			<TT> &lt;IMG SRC="URL" USEMAP="URL"&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			MS 
+		</TD>
+		<TD>
+			<B> Filmklipp </B> 
+		</TD>
+		<TD>
+			<TT> &lt;IMG DYNSRC="***" START="***" LOOP=?&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			MS 
+		</TD>
+		<TD>
+			<B> Bakgrunnslyd </B> 
+		</TD>
+		<TD>
+			<TT> &lt;BGSOUND SRC="***" LOOP=?|INFINITE&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Bildekart-definisjon </B> 
+		</TD>
+		<TD>
+			<TT> &lt;MAP NAME="***"&gt;&lt;/MAP&gt; </TT> 
+		</TD>
+		<TD>
+			(definerer bildekartet) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Bildekartsomr&aring;de </B> 
+		</TD>
+		<TD COLSPAN="2">
+			<TT> &lt;AREA SHAPE="DEFAULT|RECT|CIRCLE|POLY" COORDS=",,," HREF="URL"|NOHREF&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N1 
+		</TD>
+		<TD>
+			<B> Videresending  </B> 
+		</TD>
+		<TD COLSPAN="2">
+			<TT> &lt;META HTTP-EQUIV="Refresh" CONTENT="?; URL=URL"&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N2 
+		</TD>
+		<TD>
+			<B> Innebygg objekt </B> 
+		</TD>
+		<TD>
+			<TT> &lt;EMBED SRC="URL"&gt; </TT> 
+		</TD>
+		<TD>
+			(sett objekt inn p&aring; siden)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N2 
+		</TD>
+		<TD>
+			<B> St&oslash;rrelse p&aring; objekt  </B> 
+		</TD>
+		<TD>
+			<TT> &lt;EMBED SRC="URL" WIDTH=? HEIGHT=?&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Objekt </B> 
+		</TD>
+		<TD>
+			<TT> &lt;OBJECT&gt;&lt;/OBJECT&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Parametre </B> 
+		</TD>
+		<TD>
+			<TT> &lt;PARAM&gt; </TT> 
+		</TD>
+	</TR>
+</TABLE>
+<P ALIGN="CENTER">
+	<A NAME="dividers"> </A> 
+<TABLE BORDER="0" WIDTH="100%">
+	<TR>
+		<TH COLSPAN="4">
+			<FONT SIZE="6"> INNDELINGER </FONT> 
+			<HR SIZE="1" NOSHADE>
+		</TH>
+	</TR>
+	<TR>
+		<TD WIDTH="40">
+			&nbsp; 
+		</TD>
+		<TD WIDTH="120">
+			<B> <A HREF="http://werbach.com/barebones/notes.html#paragraph">Avsnitt</A> </B> 
+		</TD>
+		<TD WIDTH="200">
+			<TT> &lt;P&gt;&lt;/P&gt; </TT> 
+		</TD>
+		<TD>
+			(eng: paragraph, ofte implisitt slutt) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> <A HREF="http://werbach.com/barebones/notes.html#align">Justering</A> </B> 
+		</TD>
+		<TD>
+			<TT> &lt;P ALIGN=LEFT|CENTER|RIGHT&gt;&lt;/P&gt; </TT> 
+		</TD>
+	</TR>
+		<TR>
+		<TD>
+			N 
+		</TD>
+		<TD>
+			<B> Blokkjustering </B> 
+		</TD>
+		<TD>
+			<TT> &lt;P ALIGN=JUSTIFY&gt;&lt;/P&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Linjeskift </B> 
+		</TD>
+		<TD>
+			<TT> &lt;BR&gt; </TT> 
+		</TD>
+		<TD>
+			(tilsvarer return/enter/linjeskift) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Clear Textwrap </B> 
+		</TD>
+		<TD>
+			<TT> &lt;BR CLEAR=LEFT|RIGHT|ALL&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Horisontal linje </B> 
+		</TD>
+		<TD>
+			<TT> &lt;HR&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Justering </B> 
+		</TD>
+		<TD>
+			<TT> &lt;HR ALIGN=LEFT|RIGHT|CENTER&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Tykkelse </B> 
+		</TD>
+		<TD>
+			<TT> &lt;HR SIZE=?&gt; </TT> 
+		</TD>
+		<TD>
+			(i bildepunkter) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>  Bredde            </B> 
+		</TD>
+		<TD>
+			<TT> &lt;HR WIDTH=?&gt; </TT> 
+		</TD>
+		<TD>
+			(i bildepunkter) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Bredde (prosent) </B> 
+		</TD>
+		<TD>
+			<TT> &lt;HR WIDTH="%"&gt; </TT> 
+		</TD>
+		<TD>
+			(i prosent av sidebredde)	 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Massiv linje  </B> 
+		</TD>
+		<TD>
+			<TT> &lt;HR NOSHADE&gt; </TT> 
+		</TD>
+		<TD>
+			(ikke 3D utseende)     
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N1 
+		</TD>
+		<TD>
+			<B> Ikke linjeskift</B> 
+		</TD>
+		<TD>
+			<TT> &lt;NOBR&gt;&lt;/NOBR&gt; </TT> 
+		</TD>
+		<TD>
+			(eng: no break, hindrer linjeskift) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N1 
+		</TD>
+		<TD>
+			<B>  Orddeling    </B> 
+		</TD>
+		<TD>
+			<TT> &lt;WBR&gt; </TT> 
+		</TD>
+		<TD>
+		(hvor linjen skal deles om n&oslash;dvendig)   
+		</TD>
+	</TR>
+</TABLE>
+<P ALIGN="CENTER">
+	<A NAME="lists"> </A> 
+<TABLE BORDER="0" WIDTH="100%">
+	<TR>
+		<TH COLSPAN="4">
+			<FONT SIZE="6"> LISTER   </FONT> 
+			<HR SIZE="1" NOSHADE>
+		</TH>
+	</TR>
+	<TR>
+		<TD WIDTH="40">
+			&nbsp; 
+		</TD>
+		<TD WIDTH="120">
+			<B> Unummerert liste </B> 
+		</TD>
+		<TD WIDTH="200">
+			<TT> &lt;UL&gt;&lt;LI&gt;&lt;/UL&gt; </TT> 
+		</TD>
+		<TD>
+			(&lt;LI&gt; f&oslash;r hvert punkt i listen) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Kompakt liste</B> 
+		</TD>
+		<TD>
+			<TT> &lt;UL COMPACT&gt;&lt;/UL&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Type merking </B> 
+		</TD>
+		<TD>
+			<TT> &lt;UL TYPE=DISC|CIRCLE|SQUARE&gt; </TT> 
+		</TD>
+		<TD>
+			(for hele listen) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Type merking</B> 
+		</TD>
+		<TD>
+			<TT> &lt;LI TYPE=DISC|CIRCLE|SQUARE&gt; </TT> 
+		</TD>
+		<TD>
+			(for dette pkt og resten)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Nummerert liste   </B> 
+		</TD>
+		<TD>
+			<TT> &lt;OL&gt;&lt;LI&gt;&lt;/OL&gt; </TT> 
+		</TD>
+		<TD>
+			(&lt;LI&gt; f&oslash;r hvert punkt i listen) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Kompakt liste</B> 
+		</TD>
+		<TD>
+			<TT> &lt;OL COMPACT&gt;&lt;/OL&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Nummereringstype </B> 
+		</TD>
+		<TD>
+			<TT> &lt;OL TYPE=A|a|I|i|1&gt; </TT> 
+		</TD>
+		<TD>
+		(for hele listen)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Nummereringstype </B> 
+		</TD>
+		<TD>
+			<TT> &lt;LI TYPE=A|a|I|i|1&gt; </TT> 
+		</TD>
+		<TD>
+		(for dette pkt og resten)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Startverdi </B> 
+		</TD>
+		<TD>
+			<TT> &lt;OL START=?&gt; </TT> 
+		</TD>
+		<TD>
+			(for hele listen) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Startverdi</B> 
+		</TD>
+		<TD>
+			<TT> &lt;LI VALUE=?&gt; </TT> 
+		</TD>
+		<TD>
+			(for dette pkt og resten) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Definisjonsliste</B> 
+		</TD>
+		<TD>
+			<TT> &lt;DL&gt;&lt;DT&gt;&lt;DD&gt;&lt;/DL&gt; </TT> 
+		</TD>
+		<TD>
+			(&lt;DT&gt;=begrep (term), &lt;DD&gt;=definisjon) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Kompakt liste </B> 
+		</TD>
+		<TD>
+			<TT> &lt;DL COMPACT&gt;&lt;/DL&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Menyliste</B> 
+		</TD>
+		<TD>
+			<TT> &lt;MENU&gt;&lt;LI&gt;&lt;/MENU&gt; </TT> 
+		</TD>
+		<TD>
+			(&lt;LI&gt; f&oslash;r hvert punkt i listen) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Kompakt meny </B> 
+		</TD>
+		<TD>
+			<TT> &lt;MENU COMPACT&gt;&lt;/MENU&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Katalogliste </B> 
+		</TD>
+		<TD>
+			<TT> &lt;DIR&gt;&lt;LI&gt;&lt;/DIR&gt; </TT> 
+		</TD>
+		<TD>
+			(&lt;LI&gt; f&oslash;r hvert punkt i listen) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Kompakt kat.l. </B> 
+		</TD>
+		<TD>
+			<TT> &lt;DIR COMPACT&gt;&lt;/DIR&gt; </TT> 
+		</TD>
+	</TR>
+</TABLE>
+<P ALIGN="CENTER">
+	<A NAME="color"> </A> 
+<TABLE BORDER="0" WIDTH="100%">
+	<TR>
+		<TH COLSPAN="4">
+			<FONT SIZE="6"> BAKGRUNNER OG <A HREF="http://werbach.com/barebones/notes.html#color">FARGER</A> </FONT> 
+			<HR SIZE="1" NOSHADE>
+		</TH>
+	</TR>
+	<TR>
+		<TD WIDTH="40">
+			&nbsp; 
+		</TD>
+		<TD WIDTH="120">
+			<B> Bakgrunn </B> 
+		</TD>
+		<TD WIDTH="200">
+			<TT> &lt;BODY BACKGROUND="URL"&gt; </TT> 
+		</TD>
+		<TD>
+		(gjentakende bakgrunn)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			MS 
+		</TD>
+		<TD>
+			<B> Vannmerke </B> 
+		</TD>
+		<TD>
+			<TT> &lt;BODY BGPROPERTIES="FIXED"&gt; </TT> 
+		</TD>
+
+		<TD>
+			(ikke gjentakende)
+		</TD>
+
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Bakgrunnsfarge</B> 
+		</TD>
+		<TD>
+			<TT> &lt;BODY BGCOLOR="#$$$$$$"&gt; </TT> 
+		</TD>
+		<TD>
+			(rekkef&oslash;lge er r&oslash;d/gr&oslash;nn/bl&aring;)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Tekstfarge </B> 
+		</TD>
+		<TD>
+			<TT> &lt;BODY TEXT="#$$$$$$"&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Linkfarge </B> 
+		</TD>
+		<TD>
+			<TT> &lt;BODY LINK="#$$$$$$"&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Bes&oslash;kt link </B> 
+		</TD>
+		<TD>
+			<TT> &lt;BODY VLINK="#$$$$$$"&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Aktiv link </B> 
+		</TD>
+		<TD>
+			<TT> &lt;BODY ALINK="#$$$$$$"&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD COLSPAN="4">
+
+(Mer informasjon p&Aring; <A HREF="http://werbach.com/web/wwwhelp.html#color"> http://werbach.com/web/wwwhelp.html#color</A>) 
+			
+		</TD>
+	</TR>
+</TABLE>
+<P ALIGN="CENTER">
+	<A NAME="special"> </A> 
+<TABLE BORDER="0" WIDTH="100%">
+	<TR>
+		<TH COLSPAN="4">
+			<FONT SIZE="6"> SPESIELLE TEGN </FONT> 
+			<HR SIZE="1" NOSHADE>
+		</TH>
+	</TR>
+	<TR>
+		<TD WIDTH="40">
+			&nbsp; 
+		</TD>
+		<TD WIDTH="120">
+			<B> Spesialtegn </B> 
+		</TD>
+		<TD WIDTH="60">
+			<TT> &amp;#?; </TT> 
+		</TD>
+		<TD>
+			(der ? er ISO 8859-1 koden) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> &lt; </B> 
+		</TD>
+		<TD>
+			<TT> &amp;lt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> &gt; </B> 
+		</TD>
+		<TD>
+			<TT> &amp;gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> &amp; </B> 
+		</TD>
+		<TD>
+			<TT> &amp;amp; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> &quot; </B> 
+		</TD>
+		<TD>
+			<TT> &amp;quot; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Registered TM </B> 
+		</TD>
+		<TD>
+			<TT> &amp;#174; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Registered TM </B> 
+		</TD>
+		<TD>
+			<TT> &amp;reg; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Copyright </B> 
+		</TD>
+		<TD>
+			<TT> &amp;#169; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Copyright </B> 
+		</TD>
+		<TD>
+			<TT> &amp;copy; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Non-Breaking Space </B> 
+		</TD>
+		<TD>
+			<TT> &amp;nbsp; </TT> 
+		</TD>
+	</TR>
+<!-- Lagt til i norsk versjon -->
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Norsk &aelig; </B> 
+		</TD>
+		<TD>
+			<TT> &amp;aelig; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>        Norsk &AElig; </B> 
+		</TD>
+		<TD>
+			<TT> &amp;AElig; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>        Norsk &oslash;</B> 
+		</TD>
+		<TD>
+			<TT> &amp;oslash; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>        Norsk &Oslash; </B> 
+		</TD>
+		<TD>
+			<TT> &amp;Oslash; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>        Norsk &aring; </B> 
+		</TD>
+		<TD>
+			<TT> &amp;aring; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>        Norsk &Aring;</B> 
+		</TD>
+		<TD>
+			<TT> &amp;Aring; </TT> 
+		</TD>
+	</TR>
+
+
+<!-- Slutt p&aring; tillegg i norsk versjon -->
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD COLSPAN="4">
+	(Komplett liste finnes p&aring; <A HREF="http://www.uni-passau.de/%7Eramsch/iso8859-1.html"> http://www.uni-passau.de/%7Eramsch/iso8859-1.html</A>) 
+		</TD>
+	</TR>
+</TABLE>
+<P ALIGN="CENTER">
+	<A NAME="forms"> </A> 
+<TABLE BORDER="0" WIDTH="100%">
+	<TR>
+		<TH COLSPAN="4">
+			<FONT SIZE="6"> SKJEMAER (ENG: FORMS)</FONT> 
+			<HR SIZE="1" NOSHADE>
+		</TH>
+	</TR>
+	<TR>
+		<TD WIDTH="40">
+			&nbsp; 
+		</TD>
+		<TD WIDTH="120">
+			<B> Definer skjema </B> 
+		</TD>
+		<TD WIDTH="200">
+			<TT> &lt;FORM ACTION="URL" METHOD=GET|POST&gt;&lt;/FORM&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B> Opplasting av fil </B> 
+		</TD>
+		<TD COLSPAN="2">
+			<TT> &lt;FORM ENCTYPE="multipart/form-data"&gt;&lt;/FORM&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Inndatafelt </B> 
+		</TD>
+		<TD COLSPAN="2">
+			<TT> &lt;INPUT TYPE="TEXT|PASSWORD|CHECKBOX|RADIO| 
+				<BR>
+				FILE|BUTTON|IMAGE|HIDDEN|SUBMIT|RESET"&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Feltnavn </B> 
+		</TD>
+		<TD>
+			<TT> &lt;INPUT NAME="***"&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Feltverdi </B> 
+		</TD>
+		<TD>
+			<TT> &lt;INPUT VALUE="***"&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Avkrysset? </B> 
+		</TD>
+		<TD>
+			<TT> &lt;INPUT CHECKED&gt; </TT> 
+		</TD>
+		<TD>
+		(avskrysningsfelter og radioknapper)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Feltst&oslash;rrelse     </B> 
+		</TD>
+		<TD>
+			<TT> &lt;INPUT SIZE=?&gt; </TT> 
+		</TD>
+		<TD>
+		(i antall tegn)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Maksimal lengde </B> 
+		</TD>
+		<TD>
+			<TT> &lt;INPUT MAXLENGTH=?&gt; </TT> 
+		</TD>
+		<TD>
+			(i antall tegn)	 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Knapp  </B> 
+		</TD>
+		<TD>
+			<TT> &lt;BUTTON&gt;&lt;/BUTTON&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Navn p&aring; knapp </B> 
+		</TD>
+		<TD>
+			<TT> &lt;BUTTON NAME="***"&gt;&lt;/BUTTON&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Type knapp </B> 
+		</TD>
+		<TD COLSPAN="2">
+			<TT> &lt;BUTTON TYPE="SUBMIT|RESET|BUTTON"&gt;&lt;/BUTTON&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Tekst p&aring; knapp </B> 
+		</TD>
+		<TD>
+			<TT> &lt;BUTTON VALUE="***"&gt;&lt;/BUTTON&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Etikett </B> 
+		</TD>
+		<TD>
+			<TT> &lt;LABEL&gt;&lt;/LABEL&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Etikett for </B> 
+		</TD>
+		<TD>
+			<TT> &lt;LABEL FOR="***"&gt;&lt;/LABEL&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Utvalgsliste </B> 
+		</TD>
+		<TD>
+			<TT> &lt;SELECT&gt;&lt;/SELECT&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Navn p&aring; liste </B> 
+		</TD>
+		<TD>
+			<TT> &lt;SELECT NAME="***"&gt;&lt;/SELECT&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Antall alt.</B> 
+		</TD>
+		<TD>
+			<TT> &lt;SELECT SIZE=?&gt;&lt;/SELECT&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Flervalg? </B> 
+		</TD>
+		<TD>
+			<TT> &lt;SELECT MULTIPLE&gt; </TT> 
+		</TD>
+		<TD>
+			(kan velge ut mer enn en)  
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Valgbart element  </B> 
+		</TD>
+		<TD>
+			<TT> &lt;OPTION&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Utgangsverdi</B> 
+		</TD>
+		<TD>
+			<TT> &lt;OPTION SELECTED&gt; </TT> 
+		</TD>
+		<TD>
+		(valgt n&aring;r siden lastes)
+		</TD>
+
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Elementets verdi  </B> 
+		</TD>
+		<TD>
+			<TT> &lt;OPTION VALUE="***"&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Valgbar gruppe </B> 
+		</TD>
+		<TD>
+			<TT> &lt;OPTGROUP LABEL="***"&gt;&lt;/OPTGROUP&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Inndatafelt </B> 
+		</TD>
+		<TD>
+			<TT> &lt;TEXTAREA ROWS=? COLS=?&gt;&lt;/TEXTAREA&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Navn p&aring; felt </B> 
+		</TD>
+		<TD>
+			<TT> &lt;TEXTAREA NAME="***"&gt;&lt;/TEXTAREA&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N2 
+		</TD>
+		<TD>
+			<B> Tekstbrytning </B> 
+		</TD>
+		<TD COLSPAN="2">
+			<TT> &lt;TEXTAREA WRAP=OFF|HARD|SOFT&gt;&lt;/TEXTAREA&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Grupper elementer </B> 
+		</TD>
+		<TD>
+			<TT> &lt;FIELDSET&gt;&lt;/FIELDSET&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Forklaring  </B> 
+		</TD>
+		<TD>
+			<TT> &lt;LEGEND&gt;&lt;/LEGEND&gt; </TT> 
+		</TD>
+		<TD>
+		(overskrift for fieldsets)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Justering   </B> 
+		</TD>
+		<TD COLSPAN="2">
+			<TT> &lt;LEGEND ALIGN="TOP|BOTTOM|LEFT|RIGHT"&gt;&lt;/LEGEND&gt; </TT> 
+		</TD>
+	</TR>
+</TABLE>
+<P ALIGN="CENTER">
+	<A NAME="tables"> </A> 
+<TABLE BORDER="0" WIDTH="100%">
+	<TR>
+		<TH COLSPAN="4">
+			<FONT SIZE="6"> TABELLER </FONT> 
+			<HR SIZE="1" NOSHADE>
+		</TH>
+	</TR>
+	<TR>
+		<TD WIDTH="40">
+			&nbsp; 
+		</TD>
+		<TD WIDTH="120">
+			<B> Definer tabell </B> 
+		</TD>
+		<TD WIDTH="200">
+			<TT> &lt;TABLE&gt;&lt;/TABLE&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B> Justering </B> 
+		</TD>
+		<TD>
+			<TT> &lt;TABLE ALIGN=LEFT|RIGHT|CENTER&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Kantlinje </B> 
+		</TD>
+		<TD>
+			<TT> &lt;TABLE BORDER&gt;&lt;/TABLE&gt; </TT> 
+		</TD>
+		<TD>
+			(av/p&aring;)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>  Kantlinje    </B> 
+		</TD>
+		<TD>
+			<TT> &lt;TABLE BORDER=?&gt;&lt;/TABLE&gt; </TT> 
+		</TD>
+		<TD>
+			(i bildepunkter)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>          Cellemellomrom     </B> 
+		</TD>
+		<TD>
+			<TT> &lt;TABLE CELLSPACING=?&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Mellomrom i celle </B> 
+		</TD>
+		<TD>
+			<TT> &lt;TABLE CELLPADDING=?&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> &oslash;nsket bredde</B> 
+		</TD>
+		<TD>
+			<TT> &lt;TABLE WIDTH=?&gt; </TT> 
+		</TD>
+		<TD>
+		(i bildepunkter) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Prosentvis bredde  </B> 
+		</TD>
+		<TD>
+			<TT> &lt;TABLE WIDTH=%&gt; </TT> 
+		</TD>
+		<TD>
+		(i prosent av side)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B> Bakgrunnsfarge </B> 
+		</TD>
+		<TD>
+			<TT> &lt;TABLE BGCOLOR="$$$$$$"&gt;&lt;/TABLE&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Tabellramme </B> 
+		</TD>
+		<TD COLSPAN="2">
+			<TT> &lt;TABLE FRAME=VOID|ABOVE|BELOW|HSIDES|LHS|RHS| 
+				<BR>
+				VSIDES|BOX|BORDER&gt;&lt;/TABLE&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Tabellinjer </B> 
+		</TD>
+		<TD COLSPAN="2">
+			<TT> &lt;TABLE RULES=NONE|GROUPS|ROWS|COLS|ALL&gt;&lt;/TABLE&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			MS 
+		</TD>
+		<TD>
+			<B> Kantlinjefarge </B> 
+		</TD>
+		<TD>
+			<TT> &lt;TABLE BORDERCOLOR="$$$$$$"&gt;&lt;/TABLE&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			MS 
+		</TD>
+		<TD>
+			<B> M&oslash;rk kantlinje</B> 
+		</TD>
+		<TD>
+			<TT> &lt;TABLE BORDERCOLORDARK="$$$$$$"&gt;&lt;/TABLE&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			MS 
+		</TD>
+		<TD>
+			<B> Lys kantlinje</B> 
+		</TD>
+		<TD>
+			<TT> &lt;TABLE BORDERCOLORLIGHT="$$$$$$"&gt;&lt;/TABLE&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Rad i tabell </B> 
+		</TD>
+		<TD>
+			<TT> &lt;TR&gt;&lt;/TR&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Justering </B> 
+		</TD>
+		<TD COLSPAN="2">
+			<TT> &lt;TR ALIGN=LEFT|RIGHT|CENTER|MIDDLE|BOTTOM&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Celle i tabell </B> 
+		</TD>
+		<TD>
+			<TT> &lt;TD&gt;&lt;/TD&gt; </TT> 
+		</TD>
+		<TD>
+		(i en rad) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>    Justering     </B> 
+		</TD>
+		<TD COLSPAN="2">
+			<TT> &lt;TD ALIGN=LEFT|RIGHT|CENTER VALIGN=TOP|MIDDLE|BOTTOM&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Ikke linjeskift </B> 
+		</TD>
+		<TD>
+			<TT> &lt;TD NOWRAP&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Sl&aring; sammen kol. </B> 
+		</TD>
+		<TD>
+			<TT> &lt;TD COLSPAN=?&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Sl&aring; sammen rader</B> 
+		</TD>
+		<TD>
+			<TT> &lt;TD ROWSPAN=?&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B> &oslash;nsket bredde </B> 
+		</TD>
+		<TD>
+			<TT> &lt;TD WIDTH=?&gt; </TT> 
+		</TD>
+		<TD>
+			(i bildepunkter) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N3 
+		</TD>
+		<TD>
+			<B> Prosentvis bredde  </B> 
+		</TD>
+		<TD>
+			<TT> &lt;TD WIDTH="%"&gt; </TT> 
+		</TD>
+		<TD>
+			(i prosent av tabellen) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B> Cellefarge </B> 
+		</TD>
+		<TD>
+			<TT> &lt;TD BGCOLOR="#$$$$$$"&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Overskriftscelle </B> 
+		</TD>
+		<TD>
+			<TT> &lt;TH&gt;&lt;/TH&gt; </TT> 
+		</TD>
+		<TD>
+			(som data (&lt;TD&gt;), men overskriftstype)			
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Justering         </B> 
+		</TD>
+		<TD COLSPAN="2">
+			<TT> &lt;TH ALIGN=LEFT|RIGHT|CENTER|MIDDLE|BOTTOM&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Ikke linjeskift </B> 
+		</TD>
+		<TD>
+			<TT> &lt;TH NOWRAP&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Sl&aring; sammen kol. </B> 
+		</TD>
+		<TD>
+			<TT> &lt;TH COLSPAN=?&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Sl&aring; sammen rader </B> 
+		</TD>
+		<TD>
+			<TT> &lt;TH ROWSPAN=?&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B> &oslash;nsket bredde </B> 
+		</TD>
+		<TD>
+			<TT> &lt;TH WIDTH=?&gt; </TT> 
+		</TD>
+		<TD>
+			(i bildepunkter)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N3 
+		</TD>
+		<TD>
+			<B>  Prosentvis bredde </B> 
+		</TD>
+		<TD>
+			<TT> &lt;TH WIDTH="%"&gt; </TT> 
+		</TD>
+		<TD>
+			(i prosent av tabellen) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B> Cellefarge   </B> 
+		</TD>
+		<TD>
+			<TT> &lt;TH BGCOLOR="#$$$$$$"&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Tabellkropp </B> 
+		</TD>
+		<TD>
+			<TT> &lt;TBODY&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Tabellbunntekst </B> 
+		</TD>
+		<TD>
+			<TT> &lt;TFOOT&gt;&lt;/TFOOT&gt; </TT> 
+		</TD>
+		<TD>
+			(m&aring; komme f&oslash;r &lt;THEAD&gt;)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Tabelltopptekst </B> 
+		</TD>
+		<TD>
+			<TT> &lt;THEAD&gt;&lt;/THEAD&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Tabelltittel</B> 
+		</TD>
+		<TD>
+			<TT> &lt;CAPTION&gt;&lt;/CAPTION&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Justering  </B> 
+		</TD>
+		<TD>
+			<TT> &lt;CAPTION ALIGN=TOP|BOTTOM|LEFT|RIGHT&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Kolonne  </B> 
+		</TD>
+		<TD>
+			<TT> &lt;COL&gt;&lt;/COL&gt; </TT> 
+		</TD>
+		<TD>
+			(grupperer kolonne-attributter) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B>  Sl&aring; sammen </B> 
+		</TD>
+		<TD>
+			<TT> &lt;COL SPAN=?&gt;&lt;/COL&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Bredde </B> 
+		</TD>
+		<TD>
+			<TT> &lt;COL WIDTH=?&gt;&lt;/COL&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Prosentvis bredde </B> 
+		</TD>
+		<TD>
+			<TT> &lt;COL WIDTH="%"&gt;&lt;/COL&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Grupper kolonner </B> 
+		</TD>
+		<TD>
+			<TT> &lt;COLGROUP&gt;&lt;/COLGROUP&gt; </TT> 
+		</TD>
+		<TD>
+			(grupperer kolonne-strukturen) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Sl&aring; sammen         </B> 
+		</TD>
+		<TD>
+			<TT> &lt;COLGROUP SPAN=?&gt;&lt;/COLGROUP&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B>   Bredde             </B> 
+		</TD>
+		<TD>
+			<TT> &lt;COLGROUP WIDTH=?&gt;&lt;/COLGROUP&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Prosentvis bredde </B> 
+		</TD>
+		<TD>
+			<TT> &lt;COLGROUP WIDTH="%"&gt;&lt;/COLGROUP&gt; </TT> 
+		</TD>
+	</TR>
+</TABLE>
+<P ALIGN="CENTER">
+	<A NAME="frames"> </A> 
+<TABLE BORDER="0" WIDTH="100%">
+	<TR>
+		<TH COLSPAN="4">
+			<FONT SIZE="6"> RAMMER (ENG: FRAMES) </FONT> 
+			<HR SIZE="1" NOSHADE>
+		</TH>
+	</TR>
+	<TR>
+		<TD WIDTH="40">
+			4.0* 
+		</TD>
+		<TD WIDTH="120">
+			<B> Definer rammer </B> 
+		</TD>
+		<TD WIDTH="200">
+			<TT> &lt;FRAMESET&gt;&lt;/FRAMESET&gt; </TT> 
+		</TD>
+		<TD>
+			(erstatter  &lt;BODY&gt;) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B> Rader </B> 
+		</TD>
+		<TD>
+			<TT> &lt;FRAMESET ROWS=,,,&gt;&lt;/FRAMESET&gt; </TT> 
+		</TD>
+		<TD>
+			(punkter eller prosent)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B> Rader </B> 
+		</TD>
+		<TD>
+			<TT> &lt;FRAMESET ROWS=*&gt;&lt;/FRAMESET&gt; </TT> 
+		</TD>
+		<TD>
+			(* = relativ st&oslash;rrelse)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B>   Kolonner        </B> 
+		</TD>
+		<TD>
+			<TT> &lt;FRAMESET COLS=,,,&gt;&lt;/FRAMESET&gt; </TT> 
+		</TD>
+		<TD>
+			(punkter eller prosent)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B>   Kolonner         </B> 
+		</TD>
+		<TD>
+			<TT> &lt;FRAMESET COLS=*&gt;&lt;/FRAMESET&gt; </TT> 
+		</TD>
+		<TD>
+		(* = relativ st&oslash;rrelse)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B>  Kantlinjer </B> 
+		</TD>
+		<TD COLSPAN="2">
+			<TT> &lt;FRAMESET FRAMEBORDER="yes|no"&gt;&lt;/FRAMESET&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B> Kantlinjebredde </B> 
+		</TD>
+		<TD>
+			<TT> &lt;FRAMESET BORDER=?&gt;&lt;/FRAMESET&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B>   Kantlinjefarge </B> 
+		</TD>
+		<TD COLSPAN="2">
+			<TT> &lt;FRAMESET BORDERCOLOR="#$$$$$$"&gt;&lt;/FRAMESET&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N3 
+		</TD>
+		<TD>
+			<B>   Mellomrom </B> 
+		</TD>
+		<TD>
+			<TT> &lt;FRAMESET FRAMESPACING=?&gt;&lt;/FRAMESET&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B> Definer Frame </B> 
+		</TD>
+		<TD>
+			<TT> &lt;FRAME&gt; </TT> 
+		</TD>
+		<TD>
+			(innholdet i en bestemt ramme) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B>  Kilde </B> 
+		</TD>
+		<TD>
+			<TT> &lt;FRAME SRC="URL"&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B> Navn </B> 
+		</TD>
+		<TD COLSPAN="2">
+			<TT> &lt;FRAME NAME="***"|_blank|_self|_parent|_top&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B> Margbredde</B> 
+		</TD>
+		<TD>
+			<TT> &lt;FRAME MARGINWIDTH=?&gt; </TT> 
+		</TD>
+		<TD>
+		(h&oslash;yre og venstre marg)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B> Margh&oslash;yde  </B> 
+		</TD>
+		<TD>
+			<TT> &lt;FRAME MARGINHEIGHT=?&gt; </TT> 
+		</TD>
+		<TD>
+			(topp- og bunnmarg) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B>   Rullefelt? </B> 
+		</TD>
+		<TD>
+			<TT> &lt;FRAME SCROLLING="YES|NO|AUTO"&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B> Fast st&oslash;rrelse </B> 
+		</TD>
+		<TD>
+			<TT> &lt;FRAME NORESIZE&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B> Kantlinje </B> 
+		</TD>
+		<TD>
+			<TT> &lt;FRAME FRAMEBORDER="yes|no"&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B> Kantlinjefarge </B> 
+		</TD>
+		<TD>
+			<TT> &lt;FRAME BORDERCOLOR="#$$$$$$"&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B> Alt. innhold </B> 
+		</TD>
+		<TD>
+			<TT> &lt;NOFRAMES&gt;&lt;/NOFRAMES&gt; </TT> 
+		</TD>
+		<TD>
+			(for nettlesere uten frames) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B>  Ramme (inline)   </B> 
+		</TD>
+		<TD>
+			<TT> &lt;IFRAME&gt;&lt;/IFRAME&gt; </TT> 
+		</TD>
+		<TD>
+			(tar samme attributter som FRAME) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Dimensjoner (str)     </B> 
+		</TD>
+		<TD>
+			<TT> &lt;IFRAME WIDTH=? HEIGHT=?&gt;&lt;/IFRAME&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Dimensjoner (str) </B> 
+		</TD>
+		<TD>
+			<TT> &lt;IFRAME WIDTH="%" HEIGHT="%"&gt;&lt;/IFRAME&gt; </TT> 
+		</TD>
+	</TR>
+</TABLE>
+<P ALIGN="CENTER">
+	<A NAME="java"> </A> 
+<TABLE BORDER="0" WIDTH="100%">
+	<TR>
+		<TH COLSPAN="4">
+			<FONT SIZE="6"> SCRIPT OG JAVA </FONT> 
+			<HR SIZE="1" NOSHADE>
+		</TH>
+	</TR>
+	<TR>
+		<TD WIDTH="40">
+			&nbsp; 
+		</TD>
+		<TD WIDTH="120">
+			<B> Script </B> 
+		</TD>
+		<TD WIDTH="200">
+			<TT> &lt;SCRIPT&gt;&lt;/SCRIPT&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Kilde </B> 
+		</TD>
+		<TD>
+			<TT> &lt;SCRIPT SRC="URL"&gt;&lt;/SCRIPT&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Type </B> 
+		</TD>
+		<TD>
+			<TT> &lt;SCRIPT TYPE="***"&gt;&lt;/SCRIPT&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Spr&aring;k</B> 
+		</TD>
+		<TD>
+			<TT> &lt;SCRIPT LANGUAGE="***"&gt;&lt;/SCRIPT&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B> Alt. innhold</B> 
+		</TD>
+		<TD>
+			<TT> &lt;NOSCRIPT&gt;&lt;/NOSCRIPT&gt; </TT> 
+		</TD>
+		<TD>
+			(hvis script ikke st&oslash;ttes) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Applet </B> 
+		</TD>
+		<TD>
+			<TT> &lt;APPLET&gt;&lt;/APPLET&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>  Filnavn</B> 
+		</TD>
+		<TD>
+			<TT> &lt;APPLET CODE="***"&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>Parametre</B> 
+		</TD>
+		<TD>
+			<TT> &lt;APPLET PARAM NAME="***"&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Kildekatalog</B> 
+		</TD>
+		<TD>
+			<TT> &lt;APPLET CODEBASE="URL"&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Navngivning </B> 
+		</TD>
+		<TD>
+			<TT> &lt;APPLET NAME="***"&gt; </TT> 
+		</TD>
+		<TD>
+			(refereres utenfra med navn) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Alt. innhold         </B> 
+		</TD>
+		<TD>
+			<TT> &lt;APPLET ALT="***"&gt; </TT> 
+		</TD>
+		<TD>
+			(for nettlesere uten Java) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Justering  </B> 
+		</TD>
+		<TD>
+			<TT> &lt;APPLET ALIGN="LEFT|RIGHT|CENTER"&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> St&oslash;rrelse</B> 
+		</TD>
+		<TD>
+			<TT> &lt;APPLET WIDTH=? HEIGHT=?&gt; </TT> 
+		</TD>
+		<TD>
+			(i billedpunkter)  
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>          Mellomrom        </B> 
+		</TD>
+		<TD>
+			<TT> &lt;APPLET HSPACE=? VSPACE=?&gt; </TT> 
+		</TD>
+		<TD>
+		(i billedpunkter) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N4 
+		</TD>
+		<TD>
+			<B> Serverside Script </B> 
+		</TD>
+		<TD>
+			<TT> &lt;SERVER&gt;&lt;/SERVER&gt; </TT> 
+		</TD>
+	</TR>
+</TABLE>
+<P ALIGN="CENTER">
+	<A NAME="miscellaneous"> </A> 
+<TABLE BORDER="0" WIDTH="100%">
+	<TR>
+		<TH COLSPAN="4">
+			<FONT SIZE="6"> DIVERSE</FONT> 
+			<HR SIZE="1" NOSHADE>
+		</TH>
+	</TR>
+	<TR>
+		<TD WIDTH="40">
+			&nbsp; 
+		</TD>
+		<TD WIDTH="120">
+			<B> Kommentar </B> 
+		</TD>
+		<TD WIDTH="200">
+			<TT> &lt;!-- *** --&gt; </TT> 
+		</TD>
+		<TD>
+			(blir ikke vist av nettleseren)    
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> <A HREF="http://werbach.com/barebones/notes.html#prologue">       Dokumentdefinisjon </A> </B> 
+		</TD>
+		<TD COLSPAN="2">
+			<TT> &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>        Inpurfelt for s&oslash;k   </B> 
+		</TD>
+		<TD>
+			<TT> &lt;ISINDEX&gt; </TT> 
+		</TD>
+		<TD>
+			(idag brukes INPUT til dette)    
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>  Ledetekst </B> 
+		</TD>
+		<TD>
+			<TT> &lt;ISINDEX PROMPT="***"&gt; </TT> 
+		</TD>
+		<TD>
+			(tekst f&oslash;r inputfelt) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>  Send s&oslash;k </B> 
+		</TD>
+		<TD>
+			<TT> &lt;A HREF="URL?***"&gt;&lt;/a&gt; </TT> 
+		</TD>
+		<TD>
+			(bruk virkelig '?')  
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>  Filens URL-basis </B> 
+		</TD>
+		<TD>
+			<TT> &lt;BASE HREF="URL"&gt; </TT> 
+		</TD>
+		<TD>
+			(i dokumenthodet, til rel. linker) 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0* 
+		</TD>
+		<TD>
+			<B> Hovedvinduets navn </B> 
+		</TD>
+		<TD>
+			<TT> &lt;BASE TARGET="***"&gt; </TT> 
+		</TD>
+		<TD>
+			(i dokumenthodet)   
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B>  Sammenheng (link)  </B> 
+		</TD>
+		<TD>
+			<TT> &lt;LINK REV="***" REL="***" HREF="URL"&gt; </TT> 
+		</TD>
+		<TD>
+			(i dokumenthodet)   
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			N4 
+		</TD>
+		<TD>
+			<B>  Knytning til fil   </B> 
+		</TD>
+		<TD>
+			<TT> &lt;LINK TYPE="***" SRC="***"&gt;&lt;/LINK&gt; </TT> 
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Meta Informasjon </B> 
+		</TD>
+		<TD>
+			<TT> &lt;META&gt; </TT> 
+		</TD>
+		<TD>
+			(i dokumenthodet)   
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			&nbsp; 
+		</TD>
+		<TD>
+			<B> Stilark  </B> 
+		</TD>
+		<TD>
+			<TT> &lt;STYLE&gt;&lt;/STYLE&gt; </TT> 
+		</TD>
+		<TD>
+			(varierende implementasjon)
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			4.0 
+		</TD>
+		<TD>
+			<B> Skru av Bidirect    </B> 
+		</TD>
+		<TD>
+			<TT> &lt;BDO DIR=LTR|RTL&gt;&lt;/BDO&gt; </TT> 
+		</TD>
+		<TD>
+			(for bestemte tegnsett) 
+		</TD>
+	</TR>
+</TABLE>
+<PRE> 
+</PRE> 
+<TABLE BORDER="0" CELLPADDING="6" WIDTH="100%" BGCOLOR="#CCCCCC">
+	<TR>
+		<TD>
+		<center>
+Opphavsrett &copy; 1995-1999 <A HREF="mailto:barebones@werbach.com"> Kevin Werbach</A>.
+Ikkekommersiell redistribusjon er tillatt, s&aring; lenge innholdet ikke blir endret og denne meldingen beholdes. 
+Denne guiden er ikke et produkt fra Bare Bones Software.  
+Mer informasjon kan finnes p&aring; <A HREF="http://werbach.com/barebones"> http://werbach.com/barebones</A>. 	
+
+			<br>
+				<A HREF="http://validator.w3.org/"> <IMG BORDER="0" SRC="http://validator.w3.org/images/vh40.gif" ALT="Valid HTML 4.0!" HEIGHT="31" WIDTH="88"> </A> 
+			</center>
+		</TD>
+	</TR>
+</TABLE>
+</BODY>
+</HTML>

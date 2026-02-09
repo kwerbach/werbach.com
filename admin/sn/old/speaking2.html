@@ -1,0 +1,446 @@
+<!--Created: 2-15-2003, 15:42:00-->
+<HTML>
+<HEAD>
+<TITLE> SUPERNOVA 2003 - by pulver.com </TITLE>
+<SCRIPT LANGUAGE = "JavaScript">
+<!-- Hides script from non-compatible browsers
+       browserName = navigator.appName;
+       browserVer = parseInt(navigator.appVersion);
+            /*   if (top.frames.length > 1) {
+                        top.location="menu.html";
+                        } */
+               if (browserName == "Netscape" && browserVer >= 3) version
+               ="n3";
+               else {version = "n2"};
+               if (navigator.appVersion.substring(0,3) == '4.0')
+               {version="n3"};
+               if (version == "n3") {
+
+
+               nav1on = new Image;
+               nav1on.src = "images/bt_welcome_lit.gif";
+
+               nav1off = new Image;
+               nav1off.src = "images/bt_welcome.gif";
+
+               nav2on = new Image;
+               nav2on.src = "images/bt_brochure_lit.gif";
+
+               nav2off = new Image;
+               nav2off.src = "images/bt_brochure.gif";
+
+               nav3on = new Image;
+               nav3on.src = "images/bt_schedule_lit.gif";
+
+               nav3off = new Image;
+               nav3off.src = "images/bt_schedule.gif";
+
+               nav4on = new Image;
+               nav4on.src = "images/bt_attend_lit.gif";
+
+               nav4off = new Image;
+               nav4off.src = "images/bt_attend.gif";
+
+               nav5on = new Image;
+               nav5on.src = "images/bt_weblog_lit.gif";
+
+               nav5off = new Image;
+               nav5off.src = "images/bt_weblog.gif";
+
+               nav6on = new Image;
+               nav6on.src = "images/bt_advertise_lit.gif";
+
+               nav6off = new Image;
+               nav6off.src = "images/bt_advertise.gif";
+
+               nav7on = new Image;
+               nav7on.src = "images/bt_speaking_lit.gif";
+
+               nav7off = new Image;
+               nav7off.src = "images/bt_speaking.gif";
+
+               nav8on = new Image;
+               nav8on.src = "images/bt_hotel_lit.gif";
+
+               nav8off = new Image;
+               nav8off.src = "images/bt_hotel.gif";
+
+               nav9on = new Image;
+               nav9on.src = "images/bt_press_lit.gif";
+
+               nav9off = new Image;
+               nav9off.src = "images/bt_press.gif";
+               nav10on = new Image;
+               nav10on.src = "images/bt_events_lit.gif";
+
+               nav10off = new Image;
+               nav10off.src = "images/bt_events.gif";
+
+               nav11on = new Image;
+               nav11on.src = "images/bt_register_lit.gif";
+
+               nav11off = new Image;
+               nav11off.src = "images/bt_register.gif";
+               nav12on = new Image;
+               nav12on.src = "images/bt_exhibits_lit.gif";
+
+               nav12off = new Image;
+               nav12off.src = "images/bt_exhibits.gif";
+               nav13on = new Image;
+               nav13on.src = "images/bt_report_lit.gif";
+
+               nav13off = new Image;
+               nav13off.src = "images/bt_report.gif";
+
+
+               nav14on = new Image;
+               nav14on.src = "images/bt_about_lit.gif";
+
+               nav14off = new Image;
+               nav14off.src = "images/bt_about.gif";
+
+
+
+             }
+       function img_act(imgName) {
+               if (version == "n3") {
+               imgOn = eval(imgName + "on.src");
+               document [imgName].src = imgOn;
+               }
+       }
+       function img_inact(imgName) {
+               if (version == "n3") {
+               imgOff = eval(imgName + "off.src");
+               document [imgName].src = imgOff;
+               }
+       }
+function isBlank(s)
+{
+  if (s != null)
+    for (var i = 0; i < s.length; i++)
+    {
+      var c = s.charAt(i);
+      if (c != ' ' && c != '\n' && c != '\t')
+        return(false);
+    }
+  return(true);
+}
+
+// checkes for a valid email address string
+function validEmail(s)
+{
+  return (/^[^@]+@[^@]+$/.exec(s) != null)
+}
+
+
+function verify(f)
+{
+  if (isBlank(f.first.value) || isBlank(f.last.value) ||
+  isBlank(f.email.value) || isBlank(f.phone.value) || isBlank(f.title.value)
+  || isBlank(f.company.value))
+  {
+    alert("You must supply the following information:\n\n\tFirst Name\n\tLast
+    Name\n\tEmail Address\n\tPhone Number\n\tTitle\n\tCompany");
+    return(false);
+  }
+  if (!validEmail(f.email.value))
+  {
+    alert("Invalid Email Address:\n\n\t" + f.email.value);
+    return(false);
+  }
+  if (isBlank(f.session.value))
+  {
+    alert("Please specify Proposed Session Title");
+    return(false);
+  }
+  return(true);
+}
+// End hide script -->
+</SCRIPT>
+</HEAD>
+<BODY text=white vLink=yellow link=yellow leftMargin=0 topMargin=0
+marginwidth="0" marginheight="0">
+<table border=0 cellpadding=0 cellspacing="0" width="100%" HEIGHT="113">
+<tr><td WIDTH="430"><IMG SRC="images/banner.gif" WIDTH="430" HEIGHT="113"
+BORDER="0"></td><td width="100%" background="images/bg_topmid.gif">
+
+<table border=0 cellpadding=0 cellspacing="0" width="100%" HEIGHT="113"
+background="images/bg_topmid.gif"><tr valign="bottom"><td><IMG SRC=
+"images/topmid.gif" WIDTH="3" HEIGHT="50" BORDER="0"></td><td><IMG SRC=
+"images/topmid.gif" WIDTH="3" HEIGHT="50" BORDER="0"></td></tr><tr valign=
+"bottom"><td background="images/bg_upper.gif"><a href="register.html"
+onMouseover = "img_act('nav11')" onMouseout = "img_inact('nav11')"><IMG SRC=
+"images/bt_register.gif" WIDTH="136" HEIGHT="25" BORDER="0" name="nav11"></A>
+</td><td background="images/bg_upper.gif"><a href="schedule.html"  onMouseover
+= "img_act('nav3')" onMouseout = "img_inact('nav3')"><IMG SRC=
+"images/bt_schedule.gif" WIDTH="152" HEIGHT="25" BORDER="0" name="nav3"></A>
+</td></tr><tr valign="bottom"><td background="images/bg_lower.gif">
+<a href="http://snblog.pulver.com/2003/"  onMouseover = "img_act('nav5')"
+onMouseout = "img_inact('nav5')"><IMG SRC="images/bt_weblog.gif" WIDTH="136"
+HEIGHT="38" BORDER="0" name="nav5"></A></td><td background=
+"images/bg_lower.gif"><a href="speaking.html"  onMouseover = "img_act('nav7')"
+onMouseout = "img_inact('nav7')"><IMG SRC="images/bt_speaking.gif" WIDTH="152"
+HEIGHT="38" BORDER="0" name="nav7"></A></td></tr></table></td><td WIDTH="32">
+<IMG SRC="images/top_right.gif" WIDTH="32" HEIGHT="113" BORDER="0"></td></tr>
+</table>
+
+<table border=0 cellpadding=0 cellspacing="0" width="100%" HEIGHT="71">
+<tr valign="top"><td HEIGHT="71"><IMG SRC="images/bt-hd_left.gif" WIDTH="32"
+HEIGHT="71" BORDER="0"></td><td width="100%" background="images/bg_bt-hd.gif">
+<a href="index.html"  onMouseover = "img_act('nav1')" onMouseout =
+"img_inact('nav1')"><IMG SRC="images/bt_welcome.gif" WIDTH="80" HEIGHT="35"
+BORDER="0" name="nav1"></A><a href="brochure.html"  onMouseover =
+"img_act('nav2')" onMouseout = "img_inact('nav2')"><IMG SRC=
+"images/bt_brochure.gif" WIDTH="110" HEIGHT="35" BORDER="0" name="nav2"></A><a
+href="attend.html"  onMouseover = "img_act('nav4')" onMouseout =
+"img_inact('nav4')"><IMG SRC="images/bt_attend.gif" WIDTH="103" HEIGHT="35"
+BORDER="0" name="nav4"></A><a href="hotel.html"  onMouseover =
+"img_act('nav8')" onMouseout = "img_inact('nav8')"><IMG SRC=
+"images/bt_hotel.gif" WIDTH="75" HEIGHT="35" BORDER="0" name="nav8"></A><a
+href="http://www.pulver.com/reports/supernova/"  onMouseover =
+"img_act('nav13')" onMouseout = "img_inact('nav13')"><IMG SRC=
+"images/bt_report.gif" WIDTH="110" HEIGHT="35" BORDER="0" name="nav13"></A><a
+href="exhibits.html"  onMouseover = "img_act('nav12')" onMouseout =
+"img_inact('nav12')"><IMG SRC="images/bt_exhibits.gif" WIDTH="105" HEIGHT="35"
+BORDER="0" name="nav12"></A><BR><IMG SRC="images/hd_speaking.gif" WIDTH="293"
+HEIGHT="36" BORDER="0"></td><td><IMG SRC="images/bt-hd_right.gif" WIDTH="32"
+HEIGHT="71" BORDER="0"></td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%"
+background="images/bg_main.gif">
+<tr valign="top"><td background="images/bg_left.gif" WIDTH="32"><IMG SRC=
+"images/bg_left.gif" WIDTH="32" HEIGHT="22" BORDER="0"></td><td width="100%"
+background="images/bg_main.gif"><font face="Verdana, Arial, Helvetica" size=
+"2"><BR>
+<!----BODY TEXT start--->
+
+
+
+
+
+<table border="0" cellpadding="1" cellspacing="1" align="right"><tr><td><IMG
+SRC="images/smalls/smh_blair.jpg" WIDTH="60" HEIGHT="72" BORDER="0"></td><td>
+<IMG SRC="images/smalls/smh_chapin.jpg" WIDTH="60" HEIGHT="72" BORDER="0" ALT=
+"smh_chapin.jpg - 2854 Bytes"></td></tr>
+<tr><td><IMG SRC="images/smalls/smh_donato.jpg" WIDTH="60" HEIGHT="72" BORDER=
+"0" ALT="smh_donato.jpg - 3048 Bytes"></td><td><IMG SRC=
+"images/smalls/smh_heltai.jpg" WIDTH="60" HEIGHT="72" BORDER="0" ALT=
+"smh_heltai.jpg - 3331 Bytes"></td></tr>
+<tr><td><IMG SRC="images/smalls/smh_johnston.jpg" WIDTH="60" HEIGHT="72"
+BORDER="0" ALT="smh_johnston.jpg - 2894 Bytes"></td><td><IMG SRC=
+"images/smalls/smh_kimzey.jpg" WIDTH="60" HEIGHT="72" BORDER="0" ALT=
+"smh_kimzey.jpg - 2927 Bytes"></td></tr>
+<tr><td><IMG SRC="images/smalls/smh_ko.jpg" WIDTH="60" HEIGHT="72" BORDER="0"
+ALT="smh_ko.jpg - 3185 Bytes"></td><td><IMG SRC="images/smalls/smh_lynch.jpg"
+WIDTH="60" HEIGHT="72" BORDER="0" ALT="smh_lynch.jpg - 3918 Bytes"></td></tr>
+<tr><td><IMG SRC="images/smalls/smh_mehlman.jpg" WIDTH="60" HEIGHT="72"
+BORDER="0" ALT="smh_mehlman.jpg - 3408 Bytes"></td><td><IMG SRC=
+"images/smalls/smh_trott.jpg" WIDTH="60" HEIGHT="72" BORDER="0" ALT=
+"smh_trott.jpg - 3782 Bytes"></td></tr>
+<tr><td colspan="2"><font face="Arial" size="1">Plus many more!</td></tr>
+</table>
+
+
+
+
+
+
+<!--START CONTENT-->
+
+     <p><font face="Verdana, Arial, Helvetica" size="+1"><b>Supernova 2003
+     Speaker
+        List</b></font> </p>
+      <p><font face="Verdana, Arial, Helvetica" size="2">
+        -   <b><a href="http://www.aula.cc/~marko/">Marko Ahtisaari</a></b>,
+        Insight &amp; Foresight Unit, Nokia<br>
+        -   <b><a
+href="http://www.kenamea.com/company_mgt.html#john">John Blair</a></b>,
+Chairman, Kenamea<br>
+        -   <b><a href=
+        "http://www.realnetworks.com/company/investor/execbios.html#brown">
+        Merrill Brown</a></b>, SVP of RealOne Services, RealNetworks<br>
+        -   <b><a href="http://www.vanu.com/">John Chapin</a></b>, CTO,
+Vanu<br>
+        -   <b><a href="http://www.dashes.com/anil/">Anil Dash</a></b>, VP
+of Business Development, Six Apart<br>
+        <font face="Verdana, Arial, Helvetica" size="2">- <b><a href=
+        "http://www.craphound.com">Cory
+        Doctorow</a></b>, Evangelist, Electronic Frontier Foundation<br>
+        </font>-   <b><a
+href="http://www.grandcentral.com/company/mgmt/cdonato.html">Craig
+Donato</a></b>, CEO, Grand Central Communications<br>
+        -  <b><a
+href="http://weblog.siliconvalley.com/column/dangillmor/">Dan
+Gillmor</a></b>, Columnist, San Jose Mercury News<br>
+        -  <a href="http://www.telesym.com/about.php?page=mgmt"><b>Raju
+        Gulabani</b></a>, CEO, Telesym<br>
+        <font face="Verdana, Arial, Helvetica" size="2">- <a href=
+        "http://www.hlhz.com/"><b>Paul
+        Hammer</b></a>, Senior VP, Houlihan Lokey Howard and Zukin<br>
+        -   <b><a
+href="http://www.sanasecurity.com/company/management/">Marc
+Hedlund</a></b>, VP of Engineering, Sana Security<br>
+        -   <b><a href="http://www.fleetboston.com">Blaise Heltai</a></b>,
+Managing Director, Global Internet Strategy, FleetBoston Financial<br>
+        -   <b><a href="http://www.joysticknation.com">J.C. Herz</a></b>,
+        Joystick Nation<br>
+        -   <b><a href=
+        "http://www.polarisventures.com/who/bio_m_hirshland.html">Mike
+        Hirshland</a></b>, General Partner, Polaris Venture Partners<br>
+        -   <b><a
+href="http://www.newbay.com/pholahan.html">Paddy
+Holahan</a></b>, CEO, NewBay (Ireland)<br>
+        -  <a href="http://www.vonage.com/corporate/aboutus_holder.php"><b>
+        Louis Holder</b></a>, EVP of Product Development, Vonage<br>
+        -   <b><a href="http://www.reedhundt.com">Reed Hundt</a></b>, McKinsey
+        &amp; Co., former FCC Chairman<br>
+	-   <b><a href="http://www.isen.com">David Isenberg</a></b>, Isen.com<br>
+        -   <b><a href="http://joi.ito.com">Joichi Ito</a></b>, CEO, Neoteny
+        Co. Ltd. (Japan)<br>
+        -  <a href="http://www.peerdirect.com/"><b>Britt Johnston</b></a>,
+        CTO, PeerDirect<br>
+        - <a href="http://www.srfunds.com/meet/team/Kimzey.html"><b>Jackie
+        Kimzey</b></a>, General Partner, Sevin Rosen Funds<br>
+        -   <b><a href="http://cincro.com/cincro/HomeApp/about">John Ko</a></b
+        >, CEO, Cincro<br>
+        -   <b><a href="http://www.bbxtechnologies.com/comp_board.html">Jim
+        Kollegger</a></b>, CEO, BBX Technologies<br>
+        -   <b><a href="http://www.leggmason.com/capitalmarkets/research/
+focus/telecommunications.asp">Blair Levin</a></b>, Managing Director, Legg
+Mason<br>
+        -   <b><a href="http://www.neocarta.com/team_levy.htm">Ellen
+Levy</a></b>, Managing Director, Neocarta Ventures<br>
+        -   <b><a href="http://www.klynch.com/">Kevin Lynch</a></b>, Chief
+        Software Architect, Macromedia<br>
+        -   <b><a href="http://www.battelle.org/news/03/2-6-03McGinn.stm">Vice
+        Admiral Dennis McGinn</a></b>, US Navy (retired)<br>
+        -   <b><a href="http://www.embracenetworks.com/about/management.html">Maria
+		        Martinez</a></b>, Corporate VP, Mobility & Service Provider Solutions, Microsoft<br>
+        <font face="Verdana, Arial, Helvetica" size="2">- <b><a
+href="http://www.socialtext.com/bio-ross-mayfield.html">Ross
+Mayfield</a></b>, CEO, SocialText<br>
+        </font>-   <b><a href="http://www.ta.doc.gov/OTPolicy/AssisSec.htm">
+        Bruce
+Mehlman</a></b>, Ass't Secretary for Technology Policy, US Dep't of Commerce
+<br>
+        -   <b><a href="http://nikolajn.ascio.com/">Nikolaj Nyholm</a></b>,
+        Founder &amp; CTO, Ascio Technologies (Denmark)<br>
+        -   <b><a href="http://www.fcc.gov/osp/">Bob Pepper</a></b>, Chief
+of Policy Development, FCC<br>
+        -   <b><a href="http://www.sun.com/executives/perspectives/free.html">
+        Simon Phipps</a></b>, Chief Technology Evangelist, Sun Microsystems<br
+        >
+        -   <b><a href=
+        "http://www.groxis.com/cgi-bin/grok/g_co_management.html">R.J. Pittman
+        </a></b>, CEO, Groxis<br>
+        -   <b><a href="http://www.shirky.com">Clay Shirky</a></b>, Author and
+        Consultant<br>
+        -   <b><a href="http://www.google.com/corporate/execs.html#craig">
+        Craig Silverstein</a></b>, Director of Technology, Google<br>
+        -   <b><a href="http://www.publicknowledge.org/about-us/staff.php">
+        Gigi Sohn</a></b>, President, Public Knowledge<br>
+        -   <b><a href=
+        "http://www.velaw.com/our_lawyers/lawyer_detail.cfm?id=001585">Greg
+        Staple</a></b>, Partner, Vinson &amp; Elkins<br>
+        -   <b><a href="http://www.dollarshort.org">Mena Trott</a></b>, CEO,
+        Six Apart<br>
+        -   <b><a href="http://www.intel.com/capital/">Sriram Viswanathan</a>
+        </b>, Managing Director, Intel Capital<br>
+        -   <b><a href="http://www.wohl.com">Amy Wohl</a></b>, Founder, Wohl
+        Associates</font> </p>
+      <p>&nbsp; </p>
+      <p>&nbsp;</p>
+
+<font size="+1">To submit a speaking proposal for <b>Supernova 2003</b>,
+please fill out the form below:</font>
+<form action="http://picard.pulver.com/cgi-bin/vonproposal" method="POST"
+onsubmit="return verify(this);">
+<input type="hidden" name="conf" value="supernova03">
+<input type="hidden" name="mode" value="preq">
+<input type="hidden" name="sessiontype" value="64">
+<input type="hidden" name="proposaltype" value="Common">
+<p>Fields marked <font color="red">*</font> are required</p>
+<!--Contact Table-->
+<table cellspacing=0 cellpadding=0 border=0 id="contacttable">
+<tr align="center"><td align="right"><font color="red">*</font> First Name</td
+>
+<td><input type="text" name="first" size="35"></td></tr>
+<tr align="center"><td align="right"><font color="red">*</font> Last Name</td>
+<td><input type="text" name="last" size="35"></td></tr>
+<tr align="center"><td align="right"><font color="red">*</font> Title</td>
+<td><input type="text" name="title" size="35"></td></tr>
+<tr align="center"><td align="right"><font color="red">*</font> Company</td>
+<td><input type="text" name="company" size="35"></td></tr>
+<tr align="center"><td rowspan="2" valign="top" align="right">Address</td>
+<td><input type="text" name="adr1" size="35"></td></tr>
+<tr align="center"><td align="right"><input type="text" name="adr2" size="35">
+</td></tr>
+<tr align="center"><td align="right">City</td>
+<td><input type="text" name="city" size="35"></td></tr>
+<tr align="center"><td align="right">State/Province</td>
+<td><input type="text" name="state" size="35"></td></tr>
+<tr align="center"><td align="right">Country</td>
+<td><input type="text" name="country" size="35"></td></tr>
+<tr align="center"><td align="right">Zip/Postal Code</td>
+<td><input type="text" name="zip" size="35"></td></tr>
+<tr align="center"><td align="right"><font color="red">*</font> Phone</td>
+<td><input type="text" name="phone" size="35"></td></tr>
+<tr align="center"><td align="right">Fax</td>
+<td><input type="text" name="fax" size="35"></td></tr>
+<tr align="center"><td align="right"><font color="red">*</font> Email</td>
+<td><input type="text" name="email" size="35"></td></tr>
+<tr align="center"><td align="right">URL</td>
+<td><input type="text" name="url" size="35"></td></tr>
+<tr align="center"><td colspan="2">&nbsp;</td></tr>
+<tr align="center"><td align="right">Contact person<small> (if not speaker)
+</small></td>
+<td><input type="text" name="contactname" size="35"></td></tr>
+<tr align="center"><td align="right">Company/Organization</td>
+<td><input type="text" name="contactcompany" size="35"></td></tr>
+<tr align="center"><td align="right">Phone</td>
+<td><input type="text" name="contactphone" size="35"></td></tr>
+<tr align="center"><td align="right">Email</td>
+<td><input type="text" name="contactemail" size="35"></td></tr>
+<tr align="center"><td align="right">Relationship to Speaker</td>
+<td><input type="text" name="contactrelation" size="35"></td></tr></table>
+<!--End Contact Table-->
+<br>
+<!--Bio Table-->
+<table cellspacing=0 cellpadding=0 border=0 id="biotable"><tr align="center">
+<td colspan="2" align="left">Work of speaker in the field<br><textarea name=
+"work" cols="45" rows="4">
+</textarea></td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr align="center"><td colspan="2" align="left">Speaking Experience<br>
+<textarea name="experience" cols="45" rows="3">
+</textarea></td></tr>
+</table>
+<!--End Bio Table-->
+<br>
+<!--Session Table-->
+<table cellspacing=0 cellpadding=0 border=0 id="sessiontable">
+<tr align="left"><td align="left"><font color="red">*</font> Brief description
+of your proposed topic of discussion<br><textarea name="abstract" cols="45"
+rows="4">
+</textarea></td></tr></table>
+<br>
+<!--End Session Table-->
+<table align="left"><tr align="center"><td align="center"><input type="submit"
+value="Submit Proposal"><input type="reset" value="Reset this form"></td></tr>
+</table>
+</form>
+<!--END CONTENT-->
+<!----BODY TEXT end--->
+</font></td>
+<td background="images/bg_right.gif" WIDTH="32"><IMG SRC="images/bg_right.gif"
+WIDTH="32" HEIGHT="36" BORDER="0"></td></tr>
+<tr valign="bottom"><td background="images/bg_left.gif" WIDTH="32" height="22"
+><IMG SRC="images/bg_left.gif" WIDTH="32" HEIGHT="22" BORDER="0"></td><td
+width="100%" align="center"><font face="Arial" size="1">Copyright 2003 <A
+HREF="http://www.pulver.com/" TARGET="_blank">pulver.com</A> All Rights
+Reserved.</font></td><td background="images/bg_right.gif" WIDTH="32"><IMG SRC=
+"images/bg_right.gif" WIDTH="32" HEIGHT="22" BORDER="0"></td></tr>
+</table>
+</BODY>
+</HTML>
+
+

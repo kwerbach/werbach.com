@@ -1,0 +1,463 @@
+<HTML>
+<HEAD>
+   <TITLE>Guide Rapide du Langage HTML: Introduction</TITLE>
+</HEAD>
+<BODY>
+
+<H2 ALIGN=CENTER>Guide Rapide du Langage HTML</H2>
+
+<H1 ALIGN=CENTER>I N T R O D U C T I O N</H1>
+
+<P><BR>
+
+<BR>
+
+<A NAME="thanks"></A></P>
+
+<H2>Remerciement<BR>
+
+<hr align=left width=400 size=9 noshade></H2>
+
+<P>Plusieurs personnes ont fournies des suggestions et leur assistance
+aux versions ant&eacute;c&eacute;dantes:</P>
+
+<P><TABLE BORDER=0 CELLPADDING=1 WIDTH=400>
+   <TR>
+      <TD VALIGN=top>
+         <UL>
+            <LI>Jutta Degener
+
+            <LI>Henry Churchyard
+
+            <LI>John Berkin
+
+            <LI>Larry Katz
+
+            <LI>N.J. Taber
+
+            <LI>Dean Hedman
+
+            <LI>Nick Galbreath
+         </UL>
+      </TD><TD VALIGN=top>
+         <UL>
+            <LI>R. Alan Monroe
+
+            <LI>Ann Lynnworth
+
+            <LI>Mike Kelsey
+
+            <LI>Russ Allbery
+
+            <LI>dolphin@eccosys.com
+
+            <LI>Susan Hagan
+
+            <li>John Van Essen
+         </UL>
+      </TD></TR>
+</TABLE></P>
+
+<P ALIGN=CENTER>| <A HREF="index.html">Page principale</A> ||
+<A HREF="fr_barebone.txt">Texte</A> |
+<A HREF="fr_barebone.html">Formatt&eacute;e</A> ||
+<A HREF="http://werbach.com/home.html">Page d'acceuil de Kevin</A> |</P>
+
+<P><BR>
+
+<A NAME="unique"></A></P>
+
+<H2>Qu'est ce qui est unique &agrave; propos de ce guide<BR>
+<hr align=left width=400 size=9 noshade></H2>
+
+<P><I>Plusieurs personnes ont cr&eacute;&eacute; d'excellents guides HTML
+et les ont rendus disponibles sur le Web -- qui a besoin d'un autre ??</I></P>
+
+Ce document a &eacute;t&eacute; con&ccedil;u pour servir une niche
+particuli&egrave;re. Il
+veut fournir une feuille de route que l'on peut utiliser pour
+consulter rapidement la forme correcte des &eacute;tiquettes W3. <A
+HREF="http://werbach.com/web/wwwhelp.html#guides">D'autres
+guides HTML</A> fournissent une information plus descriptive sur comment
+utiliser des &eacute;tiquettes ou comment fonctionne le HTML en
+g&eacute;n&eacute;ral.
+Si vous &ecirc;tes un d&eacute;butant, vous pourriez essayer l'un de ces guides.
+
+Il existe aussi plusieurs
+<A HREF="http://werbach.com/web/wwwhelp.html#style">guides de style</A>
+qui mettent plus d'emphase sur la fa&ccedil;on d'&eacute;crire des pages de
+bonne apparence
+et fonctionnant sur plusieurs navigateurs. Je vous encourage à
+lire un ou plusieurs de ceux-ci si vous planifiez de cr&eacute;er des pages
+W3; beaucoup trop de personnes ignorent le fait que leurs pages seront
+lues par d'autres gens et qu'il existent de bonnes et de mauvaises
+fa&ccedil;ons de les faire.
+
+<P>Ma <A HREF="http://werbach.com/web/wwwhelp.html">Page d'aide W3</A>
+contient des liens vers plusieurs autres sites procurant de l'information
+sur le design des pages Web. C'est un bon endroit pour d&eacute;marrer si vous
+avez des questions sp&eacute;cifiques qui d&eacute;passent les limites du Guide
+Rapide du Langage HTML.
+
+<I>Ce guide est con&ccedil;u pour les personnes connaissant assez bien le
+langage HTML,
+mais n'ayant pas m&eacute;moriser le format exact de chaque
+&eacute;tiquette HTML.</I> Si
+vous avez besoin d'une ref&eacute;rence rapide sans
+passer &agrave; travers un mat&eacute;riel descriptif, ce guide est pour vous.
+
+
+<P ALIGN=CENTER>| <A HREF="index.html">Page d'acceuil</A> ||
+<A HREF="fr_barebone.txt">Texte</A> |
+<A HREF="fr_barebone.html">Formatt&eacute;e</A> ||
+<A HREF="http://werbach.com/home.html">Page d'acceuil de Kevin</A> |</P>
+
+<P><BR>
+
+<A NAME="included"></A></P>
+
+<H2>Quelles sont les &eacute;tiquettes incluses<BR>
+
+<hr align=left width=400 size=9 noshade></H2>
+
+L'autre aspect particulier de ce guide est ce qui le compose. <I>Le Guide
+Rapide du Langage HTML se doit d'inclure toutes les &eacute;tiquettes
+d'usage commum dans les pages Web d'aujourd'hui.</I> Pr&eacute;cis&eacute;ment
+ce guide inclut les &eacute;tiquettes suivantes:
+
+<UL>
+   <LI>&Eacute;tiquettes HTML 3.2
+
+   <LI>Extensions Netscape au HTML
+
+</UL>
+
+Le d&eacute;veloppement du HTML provient d'un processus complexe; plusieurs
+tentatives pour adopter un format standard ont souvent &eacute;t&eacute;
+supplant&eacute;es par les d&eacute;veloppements commerciaux. Le <A
+HREF="http://www.w3.org/">World Wide Web
+Consortium</A> (W3C) repr&eacute;sente le standard officiel pour le HTML.
+En mai 1996, W3C fournissait l'esquisse 3.2 de HTML, con&ccedil;ue pour
+refl&eacute;ter et standardiser les pratiques g&eacute;n&eacute;ralement
+accept&eacute;es &agrave; ce
+moment.
+
+Dans son <A
+HREF="http://www.w3.org/pub/WWW/MarkUp/Activity">Communiqu&eacute; officiel
+
+sur HTML</A>, W3C recommande que les syst&egrave;mes d'information
+utilisent les
+sp&eacute;cifications du HTML 3.2. Par cons&eacute;quent, la version 3.0 du
+guide rapide du
+langage HTML inclut toutes les &eacute;tiquettes du HTML 3.2, provenant
+soit du HTML
+2.0 ou bien du HTML 3.0, ou bien en tant qu'extensions de Netscape. La
+version courante
+des principaux navigateurs devraient supporter toutes ces &eacute;tiquettes.
+
+J'ai aussi inclus toutes les &eacute;tiquettes de Netscape introduites avec
+la version du navigateur Netscape jusqu'&agrave; la version 3.0b5( excepté
+quelques
+&eacute;tiquettes serveurs comme celles d&eacute;di&eacute;es &agrave;
+l'animation). Quelques-unes de
+ces extensions ne seront pas affich&eacute;es correctement si les personnes
+regardant les pages utilisent d'autres navigateurs. Vous devriez penser
+&agrave; vos lecteurs avant de commencer &agrave; utiliser ces
+&eacute;tiquettes.
+
+<P><BR>
+
+</P>
+
+<P ALIGN=CENTER>| <A HREF="index.html">Page d'acceuil</A> ||
+<A HREF="fr_barebone.txt">Texte</A> |
+<A HREF="fr_barebone.html">Formatt&eacute;e</A> ||
+<A HREF="http://werbach.com/home.html">Page de Kevin</A> |</P>
+
+<P><BR>
+
+</P>
+
+<PRE>&nbsp;</PRE>
+
+<H3><A NAME="formatting"></A>FORMAT DE CE DOCUMENT<HR></H3>
+<P></P>
+Ce document est con&ccedil;u pour &ecirc;tre pr&eacute;sent&eacute;
+&agrave; partir d'une fonte &agrave; simple
+espacement. Pour la lisibilit&eacute;, j'ai s&eacute;par&eacute; les
+diff&eacute;rentes options qui peuvent &ecirc;tre
+attribu&eacute;es &agrave; la m&ecirc;me &eacute;tiquette.
+G&eacute;n&eacute;ralement, plusieurs options peuvent
+&ecirc;tre combin&eacute;es dans une m&ecirc;me &eacute;tiquette.
+<P></P>
+Les &eacute;tiquettes sont affich&eacute;es en majuscule pour faciliter
+leur lecture, bien
+que la plupart des &eacute;tiquettes ne sont pas d&eacute;pendantes de la casse.
+
+<H3>SYMBOLES UTILIS&Eacute;ES <HR></H3>
+<PRE>
+URL		URL d'un fichier externe (ou juste le nom du fichier si dans le
+m&amp;ecirc;me r&amp;eacute;pertoire)
+ ?      Nombre arbitraire (c.-&amp;agrave;.-d. &lt;H?&gt; signifie
+&lt;H1&gt;, &lt;H2&gt;, &lt;H3&gt;, etc.)
+ %      Pourcentage arbitraire (c.-&amp;agrave;.-d. &lt;HR WIDTH=%&gt;,
+comme dans &lt;HR WIDTH=50%&gt;)
+***     Texte arbitraire (c.-&amp;agrave;.-d. ALT=&quot;***&quot; signifie
+qu'il y a du texte entre les guillemets)
+$$$$$$  Hexad&amp;eacute;cimale arbitraire (c.-&amp;agrave;.-d.
+BGCOLOR=&quot;#$$$$$$&quot; comme dans
+        BGCOLOR=&quot;#00FF1C&quot;, etc.)
+,,,     D&amp;eacute;limitation par virgules (c.-&amp;agrave;.-d.
+COORDS=&quot;,,,&quot; comme dans COORDS=&quot;0,0,50,50,
+        etc.)
+ |      Alternatif (c.-&amp;agrave;.-d. ALIGN=LEFT|RIGHT|CENTER signifie
+qu'il est possible de choisir
+        l'un des trois)
+</PRE>
+
+<H3>COMPATIBILIT&Eacute;</H3>
+
+<PRE>
+(sans note)  Dans la version HTML 3.2; devrait fonctionner avec tous les
+lecteurs
+ N1.0      Extension introduite avec la version 1.0 du navigateur Netscape
+ N1.1      Extension introduite avec la version 1.1 du navigateur Netscape
+ N2.0      Extension introduite avec la version 2.0 du navigateur Netscape
+ N3.0B     Extension introduite avec la version 3.0 beta du navigateur Netscape
+</PRE>
+
+
+<P ALIGN=CENTER>| <A HREF="index.html">Page d'acceuil</A> ||
+<A HREF="fr_barebone.txt">Texte</A> |
+<A HREF="fr_barebone.html">Formatt&eacute;e</A> ||
+<A HREF="http://werbach.com/home.html">Page de Kevin</A> |</P>
+
+<P><BR>
+
+<A NAME="version"></A></P>
+
+<H2>Historique<BR>
+
+<hr align=left width=400 size=9 noshade></H2>
+
+<P><B>Version 3.0 -- 21 Juillet, 1996.</B></P>
+
+<UL>
+   <LI>Mise &agrave; jour compl&egrave;te pour se conformer aux
+sp&eacute;cifications
+   du <A HREF="http://www.w3.org/pub/WWW/MarkUp/Wilbur/">HTML 3.2</A>.
+
+   <LI>Ajout d'une nouvelle section pour les &eacute;tiquettes JAVA
+support&eacute;es par le HTML 3.2.
+
+
+   <LI>R&eacute;vision de l'introduction et des commentaires.
+
+   <LI>Nouveau design de la version tableau du guide, afin de faciliter
+   la lisibilit&eacute;.
+
+   <LI>Les principaux navigateurs supportent maintenant les tableaux; pour
+sauver du temps
+   j'ai d&eacute;cid&eacute; d'&eacute;liminer la version HTML sans
+tableaux du guide. La version utilisant les
+   tableaux a &eacute;t&eacute; renomm&eacute;e "la version
+formatt&eacute;e". Les utilisateurs ne pouvant lire cette
+   version peuvent toujours utiliser  la version texte du guide.
+
+   <LI>Ajout des nouvelles &eacute;tiquettes provenant de la version beta du
+   navigateur Netscape 3.0 &agrave; 3.0b5, incluant:
+
+  <ul><li>couleurs de cellules de tableaux
+  <li>texte en multi-colonnes
+  <li>espaceurs
+  <li>contr&ocirc;le de bordure de cadre
+  <li>ray&eacute; via l'&eacute;tiquette &lt;S&gt; et soulign&eacute; via
+l'&eacute;tiquette &lt;U&gt;.
+ Ces &eacute;tiquettes &eacute;taient comprises dans le HTML 3.0, mais ne
+le sont plus dans le HTML 3.2,
+ je les ai donc d&eacute;crites comme des extensions Netscape.
+  <li>l'attribut FACE pour l'&eacute;tiquette &lt;FONT&gt; (&agrave;
+l'origine une extension Microsoft).
+  </ul>
+
+   <li>correction typographique.
+</UL>
+
+<P><B>Version 2.0 -- 7 octobre, 1995.</B> Beaucoup de changement et de
+correction dans cette
+version.</P>
+
+<UL>
+   <LI>Recomposition de l'introduction et de la table de compatibilit&eacute;
+   du langage.
+
+   <LI>Ajout d'une note + pour les extensions Netscape qui ont
+&eacute;t&eacute; adopt&eacute;es
+   par les principaux navigateurs. Cette note est approximative; elle
+repr&eacute;sente mon
+   jugement &agrave; propos des &eacute;tiquettes qui sont largement
+admises m&ecirc;me si elles ne font pas
+   partie du HTML 3.0.
+
+   <LI>Ajout ,,, dans les notes de la table des symboles pour les listes
+   s&eacute;par&eacute;es par des virgules.
+
+
+   <LI>Restructuration des sections Structure Primaire et Structure Secondaire
+   en tant que Formattage de pr&eacute;sentation et de D&eacute;finition
+structurale. Ce changement
+   &eacute;claircie la distinction entre la pr&eacute;sentation de base et
+les &eacute;tiquettes structurales.
+   Quelques &eacute;tiquettes ont &eacute;t&eacute; d&eacute;plac&eacute;es
+d&ucirc; &agrave; ce changement; l'&eacute;tiquette &lt;ADDRESS&gt;
+   a &eacute;t&eacute; d&eacute;plac&eacute;e de la section Divers vers la
+section D&eacute;finition structurale.
+
+
+   <LI>&Eacute;limination de la section Alignement en d&eacute;placant les
+&eacute;tiquettes de
+   cette section vers les sections D&eacute;finition structurale et
+Formattage de
+   pr&eacute;sentation. Bien que cette d&eacute;marche s&eacute;pare
+l'&eacute;tiquette &lt;CENTER&gt; des
+   autres &eacute;tiquettes d'alignement, cela permet d'associer les
+attributs d'alignement
+   comme &lt;P&gt; et &lt;H?&gt; avec les &eacute;tiquettes sur lesquelles
+ils op&egrave;rent.
+   Ce changement est consistant avec la philosophie du HTML 3.0 de
+g&eacute;rer les
+   &eacute;tiquettes d'alignement selon leurs attributs.
+
+   <LI>Ajout d'une liste des extensions d'appel-client pour l'animation de
+Netscape.
+   Ceci existait depuis la version 1.1 de Netscape, mais n'&eacute;tait pas
+dans le guide jusqu'&agrave;
+   ce jour.
+
+   <LI>Support pour de nouvelles &eacute;tiquettes Netscape et HTML 3.0
+incluses dans Netscape 2.0:
+
+
+   <UL>
+      <LI>Cadres (ajout d'une nouvelle section)
+
+      <LI>Objets encastr&eacute;s (dans Liens et Graphiques)
+
+      <LI>Divisions (dans D&eacute;finition Structurale)
+
+      <LI>Couleur de police (dans Formattage de pr&eacute;sentation)
+
+      <LI>Grandeur de fonte (dans D&eacute;finition Structurale)
+
+      <LI>Indice/Exposant (dans Formattage de pr&eacute;sentation)
+
+      <LI>Transfert de fichier (dans Formulaires)
+
+      <LI>Retour de chariot automatique (dans Formulaires)
+
+      <LI>Fen&ecirc;tres-cibles (dans Liens et Graphiques) et Cible de base
+(dans Divers)
+
+      <LI>Cartes-images clients (dans Liens et Graphiques)
+   </UL>
+
+   <LI>Retrait de l'&eacute;tiquette &lt;XMP&gt;, puisque archa&iuml;que.
+
+   <LI>D&eacute;placement des &eacute;tiquettes de prologue vers la section
+Divers,
+   pour indiquer qu'elles ne sont pas requises et minimiser la confusion.
+
+   <LI>Arranger les listes pour le contenant &lt;NOBR&gt; en ajoutant une
+&eacute;tiquette
+   de fin de champ.
+
+
+   <LI>Changement du "outline type" au "numbering type" pour les extensions
+Netscape
+   de listes ordonn&eacute;es afin d'&eacute;viter la confusion &agrave;
+propos des fonctions d'attributs.
+
+
+   <LI>Changement de la description de l'&eacute;tiquette &lt;P&gt; pour
+indiquer qu'elle
+   est souvent interpr&eacute;ter comme un double saut de ligne.
+
+   <LI>Changement des symboles hexad&eacute;cimales $$$ &agrave; $$$$$$
+pour indiquer
+   que 6 caract&egrave;res sont requis.
+
+
+   <LI>Am&eacute;lioration de la pr&eacute;sentation en colonnes de la
+version texte.
+</UL>
+
+<P><B>Version 1.22 -- 18 ao&ucirc;t, 1995</B>. Ajout d'une &eacute;tiquette
+et quelques options
+qui ont &eacute;t&eacute; accidentelement omises de la section Formulaires.
+Correction de la liste
+sur les &eacute;tiquettes qui se trouvent dans les sp&eacute;cifications de
+HTML 3.0.
+
+
+<P><B>Version 1.21 -- 26 Juillet, 1995</B>. Retrait de l'&eacute;tiquette
+archa&iuml;que
+&lt;NEXTID&gt; et ajout de quelques commentaires &agrave; la version
+formatt&eacute;e et texte.
+
+
+<P><B>Version 1.2 -- 25 juillet, 1995</B>. Plusieurs corrections pour
+s'ajuster aux
+sp&eacute;cifications du HTML 3.0 et pour tenir compte de l'apparition de
+plusieurs
+autres &eacute;tiquettes HTML 3.0.
+
+<P><B>Version 1.1 -- 19 juillet, 1995</B>. Nettoyage de l'introduction, et
+sp&eacute;cification correcte de la table de caract&egrave;res ISO 8859-1
+au lieu de l'ASCII.
+
+
+<P><B>Version 1.03 -- 12 juillet, 1995</B>. Mise &agrave; jour des notes de
+copyright
+pour &eacute;liminer la confusion avec les logiciels Bare Bones. Ajout de
+l'&eacute;tiquette
+Netscape de fonte relative, et changement du lien aux listes de symboles ASCII.
+
+
+<P><B>Version 1.02 -- 24 avril, 1995</B>. Correction typographique, ajuster
+le lien
+&agrave; l'historique et ajout du copyright et du code d'enregistrement aux
+versions de Netscape.
+
+<P><B>Version 1.01 -- April 11, 1995</B>. Correction typographique et de
+quelques
+ambigüit&eacute;es mentionn&eacute;es par des personnes, incluant quelques
+erreurs dans la section Listes.
+
+<P><B>Version 1.0 HTML -- 6 avril, 1995</B>. Ajout &agrave; l'introduction,
+mais le texte est identique
+&agrave; la version 1.0. Formatt&eacute;e en mode W3 avec l'aide de John Berkin.
+
+
+<P><B>Version 1.0 -- 2 avril, 1995.</B> Correction de quelques points
+mentionn&eacute;s
+par des personnes, et r&eacute;vision de l'introduction et du formattage de
+certaines sections.
+
+<P><B>Version 0.9b -- 30 mars, 1995.</B> Premi&egrave;re version publique
+post&eacute;e
+au groupe comp.infosystems.www.providers.</P>
+
+<P ALIGN=CENTER>| <A HREF="index.html">Page d'acceuil</A> ||
+<A HREF="fr_barebone.txt">Texte</A> |
+<A HREF="fr_barebone.html">Formatt&eacute;e</A> ||
+<A HREF="http://werbach.com/home.html">Page de Kevin</A> |</P>
+
+<P ALIGN=CENTER>Copyright &copy;1995-1997
+<A HREF="mailto:barebones@werbach.com">Kevin Werbach</A>.<BR>
+
+Derni&egrave;re mise &agrave; jour, 21 Juillet, 1996.</P>
+</BODY>
+</HTML>
+
+
+

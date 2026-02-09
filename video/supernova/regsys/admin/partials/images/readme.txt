@@ -1,0 +1,1 @@
+this folder need to be accessible to the WWW

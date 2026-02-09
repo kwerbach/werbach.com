@@ -1,0 +1,57 @@
+*** Elefolio Changelog ***
+
+2011.07.27 - version 1.4.1
+ * template-portfolio.php - removed div fix so portfolio tag sorting line up properly
+
+2011.07.01 - version 1.4
+ * /includes/js/portfolio.js - Added hash-based portfolio navigation JavaScript.
+ * template-portfolio.php - changed the link for the tags to include hash tag so it is easier to copy the URL
+
+2011.06.30 - version 1.3.3
+ * header.php, 
+   template-portfolio.php - Added suppress_filters = 0 to the custom queries to improve WPML support.
+
+2011.06.28 - version 1.3.2
+* /includes/tumblog/wootumblog_postformat.class.php - Added fix for bulk editing of posts
+* /includes/tumblog/theme-custom-post-types.php - Added fix for bulk editing of posts
+
+2011.05.10 - version 1.3.1
+ * template-portfolio.php - updated query to remove pagination and show all portfolio items on one page.
+
+2011.03.31 - version 1.3
+ * template-portfolio.php - Added tags to portfolio items
+   includes/js/portfolio.js
+   includes/theme-js.php
+   includes/theme-functions.php
+   includes/theme-options.php
+   style.css
+
+2011.03.25 - version 1.2.0
+ * /includes/theme-options.php - Added Image Crop Alignment option (lines 585-596)
+
+2011.02.24 - version 1.1.0
+ * /includes/tumblog/* - upgraded tumblog to use post formats
+ * /includes/theme-options.php - upgraded tumblog to use post formats
+ * functions.php - upgraded tumblog to use post formats
+ * archive.php - upgraded tumblog to use post formats
+ * header.php - upgraded tumblog to use post formats
+ * index.php - upgraded tumblog to use post formats
+ * search.php - upgraded tumblog to use post formats
+ * single.php - upgraded tumblog to use post formats
+ 
+2010.11.30 - version 1.0.3 
+ * includes/theme-actions.php - fixed hover color on custom typography nav
+
+2010.11.26 - version 1.0.2
+ * includes/theme-options.php - added option to show video on portfolio single page
+ * single-portfolio.php - added option to show video on portfolio single page
+ * template-portfolio.php - addded new portfoliopage template
+ * style.css - added .fullwidth #portfolio
+ * includes/tumblog/theme-tumblog.php - fixed audio player and rss feed paths
+ * includes/theme-js.php - added missing audio player js
+
+2010.11.25 - version 1.0.1
+ * archive.php - fixed a bug with "no posts matched" showing every time.
+
+2010.11.25 - version 1.0
+ * First release!

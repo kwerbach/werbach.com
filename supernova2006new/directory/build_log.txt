@@ -1,0 +1,55 @@
+Version 1.4.1 Build Info
+
+This file contains information regarding each build that is released.  A "build" is a small update 
+that fixes bugs found within a particular version.  For a full list of features in Version 1.4
+please visit the main change log at: http://eedocs.pmachine.com/changelog.html
+
+Build:  20060308
+* Fixed a bug in the IP Search when searching for a full IP address and having pagination
+* Fixed a bug in the MetaWeblog API when fetching categories using a non-superadmin user 
+* Fixed some invalid XHTML in the Search module
+* Fixed a bug in IE 6 for the Gallery when creating a new entry based on an already existing image
+* Fixed a bug in IE 6 when viewing Publish area without Category tab being available
+* Fixed a bug with Month Links giving a MySQL error whent the status="" parameter was used
+* Fixed a bug that caused member "local times" to appear incorrectly if the server was not in the same timzeone as the user.
+* Fixed a bug that allows two identical email addresses in different mailing lists to be sent when multiple lists are sent simultaneously.
+
+Build:  20060217
+* Fixed a bug when a non-SuperAdmin attempted to change the weblog for an entry
+* Fixed an unset variable error message in the comment module
+* Fixed a bug with member pruning when the forum is not installed
+* Fixed a bug when trying to create a new template from a library that was empty
+* Fixed a wee bug when Auto-URLs was on and a URL was between two pMCode tags
+* Fixed a bug where {class} variable was not being parsed at bottom of subscriptions page
+* Fixed an unset variable when you submit an entry with a forum post
+* Fixed a bug where the Gallery URL preference in the Gallery module was not truly required
+* Fixed a bug where relationship field value incorrectly display on Quick Save
+* Fixed a bug when creating a new custom field where old entries automatically got XHTML formatting instead of the default
+* Fixed two bugs in the multi site login code
+* Added the ability to set a status="" parameter in the Weblog module's Month Links tag
+* Added the ability to call an disable_extension() function when disabling an extension in the Extension Manager
+* Added the config.php preference 'protect_javascript' that if set to "n" will allow Advanced Conditionals in <script> tags
+
+Build:  20060126
+* Fixed a bug in the query module when a date that was not 'entry_date' was formatted
+* Fixed a little bug with the advanced conditional javascript protection code
+* Fixed a problem with the "batch mode" email feature.
+* Fixed a bug with basic segment conditionals using {if:else} and {if:elseif...}
+* Fixed a bug with the user search in Private Messaging when dealing with foreign characters
+* Fixed a bug when a weblog had Safe HTML set and a file directory as part of a URL in a link
+* Fixed a bug when editing subscriptions for a member in the CP and were redirected incorrectly
+* Fixed a bug with comment moderators not able to change comments' status through the Edit screen
+* Added name="" parameter to {exp:member:login_form} tag
+* Fixed a glitch in the IP2Nation module.
+* Fixed a conditional bug in the default site theme
+* Fixed a bug with the next/previous links when there was an extra segment after url_title or entry_id
+* Fixed a bug where conditionals were removed from gallery comments with their contents remaining
+* Fixed an obscure bug in the Reply-to header of the Email class.
+* Fixed a bug with the Edit List link not working with new custom weblog fields
+* Fixed a bug where the Smileys were not working on fast reply in the Forum module
+* Fixed a bug where the status parameter was ignored when used with the display_by parameter
+* Fixed a bug where an edited entry could have a forum topic submitted
+* * Fixed a bug where the mysql_list_tables() PHP function is depreciated in versions of PHP 5 and causing errors.
+
+Build: 20060113
+* Fixed a problem with the search pagination.  It was not showing the correct results.

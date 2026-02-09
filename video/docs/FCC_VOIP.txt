@@ -1,0 +1,98 @@
+Kevin Werbach
+Remarks to FCC VOIP Forum -- December 1, 2003
+(As prepared for delivery)
+
+
+Good morning, Mr. Chairman and Commissioners.   It's a pleasure to be back at
+the FCC, and especially a pleasure to be discussing Voice Over IP.  If you
+read the popular press, you would think VOIP just recently burst on the scene.
+Yet not only has VOIP been around for nearly a decade, it has been under
+consideration at the FCC for almost that entire time.  Seven-and-a-half years
+ago, a group called ACTA filed a petition asking the FCC to ban unregulated
+VOIP.  The Commission was absolutely right to decline ACTA's request -- and
+subsequent invitations -- to impose the full panoply of traditional telecom
+regulation on a nascent technology.
+
+However, it's no longer 1996.  Where once the threat was unjustified FCC
+action, now it is FCC inaction.  If the Commission does not squarely confront
+the questions VOIP raises, it will inadvertently allow legacy regulation and
+regulatory uncertainty to stifle competition and innovation.  The reason is
+that, again, again contrary to what you might read in the papers, VOIP isn't
+just a creative trick to avoid regulation.  It's a reflection of the
+fundamental way that communications is changing in a digital broadband world.
+
+[SLIDE 2]
+The FCC's traditional regulatory model classifies services into distinct
+buckets.  With the introduction of computers into the telephone network in the
+1960s and 1970s, a new animal emerged, called data, which didn't fit the
+traditional categories.  The Commission responded in the Computer Inquiries by
+generally placing data outside the regulatory obligations of Title II of the
+Communications Act.  That far-sighted decision created a new space for
+innovation on top of the regulated communications infrastructure, opening the
+door for the emergence of the Internet.
+
+
+[SLIDE 3]
+In time, the "data" category grew larger and more important.  As all
+communications networks have gone digital over the past twenty years, "data"
+has increasingly overlapped with traditional regulated services.  Which brings
+us to VOIP.  Is it within the unregulated data portion of the circle, or the
+regulated telephony portion?  That is the wrong way to look at the problem.
+
+[SLIDE 4]
+It's the wrong way to look at the problem because, in a digital world,
+everything is data.  The network that delivers Web pages and files can also
+deliver voices and moving pictures.  Voice is just one class of application,
+which can be implemented in many different ways.  And telephony is just one of
+a plethora of voice applications.
+
+In this world, trying to put services into buckets is a hopeless exercise.
+The critical issues are interconnection among networks, and openness of
+platforms.  For a digital broadband world is a world of layered networks.
+Competition and innovation at every layer depend on open connectivity to other
+layers, from the physical infrastructure through devices, applications, and
+content.
+
+[SLIDE 5]
+So let's look at what's happening in the VOIP world today.  VOIP is more than
+just services like Vonage and Skype that look similar from a distance to basic
+telephony.
+
+•	Telesym PocketPC softphone
+•	Webcam using VOIP for Internet videoconferencing
+•	Yahoo Messenger voice chat
+•	Vocera voice over WiFi badges
+•	Pocket Tunes streaming Shoutcast radio (including talk radio)
+•	Microsoft Xbox Live with headphones for multiplayer gaming
+•	Roger Wilco PC-based voice chat for gamers
+•	VOIP for mobile phone push-to-talk functionality
+
+Apply traditional regulatory obligations to these services would make no
+sense.  In short, calling VOIP just a new form of competition for telephone
+companies is like calling the automobile a fast horse.  It's something
+fundamentally different.
+
+[SLIDE 6]
+Let me conclude with a few points to help shape our discussion:
+
+Voice is not telephony.  Just because a service delivers voice over
+communications networks doesn't mean it should be a subject to legacy
+regulation.
+
+In a world of digital internetworking, applications, including voice, are
+defined at the edges of networks.  They can evolve outside the control or even
+awareness of service providers and device manufacturers.
+
+On the Internet, a packet is a packet.  It doesn't know whether it is
+transmitting a chunk of a voice call, a document, or a movie.  Any legal rule
+that pretends otherwise will fail.
+
+Finally, innovation happens.  The Commission must adopt rules that are
+technology neutral, because otherwise it will find itself scrambling to keep
+up with adaptations in equipment and services.
+
+So in conclusion, the question should not be, "What is Voice Over IP?"
+Instead, the Commission should be asking what is the purpose of regulating
+certain forms of voice communication, and how can it adapt its rules to the
+sea-change now occurring as we enter a digital broadband world.
+

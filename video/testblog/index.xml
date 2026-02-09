@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<rss version="0.91">
+  <channel>
+    <title>Kevin's Test Blog</title>
+    <link>http://werbach.com/testblog/</link>
+    <description></description>
+    <language>en-us</language>
+    <item>
+      <title>test post to testblog</title>
+      <description>sdfsdfsdfsdfsdfsdf...</description>
+      <link>http://werbach.com/testblog/archives/000007.html</link>
+    </item>
+    <item>
+      <title>another entry</title>
+      <description>hi. this is my entry</description>
+      <link>http://werbach.com/testblog/archives/000003.html</link>
+    </item>
+
+  </channel>
+</rss>

@@ -1,0 +1,71 @@
+// Copyright 1999-2000 ValueClick Inc. All rights reserved.
+
+ValueLoaded = true;
+ValueFullVersion = ValueVersion + ".8";
+
+function ValueShowAd() {
+  
+  ValueOptions = '&v=' + ValueFullVersion;
+  if (self.ValueCategory) ValueOptions += '&c=' + self.ValueCategory;
+  if (self.ValueBorder)   ValueOptions += '&border=1';
+  if (! self.ValueNoText) ValueOptions += '&text=1';
+
+  ValueRandom   = Math.round(Math.random()*1000) + 1;
+  ValueHostInfo = "host=" + ValueHost + "&b=" + ValueID + "." + ValueRandom;
+
+  if (self.ValueServer == null) ValueServer = "oz";
+
+  ValueServer   = "http://" + ValueServer + ".valueclick.com/";
+
+  ValueBanner   = ValueServer + 'cycle?' + ValueHostInfo + ValueOptions;
+  ValueRedirect = ValueServer + 'redirect?' + ValueHostInfo;
+
+  ValueDimensions();
+
+  if (navigator.userAgent.indexOf("MSIE") >= 0) {
+    // don't try to set the bgcolor etc in the IFRAME for MSIE 3 
+	if (navigator.appVersion.indexOf('MSIE 3') < 0) {
+	  if (self.ValueBgColor)    ValueBanner += '&bgcolor='    + escape(self.ValueBgColor);
+      if (self.ValueLinkColor)  ValueBanner += '&linkcolor='  + escape(self.ValueLinkColor);
+      if (self.ValueAlinkColor) ValueBanner += '&alinkcolor=' + escape(self.ValueAlinkColor);
+      if (self.ValueVlinkColor) ValueBanner += '&vlinkcolor=' + escape(self.ValueVlinkColor);
+    }
+
+    document.write('<IFRAME ID="VC" NAME="VC" WIDTH="' + IWidth + '" HEIGHT="' + IHeight + '" '); 
+    document.write('SCROLLING="no" FRAMEBORDER="0" FRAMESPACING="0" MARGINHEIGHT="0" ');
+    document.write('MARGINWIDTH="0" BORDER="0" HSPACE="0" VSPACE="0" ');
+    document.write('ALIGN="center" SRC="' + ValueBanner + '&t=html">');
+    document.write('</IFRAME>');
+  } else {
+    // should be all Netscapes that are reading this file 
+	if (self.ValueVersion >= 1) {
+      document.write('<TABLE BORDER=0><TR><TD>');
+	  document.write('<ILAYER ID="VC" VISIBILITY="hide" BGCOLOR="" WIDTH="' + IWidth);
+      document.write('" HEIGHT="' + IHeight + '"></ILAYER>');
+	  document.write('</TD></TR></TABLE>');
+	} else {
+	  document.write('<SCRIPT SRC="' + ValueBanner + '&t=js"');
+	  document.write(' LANGUAGE="JavaScript"></SCR' + 'IPT>');
+    }
+  }
+}
+
+function ValueDimensions() {
+  if (self.ValueNoText) {
+    if (self.ValueBorder) {
+      IWidth  = 472;  
+      IHeight = 64;
+    } else {
+      IWidth  = 468;  
+      IHeight = 60;
+    }       
+  } else {
+    if (self.ValueBorder) {
+      IWidth  = 472;  
+      IHeight = 84;
+    } else {
+      IWidth  = 468;  
+      IHeight = 84;
+    }       
+  }
+}

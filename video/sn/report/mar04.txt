@@ -1,0 +1,631 @@
+THE SUPERNOVA REPORT
+
+Provided by Kevin Werbach and pulver.com.
+
+March 11, 2004
+
+RE-SENDING OF THIS NEWSLETTER TO ANY NUMBER OF COLLEAGUES IS
+ENCOURAGED PROVIDED YOU CC: SUPERNOVA@PULVER.COM; IN RETURN, WE WILL
+PROVIDE RECIPIENTS WITH A SUBSCRIPTION. YOU CAN ALSO SEND "SUBSCRIBE
+SUPERNOVA" TO <LISTSERV@LISTSERV.PULVER.COM> TO SUBSCRIBE. ANY OTHER
+UNAUTHORIZED RE-DISTRIBUTION IS A VIOLATION OF COPYRIGHT LAW.
+----------------------------------------------------------------------
+
+
+A big issue this month, on topics ranging from politics to wireless
+technology. What can I say -- there's a lot happening out there! I've
+also included the prepared text of my oral testimony last month before
+the Senate Commerce Committee, which held an important hearing on the
+policy implications of voice over IP (VOIP). The VOIP debate won't
+just affect new service providers like Vonage; it will shape the
+playing field for the new wave of broadband applications. And that in
+turn will shape future business opportunities in communications,
+software, and media.
+
+The important connections between seemingly unrelated developments in
+these industries are becoming increasingly clear. As the discussion
+below about commoditization shows, the record labels aren't the only
+ones facing significant challenges in an era of pervasive digital
+networks. Increasingly, everything is connected. This has radical
+consequences, which we are just starting to appreciate.
+
+If you're at all interested in these topics, I hope you'll join me in
+June at Supernova <http://www.supernova2004.com/>. The topics we'll
+discuss have never been more business-relevant. And I've never seen a
+greater array of startups building on the opportunities that
+decentralized connectivity offers.
+
+-k-
+Kevin Werbach
+
+
+----------------------------------------------------------------------
+In this Issue:
+
+- TELECOM: The End of Spectrum Scarcity
+- SOFTWARE: The Commoditization Challenge
+- POLITICS: The Last Internet Campaign?
+- TELECOM: The Battle for VOIP Begins
+- TELECOM: Senate Commerce Committee Voice Over IP Hearing Testimony
+- MEDIA: The Free Culture Debate
+- LINKS OF THE MONTH
+----------------------------------------------------------------------
+
+
+TELECOM
+The End of Spectrum Scarcity
+
+That's the title of an article I co-wrote with Greg Staple, a
+Washington telecom lawyer, in the new issue of IEEE Spectrum magazine.
+
+http://www.spectrum.ieee.org/WEBONLY/publicfeature/mar04/0304scar.html
+
+We explain how "open spectrum" technologies could, with the right
+regulatory decisions, massively increase the usable capacity for
+wireless communication.  More spectrum is also coming from
+conventional sources like reallocation.
+
+It's hard to overstate how big a deal this could be.  Cingular just
+spent $41 billion for AT&T Wireless, allegedly because it desperately
+needed more spectrum.  And we're not even imagining the applications
+and usage scenarios that will develop when wireless capacity goes from
+being expensive and scarce to virtually free like computer cycles.
+
+
+======================================================================
+----------------------------------------------------------------------
+
+S-U-P-E-R-N-O-V-A  2-0-0-4
+http://www.supernova2004.com/
+
+June 24-25, 2004
+Santa Clara, CA
+
+Supernova is a unique technology conference focused on the
+decentralization of software, communications, and media. It assembles
+today's leading innovators and up-and-coming stars in an intense
+networking environment. From social networking to WiFi, web services
+to voice over IP, digital identity to broadband media, Supernova
+brings to light the most compelling technologies and companies...
+before they hit the mainstream.
+
+Already, our confirmed speaker list includes:
+
+* Ray Ozzie (CEO, Groove Networks)
+* Esther Dyson (Chairman, EDventure Holdings)
+* Lawrence Lessig (Professor, Stanford Law School)
+* Shawn Hardin (SVP, AOL Broadband)
+* Meg Hourihan (President, Kinja)
+* Jeff Blumenfeld (Partner, Gray Cary)
+* Mena Trott (Co-Founder, Six Apart)
+* Jeff Ganek (CEO, Neustar)
+* Loic Le Meur (CEO, UBlog)
+* Joanna Rees Galanter (Managing Partner, Venture Strategy Partners)
+* Clay Shirky (Shirky.com)
+
+We deliberately keep Supernova small to maximize interactivity.
+Register now at <http://www.supernova2004.com/register.html>.
+
+----------------------------------------------------------------------
+======================================================================
+
+
+SOFTWARE
+The Commoditization Challenge
+
+
+Eli Noam of Columbia Business School wrote an important column in the
+Financial Times <http://biz.yahoo.com/ft/040217/1075982580712_1.html>
+pointing out the fundamental business challenge facing the tech
+sector: commoditization.
+
+His conclusion: "The market failure of the entire information sector
+is one of the fundamental trends of our time, with far-reaching long-
+term effects, and it is happening right in front of our eyes."
+
+Eli is by nature a cynic, so what he has to say is often not pleasant.
+But he has the unfortunate habit of being right much of the time, and
+ahead of the curve virtually all the time. I've disagreed with some of
+his conclusions, but I'm with him on the core insight: there is a
+basic structural disconnect in the economics of information
+industries, with painful consequences. We saw it first in telecom,
+where VOIP is now bringing the issue to a boil, but it's broader than
+that. It's ultimately about software, which is just a collection of
+commodity bits replacing proprietary hardware and systems.
+
+Jeff Jarvis and Ross Mayfield (see links below) would like to think we
+can make it up on volume - the point to microcontent ventures like
+Nick Denton's blog network, which are springing up at the feet of the
+collapsing dinosaurs. I'm as excited as they are about new bottom-up
+markets. The problem is simply that you can't get there from here. A
+hundred Nick Dentons wouldn't pay for one floor of the Conde Nast
+headquarters building where Jeff works. (Jeff knows that, and is
+working both sides of the equation, but Gawker will never be
+Entertainment Weekly.) There's no scenario that doesn't take a
+substantial amount of money from the traditional media sector -- and
+telecom, and IT -- and replace with a smaller amount of money in
+distributed alternatives.
+
+One answer, which Noam thinks may be inevitable, is consolidation to
+the point of monopolization. Ma Bell held back the tide of
+commoditization in an industry characterized by high fixed and low
+variable costs, and Microsoft is doing the same thing in the PC
+business. That outcome isn't all bad... but it's far from good. And, I
+believe, far from assured.
+
+Is there another answer? I think there is. I proposed it four years
+ago in the Harvard Business Review (and a year earlier in Release
+1.0): syndication. (See <http://werbach.com/docs/syndication.pdf>.) At
+the time, the idea may have sounded like new economy hype. In reality,
+syndication is a roadmap for pulling out of the commoditization death
+spiral. It won't be simple and it won't be painless, but syndication
+will provide a foundation for new growth in the information sector.
+Just look at the performance of the two Web-based companies most
+heavily built on the syndication model: Google and Amazon. Another
+useful test case for syndication will be the development of the
+RSS/RDF/Atom ecosystem around Weblogs.
+
+Comments on Noam's article:
+
+<http://www.buzzmachine.com/archives/2004_02_17.html#006277>
+Media blogger extraordinaire Jeff Jarvis
+
+<http://ross.typepad.com/blog/2004/02/collapse_of_inf.html>
+Socialtext CEO Ross Mayfield
+
+<http://avc.blogs.com/a_vc/2004/02/chicken_little_.html>
+Venture capitalist Fred Wilson
+
+<http://tinyurl.com/3gqhk>
+Business 2.0 columnist Om Malik
+
+<http://tinyurl.com/ypqux>
+Telecom pundit David Isenberg
+
+
+----------------------------------------------------------------------
+
+POLITICS
+The Last Internet Campaign?
+
+Clay Shirky's coda for the Dean campaign <http://tinyurl.com/2bqtu>
+hits the nail on the head:
+
+"We are seeing the last internet campaign. The advantage of having the
+Dean story play so big is that everyone was watching. None of this was
+lost on Karl Rove, or on Terry McAuliffe. Given what Dean was able to
+do with internet tools, they will become a key part of the fall
+campaign, and so completely integral by 2008 that they won't rate more
+than a mention, much less a cover story in the NY Times magazine."
+
+The interesting question, though, is what a successful Internet
+campaign would look like.  Dean showed how the Net can take an obscure
+candidate and vault him to the head of the pack.  What would a real
+Internet campaign by an establishment figure like John Kerry -- or
+George W. Bush -- look like?  We'll see beta versions this fall, but
+they will almost certainly be copies of Dean's techniques rather than
+real innovations.
+
+I have a hunch that the first Internet campaign to truly mobilize
+voters on a mass scale (as opposed to fundraising and core supporters)
+won't start around a candidate.  One of the key, and under-
+appreciated, elements of Dean's early success was MoveOn.org.  MoveOn
+never actually endorsed Dean, but its tactics and worldview were
+aligned with the Dean campaign. Its early online poll was the first
+demonstration of Dean's "front-runner" status.  MoveOn, thanks to help
+from friends like George Soros, will be significant player in the Fall
+campaign.  Yet MoveOn wasn't started to elect a President; it was
+started to defend a President (Clinton) against impeachment efforts.
+
+What most people really support are causes, not candidates.  The cause
+many Dean supporters were passionate about was defeating President
+Bush, and that ultimately came back to haunt Howard Dean in the form
+of "electability."  The power of the Net in politics, as Clay and
+others have eloquently written, is its ability to lower coordination
+barriers among large numbers of people.  Thus, it's most effective
+where people already support a cause.
+
+It's hard to remember now, but back in the late 1980s and early 1990s,
+there were two such causes: health care reform and deficit reduction.
+The health care debate was co-opted by the traditional players, but on
+the deficit side, the Concord Coalition did an amazing job of
+mobilizing popular anger, largely among young people, about the
+ruinous course of our fiscal policies.  And they did it without any of
+the Internet-based tools groups like MoveOn are exploiting today.
+
+So yes, we've seen the last Internet campaign, but not the first
+Internet President.  That will have to wait for a movement that starts
+outside the existing political boxes, and a candidate able to make the
+most of it.
+
+
+----------------------------------------------------------------------
+
+TELECOM
+The Battle for VOIP Begins
+
+On February 13, 2004, the FCC declared Pulver.com's Free World Dialup
+service an unregulated information service, and launched a proceeding
+seeking comment on the treatment of voice over IP more broadly. This
+is the first step in the crucial process of establishing the
+regulatory framework for the telecom industry of the future.
+
+At the FCC meeting, Chairman Powell said something to the effect that
+this is the most important proceeding in the history of communications
+regulation, and he's right.  There has been intense political back-
+and-forth on these issues behind the scenes, with Congressional
+leaders and the FBI pushing hard on the FCC.  The Commissioners and
+the staffers drafting the items worked through the night to reach
+compromises.  The meeting was pushed back from 9:30 to 11am and the
+VOIP items were moved the end of the agenda, no doubt to allow time
+for final rewriting.
+
+It is vitally important that the tech community participate in the
+VOIP proceeding.  The decisions the FCC makes will determine not just
+how new VOIP providers like Vonage and Packet8 are treated, but the
+rules of the road for the broadband superhighway.  As I said at the
+FCC VOIP hearing in December, voice is now an application.  It's one
+of many applications that will be delivered through interconnected
+broadband networks.  The FCC's actions will determine the business
+environment for network operators, application providers, and content
+creators.  This is the whole enchilada.
+
+When the text of the notice is released, we'll know the exact comment
+deadlines and questions being asked.  FCC proceedings are open to
+anyone -- you don't have to be a lawyer or a company in the space, and
+you can file via a Web form.  (One of my proudest accomplishments from
+my time at the Commission.)
+
+To get a sense of what's at stake here, consider the comments of Wall
+Street analyst Anna-Maria Kovacs. Anna-Maria has long been one of the
+few Wall Street analysts to really understand the FCC regulatory
+process and its implications for the telecom industry. In the note
+ahead of the FCC meeting, she nailed the crucial business implications
+of the VOIP regulation debate.
+
+Here's a quote from her conclusion:
+
+	If the application vendors can ride free and the telco
+	and cable network providers are not allowed to block them,
+	then the application vendors will have a huge cost advantage
+	vis-à-vis the carriers they ride. The carriers will have both
+	network and marketing costs, while the pure application
+	vendors	will only have marketing costs. In such an
+	environment, the guest's end-user rates can be much lower than
+	those of the host.
+
+	The problem would be most extreme for the telcos, who have an
+	existing revenue base at risk and who lack video revenues to
+	help support at least a portion of their network. But even the
+	cable-network providers would be at a disadvantage vis-a-vis
+	the pure application vendors.
+
+	The good news would be lots more end-user choices and lower
+	prices. The bad news would be the threat to the financial
+	viability of the underlying carriers who make that competition
+	possible.
+
+What Anna-Maria has realized is that the VOIP debate is about two
+visions for the future of the Internet. James Seng captured the point
+well in his layers diagram, which you can find at
+<http://james.seng.cc/archives/000301.html>. This has been a recurring
+theme in my writings over the past few years. Vision 1 presumes that
+applications will be tied to connectivity platforms. Vision 2
+innovation and economic activity booming when those layers are de-
+linked. (In case you're unclear, I believe in Vision 2.)
+
+Naive proponents of Vision 1, like the Wall Street Journal editorial
+page, simply ignore the lessons of the Internet and telecom
+competition over the past two decades. The best case that can be made
+for tying applications to network infrastructure is the one Kovacs
+lays out: it's the only way to pay for the network. The critical
+question is the one raised in her last sentence: whether the network
+is financial viable based on connectivity revenues alone. (Anna-Maria
+is just setting out the possibilities; I don't know whether or not she
+believes this viewpoint is accurate.)
+
+I'm convinced that network operators can do quite well based on their
+access revenues alone, without any need to suck value out of the
+application and content layers. The hard part will be replacing legacy
+infrastructure and shifting to a new cost structure. The Bells spend
+tens of billions of dollars each year on capital expenditures, and
+turning that oil tanker around won't be easy.
+
+Yet, it can be done. In his speech recently to the New America
+Foundation, AT&T CEO Dave Dorman described some of the pain AT&T has
+gone through over the past five years in migrating from five separate
+networks to one massive IP network. It's a multi-billion dollar annual
+project, which is still ongoing. But AT&T believes that pain is
+necessary to position itself for the emerging all-IP, converged
+telecom world. I think they are dead on.
+
+The incumbent local phone companies haven't yet made the same
+commitment AT&T has. Instead, they are pushing a vision that removes
+the pressure for change.
+
+
+----------------------------------------------------------------------
+
+TELECOM
+My Testimony at the Senate Voice Over IP Hearing
+February 24, 2004
+
+Full statement available at <http://werbach.com/docs/senatevoip.html>
+
+
+Mr. Chairman, and Members of the Commerce Committee, thank you for the
+opportunity to testify on the implications of voice over Internet
+protocol technology.
+
+I am the founder of the Supernova Group, an independent technology
+analysis and consulting firm.  Earlier in my career, I had the honor
+of serving as Counsel for New Technology Policy at the Federal
+Communications Commission.  I participated in the FCC's efforts,
+starting nearly a decade ago, to understand a phenomenon we called
+"Internet telephony."
+
+I'm here to tell you that VOIP presents tremendous opportunities for
+the US economy and the American people.  As my written statement
+explains in more detail, we are witnessing the most significant change
+in telecommunications since Alexander Graham Bell called out for Mr.
+Watson.
+
+Historically, telephony and other services like broadcasting were tied
+to specific infrastructure and regulatory regimes.  The service was
+the network.
+
+In the converged digital world, however, there is one network of
+networks, the Internet, bound together with common technical
+protocols.  Instead of data as a service delivered through a voice-
+oriented telephone network, voice is becoming a class of applications
+on top of data networks. To a data network, a voice call is nothing
+more than an instant message with different latency and reliability
+characteristics.
+
+[Hold up Grandstream device]
+
+Consider this device.  It may look like a phone, but it's actually a
+data terminal for voice over broadband service.  It has an Ethernet
+port on the back, rather than an RJ-11 phone jack.  Should regulatory
+obligations depend on the shape of a jack?
+
+[Hold up Motorola ATA]
+
+How about this?  It doesn't look like a phone at all.  But it's
+essentially the same device as the previous one, just without a
+keypad, microphone, or speakers.  This is the Motorola box Vonage gave
+me as part of its VOIP service.
+
+[Hold up laptop]
+
+Now, I don't think anyone here would call this a phone.  But if I load
+a piece of software called a softphone client onto this laptop, and
+plug in a simple headset, it becomes a voice communications end-point.
+
+If I then use the laptop to call my friends, who is the service
+provider that would be subject to regulation?  The software vendor?
+The laptop manufacturer?  My broadband provider?  What if I'm online
+through a WiFi wireless hotspot in a Starbucks, and the softphone
+client is running on my handheld personal digital assistant?
+
+And it doesn't end there.  I can buy a $50 Webcam, and use it to
+engage in multi-point voice and video-conferencing with other computer
+users around the world.  Or I can subscribe to the online services
+associated with Sony's PlayStation and Microsoft's Xbox video game
+consoles, and chat live with other players.  Both applications use
+voice over IP.  Even the push-to-talk services cellular operators are
+deploying generally employ VOIP.
+
+As these examples show, VOIP is much more than services that may look
+similar to traditional circuit-switched voice telephony.  Trying to
+separate out unregulated from regulated VOIP applications will prove
+to be an impossible exercise.
+
+Engineers use the concept of layering to describe how data networks
+operate.  The underlying physical transmission is a separate layer
+from higher-level functions, just as cars are separate from the
+highways they drive on.
+
+A layered approach to communications regulation would distinguish
+among content, applications, addressing, and physical transmission.
+Open and non-discriminatory connectivity between those layers ensures
+innovation and competitive deployment of new applications.
+
+In considering the policy concerns we've been asked to address, we
+must step back and examine the point of existing regulatory
+obligations and taxes.  And then we must adapt our policy approaches
+to reflect the changes sweeping the industry.
+
+The current systems of universal service funding and inter-carrier
+compensation must be reformed if universal service is to endure.  Such
+reforms will only succeed if all parties have a reason to come to the
+table. It would be a sad irony if our attempts to impose universal
+service obligations on VOIP limited deployment of technologies that
+can help bring affordable advanced communications capabilities to all
+Americans.
+
+For social policy obligations such as law enforcement access, consumer
+protection, and emergency services, voluntary industry efforts now
+underway should be given an opportunity to succeed, before regulators
+and Congress should consider the need for targeted action.
+
+With VOIP, we are seeing the Internet realize its destiny.  We can
+embrace that future, or we can try to pull the Internet back into
+yesterday's regulatory system.
+
+Make no mistake.  Broad-brush regulation of VOIP is tantamount to
+regulation of Internet applications.  From the network's perspective,
+a stream of voice bits is no different from an eBay auction or a
+Google search.
+
+If the US is to remain the leader in the information-driven global
+economy of the 21st century, we must continue our enlightened policies
+to favor innovation and competitive markets, while remaining committed
+to our essential social goals.
+
+
+----------------------------------------------------------------------
+
+MEDIA
+The Free Culture Debate
+
+Over at the Progress and Freedom Foundation blog, James DeLong
+attempts to prove that the "Free Culture Movement" (FCM) led by people
+like Larry Lessig is part and parcel of the political left:
+
+"The FCM does not think that production and consumption of
+intellectual creations should be organized by property rights and
+markets. Instead, it favors a mechanism of production based on the
+open source software movement...."  <http://tinyurl.com/3eha6>
+
+This is a nice case of simply asserting what the author is allegedly
+attempting to prove. In fact, Free Culture is eminently consistent
+with markets and property rights. Lessig's Creative Commons and
+successful open source projects are based on well-defined software
+licenses. In other words, property rights that function in a market.
+The network infrastructure piece of Free Culture, open spectrum, is
+expressly built on the idea of a market in wireless devices replacing
+a system of government spectrum micro-management. And it was the
+Framers of the US Constitution, hardly anti-property radicals, who
+decreed that copyrights be for a limited period of time.
+
+The property rights maximalists are the true radicals here. They have
+defined any challenges to the status quo as a frontal attack on
+property rights. As political propaganda, this effort may have some
+success. But the ultimate strength of the Free Culture Movement, or
+whatever one calls it, lies in this: It is an internal critique of the
+dominant ideology, not an external challenge to markets like
+communism.
+
+The Free Culture proponents, who offer suggestions like returning to
+the copyright terms of the 1790s, are the true conservatives in this
+debate.
+
+When I posted these thoughts on my blog, James DeLong was kind enough
+to respond.  He stepped back from his earlier statements and
+acknowledged that, yes, there are elements of the movement, such as
+Creative Commons, that work within the property rights system.  For
+that I give him credit.
+
+I don't agree with his stark division of the FCM into "BSD Licence"
+activities that respect property rights and "GPL" activities that seek
+to overthrow them, but I won't be ungrateful.  It's a much more
+nuanced and accurate view that what he started with.  If we can spend
+our energy debating the substance of the issues -- which sets of rules
+better promote economic efficiency, freedom, and innovation -- we may
+make some progress.
+
+To my mind, the genius of people like Larry Lessig and Yochai Benkler
+is that, unlike the prior "copyleft" generation represented by GPL
+creator Richard Stallman, they are able to engage on their opponents'
+own turf as well as from the outside.  What set me off about DeLong's
+original post was the unwillingness to accept that fact, by labeling
+the whole movement as opposed to property rights.
+
+DeLong takes umbrage at my use of the term "copyright maximalists."
+First of all, I didn't apply that label to him -- I was thinking more
+of Jack Valenti. As DeLong makes clear in his followup post, he
+appreciates that property rights have limits:
+
+"It is clear as a matter of historical experience and common sense
+that property rights get cut and trimmed to fit the technological and
+transaction-cost realities of the age."
+
+Unfortunately, many of the business and political interests in the
+digital content debates fail to acknowledge this point.  The movie
+industry, for example, has vociferously promoted its conception of its
+intellectual property rights as morally sacrosanct, now and forever.
+One key rhetorical move they make in doing so is to label anyone who
+questions their viewpoint as a communist and/or a pirate.  (I'm not
+sure which is the greater insult.)  You either support the Sonny Bono
+Copyright Term Extension Act... or you're in the dustbin of history
+with Lenin and Trotsky.  In a political battle, demonizing the
+opposition can be very effective.
+
+I'm sure this wasn't what motivated DeLong's original post.  But to a
+reader, his sweeping generalization had that ring.
+
+De Long succinctly (if inadvertently) shows the core problem:
+
+"The FCM should be making important contributions to the process of
+redefinition, but so far what we hear from it is why property rights
+are bad, in whatever context happens to be under discussion at the
+moment, except, perhaps, for the spectrum problem mentioned by
+Werbach."
+
+I see a similar problem on the other side: property rights defenders
+reflexively attacking alternative production models and technology-
+necessitated limitations on rights.  Does that describe all opponents
+of the FCM?  Of course not.  But the thoughtful ones such as DeLong
+are letting themselves become intellectual cover for the extremists.
+
+That's why this meta-debate matters.  In the confines of the academy,
+we all trust each other's intellectual honesty and can have a nice
+conversation.  DeLong points to Polk Wagner, who has done excellent
+work attacking the point of view that I support.  I see Polk once a
+month at a Philly-area gathering of cyberlaw aficionados.  We find
+common ground on some substantive points and disagree on others, but I
+always respect his perspective.  In my forthcoming spectrum paper, I
+engage with other brilliant scholars like Howard Shelanski and Stuart
+Benjamin who have written in the area.  That's the nature of
+intellectual debate -- different sides advance claims and challenge
+one another.
+
+The cold reality is that the Free Culture battle isn't just being
+fought in the halls of academe.  The scholarly discussion is part of a
+larger debate taking place in Congress, the courts, corporate board
+rooms, and the realm of public opinion.  We simply can't ignore the
+consequences of labeling opponents with too broad brush.
+
+----------------------------------------------------------------------
+
+
+INTERESTING LINKS
+
+http://stupidnet.com
+David Isenberg's workshop, WTF, to be held on April 2-4
+
+http://pulver.com/reports/pulver-decision.pdf
+Text of the FCC's order declaring Pulver.com's Free World Dialup an
+unregulated information service
+
+http://www.henshall.com/blog/archives/000715.html
+Stuart Henshall on the implications of easy conference calling
+
+http://www.thefeature.com/article?articleid=100391
+How advances in storage technology are transforming mobile devices
+
+http://now.feedster.com
+Feedpapers: auto-generated headline feeds on particular topics
+
+http://www.corante.com/mooreslore/20040201.shtml#70047
+Dana Blankenhorn sees a tipping point in software and hardware prices
+
+http://tinyurl.com/39ypc
+Dan Gillmor reluctantly supports a Comcast-Disney merger
+
+http://community.alwayson-network.com/cgi-bin/WebObjects/AlwaysOn.woa
+Tony Perkins' AlwaysOn has its own social networking service
+
+http://summation.typepad.com/summation/2004/02/linkedin_data_a.html
+Interesting summary of LinkedIn requests from Auren Hoffman
+
+http://tinyurl.com/2unbx
+F.C.C. Begins Rewriting Rules on Delivery of the Internet
+
+
+----------------------------------------------------------------------
+If you are aware of others who would like to receive the Supernova
+Report, please forward this email and copy supernova@pulver.com. To
+unsubscribe, please send "SIGNOFF SUPERNOVA" in the body of an email
+to listserv@listserv.pulver.com)
+
+Please send your comments and feedback regarding this issue of The
+Supernova Report to: kevin@supernova2004.com.
+
+Kevin Werbach               Tel. +1 (877) 803-7101
+March, 2004            http://pulver.com/supernova/
+
+----------------------------------------------------------------------
+(c) 2004 Kevin Werbach and pulver.com. All Rights Reserved
+======================================================================

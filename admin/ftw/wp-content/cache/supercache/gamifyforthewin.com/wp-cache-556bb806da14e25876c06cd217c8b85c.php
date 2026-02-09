@@ -1,0 +1,541 @@
+<?php die(); ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+
+<title>For the Win | </title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, nofollow" />
+
+<link rel="stylesheet" type="text/css" href="http://gamifyforthewin.com/wp-content/themes/elefolio/style.css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://gamifyforthewin.com/feed/" />
+<link rel="pingback" href="http://gamifyforthewin.com/xmlrpc.php" />
+      
+<meta name='robots' content='max-image-preview:large' />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/gamifyforthewin.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css' href='http://gamifyforthewin.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='http://gamifyforthewin.com/wp-includes/css/classic-themes.min.css?ver=1' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<script type='text/javascript' src='http://gamifyforthewin.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='http://gamifyforthewin.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='http://gamifyforthewin.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='http://gamifyforthewin.com/wp-includes/js/jquery/ui/tabs.min.js?ver=1.13.2' id='jquery-ui-tabs-js'></script>
+<script type='text/javascript' src='http://gamifyforthewin.com/wp-content/themes/elefolio/functions/js/shortcodes.js?ver=1' id='woo-shortcodes-js'></script>
+<script type='text/javascript' src='http://gamifyforthewin.com/wp-content/themes/elefolio/includes/js/superfish.js?ver=6.1' id='superfish-js'></script>
+<script type='text/javascript' src='http://gamifyforthewin.com/wp-content/themes/elefolio/includes/js/general.js?ver=6.1' id='general-js'></script>
+<script type='text/javascript' src='http://gamifyforthewin.com/wp-content/themes/elefolio/includes/tumblog/swfobject.js?ver=6.1' id='mp3-js'></script>
+<link rel="https://api.w.org/" href="http://gamifyforthewin.com/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://gamifyforthewin.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://gamifyforthewin.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.1" />
+
+<!-- Theme version -->
+<meta name="generator" content="Elefolio 1.4.1" />
+<meta name="generator" content="WooFramework 4.3.0" />
+	
+<!--[if IE 6]>
+<script type="text/javascript" src="http://gamifyforthewin.com/wp-content/themes/elefolio/includes/js/pngfix.js"></script>
+<script type="text/javascript" src="http://gamifyforthewin.com/wp-content/themes/elefolio/includes/js/menu.js"></script>
+<![endif]-->	
+<!-- Alt Stylesheet -->
+<link href="http://gamifyforthewin.com/wp-content/themes/elefolio/styles/default.css" rel="stylesheet" type="text/css" />
+
+<!-- Woo Shortcodes CSS -->
+<link href="http://gamifyforthewin.com/wp-content/themes/elefolio/functions/css/shortcodes.css" rel="stylesheet" type="text/css" />
+
+<!-- Custom Stylesheet -->
+<link href="http://gamifyforthewin.com/wp-content/themes/elefolio/custom.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="home blog unknown">
+
+<div id="wrapper">
+
+	<div id="header-wrap" class="col-full">
+
+		<div id="header">		
+    		<div id="logo" class="fl">
+    			
+						            <a href="http://gamifyforthewin.com" title="">
+		                <img src="http://gamifyforthewin.com/wp-content/themes/elefolio/images/logo.png" alt="For the Win" />
+		            </a>
+		         
+		        
+		        		            <h1 class="site-title"><a href="http://gamifyforthewin.com">For the Win</a></h1>
+		        		            <span class="site-description"></span>
+    	    	
+    	    </div><!-- /#logo -->
+		
+			<div id="top-right" class="fr"> 
+				<div class="nav">
+				<ul id="menu-main-navigation" class="menu"><li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="http://gamifyforthewin.com/about/">About</a></li>
+<li id="menu-item-360" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-360"><a href="http://gamifyforthewin.com/symposium/">Symposium</a>
+<ul class="sub-menu">
+	<li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="http://gamifyforthewin.com/agenda/">Agenda</a></li>
+	<li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="http://gamifyforthewin.com/participants/">Participants</a></li>
+	<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a href="http://gamifyforthewin.com/supporters/">Supporters</a></li>
+</ul>
+</li>
+<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="http://gamifyforthewin.com/contact-us/">Contact Us</a></li>
+</ul>		      	</div><!-- /.nav -->
+    	    
+    	    </div><!-- /#top-right -->  
+			<div class="socialNav">
+					  <ul>
+					    <li><a href="http://twitter.com/gamifyforthewin" target="_blank"><img src="http://gamifyforthewin.com/images/twitter.png" title="twitter" alt="twitter"></a></li>
+		           <li><a href="https://www.facebook.com/pages/For-the-Win-Serious-Gamification/230828906955679" target="_blank"><img src="http://gamifyforthewin.com/images/facebook.png" title="facebook" alt="facebook"></a></li>
+					    <li><a href="http://www.flickr.com/photos/gamifyforthewin/" target="_blank"><img src="http://gamifyforthewin.com/images/flickr.png" title="flickr" alt="flickr"></a></li>
+					<li><a href="http://gplus.to/gamifyforthewin" target="_blank"><img src="http://gamifyforthewin.com/images/google-plus.png" title="google-plus" alt="google plus"></a></li>
+		      <li><a href="http://www.slideshare.net/gamifyforthewin" target="_blank"><img src="http://gamifyforthewin.com/images/slideshare.png" title="slideshare" alt="slideshare"></a></li>
+		      </ul>
+					</div>
+
+    	    <div class="fix"></div>  
+    	    	
+    	</div><!-- /#header -->
+    	
+    </div><!-- /#header-wrap -->
+    
+	    
+        
+	    
+    <div id="content" class="col-full">
+
+		<div id="main" class="fl">     
+                    
+				                           
+                      	
+           	           		
+ 	   			    				<!-- DEFAULT POST -->
+       								
+	<div class="post">
+	
+        <div class="posttype">
+        	<a href="http://gamifyforthewin.com/tumblog/articles/" title=""><img src="http://gamifyforthewin.com/wp-content/themes/elefolio/images/ico-text.png" alt="" /></a>
+        </div><!-- /.posttype -->
+	    
+	    	    <h2 class="title"><a href="http://gamifyforthewin.com/2020/07/22/for-the-win-v-2-is-coming-soon/" rel="bookmark" title="For the Win v.2 is Coming Soon!">For the Win v.2 is Coming Soon!</a></h2>
+	    	    
+	    <p class="post-meta">
+    <span class="post-author"><span class="small">by</span> <a href="http://gamifyforthewin.com/author/admin/" title="Posts by admin" rel="author">admin</a></span>
+    <span class="post-date"><span class="small">on</span> July 22, 2020</span>
+    <span class="post-category"><span class="small">in</span> <a href="http://gamifyforthewin.com/category/uncategorized/" rel="category tag">Uncategorized</a></span>
+    </p>
+	    
+	    <div class="entry">
+			
+<p>Dan Hunter and I are excited to announce that a revised and updated edition of <a href="https://wsp.wharton.upenn.edu/book/for-the-win/">For the Win</a>, our best-selling gamification guide, will be available soon from Wharton School Press. </p>
+
+
+
+<p>Since the book was released in 2012, it has become the standard text for practitioners and academics on the foundational principles of gamification and game thinking. A great deal has happened over the past eight years! We&#8217;ve gone through and identified important new trends related to gamification, incorporated references to some of the major academic research addressing what were previously anecdotal claims, and updated the case studies. At the same time, we&#8217;ve kept the book short and actionable. We want it to be a useful resource, not a compilation of theory.</p>
+
+
+
+<p>We&#8217;re excited to share the new <strong>For the Win</strong> with you. Stay tuned for an announcement on this blog!</p>
+		</div>
+	         
+	    <div class="post-more">      
+	    		<span class="comments"><a href="http://gamifyforthewin.com/2020/07/22/for-the-win-v-2-is-coming-soon/#respond">0 Comments</a></span>
+	    		<span class="shorturl"><a href="http://gamifyforthewin.com/2020/07/22/for-the-win-v-2-is-coming-soon/" title="Short URL for For the Win v.2 is Coming Soon!">Short URL</a></span>					    </div>   
+	                         
+	</div><!-- /.post -->
+	
+		    		                                                
+	                   
+                      	
+           	           		
+ 	   			    				<!-- DEFAULT POST -->
+       								
+	<div class="post">
+	
+        <div class="posttype">
+        	<a href="http://gamifyforthewin.com/tumblog/articles/" title=""><img src="http://gamifyforthewin.com/wp-content/themes/elefolio/images/ico-text.png" alt="" /></a>
+        </div><!-- /.posttype -->
+	    
+	    	    <h2 class="title"><a href="http://gamifyforthewin.com/2013/01/18/big-data-to-save-gamification/" rel="bookmark" title="Big Data to Save Gamification?">Big Data to Save Gamification?</a></h2>
+	    	    
+	    <p class="post-meta">
+    <span class="post-author"><span class="small">by</span> <a href="http://gamifyforthewin.com/author/sudarshan/" title="Posts by Sudarshan" rel="author">Sudarshan</a></span>
+    <span class="post-date"><span class="small">on</span> January 18, 2013</span>
+    <span class="post-category"><span class="small">in</span> <a href="http://gamifyforthewin.com/category/gamification/" rel="category tag">Gamification</a></span>
+    </p>
+	    
+	    <div class="entry">
+			<p style="text-align: left;" align="center"><em>*Note: This post is credited to Ankit Shah (helped lead classroom and educational gamification initiatives at the University of Pennsylvania under Prof. Werbach) for giving me the topic idea. Follow him @AnkitAShah</em></p>
+<p>Looks like gamification has met yet another challenge, but this time it isn’t as simple as convincing managers that games help efficiency and productivity. With all the advocates preaching gamification to be the next biggest thing since sliced bread, there has been an overinflating of hype and expectations. Gartner has predicted that about 80% of gamified solutions will fail in reaching business objectives by 2014 due to poor design. Their <a href="http://www.gartner.com/it/page.jsp?id=2251015">article</a> claims by using the Gartner <a href="http://www.gartner.com/technology/research/methodologies/hype-cycle.jsp">Hype Cycle</a> that gamification needs to figure out ways to move past “the peak of inflated expectations” so it can be on the path to mainstream adoption.</p>
+<p>What is the best way to improve gamification? Aside from complementary solutions such as gaining an overall better understanding of behavioral sciences and usability in order to implement better User Experience (UX) design, <strong>the best chance gamification has at improving its results is “Big Data”. </strong>Big Data is under the umbrella of Business Intelligence and is defined by the <a href="http://www.emc.com/leadership/digital-universe/iview/big-data-2020.htm">International Data Corp.</a> as new generation &#8220;technologies and architectures, designed to economically extract value from very large volumes of a wide variety of data by enabling high-velocity capture, discovery and/or analysis.&#8221; The IDC expects spending on Big Data to be about $16.9 billion by 2015, an increase from the $3.2 billion spent in 2010. This increase is for good reason. Having worked in Big Data before, I have seen the potential benefits it has of analyzing large volumes of data in statistically significant ways. What this means for gamification is that B2C loyalty and B2E productivity/efficiency can help companies better understand the behaviors of customers and employees respectively. The ‘3V’ model of volume and variety combined with velocity will improve feedback to both consumers and companies—one of the core values of gamification.</p>
+<p> <a href="http://gamifyforthewin.com/2013/01/18/big-data-to-save-gamification/#more-820" class="more-link"><span aria-label="Continue reading Big Data to Save Gamification?">(more&hellip;)</span></a></p>
+		</div>
+	         
+	    <div class="post-more">      
+	    		<span class="comments"><a href="http://gamifyforthewin.com/2013/01/18/big-data-to-save-gamification/#comments">5 Comments</a></span>
+	    		<span class="shorturl"><a href="http://gamifyforthewin.com/2013/01/18/big-data-to-save-gamification/" title="Short URL for Big Data to Save Gamification?">Short URL</a></span>				<span class="tags"><a href="http://gamifyforthewin.com/tag/big/" rel="tag">Big</a>, <a href="http://gamifyforthewin.com/tag/data/" rel="tag">Data</a>, <a href="http://gamifyforthewin.com/tag/gamification-2/" rel="tag">gamification</a>, <a href="http://gamifyforthewin.com/tag/idc/" rel="tag">IDC</a>, <a href="http://gamifyforthewin.com/tag/international/" rel="tag">International</a></span>	    </div>   
+	                         
+	</div><!-- /.post -->
+	
+		    		                                                
+	                   
+                      	
+           	           		
+ 	   			    				<!-- DEFAULT POST -->
+       								
+	<div class="post">
+	
+        <div class="posttype">
+        	<a href="http://gamifyforthewin.com/tumblog/articles/" title=""><img src="http://gamifyforthewin.com/wp-content/themes/elefolio/images/ico-text.png" alt="" /></a>
+        </div><!-- /.posttype -->
+	    
+	    	    <h2 class="title"><a href="http://gamifyforthewin.com/2012/11/21/the-science-of-gamification/" rel="bookmark" title="The Science of Gamification">The Science of Gamification</a></h2>
+	    	    
+	    <p class="post-meta">
+    <span class="post-author"><span class="small">by</span> <a href="http://gamifyforthewin.com/author/sudarshan/" title="Posts by Sudarshan" rel="author">Sudarshan</a></span>
+    <span class="post-date"><span class="small">on</span> November 21, 2012</span>
+    <span class="post-category"><span class="small">in</span> <a href="http://gamifyforthewin.com/category/gamification/" rel="category tag">Gamification</a></span>
+    </p>
+	    
+	    <div class="entry">
+			<p>Gamification, game mechanics added upon behavioral mechanics, game design, however you want to talk about the “g” word, one thing is clear—we are entering a new era of gaming. Players are shifting away from zero-sum games, opting for more social gaming counterparts that include elements of collaboration, altruism, and meaning beyond the big “W” or just as big “L”. To study the behavior of gamers, we need more than just subjective accounts as to why the world is seeing a change in gamer demographics. By understanding the ebb and flow of gamer demographics, designers will be able to design better-engaging gamified apps for the digital native world.</p>
+<p>Flipping the point of focus, designers need to know more than just the psyche of gamers to be able to build successful gamified solutions. Basing implementation off of science and iterative design, designers constantly refer back to academic textbooks and research publications to find new, cutting edge ideas that potentially could hook the entire world on games. The following is an example of what a designers’ cookbook of scientific ingredients used in gamification looks like today. These sciences range in focus on the end user to the designer, including topics such as anthropology to computer science.</p>
+<p align="center">
+<p align="center"><span style="text-decoration: underline;">Gamification Cookbook</span></p>
+<p>1. Anthropology</p>
+<p>Anthropology is the study of humanity and its interaction under many different social contexts. It is important to remember that play is a natural state of learning. From play, games are created from rule-based logic. Sports are a great example of great games that have stood the test of time because they incorporate both play and game elements. Studying humanity as a whole gives us insight as to how we globally like to play and game.</p>
+<p>2. Sociology</p>
+<p>Sociology is the study of a society. Similar to the study of humanity except this looks at a smaller subset of people, typically specific cultures, cities, etc. Great design principles come from understanding cultural gamification. Each culture views games differently in relation to their use, so it would be important to understand a culture before designing for its members. The <a href="http://geert-hofstede.com/dimensions.html">cultural dimensions</a> provide a great place to start.</p>
+<p> <a href="http://gamifyforthewin.com/2012/11/21/the-science-of-gamification/#more-814" class="more-link"><span aria-label="Continue reading The Science of Gamification">(more&hellip;)</span></a></p>
+		</div>
+	         
+	    <div class="post-more">      
+	    		<span class="comments"><a href="http://gamifyforthewin.com/2012/11/21/the-science-of-gamification/#comments">2 Comments</a></span>
+	    		<span class="shorturl"><a href="http://gamifyforthewin.com/2012/11/21/the-science-of-gamification/" title="Short URL for The Science of Gamification">Short URL</a></span>				<span class="tags"><a href="http://gamifyforthewin.com/tag/art/" rel="tag">art</a>, <a href="http://gamifyforthewin.com/tag/cookbook/" rel="tag">cookbook</a>, <a href="http://gamifyforthewin.com/tag/gamification-2/" rel="tag">gamification</a>, <a href="http://gamifyforthewin.com/tag/science/" rel="tag">science</a></span>	    </div>   
+	                         
+	</div><!-- /.post -->
+	
+		    		                                                
+	                   
+                      	
+           	           		
+ 	   			    				<!-- DEFAULT POST -->
+       								
+	<div class="post">
+	
+        <div class="posttype">
+        	<a href="http://gamifyforthewin.com/tumblog/articles/" title=""><img src="http://gamifyforthewin.com/wp-content/themes/elefolio/images/ico-text.png" alt="" /></a>
+        </div><!-- /.posttype -->
+	    
+	    	    <h2 class="title"><a href="http://gamifyforthewin.com/2012/11/13/the-art-of-gamification/" rel="bookmark" title="The Art of Gamification">The Art of Gamification</a></h2>
+	    	    
+	    <p class="post-meta">
+    <span class="post-author"><span class="small">by</span> <a href="http://gamifyforthewin.com/author/sudarshan/" title="Posts by Sudarshan" rel="author">Sudarshan</a></span>
+    <span class="post-date"><span class="small">on</span> November 13, 2012</span>
+    <span class="post-category"><span class="small">in</span> <a href="http://gamifyforthewin.com/category/gamification/" rel="category tag">Gamification</a></span>
+    </p>
+	    
+	    <div class="entry">
+			<p style="text-align: left;" align="center">As gamification’s practice and theory are derived from design principles such as game design thinking and user-centered design, we discover that it is an <strong>art to implement clever gamified solutions</strong>. The art places a strong focus on end users and how they interact with user interfaces. On the other end of the spectrum, <strong>gamification theory</strong> <strong>is a mass integration of multiple scientific disciplines. </strong>The science places a strong focus on designers and how they can use academic results to help determine best behavioral models. It is important to note that the art and science coexist to co-create best gamified solutions between end users and designer. <em>However, the art is only truly experienced by the end user while the science is fully understood only by the designer.</em> This discord between perspectives is what makes gamification design hard, especially when the target audience are digital natives—people who use technology as a sixth sense. Experiences need to seamlessly appear smooth and natural for people to “get hooked” on one gamified environment over another. In this two part series, we break down the art and science of gamification with the hopes to provide practical insight.</p>
+<p><em>The art of gamification focuses on the core principles of identity, onboarding, scaffolding, and mastery.</em> These principles are formed around the end users’ experiences and perspectives. <strong>Identity</strong> is manifested in the form of account creation. When users are creating an account for their gamified experience, what are the ways in which data is represented to describe you? Does the application make the user feel like a unique individual or a generic one? In RPGs such as World of Warcraft, we see identity take upon the form of multiple skills, guilds, clans, and character customization (physical features, clothes, etc.). The plethora of ways a user can create a character allows people to take on their own unique identity in the World of Warcraft realm. This uniqueness aspect to identity is what keeps people addicted to a game, and also helps for the next core principle, <strong>onboarding</strong>.</p>
+<p> <a href="http://gamifyforthewin.com/2012/11/13/the-art-of-gamification/#more-808" class="more-link"><span aria-label="Continue reading The Art of Gamification">(more&hellip;)</span></a></p>
+		</div>
+	         
+	    <div class="post-more">      
+	    		<span class="comments"><a href="http://gamifyforthewin.com/2012/11/13/the-art-of-gamification/#respond">0 Comments</a></span>
+	    		<span class="shorturl"><a href="http://gamifyforthewin.com/2012/11/13/the-art-of-gamification/" title="Short URL for The Art of Gamification">Short URL</a></span>				<span class="tags"><a href="http://gamifyforthewin.com/tag/art/" rel="tag">art</a>, <a href="http://gamifyforthewin.com/tag/gamification-2/" rel="tag">gamification</a>, <a href="http://gamifyforthewin.com/tag/identity/" rel="tag">identity</a>, <a href="http://gamifyforthewin.com/tag/onboarding/" rel="tag">onboarding</a>, <a href="http://gamifyforthewin.com/tag/scaffolding/" rel="tag">scaffolding</a>, <a href="http://gamifyforthewin.com/tag/science/" rel="tag">science</a></span>	    </div>   
+	                         
+	</div><!-- /.post -->
+	
+		    		                                                
+	                   
+                      	
+           	           		
+ 	   			    				<!-- DEFAULT POST -->
+       								
+	<div class="post">
+	
+        <div class="posttype">
+        	<a href="http://gamifyforthewin.com/tumblog/articles/" title=""><img src="http://gamifyforthewin.com/wp-content/themes/elefolio/images/ico-text.png" alt="" /></a>
+        </div><!-- /.posttype -->
+	    
+	    	    <h2 class="title"><a href="http://gamifyforthewin.com/2012/11/06/the-multidimensional-workforce-pt-3/" rel="bookmark" title="The Multidimensional Workforce Pt. 3">The Multidimensional Workforce Pt. 3</a></h2>
+	    	    
+	    <p class="post-meta">
+    <span class="post-author"><span class="small">by</span> <a href="http://gamifyforthewin.com/author/sudarshan/" title="Posts by Sudarshan" rel="author">Sudarshan</a></span>
+    <span class="post-date"><span class="small">on</span> November 6, 2012</span>
+    <span class="post-category"><span class="small">in</span> <a href="http://gamifyforthewin.com/category/gamification/" rel="category tag">Gamification</a></span>
+    </p>
+	    
+	    <div class="entry">
+			<p>We are now at the conclusion of what I hope has been an illuminating series thus far. To recap, the Multidimensional Workforce is a three-part series emphasizing the need to redesign the B2E environment and what it means to be a corporate citizen. Generation Y is entering the workforce at an increasing rate, and it will soon be Generation Z’s turn to become the world’s leaders. In <a href="http://gamifyforthewin.com/2012/10/the-multidimensional-workforce-pt-1/">Part 1</a>, we covered the importance of removing the stereotypical “dirt” to discover that Generation Y is raw, untapped potential. In <a href="http://gamifyforthewin.com/2012/10/the-multidimensional-workforce-pt-2/">Part 2</a>, we reviewed the critically acclaimed book <span style="text-decoration: underline;">The 2020 Workplace</span> as supporting evidence to our newly created <a href="http://gamifyforthewin.com/wp-content/uploads/2012/10/Gen-Y.jpg">Multidimensional Workforce Venn diagram</a>. In this concluding post, a sample gamified solution will be presented for ways businesses can improve the workplace atmosphere.</p>
+<p>As digital natives, Generation Y and future generations are just as special as (if not more than) the Silent Generation and Baby Boomer CEOs and Managing Directors. Each generation brings forward distinct pros/cons so it is up to today’s businesses to start maximizing on the positives and minimizing on the inefficiency. <em>Thankfully, gamification is a digital native’s best friend because video games have been a primary medium for information gathering and processing for the last 10-15 years.</em> Using game design principles and user-centered design thinking, Multi-generational interactions can become more productive to business objectives. Taking a look at each intersection of the Venn diagram, here are some simple implementations that would gamify your business <a href="http://wdp.wharton.upenn.edu/books/for-the-win/"><strong>for the win</strong></a>.</p>
+<p>&nbsp;</p>
+<p align="center">Proposed Gamified Solution</p>
+<p> 1. Generations X/Y</p>
+<p>People of these generations love the idea of “gamification”—game design elements coupled with user-centered design thinking. Points, badges, leaderboard, statuses, intangible elements of being/meaning, and social elements are a great starter kit to gamifying a progressive growth structure for these generations. Generation X should be more concerned with career growth and Generation Y should start with skill/roles growth. Since getting a MBA is like a quest that rewards the person a pathway to new careers upon completion, Generation Y should first improve and refine their skills before embarking on such task. Positive growth is key.</p>
+<p> <a href="http://gamifyforthewin.com/2012/11/06/the-multidimensional-workforce-pt-3/#more-802" class="more-link"><span aria-label="Continue reading The Multidimensional Workforce Pt. 3">(more&hellip;)</span></a></p>
+		</div>
+	         
+	    <div class="post-more">      
+	    		<span class="comments"><a href="http://gamifyforthewin.com/2012/11/06/the-multidimensional-workforce-pt-3/#respond">0 Comments</a></span>
+	    		<span class="shorturl"><a href="http://gamifyforthewin.com/2012/11/06/the-multidimensional-workforce-pt-3/" title="Short URL for The Multidimensional Workforce Pt. 3">Short URL</a></span>				<span class="tags"><a href="http://gamifyforthewin.com/tag/gamifcation/" rel="tag">gamifcation</a>, <a href="http://gamifyforthewin.com/tag/generation/" rel="tag">Generation</a>, <a href="http://gamifyforthewin.com/tag/multidimensional/" rel="tag">Multidimensional</a>, <a href="http://gamifyforthewin.com/tag/workforce/" rel="tag">Workforce</a></span>	    </div>   
+	                         
+	</div><!-- /.post -->
+	
+		    		                                                
+	                   
+                      	
+           	           		
+ 	   			    				<!-- DEFAULT POST -->
+       								
+	<div class="post">
+	
+        <div class="posttype">
+        	<a href="http://gamifyforthewin.com/tumblog/articles/" title=""><img src="http://gamifyforthewin.com/wp-content/themes/elefolio/images/ico-text.png" alt="" /></a>
+        </div><!-- /.posttype -->
+	    
+	    	    <h2 class="title"><a href="http://gamifyforthewin.com/2012/10/31/big-news-the-book-is-out/" rel="bookmark" title="Big News: The Book is Out!">Big News: The Book is Out!</a></h2>
+	    	    
+	    <p class="post-meta">
+    <span class="post-author"><span class="small">by</span> <a href="http://gamifyforthewin.com/author/jennifer/" title="Posts by Jennifer" rel="author">Jennifer</a></span>
+    <span class="post-date"><span class="small">on</span> October 31, 2012</span>
+    <span class="post-category"><span class="small">in</span> <a href="http://gamifyforthewin.com/category/gamification/" rel="category tag">Gamification</a></span>
+    </p>
+	    
+	    <div class="entry">
+			<p>Our very own, Kevin Werbach and Dan Hunter, have released their book, <em>For the Win: How Game Thinking Can Revolutionize Your Business.</em></p>
+<p><em></em><em>__________ </em></p>
+<p><strong>An overview:</strong></p>
+<p>Take your business to the next level—<em>for the win</em>  Millions flock to their computers, consoles, mobile phones, tablets, and social networks each day to play World of Warcraft, Farmville, Scrabble, and countless other games, generating billions in sales each year. The careful and skillful construction of these games is built on decades of research into human motivation and psychology: A well-designed game goes right to the motivational heart of the human psyche.</p>
+<p>In <em>For the Win,</em> authors Kevin Werbach and Dan Hunter argue persuasively that gamemakers need not be the only ones benefiting from game design. Werbach and Hunter are lawyers and World of Warcraft players who created the world’s first course on gamification at the Wharton School. In their book, they reveal how game thinking—addressing problems like a game designer—can motivate employees and customers and create engaging experiences that can transform your business.</p>
+<p><strong>And Some Reviews:</strong></p>
+<p>“Like gamification, this book is a fusion of human nature and good design. Far and away the best book on the subject, with the most examples and the best intellectual grasp of the topics.”</p>
+<p><strong>—Bing Gordon, Partner, Kleiner Perkins Caufield &amp; Byers; former Chief Creative Officer, Electronic Arts</strong></p>
+<p><strong> </strong></p>
+<p>“If you want to understand one of the most important trends in business today, go out and buy <em>For the Win</em>. Werbach and Hunter reveal the secrets to powering up your organization through game thinking. Read this book. It&#8217;s a game changer.”</p>
+<p><strong>—Brad Feld, Managing Director, Foundry Group; Co-author of <em>Do More Faster</em></strong></p>
+<p><strong><em> </em></strong></p>
+<p>“<em>For the Win</em> hits a home run in illustrating the business value of gamification for both small and large companies across the globe.&#8221;</p>
+<p><strong>—Kris Duggan, CEO, Badgeville</strong></p>
+<p>__________</p>
+<p>To all our gamified readers, get yourself a copy. You won&#8217;t regret it.</p>
+		</div>
+	         
+	    <div class="post-more">      
+	    		<span class="comments"><a href="http://gamifyforthewin.com/2012/10/31/big-news-the-book-is-out/#comments">3 Comments</a></span>
+	    		<span class="shorturl"><a href="http://gamifyforthewin.com/2012/10/31/big-news-the-book-is-out/" title="Short URL for Big News: The Book is Out!">Short URL</a></span>				<span class="tags"><a href="http://gamifyforthewin.com/tag/book/" rel="tag">book</a>, <a href="http://gamifyforthewin.com/tag/business/" rel="tag">business</a>, <a href="http://gamifyforthewin.com/tag/for-the-win/" rel="tag">for the win</a>, <a href="http://gamifyforthewin.com/tag/gamification-2/" rel="tag">gamification</a></span>	    </div>   
+	                         
+	</div><!-- /.post -->
+	
+		    		                                                
+	                   
+                      	
+           	           		
+ 	   			    				<!-- DEFAULT POST -->
+       								
+	<div class="post">
+	
+        <div class="posttype">
+        	<a href="http://gamifyforthewin.com/tumblog/articles/" title=""><img src="http://gamifyforthewin.com/wp-content/themes/elefolio/images/ico-text.png" alt="" /></a>
+        </div><!-- /.posttype -->
+	    
+	    	    <h2 class="title"><a href="http://gamifyforthewin.com/2012/10/30/classroom-meet-the-ipad-mini/" rel="bookmark" title="Classroom, Meet the iPad Mini">Classroom, Meet the iPad Mini</a></h2>
+	    	    
+	    <p class="post-meta">
+    <span class="post-author"><span class="small">by</span> <a href="http://gamifyforthewin.com/author/jennifer/" title="Posts by Jennifer" rel="author">Jennifer</a></span>
+    <span class="post-date"><span class="small">on</span> October 30, 2012</span>
+    <span class="post-category"><span class="small">in</span> <a href="http://gamifyforthewin.com/category/gamification/" rel="category tag">Gamification</a></span>
+    </p>
+	    
+	    <div class="entry">
+			<p><span style="text-decoration: underline;"><a href="http://visual.merriam-webster.com/society/education/school/classroom.php"><img decoding="async" loading="lazy" class="alignleft size-medium wp-image-781" title="classroom" src="http://gamifyforthewin.com/wp-content/uploads/2012/10/classroom-300x209.jpg" alt="" width="300" height="209" /></a></span>In case you have been living under a rock, the <a href="http://www.apple.com/ipad/">iPad mini</a> has made its <a href="http://www.engadget.com/2012/10/23/apple-ipad-mini-hands-on-video/">debut</a>. It’s smaller (obviously), more portable, and more affordable than the iPad. And while gadget nerds everywhere are comparing it to its larger predecessor and discussing internals, I was curious what this means for classrooms.</p>
+<p>The mini iPad is ripe <a href="http://www.ocregister.com/articles/ipad-375515-new-apple.html">for classroom use</a> and because classes all over are embracing the more technologically advanced younger generations, it’s not unfathomable that students will soon meet Apple’s new gadget, hopefully with some gamified learning tools.</p>
+<p>Gamification, by providing instantaneous feedback, competition, and rewarding for even the smallest steps of progress is exactly the kind of motivation kids need, especially with respect to learning. And aside from drawing kids in and keeping them engaged with educational tools, gamification can also help build kids&#8217; ability to be competitive and allow them to gain confidence. I wish gamified learning had been a classroom option in my younger years because I for one have always learned more productively with some sort of game (I&#8217;m thinking of the hours I spent with my <a href="http://www.teachersparadise.com/c/ac-adaptor-geosafarimathsafari-p-19587.html">GeoSafari</a>). So I hope that schools take advantage of the new methods of learning available to them.</p>
+<p>And I know there are other smaller tablets on the market, but I am extremely partial to Apple (I have more Apple products than can be counted on two hands). So I am excited and hopeful that schools will use the mini iPad to gamify students’ learning experience.</p>
+<p>Any predictions on some of the new ways app developers can infuse gamification into their educational applications?</p>
+		</div>
+	         
+	    <div class="post-more">      
+	    		<span class="comments"><a href="http://gamifyforthewin.com/2012/10/30/classroom-meet-the-ipad-mini/#respond">0 Comments</a></span>
+	    		<span class="shorturl"><a href="http://gamifyforthewin.com/2012/10/30/classroom-meet-the-ipad-mini/" title="Short URL for Classroom, Meet the iPad Mini">Short URL</a></span>				<span class="tags"><a href="http://gamifyforthewin.com/tag/classroom/" rel="tag">classroom</a>, <a href="http://gamifyforthewin.com/tag/gamification-2/" rel="tag">gamification</a>, <a href="http://gamifyforthewin.com/tag/ipad/" rel="tag">iPad</a>, <a href="http://gamifyforthewin.com/tag/ipad-mini/" rel="tag">iPad Mini</a>, <a href="http://gamifyforthewin.com/tag/learning/" rel="tag">learning</a></span>	    </div>   
+	                         
+	</div><!-- /.post -->
+	
+		    		                                                
+	                   
+                      	
+           	           		
+ 	   			    				<!-- DEFAULT POST -->
+       								
+	<div class="post">
+	
+        <div class="posttype">
+        	<a href="http://gamifyforthewin.com/tumblog/articles/" title=""><img src="http://gamifyforthewin.com/wp-content/themes/elefolio/images/ico-text.png" alt="" /></a>
+        </div><!-- /.posttype -->
+	    
+	    	    <h2 class="title"><a href="http://gamifyforthewin.com/2012/10/25/the-multidimensional-workforce-pt-2/" rel="bookmark" title="The Multidimensional Workforce Pt. 2">The Multidimensional Workforce Pt. 2</a></h2>
+	    	    
+	    <p class="post-meta">
+    <span class="post-author"><span class="small">by</span> <a href="http://gamifyforthewin.com/author/sudarshan/" title="Posts by Sudarshan" rel="author">Sudarshan</a></span>
+    <span class="post-date"><span class="small">on</span> October 25, 2012</span>
+    <span class="post-category"><span class="small">in</span> <a href="http://gamifyforthewin.com/category/gamification/" rel="category tag">Gamification</a></span>
+    </p>
+	    
+	    <div class="entry">
+			<p>In <a href="http://gamifyforthewin.com/2012/10/the-multidimensional-workforce-pt-1/">Part 1</a> of the Multidimensional Workforce, we analyzed how Gen Y is stereotyped and why these stereotypes are actually hiding the true potential of today’s generation. Rash behavior should be channeled into ambition. Informality should be channeled into efficiency. Selfishness should be converted to a self-motivated drive. How can these transformations happen? Since companies have a <a href="http://gamifyforthewin.com/wp-content/uploads/2012/10/Gen-Y.jpg">multidimensional workforce</a>, how can various generational interactions mentor today’s generation to succeed in the rapidly changing professional world?</p>
+<p>The <a href="http://gamifyforthewin.com/wp-content/uploads/2012/10/Gen-Y.jpg">venn diagram</a> explains how the current work atmosphere shouldn’t just focus on accommodating future Gen Y employees. Rather, the increase of Gen Y in the workforce affects the entire demographic within a company. In the book <a href="http://www.amazon.com/2020-Workplace-Innovative-Companies-Tomorrows/dp/0061763276">The 2020 Workplace</a>, written by Jeanne Meister and Karie Willyerd, it vividly shows through examples and case studies that the year 2020 will be fundamentally different than today’s work culture. Three major shifts they claim are <em>globalization, demographics, </em>and <em>social web</em>.</p>
+<p><strong>Globalization</strong> is seen by the fact that technology has broken down geographical barriers (ex. Airplanes and social media). Social media channel Twitter proves an example of globalization in the workplace. In 140 characters or less, you are expected to compress complex verbiage in a short, concise message. With a plethora of tweets being sent per second all around the world, Twitter has given the world a chance to communicate with each other in real time. Twitter is a great example of how business doesn’t end even though it may be nighttime in a certain area. Twitter’s ability to continue a conversation regardless of time zone gives way to fact that today’s generations love a great work/life balance. <strong>Demograhics</strong> in 2020 will shift the various generation populations in the workplace, similar to the Multidimensional Workforce. By 2020, Jeanne and Karie believe Gen Z will take up 7% of the entire company atmosphere, Gen X/Y 50%, Baby Boomers 22%, and Silent Generation 1%. Lastly, the <strong>Social Web</strong> refers to the upcoming collaboration revolution. With various blogs, wikis, and content management systems, knowledge sharing and collaboration is the future.</p>
+<p> <a href="http://gamifyforthewin.com/2012/10/25/the-multidimensional-workforce-pt-2/#more-771" class="more-link"><span aria-label="Continue reading The Multidimensional Workforce Pt. 2">(more&hellip;)</span></a></p>
+		</div>
+	         
+	    <div class="post-more">      
+	    		<span class="comments"><a href="http://gamifyforthewin.com/2012/10/25/the-multidimensional-workforce-pt-2/#respond">0 Comments</a></span>
+	    		<span class="shorturl"><a href="http://gamifyforthewin.com/2012/10/25/the-multidimensional-workforce-pt-2/" title="Short URL for The Multidimensional Workforce Pt. 2">Short URL</a></span>				<span class="tags"><a href="http://gamifyforthewin.com/tag/gamification-2/" rel="tag">gamification</a>, <a href="http://gamifyforthewin.com/tag/gen-y/" rel="tag">Gen Y</a>, <a href="http://gamifyforthewin.com/tag/generaation/" rel="tag">generaation</a>, <a href="http://gamifyforthewin.com/tag/the-2020-workplace/" rel="tag">The 2020 Workplace</a></span>	    </div>   
+	                         
+	</div><!-- /.post -->
+	
+		    		                                                
+	                   
+                      	
+           	           		
+ 	   			    				<!-- DEFAULT POST -->
+       								
+	<div class="post">
+	
+        <div class="posttype">
+        	<a href="http://gamifyforthewin.com/tumblog/articles/" title=""><img src="http://gamifyforthewin.com/wp-content/themes/elefolio/images/ico-text.png" alt="" /></a>
+        </div><!-- /.posttype -->
+	    
+	    	    <h2 class="title"><a href="http://gamifyforthewin.com/2012/10/16/begging-giving-and-gamification/" rel="bookmark" title="Begging, Giving, and Gamification">Begging, Giving, and Gamification</a></h2>
+	    	    
+	    <p class="post-meta">
+    <span class="post-author"><span class="small">by</span> <a href="http://gamifyforthewin.com/author/jennifer/" title="Posts by Jennifer" rel="author">Jennifer</a></span>
+    <span class="post-date"><span class="small">on</span> October 16, 2012</span>
+    <span class="post-category"><span class="small">in</span> <a href="http://gamifyforthewin.com/category/gamification/" rel="category tag">Gamification</a></span>
+    </p>
+	    
+	    <div class="entry">
+			<p><a href="http://lastpickproductions.com/ibeg/"><img decoding="async" loading="lazy" class="alignleft size-medium wp-image-761" title="Untitled" src="http://gamifyforthewin.com/wp-content/uploads/2012/10/Untitled-300x151.png" alt="" width="300" height="151" /></a>I have lived in New York City for just over two years now and I am ashamed to admit that the homeless faces that frequent the subways, sidewalks, and parks now make less of an impression on me. Maybe the modus operandi for a New Yorker requires this sort of numbing to homelessness or just the fact that New York City seems to be, at times, overrun with the problem. Whatever the case may be, my wide-eyed eagerness to help whenever I could has faded.</p>
+<p><a href="http://lastpickproductions.com">Last Pick Productions</a>, a Vancouver videogame studio, has created an application to (hopefully) help remedy this problem. The app, called <a href="http://lastpickproductions.com/ibeg/">iBeg</a>, is expected to release in the spring of 2013 and is meant to simulate the life of a homeless person. A player is given a homeless avatar and is charged with the responsibility of keeping that avatar fed, clean, and protecting it against the harsh elements that come with living on the street. There are a few different options a player can choose so that their homeless avatar can earn money: simply beg pedestrians, play an instrument, or create a story like you just need money to fix your car.</p>
+<p> <a href="http://gamifyforthewin.com/2012/10/16/begging-giving-and-gamification/#more-760" class="more-link"><span aria-label="Continue reading Begging, Giving, and Gamification">(more&hellip;)</span></a></p>
+		</div>
+	         
+	    <div class="post-more">      
+	    		<span class="comments"><a href="http://gamifyforthewin.com/2012/10/16/begging-giving-and-gamification/#comments">4 Comments</a></span>
+	    		<span class="shorturl"><a href="http://gamifyforthewin.com/2012/10/16/begging-giving-and-gamification/" title="Short URL for Begging, Giving, and Gamification">Short URL</a></span>				<span class="tags"><a href="http://gamifyforthewin.com/tag/gamification-2/" rel="tag">gamification</a>, <a href="http://gamifyforthewin.com/tag/homeless/" rel="tag">homeless</a>, <a href="http://gamifyforthewin.com/tag/homelessness/" rel="tag">homelessness</a>, <a href="http://gamifyforthewin.com/tag/ibeg/" rel="tag">iBeg</a>, <a href="http://gamifyforthewin.com/tag/last-pick-productions/" rel="tag">Last Pick Productions</a></span>	    </div>   
+	                         
+	</div><!-- /.post -->
+	
+		    		                                                
+	                   
+                      	
+           	           		
+ 	   			    				<!-- DEFAULT POST -->
+       								
+	<div class="post">
+	
+        <div class="posttype">
+        	<a href="http://gamifyforthewin.com/tumblog/articles/" title=""><img src="http://gamifyforthewin.com/wp-content/themes/elefolio/images/ico-text.png" alt="" /></a>
+        </div><!-- /.posttype -->
+	    
+	    	    <h2 class="title"><a href="http://gamifyforthewin.com/2012/10/05/the-multidimensional-workforce-pt-1/" rel="bookmark" title="The Multidimensional Workforce Pt. 1">The Multidimensional Workforce Pt. 1</a></h2>
+	    	    
+	    <p class="post-meta">
+    <span class="post-author"><span class="small">by</span> <a href="http://gamifyforthewin.com/author/sudarshan/" title="Posts by Sudarshan" rel="author">Sudarshan</a></span>
+    <span class="post-date"><span class="small">on</span> October 5, 2012</span>
+    <span class="post-category"><span class="small">in</span> <a href="http://gamifyforthewin.com/category/gamification/" rel="category tag">Gamification</a></span>
+    </p>
+	    
+	    <div class="entry">
+			<p style="text-align: left;" align="center">As we continue to enter to a new technological age, we are faced with many different challenges. Although it may not get as much attention in the media because it is a tough puzzle to solve, businesses have to focus on solving their approach to the multidimensional workforce.</p>
+<p style="text-align: left;" align="center">The multidimensional workforce welcomes the addition of Gen Y and already consists of the Silent Generation, Baby Boomers, and Gen X. Unfortunately, there is discord between generations because Gen Y workers come off as being rash, informal, and selfish. Few companies are starting to rub off the “stereotypical” dirt to uncover the fact that Gen Y is actually <strong>ambitious, efficient</strong>, and <strong>self-driven</strong>.</p>
+<p style="text-align: left;" align="center"><span style="text-align: center;">Who is Gen Y? No exact years are given, but those born in between 1979-1997 are considered to be a part of Gen Y. Gen Y embodies the love and sense of entitlement they received from their Baby Boomer parents who worked hard to give the best to their children. Below is a complete profile of Gen Y:</span></p>
+<ul>
+<li>Values: meritocracy, camaraderie, non-traditionalism, work-life balance, self-expression and meaning</li>
+<li>Self-Perception: unique, proud, confident, entitled, frustrated, impatient</li>
+<li>Skills: technology-related tasks</li>
+</ul>
+<p>Gen Y believes that the strongest survive. Valuing meritocracy, good work should be rewarded properly. A sense of teamwork for collaboration or competition and flexibility in work procedures are sought after in this generation. The normal 9-5 schedule doesn’t work, as there should be a great work/life balance. Strongly results driven, people of this generation want to see life move in double time. They can’t wait to be at the top of the ladder and will work hard to find ways to be recognized. As the work-life perception is more balance, the work will get done, doesn’t matter what time it gets done. With the immersion in the Internet and amount of information, people are able to express themselves in ways that are very unique. Social media has given this generation a new way to express who they are, what they like, and so forth. Gen Y is proud of this and highly values self-expression.</p>
+<p>Most of Gen Y was given constant positive feedback from parents, and therefore have a high level of confidence. It may come off as arrogance, but the multidimensional workforce should recognize that this “arrogance” is actually a strong level of confidence and ambition. Although Gen Y is not typically loyal to the company, they are loyal to their work. <em>The rise of social responsibility and technology has given the majority of Gen Y to participate in meaningful work. This work is defined uniquely for each employee, and this is the key to tapping Gen Y’s potential.</em></p>
+<p> <a href="http://gamifyforthewin.com/2012/10/05/the-multidimensional-workforce-pt-1/#more-714" class="more-link"><span aria-label="Continue reading The Multidimensional Workforce Pt. 1">(more&hellip;)</span></a></p>
+		</div>
+	         
+	    <div class="post-more">      
+	    		<span class="comments"><a href="http://gamifyforthewin.com/2012/10/05/the-multidimensional-workforce-pt-1/#comments">1 Comments</a></span>
+	    		<span class="shorturl"><a href="http://gamifyforthewin.com/2012/10/05/the-multidimensional-workforce-pt-1/" title="Short URL for The Multidimensional Workforce Pt. 1">Short URL</a></span>				<span class="tags"><a href="http://gamifyforthewin.com/tag/b2e/" rel="tag">B2E</a>, <a href="http://gamifyforthewin.com/tag/gamification-2/" rel="tag">gamification</a>, <a href="http://gamifyforthewin.com/tag/gen-y/" rel="tag">Gen Y</a>, <a href="http://gamifyforthewin.com/tag/generation/" rel="tag">Generation</a></span>	    </div>   
+	                         
+	</div><!-- /.post -->
+	
+		    		                                                
+	          
+                                                                    
+			    
+	    
+				        
+	            <div class="nav-entries">
+	                <a href="http://gamifyforthewin.com/page/2/" ><div class="nav-prev fl">Older posts</div></a>	                	                <div class="fix"></div>
+	            </div>	
+	        
+				    
+		                
+		</div><!-- /#main -->
+
+        <div id="sidebar" class="fr">
+
+	
+		<div id="block-2" class="widget widget_block widget_search"><form role="search" method="get" action="http://gamifyforthewin.com/" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"><label for="wp-block-search__input-1" class="wp-block-search__label" >Search</label><div class="wp-block-search__inside-wrapper " ><input type="search" id="wp-block-search__input-1" class="wp-block-search__input wp-block-search__input" name="s" value="" placeholder=""  required /><button type="submit" class="wp-block-search__button wp-element-button"  >Search</button></div></form></div><div id="block-3" class="widget widget_block"><div class="is-layout-flow wp-block-group"><div class="wp-block-group__inner-container"><h2>Recent Posts</h2><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="http://gamifyforthewin.com/2020/07/22/for-the-win-v-2-is-coming-soon/">For the Win v.2 is Coming Soon!</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="http://gamifyforthewin.com/2013/01/18/big-data-to-save-gamification/">Big Data to Save Gamification?</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="http://gamifyforthewin.com/2012/11/21/the-science-of-gamification/">The Science of Gamification</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="http://gamifyforthewin.com/2012/11/13/the-art-of-gamification/">The Art of Gamification</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="http://gamifyforthewin.com/2012/11/06/the-multidimensional-workforce-pt-3/">The Multidimensional Workforce Pt. 3</a></li>
+</ul></div></div></div><div id="block-4" class="widget widget_block"><div class="is-layout-flow wp-block-group"><div class="wp-block-group__inner-container"><h2>Recent Comments</h2><ol class="wp-block-latest-comments"><li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><a class="wp-block-latest-comments__comment-author" href="http://gamifyforthewin.com">Sudarshan</a> on <a class="wp-block-latest-comments__comment-link" href="http://gamifyforthewin.com/2013/01/18/big-data-to-save-gamification/#comment-85">Big Data to Save Gamification?</a></footer></article></li><li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><a class="wp-block-latest-comments__comment-author" href="http://www.engaginglab.com">Roman Rackwitz</a> on <a class="wp-block-latest-comments__comment-link" href="http://gamifyforthewin.com/2013/01/18/big-data-to-save-gamification/#comment-83">Big Data to Save Gamification?</a></footer></article></li><li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><a class="wp-block-latest-comments__comment-author" href="http://www.jeffmediasolutions.com">Jeff Siegel</a> on <a class="wp-block-latest-comments__comment-link" href="http://gamifyforthewin.com/2013/01/18/big-data-to-save-gamification/#comment-82">Big Data to Save Gamification?</a></footer></article></li><li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Nadeem Akhtar</span> on <a class="wp-block-latest-comments__comment-link" href="http://gamifyforthewin.com/2013/01/18/big-data-to-save-gamification/#comment-81">Big Data to Save Gamification?</a></footer></article></li><li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><a class="wp-block-latest-comments__comment-author" href="http://www.shekarsan.com">Shekar</a> on <a class="wp-block-latest-comments__comment-link" href="http://gamifyforthewin.com/2012/10/31/big-news-the-book-is-out/#comment-70">Big News: The Book is Out!</a></footer></article></li></ol></div></div></div>		           
+
+		
+</div><!-- /#sidebar -->
+    </div><!-- /#content -->
+		
+
+	<div class="fix"></div>
+
+    <div id="footer">
+    
+		<div id="footer-wrap" class="col-full">    
+            
+            <div id="copyright" class="fl">
+									<p>&copy; 2022 For the Win. All Rights Reserved.</p>
+				            </div><!-- /#copyright -->
+            
+            <div id="credit" class="fr">
+		        					<p>Powered by <a href="http://www.wordpress.org">WordPress</a>. Designed by <a href="http://www.woothemes.com"><img src="http://gamifyforthewin.com/wp-content/themes/elefolio/images/woothemes.png" width="74" height="19" alt="Woo Themes" /></a></p>
+				            </div><!-- /#main -->
+            
+            <div class="fix"></div>
+		</div><!-- /#footer-wrap -->
+
+    </div><!-- /#footer -->
+
+</div><!-- /#wrapper -->
+</body>
+</html>
+<!-- Dynamic page generated in 1.740 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2022-11-15 17:31:03 -->
