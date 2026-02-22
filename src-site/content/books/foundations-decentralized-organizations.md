@@ -17,7 +17,7 @@ buy_links:
     url: "https://global.oup.com/academic/product/foundations-of-decentralized-organizations-9780198946113?q=werbach&lang=en&cc=us"
   - store: "Amazon"
     url: "https://www.amazon.com/dp/0198946112"
-status: "forthcoming"
+status: "available"
 ---
 
 ## About the Book
@@ -34,7 +34,3 @@ Written by a global team of scholars from the United States, United Kingdom, con
 - Token economics and incentive alignment
 - Case studies of successful and failed DAOs
 - The future of decentralized institutions
-
-## Availability
-
-This book is forthcoming from Oxford University Press and is expected to be available in January 2026.
