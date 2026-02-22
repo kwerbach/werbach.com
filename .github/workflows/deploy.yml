@@ -11,6 +11,38 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: src-site/package-lock.json
+
+      - name: Build site from source
+        working-directory: src-site
+        run: |
+          npm ci
+          npm run build
+
+      - name: Copy built site to deploy root
+        run: |
+          # Copy built assets over the pre-existing ones in repo root
+          cp -r src-site/dist/assets/* assets/ 2>/dev/null || true
+          cp src-site/dist/index.html index.html
+          cp src-site/dist/favicon.svg favicon.svg
+          cp src-site/dist/robots.txt robots.txt
+          cp src-site/dist/sitemap.xml sitemap.xml
+          cp src-site/dist/search-index.json search-index.json
+          cp src-site/dist/rss-ideas.xml rss-ideas.xml
+          cp src-site/dist/rss-podcast.xml rss-podcast.xml
+          cp src-site/dist/vite.svg vite.svg
+          # Copy any new/updated images and PDFs from dist
+          cp src-site/dist/*.pdf . 2>/dev/null || true
+          cp src-site/dist/*.jpg . 2>/dev/null || true
+          cp src-site/dist/*.png . 2>/dev/null || true
+          cp src-site/dist/*.mp4 . 2>/dev/null || true
+          cp -r src-site/dist/uploads . 2>/dev/null || true
+
       - name: Set up SSH
         run: |
           mkdir -p ~/.ssh
@@ -31,6 +63,8 @@ jobs:
             --exclude='.github/' \
             --exclude='CLAUDE.md' \
             --exclude='.gitignore' \
+            --exclude='src-site/' \
+            --filter='protect digitaltornado.net/' \
             --filter='protect accountableai.net/' \
             --filter='protect trusttheblockchain.net/' \
             --filter='protect gamifyforthewin.com/' \

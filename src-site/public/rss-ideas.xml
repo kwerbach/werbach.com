@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kevin Werbach - Ideas</title>
+    <link>https://kevinwerbach.com/ideas</link>
+    <description>Research papers, essays, and policy work by Kevin Werbach</description>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Nov 2025 01:45:39 GMT</lastBuildDate>
+    <atom:link href="https://kevinwerbach.com/rss-ideas.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algorithmic Accountability and Governance</title>
+      <link>https://kevinwerbach.com/ideas/ai-accountability-governance</link>
+      <guid isPermaLink="true">https://kevinwerbach.com/ideas/ai-accountability-governance</guid>
+      <pubDate>Tue, 15 Oct 2024 00:00:00 GMT</pubDate>
+      <description>Exploring frameworks for responsible AI oversight in the age of generative models.</description>
+      <author>Kevin Werbach</author>
+    </item>
+    <item>
+      <title>The Future of Trust in the Blockchain Era</title>
+      <link>https://kevinwerbach.com/ideas/blockchain-trust-future</link>
+      <guid isPermaLink="true">https://kevinwerbach.com/ideas/blockchain-trust-future</guid>
+      <pubDate>Fri, 20 Sep 2024 00:00:00 GMT</pubDate>
+      <description>How distributed ledger technology is reshaping trust mechanisms in digital interactions.</description>
+      <author>Kevin Werbach</author>
+    </item>
+    <item>
+      <title>Regulatory Framework for Digital Assets</title>
+      <link>https://kevinwerbach.com/ideas/digital-assets-regulation</link>
+      <guid isPermaLink="true">https://kevinwerbach.com/ideas/digital-assets-regulation</guid>
+      <pubDate>Sat, 10 Aug 2024 00:00:00 GMT</pubDate>
+      <description>Policy recommendations for regulating cryptocurrencies and digital assets.</description>
+      <author>Kevin Werbach</author>
+    </item>
+    <item>
+      <title>Blockchain and Distributed Ledger Technology: Applications and Architecture</title>
+      <link>https://kevinwerbach.com/ideas/blockchain-and-distributed-ledger-technology-applications-and-architecture</link>
+      <guid isPermaLink="true">https://kevinwerbach.com/ideas/blockchain-and-distributed-ledger-technology-applications-and-architecture</guid>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 GMT</pubDate>
+      <description>Research on enterprise blockchain implementations and architectural considerations for distributed ledger systems.</description>
+      <author>Kevin Werbach</author>
+    </item>
+    <item>
+      <title>The Blockchain and the New Architecture of Trust</title>
+      <link>https://kevinwerbach.com/ideas/the-blockchain-and-the-new-architecture-of-trust</link>
+      <guid isPermaLink="true">https://kevinwerbach.com/ideas/the-blockchain-and-the-new-architecture-of-trust</guid>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 GMT</pubDate>
+      <description>A comprehensive examination of blockchain technology as a new infrastructure for establishing trust in digital systems.</description>
+      <author>Kevin Werbach</author>
+    </item>
+    <item>
+      <title>Trust, But Verify: Why the Blockchain Needs the Law</title>
+      <link>https://kevinwerbach.com/ideas/trust-but-verify-why-the-blockchain-needs-the-law</link>
+      <guid isPermaLink="true">https://kevinwerbach.com/ideas/trust-but-verify-why-the-blockchain-needs-the-law</guid>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 GMT</pubDate>
+      <description>Examining the relationship between blockchain technology and legal systems, arguing that law remains essential despite technological trust mechanisms.</description>
+      <author>Kevin Werbach</author>
+    </item>
+    <item>
+      <title>Contracts Ex Machina</title>
+      <link>https://kevinwerbach.com/ideas/contracts-ex-machina</link>
+      <guid isPermaLink="true">https://kevinwerbach.com/ideas/contracts-ex-machina</guid>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 GMT</pubDate>
+      <description>An exploration of how smart contracts on blockchain platforms create new paradigms for contractual relationships.</description>
+      <author>Kevin Werbach</author>
+    </item>
+    <item>
+      <title>For the Win: How Game Thinking Can Revolutionize Your Business</title>
+      <link>https://kevinwerbach.com/ideas/for-the-win-how-game-thinking-can-revolutionize-your-business</link>
+      <guid isPermaLink="true">https://kevinwerbach.com/ideas/for-the-win-how-game-thinking-can-revolutionize-your-business</guid>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 GMT</pubDate>
+      <description>Exploring how gamification principles can be applied to business challenges and engagement strategies.</description>
+      <author>Kevin Werbach</author>
+    </item>
+    <item>
+      <title>Reregulation: Looking Backward To Move Telecommunications Forward</title>
+      <link>https://kevinwerbach.com/ideas/reregulation-looking-backward-to-move-telecommunications-forward</link>
+      <guid isPermaLink="true">https://kevinwerbach.com/ideas/reregulation-looking-backward-to-move-telecommunications-forward</guid>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 GMT</pubDate>
+      <description>Analysis of telecommunications regulation and policy frameworks for the digital age.</description>
+      <author>Kevin Werbach</author>
+    </item>
+    <item>
+      <title>The Song is Over but the Malady Lingers On: A Reply to the Skeptics</title>
+      <link>https://kevinwerbach.com/ideas/the-song-is-over-but-the-malady-lingers-on-a-reply-to-the-skeptics</link>
+      <guid isPermaLink="true">https://kevinwerbach.com/ideas/the-song-is-over-but-the-malady-lingers-on-a-reply-to-the-skeptics</guid>
+      <pubDate>Wed, 01 Jan 2003 00:00:00 GMT</pubDate>
+      <description>Response to critiques of digital copyright and peer-to-peer file sharing analysis.</description>
+      <author>Kevin Werbach</author>
+    </item>
+  </channel>
+</rss>

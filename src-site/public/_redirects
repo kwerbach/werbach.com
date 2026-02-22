@@ -1,0 +1,7 @@
+/*    /index.html   200
+
+# Legacy books page now integrated under Ideas
+/books            /ideas#books          301!
+/books/           /ideas#books          301!
+# Redirect individual book pages (and any deeper path) to new ideas/books location
+/books/*          /ideas/books/:splat   301!

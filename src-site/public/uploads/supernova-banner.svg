@@ -1,0 +1,46 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Supernova conference visual">
+  <defs>
+    <radialGradient id="dot" cx="50%" cy="50%" r="0.7">
+      <stop offset="0%" stop-color="#FDBA74" />
+      <stop offset="100%" stop-color="#F97316" />
+    </radialGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b0086" />
+      <stop offset="100%" stop-color="#4c1d95" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="400" fill="url(#bg)" />
+  <g fill="rgba(255,255,255,0.12)">
+    <circle cx="80" cy="80" r="26" />
+    <circle cx="230" cy="130" r="16" />
+    <circle cx="320" cy="50" r="20" />
+    <circle cx="600" cy="330" r="18" />
+    <circle cx="900" cy="90" r="22" />
+    <circle cx="1080" cy="260" r="28" />
+    <circle cx="980" cy="330" r="12" />
+    <circle cx="760" cy="70" r="14" />
+  </g>
+  <text x="142" y="230" font-family="'Inter', 'Helvetica', sans-serif" font-size="140" fill="#F5F3FF" letter-spacing="6">
+    super
+  </text>
+  <text x="700" y="230" font-family="'Inter', 'Helvetica', sans-serif" font-size="140" fill="#F5F3FF" letter-spacing="6">
+    va
+  </text>
+  <g transform="translate(600 80)">
+    <g>
+      <circle cx="0" cy="90" r="16" fill="url(#dot)" />
+      <circle cx="45" cy="78" r="14" fill="url(#dot)" />
+      <circle cx="78" cy="45" r="14" fill="url(#dot)" />
+      <circle cx="90" cy="0" r="16" fill="url(#dot)" />
+      <circle cx="78" cy="-45" r="14" fill="url(#dot)" />
+      <circle cx="45" cy="-78" r="14" fill="url(#dot)" />
+      <circle cx="0" cy="-90" r="16" fill="url(#dot)" />
+      <circle cx="-45" cy="-78" r="14" fill="url(#dot)" />
+      <circle cx="-78" cy="-45" r="14" fill="url(#dot)" />
+      <circle cx="-90" cy="0" r="16" fill="url(#dot)" />
+      <circle cx="-78" cy="45" r="14" fill="url(#dot)" />
+      <circle cx="-45" cy="78" r="14" fill="url(#dot)" />
+      <circle cx="0" cy="0" r="18" fill="url(#dot)" />
+    </g>
+  </g>
+</svg>

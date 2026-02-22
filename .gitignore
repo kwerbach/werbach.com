@@ -2,3 +2,7 @@
 *.swp
 *.swo
 *~
+
+# Source site build artifacts
+src-site/node_modules/
+src-site/dist/

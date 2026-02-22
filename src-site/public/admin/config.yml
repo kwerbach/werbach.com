@@ -1,0 +1,171 @@
+backend:
+  name: github
+  repo: awerb/Kevin-Werbach-New
+  branch: main
+
+publish_mode: editorial_workflow
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "papers"
+    label: "Papers"
+    folder: "content/papers"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Journal", name: "journal", widget: "string", required: false }
+      - { label: "Volume", name: "volume", widget: "string", required: false }
+      - { label: "Issue", name: "issue", widget: "string", required: false }
+      - { label: "Pages", name: "pages", widget: "string", required: false }
+      - { label: "DOI", name: "doi", widget: "string", required: false }
+      - { label: "External URL", name: "external_url", widget: "string", required: false }
+      - { label: "PDF URL", name: "pdf_url", widget: "string", required: false }
+      - { label: "Co-authors", name: "coauthors", widget: "list", required: false }
+      - { label: "Topics", name: "topics", widget: "select", multiple: true, options: ["AI accountability", "Blockchain", "Gamification", "Internet policy", "Trust", "Virtual worlds", "Web3"], required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "essays"
+    label: "Essays"
+    folder: "content/essays"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Outlet", name: "outlet", widget: "string", required: false }
+      - { label: "External URL", name: "external_url", widget: "string", required: false }
+      - { label: "Topics", name: "topics", widget: "select", multiple: true, options: ["AI accountability", "Blockchain", "Gamification", "Internet policy", "Trust", "Virtual worlds", "Web3"], required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "policy"
+    label: "Policy Work"
+    folder: "content/policy"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Outlet", name: "outlet", widget: "string", required: false }
+      - { label: "External URL", name: "external_url", widget: "string", required: false }
+      - { label: "PDF URL", name: "pdf_url", widget: "string", required: false }
+      - { label: "Topics", name: "topics", widget: "select", multiple: true, options: ["AI accountability", "Blockchain", "Gamification", "Internet policy", "Trust", "Virtual worlds", "Web3"], required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "projects"
+    label: "Projects"
+    folder: "content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Short Description", name: "short", widget: "text" }
+      - { label: "Long Description", name: "long", widget: "markdown" }
+      - { label: "Logo", name: "logo", widget: "image", required: false }
+      - { label: "Links", name: "links", widget: "list", fields: [
+          { label: "Label", name: "label", widget: "string" },
+          { label: "URL", name: "url", widget: "string" }
+        ], required: false }
+      - { label: "Topics", name: "topics", widget: "select", multiple: true, options: ["AI accountability", "Blockchain", "Gamification", "Internet policy", "Trust", "Virtual worlds", "Web3"], required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+
+  - name: "books"
+    label: "Books"
+    folder: "content/books"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publisher", name: "publisher", widget: "string" }
+      - { label: "Year", name: "year", widget: "number" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Cover Image", name: "cover", widget: "image", required: false }
+      - { label: "Buy Links", name: "buy_links", widget: "list", fields: [
+          { label: "Store", name: "store", widget: "string" },
+          { label: "URL", name: "url", widget: "string" }
+        ], required: false }
+      - { label: "Resources", name: "resources", widget: "list", fields: [
+          { label: "Title", name: "title", widget: "string" },
+          { label: "URL", name: "url", widget: "string" }
+        ], required: false }
+      - { label: "Topics", name: "topics", widget: "select", multiple: true, options: ["AI accountability", "Blockchain", "Gamification", "Internet policy", "Trust", "Virtual worlds", "Web3"], required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "teaching"
+    label: "Teaching"
+    folder: "content/teaching/courses"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Course Title", name: "title", widget: "string" }
+      - { label: "Course Code", name: "course_code", widget: "string", required: false }
+      - { label: "Term", name: "term", widget: "string", required: false }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Syllabus URL", name: "syllabus_url", widget: "string", required: false }
+      - { label: "Topics", name: "topics", widget: "select", multiple: true, options: ["AI accountability", "Blockchain", "Gamification", "Internet policy", "Trust", "Virtual worlds", "Web3"], required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "podcast"
+    label: "Podcast Episodes"
+    folder: "content/podcast/episodes"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Episode Number", name: "episode_number", widget: "number", required: false }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Audio URL", name: "audio_url", widget: "string", required: false }
+      - { label: "Video URL", name: "video_url", widget: "string", required: false }
+      - { label: "Guests", name: "guests", widget: "list", required: false }
+      - { label: "Platform Links", name: "platform_links", widget: "object", fields: [
+          { label: "Apple Podcasts", name: "apple", widget: "string", required: false },
+          { label: "Spotify", name: "spotify", widget: "string", required: false },
+          { label: "YouTube", name: "youtube", widget: "string", required: false }
+        ], required: false }
+      - { label: "Topics", name: "topics", widget: "select", multiple: true, options: ["AI accountability", "Blockchain", "Gamification", "Internet policy", "Trust", "Virtual worlds", "Web3"], required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "media_press"
+    label: "Media - Press"
+    folder: "content/media/press"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Type", name: "type", widget: "hidden", default: "press" }
+      - { label: "Outlet", name: "outlet", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "External URL", name: "external_url", widget: "string" }
+      - { label: "Topics", name: "topics", widget: "select", multiple: true, options: ["AI accountability", "Blockchain", "Gamification", "Internet policy", "Trust", "Virtual worlds", "Web3"], required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
+
+  - name: "media_video"
+    label: "Media - Video"
+    folder: "content/media/video"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Type", name: "type", widget: "hidden", default: "video" }
+      - { label: "Outlet", name: "outlet", widget: "string", required: false }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Embed URL", name: "embed_url", widget: "string", required: false }
+      - { label: "External URL", name: "external_url", widget: "string", required: false }
+      - { label: "Topics", name: "topics", widget: "select", multiple: true, options: ["AI accountability", "Blockchain", "Gamification", "Internet policy", "Trust", "Virtual worlds", "Web3"], required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
