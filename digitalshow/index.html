@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Digital Show</title>
+  <meta name="description" content="The Digital Show: A weekly SiriusXM radio show hosted by Kevin Werbach, Kartik Hosanagar, and Reed Hundt. Archive of episodes from 2015-2016.">
+  <meta name="author" content="Kevin Werbach">
+  <link rel="canonical" href="https://werbach.com/digitalshow/">
+  <meta property="og:title" content="The Digital Show">
+  <meta property="og:description" content="A weekly SiriusXM radio show hosted by Kevin Werbach, Kartik Hosanagar, and Reed Hundt (2015-2016).">
+  <meta property="og:url" content="https://werbach.com/digitalshow/">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Source+Sans+3:wght@300;400;600&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --blue: #1a5276;
+      --dark-blue: #0e2f44;
+      --accent: #e67e22;
+      --light-accent: #f39c12;
+      --dark: #1a1a1a;
+      --text: #333;
+      --light-bg: #fafaf8;
+      --section-bg: #f5f3f0;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
+      color: var(--text);
+      background: var(--light-bg);
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(26, 26, 26, 0.97);
+      z-index: 1000;
+      padding: 0 24px;
+      backdrop-filter: blur(8px);
+    }
+    nav .nav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 56px;
+    }
+    nav .nav-links a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      font-size: 0.85em;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-left: 28px;
+      transition: color 0.2s;
+    }
+    nav .nav-links a:first-child { margin-left: 0; }
+    nav .nav-links a:hover { color: var(--accent); }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, var(--dark-blue) 0%, var(--blue) 100%);
+      color: white;
+      padding: 120px 24px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 4px solid var(--accent);
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(circle at 30% 50%, rgba(230,126,34,0.15) 0%, transparent 60%);
+    }
+    .hero-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+    .hero h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3.2em;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-bottom: 8px;
+    }
+    .hero h1 .the { font-weight: 400; font-size: 0.5em; display: block; letter-spacing: 8px; margin-bottom: 4px; opacity: 0.7; }
+    .hero-divider {
+      width: 60px;
+      height: 3px;
+      background: var(--accent);
+      margin: 24px auto;
+    }
+    .hero .tagline {
+      font-size: 1.2em;
+      color: rgba(255,255,255,0.85);
+      font-weight: 300;
+      margin-bottom: 8px;
+    }
+    .hero .platform {
+      font-size: 0.95em;
+      color: rgba(255,255,255,0.5);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 16px;
+    }
+
+    /* Sections */
+    .section {
+      padding: 70px 24px;
+    }
+    .section-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .section-alt {
+      background: var(--section-bg);
+    }
+    .section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.8em;
+      font-weight: 800;
+      color: var(--dark);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .section .section-subtitle {
+      font-size: 0.95em;
+      color: var(--blue);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+    }
+    .section p {
+      margin-bottom: 16px;
+    }
+    .section a {
+      color: var(--blue);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+    .section a:hover {
+      border-bottom-color: var(--blue);
+    }
+
+    /* About columns */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 20px;
+    }
+
+    /* Hosts */
+    .hosts-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 20px;
+    }
+    .host-card {
+      background: white;
+      padding: 28px 24px;
+      border-left: 4px solid var(--accent);
+    }
+    .host-card h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.1em;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 8px;
+    }
+    .host-card p {
+      font-size: 0.92em;
+      color: #666;
+      margin-bottom: 0;
+    }
+    .host-card .ep-count {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      color: var(--accent);
+      font-size: 0.85em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 12px;
+    }
+
+    /* Episodes */
+    .episode {
+      background: white;
+      padding: 24px 28px;
+      margin-bottom: 16px;
+      border-left: 4px solid var(--blue);
+      transition: border-color 0.2s;
+    }
+    .episode:hover {
+      border-left-color: var(--accent);
+    }
+    .episode-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .episode-date {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      color: var(--blue);
+      font-size: 0.9em;
+    }
+    .episode-host {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 0.8em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 2px 10px;
+      background: var(--section-bg);
+      color: #666;
+    }
+    .episode-host.kw { background: #eaf2f8; color: var(--blue); }
+    .episode-host.kh { background: #fef5e7; color: #b7700a; }
+    .episode-host.rh { background: #eafaf1; color: #1e8449; }
+    .episode-host.lf { background: #f5eef8; color: #6c3483; }
+    .episode-desc {
+      font-size: 0.95em;
+      line-height: 1.6;
+      color: var(--text);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--dark);
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      padding: 40px 24px;
+      font-size: 0.85em;
+    }
+    footer a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+    }
+    footer a:hover { color: white; }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      .hero { padding: 100px 20px 60px; }
+      .hero h1 { font-size: 2.2em; }
+      .about-grid { grid-template-columns: 1fr; gap: 0; }
+      .hosts-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .section h2 { font-size: 1.4em; }
+      .episode-header { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#hosts">Hosts</a>
+        <a href="#episodes">Episodes</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-inner">
+      <h1><span class="the">The</span>Digital Show</h1>
+      <div class="hero-divider"></div>
+      <div class="tagline">A weekly radio show about technology, business, and policy</div>
+      <div class="platform">SiriusXM &middot; 2015&ndash;2016</div>
+    </div>
+  </div>
+
+  <div class="section" id="about">
+    <div class="section-inner">
+      <h2>About the Show</h2>
+      <div class="section-subtitle">Technology &middot; Business &middot; Policy</div>
+      <div class="about-grid">
+        <div>
+          <p>The Digital Show was a weekly podcast and SiriusXM radio program that explored the intersection of technology, business, and public policy. Hosted by three rotating hosts from the worlds of academia, government, and media, each episode featured conversations with leading thinkers, entrepreneurs, journalists, and policymakers.</p>
+        </div>
+        <div>
+          <p>Guests ranged from Gavin Wood (CTO of Ethereum) and Tom Kalil (White House OSTP) to leading journalists at Fortune, CNET, Forbes, and NPR. Topics spanned the sharing economy, spectrum policy, artificial intelligence, e-commerce, gamification, blockchain, and more.</p>
+          <p>The show aired 25 episodes between January 2015 and January 2016. The original website was at digitalshow111.com.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-alt" id="hosts">
+    <div class="section-inner">
+      <h2>Hosts</h2>
+      <div class="section-subtitle">Three Rotating Perspectives</div>
+      <div class="hosts-grid">
+        <div class="host-card">
+          <h3>Kevin Werbach</h3>
+          <p>Professor of Legal Studies and Business Ethics at the Wharton School, University of Pennsylvania. Author of <em>The Blockchain and the New Architecture of Trust</em> and co-author of <em>For the Win</em>.</p>
+          <div class="ep-count">12 Episodes</div>
+        </div>
+        <div class="host-card">
+          <h3>Kartik Hosanagar</h3>
+          <p>Professor of Technology and Digital Business at the Wharton School. Author of <em>A Human's Guide to Machine Intelligence</em>. Expert on the impact of algorithms and AI on consumers and society.</p>
+          <div class="ep-count">9 Episodes</div>
+        </div>
+        <div class="host-card">
+          <h3>Reed Hundt</h3>
+          <p>Former Chairman of the Federal Communications Commission (1993&ndash;1997). CEO of Making Every Vote Count. Author of <em>You Say You Want a Revolution</em> and <em>In China's Shadow</em>.</p>
+          <div class="ep-count">4 Episodes</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="episodes">
+    <div class="section-inner">
+      <h2>Episodes</h2>
+      <div class="section-subtitle">25 Episodes &middot; January 2015 &ndash; January 2016</div>
+
+      <div class="episode">
+        <div class="episode-header">
+          <span class="episode-date">January 26, 2015</span>
+          <span class="episode-host kw">Kevin Werbach</span>
+        </div>
+        <div class="episode-desc">Kevin Werbach talks with guests Leila Janah, Frank Pasquale, Sandy Carter, and Ryan Knutson.</div>
+      </div>
+
+      <div class="episode">
+        <div class="episode-header">
+          <span class="episode-date">February 2, 2015</span>
+          <span class="episode-host kh">Kartik Hosanagar</span>
+        </div>
+        <div class="episode-desc">Kartik Hosanagar talks with Kevin Spain, Rohan Deuskar, and Roger Cheng.</div>
+      </div>
+
+      <div class="episode">
+        <div class="episode-header">
+          <span class="episode-date">February 9, 2015</span>
+          <span class="episode-host rh">Reed Hundt</span>
+        </div>
+        <div class="episode-desc">Reed Hundt talks with Craig Moffett, Rick Kaplan, Nicol Turner-Lee, and Dan Cohen.</div>
+      </div>
+
+      <div class="episode">
+        <div class="episode-header">
+          <span class="episode-date">March 7, 2015</span>
+          <span class="episode-host kw">Kevin Werbach</span>
+        </div>
+        <div class="episode-desc">Kevin Werbach talks with Karim Lakhani (Harvard Business School), Matt DeBord (Business Insider), Amy Jo Kim (Shufflebrain), and Robin Chase (Author, &ldquo;Peers, Inc.&rdquo;).</div>
+      </div>
+
+      <div class="episode">
+        <div class="episode-header">
+          <span class="episode-date">March 30, 2015</span>
+          <span class="episode-host rh">Reed Hundt</span>
+        </div>
+        <div class="episode-desc">Reed Hundt talks with guests Victor Pickard, Vadim Teplyakov, Dr. James Canton, and Amy Garmer.</div>
+      </div>
+
+      <div class="episode">
+        <div class="episode-header">
+          <span class="episode-date">April 2, 2015</span>
+          <span class="episode-host kw">Kevin Werbach</span>
+        </div>
+        <div class="episode-desc">Kevin Werbach talks with Elliott Noss (Tucows), Daniel Terdiman (VentureBeat), Steve Welch (DreamIt Ventures), Tracey Scheppach (Starcom MediaVest), and Liz Gannes (Recode).</div>
+      </div>
+
+      <div class="episode">
+        <div class="episode-header">
+          <span class="episode-date">April 16, 2015</span>
+          <span class="episode-host kw">Kevin Werbach</span>
+        </div>
+        <div class="episode-desc">Kevin Werbach talks with Danielle Citron (UMD Law), Adam Coates (Baidu Research), Ben Bajarin (Creative Strategies), and Justin Reich (EdX).</div>
+      </div>
+
+      <div class="episode">
+        <div class="episode-header">
+          <span class="episode-date">April 24, 2015</span>
+          <span class="episode-host rh">Reed Hundt</span>
+        </div>
+        <div class="episode-desc">Reed Hundt talks with Carlos Kirjner (Bernstein &amp; Co.), Patrick McFadden (National Association of Broadcasters), Elise Hu (NPR News), and Edyael Casaperalta (Public Knowledge).</div>
+      </div>
+
+      <div class="episode">
+        <div class="episode-header">
+          <span class="episode-date">May 6, 2015</span>
+          <span class="episode-host kh">Kartik Hosanagar</span>
+        </div>
+        <div class="episode-desc">Kartik Hosanagar talks with Amaya Capellan (PeopleLinx), Loren Feldman (Forbes Entrepreneurship), and Daniel McAuley (Wharton Fintech).</div>
+      </div>
+
+      <div class="episode">
+        <div class="episode-header">
+          <span class="episode-date">May 11, 2015</span>
+          <span class="episode-host kw">Kevin Werbach</span>
+        </div>
+        <div class="episode-desc">Kevin Werbach talks with Will Richmond (Broadband Directions), Erin Griffith (Fortune), Josh Elman (Greylock Ventures), and Matt DeBord (Business Insider).</div>
+      </div>
+
+      <div class="episode">
+        <div class="episode-header">
+          <span class="episode-date">May 14, 2015</span>
+          <span class="episode-host rh">Reed Hundt</span>
+        </div>
+        <div class="episode-desc">Reed Hundt talks with Gigi Sohn (FCC), Norm Ornstein (AEI), Steve Lohr (NYTimes), and Eddie Lazarus (Tribune Company).</div>
+      </div>
+
+      <div class="episode">
+        <div class="episode-header">
+          <span class="episode-date">May 22, 2015</span>
+          <span class="episode-host kh">Kartik Hosanagar</span>
+        </div>
+        <div class="episode-desc">Kartik Hosanagar talks with Ronnie Screwvala (UTV, Author), Yash Kothari &amp; Pranshu Maheshwari (Prayas Analytics), and Josh Brustein (Bloomberg Business).</div>
+      </div>
+
+      <div class="episode">
+        <div class="episode-header">
+          <span class="episode-date">June 5, 2015</span>
+          <span class="episode-host kw">Kevin Werbach</span>
+        </div>
+        <div class="episode-desc">Kevin Werbach talks with Harold Feld (Public Knowledge) about the Amtrak train derailment and spectrum policy, Ellen Goodman (Rutgers Law) about the &lsquo;right to be forgotten,&rsquo; Barry Fishman (GradeCraft) on gamification in education, and Dan Hunter about their new book, The Gamification Toolkit.</div>
+      </div>
+
+      <div class="episode">
+        <div class="episode-header">
+          <span class="episode-date">June 16, 2015</span>
+          <span class="episode-host lf">Loren Feldman</span>
+        </div>
+        <div class="episode-desc">Guest host Loren Feldman talks with Anthony Tjan (Cue Ball Group), Richard Demb (Abe&rsquo;s Market), Laura Zander (Jimmy Beans Wool), and Jay Goltz (The Goltz Group), discussing these entrepreneurs, their challenges, and their successes.</div>
+      </div>
+
+      <div class="episode">
+        <div class="episode-header">
+          <span class="episode-date">July 5, 2015</span>
+          <span class="episode-host kw">Kevin Werbach</span>
+        </div>
+        <div class="episode-desc">Kevin Werbach talks with Sukhinder Cassidy Singh (Joyous) about the Choose Possibility project, Professor Miriam Cherry (SLU Law) about the Uber employment ruling, Nicole Lazzaro (XeoDesign) about the E3 Conference and virtual reality, and Jim Griffin (OneHouse) about the Apple streaming music service and changing digital music industry.</div>
+      </div>
+
+      <div class="episode">
+        <div class="episode-header">
+          <span class="episode-date">July 17, 2015</span>
+          <span class="episode-host kw">Kevin Werbach</span>
+        </div>
+        <div class="episode-desc">Kevin Werbach talks with Gavin Wood, CTO of Ethereum, Larry Dignan, Editor-in-Chief of ZDNet, Gina Gotthilf, VP of Marketing and International Growth at Duolingo, and Alexandra Samuels, digital explorer and tech guru.</div>
+      </div>
+
+      <div class="episode">
+        <div class="episode-header">
+          <span class="episode-date">July 22, 2015</span>
+          <span class="episode-host lf">Loren Feldman</span>
+        </div>
+        <div class="episode-desc">Guest host Loren Feldman of Forbes talks with Mark Hatch (TechShop), Victor Hwang (Liquidity), Jonathan Chester (Bitwage), and Miguel Helft (Forbes).</div>
+      </div>
+
+      <div class="episode">
+        <div class="episode-header">
+          <span class="episode-date">August 3, 2015</span>
+          <span class="episode-host kh">Kartik Hosanagar</span>
+        </div>
+        <div class="episode-desc">Kartik Hosanagar talks with Arun Sundararajan (NYU) about the sharing economy, Shaunak Roy (Yellowdig) about starting a company outside of the Valley, and Roger Cheng (CNET News) about the most recent news in tech.</div>
+      </div>
+
+      <div class="episode">
+        <div class="episode-header">
+          <span class="episode-date">August 5, 2015</span>
+          <span class="episode-host kw">Kevin Werbach</span>
+        </div>
+        <div class="episode-desc">Kevin Werbach talks with Erin Griffith (Fortune Magazine) with a tech news update, Tom Kalil (White House OSTP) about the upcoming White House Demo Day, Pierre de Vries (Silicon Flatirons Center) about spectrum policy, and Paul Ford (Writer, Programmer) about the recent open letter expressing fear about an artificial intelligence arms race.</div>
+      </div>
+
+      <div class="episode">
+        <div class="episode-header">
+          <span class="episode-date">August 24, 2015</span>
+          <span class="episode-host kh">Kartik Hosanagar</span>
+        </div>
+        <div class="episode-desc">Kartik Hosanagar talks with David Back (Zoomcar) on US entrepreneurs in China and India, Sean Duffy (Omada Health) on how tech meets medicine, and Biz Carson (Business Insider) about the latest news in tech.</div>
+      </div>
+
+      <div class="episode">
+        <div class="episode-header">
+          <span class="episode-date">September 21, 2015</span>
+          <span class="episode-host kh">Kartik Hosanagar</span>
+        </div>
+        <div class="episode-desc">Kartik Hosanagar talks with Bj&ouml;rn Jeffery (Toca Boca) and Prasanna Krishnan (SmartyPal) about monetization on mobile, Randy Rayess (VenturePact) about his company, and Jo Ling Kent (Fox Business) to get the latest updates in technology.</div>
+      </div>
+
+      <div class="episode">
+        <div class="episode-header">
+          <span class="episode-date">October 15, 2015</span>
+          <span class="episode-host kh">Kartik Hosanagar</span>
+        </div>
+        <div class="episode-desc">Kartik Hosanagar talks with Roger Cheng, Executive Editor of CNET News about updates in the tech world, Dr. Michael Mandel, Chief Economic Strategist at the Progressive Policy Institute about the Fourth Annual Report Ranking U.S. Companies Investing in America&rsquo;s Future, Santiago Gallino (Tuck School of Business) and Antonio Moreno-Garcia (Kellogg School of Management) about omnichannel.</div>
+      </div>
+
+      <div class="episode">
+        <div class="episode-header">
+          <span class="episode-date">November 16, 2015</span>
+          <span class="episode-host kw">Kevin Werbach</span>
+        </div>
+        <div class="episode-desc">Kevin Werbach talks with Erin Griffith, tech writer for Forbes, about updates in the tech world, Jeremy Miller (DFC Intelligence) on the acquisition of Candy Crush, Jonathan Chaplin (New Street Research) about broadband and his repricing concept, and Priya Kumar (Digital Rights Project) about digital rights and its implications.</div>
+      </div>
+
+      <div class="episode">
+        <div class="episode-header">
+          <span class="episode-date">November 22, 2015</span>
+          <span class="episode-host kh">Kartik Hosanagar</span>
+        </div>
+        <div class="episode-desc">Kartik Hosanagar talks with Hollywood screenwriter Mark Rosenthal about data mining blockbusters, Shane Greenstein, Professor of Business Administration at Harvard, about his book <em>How the Internet Became Commercial</em>, and Roger Cheng, Executive Editor of CNet News, about the latest updates in the tech world.</div>
+      </div>
+
+      <div class="episode">
+        <div class="episode-header">
+          <span class="episode-date">January 13, 2016</span>
+          <span class="episode-host kw">Kevin Werbach</span>
+        </div>
+        <div class="episode-desc">Kevin Werbach talks with Sucharita Mulpuru (Forrester Research) about the evolution of e-commerce and Cyber Monday, Danny Sullivan (Marketing Land &amp; Search Engine) about Google App Streaming, Al Filreis (University of Pennsylvania) about MOOCs and online learning, and Howard Greenstein (DomainSkate) about when brand management meets cyber security.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; Kevin Werbach &middot; <a href="https://werbach.com">werbach.com</a></p>
+  </footer>
+
+</body>
+</html>
