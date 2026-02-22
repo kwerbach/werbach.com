@@ -16,12 +16,17 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.PAIR_SSH_KEY }}" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
-          ssh-keyscan -H ${{ secrets.PAIR_SSH_HOST }} >> ~/.ssh/known_hosts 2>/dev/null
+          ssh-keyscan -T 10 -H ${{ secrets.PAIR_SSH_HOST }} >> ~/.ssh/known_hosts 2>&1 || true
+          echo "Known hosts entries: $(wc -l < ~/.ssh/known_hosts)"
+
+      - name: Test SSH connection
+        run: |
+          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=accept-new -o PasswordAuthentication=no -o BatchMode=yes ${{ secrets.PAIR_SSH_USER }}@${{ secrets.PAIR_SSH_HOST }} "echo 'SSH connection successful'"
 
       - name: Deploy via rsync
         run: |
           rsync -avz \
-            -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=accept-new" \
+            -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=accept-new -o PasswordAuthentication=no -o BatchMode=yes" \
             --exclude='.git/' \
             --exclude='.github/' \
             --exclude='CLAUDE.md' \
