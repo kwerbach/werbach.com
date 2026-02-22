@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Kevin Werbach Podcast</title>
+    <link>https://kevinwerbach.com/podcast</link>
+    <description>Conversations on technology, policy, and innovation with Kevin Werbach</description>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Nov 2025 01:45:39 GMT</lastBuildDate>
+    <atom:link href="https://kevinwerbach.com/rss-podcast.xml" rel="self" type="application/rss+xml" />
+    <itunes:author>Kevin Werbach</itunes:author>
+    <itunes:summary>Conversations on technology, policy, and innovation</itunes:summary>
+    <itunes:owner>
+      <itunes:name>Kevin Werbach</itunes:name>
+    </itunes:owner>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:category text="Technology" />
+    <itunes:category text="Business" />
+    <item>
+      <title>The Future of AI Regulation with Dr. Sarah Chen</title>
+      <link>https://kevinwerbach.com/podcast/ai-regulation-chen</link>
+      <guid isPermaLink="true">https://kevinwerbach.com/podcast/ai-regulation-chen</guid>
+      <pubDate>Fri, 01 Nov 2024 00:00:00 GMT</pubDate>
+      <description>A deep dive into emerging regulatory frameworks for artificial intelligence with leading AI policy expert Dr. Sarah Chen.</description>
+      <author>Kevin Werbach</author>
+    </item>
+    <item>
+      <title>The Future of AI Regulation with Dr. Sarah Chen</title>
+      <link>https://kevinwerbach.com/podcast/episode-42-the-future-of-ai-regulation-with-dr-sarah-chen</link>
+      <guid isPermaLink="true">https://kevinwerbach.com/podcast/episode-42-the-future-of-ai-regulation-with-dr-sarah-chen</guid>
+      <pubDate>Fri, 01 Nov 2024 00:00:00 GMT</pubDate>
+      <description>A deep dive into emerging regulatory frameworks for artificial intelligence with leading AI policy expert Dr. Sarah Chen.</description>
+      <author>Kevin Werbach</author>
+    </item>
+    <item>
+      <title>Blockchain in Practice: Real-World Use Cases</title>
+      <link>https://kevinwerbach.com/podcast/episode-41-blockchain-in-practice-real-world-use-cases</link>
+      <guid isPermaLink="true">https://kevinwerbach.com/podcast/episode-41-blockchain-in-practice-real-world-use-cases</guid>
+      <pubDate>Tue, 15 Oct 2024 00:00:00 GMT</pubDate>
+      <description>Exploring successful blockchain implementations across industries with enterprise blockchain consultant Maria Rodriguez.</description>
+      <author>Kevin Werbach</author>
+    </item>
+    <item>
+      <title>Gamification for Social Good</title>
+      <link>https://kevinwerbach.com/podcast/episode-40-gamification-for-social-good</link>
+      <guid isPermaLink="true">https://kevinwerbach.com/podcast/episode-40-gamification-for-social-good</guid>
+      <pubDate>Mon, 30 Sep 2024 00:00:00 GMT</pubDate>
+      <description>How game design principles can drive positive behavior change in health, education, and civic engagement.</description>
+      <author>Kevin Werbach</author>
+    </item>
+    <item>
+      <title>Web3 and the Future of Digital Identity</title>
+      <link>https://kevinwerbach.com/podcast/episode-39-web3-and-the-future-of-digital-identity</link>
+      <guid isPermaLink="true">https://kevinwerbach.com/podcast/episode-39-web3-and-the-future-of-digital-identity</guid>
+      <pubDate>Sun, 15 Sep 2024 00:00:00 GMT</pubDate>
+      <description>Exploring decentralized identity systems and their implications for privacy and security online.</description>
+      <author>Kevin Werbach</author>
+    </item>
+    <item>
+      <title>Trust in the Age of Deepfakes</title>
+      <link>https://kevinwerbach.com/podcast/episode-38-trust-in-the-age-of-deepfakes</link>
+      <guid isPermaLink="true">https://kevinwerbach.com/podcast/episode-38-trust-in-the-age-of-deepfakes</guid>
+      <pubDate>Fri, 30 Aug 2024 00:00:00 GMT</pubDate>
+      <description>Examining how synthetic media challenges our ability to trust digital content and what we can do about it.</description>
+      <author>Kevin Werbach</author>
+    </item>
+  </channel>
+</rss>
