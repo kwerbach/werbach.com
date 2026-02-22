@@ -1,1 +1,0 @@
-<?php die(); ?>{"headers":{"Vary":"Vary: Accept-Encoding, Cookie","Content-Type":"Content-Type: text\/html; charset=UTF-8","Link":"Link: <http:\/\/gamifyforthewin.com\/wp-json\/>; rel=\"https:\/\/api.w.org\/\"","Last-Modified":"Last-Modified: Mon, 29 May 2023 06:21:50 GMT"},"uri":"216.92.47.222\/?phpinfo=1","blog_id":1,"post":0,"key":"216.92.47.22280\/?phpinfo=1"}

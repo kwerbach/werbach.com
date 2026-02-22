@@ -1,1 +1,0 @@
-<?php die(); ?>{"headers":{"Vary":"Vary: Cookie","Last-Modified":"Last-Modified: Wed, 21 Sep 2016 00:44:16 GMT","Content-Type":"Content-Type: application\/rss+xml; charset=UTF-8","ETag":"ETag: \"3454d1450f0ff2813f875279395597ef\""},"uri":"werblog.com\/tag\/openaccess\/feed\/","blog_id":1,"post":0,"key":"tagwerblog.com80\/tag\/openaccess\/feed\/"}

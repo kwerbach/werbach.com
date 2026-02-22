@@ -1,1 +1,0 @@
-<?php die(); ?>{"headers":{"Vary":"Vary: Cookie","Content-Type":"Content-Type: text\/html; charset=UTF-8","X-Pingback":"X-Pingback: http:\/\/werbach.com\/wordpress\/xmlrpc.php","Last-Modified":"Last-Modified: Tue, 03 Jan 2017 07:52:03 GMT"},"uri":"werblog.com\/wharton\/","blog_id":1,"post":1498,"key":"whartonwerblog.com80\/wharton\/71d5f15a0dd0aa93ae29a93d33b988cb"}

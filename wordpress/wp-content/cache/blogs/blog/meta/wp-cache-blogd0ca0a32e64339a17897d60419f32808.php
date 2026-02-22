@@ -1,1 +1,0 @@
-<?php die(); ?>{"headers":{"Vary":"Vary: Cookie","Content-Type":"Content-Type: text\/html; charset=UTF-8","Last-Modified":"Last-Modified: Sat, 10 Dec 2016 21:10:29 GMT"},"uri":"werblog.com\/?s=design+framework&submit=search","blog_id":1,"post":0,"key":"blogwerblog.com80\/?s=design+framework&submit=search"}

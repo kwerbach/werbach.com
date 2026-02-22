@@ -1,1 +1,0 @@
-<?php die(); ?>{"headers":{"Vary":"Vary: Cookie","Content-Type":"Content-Type: text\/html; charset=UTF-8","Last-Modified":"Last-Modified: Tue, 03 Jan 2017 03:10:59 GMT"},"uri":"werblog.com\/?login=cmd","blog_id":1,"post":0,"key":"blogwerblog.com80\/?login=cmd"}

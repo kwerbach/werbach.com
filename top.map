@@ -1,7 +1,0 @@
-rect http://werbach.com/auditorium/auditorium.html 0,0 86,22
-rect http://werbach.com/web/web.html 86,0 176,22
-rect http://werbach.com/about/about.html 176,0 264,22
-rect http://werbach.com/stuff/stuff.html 264,0 353,22
-rect http://werbach.com/whirrled/index.html 353,0 441,22
-rect http://werbach.com/lists/lists.html 441,0 525,22
-

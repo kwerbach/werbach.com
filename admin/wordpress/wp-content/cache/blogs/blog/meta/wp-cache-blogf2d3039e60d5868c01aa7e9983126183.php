@@ -1,1 +1,0 @@
-<?php die(); ?>{"headers":{"Vary":"Vary: Cookie","Content-Type":"Content-Type: text\/html; charset=UTF-8","Last-Modified":"Last-Modified: Sat, 15 Jul 2017 13:40:20 GMT"},"uri":"werblog.com\/?s=scaffolding&submit=search","blog_id":1,"post":0,"key":"blogwerblog.com80\/?s=scaffolding&submit=search"}

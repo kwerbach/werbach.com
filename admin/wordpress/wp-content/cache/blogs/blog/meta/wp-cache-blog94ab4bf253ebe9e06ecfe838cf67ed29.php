@@ -1,1 +1,0 @@
-<?php die(); ?>{"headers":{"Vary":"Vary: Cookie","Content-Type":"Content-Type: text\/html; charset=UTF-8","Last-Modified":"Last-Modified: Wed, 07 Dec 2016 12:57:36 GMT"},"uri":"werblog.com\/?paged=2&s=gamification&submit=search","blog_id":1,"post":0,"key":"blogwerblog.com80\/?paged=2&s=gamification&submit=search"}

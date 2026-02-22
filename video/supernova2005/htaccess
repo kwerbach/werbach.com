@@ -1,7 +1,0 @@
-AuthUserFile   /usr/home/werbach/passwd
-AuthName     "supernova"
-AuthType       Basic
-
-<Limit GET POST PUT>
-require valid-user
-</Limit>

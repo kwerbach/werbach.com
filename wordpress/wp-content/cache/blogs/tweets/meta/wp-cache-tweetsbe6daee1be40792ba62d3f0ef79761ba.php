@@ -1,1 +1,0 @@
-<?php die(); ?>{"headers":{"Vary":"Vary: Cookie","Content-Type":"Content-Type: text\/html; charset=UTF-8","X-Pingback":"X-Pingback: http:\/\/werbach.com\/wordpress\/xmlrpc.php","Last-Modified":"Last-Modified: Wed, 05 Oct 2016 11:50:22 GMT"},"uri":"werblog.com\/tweets\/5220\/","blog_id":1,"post":5220,"key":"tweetswerblog.com80\/tweets\/5220\/b73d20d2918ca7f63e806e5fa9cd2ad0"}

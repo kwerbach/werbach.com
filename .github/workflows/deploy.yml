@@ -1,0 +1,58 @@
+name: Deploy to Pair Networks
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.PAIR_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H ${{ secrets.PAIR_SSH_HOST }} >> ~/.ssh/known_hosts 2>/dev/null
+
+      - name: Deploy via rsync
+        run: |
+          rsync -avz \
+            -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=accept-new" \
+            --exclude='.git/' \
+            --exclude='.github/' \
+            --exclude='CLAUDE.md' \
+            --exclude='.gitignore' \
+            --filter='protect accountableai.net/' \
+            --filter='protect trusttheblockchain.net/' \
+            --filter='protect gamifyforthewin.com/' \
+            --filter='protect supernovagroup.net/' \
+            --filter='protect werblog.com/' \
+            --filter='protect afterbroadband.com/' \
+            --filter='protect newarchitecture/' \
+            --filter='protect ftw/' \
+            --filter='protect blog/' \
+            --filter='protect afterbb/' \
+            --filter='protect sn/' \
+            --filter='protect sn06/' \
+            --filter='protect sn2005/' \
+            --filter='protect supernova/' \
+            --filter='protect supernova2005/' \
+            --filter='protect supernova2005_old/' \
+            --filter='protect supernova2006/' \
+            --filter='protect supernova2006new/' \
+            --filter='protect supernova2007/' \
+            --filter='protect supernovahub/' \
+            --filter='protect supernovahub_old/' \
+            --filter='protect .ssh/' \
+            --filter='protect .bashrc' \
+            --filter='protect .bash_profile' \
+            --filter='protect .htaccess' \
+            --filter='protect cgi-bin/' \
+            --filter='protect logs/' \
+            --delete \
+            ./ \
+            ${{ secrets.PAIR_SSH_USER }}@${{ secrets.PAIR_SSH_HOST }}:~/public_html/

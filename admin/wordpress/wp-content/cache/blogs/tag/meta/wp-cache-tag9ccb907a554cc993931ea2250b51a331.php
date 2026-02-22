@@ -1,1 +1,0 @@
-<?php die(); ?>{"headers":{"Vary":"Vary: Cookie","Last-Modified":"Last-Modified: Wed, 31 Aug 2016 10:58:42 GMT","Content-Type":"Content-Type: application\/rss+xml; charset=UTF-8","ETag":"ETag: \"4da390ee5e014c01b4d7c8ce1d55edfb\""},"uri":"werblog.com\/tag\/ftwbook\/feed\/","blog_id":1,"post":0,"key":"tagwerblog.com80\/tag\/ftwbook\/feed\/"}
