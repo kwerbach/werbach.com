@@ -1,0 +1,87 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive 4">
+		<title>Kevin's HTML FAQ</title>
+	</head>
+
+	<body background="../images/htmlfaq_bkg.gif" text="black" link="#dd0000" vlink="#990033" alink="red">
+		<table border="0">
+			<tr>
+				<td width="100" valign="top">
+					<div align="center">
+						<img src="../images/dot_clear.gif" width="100" height="115"> </div>
+					<br>
+					<table border="0" cellpadding="1" cellspacing="5" width="150">
+						<tr>
+                          <td height="40">&nbsp;</td>
+						</tr>
+					</table>
+					<p></p>
+					<p><font size="2"><b>INDEX</b></font></p>
+					<p><a href="#0"><font size="2"><b>Uploading files</b></font></a></p>
+					<p><a href="#1"><font size="2"><b>Where to get more information</b></font></a></p>
+					<p><a href="#2"><font size="2"><b>Putting pictures on your pages</b></font></a></p>
+					<p><a href="#3"><font size="2"><b>Putting sounds on your pages</b></font></a></p>
+					<p><a href="#4"><font size="2"><b>Which browser supports which tags</b></font></a></p>
+					<p><a href="#5"><font size="2"><b>Browser incompatibilities</b></font></a></p>
+					<p><a href="#6"><font size="2"><b>Specifying page breaks</b></font></a></p>
+					<p><a href="#7"><font size="2"><b>Mac vs. PC color palettes</b></font></a></p>
+					<p><a href="#8"><font size="2"><b>Tabs and indents</b></font></a><b><font size="2"> </font></b></td>
+				<td width="14"><img src="../images/dot_clear.gif" width="14" height="1"></td>
+				<td valign="top" width="530"><img src="../images/htmlfaq.gif" height="91" width="388" alt="HTML FAQ"><br>
+					<img src="../images/dot_clear.gif" vspace="9"><br>
+					<font size="5">This page answers the most frequently asked questions I get about HTML and creating Web sites. I regret that, due to time constraints, I can no longer answer individual questions by email.</font>
+					<pre> </pre>
+					<dl>
+						<a name="0"></a>
+						<dt><b>How do I upload files to my site?</b>
+						<dd>There are several different ways to get files or graphics onto a Web server so that they can be accessed through the Internet. It depends on how your Web hosting provider has set up their system, and free home page services like Geocities and Angelfire may have different procedures than full-fledged Internet Service Providers like AOL or Netcom. All I can suggest is that you contact your service provider, or look for more detailed information in their online help files.
+						<p><a name="1"></a></p>
+						<dt><b>Where can I find more detailed information?</b>
+						<dd>My <a href="http://werbach.com/barebones/">Bare Bones Guide to HTML</a> is designed to be a concise cheat sheat, not a step-by-step tutorial. The <a href="wwwhelp.html#guides">HTML guides section</a> of my WWW Help Page links to several more detailed resources. The <a href="http://www.w3.org/hypertext/WWW/MarkUp/MarkUp.html">World Wide Web Consortium</a> maintains the official HTML specification, and has many useful resources on its site.
+						<p><a name="2"></a></p>
+						<dt><b>How do I put pictures on my page?</b>
+						<dd>You first need to create the image in a graphics program. The standard format for Web page graphics is GIF, although JPEG is also supported by the major browsers today. The next step is to put the graphic onto your Web server. How you do this depends on your Web hosting provider, but it will usually be the same way you upload your Web pages to the server. To display the graphic on your page, use the tag <tt>&lt;img src=&quot;filename.gif&quot;&gt;</tt>. Replace &quot;filename.gif&quot; with the name and path to your image file. If the file is in the same directory as the Web page, you just need the name of the file; if it is somewhere else you need to use the directory or full URL of the file.
+						<p><a name="3"></a></p>
+						<dt><b>How do I put sounds on my page?</b>
+						<dd>There are several ways to add sound files to your page that play automatically when the page is loaded. The makers of Crescendo, a plugin for playing MIDI sound files, have a <a href="http://www.liveupdate.com/midioptions.html">useful page</a> explaining various options and how to implement them.
+						<p><a name="4"></a></p>
+						<dt><b>Is there a site that shows which tags work on which browsers?</b>
+						<dd>There have been several attempts to do this, but I'm not aware of any really good source of comparisons between the browsers. The trouble is that there are many different versions of each browser, and many different tags. All current browsers should support the tags in the <a href="http://www.w3.org/pub/WWW/MarkUp/Wilbur/">official HTML 3.2 specification</a>, but the major ones also support nonstandard tags and sometimes have slightly different implementations. One place that has fairly good compatibility info is <a href="http://www.browsercaps.com">Browsercaps</a>.
+						<p><a name="5"></a></p>
+						<dt><b>My page looks good on one browser, but not on another.</b>
+						<dd>There are slight differences between browsers, such as Netscape Navigator and Microsoft Internet Explorer, in areas such as page margins. The only real answer is to use standard HTML tags whenever possible, and view your pages in multiple browsers to see how they look.
+						<p><a name="6"></a></p>
+						<dt><b>How do I specify page breaks in HTML?</b>
+						<dd>There is no way in standard HTML to specify where page breaks will occur when printing a page. HTML was designed to be a device-independent structural definition language, and page breaks depend on things like the fonts and paper size that the person viewing the page is using.
+						<p><a name="7"></a></p>
+						<dt><b>The colors on my page look different when viewed on a Mac and a PC.</b>
+						<dd>The Mac and the PC use slighly different color palettes. There is a 216 &quot;browser safe&quot; color palette that both platforms support; the <a href="http://www.microsoft.com/workshop/design/color/colorpick.asp">Microsoft color picker</a> page has some good information and links to other resources about this. In addition, the two platforms use different gamma (brightness) values, so a graphic that looks fine on the Mac may look too dark on the PC. The only way to address this problem is to tweak the brightness of your image so that it looks acceptable on both platforms.
+						<p><a name="8"></a></p>
+						<dt><b>How do you create tabs or indents in Web pages?</b>
+						<dd>There was a<tab>tag proposed for HTML 3.0, but it was never adopted by any major browser and the draft specification has now expired. You can simulate a tab or indent in various ways, including using a <a href="http://www.dsiegel.com/tips/wonk5/single.html">transparent GIF</a>, but none are quite as satisfactory or widely supported as an official tag would be.
+					</dl>
+					<pre> </pre>
+					<div align="right">
+						<p>[Up to the <a href="../home.html#contents"><b>LOUNGE</b></a> | <a href="web.html"><b>THE WEB</b></a>] </font></p>
+					</div>
+					<pre> </pre>
+					<p><a href="../copyright.html"><font size="2">Copyright</font></a><font size="2"> &copy; 1997 by Kevin Werbach. Last updated July 20, 1997.</font>
+					<p><!-- BEGIN LINKEXCHANGE CODE -->
+					<center>
+						<p>
+						<iframe src="http://leader.linkexchange.com/1/X934884/showiframe?" width="468" height="60" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no">
+							<a href="http://leader.linkexchange.com/1/X934884/clickle" target="_top"><img width="468" height="60" border="0" ismap src="http://leader.linkexchange.com/1/X934884/showle?"></a>
+						</iframe>
+						<br>
+						<a href="http://leader.linkexchange.com/1/X934884/clicklogo" target="_top"><img src="http://leader.linkexchange.com/1/X934884/showlogo?" width="468" height="16" border="0" ismap></a><br>
+					</center>
+					<p><!-- END LINKEXCHANGE CODE -->
+				</td>
+			</tr>
+		</table>
+	</body>
+
+</html>

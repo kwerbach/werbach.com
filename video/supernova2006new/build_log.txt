@@ -1,0 +1,23 @@
+Version 1.5.1 Build Info
+
+This file contains information regarding each build that is released.  A "build" is a small update 
+that fixes bugs found within a particular version.  For a full list of features in Version 1.5.1
+please visit the main change log at: http://eedocs.pmachine.com/changelog.html
+
+Build: 20061016
+* Modified the status="" parameter for the Reverse Related Entries variable pair to behave similiarly to the Weblog Module's status="" parameter
+* Fixed a bug in core.email.php having to do with a sendmail path validation failing incorrectly.
+* Fixed a bug with the 'insert_trackback_insert_array' hook.
+* Fixed a bug introduced in 20061014 with duplicate Global Variable prevention
+* Fixed a bug with the code highlighting when the block of code ended with a PHP comment.
+
+Build:  20061014
+* Added some javascript to Control Panel pages that allows PNG's with alpha transparency to be rendered properly in Internet Explorer.
+* Modified the Global Variables page in the Templates section of the Control Panel to display the variables in alphabetical order.
+* Fixed a bug that would allow the creation of Global Variables with duplicate names.
+* Fixed a bug in the Magpie plugin that could output errors to the browser when error reporting is disabled
+* Fixed a bug in the pMachine News Feed that would cause an error if the Magpie plugin was unable to access the feed.
+* Fixed a bug that could cause a custom date field to not be displayed under certain circumstances.
+* Fixed the breadcrumb for the Global Template Preferences with a nod to Kurt.
+* Fixed a bug where the Member Search in the MyAccount Private Message area was adding extra opening and closing symbols
+* Fixed a bug in the Image Gallery module dealing with watermarking medium sized images.

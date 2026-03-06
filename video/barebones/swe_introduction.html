@@ -1,0 +1,384 @@
+<HTML>
+<HEAD>
+   <TITLE>Avgnagd guide till HTML: Introduktion</TITLE>
+</HEAD>
+<BODY>
+
+<H2 ALIGN=CENTER>Avgnagd guide till HTML</H2>
+
+<H1 ALIGN=CENTER>I N T R O D U K T I O N</H1>
+
+<P><BR>
+
+<BR>
+
+<A NAME="thanks"></A></P>
+
+<H2>Tack till de som f&ouml;rtj&auml;nar det<BR>
+
+<hr align=left width=400 size=9 noshade></H2>
+
+<P>M&aring;nga m&auml;nniskor har kommit med r&aring;d och f&ouml;rslag till tidigare
+ versioner:</P>
+
+<P><TABLE BORDER=0 CELLPADDING=1 WIDTH=400>
+   <TR>
+      <TD VALIGN=top>
+         <UL>
+            <LI>Jutta Degener
+            
+            <LI>Henry Churchyard
+            
+            <LI>John Berkin
+            
+            <LI>Larry Katz
+            
+            <LI>N.J. Taber
+            
+            <LI>Dean Hedman
+            
+            <LI>Nick Galbreath
+         </UL>
+      </TD><TD VALIGN=top>
+         <UL>
+            <LI>R. Alan Monroe
+            
+            <LI>Ann Lynnworth
+            
+            <LI>Mike Kelsey
+            
+            <LI>Russ Allbery
+            
+            <LI>dolphin@eccosys.com
+            
+            <LI>Susan Hagan
+            
+            <li>John Van Essen
+         </UL>
+      </TD></TR>
+</TABLE></P>
+
+<P ALIGN=CENTER>| <A HREF="index.html">UPP till menysida</A> ||
+<A HREF="barebone.txt">Ren text</A> |
+<A HREF="barebone.html">Formaterad</A> ||
+<A HREF="http://werbach.com/home.html">Kevins hemsida</A> |</P>
+
+<P><BR>
+
+<A NAME="unique"></A></P>
+
+<H2>Vad &auml;r det f&ouml;r s&auml;rskilt med den h&auml;r guiden?<BR>
+<hr align=left width=400 size=9 noshade></H2>
+
+<P><I>Folk har skapat utm&auml;rkta HTML-guider och gjort de tillg&auml;ngliga
+p&aring; n&auml;tet -- vem beh&ouml;ver &auml;nnu en?</I></P>
+
+<p>Jag vill med det h&auml;r dokumentet fylla en speciell nisch. Det &auml;r t&auml;nkt som en
+kortfattad "fusklapp" f&ouml;r att hitta r&auml;tt taggar och argument n&auml;r man skapar websidor.
+<A HREF="http://werbach.com/web/wwwhelp.html#guides">Andra 
+HTML-guider</A> ger avsev&auml;rt mer information om hur man anv&auml;nder en tag eller hur 
+HTML fungerar i allm&auml;nhet. Om du &auml;r nyb&ouml;rjare b&ouml;r du pr&ouml;va n&aring;gon av dem f&ouml;rst.</P>
+
+<P>Det finns ocks&aring; m&aring;nga 
+<A HREF="http://werbach.com/web/wwwhelp.html#style">stilguider</A>
+som fokuserar mer p&aring; vad som ser bra ut och vad som fungerar p&aring; olika browsrar. 
+Jag r&aring;der dig att l&auml;sa en eller flera av dem om du planerar att konstruera websidor. 
+Alldeles f&ouml;r m&aring;nga ignorerar fullst&auml;ndigt det faktum att deras sidor ska l&auml;sas av 
+andra och att det b&aring;de finns b&auml;ttre och s&auml;mre s&auml;tt att g&ouml;ra saker och ting p&aring;.</P>
+
+<P>Min <A HREF="http://werbach.com/web/wwwhelp.html">WWW-hj&auml;lpsida</A>
+har l&auml;nkar till ett antal andra st&auml;llen som tillhandah&aring;ller information om HTML 
+och websiderdesign. Det &auml;r ett bra st&auml;lle att b&ouml;rja p&aring; om du har fr&aring;gor som kr&auml;ver 
+k&ouml;ttigare svar &auml;n informationen som h&auml;r bjuds.</P>
+
+<P><I>Den h&auml;r guiden &auml;r till f&ouml;r m&auml;nniskor som kan tillr&auml;kligt mycket f&ouml;r att klara sig utan steg-f&ouml;r-steg-instruktioner men som &auml;nnu inte memorerat varje HTML-tags exakta form.</I> Om du vill ha en lathund att kika i utan att beh&ouml;va l&auml;sa igenom en massa extra beskrivningar &auml;r det h&auml;r guiden f&ouml;r dig.</P>
+
+<p align=center>| <a href="index.html">UPP till menysida</a> ||
+<a href="barebone.txt">Ren text</a> |
+<a href="barebone.html">Formaterad</a> ||
+<a href="http://werbach.com/home.html">Kevins hemsida</a> |</p>
+
+<P><BR>
+
+<A NAME="included"></A></P>
+
+<H2>Vilka taggar finns med?<BR>
+
+<hr align=left width=400 size=9 noshade></H2>
+
+<P>Den h&auml;r guidens andra utm&auml;rkande egenskap &auml;r vad den inneh&aring;ller.
+<I>Avgnagd Guide till HTML &auml;r t&auml;nkt att ta upp alla taggar som &auml;r allm&auml;nt 
+anv&auml;nda i dagens websidor.</I> I synnerhet tar guiden upp f&ouml;ljande:</P>
+
+<UL>
+   <LI>HTML 3.2 taggar
+   
+   <LI>Netscapes till&auml;gg till HTML
+   
+</UL>
+
+<p>Utvecklingen av HTML har ofta varit f&ouml;rvirrande eftersom f&ouml;rs&ouml;k till 
+formella standarder ofta hunnits f&ouml;rbi av marknaden (ja, den h&auml;rjar fritt 
+&auml;ven med HTML). 
+<A HREF="http://www.w3.org/">World Wide Web Consortium</A> (W3C) &auml;r det 
+officiella standardiseringsorganet f&ouml;r HTML.  I maj 1996 sl&auml;ppte W3C ett 
+utkast till HTML 3.2 som var utformat s&aring; att det &aring;tergav och standardiserade 
+d&aring;varande praxis.</p>
+
+<p>I sin <a href="http://www.w3.org/pub/WWW/MarkUp/Activity">Redog&ouml;relse 
+F&ouml;r st&aring;ndpunkt ang. HTML</a> rekommenderar W3C att man f&ouml;ljer HTML 3.2 
+specifikationen. D&auml;rf&ouml;r tar version 3.0 av Avgnagd Guide till HTML upp alla 
+HTML 3.2 taggar oavsett om de ursprungligen introducerades som en del av 
+HTML 2.0, HTML 3.0 eller som Netscapes till&auml;gg till HTML. De senaste 
+versionerna av de st&ouml;rre browsrarna ska klara alla eller i alla fall 
+n&auml;stan alla dessa taggar.</p>
+
+<p>Jag har ocks&aring; inkluderat alla Netscape-taggar upp t.o.m. Navigator 3.0b5, med undantag f&ouml;r n&aring;gra som interagerar med servern, s&aring;som server push-animeringar. En del av dessa till&auml;gg kommer inte att kunna visas korrekt f&ouml;r folk som tittar p&aring; dina sidor med en annan browser, s&aring; t&auml;nk p&aring; din publik innan du best&auml;mmer dig f&ouml;r att anv&auml;nda dem.</p>
+
+
+<P><BR>
+
+</P>
+
+<p align=center>| <a href="index.html">UPP till menysida</a> ||
+<a href="barebone.txt">Ren text</a> |
+<a href="barebone.html">Formaterad</a> ||
+<a href="http://werbach.com/home.html">Kevins hemsida</a> |</p>
+
+<P><BR>
+
+</P>
+
+<PRE>&nbsp;</PRE>
+
+<H3><A NAME="formatting"></A>HUR &Auml;R DET H&Auml;R DOKUMENTET ORDNAT?<HR></H3>
+
+<p>
+F&ouml;r klarhets skull har jag placerat olika attribut som kan appliceras p&aring; 
+samma tag p&aring; olika rader. I allm&auml;nhet kan flera attribut kombineras med samma tag.
+</p>
+<p>
+I tabellen st&aring;r taggarna versalt av l&auml;slighetssk&auml;l men de flesta kan lika g&auml;rna 
+skrivas gement.
+</p>
+
+<H3>ANV&Auml;NDA SYMBOLER<HR></H3>
+
+<PRE>URL    en extern fils URL (eller bara filnamnet om samma katalog)
+?      Godtycklig siffra (t.ex. &lt;H?&gt; betyder &lt;H1&gt;, &lt;H2&gt;, &lt;H3&gt;, etc.)
+%      Godtyckligt procenttal (t.ex. &lt;hr align=left width=&quot;%&gt;&quot; betyder &lt;hr align=left width=&quot;50%&gt;&quot;, etc.)
+***    Godtycklig text (t.ex. ALT="***" betyder fyll med text)    
+$$$$$$ Godtyckligt hex (t.ex. BGCOLOR="#$$$$$$" betyder BGCOLOR="#00FF1C", etc.)
+,,,    Komma-avgr&auml;nsat (t.ex. COORDS=",,," betyder COORDS="0,0,50,50", etc.)
+|      Alternativ (t.ex. ALIGN=LEFT|RIGHT|CENTER betyder v&auml;lj EN av dessa)
+[*]    L&auml;nk till kommentar
+&nbsp;
+&nbsp;</PRE>
+
+<H3>KOMPATIBILITET</H3>
+
+<I>(kom ih&aring;g att HTML utvecklas och browser-implementering varierar)</I><HR>
+<pre>
+       (ingen not) I HTML 3.2 spec.; b&ouml;r fungera med nya browsrar 
+N1.0   Netscape till&auml;gg fr.o.m. Navigator version 1.0
+N1.1   Netscape till&auml;gg fr.o.m. Navigator version 1.1
+N2.0   Netscape till&auml;gg fr.o.m. Navigator version 2.0 
+N3.0b  Netscape till&auml;gg fr.o.m. Navigator version 3.0 beta
+&nbsp;
+&nbsp;</PRE>
+
+<p align=center>| <a href="index.html">UPP till menysida</a> ||
+<a href="barebone.txt">Ren text</a> |
+<a href="barebone.html">Formaterad</a> ||
+<a href="http://werbach.com/home.html">Kevins hemsida</a> |</p>
+
+<P><BR>
+
+<A NAME="version"></A></P>
+
+<H2>Versionshistoria<BR>
+
+<hr align=left width=400 size=9 noshade></H2>
+
+<P><I>(&Ouml;verfl&ouml;digt att &ouml;vers&auml;tta, men tycker du annorlunda s&aring; <a href="mailto:ola@tomtit.se">skriv mig en rad</a>. /&ouml;vers.anm.)</P>
+
+<P><B>Version 3.0 -- July 21, 1996.</B></P>
+
+<UL>
+   <LI>Updated everything to conform to the
+   <A HREF="http://www.w3.org/pub/WWW/MarkUp/Wilbur/">HTML 3.2</A>
+   specification.
+   
+   <LI>Added a new section for Java tags supported by HTML 3.2
+   
+   <LI>Revised the introductory material and annotations.
+      
+   <LI>Redesigned the layout of the "tables" version, in order to
+   make it easier to read.
+   
+   <LI>All major browsers now support tables, so to save time I have
+   decided to eliminate the separate non-table "HTML" version of the
+   Guide, and to rename the "tables" version as the "formatted"
+   version. Users who cannot view this version can still use the
+   "plain text" version.
+   
+   <LI>Added the new tags implemented by beta versions of Netscape
+   Navigator 3.0 up to 3.0b5, including:
+   
+  <ul><li>table cell colors
+  <li>multi-column text
+  <li>spacers
+  <li>frame border control
+  <li>strikeout via the &lt;S&gt; tag and underlining via the &lt;U&gt; tag. 
+  These were in HTML 3.0 but not HTML 3.2, so I list them as Netscape extensions.
+  <li>the FACE attribute for the &lt;FONT&gt; tag (originally a Microsoft extension)
+  </ul>
+   
+   <li>Fixed more typos.
+</UL>
+
+<P><B>Version 2.0 -- October 7, 1995.</B> Lots of changes and
+corrections in this version.</P>
+
+<UL>
+   <LI>Rewrote the introductory material and compatibility table
+   language
+   
+   <LI>Added + notation for Netscape extensions that have been
+   adopted by most major browsers. This notation is by nature
+   approximate; it represents my judgment about which tags have are
+   widely supported even though they are not (and may never be) in
+   HTML 3.0.
+   
+   <LI>Added ,,, notation in table of symbols for comma-delimited
+   lists.
+   
+   <LI>Restructured the Hard Formatting and Soft Formatting sections
+   into Presentation Formatting and Structural Definition. This
+   change makes clear the important distinction between
+   presentation-based and structural markup. A few tags have been
+   moved around as a result of this change, and the &lt;ADDRESS&gt;
+   tag has been moved up from Miscellaneous into Structural
+   Definition.
+   
+   <LI>Eliminated the Alignment section by shifting the tags listed
+   there into either Structural Definition or Presentation
+   Formatting. Although this results in the Netscape &lt;CENTER&gt;
+   tag being split up from the other alignment tags, it allows the
+   alignment attributes of tags such as &lt;P&gt; and &lt;H?&gt; to
+   be associated with the underlying tags they operate on. This
+   change is consistent with the HTML 3.0 philosophy of handling
+   alignment through attributes to existing tags rather than through
+   dedicated tags.
+   
+   <LI>Added listing for Netscape client pull animation (this has
+   been around since Netscape 1.1, but was not listed in the Guide).
+   
+   <LI>Support for new Netscape and HTML 3.0 tags implemented in
+   Netscape 2.0:
+   
+   <UL>
+      <LI>Frames (added a whole new section)
+      
+      <LI>Embedded Objects (in Links and Graphics)
+      
+      <LI>Divisions (in Structural Definition)
+      
+      <LI>Font Color (in Presentation Formatting)
+      
+      <LI>Big/Small font size (in Structural Definition)
+      
+      <LI>Superscript/Subscript (in Presentation Formatting)
+      
+      <LI>File Upload (in Forms)
+      
+      <LI>Text wrap (in Forms)
+      
+      <LI>Target Windows (in Links and Graphics) and Base Target (in
+      Miscellaneous)
+      
+      <LI>Client-side imagemaps (in Links and Graphics)
+   </UL>
+   
+   <LI>Removed &lt;XMP&gt; tag, because I have been convinced that it
+   is archaic.
+   
+   <LI>Moved prologue tags to Miscellaneous section, to indicate that
+   they are not required and reduce confusion.
+   
+   <LI>Fixed listing for &lt;NOBR&gt; container by adding a closing
+   tag
+   
+   <LI>Changed "outline type" to "numbering type" for Netscape
+   extension to ordered lists, in order to avoid confusion about what
+   this attribute does.
+   
+   <LI>Changed wording of &lt;P&gt; tag description to indicate that
+   it is "usually" rendered as a double return.
+   
+   <LI>Changed notation for hex triplet from $$$ to $$$$$$ to
+   indicate that six characters are required to reference the three
+   hex values.
+   
+   <LI>improved consistency of column alignment in the text version.
+</UL>
+
+<P><B>Version 1.22 -- August 18, 1995</B>. Added a tag and some
+attributes that had been accidentally omitted from the forms section,
+and corrected the listing of which color tags are in the HTML 3.0
+spec.</P>
+
+<P><B>Version 1.21 -- July 26, 1995</B>. Removed the archaic
+&lt;NEXTID&gt; tag and added some annotations to the HTML and table
+versions.</P>
+
+<P><B>Version 1.2 -- July 25, 1995</B>. Several revisions to improve
+compliance with the official HTML specifications, and to acknowledge
+more widespread implementation of certain HTML 3.0 tags.</P>
+
+<P><B>Version 1.1 -- July 19, 1995</B>. Cleaned up a number of things
+in the introductory material, and correctly specified the ISO 8859-1
+character set instead of ASCII.</P>
+
+<P><B>Version 1.03 -- July 12, 1995</B>. Updated copyright notices to
+eliminate confusion with Bare Bones Software. Added Netscape relative
+font sizing tag, and changed the link to the list of ASCII symbol
+codes.</P>
+
+<P><B>Version 1.02 -- April 24, 1995</B>. Corrected some additional
+typos, fixed the link to this version history, and added the standard
+copyright and registered TM codes to go along with the Netscape
+versions.</P>
+
+<P><B>Version 1.01 -- April 11, 1995</B>. Fixed a couple minor typos
+and ambiguities pointed out by helpful folks, including some errors
+in the list tags section.</P>
+
+<P><B>Version 1.0 HTML -- April 6, 1995</B>. Has some additional
+introductory material, but the text is otherwise identical to version
+1.0. Formatted for WWW viewing, with assistance from John Berkin.
+</P>
+
+<P><B>Version 1.0 -- April 2, 1995.</B> Corrected some errors pointed
+out by other people, and made some minor revisions to the
+introduction and the formatting of certain sections.</P>
+
+<P><B>Version 0.9b -- March 30, 1995.</B> First public version.
+Posted on comp.infosystems.www.providers.</P>
+
+<p align=center>| <a href="index.html">UPP till menysida</a> ||
+<a href="barebone.txt">Ren text</a> |
+<a href="barebone.html">Formaterad</a> ||
+<a href="http://werbach.com/home.html">Kevins hemsida</a> | 
+<a href="http://besk.tomtit.se/person/ola/index.html"Olas hemsida |</p>
+
+<P ALIGN=CENTER>Copyright &copy;1995-1997
+<A HREF="mailto:barebones@werbach.com">Kevin Werbach</A>.<BR>
+&Ouml;vers&auml;ttningen Copyright &copy;1996
+<a href="mailto:ola@tomtit.se">Ola Jaensson</a><br>
+
+Senast uppdaterad 21 juli 1996.<br>
+&Ouml;vers&auml;ttningen 9 augusti 1996.</P>
+</BODY>
+</HTML>
+

@@ -1,0 +1,1 @@
+<?php die(); ?>{"headers":{"Vary":"Vary: Cookie","Content-Type":"Content-Type: text\/html; charset=UTF-8","Last-Modified":"Last-Modified: Sat, 08 Jul 2017 10:54:02 GMT"},"uri":"werblog.com\/?s=players+journey&submit=search","blog_id":1,"post":0,"key":"blogwerblog.com80\/?s=players+journey&submit=search"}

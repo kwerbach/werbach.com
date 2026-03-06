@@ -1,0 +1,277 @@
+<HTML>
+<HEAD>
+<TITLE>SUPERNOVA 2004</TITLE>
+<base href="http://www.pulver.com/supernova/">
+<SCRIPT LANGUAGE = "JavaScript">
+<!-- Hides script from non-compatible browsers
+       browserName = navigator.appName;
+       browserVer = parseInt(navigator.appVersion);
+            /*   if (top.frames.length > 1) {
+                        top.location="menu.html";
+                        } */
+               if (browserName == "Netscape" && browserVer >= 3) version ="n3";
+               else {version = "n2"};
+               if (navigator.appVersion.substring(0,3) == '4.0') {version="n3"};
+               if (version == "n3") {
+
+
+               nav1on = new Image;
+               nav1on.src = "images/bt_welcome_lit.gif";
+
+               nav1off = new Image;
+               nav1off.src = "images/bt_welcome.gif";
+
+               nav2on = new Image;
+               nav2on.src = "images/bt_brochure_lit.gif";
+
+               nav2off = new Image;
+               nav2off.src = "images/bt_brochure.gif";
+
+               nav3on = new Image;
+               nav3on.src = "images/bt_schedule_lit.gif";
+
+               nav3off = new Image;
+               nav3off.src = "images/bt_schedule.gif";
+
+               nav4on = new Image;
+               nav4on.src = "images/bt_attend_lit.gif";
+
+               nav4off = new Image;
+               nav4off.src = "images/bt_attend.gif";
+
+               nav5on = new Image;
+               nav5on.src = "images/bt_weblog_lit.gif";
+
+               nav5off = new Image;
+               nav5off.src = "images/bt_weblog.gif";
+
+               nav6on = new Image;
+               nav6on.src = "images/bt_advertise_lit.gif";
+
+               nav6off = new Image;
+               nav6off.src = "images/bt_advertise.gif";
+
+               nav7on = new Image;
+               nav7on.src = "images/bt_speaking_lit.gif";
+
+               nav7off = new Image;
+               nav7off.src = "images/bt_speaking.gif";
+
+               nav8on = new Image;
+               nav8on.src = "images/bt_hotel_lit.gif";
+
+               nav8off = new Image;
+               nav8off.src = "images/bt_hotel.gif";
+
+               nav9on = new Image;
+               nav9on.src = "images/bt_press_lit.gif";
+
+               nav9off = new Image;
+               nav9off.src = "images/bt_press.gif";
+               nav10on = new Image;
+               nav10on.src = "images/bt_events_lit.gif";
+
+               nav10off = new Image;
+               nav10off.src = "images/bt_events.gif";
+
+               nav11on = new Image;
+               nav11on.src = "images/bt_register_lit.gif";
+
+               nav11off = new Image;
+               nav11off.src = "images/bt_register.gif";
+               nav12on = new Image;
+               nav12on.src = "images/bt_exhibits_lit.gif";
+
+               nav12off = new Image;
+               nav12off.src = "images/bt_exhibits.gif";
+               nav13on = new Image;
+               nav13on.src = "images/bt_report_lit.gif";
+
+               nav13off = new Image;
+               nav13off.src = "images/bt_report.gif";
+
+
+               nav14on = new Image;
+               nav14on.src = "images/bt_communitytools_lit.gif";
+
+               nav14off = new Image;
+               nav14off.src = "images/bt_communitytools.gif";
+
+               nav15on = new Image;
+               nav15on.src = "images/bt_sn2003_lit.gif";
+
+               nav15off = new Image;
+               nav15off.src = "images/bt_sn2003.gif";
+
+
+
+             }
+       function img_act(imgName) {
+               if (version == "n3") {
+               imgOn = eval(imgName + "on.src");
+               document [imgName].src = imgOn;
+               }
+       }
+       function img_inact(imgName) {
+               if (version == "n3") {
+               imgOff = eval(imgName + "off.src");
+               document [imgName].src = imgOff;
+               }
+       }
+var checkpoint = false;
+
+// checks whether an input string is blank
+function isBlank(s)
+{
+  if (s != null)
+    for (var i = 0; i < s.length; i++)
+    {
+      var c = s.charAt(i);
+      if (c != ' ' && c != '\n' && c != '\t')
+        return(false);
+    }
+  return(true);
+}
+
+// checkes for a valid email address string
+function validEmail(s)
+{
+  return (/^[^@]+@[^@]+$/.exec(s) != null)
+}
+
+
+function verify(f)
+{
+  if (checkpoint)
+    return(false);
+  _ib = isBlank;
+  if (isBlank(f.first.value) || isBlank(f.last.value) || isBlank(f.email.value))
+  {
+    alert("You must supply the following information:\n\n\tFirst Name\n\tLast Name\n\tEmail Address");
+    return(false);
+  }
+  if (!validEmail(f.email.value))
+  {
+    alert("Invalid Email Address:\n\n\t" + f.email.value);
+    return(false);
+  }
+  if (isBlank(f.adr1.value) || isBlank(f.city.value) || isBlank(f.company.value) || isBlank(f.country.value) || isBlank(f.phone.value) || isBlank(f.state.value) || isBlank(f.title.value) || isBlank(f.zip.value))
+  {
+    alert("Please fill in all fields marked as required");
+    return(false);
+  }
+  checkpoint = true;
+  return(true);
+}
+// End hide script -->
+</SCRIPT>
+</HEAD>
+<BODY text=white vLink=yellow link=yellow leftMargin=0 topMargin=0
+marginwidth="0" marginheight="0">
+<table border=0 cellpadding=0 cellspacing="0" width="100%" HEIGHT="113">
+<tr><td WIDTH="430"><IMG SRC="images/banner.gif" WIDTH="430" HEIGHT="113" BORDER="0"></td><td width="100%" background="images/bg_topmid.gif">
+<table border=0 cellpadding=0 cellspacing="0" width="100%" HEIGHT="113" background="images/bg_topmid.gif"><tr valign="bottom"><td><IMG SRC="images/topmid.gif" WIDTH="3" HEIGHT="50" BORDER="0"></td><td><IMG SRC="images/topmid.gif" WIDTH="3" HEIGHT="50" BORDER="0"></td></tr><tr valign="bottom"><td background="images/bg_upper.gif"><a href="register.html"  onMouseover = "img_act('nav11')" onMouseout = "img_inact('nav11')"><IMG SRC="images/bt_register.gif" WIDTH="136" HEIGHT="25" BORDER="0" name="nav11"></A></td><td background="images/bg_upper.gif"><a href="schedule.html"  onMouseover = "img_act('nav3')" onMouseout = "img_inact('nav3')"><IMG SRC="images/bt_schedule.gif" WIDTH="152" HEIGHT="25" BORDER="0" name="nav3"></A></td></tr><tr valign="bottom"><td background="images/bg_lower.gif">
+<a href="http://www.pulver.com/supernova/blog.html"  onMouseover = "img_act('nav5')" onMouseout = "img_inact('nav5')"><IMG SRC="images/bt_weblog.gif" WIDTH="136" HEIGHT="38" BORDER="0" name="nav5"></A></td><td background="images/bg_lower.gif"><a href="speaking.html"  onMouseover = "img_act('nav7')" onMouseout = "img_inact('nav7')"><IMG SRC="images/bt_speaking.gif" WIDTH="152" HEIGHT="38" BORDER="0" name="nav7"></A></td></tr></table></td><td WIDTH="32"><IMG SRC="images/top_right.gif" WIDTH="32" HEIGHT="113" BORDER="0"></td></tr></table>
+<table border=0 cellpadding=0 cellspacing="0" width="100%" HEIGHT="71">
+<tr valign="top"><td HEIGHT="71"><IMG SRC="images/bt-hd_left.gif" WIDTH="32" HEIGHT="71" BORDER="0"></td><td width="100%" background="images/bg_bt-hd.gif"><a href="index.html"  onMouseover = "img_act('nav1')" onMouseout = "img_inact('nav1')"><IMG SRC="images/bt_welcome.gif" WIDTH="80" HEIGHT="35" BORDER="0" name="nav1"></A><a href="brochure.html"  onMouseover = "img_act('nav2')" onMouseout = "img_inact('nav2')"><IMG SRC="images/bt_brochure.gif" WIDTH="110" HEIGHT="35" BORDER="0" name="nav2"></A><a href="attend.html"  onMouseover = "img_act('nav4')" onMouseout = "img_inact('nav4')"><IMG SRC="images/bt_attend.gif" WIDTH="103" HEIGHT="35" BORDER="0" name="nav4"></A><a href="hotel.html"  onMouseover = "img_act('nav8')" onMouseout = "img_inact('nav8')"><IMG SRC="images/bt_hotel.gif" WIDTH="75" HEIGHT="35" BORDER="0" name="nav8"></A><a href="http://www.pulver.com/reports/supernova/"  onMouseover = "img_act('nav13')" onMouseout = "img_inact('nav13')"><IMG SRC="images/bt_report.gif" WIDTH="110" HEIGHT="35" BORDER="0" name="nav13"></A><a
+href="http://www.pulver.com/supernova/communitytools.html"  onMouseover =
+"img_act('nav14')" onMouseout = "img_inact('nav14')"><IMG SRC=
+"http://www.pulver.com/supernova/images/bt_communitytools.gif" WIDTH="110" HEIGHT="35" BORDER="0" name="nav14"></A><a href="http://www.pulver.com/supernova/2003.html"  onMouseover = "img_act('nav15')" onMouseout = "img_inact('nav15')"><IMG SRC="http://www.pulver.com/supernova/images/bt_sn2003.gif" WIDTH="105" HEIGHT="35" BORDER="0" name="nav15"></A><BR><IMG SRC="images/hd_communitytools.gif" WIDTH="293" HEIGHT="36" BORDER="0"></td><td><IMG SRC="images/bt-hd_right.gif" WIDTH="32" HEIGHT="71" BORDER="0"></td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%" background="images/bg_main.gif">
+<tr valign="top"><td background="images/bg_left.gif" WIDTH="32"><IMG SRC="images/bg_left.gif" WIDTH="32" HEIGHT="22" BORDER="0"></td>
+    <td width="100%" background="images/bg_main.gif"><p><font face="Verdana, Arial, Helvetica" size="2"><BR>
+
+
+
+<!--------BODY TEXT start---------->
+
+Supernova is more than just a conference.  The physical gathering in Santa Clara is only one element of an interactive, networked community.  Using cutting-edge online community tools, we facilitate a parallel virtual event that extends Supernova in time, space, and participation.
+<p>
+Most of the tools below are accessible to non-attendees.  Though there is no substitute for the on-site experience, we value participation from those who could not attend this year.<br>
+<br>
+</font>
+      <table width="600" border="1" cellspacing="0" cellpadding="8">
+        <tr valign="top">
+          <td><p><font size="+1" face="Verdana, Arial, Helvetica"><strong>Conference
+                  weblog </strong><font size="2">[RSS]</font><strong><br>
+                  </strong><font size="2">Category feeds:<br>
+              - Collaborative Business <font face="Verdana, Arial, Helvetica">--
+              <em>sponsored by Nextpage</em> [RSS]</font><br>
+              - Communications -- <em>sponsored by Vonage??</em> </font></font><font face="Verdana, Arial, Helvetica"><font face="Verdana, Arial, Helvetica"><font size="2" face="Verdana, Arial, Helvetica">[RSS]</font></font></font><font size="+1" face="Verdana, Arial, Helvetica"><font size="2"><br>
+              -	New Media -- <em>sponsored by <font face="Verdana, Arial, Helvetica"><font face="Verdana, Arial, Helvetica">Macromedia??</font></font></em><font face="Verdana, Arial, Helvetica"><font face="Verdana, Arial, Helvetica">            [RSS]</font></font><br>
+              -	Social Software -- <em>sponsored by Spoke??</em> <font face="Verdana, Arial, Helvetica"><font face="Verdana, Arial, Helvetica">[RSS]</font></font><br>
+              -	Policy <font face="Verdana, Arial, Helvetica"><font face="Verdana, Arial, Helvetica">--
+              <em>sponsored by Neustar??</em> [RSS]</font></font> </font></font></p>
+            <p><font size="+1" face="Verdana, Arial, Helvetica"><font face="Verdana, Arial, Helvetica" size="+1"><strong>Group
+                metablog</strong></font><font face="Verdana, Arial, Helvetica" size="2"><i> </i></font><font size="+1" face="Verdana, Arial, Helvetica"><font size="2">[RSS]</font></font><font face="Verdana, Arial, Helvetica" size="2"><i><br>
+    Point to postings on your own blog</i></font>
+                      </font></p>
+          <p><font face="Verdana, Arial, Helvetica" size="+1"><strong>Moblog</strong></font><font face="Verdana, Arial, Helvetica" size="2"> </font><font size="+1" face="Verdana, Arial, Helvetica"><font size="2">[RSS]</font></font><font face="Verdana, Arial, Helvetica" size="2"><br>
+              <i>Point to postings on your own blog</i></font></p></td>
+          <td valign="middle"><font face="Verdana, Arial, Helvetica" size="2"><i>Powered by Typepad</i> </font><br>
+            <img src="sixapart_150x60.gif" width="150" height="60"></td>
+        </tr>
+        <tr valign="top">
+          <td width="400"><font face="Verdana, Arial, Helvetica" size="2"><font size="+1"><strong>Video
+                  blogcast</strong></font><br>
+              </font></td>
+          <td width="150" valign="middle"><font face="Verdana, Arial, Helvetica" size="2"><i>Sponsored
+          by ???</i> </font></td>
+        </tr>
+        <tr valign="top">
+          <td width="400"><font face="Verdana, Arial, Helvetica" size="2"><font size="+1"><strong>Eventspace
+                  wiki</strong></font><br>
+A collaborative workspace for Supenova participants </font></td>
+          <td width="150" valign="middle"><font face="Verdana, Arial, Helvetica" size="2"><i>Powered
+          by Socialtext</i></font></td>
+        </tr>
+        <tr valign="top">
+          <td width="400"><font face="Verdana, Arial, Helvetica" size="2"><font size="+1"><strong>Video
+          messaging</strong></font><br>
+              Instant videoconferencing with other Supernova
+          attendees </font></td>
+          <td width="150" valign="middle"><font face="Verdana, Arial, Helvetica" size="2"><i>Powered
+          by Convoq</i></font></td>
+        </tr>
+        <tr valign="top">
+          <td width="400"><font face="Verdana, Arial, Helvetica" size="2"><font size="+1"><strong>Community
+                  photo sharing + chat</strong></font><br>
+              </font></td>
+          <td width="150" valign="middle"><font face="Verdana, Arial, Helvetica" size="2"><i>Powered
+          by Flikr</i></font></td>
+        </tr>
+        <tr valign="top">
+          <td width="400"><font face="Verdana, Arial, Helvetica" size="2"><font size="+1"><strong>Session
+                  audio streaming</strong></font><br>
+              </font></td>
+          <td width="150" valign="middle"><font face="Verdana, Arial, Helvetica" size="2"><i>Provided
+          by IT Conversations</i> </font></td>
+        </tr>
+        <tr valign="top">
+          <td width="400"><font face="Verdana, Arial, Helvetica" size="2"><font size="+1"><strong>Hecklebot</strong></font><br>
+              </font></td>
+          <td width="150" valign="middle"><font face="Verdana, Arial, Helvetica" size="2"><i>Powered
+          by Joi Ito</i> </font></td>
+        </tr>
+      </table>
+      <font face="Verdana, Arial, Helvetica" size="2">
+      <p>&nbsp;      
+      <p>
+  
+
+  
+
+  <!------------BODY TEXT end--------->
+  
+
+   
+  
+    </font></td>
+    <td background="images/bg_right.gif" WIDTH="32"><IMG SRC="images/bg_right.gif" WIDTH="32" HEIGHT="36" BORDER="0"></td></tr>
+<tr valign="bottom"><td background="images/bg_left.gif" WIDTH="32" height="22"><IMG SRC="images/bg_left.gif" WIDTH="32" HEIGHT="22" BORDER="0"></td>
+<td width="100%" align="center"><font face="Arial" size="1">© 2004 <A HREF="http://www.pulver.com/" TARGET="_blank">pulver.com</A> All
+    Rights Reserved.</font></td>
+<td background="images/bg_right.gif" WIDTH="32"><IMG SRC="images/bg_right.gif" WIDTH="32" HEIGHT="22" BORDER="0"></td></tr>
+</table>
+</BODY>
+</HTML>

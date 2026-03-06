@@ -1,0 +1,9 @@
+## password begin ##
+AuthUserFile /usr/www/users/werbach/db/.passwd
+AuthName     "Protected"
+AuthType     Basic
+require valid-user
+<Files .passwd>
+deny from all
+</Files>
+## password end ##

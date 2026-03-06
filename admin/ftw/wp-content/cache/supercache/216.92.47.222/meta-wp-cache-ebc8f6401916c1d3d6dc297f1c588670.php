@@ -1,0 +1,1 @@
+<?php die(); ?>{"headers":{"Vary":"Vary: Accept-Encoding, Cookie","Content-Type":"Content-Type: text\/html; charset=UTF-8","Link":"Link: <http:\/\/gamifyforthewin.com\/wp-json\/>; rel=\"https:\/\/api.w.org\/\"","Last-Modified":"Last-Modified: Mon, 28 Nov 2022 16:22:43 GMT"},"uri":"216.92.47.222\/?q=%berner%","blog_id":1,"post":0,"key":"216.92.47.22280\/?q=%berner%"}

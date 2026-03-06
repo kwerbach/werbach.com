@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+xmlns:admin="http://webns.net/mvcb/"
+xmlns:cc="http://web.resource.org/cc/"
+xmlns="http://purl.org/rss/1.0/">
+
+<channel rdf:about="http://werblog.com/">
+<title>Werblog has moved to http://werblog.com</title>
+<link>http://werblog.com/</link>
+<description></description>
+<dc:creator></dc:creator>
+<dc:date>2008-08-15T13:07:02-05:00</dc:date>
+<admin:generatorAgent rdf:resource="http://www.movabletype.org/?v=3.33" />
+
+
+<items>
+<rdf:Seq><rdf:li rdf:resource="http://werbach.com/blog/archives/2008/08/mccains_technol.html" />
+<rdf:li rdf:resource="http://werbach.com/blog/archives/2008/08/werblog_moving.html" />
+<rdf:li rdf:resource="http://werbach.com/blog/archives/2008/08/further_thought.html" />
+<rdf:li rdf:resource="http://werbach.com/blog/archives/2008/08/the_end_of_netw.html" />
+<rdf:li rdf:resource="http://werbach.com/blog/archives/2008/07/mccains_entrepr.html" />
+<rdf:li rdf:resource="http://werbach.com/blog/archives/2008/07/response_from_m.html" />
+<rdf:li rdf:resource="http://werbach.com/blog/archives/2008/07/note_to_john_mc.html" />
+<rdf:li rdf:resource="http://werbach.com/blog/archives/2008/05/supernova_open.html" />
+<rdf:li rdf:resource="http://werbach.com/blog/archives/2008/04/holding_the_int.html" />
+<rdf:li rdf:resource="http://werbach.com/blog/archives/2008/04/tech_policy_eve.html" />
+<rdf:li rdf:resource="http://werbach.com/blog/archives/2008/04/will_technology.html" />
+<rdf:li rdf:resource="http://werbach.com/blog/archives/2008/03/challenges_for.html" />
+<rdf:li rdf:resource="http://werbach.com/blog/archives/2008/03/why_telcos_dont.html" />
+<rdf:li rdf:resource="http://werbach.com/blog/archives/2008/02/supernova_mixer.html" />
+<rdf:li rdf:resource="http://werbach.com/blog/archives/2008/02/vote_and_vote_o.html" />
+</rdf:Seq>
+</items>
+
+</channel>
+
+<item rdf:about="http://werbach.com/blog/archives/2008/08/mccains_technol.html">
+<title>McCain&apos;s Technology Non-Plan -- over on Werblog</title>
+<link>http://werbach.com/blog/archives/2008/08/mccains_technol.html</link>
+<description><![CDATA[<p>On the new <a href="http://werblog.com">Werblog</a>, I've posted on my thoughts on John McCain's technology plan:  <a href="http://werblog.com/2008/08/mccains-technology-non-plan/">http://werblog.com/2008/08/mccains-technology-non-plan/</a>.</p>
+
+<p>Be sure to update your pointers to the new blog and RSS feed addresses.</p>]]></description>
+<dc:subject></dc:subject>
+<dc:creator>Kevin Werbach</dc:creator>
+<dc:date>2008-08-15T13:07:02-05:00</dc:date>
+</item>
+<item rdf:about="http://werbach.com/blog/archives/2008/08/werblog_moving.html">
+<title>Werblog moving</title>
+<link>http://werbach.com/blog/archives/2008/08/werblog_moving.html</link>
+<description><![CDATA[<p>After several years, it's time to redesign and update my blog.  The new Werblog is still accessible at <a href="http://werblog.com">http://werblog.com</a>. All the old posts and comments have been copied over.  </p>
+
+<p>If you read this site via RSS feed, please subscribe to the new feed at <a href="http://werblog.com/feed/">http://werblog.com/feed/</a>.  The old RSS feed will no longer pick up new posts.</p>]]></description>
+<dc:subject></dc:subject>
+<dc:creator>Kevin Werbach</dc:creator>
+<dc:date>2008-08-09T12:02:13-05:00</dc:date>
+</item>
+<item rdf:about="http://werbach.com/blog/archives/2008/08/further_thought.html">
+<title>Further Thoughts on the Comcast Decision</title>
+<link>http://werbach.com/blog/archives/2008/08/further_thought.html</link>
+<description><![CDATA[<p>I've been following the aftermath of Friday's <A href="http://hraunfoss.fcc.gov/edocs_public/attachmatch/DOC-284286A1.pdf">FCC decision</a> (PDF of press release) sanctioning Comcast for discriminating against P2P traffic.  </p>
+
+<p>The public interest community is <a href="http://www.publicknowledge.org/node/1691">elated</a>, as it should be. This was indeed a huge and surprising victory against a well-funded incumbent.  Kevin Martin went along to serve his own interests, but things only got to this point because Free Press and its allies generated so much political pressure.  There is a genuine movement now promoting the open Internet.  That's what has changed for the better since I started <a href="http://downloads.oreilly.com/radar/r1/02-99.pdf">advocating broadband open access</a> in 1999.  </p>
+
+<p>As I indicated in my <a href="http://werbach.com/blog/archives/2008/08/the_end_of_netw.html">previous post</a>, I'm worried that Martin's real goal is to limit network neutrality.  The way to prevent that is to call his bluff, and keep the pressure on.  The final text of the order hasn't been released, because it's probably still being negotiated among the FCC Commissioners.  The specifics of how the Commission justifies its decisions may make a difference in the court challenge and legislative fights to come.  As I expected, network operators are already <href="http://www.cnn.com/2008/TECH/biztech/08/01/fcc.comcast.ap/index.html">working to position the Comcast decision</a> as a barrier to further action.   </p>
+
+<p>Along the same lines, there's an important legal distinction to emphasize.  In my last post, I expressed concern that the Comcast order would be overturned on procedural grounds.  That is different from the issue of FCC jurisdiction.  As I said, I think the FCC has sufficient legal authority to address network neutrality.  The Communications Act gives the FCC broad jurisdiction, and the Supreme Court's <i>Brand X</i> decision strongly suggested that it could mandate non-discriminatory access for broadband networks.  Whatever happens on the procedural challenges to the Comcast order, jurisdiction will set the ground-rules for how the next FCC and Congress address broadband openness.</p>
+
+<p>For those who support network neutrality, Friday's vote isn't the end; it's just the beginning. That's what I was trying to highlight in my prior post. I'm worried about how things may play out, but that depends on what everyone does next.  The long-term question is how to set the terms of engagement between those who operate networks and those who use them, in ways that promote competitive innovation all around.  </p>]]></description>
+<dc:subject></dc:subject>
+<dc:creator>Kevin Werbach</dc:creator>
+<dc:date>2008-08-04T14:47:00-05:00</dc:date>
+</item>
+<item rdf:about="http://werbach.com/blog/archives/2008/08/the_end_of_netw.html">
+<title>The End of Network Neutrality?</title>
+<link>http://werbach.com/blog/archives/2008/08/the_end_of_netw.html</link>
+<description><![CDATA[<p>Today, the FCC will adopt an order sanctioning Comcast for restricting BitTorrent peer-to-peer file-transfer traffic on its broadband network.  It's a big victory for network neutrality advocates.  Although the FCC adopted principles in 2005 and condemned a rural phone company for blocking voice-over-IP traffic, this is its first action against a major broadband provider for limiting Internet access.  And it's coming under a Republican FCC Chairman, Kevin Martin, who pushed for deregulation of broadband operators.  </p>
+
+<p>So, why am I worried?</p>
+
+<p>Today's FCC decision could be the end of the Network Neutrality war.  I'm not sure the good guys won.</p>
+
+<p>Let me preface this by stressing that I care deeply about preserving the open Internet.  I've been arguing for broadband openness for almost ten years.  I know that broadband deployment and competition in the US are limited.  I respect the hard work -- both intellectual and in the trenches -- of Larry Lessig, Tim Wu, Susan Crawford, Gigi Sohn, David Reed, Marvin Ammori, and other friends who pushed the FCC to act.  The technique Comcast employed, spoofing "RST" packets to terminate P2P transfers, is clumsy and problematic for a host of reasons; it belongs in the dustbin of data networking history.  Having the FCC on record defending the freedom of Internet users and application providers is a powerful symbolic precedent.  Nonetheless, I see serious problems with what the FCC is doing.</p>
+
+<p>I think today's action is actually designed to kill network neutrality.  </p>
+
+<p>First, the order stands a high likelihood of being overturned in court.  I believe the FCC does have the jurisdictional authority to adopt network neutrality rules.  However, the courts have repeatedly rejected attempted by the Commission to shortcut the analytical and administrative process.  Sanctioning a company for violating a policy statement that never went through the administrative rulemaking process, and expressly denied that it was enforceable, seems like an invitation for judicial reversal.   Once the courts get involved, muddling through the legal issues can take years.</p>
+
+<p>Second, the order seems designed to encourage broadband providers to shift bandwidth caps and metered pricing, as GigaOm, DSLReports, and others have <a href="http://gigaom.com/2008/07/30/fcc-metered-broadban/">noted</a>.  By acting in this way, the FCC could head off nascent industry collaboration efforts between P2P providers and broadband operators, such as the P4P standard.  Rather than forcing a serious examination of the connection between what broadband operators are doing and the legitimate network management challenges they face, this order creates a safe harbor zone for practices that may be more damaging than Comcast's experimental "throttling."    </p>
+
+<p>Third, the order could undermine more stringent network neutrality actions next year.  If Obama wins, both Congress and the FCC will be poised to adopt network neutrality rules in 2009.  After today's FCC action, that's significantly less likely.  Everyone will point to the Comcast decision as proof that the FCC can and will address these issues without further legislation.  (At least, until the decision is overturned, by which time the legislative energy will probably have dissipated.)  And the FCC will have a hard time mustering the support for a more thorough proceeding, now that it's on the course of time-consuming case-by-case adjudication.  </p>
+
+<p>Kevin Martin understands these dynamics.  I think they are more central to his strategy than a personal dislike for the cable industry or a desire to woo liberal support for a future Congressional run.  Remember the political masterstroke that vaulted him into the FCC Chairman's office: joining with the two Democratic Commissioners to <a href="http://werbach.com/blog/archives/2003/02/the_fcc_thing_i.html">undermine</a> then-Chairman Michael Powell's plan for the 2003 "Triennial Review."  He's making an eerily similar deal today.  Back then, Martin gave the Democrats what they thought they wanted -- modest extension of "UNE-P" unbundling for voice telephone competition -- in return for what really mattered: DSL line-sharing and unbundling of fiber networks for broadband.  The courts then <A href="http://werbach.com/blog/archives/2004/03/the_worst_of_bo.html">gutted</a> the pro-competitive parts of the order, to the surprise of no one who was paying attention.  Five years later, we see the results.  Compare broadband offerings in places that pushed forward with line-sharing, like France and Japan, with those in the US.  </p>
+
+<p>In hindsight, Martin's deal on UNE-P was a terrible loss for competition and innovation.  I fear his deal on network neutrality will have the same impact.  Advocates of an open Internet need to appreciate that, after today, the battleground has shifted... not entirely in a good way.</p>
+
+<p>------</p>
+
+<p>[UPDATE] Susan Crawford <A href="http://scrawford.net/blog/comcast-and-the-internet/1221/">shares some of my concerns</a>, but has a more upbeat take on the order.</p>
+
+<p>[UPDATE] Blair Levin of Stifel Nicolaus points out in his note (no link, sorry) that Comcast will have to assess whether a new Congress or FCC would adopt stricter rules after the courts overturn this decision.   </p>
+
+<p>[UPDATE] <a href="http://www.cnn.com/2008/TECH/biztech/08/01/fcc.comcast.ap/index.html">AP</a>: "Verizon Communications Inc., AT&T Inc. and the U.S. Telecom Association all released statements saying the FCC action proved there was no need for federal network neutrality legislation."  Expect to hear this a lot during the next year.</p>
+
+<p>[UPDATE] Arbor Networks illustrates my point in its <a href="http://asert.arbornetworks.com/2008/08/lessons-learned-from-the-fcc-decision/">lessons learned</a> from the FCC decision, by explaining how "tiered services for business and consumer broadband customers" with "maximum downstream and upstream bandwidth rates for specific application types, such as peer-to-peer file sharing" are now the way to go.  Isn't that exactly what network neutrality was supposed to prevent?</p>
+
+<p>[UPDATE] Valleywag <a href="http://valleywag.com/5033908/how-the-fcc-killed-bittorrents-promising-business">thinks</a> the FCC decision actually hurt BitTorrent, the company.</p>]]></description>
+<dc:subject></dc:subject>
+<dc:creator>Kevin Werbach</dc:creator>
+<dc:date>2008-08-01T07:59:57-05:00</dc:date>
+</item>
+<item rdf:about="http://werbach.com/blog/archives/2008/07/mccains_entrepr.html">
+<title>McCain&apos;s Entrepreneurial &quot;Supporters&quot;</title>
+<link>http://werbach.com/blog/archives/2008/07/mccains_entrepr.html</link>
+<description><![CDATA[<p>I was going to let former FCC Chairman Michael Powell's <a href="http://werbach.com/blog/archives/2008/07/response_from_m.html">response</a> to my <a href="http://werbach.com/blog/archives/2008/07/note_to_john_mc.html">critique</a> of John McCain’s technology policies speak for itself.   But I just discovered that he got some information wrong. </p>
+
+<p>Powell didn't challenge my central argument -- that McCain sees no need for the President to address issues like Internet openness, broadband deployment, online privacy, and transparent government.  On technology, the contrast between the two candidates isn't a disagreement over policies; it's a disagreement over whether to have policies.  </p>
+
+<p>Powell did specifically address my point that so many leading figures in the tech world support Obama.  He listed a few CEOs in the McCain camp.   Oddly, despite his emphasis on entrepreneurs as catalysts of innovation and growth, all but two are professional managers.  The only company founders are Michael Dell, a longtime big Republican donor, and Marc Benioff, founder of Salesforce.com.  </p>
+
+<p>I know Marc Benioff.  He has spoken at my annual <a href="http://www.supernova2008.com/">Supernova</a> conference.  I was surprised to see him listed as a committed McCain supporter.  Well, I checked, and he's not.  He contributed money to both campaigns, and has not made a public endorsement.  <br />
+ <br />
+I'm sure Powell didn't intentionally misrepresent Benioff's position.  It was an honest mistake, but a telling one.  This was the best list McCain's leading tech advisor could come up with.  By contrast, Obama had the public support of <a href="http://www.barackobama.com/2007/11/15/tech_leaders_announce_support.php">dozens of leading tech entrepreneurs, executives, and scholars</a> eight months ago.  That was even before the primaries, so you can imagine the list now.   </p>
+
+<p>There are still those who remain convinced -- despite two decades of evidence to the contrary -- that Republicans are always good for business and Democrats are always bad.  The Obama campaign is about putting aside such preconceptions.  Look at what the candidates actually say and do.  Decide who you think better appreciates the significance of our connected digital age.  I think the choice is pretty clear.</p>]]></description>
+<dc:subject></dc:subject>
+<dc:creator>Kevin Werbach</dc:creator>
+<dc:date>2008-07-30T11:39:30-05:00</dc:date>
+</item>
+<item rdf:about="http://werbach.com/blog/archives/2008/07/response_from_m.html">
+<title>Response from Michael Powell on McCain&apos;s tech plan</title>
+<link>http://werbach.com/blog/archives/2008/07/response_from_m.html</link>
+<description><![CDATA[<p><i>Former FCC Chairman Michael Powell sent me this response to my <a href="http://werbach.com/blog/archives/2008/07/note_to_john_mc.html">criticism</a> of John McCain's technology policies.  Something is wrong with the comments function on this blog (I'm working on it), so I'm posting it directly.</i></p>
+
+<p><br />
+Oh Kevin, I like you too.  Your usual intellectual honesty, however, seems to have gone missing in this post.  I guess that is what political swooning can do—blind the infatuated to the facts. John McCain has been a leader on tech policy for years and his record on creating the climate for innovation and entrepreneurial activity dwarfs that of the esteemed Senator Obama.  Maybe personal attacks on McCain and his supporters are calculated to mask that glaring gap.   McCain understands that the President does not invent anything, patent anything, craft and fund a business model, or hire the skilled workforce necessary to bring inventive ideas to market.  Private entrepreneurs do that and they do care—as apparently you do not—about having access to global markets, tax policy that rewards risk and domestic investment, and access to skilled labor.   Many tech luminaries, including John Chambers, Meg Whitman, Michael Dell, and Marc Benioff, support his comprehensive approach to innovation.</p>
+
+<p>When I was FCC Chairman and John McCain oversaw the Commission we re-directed a backward looking agency towards forward looking tech policies—more unlicensed and broadband spectrum, an expedited DTV transition, thoughtful consumer protection like Do Not Call, the Four Freedoms for internet consumers and an open network, and I pushed—with Senator McCain’s support—policies that stimulated fiber deployments and promoted concrete competition among different platform providers.  (And I supported the line sharing policy you cite favorably, which was blocked by the two Democrats on the FCC who likely will remain in an Obama administration).</p>
+
+<p>Make no mistake. Innovation is the engine of our Age and critical to solving vexing problems facing our Nation and the world. These matters are so important I would only support a President that has experience with the issues and will use his office to lead.  That is John McCain.</p>
+
+<p>-Michael Powell</p>]]></description>
+<dc:subject></dc:subject>
+<dc:creator>Kevin Werbach</dc:creator>
+<dc:date>2008-07-25T18:23:57-05:00</dc:date>
+</item>
+<item rdf:about="http://werbach.com/blog/archives/2008/07/note_to_john_mc.html">
+<title>Note to John McCain: Technology Matters</title>
+<link>http://werbach.com/blog/archives/2008/07/note_to_john_mc.html</link>
+<description><![CDATA[<p>One would think that, in 2008, the significance of the Internet and information technology would be universally acknowledged.  That makes the recent news from the Presidential campaign a bit shocking.  After ignoring technology issues for the past year, John McCain is poised to announce his great insight: tech policy isn't worthy of attention from the President of the United States.  </p>
+
+<p>This is what I draw from the <a href="http://public.cq.com/docs/cqt/news110-000002912191.html">announcement</a> that former FCC Chairman Michael Powell is drafting a technology plan for McCain, to be released shortly.  The McCain campaign will promote it as an overdue response to the <a href="http://www.barackobama.com/issues/technology/">comprehensive technology agenda</a> that Obama unveiled eight months ago.  I'm sure they will position long-standing Republican ideas like cutting the capital gains tax and promoting "market forces" to encourage broadband deployment as maverick proposals.  What concerns me most is what the McCain plan apparently leaves out: strong views on the crucial issues that Obama's plan covers.  Immigration reform and free trade are worthy goals.  They aren't a technology agenda.</p>
+
+<p>I like Michael Powell. I really do.  He's extremely smart and open-minded, he was a dedicated public servant, and he did some wonderful things at the FCC, especially on spectrum policy.  Yet Powell always had a curious blind spot about how FCC decisions affected the world outside the agency.  His infamous <a href="http://tinyurl.com/6zmlmp">quip</a> comparing the Digital Divide to the "Mercedes divide" is a good example.  Even when he had the policies right (as on requiring "line sharing" for broadband access), he couldn't always get them adopted, because the FCC doesn't operate in a sealed box.  It's a component -- an important component -- of the larger policy and political apparatus of the federal government.  With the McCain plan, Powell is making the same mistake.</p>
+
+<p>In an interview last week, Powell <a href="http://public.cq.com/docs/cqt/news110-000002912191.html">asserts</a> that issues like Network Neutrality in Obama's agenda are "in the weeds," because "[a] lot of the FCC’s issues aren’t ‘president of the United States’ issues."  Nothing could be further from the truth.  Reasonable minds can differ over the right policies to preserve the open Internet, promote next-generation broadband, safeguard online privacy, and create a connected digital democracy.  Supporters of Obama (like me) can think he made a mistake in his handling of the FISA telecom immunity legislation (as I do).  The absolute worst approach is to label these as insignificant technical matters that the President need not address.  That's been the mindset, with disastrous results, the past eight years.  </p>
+
+<p>As chair of the Senate Commerce Committee, John McCain was exposed to a wide range of tech policy issues.  On the other hand, he <a href="mailto:http://thecaucus.blogs.nytimes.com/2008/06/24/mccain-and-the-internets/">admits</a> he's "computer illiterate."  Ask yourself how you'd feel about working for a corporation where the CEO doesn't know how to use a computer.  No matter how smart, someone who can't open a web page, type a letter on a word processor, or compose an email message, is going to be fundamentally out of touch with the daily experience of every member of the knowledge economy.   </p>
+
+<p>The only saving grace would be if McCain's technology advisors could overcome his personal ignorance. As I've been saying for a long time, no President can oversee the details of every important issue, so the people around him or her are critical.  The roster of Obama's tech advisory group (which I'm proud to be part of) is nothing short of amazing.  It includes a shockingly high percentage of the best academics, entrepreneurs, executives, and investors I've encountered during my 15 years in the tech world.  And tech-oriented advisors are <a href="http://www.rollingstone.com/politics/story/21470304/obamas_brain_trust/6">at the very heart</a> of the campaign.  McCain has supporters like Michael Powell and former HP CEO Carly Fiorina who understand these issues, but what's the point if their message is that technology doesn't matter?  When the tech-savvy advisors reinforce the "do nothing" instincts of a tech-illiterate leader, the result is, well, what we got with the Bush Administration: the US falling behind other countries on both broadband deployment and competition, individual rights violated because the government hasn't established rules of the road, and the Internet's magnificent innovation engine in jeopardy.</p>
+
+<p>Obama's tech policies aren't perfect, and McCain's wouldn't be all bad.  Still, the choice matters.  It matters a lot.  The cynicism out there, even from those who agree with Obama on the issues, scares me more than anything.  People think that politicians can't be trusted to do anything other than reward their cronies and contributors, and they think government's only effect in markets is to screw them up.  Does anyone remember how eight years ago we had a trillion-dollar budget surplus, and the rest of the world looked in awe at the economic growth and innovation unleashed by our Internet industry?  We can have that again, and much more, but only if we recognize how much technology matters in the global economy of the 21st century.  Obama gets it; McCain doesn't.<br />
+</p>]]></description>
+<dc:subject></dc:subject>
+<dc:creator>Kevin Werbach</dc:creator>
+<dc:date>2008-07-18T09:09:04-05:00</dc:date>
+</item>
+<item rdf:about="http://werbach.com/blog/archives/2008/05/supernova_open.html">
+<title>Supernova Open Flow conference call -- June 3</title>
+<link>http://werbach.com/blog/archives/2008/05/supernova_open.html</link>
+<description><![CDATA[<p>Next Tuesday (June 3) from 9am-11am PT (12pm-2pm ET), I'll be hosting an interactive conference call and chat on "Open Flow" -- the technologies and business practices that allow information to move freely between users, websites, and organizations. This is a precursor to the <a href="http://www.supernova2008.com/go/openflow">track</a> at Supernova 2008, sponsored by BT.</p>
+
+<p>The call is open to anyone interested. <strong>To receive dial-in information, please RSVP by email to <a href="mailto:openflow@supernova2008.com">openflow@supernova2008.com</a></strong>.</p>
+
+<p>Topics we plan to address on the call will include: <em>What are the key issues around interconnecting social networks, identity systems, and online applications? Is openness always a good thing? How do open networks change business models, as well as processes within companies? What new opportunities emerge in an Open Flow environment?</em></p>]]></description>
+<dc:subject></dc:subject>
+<dc:creator>Kevin Werbach</dc:creator>
+<dc:date>2008-05-29T09:15:52-05:00</dc:date>
+</item>
+<item rdf:about="http://werbach.com/blog/archives/2008/04/holding_the_int.html">
+<title>Holding the Internet Together</title>
+<link>http://werbach.com/blog/archives/2008/04/holding_the_int.html</link>
+<description><![CDATA[<p>I've posted the draft of my latest paper, <a href="http://ssrn.com/abstract=1118435">The Centripetal Network</a>, to SSRN.  In it, I argue that much of the success of the Internet derives from its composite, federated structure.  Yet in several ways, the Internet today is in danger of breaking up.  The balkanization of the Net is a threat we should take seriously. Drawing on the scientific literature of network formation theory, I show how growing networks like the Internet are inherently unstable, and may disintegrate into poorly connected enclaves more quickly than we might imagine.</p>]]></description>
+<dc:subject></dc:subject>
+<dc:creator>Kevin Werbach</dc:creator>
+<dc:date>2008-04-16T21:03:37-05:00</dc:date>
+</item>
+<item rdf:about="http://werbach.com/blog/archives/2008/04/tech_policy_eve.html">
+<title>Tech Policy event this Saturday at Wharton</title>
+<link>http://werbach.com/blog/archives/2008/04/tech_policy_eve.html</link>
+<description><![CDATA[<p>The upcoming Presidential election will have a major impact on tech issues. I'm excited to be leading a discussion this Saturday on key topics in technology, media, and telecommunications with high-level policy advisors and supporters of the Obama campaign.  If you're in Philly, please join us.</p>
+
+<p><b>Tech Policy for the Next Administration</b><br />
+Saturday, April 12th<br />
+5:00-6:30pm<br />
+Room G65 Huntsman Hall<br />
+3730 Walnut Street, Philadelphia, PA</p>
+
+<p>Speakers:</p>
+
+<p>- Professor Kevin Werbach (Wharton)<br />
+- Reed Hundt (former Chairman, FCC)<br />
+- Gigi Sohn (founder, Public Knowledge)<br />
+- Mark Alexander (Policy Director, Obama for America)</p>
+
+<p>The roundtable will address important topics such as Network Neutrality, Broadband Policy, Media Ownership, Intellectual Property, and Privacy, with extensive audience Q&A. </p>
+
+<p>Non-Penn attendees must send their name to me at <a href="mailto:kevin@werbach.com">kevin@werbach.com</a> by Thursday 4/10 to ensure access to the building through security.</p>]]></description>
+<dc:subject></dc:subject>
+<dc:creator>Kevin Werbach</dc:creator>
+<dc:date>2008-04-07T20:10:55-05:00</dc:date>
+</item>
+<item rdf:about="http://werbach.com/blog/archives/2008/04/will_technology.html">
+<title>Will technology solve network neutrality?</title>
+<link>http://werbach.com/blog/archives/2008/04/will_technology.html</link>
+<description><![CDATA[<p>When I first read this <a href="http://www.telco2.net/blog/2008/04/post_13.html">post</a> about Predictable Network Solutions on the excellent Telco 2.0 blog, I thought it was an April Fool's Day hoax.  Then I remembered that it's a UK site, and some some Googling confirmed that it's a real company.  So my question is, will this technology -- or something like it -- eventually make network neutrality a non-issue?  Or will it be the means for network operators to implement the discrimination that everyone is worried about?</p>
+
+<p>Basically, Predictable Network Solutions makes technology that dynamically re-allocates network latency and throughput on a per-user basis.  It works using statistical traffic models, not application-specific deep packet inspection.  In theory, that means network operators will no longer have a network management reason to fear P2P traffic, because it won't strain the peak capacity of the network.  And also in theory, users and application providers will be free to use the network however they please, with better performance on bandwidth-intensive services like video than they experience today.</p>
+
+<p>So is broadband nirvana around the corner?  I'm not sure.  It's too early to tell.  </p>
+
+<p>Let's assume the technology works as advertised, and this tiny British startup (or someone else taking a similar approach) succeeds in getting it deployed widely on major broadband networks.  Network operators will still have choices in how they manage traffic and pricing.  They will still have incentives to bundle their access service with content and applications, or to offer exclusive deals to preferred providers.  If you think such arrangements are dangerous, better broadband congestion management won't prevent them.  It would, however, make clear tthat the deals are about revenue opportunities, not traffic engineering.  A network operator that wants to exercise tight control over applications and content will see Predictable Network Solutions' solutions as tools to help achieve that end.  </p>
+
+<p>The big lesson here is that technology doesn't stand still.  Network neutrality became a concern partly because application-specific traffic management became feasible.  As network management technology develops, it's likely to reshape the debate yet again.</p>]]></description>
+<dc:subject></dc:subject>
+<dc:creator>Kevin Werbach</dc:creator>
+<dc:date>2008-04-01T08:25:16-05:00</dc:date>
+</item>
+<item rdf:about="http://werbach.com/blog/archives/2008/03/challenges_for.html">
+<title>Challenges for the Network Age</title>
+<link>http://werbach.com/blog/archives/2008/03/challenges_for.html</link>
+<description><![CDATA[<p>As usual in the months leading up to the conference, I'll be doing most of my posting at the Supernova blogs, especially our <a href="http://www.conversationhub.com">Conversation Hub</a> group blog. </p>
+
+<p>I'd love to get your feedback on my <a href="http://conversationhub.com/2008/03/21/ten-challenges-for-the-network-age/">Ten Challenges for the Network Age</a>. </p>]]></description>
+<dc:subject></dc:subject>
+<dc:creator>Kevin Werbach</dc:creator>
+<dc:date>2008-03-20T21:51:23-05:00</dc:date>
+</item>
+<item rdf:about="http://werbach.com/blog/archives/2008/03/why_telcos_dont.html">
+<title>Why Telcos Don&apos;t Get Networks</title>
+<link>http://werbach.com/blog/archives/2008/03/why_telcos_dont.html</link>
+<description><![CDATA[<p>I've posted to SSRN my <a href="http://tinyurl.com/39dz57">paper</a> on why most telecom companies, even though they operate networks, don't appreciate the fundamental business dynamics of network structures.  This will be a chapter in a book Wharton is publishing on network-based strategies and competencies.</p>
+
+<p>In the paper, I describe two views on telecom and Internet infrastructure: the Monist and Dualist perspectives.  The Monists, including most network operators, see the infrastructure as the linchpin of the communications ecosystem, which must be managed and supported above all else.  The Dualists, including most Internet-based service providers, see the infrastructure as simply a means to reach the applications, content, and communications on top of the network, which are the source of real value.  </p>
+
+<p>The Dualist view is ultimately the superior one.  However, it has problems as well, namely that it tends to ignore the real problems of funding the essential network infrastructure.  The paper goes into all this in more detail, and offers thoughts on what a reformulated "modular" telecom industry could look like.</p>]]></description>
+<dc:subject></dc:subject>
+<dc:creator>Kevin Werbach</dc:creator>
+<dc:date>2008-03-05T11:45:28-05:00</dc:date>
+</item>
+<item rdf:about="http://werbach.com/blog/archives/2008/02/supernova_mixer.html">
+<title>Supernova Mixer in SF on March 6</title>
+<link>http://werbach.com/blog/archives/2008/02/supernova_mixer.html</link>
+<description><![CDATA[<p>We're hosting a pre-Supernova mixer in San Francisco on Thursday, March 6.  </p>
+
+<p>There's currently a waiting list for the discussion portion of the evening (hosted by Jerry Michalski and Jeremiah Owyang), but we've still got room for the reception, starting at 6:30pm.   It will be held at Wharton West, 101 Howard Street, 5th Floor.</p>
+
+<p>If you're interested in attending, please use the <A href="http://www.supernovasfmixer.eventbrite.com/">registration</a> page, and check out the <a href="http://www.facebook.com/event.php?eid=23977931208">Facebook group</a> as well.</p>]]></description>
+<dc:subject></dc:subject>
+<dc:creator>Kevin Werbach</dc:creator>
+<dc:date>2008-02-29T10:20:27-05:00</dc:date>
+</item>
+<item rdf:about="http://werbach.com/blog/archives/2008/02/vote_and_vote_o.html">
+<title>Vote... and vote Obama</title>
+<link>http://werbach.com/blog/archives/2008/02/vote_and_vote_o.html</link>
+<description><![CDATA[<p>Tomorrow, a significant chunk of the US goes to the polls in Presidential primaries.  Every election matters.  With all the problems and threats facing our nation and our world, this one, perhaps, matters more than most.  And there's an opportunity that I don't think I've seen before in my lifetime, for a transformative shift in the right direction.</p>
+
+<p>For those of you in those states, be sure to make your voice heard.  And if you're a Democrat, I strongly urge you to vote for Barack Obama.  </p>
+
+<p>Obama is an extraordinary leader.  He's smart, he has good judgment, and he's tough.  But more than that, he's an inspiration.  Wouldn't it be nice, for a change, to have a President who symbolizes everything we want this country to be?  And who can motivate great people to work to put his policies into effect?</p>
+
+<p>I've had the great pleasure of being part of Obama's advisory committee on technology issues.  Almost every tech policy expert I most respect is part of the group.  Which should tell you something -- especially since many of them, including myself, worked in the Clinton Administration. Obama's <a href="http://www.barackobama.com/issues/technology/">technology plan</a>, the most detailed and sophisticated of any candidate's, is a reflection of that tremendous expertise.  And it's a reflection of a candidate who gets it.</p>
+
+<p>Beyond the specifics, though, it should be clear to everyone that Obama is the candidate of change in this election.  Those of us who grew up with computers, and take the Internet for granted, understand in our bones that this is a new world.  You don't embrace a new world by re-fighting the battles of the past.  I think Hillary Clinton would be an excellent President, and there is much I respect in John McCain.  But neither would energize the country or the world in the way Obama could.  You can be cynical about politics, or you can appreciate, even with your eyes wide open, that sometimes leaders can still do extraordinary things.  It's not about the length of the resume, but about talent, vision, and timing.  </p>
+
+<p>Steve Jobs once recruited Pepsi CEO John Sculley to run Apple by asking him, "Do you want to spend your life selling sugar water... or do you want to change the world?"  </p>
+
+<p>I want to change the world.  I'm confident that Barack Obama does too.  And you know what?  He just might.</p>
+
+<p>This is our chance.</p>]]></description>
+<dc:subject></dc:subject>
+<dc:creator>Kevin Werbach</dc:creator>
+<dc:date>2008-02-04T11:07:05-05:00</dc:date>
+</item>
+
+
+</rdf:RDF>

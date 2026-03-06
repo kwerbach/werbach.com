@@ -1,0 +1,120 @@
+<?php die(); ?><?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Telecom and Broadband &#8211; Werblog</title>
+	<atom:link href="http://werblog.com/category/policy/telecom/feed/" rel="self" type="application/rss+xml" />
+	<link>http://werblog.com</link>
+	<description>The World According to Kevin Werbach</description>
+	<lastBuildDate>Fri, 19 Aug 2016 21:51:08 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.4.4</generator>
+	<item>
+		<title>Listening to Yogi on Interconnection and Net Neutrality</title>
+		<link>http://werblog.com/2014/05/yogi/</link>
+		<comments>http://werblog.com/2014/05/yogi/#comments</comments>
+		<pubDate>Tue, 27 May 2014 20:47:25 +0000</pubDate>
+		<dc:creator><![CDATA[kwerb]]></dc:creator>
+				<category><![CDATA[Telecom and Broadband]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://werblog.com/?p=6570</guid>
+		<description><![CDATA[I’m returning from a packed event, hosted by the Progressive Policy Institute, on the FCC’s role in Internet interconnection.  It was a good discussion.  And I&#8217;m glad to see these issues getting the attention they deserve.  I was the only panelist calling for an ongoing FCC role as a backstop for interconnection agreements, which I’ve advocated ...<a class="post-readmore" href="http://werblog.com/2014/05/yogi/">read more</a>]]></description>
+				<content:encoded><![CDATA[<p>I’m returning from a packed <a href="http://www.progressivepolicy.org/event/should-the-fcc-serve-as-internet-traffic-cop/">event</a>, hosted by the Progressive Policy Institute, on the FCC’s role in Internet interconnection.  It was a good discussion.  And I&#8217;m glad to see these issues getting the attention they deserve.  I was the only panelist calling for an ongoing FCC role as a backstop for interconnection agreements, which I’ve advocated in my <a href="http://papers.ssrn.com/sol3/papers.cfm?abstract_id=964991">Only Connect</a> (2007) and <a href="http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2241658">No Dialtone</a> (2014) papers.  The others were more concerned about the dangers of regulation than the threats from anticompetitive behavior.</p>
+<p>It was an interesting reversal from the conversations I’ve been involved in the past month about network neutrality.  I seem to be one of the few experts who likes FCC Chairman Wheeler&#8217;s proposed approach of using authority under Section 706 of the Communications Act to protect the open Internet.  Most of those who, like me, believe that’s an important goal see the only solution as reclassifying broadband access as a regulated &#8220;telecommunications service.&#8221; The FCC is, appropriately, asking questions about both approaches.</p>
+<p>One reason I think the 706 route is simpler and more direct is that it’s the only approach to FCC jurisdiction in this area that has actually been validated in court.  It may well be that reclassification could make it through the legal gauntlet, not to mention the political gauntlet, but there’s a fair distance from there to there.</p>
+<p>Just before Memorial Day weekend, there was another decision that strengthened the FCC’s hand under Section 706.  In a case involving the FCC’s reform of universal service funding, rural telephone companies and others argued that the FCC had no authority to mandate the availability of broadband.  By retaining its classification of broadband access as an “information service,” they argued, the FCC gave up its ability to utilize the public policy tools that traditionally applied to regulated telecommunications carriers.  Sound familiar?</p>
+<p>The court independently reached the same conclusion as the District of Columbia Circuit, which decided the <em>Verizon v. FCC</em> case about network neutrality.  Section 706(b), the 10th Circuit found, gives the FCC independent authority to take appropriate steps that it deems necessary to promote broadband deployment.  Calling something an information service doesn’t establish a regulation-free zone. It just puts limits on the FCC’s actions to meet the terms of Section 706, and to allow companies some room for individualized negotiation.  Which strikes me as not inherently a bad thing.</p>
+<p>For both Internet interconnection and network neutrality, the challenge is to implement an approach somewhere between the intrusive price regulation traditionally applied to common carriers, on the one hand, and blindness to the dangers of gatekeepers in network industries on the other. I continue to believe that, while there are other routes the FCC could have taken over the past decade, and Congress should by now have fixed a communications law that everyone agrees is broken, our best bet is to accept reality as we find it.  The Section 706 approach isn’t pretty, but it seems to work in court. For anyone familiar with the FCC&#8217;s less-than-sterling judicial record in recent decades, that shouldn&#8217;t be taken lightly.</p>
+<p>As Yogi Berra once said, “If you come to a fork in the road, take it.”</p>
+]]></content:encoded>
+			<wfw:commentRss>http://werblog.com/2014/05/yogi/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>Wireless: Walled Gardens to Walled Markets?</title>
+		<link>http://werblog.com/2008/08/wireless-walled-gardens-to-walled-markets/</link>
+		<pubDate>Mon, 11 Aug 2008 13:12:21 +0000</pubDate>
+		<dc:creator><![CDATA[kwerb]]></dc:creator>
+				<category><![CDATA[Telecom and Broadband]]></category>
+
+		<guid isPermaLink="false">http://werblog.com/2008/08/wireless-walled-gardens-to-walled-markets/</guid>
+		<description><![CDATA[T-Mobile, the #4 US wireless carrier, is moving to an App Store model for all its phones.Â  In other words, users will be able to choose their own applications, as they now do on Apple&#8217;s iPhone.Â  Along with Google Android/Open Handset Alliance, Verizon&#8217;s open development initiative, and the success of Apple&#8217;s App Store, this is ...<a class="post-readmore" href="http://werblog.com/2008/08/wireless-walled-gardens-to-walled-markets/">read more</a>]]></description>
+				<content:encoded><![CDATA[<p>T-Mobile, the #4 US wireless carrier, is <a href="http://www.moconews.net/entry/419-t-mobile-usa-to-revamp-content-strategy-in-the-fall-to-mirror-apples-ap/">moving to an App Store model</a> for all its phones.Â  In other words, users will be able to choose their own applications, as they now do on Apple&#8217;s iPhone.Â  Along with Google Android/Open Handset Alliance, Verizon&#8217;s <a href="http://www.macworld.com/article/61217/2007/11/verizon.html">open development initiative</a>, and the<a href="http://online.wsj.com/article/SB121842341491928977.html"> success of Apple&#8217;s App Store</a>, this is good news for wireless subscribers in the US.Â  For too long we&#8217;ve been stuck with a poor set of apps and features pre-selected by the carriers.</p>
+<p>However, a series of walled application stores is not the same as an Internet-like open platform.Â  Developers still need to go through the bottleneck of Apple&#8217;s and T-Mobile&#8217;s (and soon, most likely, AT&amp;T&#8217;s and Sprint&#8217;s and Verizon&#8217;s) certification process, pricing policies, and so forth.Â  Not to mention that we&#8217;re just talking about the US here.Â  The US is a big mobile market, but less than a tenth of the the global handset total.</p>
+<p>I&#8217;m pleasantly surprised how quickly the major US operators are backing off their policies of tightly controlling handsets and applications.Â  The question is whether the shift will stop at walled markets, or move toward a truly open environment.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>All in the Family</title>
+		<link>http://werblog.com/2005/04/all-in-the-family/</link>
+		<pubDate>Tue, 19 Apr 2005 14:48:45 +0000</pubDate>
+		<dc:creator><![CDATA[kwerb]]></dc:creator>
+				<category><![CDATA[Telecom and Broadband]]></category>
+
+		<guid isPermaLink="false">http://werbach.com/wordpress/?p=1225</guid>
+		<description><![CDATA[My brother Adam, who sits on the San Francisco Public Utility Commission and has an amazing record as a progressive activist, has an op-ed in the San Francisco Chronicle promoting municipal wireless broadband. It&#8217;s great when our professional paths cross like this. It&#8217;s even better when Adam does such an effective job of making the ...<a class="post-readmore" href="http://werblog.com/2005/04/all-in-the-family/">read more</a>]]></description>
+				<content:encoded><![CDATA[<p>My brother Adam, who sits on the San Francisco Public Utility Commission and has an amazing record as a progressive activist, has an <a href="http://sfgate.com/cgi-bin/article.cgi?file=/c/a/2005/04/15/EDGM7C7UJ11.DTL">op-ed</a> in the San Francisco Chronicle promoting municipal wireless broadband.  It&#8217;s great when our professional paths cross like this.  It&#8217;s even better when Adam does such an effective job of making the case for municipal networks.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Philly WiFi: The Gloves Come Off</title>
+		<link>http://werblog.com/2005/02/philly-wifi-the-gloves-come-off/</link>
+		<pubDate>Thu, 17 Feb 2005 17:17:21 +0000</pubDate>
+		<dc:creator><![CDATA[kwerb]]></dc:creator>
+				<category><![CDATA[Telecom and Broadband]]></category>
+
+		<guid isPermaLink="false">http://werbach.com/wordpress/?p=1195</guid>
+		<description><![CDATA[It has been interesting to watch the debate progress over the city of Philadelphia&#8217;s plan to create a city-wide outdoor public WiFi network. The project generated a lot of attention when first announced. At that time, Verizon and Comcast didn&#8217;t have much to say about it. Then word leaked out that a bill in the ...<a class="post-readmore" href="http://werblog.com/2005/02/philly-wifi-the-gloves-come-off/">read more</a>]]></description>
+				<content:encoded><![CDATA[<p>It has been interesting to watch the debate progress over the city of Philadelphia&#8217;s plan to create a city-wide outdoor public WiFi network.   The project generated a lot of attention when first announced.  At that time, Verizon and Comcast didn&#8217;t have much to say about it.  Then word leaked out that a bill in the Pennsylvania legislature would prohibit Philadelphia and other cities from engaging in such projects.  (After a firestorm of protest, Philadelphia got an exception.)</p>
+<p>Now that the city has moved along with its plans, the incumbent phone and cable companies are <a href="http://www.nytimes.com/2005/02/17/technology/17wired.html?ei=5094&#038;en=f1e64f65642d068d&#038;hp=&#038;ex=1108702800&#038;adxnnl=1&#038;partner=homepage&#038;adxnnlx=1108645697-eb49opBXxDnJTNWcs3zbfw&#038;pagewanted=print&#038;position=">hardening their opposition</a>.  They are talking as though the governing is nationalizing broadband access.  Nothing could be further from the truth.  The city of Philadelphia is doing what cities do &#8212; look for ways to provide valuable services to its citizens, when the market doesn&#8217;t meet the entire need.  It isn&#8217;t killing off private competitors.  City-run public housing competes with private real estate, and city buses compete with private cabs, but no one seems to have a problem with that.</p>
+<p>What gets lost in this debate is that the city and its citizens will benefit in many other ways from a ubiquitous public WiFi network.  The city spends millions of dollars on wireless networks for police, fire department, and other city departments.  This will decrease costs and greatly increase capabilities for those service.  For example, think of how city building inspectors could use the network to access plans and send filings back in real-time.  And that&#8217;s just the start.</p>
+<p>Let&#8217;s not allow reflexive opposition to &#8220;bureaucracies&#8221; to kill a worthwhile program.  Sometimes governments do good things too.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Skype Stats</title>
+		<link>http://werblog.com/2004/11/skype-stats/</link>
+		<pubDate>Tue, 09 Nov 2004 18:06:04 +0000</pubDate>
+		<dc:creator><![CDATA[kwerb]]></dc:creator>
+				<category><![CDATA[Telecom and Broadband]]></category>
+
+		<guid isPermaLink="false">http://werbach.com/wordpress/?p=1146</guid>
+		<description><![CDATA[An update on Skype&#8217;s P2P voice over IP service, courtesy of Jeff Clavier: * 13M+ users registered * 1M+ simultaneous users reached for the first time a couple of weeks ago * 2,384,686,217 minutes served, as I type this &#8211; i.e almost 2.4 billion minutes. Just to put things in perspective: Vonage has 170,000 customers ...<a class="post-readmore" href="http://werblog.com/2004/11/skype-stats/">read more</a>]]></description>
+				<content:encoded><![CDATA[<p>An update on Skype&#8217;s P2P voice over IP service, courtesy of </a>Jeff Clavier</a>:</p>
+<blockquote><p>
+* 13M+ users registered<br />
+* 1M+ simultaneous users reached for the first time a couple of weeks ago<br />
+* 2,384,686,217 minutes served, as I type this &#8211; i.e almost 2.4 billion minutes. Just to put things in perspective: Vonage has 170,000 customers and passed the billion minutes mark sometime in 2004<br />
+* 295,000 users have signed for SkypeOut (Skype has a goal of 5% conversion from the free service to SkypeOut)
+</p></blockquote>
+<p>If you haven&#8217;t tried Skype, you should.  The sound quality is surprisingly good, even though it uses peer-to-peer connections over the public Internet.  They just announced availability of the Skype API, which will let developers build new applications and functionality on top of the platform.</p>
+<p>I was originally dismissive of Skype, because it was free, private, and software-only.  But I now thing it&#8217;s a bigger deal than people realize.  It&#8217;s an example of how VOIP is changing the game in telecom, not just allowing in new competitors.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>The Next Billion Users</title>
+		<link>http://werblog.com/2004/11/the-next-billion-users/</link>
+		<pubDate>Thu, 04 Nov 2004 15:28:09 +0000</pubDate>
+		<dc:creator><![CDATA[kwerb]]></dc:creator>
+				<category><![CDATA[Telecom and Broadband]]></category>
+
+		<guid isPermaLink="false">http://werbach.com/wordpress/?p=1141</guid>
+		<description><![CDATA[Two billion mobile phone users worldwide by 2006, with numbers continuing to grow, according to Nokia. Not surprising, but still mind-boggling when you stop to consider it. Two billion human beings walking around every waking moment with a networked communications device.]]></description>
+				<content:encoded><![CDATA[<p>Two billion mobile phone users worldwide by 2006, with numbers continuing to grow, <a href="http://www.alwayson-network.com/comments.php?id=P6827_0_6_0_C">according to Nokia</a>.</p>
+<p>Not surprising, but still mind-boggling when you stop to consider it.  Two billion human beings walking around every waking moment with a networked communications device.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>
+
+<!-- Dynamic page generated in 0.578 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2016-08-24 07:34:23 -->

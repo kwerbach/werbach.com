@@ -1,0 +1,424 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	   T H E   B A R E   B O N E S   G U I D E   T O   H T M L
+
+			      by Kevin Werbach
+			    <http://werbach.com/>
+
+		       ÉoÅ[ÉWÉáÉì 4.0 -- 1999 îN 1 åé
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+Ç±ÇÃïèëÇÕ <http://werbach.com/barebones/> Ç©ÇÁì¸éËâ¬î\Ç‰ÅAÇªÇ±ÇŠÇÕ HTML 
+ÉtÉHÅ[É}ÉbÉgî‰ÅAñ|ñÛî‰ÅAîwåiópÇÃëfçÞÇýÇÝÇÈÅB
+
+The Bare Bones Guide to HTML ÇÕåªçsÇÃÉuÉâÉEÉUÇîFéØÇ‰Ç´ÇªÇ§Ç»É^ÉOÇ•Ç…Ç×ÇŸàÍóó
+ÇŠÇµÇŸÇÝÇÈÅBå–éÆÇÃ HTML 4.0 ä©çêÇÃÉGÉåÉÅÉìÉgÇÕÇýÇøÇÎÇÒÅANetscape ägí£Ç 
+Microsoft ägí£ÇýÇ…Ç×ÇŸàÍî ìIÇ»ëÆê´Ç¬Ç´Ç‰äÐÇþÇ‡ÅBÇ±ÇÃïèëÇÕëÅå©ï\Ç‰ÇÝÇËÅAäÆëS
+Ç»édólèëÇ‰ÇÕÇ»Ç¢ÅBHTML ÇÇªÇÃäJî‚ÇŠä÷Ç…ÇÈå–éÆèÓïÒÇÕÅAWorld Wide Web
+Consortium ÉTÉCÉg <http://www.w3.org/MarkUp/> Ç•éQèÇÃÇ±ÇÅB
+
+Ç±ÇÃÉKÉCÉhÇÕÇ‰Ç´ÇÈå¿ÇËä»åâÇ»ÇÊÇ§ÇŠÉfÉUÉCÉìÇ„ÇÍÇŸÇ¢ÇÈÅBÇµÇ‡ÇÇ¡ÇŸäeéÌÇÃÉ^ÉOÇÃ
+égópñ@ÇŠä÷ÇµÇŸÇÕèŽÇµÇ‚êýñæÇµÇŸÇ¢Ç»Ç¢ÅBèáÇ•í«Ç¡ÇŸêýñæÇµÇ‡óDÇÍÇ‡ HTMLÉKÉCÉhÇ÷ÇÃ
+ÉäÉìÉNÇÕÅA<http://werbach.com/web/wwwhelp.html> Ç•éQèÇÃÇ±ÇÅB
+
+
+
+Ç±ÇÃïèëÇÃÉtÉHÅ[É}ÉbÉg
+----------------------------------------------------------------------------
+Ç±ÇÃïèëÇÕìôïùÉtÉHÉìÉgÇ‰ï\é¶Ç„Ç¼ÇÈÇÃÇÉxÉXÉgÇ‰ÇÝÇÈÅB
+
+ñæóŸÇŠÇ…ÇÈÇ‡ÇþÇŠÅAìØÇÉ^ÉOÇŠìKópÇ‰Ç´ÇÈàÇ»ÇÈëÆê´Ç•ï ÇÃçsÇŠïäÑÇµÇ‡ÅBàÍî ìI
+ÇŠÅAï°êîÇÃëÆê´ÇÕìØÇÉ^ÉOìýÇŠåãçáâ¬î\ÇæÅB
+
+É^ÉOÇÕñŽÇ‰îFéØÇµÇ’Ç…Ç¢ÇÊÇ§ÇŠëÂïéöÇ‰ÉäÉXÉgÇµÇ‡ÅBÇµÇ©ÇµÅAÇÇÇÒÇ«ÇÃÉ^ÉOÇÕëÂï
+éöÅ^è¨ïéöÇ‰ãÊï Ç„ÇÍÇ»Ç¢ÅB
+
+
+égópÇµÇ‡ãLçÜ
+----------------------------------------------------------------------------
+URL    äOïîÉtÉ@ÉCÉãÇÃ URL ÅiÇÐÇ‡ÇÕìØÉfÉBÉåÉNÉgÉäìýÇ»ÇÁÉtÉ@ÉCÉãñºÇæÇØÅj
+?      îCà²ÇÃêîéöÅió·Ç¶Ç‘ <H?> ÇÕ <H1>ÅA <H2>ÅA <H3>ÅA Ç»Ç«Åj
+%      îCà²ÇÃÉpÅ[ÉZÉìÉeÅ[ÉWÅió· <HR WIDTH="%"> ÇÕ <HR WIDTH="50%"> ìôÇÃà²ñ°Åj
+***    îCà²ÇÃÉeÉLÉXÉgÅió· ALT="***" ÇÕÉeÉLÉXÉgÇ•ÇÕÇþçûÇÞÇÇ¢Ç§à²ñ°Åj
+$$$$$$ îCà²ÇÃ 16 êiêîÅió· BGCOLOR="#$$$$$$" ÇÕ BGCOLOR="#00FF1C" ìôÇÃà²ñ°Åj
+:::    îCà²ÇÃì™ïtÅió· DATETIME=":::" ÇÕ "1994-11-05T08:15:30" ìôÇÃà²ñ°Åj
+@      ÉÅÅ[ÉãÉAÉhÉåÉXÅió· "mailto:@" ÇÕ "mailto:kevin@werbach.com" ìôÇÃà²ñ°Åj
+,,,    ÉRÉìÉ}ãÊêÿÇËÅió· COORDS=",,," ÇÕ COORDS="0,0,50,50"ÅAìôÇÃà²ñ°Åj
+|      ëIë•éàÅió· ALIGN=LEFT|RIGHT|CENTER ÇÕëIë•éàÇÃàÍÇ¬Ç•ëIÇŒÇÇ¢Ç§à²ñ°Åj
+
+
+ÉRÉìÉpÉ`ÉrÉäÉeÉBÅiíçÅFHTML ÇÕêiâªÇµÅAÉuÉâÉEÉUÇÃé¿åªÇÃédïšÇÕë‡ólÇ»ÇÃÇæÅj
+----------------------------------------------------------------------------
+     ÅiíçãLÇ»ÇµÅj HTML 3.2 édólÅAÇ…Ç»ÇÌÇøëSÉuÉâÉEÉUÇ‰ã@î\Ç…ÇÈÇÕÇ½
+4.0  HTML 4.0 êÑèßédólÇ‰ì±ì¸
+N1   Netscape ägí£ - Navigator ÉoÅ[ÉWÉáÉì 1.0 ÇÐÇ‡ÇÕ 1.1 Ç‰ì±ì¸
+N2   Netscape ägí£ - Navigator ÉoÅ[ÉWÉáÉì 2.0 Ç‰ì±ì¸
+N3   Netscape ägí£ - Navigator ÉoÅ[ÉWÉáÉì 3.0 Ç‰ì±ì¸
+N4   Netscape ägí£ - Navigator/Communicator ÉoÅ[ÉWÉáÉì 4.0 Ç‰ì±ì¸
+MS   Microsoft Internet Explorer ägí£
+*    åªçðÇÕ HTML 4.0 êÑèßédólÇŠäÐÇÐÇÍÇ‡ Netscape ägí£
+
+===========================================================================
+===========================================================================
+
+
+
+àÍî ÅiÇ…Ç×ÇŸÇÃ HTML ÉhÉLÉÖÉÅÉìÉgÇŠÇÝÇÈÇ×Ç´ÇýÇÃÅj
+----------------------------------------------------------------------------
+       ÉhÉLÉÖÉÅÉìÉgå`éÆ <HTML></HTML>      ÅiÉtÉ@ÉCÉãÇÃäJénÇèIó¼Åj
+       É^ÉCÉgÉã         <TITLE></TITLE>    ÅiÉwÉbÉ_ïîÇŠíuÇ‚Åj
+       ÉwÉbÉ_ïî         <HEAD></HEAD>      ÅiÉ^ÉCÉgÉãÇÃÇÊÇ§Ç»êýñæìIèÓïÒÅj
+       ñ{ï             <BODY></BODY>      ÅiÉyÅ[ÉWÇÃñ{ïÅj
+
+
+ç\ë¢å^íËã`ÅiÉuÉâÉEÉUÇÃèâä™êðíËÇ‰êßå”Ç„ÇÍÇÈäOä¦Åj
+----------------------------------------------------------------------------
+       å©èoÇµ           <H?></H?>          ÅiêðíËÇÕÇUíiäKÇ‰íËã`Ç„ÇÍÇÈÅj
+         å©èoÇµçsëµÇ¶    <H? ALIGN=LEFT|CENTER|RIGHT></H?>
+       édêÿÇË           <DIV></DIV>
+         édêÿÇËçsëµÇ¶   <DIV ALIGN=LEFT|RIGHT|CENTER|JUSTIFY></DIV>
+4.0    ÉRÉìÉeÉìÉcíËã`   <SPAN></SPAN>
+       ÉuÉçÉbÉNà¯óp     <BLOCKQUOTE></BLOCKQUOTE>  Åií èÌÇÕéöâ†ÇƒÅj
+4.0    à¯óp             <Q></Q>            ÅiíZÇ¢à¯ópópÅj
+4.0      à¯ópå„íËã`       <Q CITE="URL"></Q>
+       ã‚í¾             <EM></EM>          Åií èÌé‘ëÃéöÇ‰ï\é¶Åj
+       ã‚Ç¢ã‚í¾         <STRONG></STRONG>  Åií èÌëæéöÇ‰ï\é¶Åj
+       à¯ópï           <CITE></CITE>      Åií èÌé‘ëÃéöÅj
+       ÉRÅ[Éh           <CODE></CODE>      ÅiÉ\Å[ÉXÉRÅ[ÉhÇ•ÉäÉXÉgÇ…ÇÈèÍçáÅj
+       ÉTÉìÉvÉãèoóÕ     <SAMP></SAMP>
+       ÉLÅ[É{Å[Éhì¸óÕ   <KBD></KBD>
+       ï¦êî             <VAR></VAR>
+       íËã`             <DFN></DFN>        ÅiçLÇ‚ÇÕë‘âûÇ„ÇÍÇŸÇ¢Ç»Ç¢Åj
+       çÏé³ÇÃÉAÉhÉåÉX   <ADDRESS></ADDRESS>
+       ëÂÉtÉHÉìÉgÉTÉCÉY <BIG></BIG>
+       è¨ÉtÉHÉìÉgÉTÉCÉY <SMALL></SMALL>
+4.0    ë}ì¸             <INS></INS>        ÅiêVÉoÅ[ÉWÉáÉìÇÃí«â¡ïîïÇ•É}Å[ÉNÅj
+4.0      çXêVì™ït         <INS DATETIME=":::"></INS>
+4.0      ÉRÉÅÉìÉg         <INS CITE="URL"></INS>
+4.0    çÌèú             <DEL></DEL>        ÅiêVÉoÅ[ÉWÉáÉìÇÃçÌèúïîïÇ•É}Å[ÉNÅj
+4.0      çXêVì™ït         <DEL DATETIME=":::"></DEL>
+4.0      ÉRÉÅÉìÉg         <DEL CITE="URL"></DEL>
+4.0    ìéöåÍ           <ACRONYM></ACRONYM>
+4.0    è»óåÍ           <ABBR></ABBR>
+
+
+ï\åªÉtÉHÅ[É}ÉbÉgÅiçÏé³ÇÉeÉLÉXÉgÇÃäOä¦Ç•éwíËÅj
+----------------------------------------------------------------------------
+       ëæéö             <B></B>
+       é‘ëÃéö           <I></I>
+4.0*   â†ê¸             <U></U>            ÅiÇÝÇÐÇËégÇÌÇÍÇ»Ç¢Åj
+       çÌèúê¸           <STRIKE></STRIKE>  ÅiÇÝÇÐÇËégÇÌÇÍÇ»Ç¢Åj
+4.0*     çÌèúê¸           <S></S>          ÅiÇÝÇÐÇËégÇÌÇÍÇ»Ç¢Åj
+       â†Ç¬Ç´ïéö       <SUB></SUB>
+       è“Ç¬Ç´ïéö       <SUP></SUP>
+       É^ÉCÉvÉâÉCÉ^Å[   <TT></TT>          ÅiìôïùÉtÉHÉìÉgÇ‰ï\é¶Åj
+       ÉtÉHÅ[É}ÉbÉgïtÇ´ <PRE></PRE>        ÅiÉeÉLÉXÉgÇ•ÇªÇÃÇÐÇÐÇÃå`Ç‰ï\é¶Åj
+         ïù             <PRE WIDTH=?></PRE>   ÅiïéöêîÇ‰Åj
+       íÜëµÇ¶           <CENTER></CENTER>  ÅiÉeÉLÉXÉgÇâÊëúÇÃóºïšÅj
+N1     ì_ñ‰             <BLINK></BLINK>    Åiç‰ÇýêlÇ•Ç±Ç‘Ç©ÇŠÇµÇ‡É^ÉOÅj
+       ïéöÉTÉCÉY       <FONT SIZE=?></FONT>  Åi1 Ç©ÇÁ 7 ÇÐÇ‰Åj
+         ïéöÉTÉCÉYï¦çX   <FONT SIZE=+|-?></FONT>
+         ïéöêF           <FONT COLOR="#$$$$$$"></FONT>
+4.0*     ÉtÉHÉìÉgëIë•     <FONT FACE="***"></FONT>
+N4       É|ÉCÉìÉgÉTÉCÉY   <FONT POINT-SIZE=?></FONT>
+N4       ÉEÉGÉCÉg         <FONT WEIGHT=?></FONT>
+4.0*   äÓñ{ïéöÉTÉCÉY   <BASEFONT SIZE=?>  Åi1 Ç©ÇÁ 7 ÇÐÇ‰ÅAèâä™íl 3Åj
+MS     É}Å[ÉLÅ[         <MARQUEE></MARQUEE>
+
+
+à íuåàÇþ
+----------------------------------------------------------------------------
+N3     íiëgÇð           <MULTICOL COLS=?></MULTICOL>
+N3       íiäŒäu           <MULTICOL GUTTER=?></MULTICOL>
+N3       íiïù             <MULTICOL WIDTH=?></MULTICOL>
+N3     ÉXÉyÅ[ÉTÅ[       <SPACER>
+N3       ÉXÉyÅ[ÉTÅ[å^     <SPACER TYPE=HORIZONTAL|VERTICAL|BLOCK>
+N3       ÉTÉCÉY           <SPACER SIZE=?>
+N3       ê°ñ@             <SPACER WIDTH=? HEIGHT=?>
+N3       çsëµÇ¶           <SPACER ALIGN=LEFT|RIGHT|CENTER>
+N4     ÉåÉCÉÑÅ[         <LAYER></LAYER>
+N4       ñºëO             <LAYER ID="***"></LAYER>
+N4       à íu             <LAYER LEFT=? TOP=?></LAYER>
+N4       ëäë‘à íu         <LAYER PAGEX=? PAGEY=?></LAYER>
+N4       É\Å[ÉXÉtÉ@ÉCÉã   <LAYER SRC="***"></LAYER>
+N4       ÉXÉ^ÉbÉNëOå“à íu <LAYER Z-INDEX=?></LAYER>
+N4       ÉXÉ^ÉbÉNà íu     <LAYER ABOVE="***" BELOW="***"></LAYER>
+N4       ê°ñ@             <LAYER HEIGHT=? WIDTH=?></LAYER>
+N4       ÉNÉäÉbÉsÉìÉOÉpÉX <LAYER CLIP=,,,></LAYER>
+N4       â¬éãê´           <LAYER VISIBILITY=SHOW|HIDDEN|INHERIT></LAYER>
+N4       îwåi             <LAYER BACKGROUND="$$$$$$"></LAYER>
+N4       îwåiêF           <LAYER BGCOLOR="$$$$$$"></LAYER>
+N4     ÉCÉìÉâÉCÉìÉåÉCÉÑÅ[
+                        <ILAYER></ILAYER>  ÅiLAYER ÇìØÇëÆê´Ç•égÇ§Åj
+N4     ë“ë÷ÉRÉìÉeÉìÉc   <NOLAYER</NOLAYER>
+
+
+ÉäÉìÉNÅAâÊëúÅAÉTÉEÉìÉh
+----------------------------------------------------------------------------
+       â‡Ç©Ç÷ÇÃÉäÉìÉN   <A HREF="URL"></A>
+         ñŽïWÇ÷ÉäÉìÉN     <A HREF="URL#***"></A>  Åiï ÉhÉLÉÖÉÅÉìÉgÇÃèÍçáÅj
+                          <A HREF="#***"></A>     ÅiåªÉhÉLÉÖÉÅÉìÉgÇÃèÍçáÅj
+4.0*     ñŽïWÉEÉCÉìÉhÉE   <A HREF="URL" TARGET="***"></A>
+4.0*     ÉNÉäÉbÉNéûÇÃìÆçÏ <A HREF="URL" ONCLICK="***"></A>      ÅiJavascriptÅj
+4.0*     É}ÉEÉXÉIÅ[ÉoÅ[éûÇÃìÆçÏ
+                          <A HREF="URL" ONMOUSEOVER="***"></A>  ÅiJavascriptÅj
+4.0*     É}ÉEÉXÉAÉEÉgéûÇÃìÆçÏ
+                          <A HREF="URL" ONMOUSEOUT="***"></A>   ÅiJavascriptÅj
+       ÉÅÅ[ÉãÇ÷ÇÃÉäÉìÉN <A HREF="mailto:@"></A>
+         É^ÉCÉgÉãÇÃíËã`   <A HREF="mailto:@?SUBJECT=***"></A> Åi? ïéöÇ•égópÅj
+       ñŽïWÇÃíËã`       <A NAME="***"></A>
+       âÊëúÇÃï\é¶       <IMG SRC="URL">
+         çsëµÇ¶           <IMG SRC="URL" ALIGN=TOP|BOTTOM|MIDDLE|LEFT|RIGHT>
+N1       çsëµÇ¶           <IMG SRC="URL" ALIGN=TEXTTOP|ABSMIDDLE|
+                             BASELINE|ABSBOTTOM>
+         ë“ë÷             <IMG SRC="URL" ALT="***"> ÅiâÊëúÇï\é¶Ç„ÇÍÇ»Ç¢èÍçáÅj
+         ê°ñ@             <IMG SRC="URL" WIDTH=? HEIGHT=?>      ÅiÉsÉNÉZÉãÇ‰Åj
+                          <IMG SRC="URL" WIDTH="%" HEIGHT="%">
+                             Å@Å@Å@Å@Å@Å@Å@               ÅiÉpÅ[ÉZÉìÉeÅ[ÉWÇ‰Åj
+         ã´äEê¸           <IMG SRC="URL" BORDER=?>              ÅiÉsÉNÉZÉãÇ‰Åj
+         âÒÇËçûÇðó]îí     <IMG SRC="URL" HSPACE=? VSPACE=?>     ÅiÉsÉNÉZÉãÇ‰Åj
+N1       í·â•ëúìxÇÃë“óùâÊëú
+                          <IMG SRC="URL" LOWSRC="URL">
+         ÉCÉÅÅ[ÉWÉ}ÉbÉv   <IMG SRC="URL" ISMAP>     ÅiÉXÉNÉäÉvÉgÇïKóvÅj
+         ÉCÉÅÅ[ÉWÉ}ÉbÉv   <IMG SRC="URL" USEMAP="URL">
+MS       ìÆâÊÉNÉäÉbÉv     <IMG DYNSRC="***" START="***" LOOP=?>
+MS     îwåiÉTÉEÉìÉh     <BGSOUND SRC="***" LOOP=?|INFINITE>
+       ÉNÉâÉCÉAÉìÉgë§É}ÉbÉv
+                        <MAP NAME="***"></MAP>   ÅiÉ}ÉbÉvÇ•ãLèqÅj
+       É}ÉbÉvÉZÉNÉVÉáÉì <AREA SHAPE="DEFAULT|RECT|CIRCLE|POLY"
+                            COORDS=",,," HREF="URL"|NOHREF>
+N1     ÉNÉâÉCÉAÉìÉgÉvÉã <META HTTP-EQUIV="Refresh" CONTENT="?; URL=URL">
+N2     ñÑçûÉIÉuÉWÉFÉNÉg <EMBED SRC="URL">  ÅiÉyÅ[ÉWìýÇŠÉIÉuÉWÉFÉNÉgÇ•ë}ì¸Åj
+N2       ÉIÉuÉWÉFÉNÉgÉTÉCÉY
+                          <EMBED SRC="URL" WIDTH=? HEIGHT=?>
+4.0    ÉIÉuÉWÉFÉNÉg     <OBJECT></OBJECT>
+4.0      ÉpÉâÉÅÅ[É^       <PARAM>
+
+
+édêÿÇË
+----------------------------------------------------------------------------
+       ÉpÉâÉOÉâÉt       <P></P>            ÅièIó¼É^ÉOÇÕÇµÇ‘ÇµÇ‘ïsïKóvÅj
+         ÉeÉLÉXÉgëµÇ¶     <P ALIGN=LEFT|CENTER|RIGHT></P>
+N        ã¦ìôäÑÇËïtÇØ     <P ALIGN=JUSTIFY></P>
+       ã‚êßâ¸çs         <BR>               Åiâ¸çsÇPâÒÅj
+         âÒÇËçûÇðâ•èú     <BR CLEAR=LEFT|RIGHT|ALL>
+       årê¸             <HR>
+         çsëµÇ¶           <HR ALIGN=LEFT|RIGHT|CENTER>
+         ê[Ç„             <HR SIZE=?>      ÅiÉsÉNÉZÉãÇ‰Åj
+         ïù               <HR WIDTH=?>     ÅiÉsÉNÉZÉãÇ‰Åj
+         ÉpÅ[ÉZÉìÉgïù     <HR WIDTH="%">   ÅiÉyÅ[ÉWïùÇÃÉpÅ[ÉZÉìÉeÅ[ÉWÅj
+         É\ÉäÉbÉhÇ»ê¸     <HR NOSHADE>     Åi3D ÇÃí§ÇËÇÃä¥ÇÇ»ÇµÅj
+N1     â¸çsÇ»Çµ         <NOBR>             Åiâ¸çsñhé~Åj
+N1     ÉèÅ[Éhâ¸çs       <WBR>              Åiâ¸çsÇïKóvÇ»ÇÇ±ÇÎÇ‰Åj
+
+
+ÉäÉXÉgÅiÉäÉXÉgÇÕì¸ÇÍéqÇŠÇ‰Ç´ÇÈÅj
+-----------------------------------------------------------------------------
+       îŒçÜÇ»ÇµÉäÉXÉg   <UL><LI></UL>      ÅiäeçsÇÃçÄñŽÇÃëOÇŠ<LI>Åj
+         ÉRÉìÉpÉNÉg       <UL COMPACT></UL>
+         É}Å[ÉNÇÃå`éÆ     <UL TYPE=DISC|CIRCLE|SQUARE>  ÅiÉäÉXÉgëSëÃÇŠÅj
+                          <LI TYPE=DISC|CIRCLE|SQUARE>  ÅiÇ±ÇÍà»ç~ÇÃçsÅj
+       îŒçÜÇ¬Ç´ÉäÉXÉg   <OL><LI></OL>      ÅiäeçsÇÃçÄñŽÇÃëOÇŠ <LI>Åj
+         ÉRÉìÉpÉNÉg       <OL COMPACT></OL>
+         îŒçÜå`éÆ         <OL TYPE=A|a|I|i|1>      ÅiÉäÉXÉgëSëÃÇŠÅj
+                          <LI TYPE=A|a|I|i|1>      ÅiÇ±ÇÍà»ç~ÇÃçsÅj
+N1.0     äJénîŒçÜ         <OL VALUE=?>             ÅiÉäÉXÉgëSëÃÇŠÅj
+                          <LI VALUE=?>             ÅiÇ±ÇÍà»ç~ÇÃçsÅj
+       íËã`å^ÉäÉXÉg     <DL><DT><DD></DL>  Åi<DT>=ópåÍÅA<DD>=íËã`Åj
+         ÉRÉìÉpÉNÉg       <DL COMPACT></DL>
+       ÉÅÉjÉÖÅ[å^ÉäÉXÉg <MENU><LI></MENU>  ÅiäeçsÇÃçÄñŽÇÃëOÇŠ<LI>Åj
+         ÉRÉìÉpÉNÉg       <MENU COMPACT></MENU>
+       ñºïÎå^ÉäÉXÉg     <DIR><LI></DIR>    ÅiäeçsÇÃçÄñŽÇÃëOÇŠ<LI>Åj
+         ÉRÉìÉpÉNÉg       <DIR COMPACT></DIR>
+
+
+îwåiÇêF
+----------------------------------------------------------------------------
+       É^ÉCÉãì\ÇÃîwåi   <BODY BACKGROUND="URL">
+MS       ìßÇ©Çµ           <BODY BGPROPERTIES="FIXED">
+       îwåiêF           <BODY BGCOLOR="#$$$$$$"> ÅiêŒÅ^ó‘Å^ê¬ÇÃèáÅj
+         ïéöêF           <BODY TEXT="#$$$$$$">
+         ÉäÉìÉNêF         <BODY LINK="#$$$$$$">
+         ä˜ñKÇÃÉäÉìÉNêF   <BODY VLINK="#$$$$$$">
+         ÉAÉNÉeÉBÉuéûÇÃÉäÉìÉNêF
+                          <BODY ALINK="#$$$$$$">
+ÅièŽç×ÇÕ <http://werbach.com/web/wwwhelp.html#color> Ç÷Åj
+
+
+ì¡éÍïéöÅiÇ±ÇÍÇÕïKÇ½è¨ïéöÇ‰Åj
+----------------------------------------------------------------------------
+       ì¡éÍïéö          &#?;            Åi? ÇÃèÍèäÇŠÇÕ ISO 8859-1 ÉRÅ[ÉhÅj
+       <                 &lt;
+       >                 &gt;
+       &                 &amp;
+       "                 &quot;
+       ìoò^è§ïW TM       &#174;
+       ìoò^è§ïW TM       &reg;
+       íòçÏåÝï\é¶        &#169;
+       íòçÏåÝï\é¶        &copy;
+       îÒâ¸çsãÛîíïéö    &nbsp;
+ÅiäÆëSÇ»ÉäÉXÉgÇÕ <http://www.uni-passau.de/%7Eramsch/iso8859-1.html> Ç÷Åj
+
+
+ÉtÉHÅ[ÉÄÅiàÍî ÇŠÉTÅ[Éoë§ÉXÉNÉäÉvÉgÇ•ïKóvÇÇ…ÇÈÅj
+----------------------------------------------------------------------------
+       ÉtÉHÅ[ÉÄÇÃíËã`   <FORM ACTION="URL" METHOD=GET|POST></FORM>
+4.0*     ÉtÉ@ÉCÉãÉAÉbÉvÉçÅ[Éh
+                          <FORM ENCTYPE="multipart/form-data"></FORM>
+       ì¸óÕÉtÉBÅ[ÉãÉh   <INPUT TYPE="TEXT|PASSWORD|CHECKBOX|RADIO|
+                          FILE|BUTTON|IMAGE|HIDDEN|SUBMIT|RESET">
+         ÉtÉBÅ[ÉãÉhñº     <INPUT NAME="***">
+         ÉtÉBÅ[ÉãÉhíl     <INPUT VALUE="***">
+         É`ÉFÉbÉNç¦       <INPUT CHECKED>  ÅiÉ`ÉFÉbÉNÉ{ÉbÉNÉXÇÉâÉWÉIÉ{É^ÉìÅj
+         ÉtÉBÅ[ÉãÉhÉTÉCÉY <INPUT SIZE=?>       ÅiïéöêîÇ‰Åj
+         ç‰ëÂïéöêî       <INPUT MAXLENGTH=?>  ÅiïéöêîÇ‰Åj
+4.0    É{É^Éì           <BUTTON></BUTTON>
+4.0      É{É^Éìñº         <BUTTON NAME="***"></BUTTON>
+4.0      É{É^Éìå`éÆ       <BUTTON TYPE="SUBMIT|RESET|BUTTON"></BUTTON>
+4.0      èâä™íl           <BUTTON VALUE="***"></BUTTON>
+4.0    ÉâÉxÉã           <LABEL></LABEL>
+4.0      ÉâÉxÉãópÇÃÉAÉCÉeÉÄ
+                        <LABEL FOR="***"></LABEL>
+       ëIë•éàÇÃÉäÉXÉg   <SELECT></SELECT>
+         ÉäÉXÉgñº         <SELECT NAME="***"></SELECT>
+         ÉIÉvÉVÉáÉìÇÃêî   <SELECT SIZE=?></SELECT>
+         ï°êîëIë•         <SELECT MULTIPLE>    ÅiÇPÇ¬à»è“ëIë•â¬î\Åj
+       ÉIÉvÉVÉáÉì       <OPTION>           ÅiëIë•â¬î\Ç»çÄñŽÅj
+         èâä™ëIë•ÉIÉvÉVÉáÉì
+                          <OPTION SELECTED>
+         ÉIÉvÉVÉáÉìíl     <OPTION VALUE="***">
+4.0    ÉIÉvÉVÉáÉìÉOÉãÅ[Év <OPTGROUP LABEL="***"></OPTGROUP>
+       ì¸óÕÉ{ÉbÉNÉXÉTÉCÉY <TEXTAREA ROWS=? COLS=?></TEXTAREA>
+         É{ÉbÉNÉXñº       <TEXTAREA NAME="***"></TEXTAREA>
+N2       ÉeÉLÉXÉgêÐïŒÇµ   <TEXTAREA WRAP=OFF|VIRTUAL|PHYSICAL></TEXTAREA>
+4.0    ÉOÉãÅ[ÉvÉGÉåÉÅÉìÉg <FIELDSET></FIELDSET>
+4.0    ñ}ó·             <LEGEND></LEGEND>     ÅiFIELDSET ópÇÃÉLÉÉÉvÉVÉáÉìÅj
+4.0      çsëµÇ¶           <LEGEND ALIGN="TOP|BOTTOM|LEFT|RIGHT"></LEGEND>
+
+
+ï\ëgÇð
+----------------------------------------------------------------------------
+       ï\ëgÇðÇÃíËã`     <TABLE></TABLE>
+4.0*     ï\ÇÃçsëµÇ¶       <TABLE ALIGN=LEFT|RIGHT|CENTER>
+         ï\ÇÃäOòg         <TABLE BORDER></TABLE>    ÅiON Ç© OFF ÇÃÇ«ÇøÇÁÇ©Åj
+         ï\ÇÃäOòg         <TABLE BORDER=?></TABLE>  ÅiêîílÇ•êðíËâ¬î\Åj
+         ÉZÉãäŒÇÃÉXÉyÅ[ÉX <TABLE CELLSPACING=?>
+         ÉZÉãìýÇÃÉXÉyÅ[ÉX <TABLE CELLPADDING=?>
+         óvãÅÇ„ÇÍÇÈïù     <TABLE WIDTH=?>           ÅiÉsÉNÉZÉãÇ‰Åj
+         ÉpÅ[ÉZÉìÉgïù     <TABLE WIDTH="%">         ÅiÉyÅ[ÉWÇÃÉpÅ[ÉZÉìÉeÅ[ÉWÅj
+4.0*     ï\ÇÃêF           <TABLE BGCOLOR="$$$$$$"></TABLE>
+4.0      ï\ÇÃòg        <TABLE FRAME=VOID|ABOVE|BELOW|HSIDES|LHS|RHS|
+                              VSIDES|BOX|BORDER></TABLE>
+4.0      ï\årê¸         <TABLE RULES=NONE|GROUPS|ROWS|COLS|ALL></TABLE>
+MS       ògÇÃêF           <TABLE BORDERCOLOR="$$$$$$"></TABLE>
+MS       àˆÇ¢òg           <TABLE BORDERCOLORDARK="$$$$$$"></TABLE>
+MS       ñæÇÈÇ¢òg         <TABLE BORDERCOLORLIGHT="$$$$$$"></TABLE>
+       ï\ÇÃçs           <TR></TR>
+         çsëµÇ¶          <TR ALIGN=LEFT|RIGHT|CENTER
+                             VALIGN=TOP|MIDDLE|BOTTOM>
+       ï\ÇÃÉZÉã         <TD></TD>          ÅiïKÇ½ï\ÇÃçsìýÇŠÇÝÇÈÅj
+         çsëµÇ¶          <TD ALIGN=LEFT|RIGHT|CENTER
+                             VALIGN=TOP|MIDDLE|BOTTOM>
+         â¸çsÇ»Çµ         <TD NOWRAP>
+         ÉRÉâÉÄêî         <TD COLSPAN=?>
+         çsêî             <TD ROWSPAN=?>
+4.0*     óvãÅÇ„ÇÍÇÈïù     <TD WIDTH=?>     ÅiÉsÉNÉZÉãÇ‰Åj
+N3       ÉpÅ[ÉZÉìÉgïù     <TD WIDTH="%">   Åiï\ïùÇÃÉpÅ[ÉZÉìÉeÅ[ÉWÅj
+4.0*     ÉZÉãÇÃêF         <TD BGCOLOR="#$$$$$$">
+       ï\å©ÇæÇµ         <TH></TH>          ÅiëæéöÇ‰íÜëµÇ¶à»äOÇÕÉfÅ[É^ÇìØÇÅj
+         çsëµÇ¶           <TH ALIGN=LEFT|RIGHT|CENTER
+                              VALIGN=TOP|MIDDLE|BOTTOM>
+         â¸çsÇ»Çµ         <TH NOWRAP>
+         ÉRÉâÉÄêî         <TH COLSPAN=?>
+         çsêî             <TH ROWSPAN=?>
+4.0*     óvãÅÇ„ÇÍÇÈïù     <TH WIDTH=?>     ÅiÉsÉNÉZÉãÇ‰Åj
+N3       ÉpÅ[ÉZÉìÉgïù     <TH WIDTH="%">   Åiï\ïùÇÃÉpÅ[ÉZÉìÉeÅ[ÉWÅj
+4.0*     ÉZÉãÇÃêF         <TH BGCOLOR="#$$$$$$">
+4.0    ï\ñ{ï           <TBODY>
+4.0    ï\ÉtÉbÉ^         <TFOOT></TFOOT>    ÅiïKÇ½ THEAD ÇÃëOÅj
+4.0    ï\ÉwÉbÉ_         <THEAD></THEAD>
+       ï\ëË             <CAPTION></CAPTION>
+         çsëµÇ¶           <CAPTION ALIGN=TOP|BOTTOM|LEFT|RIGHT>
+4.0    íiëgÇð           <COL></COL>        ÅiÉRÉâÉÄÉOÉãÅ[ÉvÇÃëÆê´Åj
+4.0      íiäŒäu           <COL SPAN=?></COL>
+4.0      íiïù             <COL WIDTH=?></COL>
+4.0      ÉpÅ[ÉZÉìÉgïù     <COL WIDTH="%"></COL>
+4.0    íiëgÇðÉOÉãÅ[Év   <COLGROUP></COLGROUP>   ÅiÉRÉâÉÄÉOÉãÅ[ÉvÇÃç\ë¢Åj
+4.0      äeíiäŒäu         <COLGROUP SPAN=?></COLGROUP>
+4.0      ÉOÉãÅ[Évïù       <COLGROUP WIDTH=?></COLGROUP>
+4.0      ÉpÅ[ÉZÉìÉgïù     <COLGROUP WIDTH="%"></COLGROUP>
+
+
+ÉtÉåÅ[ÉÄÅiâÊñ ÇÃì¡íËóÃàÊÇ•íËã`ÅEëÄçÏÅj
+----------------------------------------------------------------------------
+4.0*   ÉtÉåÅ[ÉÄïèë     <FRAMESET></FRAMESET>        Åi<BODY> ÇÃë“ë÷Åj
+4.0*     óÒÇÃçÇÇ„         <FRAMESET ROWS=,,,></FRAMESET>ÅiÉsÉNÉZÉãÇÐÇ‡ÇÕ %Åj
+4.0*     óÒÇÃçÇÇ„         <FRAMESET ROWS=*></FRAMESET>  Å@Åi* = ëäë‘ÉTÉCÉYÅj
+4.0*     ÉRÉâÉÄÇÃïù       <FRAMESET COLS=,,,></FRAMESET>ÅiÉsÉNÉZÉãÇÐÇ‡ÇÕ %Åj
+4.0*     ÉRÉâÉÄÇÃïù       <FRAMESET COLS=*></FRAMESET>  Å@Åi* = ëäë‘ÉTÉCÉYÅj
+4.0*     òg             <FRAMESET FRAMEBORDER="yes|no"></FRAMESET>
+4.0*     ògÇÃëæÇ„         <FRAMESET BORDER=?></FRAMESET>
+4.0*     ògÇÃêF           <FRAMESET BORDERCOLOR="#$$$$$$"></FRAMESET>
+N3       ÉtÉåÅ[ÉÄäŒäu   <FRAMESET FRAMESPACING=?></FRAMESET>
+4.0*   ÉtÉåÅ[ÉÄÇÃíËã`   <FRAME>                      ÅiÉtÉåÅ[ÉÄå¬ÅXÇÃìýóeÅj
+4.0*     ï\é¶ïèë         <FRAME SRC="URL">
+4.0*     ÉtÉåÅ[ÉÄñº       <FRAME NAME="***"|_blank|_self|_parent|_top>
+4.0*     ó]îíÇÃïù         <FRAME MARGINWIDTH=?>              ÅiçâEÇÃó]îíÅj
+4.0*     ó]îíÇÃçÇÇ„       <FRAME MARGINHEIGHT=?>             Åiè“â†ÇÃó]îíÅj
+4.0*     ÉXÉNÉçÅ[ÉãÉoÅ[ÅH <FRAME SCROLLING="YES|NO|AUTO">
+4.0*     ÉTÉCÉYï¦çXïsî\   <FRAME NORESIZE>
+4.0*     òg               <FRAME FRAMEBORDER="yes|no">
+4.0*     ògÇÃêF           <FRAME BORDERCOLOR="#$$$$$$">
+4.0*   ñ„ÉtÉåÅ[ÉÄéûÇÃìýóe
+                        <NOFRAMES></NOFRAMES> ÅiÉtÉåÅ[ÉÄîÒë‘âûÇÃÉuÉâÉEÉUópÅj
+4.0    ÉCÉìÉâÉCÉìÉtÉåÅ[ÉÄ
+                        <IFRAME></IFRAME> ÅiFRAME ÇìØÇëÆê´Ç•égÇ§Åj
+4.0      ê°ñ@             <IFRAME WIDTH=? HEIGHT=?></IFRAME>
+4.0      ê°ñ@             <IFRAME WIDTH="%" HEIGHT="%"></IFRAME>
+
+
+ÉXÉNÉäÉvÉgÇ Java
+----------------------------------------------------------------------------
+       ÉXÉNÉäÉvÉg       <SCRIPT></SCRIPT>
+         èÍèä             <SCRIPT SRC="URL"></SCRIPT>
+         å`éÆ             <SCRIPT TYPE="***"></SCRIPT>
+         åæåÍ             <SCRIPT LANGUAGE="***"></SCRIPT>
+4.0*   ë“ë÷ÉRÉìÉeÉìÉc   <NOSCRIPT></NOSCRIPT>  ÅiÉXÉNÉäÉvÉgîÒë‘âûÇÃèÍçáÅj
+       ÉAÉvÉåÉbÉg       <APPLET></APPLET>
+         ÉtÉ@ÉCÉãñº       <APPLET CODE="***">
+         ÉpÉâÉÅÅ[É^       <APPLET PARAM NAME="***">
+         èÍèä             <APPLET CODEBASE="URL">
+         ñºëOíËã`         <APPLET NAME="***">        ÅiéQèópÅj
+         ë“ë÷ÉeÉLÉXÉg     <APPLET ALT="***">         ÅiîÒ Java ÉuÉâÉEÉUópÅj
+         çsëµÇ¶           <APPLET ALIGN="LEFT|RIGHT|CENTER">
+         ê°ñ@             <APPLET WIDTH=? HEIGHT=?>  (in pixels)
+         âÒÇËçûÇðó]îí     <APPLET HSPACE=? VSPACE=?> (in pixels)
+N4     ÉTÅ[ÉoÉXÉNÉäÉvÉg <SERVER></SERVER>
+
+
+ÇªÇÃëº
+----------------------------------------------------------------------------
+       ÉRÉÅÉìÉg         <!-- *** -->       ÅiÉuÉâÉEÉUÇï\é¶ÇµÇ»Ç¢Åj
+       èò               <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+       åüçžâ¬î\         <ISINDEX>          Åiåüçžâ¬î\Ç»ÉCÉìÉfÉbÉNÉXÇ•é¶Ç…Åj
+N1.0     ÉvÉçÉìÉvÉg       <ISINDEX PROMPT="***">   Åiì¸óÕéûÇÃÉvÉçÉìÉvÉgïéöÅj
+       åüçžÇ•ëóÇÈ       <A HREF="URL?***"></a>  Åi? É}Å[ÉNÇªÇÃÇýÇÃÇ•égópÅj
+       åªÉtÉ@ÉCÉãÇÃ URL <BASE HREF="URL">  ÅiïKÇ½ÉwÉbÉ_ïîÇŠÅj
+4.0*   ÉxÅ[ÉXÉEÉCÉìÉhÉEñº
+                        <BASE TARGET="***">ÅiïKÇ½ÉwÉbÉ_ïîÇŠÅj
+       ä÷òA             <LINK REV="***" REL="***" HREF="URL">  ÅiÉwÉbÉ_ïîÇŠÅj
+N4       ÉäÉìÉNë‘è¤ÇÃÉtÉ@ÉCÉã
+                          <LINK TYPE="***" SRC="***"></LINK>
+       ÉÅÉ^èÓïÒ         <META>             ÅiïKÇ½ÉwÉbÉ_ïîÇŠÅj
+       ÉXÉ^ÉCÉãÉVÅ[Ég   <STYLE></STYLE>    Åié¿åªèÛëŒÇÕÇ„ÇÐÇ¥ÇÐÅj
+4.0    ìÒïšå¸ïã@î\ OFF <BDO DIR=LTR|RTL></BDO> Åiì¡íËÇÃïéöÉZÉbÉgópÅj
+
+
+
+============================================================================
+Copyright (c) 1995-1999 Kevin Werbach.  âcóòÇ•ñŽìIÇÇ¼Ç½ÅAïsäÆëSÇ»ïèëÇÃå`ëŒ
+Ç•ÇÇÁÇ»Ç¢å¿ÇËçŸîzïzÇÕãñâ¬Ç„ÇÍÇŸÇ¢ÇÈÅBÇ±ÇÃÉKÉCÉhÇÕ Bare Bones Software ÇÃêªïi
+Ç‰ÇÕÇ»Ç¢ÅBèŽç×ÇÕ <http://werbach.com/barebones> Ç•éQèÅB
+----------------------------------------------------------------------------
+
+       ì™ñ{åÍñÛÅF1999 îN 5 åé 17 ì™ÅAêºë†Å@èÆ <hisashin@hotsync.co.jp>

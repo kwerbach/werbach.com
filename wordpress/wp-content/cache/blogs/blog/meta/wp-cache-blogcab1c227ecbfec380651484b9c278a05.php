@@ -1,0 +1,1 @@
+<?php die(); ?>{"headers":{"Vary":"Vary: Cookie","Content-Type":"Content-Type: text\/html; charset=UTF-8","Last-Modified":"Last-Modified: Thu, 16 Mar 2017 09:57:55 GMT"},"uri":"werblog.com\/?s=screencast+software&submit=search","blog_id":1,"post":0,"key":"blogwerblog.com80\/?s=screencast+software&submit=search"}

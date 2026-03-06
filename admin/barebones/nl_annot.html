@@ -1,0 +1,222 @@
+<HTML>
+<HEAD>
+<TITLE>HTML kort en krachtig: Annotaties</TITLE>
+</HEAD>
+<BODY>
+
+<hr>
+<p>
+<a name="HTML"><h2>De ontwikkeling van HTML</h2></a>
+</p>
+
+<p>HTML is de opmaaktaal die wordt gebruikt voor het maken van 
+documenten voor het World Wide Web. Hoewel er al enige tijd gewerkt wordt
+aan offici&euml;le specificaties voor HTML, kan het voorkomen dat bepaalde
+Web browsers tags accepteren die niet opgenomen zijn in de specificaties.
+Als mensen vragen om een lijst van &quot;alle HTML tags&quot; dan willen ze
+meestal weten welke tags ze in hun pagina's kunnen gebruiken met een redelijke
+zekerheid dat de mensen die die pagina's bekijken ook zien wat de maker wil.
+<em>HTML kort en krachtig</em> is gemaakt om aan deze behoefte tegemoet te komen.
+Ik heb geprobeerd om alle tags op te nemen die door de voornaamste browsers
+van vandaag ondersteund worden, maar er is een aantal nuances die dit
+proces al bij voorbaat onzorgvuldig doen zijn.</p>
+
+<p>
+De oficiele organisatie die standaarden maakt voor  HTML is het<a
+href="http://www.w3.org/">World Wide Web Consortium</a> (W3C),
+dat gelieerd is aan de <a href="http://www.ietf.org/">Internet
+Engineering Task Force</a> (IETF).  De W3C heeft verschillende versies
+van de HTML specificatie uitgebracht, waaronder HTML 2.0, HTML 3.0, en
+als laatste HTML 3.2.  Tegelijkertijd echter hebben de makers van browsers
+zoals Netscape and Microsoft vaak hun eigen &quot;uitbreidingen&quot;
+ontwikkeld, buiten het standaardiseringsproces om, en deze opgenomen
+in hun browsers. In sommige gevallen, zoals bijvoorbeeld bij de 
+&lt;CENTER&gt; tag van Netscape, zijn deze uitbreidingen feitelijke 
+standaarden geworden, en overgenomen door andere browser-producenten</p>
+
+<p><a href="http://www.w3.org/pub/WWW/MarkUp/html-spec/">HTML
+2.0</a>, waarin de stand van zaken wat betreft HTML in juni 1994 is
+vastgelegd, is de basis-standaard die alle browsers van dit moment zouden
+moeten ondersteunen, met inbegrip van de niet-grafische browsers.
+HTML 2.0 geeft het oorspronkelijke idee weer van HTML als een platform-onafhankelijke
+opmaaktaal, die de organisatie van informatie weergeeft in plaats van exact
+aan te geven hoe pagina's op het scherm getoond moeten worden.
+Als u er zeker van wilt zijn dat alle gebruikers alles op uw pagina's kunnen
+zien, gebruik dan alleen tags die in HTML 2.0 staan.</p>
+
+<p>In het <a href="http://www.w3.org/pub/WWW/MarkUp/html3/">voorstel voor HTML 3.0</a>,
+uitgekomen in 1995, werd geprobeerd HTML 2.0 uit te bouwen met toevoeging
+van dingen zoals tabellen en een grotere beheersing van de uitlijning van
+tekst rondom plaatjes.
+Hoewel sommige kenmerken van HTML 3.0 algemeen werden overgenomen door
+ontwikkelaars van browsers, gold voor veel kenmerken het tegendeel.
+In sommige gevallen kregen alternatieven aangedragen door ontwikkelaars
+van een browser een grotere verspreiding dan de &quot;offici&euml;le&quot; tags.
+Het HTML 3.0 voorstel is nu niet meer geldig, en is daarom geen offici&euml;le
+standaard meer.</p>
+
+<p>In mei 1996 publiceerde  W3C het <a href="http://www.w3.org/pub/WWW/MarkUp/Wilbur/">HTML 3.2
+voorstel</a>, opgesteld om de algemeen geaccepteerde praktijk weer te geven
+en te standaardiseren. Daarom bevat HTML 3.2 die tags uit HTML
+3.0 tags die zijn overgenomen door browser-ontwikkelaars als Netscape en
+Microsoft, naast breed ondersteunde uitbreidingen van HTML.  In zijn <a
+href="http://www.w3.org/pub/WWW/MarkUp/Activity">Position
+Statement on HTML</a> beveelt W3C aan dat aanbieders van informatie gebruik
+maken van de HTML 3.2 specificatie.  Daarom bevat versie 3.0 van &qout;HTML kort
+en krachtig&quot; alle HTML 3.2 tags.  De huidige versies van de belangrijkste
+browsers ondersteunen in principe al deze tags (of bijna alle).</p>
+
+<p>Er zijn ook een paar HTML-uitbreidingen van Netscape en Microsoft die
+geen deel uitmaken van het HTML 3.2 voorstel, omdat ze minder algemeen
+gebruikt worden, of omdat ze ontstonden nadat de de HTML 3.2
+specificatie al was geschreven.  
+Omdat Netscape Navigator een van de eerste browsers was die sommige 
+HTML 3.0 tags ondersteunde, en omdat Netscape ongeveer 70% van de markt
+voor browsers in handen heeft, denken veel mensen ten onrechte dat alle
+Netscape-uitbreidingen (inclusief tags zoals &lt;BLINK&gt; en dingen als
+Kaders) deel uitmaken van HTML 3.0 of HTML 3.2. </p>
+
+<p>Voordat u een van de tags wilt gaan gebruiken waarbij staat aangegeven
+dat het Netscape- of Microsoft-uitbreidingen betreft, moet u bedenken dat
+mensen die andere browsers gebruiken de pagina's wellicht niet zo
+te zien krijgen als u had bedoeld.
+U moet er ook rekening mee houden dat er geen garantie is dat tags die niet 
+tot de standaard behoren door toekomstige browsers zullen worden ondersteund.
+U moet dus zelf beslissen of u de specifieke tags van Netscape en Microsoft 
+wilt gebruiken.
+Veel mensen hebben een uitgesproken mening of je al dan niet tags moet
+gebruiken die geen deel uitmaken van de offici&euml;le HTML standaard.
+Ik ben van mening dat u datgene moet kiezen wat het beste resultaat geeft voor u
+en voor uw publiek, zolang u het verschil maar begrijpt.
+&quot;HTML kort en krachtig&quot; gaat uit van deze benadering.
+De gids is geen offici&euml;le specificatie, maar het is wel de bedoeling u een
+indruk te geven welke tags algemeen in gebruik zijn, en onder welke standaard
+zij vallen.</p>
+
+<p align=center>
+<a href="nl_bareb.html">Terug naar de Gids</a>
+</p> 
+
+
+<hr>
+<br>
+<a name="prologue"><h2>Proloog</h2></a>
+
+<p>De proloog moet helemaal aan het begin van us bestand staan. Browsers 
+hebben de proloog niet nodig om een bestand als HTML-document te herkennen,
+maar het kan browsers en mensen die het HTML-brondocument lezen een
+indicatie geven van de tags die erin voorkomen.
+De precieze syntax van de proloog hangt af van de versie van de HTML DTD 
+(document-type definitie) die u gebruikt. Ik heb de proloog opgenomen
+om te gebruiken als u zich in uw document houdt aan de HTML 3.2 standaard; 
+gebruik de proloog niet als u Netscape- of Microsoft-uitbreidingen gebruikt.</p>
+
+<p align=center>
+<a href="nl_bareb.html">Terug naar de Gids</a>
+</p> 
+
+<hr>
+<br>
+
+<a name="xmp"><h2>&lt;XMP&gt;</h2></a>
+
+<p>In de huidige HTML-specificatie wordt het gebruik van de &lt;XMP&gt; tag
+afgeraden omdat het de oorzaak is van &quot;een aantaal ongelukkige 
+interacties met verwerkingsmethoden en de neiging heeft om op een tegenstrijdige
+manier gebruikt en uitgevoerd te worden.&quot;  In plaats ervan kan beter de  &lt;PRE&gt; 
+tag gebruikt worden.</p>
+
+<p align=center>
+<a href="nl_bareb.html">Terug naar de Gids</a>
+</p> 
+
+<hr><br>
+
+<a name="blockquote"><h2>&lt;BLOCKQUOTE&gt;</h2></a>
+
+<p>Het gesuggereerde resultaat van de &lt;BLOCKQUOTE&gt; tag is het laten
+inspringen van de linker- en rechterkantlijn, en deze tag wordt vaak gebruikt
+om in te springen (wat in HTML 2.0 rechtstreeks kan), inplaats van voor het
+aanduiden van geciteerde tekst. Wees u ervan bewust dat niet alle browsers
+de tag op deze manier weergeven, hoewel met het verloop van de tijd steeds
+meer browsers over lijken te gaan op inspringen.</p>
+
+<p align=center>
+<a href="nl_bareb.html">Terug naar de Gids</a>
+</p> 
+<hr><br>
+
+<a name="align"><h2>Tags voor uitlijnen</h2></a>
+
+<p>Het HTML 3.2 voorstel ondersteunt zowel de uitlijn-parameters van de tags voor
+alinea's en kopjes als de &lt;CENTER&gt; tag, die oorspronkelijk ontwikkeld is
+door Netscape.  Tegenwoordig is  &lt;CENTER&gt; vooral nodig in die situaties 
+waar een browser de uitlijn-parameters niet ondersteunt, zoals bijvoorbeeld
+bij het centreren van een tabel in Netscape Navigator.</p>
+
+<p>Het grootste probleem met &lt;CENTER&gt; is dat het een alinea-scheiding
+rond het gecentreerde materiaal impliceert, maar browsers die de 
+&lt;CENTER&gt; tag niet ondersteunen zullen deze eenvoudigweg overslaan, en het
+document dus niet weergeven op de manier die de maker bedoeld had.
+Omdat nu steeds meer browsers het uitlijnen ondersteunen zal het gebruik van
+&lt;P ALIGN=CENTER&gt;&lt;/P&gt; steeds meer te verkeizen zijn boven het gebruik
+van de niet gestandaardiseerde  &lt;CENTER&gt; tag.</p>
+
+<p align=center>
+<a href="nl_bareb.html">Terug naar de Gids</a>
+</p> 
+<hr><br>
+
+<a name="paragraph"><h2>De &lt;P&gt; Tag</h2></a>
+
+<p>De meeste HTML-tags zijn  &quot;omsluitend;&quot;; zij hebben een begin-
+en een eind-tag, met tekst ertussenin (bijvoorbeeld  &lt;B&gt;Dit is vetgedrukt&lt;/B&gt;).  
+De &lt;P&gt; tag daarentegen, werd oorspronkelijk gedefinieerd als een opzichzelfstaande
+tag die de ruimte tussen alinea's aangaf. Het probleem met deze benadering is dat
+ze niet de mogelijkheid gaf voor zaken zoals het centreren of tegen de rechter kantlijn
+uitlijnen van alinea's, omdat het niet mogelijk was begin en eind van de uit te lijnen
+tekst aan te geven.
+Als gevolg hiervan werd in het HTML 3.0 voorstel vanaf het begin de &lt;P&gt; 
+tag als een omsluitende tag gedefinieerd, zodat alinea's moeten worden
+aangegeven als &lt;P&gt;Hier staat wat tekst&lt;/P&gt;, en de begin-tag
+&lt;P&gt; parameters voor uitlijnen en andere dingen kan bevatten.  
+De eind-tag &lt;/P&gt; kan vaak worden weggelaten wanneer u geen uitlijning
+van een alinea opgeeft, hoewel het gebruik ervan de grenzen tussen de alinea's
+duidelijkr maakt in een HTML-bronbestand.</p>
+
+<p align=center>
+<a href="nl_bareb.html">Terug naar de Gids</a>
+</p> 
+
+
+<hr><br>
+<a name="color"><h2>Tags voor kleur</h2></a>
+<p>
+De waarde van een kleur wordt opgegeven in de vorm van een hexadecimale
+set van drie getallen die de waarden voor rood, groen en blauw aangeven.
+Mijn <a href="http://werbach.com/web/wwwhelp.html#color">WWW Help Page</a> 
+bevat een gedeelte met links naar utilities die deze codes voor u kunnen
+genereren.
+<p align=center>
+<a href="nl_bareb.html">Terug naar de Gids</a>
+</p> 
+
+
+<hr><br>
+<a name="tables"><h2>Tags voor tabellen</h2></a>
+
+<p>Er is nog steeds enige discussie gaande over de tags voor tabellen,
+in het bijzonder over de methode van Netscape waarbij de breedte van een
+tabel en een kolom behalve als een aantal pixels ook kunnen worden opgegeven 
+als een percentage. Voor het grootste gedeelte is de toepassing van tabellen
+nu echter bij alle belangrijke browsers hetzelfde.
+
+<p align=center>
+<a href="nl_bareb.html">Terug naar de Gids</a>
+</p> 
+<hr>
+
+<p align=center>Copyright &#169; 1995-1997 Kevin Werbach.<br>
+Laatst gewijzigd op 20 augustus 1996.</p>
+</BODY>
+</HTML>

@@ -1,0 +1,408 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+WERBLIST -- Kevin Werbach's periodic email newsletter
+
+March 12, 2003
+
+YOU ARE WELCOME TO RE-SEND THIS MESSAGE TO ANY NUMBER OF COLLEAGUES.
+Please cc: werblist@werbach.com.  To subscribe or unsubscribe
+directly, visit http://two.pairlist.net/mailman/listinfo/werblist/.
+Please send your comments to kevin@werbach.com.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+I was among the speakers at a fantastic conference March 1 at Stanford
+Law School, entitled "Spectrum Policy: Property or Commons?"
+<http://cyberlaw.stanford.edu/spectrum/>. As you may know, I'm part of
+a group arguing that wireless spectrum should be shared (the way WiFi
+works) rather than sold as property to exclusive owners. My remarks at
+the conference responded to two papers supporting the property rights
+approach. Doc Searls was kind enough to transcribe my comments, and
+I've reproduced them below.
+
+As a reminder, I have a separate email list, The Supernova Report, for
+essays and links related to decentralization. You can subscribe at
+<http://www.pulver.com/supernova/subscribe.html>. Planning for
+Supernova 2003 (July 8-9 in Washington DC) is coming along well, with
+confirmed speakers already including the Bush administration's point
+person on tech policy, Sun's top software executive, Japan's leading
+VC rebel, and a former FCC Chairman. I hope some of you on this list
+can join us there!
+
+-k-
+Kevin Werbach
+
+
+----------------------------------------------------------------------
+In this Issue:
+
+- Benefits of a Spectrum Commons
+- The Real Michael Powell
+- Links of the Month
+----------------------------------------------------------------------
+
+
+REMARKS AT THE STANFORD SPECTRUM CONFERENCE
+March 1, 2003
+
+
+I'll start by making the point that several other people already have
+-- that there are quite a few areas of agreement between the two camps
+here -- and just try to quickly set out what I think those are.
+
+The first one is, we all agree that the current system is horribly
+flawed.
+
+We agree that property and commons are not necessarily mutually
+exclusive. Gerry [Faulhaber] makes an interesting move, saying,
+"that's true, but because a perfect universal property system can
+somehow accommodate commons, and a perfect universal common system
+everywhere can't accommodate enough property, therefore we should
+choose property."
+
+But I think that's something of a distortion. We're not here talking
+about whether any of us finds the writings of Ayn Rand or Karl Marx
+more convincing. We're talking about the real world. And in the real
+world, systems are mixed. The question is whether we need to choose
+one of them as the overarching answer.
+
+The third thing I think we agree on, and it's come up several times,
+is that there is a great deal of uncertainty here. We don't know with
+certainty in a property regime who is going to participate in an
+auction, how the auction is going to go, or what's going to happen.
+And though we have many speculations and intuitions and examples on
+the commons side, we don't know with certainty how people are going to
+behave, or certainly how technology is going to develop in a commons.
+
+So that should lead us to be humble, to build room for experimentation
+and reconfiguration into any system that we put into place.
+
+And finally, I think we generally agree that scarcity and transaction
+costs are two crucial variables in trying to make choices between
+these systems. Those points are implicit in both the papers [presented
+here]. The Farber/Faulhaber paper talks about scarcity and transaction
+costs and the coexistence of the two models more explicitly.
+
+So where do we disagree? Well, both of the papers, again Farber and
+Faulhaber more explicitly, talk about this idea of property as the
+overarching default regime, and suggest we can accommodate commons
+within it, essentially the way we have public parks.
+
+That's a nice thing. I really hope it will happen. I think it might.
+But I don't think it is good enough to base a choice of regime on, for
+a number of reasons.
+
+First of all, if that makes sense, if a company, a manufacturer, an
+Intel or a Microsoft, would find it valuable to buy up spectrum and
+make it available as a commons, why haven't we seen it already? Why
+hasn't a manufacturer licensed spectrum under the FCC's flexible use
+auctions that have been going on the last few years, and done this?
+Why in fact have the property proponents not come up with any real
+example or analogies for why this might happen in the real world, as
+opposed to in the realm of theory?
+
+I think the reason is that there is an incentive problem here. And
+again this has come up through some of the discussions, in David
+Reed's comments and in particular Yochai [Benkler]'s comments. But the
+problem is really a matter of ex ante vs. real-time decision making.
+The notion in the property regime is that you need to, up-front, pay
+the full value of the spectrum to the person who is selling it... or
+what the person who is selling it will charge, which if there's a
+holdout situation may even be more than what its value to them is. In
+a property/exclusive rights situation, you can make that
+determination. I want to do broadcast television on a frequency that
+someone else is using for cellular [phone service], or on a frequency
+that is now Channel 57 UHF TV, I can decide what the value is to me to
+offer some other service. But in a commons it's hard to decide ahead
+of time.
+
+For example, what's the value of the 2.4 GHz band? I'll give you a
+hint. Before Wi-Fi came along, at the FCC we called it the junk band.
+It had very little value. Suddenly, in the last three or four years,
+which has been largely a period of terrible destruction of value and
+lack of investment in telecom, it's exploded. It has become incredibly
+valuable; probably much more valuable than it would have been to
+someone had they had that band for exclusive use. How will we know
+that ahead of time?
+
+The reason that happened is because there was an open type of
+environment. Not a perfect commons, but something along the lines of a
+commons, that let people find it and go the innovator route; let
+companies deploy technology, do experiments, and come up with
+improvements. And we've just seen the beginning of what's going on in
+that band so far.
+
+So the problem with this notion that we can have public parks, or
+private parks, or some other kinds of combinations, is that it assumes
+too much about the information that someone would have ahead of time,
+to get to a policy. And really at a deeper level this idea of parks is
+the wrong analogy. Parks compete with private ownership for land. They
+don't compete for use. You don't do the same thing in Central Park as
+you do in the rest of Midtown Manhattan. That's the point. But with
+spectrum we're competing to offer potentially the same services. And
+any allocation to one model or the other, and this is certainly true
+on both sides, facilitates for certain uses but it precludes certain
+business models, certain market structures. For example, a market
+that's based around competition for different kinds of equipment,
+versus a market that's based on competition between different
+exclusive service providers. Each choice facilitates certain models
+and each choice precludes certain models.
+
+I'll talk about this a little bit more in a minute in terms of what it
+means for scarcity and transaction costs. But think about some other
+analogies that have that property where there is contention for the
+actual use. Not parks vs. real estate, but public parks vs. private
+parks -- things like campgrounds and nature preserves. Public highways
+vs. toll roads. Maybe Linux vs. Windows. I don't have time to go into
+all of those. But if you think about it, the aspect that all of those
+examples share is that either the commons regime is the dominant one
+-- we have a lot more public roads than we have toll roads -- or there
+is no choice made ahead of time by government. There is room for both
+systems to coexist and operate and develop.
+
+Scarcity. The trouble with the way both of these papers and many of
+the property arguments look at scarcity is that it's done in a very
+static way. The examples are all about something like the UHF
+television situation -- a defined frequency block where spectrum is
+either not being used, or it's being used for some sort of low-value
+activity, and the idea is to transfer it to someone who can use it for
+something of more value. Or maybe we can aggregate and change the
+boundaries of those blocks a little bit. But the value of the spectrum
+-- and again this was mentioned in the initial discussions by David
+Reed and Yochai Benkler -- the value depends on the technical
+architecture of the systems that operate in that spectrum. The
+availability of the spectrum, how much there is, how much scarcity
+there is, is a function of those architectural decisions. And the
+choice of regime influences those architectures.
+
+We don't have unlimited bandwidth under any regime tomorrow in the
+sense that you can snap your fingers and suddenly have as much
+spectrum as you want, at all times, for anything, for no cost. But we
+might have unlimited bandwidth in a commons if you look at it
+differently.
+
+How long is the U.S. coastline? This is a famous example from the
+field of fractals. Well, if you measure the coastline from a satellite
+picture, you get one answer. If you measure it from airplane
+reconnaissance photos, you'll see a lot more of the twists and turns
+in the coastline, you'll get a much bigger number. If you walk along
+the coastline with a ruler, and measure every single twist and turn,
+and in and out, you'll get a much bigger number. The coastline is
+infinite, depending on what scale you look at it from.
+
+Now, of course, the coastline isn't infinite. It's not infinite in any
+practical sense. But how big it is depends on how you look at it. How
+big spectrum is depends on what kinds of systems are being used in
+that spectrum. The advantage of a commons system is that it creates
+incentives for the users of that spectrum to use it more efficiently.
+To design their existing technologies to be robust for interference
+that's there, and to design new kinds of technologies that squeeze
+more capacity out of the system. The property regime forecloses some
+of those alternatives by putting into place an exclusive use system.
+The most obvious one is ultra wideband types of uses, where ultra
+wideband needs a wide band, and therefore there is the anticommons
+problem. There are a bunch of situations under a property regime where
+that kind of technology may not exist. So we get, for example, the
+easements alternative that's put forth in the Farber/Faulhaber paper.
+And again, this is a good idea: Something that would be worth trying
+and I hope will work. But how will we know that easements are going to
+work?
+
+First of all, again, property is the overarching regime. So the burden
+of proof is all on the easement user to show that it's not
+interfering. And how are we going to know that the easements are wide
+enough, or robust enough, that someone can actually build something
+realistic in the easement? It's sort of the excess capacity that we
+throw out there and say "okay commons, go at it, you have it." That
+may actually foreclose any practical use of the commons.
+
+Similarly, in terms of transaction costs. The transaction costs of a
+property regime increase as the system gets more dynamic. As you have
+more degrees of flexibility, [there are] different ways to use the
+system, different mechanisms where you have people relaying each
+other's traffic, or cooperating and sharing -- some of the kinds of
+technologies that David Reed talked about. And in a property system,
+every time you do more flexibility, you need more transactions. You
+need to price, you need to decide, you need to have someone buying and
+selling. So that transaction cost grows.
+
+It doesn't scale. And actually the Kwerel and Williams paper
+inadvertently shows some of these transaction cost difficulties when
+they go through this laundry list of aspects that they would want to
+put into an auction. Things like combinatorial bidding. But they
+probably can't be done, just because the auction software isn't
+complex and sophisticated enough to support it today. And that's just
+in the initial allocations.
+
+On the other hand, commons creates this incentive for real-time
+decision-making, which was brought up a little bit before. Think about
+what happens in the Internet. Many experts like, for example, Bob
+Metcalfe, the inventor of Ethernet, thought the Internet would
+collapse. Why does the Internet not collapse? Because everyone has an
+incentive not to go to a court, and not to go to a government when
+someone is preventing their packet from getting from A to B. If their
+packet doesn't get from A to B, they have an incentive to route around
+it. The Internet treats these things as damage and routes around them.
+If we decentralize the decision-making process to the participants in
+the market in real time, as opposed to assuming that ahead of time
+they can decide what the value is and transact.
+
+So a commons that is failing one day may be successful tomorrow, as
+people route around problems. A commons doesn't just address the
+issues that we have today. It puts in place the facility to address
+the issues of tomorrow. And that's the kind of regime we should be
+looking for.
+
+[Applause]    (Editor's note: Doc wrote that, not me!)
+
+
+
+----------------------------------------------------------------------
+
+THE REAL MICHAEL POWELL:
+The FCC chairman is Al Gore in Republican clothing.
+
+(Originally published in Slate, February 19, 2003)
+
+
+When Michael Powell was named chairman of the Federal Communications
+Commission two years ago, Washington observers pegged him as an
+ideological right-winger. The image has stuck. Yet the real Michael
+Powell is something else entirely. He's an earnest technocrat, out of
+place in the politically calculating Bush administration. In approach,
+if not in style or politics, Powell is the closest thing to Al Gore in
+official Washington today.
+
+Granted, Powell's views are to the right of his predecessors, Reed
+Hundt and Bill Kennard. He talks more about eliminating regulatory
+requirements than about promoting fair competition and a diversity of
+market participants. (Disclosure: I served as counsel for New
+Technology Policy at the FCC during Hundt's and Kennard's terms.
+Powell was named a commissioner shortly before I left.) But Powell's
+not a fire-breathing conservative and shill for big business. Like
+Gore, he's a wonk with an abiding interest in policy minutiae and a
+deep faith in technology.
+
+Starting Feb. 20, Powell's FCC will adopt a series of rule changes
+that could reshape the telephone and media industries. To implement
+the 1996 Telecommunications Act, Powell's predecessors adopted rules
+that require local phone companies to share their networks with
+competitors. Powell wants to scrap some of those so-called
+"unbundling" requirements. As with most telecom policy battles, the
+details are obscure, but the winners and losers are not. "Baby Bell"
+phone companies like Verizon and SBC want to change the rules, and new
+local competitors like AT&T and broadband provider Covad want to keep
+them. Billions of dollars, and the fate of dozens of companies, hang
+in the balance.
+
+Powell is with the Baby Bells, but he's not really for them. The
+companies say they are itching to build wondrous new networks, but
+that doing so is counterproductive when their competitors can share
+the benefits. They promise that scaling back unbundling will spur new
+investment and help pull the telecom sector out of its doldrums.
+
+Contrary to popular belief, Powell doesn't buy this argument. Asked at
+a conference two weeks ago how he can trust the Baby Bells' promises,
+Powell responded, "I have one rule: I don't trust any companies." He
+explained that he was focused on the coming transition to digital
+broadband networks and on pushing "facilities-based" competition. In
+other words, Powell hopes competitors will build their own networks or
+employ new platforms such as wireless, cable, and Internet telephony
+(used by companies such as Vonage). He wants to allow the market to
+move toward the technological transformation he foresees. The Bells
+will benefit in the short run, but to Powell that's incidental.
+
+Powell's efforts hit a snag last week when his fellow Republican FCC
+commissioner, Kevin Martin, pushed an alternative plan. Opponents of
+Powell and the Baby Bells cheered, but the dust-up reinforces Powell's
+maverick status. Martin, who is politically well-connected to the
+White House, wants to give state regulators more power to interpret
+the unbundling rules. It's a classic conservative states' rights
+argument. Powell is the one pushing for an energetic federal policy.
+
+Since taking over at the FCC, Powell has shown that he's not a
+libertarian true believer, hell-bent on dismantling regulation. In
+October, the FCC blocked the proposed merger of direct broadcast
+satellite competitors DirecTV and EchoStar, claiming it would harm
+competition. It was the first time the FCC blocked a media deal in 30
+years. And Powell did it with gusto, acting before the Justice
+Department finished its review.
+
+Rather than push to scale back the agency, Powell has done the
+thankless work of reinventing it. He's beefed up the FCC's technical
+and economic expertise by instituting training programs and hiring
+more engineers in the past 18 months than the FCC hired over the
+previous 20 years. He pushes FCC lawyers to craft their analyses to
+hew closely to judicial and congressional mandates.
+
+The unbundling battle shows that Powell isn't protecting monopolies
+out of a belief that bigger is always better. He's looking to create a
+market where those monopolies will die if they don't respond
+aggressively to new kinds of competition. That's cold comfort to the
+companies who will suffer. And Powell may be wrong. Absent the current
+regulatory safeguards, the big players may indeed stomp out
+competition and raise prices. Correct or not, though, Powell is making
+a dramatic bet on new technology.
+
+He's made similar bets in other areas. A year ago Powell's FCC
+authorized ultra-wideband, a radical wireless technology that, because
+is uses extremely low power, can coexist with existing services such
+as cellular telephony and TV broadcasts. The military, public safety
+groups, and broadcasters had delayed its approval for years. Powell
+also convened a spectrum task force that recommended major changes in
+the way the FCC regulates the airwaves, including greater support for
+unlicensed wireless technologies like Wi-Fi.
+
+Michael Powell and Al Gore have one other thing in common besides
+their faith in the transforming effects of technology: Both are gadget
+lovers. Where Gore had a Blackberry wireless e-mail device, Powell has
+a Wi-Fi home wireless access point and TiVo digital video recorder.
+The latter toy got him in trouble at this year's Consumer Electronics
+Show, where Powell expressed his desire to swap shows with his sister.
+The major media companies, who see TiVo and its competitors as threats
+to their advertising revenues, were outraged.
+
+The TiVo incident shows one reason why Powell is so misunderstood: He
+says what he thinks. In a Washington dominated by message points and
+poll-driven agendas, honesty is perplexing. "Deregulation" has become
+a political code phrase to excite the faithful, like "tax relief."
+When Powell points out, as he often does, that no implementation of
+the scores of rules set out in the Telecommunications Act could
+possibly be considered deregulation, he is met with blank stares. His
+supporters hear what they want to hear. They should listen more
+closely, or they are in for some surprises.
+
+
+
+----------------------------------------------------------------------
+LINKS OF THE MONTH
+
+http://joi.ito.com/static/emergentdemocracy.html
+Joi Ito's emergent democracy paper
+
+http://werbach.com/blog/2003/02/21.html#a850
+My comments on the February 20 FCC unbundling decision
+
+http://shirky.com/writings/group_politics.html
+Clay Shirky on social software and the politics of groups
+
+http://www.alwayson-network.com/comments.php?id=246_0_2_0_C
+Great interview with Sony's CEO by Tony Perkins of Always On
+
+http://www.worldofends.com/
+World of Ends: What the Internet Is and How to Stop Mistaking It
+for Something Else, by Doc Searls and David Weinberger
+
+
+
+----------------------------------------------------------------------
+Please forward this email to others, and copy werblist@werbach.com;
+we will provide them with a subscription. To join or leave the list,
+visit http://two.pairlist.net/mailman/listinfo/werblist/ or send
+"subscribe" or "unsubscribe" to werblist-request@werbach.com.  Send
+your comments and feedback to kevin@werbach.com.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Werblist is licensed under the Creative Commons Attribution License.
+To view the license, visit http://creativecommons.org/licenses/by/1.0.
+

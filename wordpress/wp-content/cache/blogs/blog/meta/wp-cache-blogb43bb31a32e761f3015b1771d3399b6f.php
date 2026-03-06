@@ -1,0 +1,1 @@
+<?php die(); ?>{"headers":{"Vary":"Vary: Cookie","Content-Type":"Content-Type: text\/html; charset=UTF-8","Last-Modified":"Last-Modified: Sat, 15 Apr 2017 13:20:00 GMT"},"uri":"216.92.243.196\/?author=1","blog_id":1,"post":0,"key":"blog216.92.243.19680\/?author=1"}

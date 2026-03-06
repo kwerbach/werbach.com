@@ -1,0 +1,418 @@
+THE SUPERNOVA REPORT
+
+Provided by Kevin Werbach and pulver.com.
+
+April 29, 2004
+
+RE-SENDING OF THIS NEWSLETTER TO ANY NUMBER OF COLLEAGUES IS
+ENCOURAGED PROVIDED YOU CC: SUPERNOVA@PULVER.COM; IN RETURN, WE WILL
+PROVIDE RECIPIENTS WITH A SUBSCRIPTION. YOU CAN ALSO SEND "SUBSCRIBE
+SUPERNOVA" TO <LISTSERV@LISTSERV.PULVER.COM> TO SUBSCRIBE. ANY OTHER
+UNAUTHORIZED RE-DISTRIBUTION IS A VIOLATION OF COPYRIGHT LAW.
+----------------------------------------------------------------------
+
+
+Connectivity and decentralization are the twin themes of Supernova.
+These trends are unstoppable, and they are driving a wide range of
+social, economic, and technology industry developments. Don't take my
+word for it. Go check out MIT Business School professor Tom Malone's
+new book, The Future of Work, just published to rave reviews.  His
+thesis is that new technologies decentralize business organizations
+and empower individuals -- ideas that shouldn't sound new to any
+reader of this newsletter.
+
+Just because decentralization has many advantages, though, doesn't
+mean it's entirely beneficial. There are many downsides to more
+distributed and more heavily networked forms of organization. Perhaps
+the greatest of these is commoditization. If everyone is connected,
+everyone has the opportunity to benefit from shared platforms and
+shared knowledge... but it's difficult to sustain competitive
+advantage.  Similarly, power diffusing out to individuals sounds great
+if you're one of those individuals... but is considerably more scary
+if you're an executive or government used to exercising centralized
+control.
+
+This issue of the Supernova Report covers two examples of the tensions
+and conflicts that arise in a decentralizing world. The first involves
+the revolution spurred by voice over IP at the edge of telecom
+networks, challenging traditional business models. The US Federal
+Communications Commission is struggling to address the challenges this
+revolution poses. The second story involves intellectual property. We
+don't even have a common language to express what's happening as
+creative works are swept up into ubiquitous digital networks.
+
+Challenges on the road to a decentralized future are among the key
+high-level themes of this year's Supernova conference. We all love to
+focus on the positive potential of new technologies. With the upcoming
+Google IPO convincing many that "the Boom is Back," why examine the
+hard questions? Because now is the worst time to ignore them. If the
+tech and telecom recovery is going to have legs, we need to confront
+honestly the obstacles in our path and the speed bumps on the road to
+a better future. Of course, we can still do that in an upbeat,
+enjoyable atmosphere!
+
+Below your will find the draft agenda for Supernova 2004, now just two
+months away. I encourage you to visit the conference website at
+<http://www.supernova2004.com/> for more details, and to register
+while there is still space available.
+
+-k-
+Kevin Werbach
+
+
+----------------------------------------------------------------------
+In this Issue:
+
+- TELECOM: The FCC Muddies the VOIP Waters
+- SUPERNOVA SCHEDULE
+- MEDIA: The Evil Net?
+- LINKS OF THE MONTH
+----------------------------------------------------------------------
+
+
+TELECOM
+The FCC Muddies the VOIP Waters
+
+The FCC decided last week to reject AT&T's voice over IP (VOIP)
+petition.  AT&T argued that it shouldn't have to pay "access charges"
+to local phone companies for VOIP traffic riding on its network
+backbone.  The FCC disagreed.
+
+The decision is troubling, for several reasons.  The Commission would
+have been better off rolling these questions into its pending IP-
+enabled services rulemaking proceeding.  That's where the serious
+policy issues surrounding VOIP can be addressed in a forward-looking
+way.  Instead, the FCC took a detour, apparently angered by AT&T's
+unilateral action in withholding access charge payments.
+
+This isn't just a defeat for AT&T.  It's a dangerous development.
+
+The FCC's primary rationale was that the end-user service involved
+still looks like traditional telephony. Yet it's hard to see how the
+Commission can draw hard boundaries between services providing
+"enhanced functionality" and those that don't.  VOIP adds new
+flexibility among voice applications and services.  Starting down the
+path of distinguishing "real" and "fake" VOIP, even if justified as a
+policy matter, is going to put create all sorts of line-drawing
+difficulties.
+
+The FCC claimed it had to make this decision to provide certainty to
+the industry, and to eliminate incentives for regulatory arbitrage.
+Instead, it has created confusion and even more perverse incentives.
+The FCC explicitly refused to decide whether AT&T is retroactively
+liable for some $100 million in access charges it hasn't paid in the
+past.  And it hung its decision on the fact that AT&T offers no
+"enhanced functionality" to end users.  The first is simply an
+abdication of responsibility; the second reflects an unwillingness to
+acknowledge the flexible reality of voice as a data application.
+
+These steps are bound to produce the last thing the telecom industry
+needs right now: more litigation.  Instead of keeping the pressure on
+for what's really essential -- broad-based reform of inter-carrier
+compensation -- the FCC has ensured that companies will pour more
+resources into court battles, which will ultimately kick the issues
+back to the Commission.
+
+I understand where the FCC was coming from.  They see AT&T trying to
+game the system.  So they put their fingers in the dike to stop
+further leakage from the access charge reservoir.  But the pressure
+for a VOIP transition will only increase.  If it's just a matter of
+time before the current system collapses, the FCC should put its
+energy into figuring out the new system.  Rear-guard actions like this
+one will only make the transition more painful.
+
+
+----------------------------------------------------------------------
+SUPERNOVA SCHEDULE
+
+We're pleased to announce the draft schedule for Supernova 2004. The
+conference will once again bring together an extraordinary group of
+industry thought leaders, both on stage and in the audience.  We hope
+you can join us!  We'll be announcing panelists and other details
+soon.
+
+Please visit <http://www.supernova2004.com> for more details and
+registration information.
+
+
+THURSDAY, JUNE 24
+
+7:30am	REGISTRATION AND CONTINENTAL BREAKFAST
+
+8:30	INTRO BY KEVIN WERBACH - "Welcome to the Connected World"
+
+9:00	PERSPECTIVE: Clay Shirky (Shirky.com)
+
+9:30	PERSPECTIVE: Ray Ozzie (Groove Networks)
+
+9:45	PANEL: THE NETWORK IS PEOPLE
+While human beings are inherently social, the computer has
+traditionally been a solitary beast. No more.  Yet ten years into the
+commercial Internet era, with wireless connectivity and broadband
+links sprouting up everywhere, we're just starting to grapple with the
+new forms and practices of social software. Weblogs, social networking
+tools, and cameraphones are manifestations of the new people-centric
+digital ecology. How can the tools evolve to take into account the
+subtleties of human social behavior?  And are there viable business
+models for these early examples to grow into substantial market
+segments?
+
+10:30	BREAK
+
+11:00	PANEL: SYNDICATION NATION
+Syndication feeds allow users to aggregate and manipulate information
+from dozens or hundreds of content sources.  They have become a staple
+of the Weblog world and are increasingly conquering Web content. But
+is there more to syndication than reading 300 blogs at once? The
+growing number of entrepreneurs and investors working on syndication-
+based tools seem to think so. Where is syndication going, and what are
+the missing pieces for it to get there? Is syndication a shortcut to
+the Semantic Web, the vision of adding rich structure to the mass of
+information online?
+
+12:00pm	PERSPECTIVE: TBA
+
+12:30	LUNCH
+
+1:30-5:30   BREAKOUT SESSIONS
+
+5:30	GET CONNECTED RECEPTION
+An opportunity for conference participants, investors, and
+entrepreneurs, to connect one-on-one in a focused yet relaxed
+environment. A combination cocktail party, technology showcase, and
+networking reception.
+
+
+
+FRIDAY, JUNE 25
+
+7:30am	REGISTRATION AND CONTINENTAL BREAKFAST
+
+8:30	INTRODUCTION BY KEVIN WERBACH - "Tyranny of the Commodity?"
+
+8:45	PERSPECTIVE: Jonathan Schwartz (Sun Microsystems)
+
+9:15	PANEL: EXPLODING THE ENTERPRISE
+Business is increasingly distributed.  We work in shifting teams
+separated by organization boundaries and geography, in organizations
+increasingly dependent on independent contractors, telecommuters, and
+outsourcers. How can technology help rather than hinder those
+processes?  Will the grand visions of Web services and federated
+digital identity become realities? Can any vendor make money in an
+increasingly standards-based, commoditized marketplace? And what
+happens to the people involved as centralized organizations are blown
+apart?
+
+10:00	BREAK
+
+10:15	PERSPECTIVE: Niklas Zennstrom (Skype)
+
+10:30	PANEL: VOICE AS A DATA APPLICATION
+The trillion-dollar global telecommunications sector transforming into
+something much more like the computer industry.  The shift from voice-
+specific networks to voice applications running on top of broadband
+data networks will upset industry economics, create huge new business
+opportunities, and confound regulatory structures.  Below the
+waterline, issues of addressing, standards, and interconnection will
+play crucial and under-appreciated roles.  On the surface, new
+applications will be even more significant than cheaper pricing for
+plain old telephony.  But what are those applications?  What role will
+carriers, technology vendors, equipment manufacturers, and end-users
+play in defining them?  And will the new telecom industry be too
+competitive and too innovative for its own (economic) good?
+
+11:30	PANEL: DISRUPTIVE WIRELESS
+Wireless connectivity will be the backbone of the emerging pervasive
+Internet.  New technologies, unleashed by new approaches to spectrum
+policy, promise an explosion of wireless communications capacity
+unlike anything seen before.  Disruptive innovations in wireless range
+from low-power ad hoc sensor nets to ultra-wideband video streaming
+links to metropolitan-area data networks.  How real are these
+scenarios, and what regulatory or other roadblocks stand in their way?
+Are unlicensed technologies such as WiFi and WiMax a threat to the 3G
+vision of wireless operators, or the mobile phone industry's true
+future?  Will software radio and other innovations at the edges of
+networks shift the balance of power in the wireless world?
+
+12:30pm	LUNCH
+
+2:00	PERSPECTIVE: Larry Lessig (Stanford Law School)
+
+2:30	PANEL: TBA
+
+3:30	BREAK
+
+4:00	PANEL: BROADBAND LIFE: BRINGING IT ALL TOGETHER
+There are now more than 25 million high-speed Internet subscribers in
+the US.  Millions of customers in Asia enjoy broadband connections at
+10 megabits or greater.  Yet the promise of the broadband home as a
+networked hub for compelling media and computing experiences remains
+elusive.  What are the killer applications, devices, standards, and
+interfaces that will make broadband more than just a faster way to
+surf the Web?  And once it arrives, how will the broadband home shift
+industry dynamics and user behavior?
+
+5:00	ROUNDTABLE: CLOSING THE BACK-CHANNEL LOOP
+A group of experts will considered what we've learned over the past
+two days, and what new questions have been formed.  We will surface
+the interactive virtual communications channels that operate alongside
+the physical conference, adding richness to the community.
+
+6:00	CONFERENCE ENDS
+
+
+----------------------------------------------------------------------
+
+MEDIA
+Intellectual Property and the Evil Net
+
+The problem with the current debate over digital content protection
+isn't just the excessive restrictions certain industries want to
+impose.  It's that we don't even have a common language to discuss
+what's happening.  Case in point is a recent News.com story
+<http://news.com.com/2100-1034_3-5193926.html?tag=nefd.lede> on
+municipal broadband networks.  It featured the following quote from
+Rocky Anderson, Mayor of Salt Lake City, explaining his opposition to
+such networks:
+
+	"I just don't see the social good in using taxpayer money to
+	fund a network that provides more television and bandwidth for
+	illegally downloading files," he said. "We should spend money
+	on getting people fit, rather than deteriorating their quality
+	of life with higher bandwidth to surf the Net."
+
+This reminds me of the media coverage of the Internet around 1995.  A
+good percentage of the stories in mainstream newspapers and magazines
+focused on the dangers of online porn, privacy violations, and other
+threats the Net posed to truth and decency.  Sure, those are real
+issues.  But they were blown totally out of proportion.  The tenor of
+the coverage suggested that the Net was a cesspool of filth, with
+harms exceeding its benefits.
+
+I thought we were beyond that point.  But now we seem to be back to a
+similar discourse, with a twist.  The threat is that if you give
+people better connectivity, they'll use it to -- gasp -- share files!
+And no matter how many benefits broadband may provide, we can't afford
+to let that happen.
+
+Yes, downloading copyrighted music or movies that you don't have
+rights to constitutes copyright infringement.  But so does making a
+mix tape of a CD for your friends, or inviting a large group over to
+watch a football game through your satellite hookup.  We don't
+criticize government for building roads just because some people speed
+and others drive to adult video stores.
+
+The digital content discussion is increasingly polarized and
+criminalized.  It's infecting the very language we use, which in turn
+spurs further polarization.
+
+Take, for example, the recent press release issues by the Department
+of Justice <http://www.mi2n.com/press.php3?press_nb=65134>, announcing
+the creation of an Intellectual Property Task Force.  It's full of
+overheated rhetoric.  But the worse is the statement that
+"Intellectual property industries play a significant role in the
+American economy."
+
+What exactly is an "intellectual property industry?" More to the
+point, what isn't?  I doubt Wal-Mart would be very successful if
+others could copy its name in misleading ways, or could reprint its
+newspaper ads with higher prices.
+
+Of course, that's not what the press release is talking about.  The
+term is intended to redefine industries built around creative acts
+(like the music business) as industries based on exclusive
+formalizations of past creativity.  Larry Lessig and others have said
+this better than I can, but the point remains important.  Countless
+small rhetorical shifts have brought us to a point where the discourse
+around intellectual property is wildly foreign to our professed
+values.  Are our heros the pioneers who charted new territory... or
+the land speculators who came later?
+
+Yes, those who create digital goods are entitled to compensation, and
+stealing the songs on a CD has a similar effect to stealing the
+physical CD.  But the way this issue is being cast as a challenge to
+our way of life is just excessive and counter-productive.
+
+Digital distribution of media is the future.  There is simply no
+alternative.  No amount of threatening language will scare people
+enough to dissipate the profound business issues that transition
+raises.  We should be having a debate about how to balance the various
+interests of creators, distributors, and users of digital content.
+Instead we're caught up in rhetoric that only obscured the real
+issues.
+
+
+
+======================================================================
+----------------------------------------------------------------------
+
+S-U-P-E-R-N-O-V-A  2-0-0-4
+http://www.supernova2004.com/
+
+June 24-25, 2004
+Santa Clara, CA
+
+Get Connected at Supernova 2004! Supernova assembles today's leading
+innovators and up-and-coming stars in an intense networking
+environment. From social networking to WiFi, web services
+to voice over IP, digital identity to broadband media, Supernova
+brings to light the most compelling technologies and companies...
+before they hit the mainstream.
+
+Just some of our confirmed speakers include:
+
+* Jonathan Schwartz (President, Sun Microsystems)
+* Esther Dyson (Chairman, EDventure Holdings)
+* Michael Gallagher (Assistant Secretary of Commerce)
+* Clay Shirky (Shirky.com)
+* Shawn Hardin (SVP, AOL Broadband)
+* Mena Trott (Co-Founder, Six Apart)
+* Ray Ozzie (CEO, Groove Networks)
+* Halsey Minor (CEO, Grand Central)
+* Lawrence Lessig (Professor, Stanford Law School)
+* Niklas Zennstrom (CEO, Skype)
+
+Visit our Website for the full speaker list.  Save $300 by signing up
+before May 14 at <http://www.supernova2004.com/register.html>.
+
+----------------------------------------------------------------------
+======================================================================
+
+
+INTERESTING LINKS
+
+http://www.openpark.net/
+The Open Park Project, a new non-profit that this week launched the
+first free public outdoor wireless hostpot in Wahsington, DC. I'm a
+co-founder.
+
+http://tinyurl.com/3ha34
+Chicago Tribune article on open spectrum
+
+http://tinyurl.com/3x34r
+CNet acquires Esther Dyson's EDventure Holdings
+
+http://werbach.com/docs/wireless_future.ppt
+http://tinyurl.com/277ba
+Kevin's presentation at the Wireless Future conference last month in
+Austin, TX, and a near-verbatim transcript by Heath Row
+
+http://hraunfoss.fcc.gov/edocs_public/attachmatch/FCC-04-28A1.pdf
+FCC Notice of Proposed Rulemaking on voice over IP
+
+
+----------------------------------------------------------------------
+If you are aware of others who would like to receive the Supernova
+Report, please forward this email and copy supernova@pulver.com. To
+unsubscribe, please send "SIGNOFF SUPERNOVA" in the body of an email
+to listserv@listserv.pulver.com)
+
+Please send your comments and feedback regarding this issue of The
+Supernova Report to: kevin@supernova2004.com.
+
+Kevin Werbach               Tel. +1 (877) 803-7101
+April, 2004            http://pulver.com/supernova/
+
+----------------------------------------------------------------------
+(c) 2004 Kevin Werbach and pulver.com. All Rights Reserved
+======================================================================

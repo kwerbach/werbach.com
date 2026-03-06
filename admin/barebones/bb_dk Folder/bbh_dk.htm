@@ -1,0 +1,470 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>HTML - helt ind til benet</TITLE>
+
+</HEAD>
+
+<BODY>
+
+<P align=center>
+<CENTER><IMG src="blackbar.gif" alt="************************************************************"></P></CENTER>
+<H1 align=center><CENTER>HTML - helt ind til benet </CENTER></H1>
+
+<H2 align=center><CENTER>The Bare Bones Guide to HTML </CENTER>
+</H2>
+
+<P align=center>
+<CENTER><B>af Kevin Werbach<BR>
+</B>&lt;<A href="mailto:barebones@werbach.com">barebones@werbach.com</A>&gt;
+<BR>
+<B>Oversat til dansk af Werner Knudsen<BR>
+</B>&lt;<A href="mailto:wkn@mailhost.net">wkn@mailhost.net</A>&gt;
+<BR>
+<I>Version 2.0 -- December 27, 1995. Dansk version 10. juni 1996.
+<BR>
+</I>(Denne side er HTML-formatteret)</P> </CENTER>
+<P align=center>
+<CENTER><IMG src="blackbar.gif" alt="************************************************************"></P></CENTER>
+<H3><CENTER>Forfatterens forord </CENTER></H3>
+
+<P>
+Efter at jeg havde set adskillige &oslash;nsker om en &quot;quick-and-dirty&quot;
+beskrivelse af alle HTML tags besluttede jeg at udvide min egen
+oversigt til et s&aring;dant form&aring;l. Den nyeste version
+af beskrivelsen, p&aring; engelsk og adskillige andre sprog, kan
+findes p&aring; adressen &lt;<A HREF="http://werbach.com/barebones/">http://werbach.com/barebones/</A>&gt;.</P>
+
+<P>
+Denne oversigt fors&oslash;ger at v&aelig;re s&aring; kort og
+pr&aelig;cis som muligt, og g&aring;r derfor ikke i detaljer omkring
+brugen af de forskellige koder. Der findes adskillige skridt-for-skridt
+HTML-vejledninger p&aring; WWW - du kan finde links til mange
+af dem p&aring; adressen &lt;<A HREF="http://werbach.com/web/wwwhelp.html#guides">http://werbach.com/web/wwwhelp.html#guides</A>&gt;.</P>
+<P>
+I vejledningen finder du alle de markeringskoder som de nyeste
+versioner af de fleste browsere m&aring; formodes at genkende.
+Jeg har inkluderet stort set alle HTML 2.0 tags i denne version.
+Ogs&aring; de popul&aelig;re - men ikke standardiserede - Netscape
+udvidelser samt adskillige HTML 3.0 tags der nu er i almindelig
+brug er medtaget. Jeg har udeladt koder der er &quot;p&aring;
+vej ud&quot;, og enkelte koder, der kr&aelig;ver et kompliceret
+samspil med serveren. Husk, at sider der bruger ikke-standard
+koder (fx Netscapes) ikke kan forventes at blive vist optimalt
+af andre browsere.</P> 
+<P>
+Kommentarer og forslag er altid velkomne; Forfatteren kan n&aring;s
+med e-mail p&aring; &lt;<A href="mailto:barebones@werbach.com">barebones@werbach.com</A>&gt;.</P>
+<H3>Overs&aelig;tterens forord </H3>
+
+<P>
+Blandt de mange oversigter over HTML-koder jeg har set p&aring;
+WWW er Kevin Werbachs <EM>Bare Bones Guide</EM> den, der bedst
+kombinerer overskuelighed og kompakt form med en udt&oslash;mmende
+d&aelig;kning af sit valgte omr&aring;de. Det er derfor med gl&aelig;de,
+at jeg har oversat den, og jeg stiller hermed den danske udgave
+til fri afbenyttelse for ikke-kommerciel brug.</P> 
+<P>
+I denne danske udgave peger yderligere forklaringer af visse HTML-emner
+videre til en engelsksproget uddybning.</P> 
+<P>
+Kommentarer til den danske udgave kan sendes med e-mail til &lt;<A href="mailto:wkn@mailhost.net">wkn@mailhost.net</A>&gt;.</P>
+<H2><A NAME="contents">Indholdsfortegnelse</A> </H2>
+
+<OL>
+<LI><A href="bbi_dk.htm#thanks">&AElig;res den som &aelig;res b&oslash;r</A>
+<LI><A HREF="bbi_dk.htm#unique">Hvad er det s&aelig;rlige ved denne vejledning </A>
+<LI><A HREF="bbi_dk.htm#included">Hvilke HTML-koder er medtaget</A>
+<LI><A HREF="bbi_dk.htm#formatting">Hvordan er denne vejledning formatteret</A>
+(incl. en beskrivelse af symboler og forkortelser)
+<LI><A HREF="#general">Liste af HTML-koder</A> 
+<UL>
+<LI><A HREF="#general">generelt</A> 
+<LI><A HREF="#structure">definition af struktur</A> 
+<LI><A HREF="#presentation">definition af pr&aelig;sentation</A>
+
+<LI><A HREF="#links">referencer og billeder</A> 
+<LI><A HREF="#dividers">adskillelser</A> 
+<LI><A HREF="#lists">lister</A> 
+<LI><A HREF="#color">baggrund og farver</A> 
+<LI><A HREF="#special">specialtegn</A> 
+<LI><A href="#forms">formularer (forms)</A> 
+<LI><A HREF="#tables">tabeller</A> 
+<LI><A href="#frames">rammer (frames)</A> 
+<LI><A HREF="#misc">diverse</A> 
+</UL>
+
+<LI><A HREF="bbi_dk.htm#version">Versionshistorik</A> <BR>
+
+</OL>
+
+<P>
+<STRONG>Vigtigt:</STRONG> Hvis du ikke er sikker p&aring; forskellen
+mellem HTML 2.0, HTML 3.0, and Netscape markeringer, foresl&aring;r
+jeg at du l&aelig;ser mine kommentarer om <A href="barebone_annotation.html#HTML">udviklingen af HTML</A>.</P>
+
+<P>
+<A NAME="general"><B>Generelt <I>(alle HTML dokumenter b&oslash;r
+have disse)</I></B></A>
+<PRE>
+Dokument-type &lt;HTML&gt;&lt;/HTML&gt; (Starter og slutter filen)
+Titel &lt;TITLE&gt;&lt;/TITLE&gt; (Skal v&aelig;re i hovedet)
+Hoved &lt;HEAD&gt;&lt;/HEAD&gt; (Beskrivende info, fx titel)
+Krop &lt;BODY&gt;&lt;/BODY&gt; (Sidens indhold) 
+ 
+
+
+
+
+
+
+</FONT>
+</PRE>
+
+<P>
+<A NAME="structure"><B><FONT SIZE=5>Definition af struktur </FONT><I>(udseende
+styres af browserens indstilinger)</I></B></A>
+<PRE>
+Overskrift &lt;H?&gt;&lt;/H?&gt; (der findes 6 niveauer)
+3.0 Juster overskrift <A HREF="barebone_annotation.html#align">&lt;H? ALIGN=LEFT|CENTER|RIGHT&gt;&lt;/H?&gt;</A> 
+3.0 Adskillelse &lt;DIV&gt;&lt;/DIV&gt; 
+3.0 Juster adskillelse &lt;DIV ALIGN=LEFT|RIGHT|CENTER|JUSTIFY&gt;&lt;/DIV&gt; 
+    Blok-citat <A HREF="barebone_annotation.html#blockquote">&lt;BLOCKQUOTE&gt;&lt;/BLOCKQUOTE&gt;</A> (normalt indrykket)
+    Fremh&aelig;vet &lt;EM&gt;&lt;/EM&gt; (normalt kursiveret)
+    St&aelig;rkt fremh&aelig;vet &lt;STRONG&gt;&lt;/STRONG&gt; (normalt fed skrift)
+    Citat &lt;CITE&gt;&lt;/CITE&gt; (normalt kursiveret)
+    Kode &lt;CODE&gt;&lt;/CODE&gt; (til listning af kildetekster)
+    Uddata-eksempel &lt;SAMP&gt;&lt;/SAMP&gt; 
+    Tastatur-inddata &lt;KBD&gt;&lt;/KBD&gt; 
+    Variable &lt;VAR&gt;&lt;/VAR&gt; 
+    Definition &lt;DFN&gt;&lt;/DFN&gt; (bruges sj&aelig;ldent)
+    Forfatters Adresse &lt;ADDRESS&gt;&lt;/ADDRESS&gt; 
+3.0 Stor skrift &lt;BIG&gt;&lt;/BIG&gt; 
+3.0 Lille skrift &lt;SMALL&gt;&lt;/SMALL&gt; 
+ 
+
+
+
+
+
+
+</FONT>
+</PRE>
+
+<P>
+<A NAME="presentation"><B><FONT SIZE=5>Definition af pr&aelig;sentation</FONT><I>
+(forfatteren beskriver tekstens udseende)</I></B></A>
+<PRE>
+      Fed &lt;B&gt;&lt;/B&gt; 
+      Kursiv &lt;I&gt;&lt;/I&gt; 
+3.0   Understreget &lt;U&gt;&lt;/U&gt; (ikke udbredt)
+3.0   Gennemstreget &lt;S&gt;&lt;/S&gt; (ikke udbredt)
+3.0   S&aelig;nket &lt;SUB&gt;&lt;/SUB&gt; 
+3.0   H&aelig;vet &lt;SUP&gt;&lt;/SUP&gt; 
+      Skrivemaskine &lt;TT&gt;&lt;/TT&gt; (vises som monospace skrift)
+      Pr&aelig;formatteret &lt;PRE&gt;&lt;/PRE&gt; (viser blanke mm som de er)
+      Bredde &lt;PRE WIDTH=?&gt;&lt;/PRE&gt; (i tegn)
+N1.0+ Center <A HREF="barebone_annotation.html#align">&lt;CENTER&gt;&lt;/CENTER&gt;</A> (for b&aring;de tekst og billeder)
+N1.0  Blinkende &lt;BLINK&gt;&lt;/BLINK&gt; (den mest misbrugte markering)
+N1.0  Skriftst&oslash;rrelse &lt;FONT SIZE=?&gt;&lt;/FONT&gt; (fra 1 til 7)
+N1.0  Skift skriftst&oslash;rrelse &lt;FONT SIZE=+|-?&gt;&lt;/FONT&gt; 
+N1.0  Basal skriftst&oslash;rrelse &lt;BASEFONT SIZE=?&gt; (fra 1-7; default er 3)
+N2.0  Skriftfarve &lt;FONT COLOR=&quot;#$$$$$$&quot;&gt;&lt;/FONT&gt; 
+ 
+
+
+
+
+
+
+</FONT>
+</PRE>
+
+<P>
+<A NAME="links"><B><FONT SIZE=5>Referencer og billeder</FONT></B></A>
+<PRE>
+     Reference &lt;A HREF=&quot;URL&quot;&gt;&lt;/A&gt; 
+     Ref. til m&aring;l &lt;A HREF=&quot;URL#***&quot;&gt;&lt;/A&gt; (i et andet dokument)
+     &lt;A HREF=&quot;#***&quot;&gt;&lt;/A&gt; (i det samme dokument) 
+N2.0 M&aring;l-vindue &lt;A HREF=&quot;URL&quot; TARGET=&quot;***&quot;&gt;&lt;/A&gt; 
+     Definer m&aring;l &lt;A NAME=&quot;***&quot;&gt;&lt;/A&gt; 
+     Vis billede &lt;IMG SRC=&quot;URL&quot;&gt; 
+     Justering &lt;IMG SRC=&quot;URL&quot; ALIGN=TOP|BOTTOM|MIDDLE&gt; 
+N1.0 Justering &lt;IMG SRC=&quot;URL&quot; ALIGN=LEFT|RIGHT|TEXTTOP| 
+                ABSMIDDLE|BASELINE|ABSBOTTOM&gt; 
+     Alternativ tekst &lt;IMG SRC=&quot;URL&quot; ALT=&quot;***&quot;&gt; (hvis billedet ikke vises)
+     Imagemap &lt;IMG SRC=&quot;URL&quot; ISMAP&gt; (kr&aelig;ver et script)
+N2.0 Imagemap &lt;IMG SRC=&quot;URL&quot; USEMAP=&quot;URL&quot;&gt; 
+N2.0 Map &lt;MAP NAME=&quot;***&quot;&gt;&lt;/MAP&gt; (beskriver imagemappen)
+N2.0 Sektion &lt;AREA SHAPE=&quot;RECT&quot; COORDS=&quot;,,,&quot; HREF=&quot;URL&quot;|NOHREF&gt; 
+3.0  Dimensioner &lt;IMG SRC=&quot;URL&quot; WIDTH=&quot;?&quot; HEIGHT=&quot;?&quot;&gt; (in pixels)
+N1.0 Omrids &lt;IMG SRC=&quot;URL&quot; BORDER=?&gt; (in pixels)
+N1.0 Omgivende luft &lt;IMG SRC=&quot;URL&quot; HSPACE=? VSPACE=?&gt; (i pixels)
+N1.0 Lav-opl&oslash;snings-billede &lt;IMG SRC=&quot;URL&quot; LOWSRC=&quot;URL&quot;&gt; Vises f&oslash;r det egentlige billede
+N1.1 Client Pull &lt;META HTTP-EQUIV=&quot;Refresh&quot; CONTENT=&quot;?; URL=URL&quot;&gt; Skift til anden side
+N2.0 Indlejret Objekt &lt;EMBED SRC=&quot;URL&quot;&gt; (inds&aelig;t objekt p&aring; siden)
+N2.0 Objekt-st&oslash;rrelse &lt;EMBED SRC=&quot;URL&quot; WIDTH=&quot;?&quot; HEIGHT=&quot;?&quot;&gt; 
+ 
+
+
+
+
+
+
+</FONT>
+</PRE>
+
+<P>
+<A NAME="dividers"><B><FONT SIZE=5>Adskillelser</FONT></B></A>
+<PRE>
+     Afsnit <A HREF="barebone_annotation.html#paragraph">&lt;P&gt;</A> (Normalt 2 x linieskift)
+3.0  Afsnit <A HREF="barebone_annotation.html#paragraph">&lt;P&gt;&lt;/P&gt;</A> (Omkranser afsnitstekst)
+3.0  Juster tekst <A HREF="barebone_annotation.html#align">&lt;P ALIGN=LEFT|CENTER|RIGHT&gt;&lt;/P&gt;</A> 
+     Ny linie &lt;BR&gt; (1 linieskift)
+N1.0 Afbryd flydende tekst &lt;BR CLEAR=LEFT|RIGHT|ALL&gt; 
+     Vandret linie &lt;HR&gt; 
+N1.0 Justering &lt;HR ALIGN=LEFT|RIGHT|CENTER&gt; 
+N1.0 Tykkelse &lt;HR SIZE=?&gt; (i pixels)
+N1.0 Bredde &lt;HR WIDTH=?&gt; (i pixels)
+N1.0 Bredde i % &lt;HR WIDTH=%&gt; (som procent af sidebredde)
+N1.0 Solid Linie &lt;HR NOSHADE&gt; (without the 3D cutout look)
+N1.0 Intet brud &lt;NOBR&gt;&lt;/NOBR&gt; (forhindrer brud p&aring; linie)
+N1.0 Ord-brud &lt;WBR&gt; (hvor skal en linie evt. brydes) 
+ 
+
+
+
+
+
+
+
+
+</FONT>
+</PRE>
+
+<P>
+<A NAME="lists"><B><FONT SIZE=5>Lister </FONT><I>(lister kan indeholde
+lister)</I> </B></A>
+<PRE>
+     Uordnet liste &lt;UL&gt;&lt;LI&gt;&lt;/UL&gt; (&lt;LI&gt; f&oslash;r hvert punkt i listen) 
+N1.0 Type p&aring; punkttegn &lt;UL TYPE=DISC|CIRCLE|SQUARE&gt; (for hele listen) 
+                       &lt;LI TYPE=DISC|CIRCLE|SQUARE&gt; (denne &amp; f&oslash;lgende) 
+     Ordnet liste &lt;OL&gt;&lt;LI&gt;&lt;/OL&gt; (&lt;LI&gt; f&oslash;r hvert listepunkt) 
+N1.0 Nummereringstype &lt;OL TYPE=A|a|I|i|1&gt; (for hele listen) 
+                      &lt;LI TYPE=A|a|I|i|1&gt; (denne &amp; f&oslash;lgende) 
+N1.0 Start-nummer &lt;OL VALUE=?&gt; (for hele listen) 
+                  &lt;LI VALUE=?&gt; denne &amp; f&oslash;lgende) 
+     Definitionsliste &lt;DL&gt;&lt;DT&gt;&lt;DD&gt;&lt;/DL&gt; (&lt;DT&gt;=term, &lt;DD&gt;=definition) 
+     Menu-liste &lt;MENU&gt;&lt;LI&gt;&lt;/MENU&gt; (&lt;LI&gt; f&oslash;r hvert listepunkt) 
+     Oversigtsliste &lt;DIR&gt;&lt;LI&gt;&lt;/DIR&gt; (&lt;LI&gt; f&oslash;r hvert listepunkt) 
+ 
+
+
+
+
+
+
+
+
+</FONT>
+</PRE>
+
+<P>
+<A NAME="color"><B><FONT SIZE=5>Baggrund og farver</FONT></B></A>
+<PRE>
+3.0   Fliselagt baggrund &lt;BODY BACKGROUND=&quot;URL&quot;&gt; 
+N1.1+ Baggrundsfarve <A href="barebone_annotation.html#color">&lt;BODY BGCOLOR=&quot;#$$$$$$&quot;&gt;</A> (I r&aelig;kkef&oslash;lgen r&oslash;d/gr&oslash;n/bl&aring;)
+N1.1+ Tekstfarve <A href="barebone_annotation.html#color">&lt;BODY TEXT=&quot;#$$$$$$&quot;&gt;</A> 
+N1.1+ Linkfarve <A href="barebone_annotation.html#color">&lt;BODY LINK=&quot;#$$$$$$&quot;&gt;</A> 
+N1.1+ Bes&oslash;gte links <A href="barebone_annotation.html#color">&lt;BODY VLINK=&quot;#$$$$$$&quot;&gt;</A> 
+N1.1  Aktive links <A href="barebone_annotation.html#color">&lt;BODY ALINK=&quot;#$$$$$$&quot;&gt;</A> 
+
+</FONT>
+</PRE>
+
+<P>
+(Mere information fra &lt;<A HREF="http://werbach.com/web/wwwhelp.html#color">http://werbach.com/web/wwwhelp.html#color</A>&gt;)
+<PRE>
+ 
+
+
+
+
+
+
+</FONT>
+</PRE>
+
+<P>
+<A NAME="special"><B><FONT SIZE=5>Specialtegn </FONT><I>(store/sm&aring;
+bogstaver har betydning)</I></B></A>
+<PRE>
+Specialtegn &amp;#?; hvor ? er ISO 8859-1 koden)
+      &aelig;, &AElig;        &amp;aelig;, &amp;AElig; 
+      &oslash;, &Oslash;        &amp;oslash;, &amp;Oslash; 
+      &aring;, &Aring;        &amp;aring;, &amp;Aring; 
+      &lt;           &amp;lt; 
+      &gt;           &amp;gt; 
+      &amp;           &amp;amp; 
+      &quot;           &amp;quot; 
+      Registreret varem&aelig;rke &amp;#174; 
+N1.0+ Registreret varem&aelig;rke &amp;reg; 
+      Copyright &amp;#169; 
+N1.0+ Copyright &amp;copy; 
+
+</FONT>
+</PRE>
+
+<P>
+(Se fuldst&aelig;ndig oversigt p&aring; &lt;<A HREF="http://www.uni-passau.de/%7Eramsch/iso8859-1.html">http://www.uni-passau.de/%7Eramsch/iso8859-1.html</A>&gt;)
+<PRE>
+ 
+
+
+
+
+
+
+</FONT>
+</PRE>
+
+<P>
+<A NAME="forms"><B><FONT SIZE=5>Formularer (forms) </FONT><I>(kr&aelig;ver
+normalt et script p&aring; din server)</I></B></A>
+<PRE>
+     Definer formular &lt;FORM ACTION=&quot;URL&quot; METHOD=GET|POST&gt;&lt;/FORM&gt; 
+N2.0 Fil upload &lt;FORM ENCTYPE=&quot;multipart/form-data&gt;&lt;/FORM&gt; 
+     Inddateringsfelt &lt;INPUT TYPE=&quot;TEXT|PASSWORD|CHECKBOX| 
+                             RADIO|IMAGE|HIDDEN|SUBMIT|RESET&quot;&gt; 
+     Feltnavn &lt;INPUT NAME=&quot;***&quot;&gt; 
+     Feltv&aelig;rdi &lt;INPUT VALUE=&quot;***&quot;&gt; 
+     Checket? &lt;INPUT CHECKED&gt; (check-bokse og radio-bokse)
+     Feltl&aelig;ngde &lt;INPUT SIZE=?&gt; (i tegn)
+     Max l&aelig;ngde &lt;INPUT MAXLENGTH=?&gt; (i tegn)
+     Valgliste &lt;SELECT&gt;&lt;/SELECT&gt; 
+     Navn p&aring; liste &lt;SELECT NAME=&quot;***&quot;&gt;&lt;/SELECT&gt; 
+     Antal valg &lt;SELECT SIZE=?&gt;&lt;/SELECT&gt; 
+     Flere valg &lt;SELECT MULTIPLE&gt; (kan v&aelig;lge mere end en)
+     Valg &lt;OPTION&gt; (punkter der kan v&aelig;lges)
+     Default valg &lt;OPTION SELECTED&gt; 
+     Inddata boks-st&oslash;rrelse &lt;TEXTAREA ROWS=? COLS=?&gt;&lt;/TEXTAREA&gt; 
+     Navn p&aring; boks &lt;TEXTAREA NAME=&quot;***&quot;&gt;&lt;/TEXTAREA&gt; 
+N2.0 Ombryd tekst &lt;TEXTAREA WRAP=OFF|VIRTUAL|PHYSICAL&gt;&lt;/TEXTAREA&gt; 
+ 
+
+
+
+
+
+
+</FONT>
+</PRE>
+
+<P>
+<A NAME="tables"><B><FONT SIZE=5>Tabeller</FONT></B></A>
+<PRE>
+3.0  Definer tabel <A HREF="barebone_annotation.html#tables">&lt;TABLE&gt;&lt;/TABLE&gt;</A> 
+3.0  Tabel-omrids &lt;TABLE BORDER&gt;&lt;/TABLE&gt; (ja eller nej)
+N1.1 Tabel-omrids &lt;TABLE BORDER=?&gt;&lt;/TABLE&gt; (definer tykkelsen)
+N1.1 Luft mellem celler &lt;TABLE CELLSPACING=?&gt; 
+N1.1 Luft i celle &lt;TABLE CELLPADDING=?&gt; 
+N1.1 &Oslash;nsket bredde &lt;TABLE WIDTH=?&gt; (i pixels)
+N1.1 Bredde i procent &lt;TABLE WIDTH=%&gt; (procent af siden)
+3.0  Tabel-r&aelig;kke &lt;TR&gt;&lt;/TR&gt; 
+3.0  Justering &lt;TR ALIGN=LEFT|RIGHT|CENTER
+                   VALIGN=TOP|MIDDLE|BOTTOM&gt; 
+3.0  Tabel-celle &lt;TD&gt;&lt;/TD&gt; (skal st&aring; i en tabel-r&aelig;kke)
+3.0  Justering &lt;TD ALIGN=LEFT|RIGHT|CENTER 
+                   VALIGN=TOP|MIDDLE|BOTTOM&gt; 
+3.0  Uden liniebrud &lt;TD NOWRAP&gt; 
+3.0  Sp&aelig;nd over s&oslash;jler &lt;TD COLSPAN=?&gt; 
+3.0  Sp&aelig;nd over r&aelig;kker &lt;TD ROWSPAN=?&gt; 
+N1.1 &Oslash;nsket bredde &lt;TD WIDTH=?&gt; (i pixels)
+N1.1 Bredde procent &lt;TD WIDTH=%&gt; (procent af tabellen)
+3.0  Tabel-hoved &lt;TH&gt;&lt;/TH&gt; (som data, men fed og centreret)
+3.0  Justering &lt;TH ALIGN=LEFT|RIGHT|CENTER
+                   VALIGN=TOP|MIDDLE|BOTTOM&gt; 
+3.0  Uden liniebrud &lt;TH NOWRAP&gt; 
+3.0  Sp&aelig;nd over s&oslash;jler &lt;TH COLSPAN=?&gt; 
+3.0  Sp&aelig;nd over r&aelig;kker &lt;TH ROWSPAN=?&gt; 
+N1.1 &Oslash;nsket bredde &lt;TH WIDTH=?&gt; (i pixels)
+N1.1 Bredde procent &lt;TH WIDTH=%&gt; (procent af tabellen)
+3.0  Tabel-titel &lt;CAPTION&gt;&lt;/CAPTION&gt; 
+3.0  Justering &lt;CAPTION ALIGN=TOP|BOTTOM&gt; (over/under tabellen) 
+ 
+
+
+
+
+
+
+</FONT>
+</PRE>
+
+<P>
+<A NAME="frames"><B><FONT SIZE=5>Rammer (frames) </FONT><I>(definer
+og manipuler specifikke dele af sk&aelig;rmen)</I></B></A>
+<PRE>
+N2.0 Ramme-dokument &lt;FRAMESET&gt;&lt;/FRAMESET&gt; (i stedet for &lt;BODY&gt;)
+N2.0 R&aelig;kkeh&oslash;jde &lt;FRAMESET ROWS=,,,&gt;&lt;/FRAMESET&gt; (pixels or %)
+N2.0 R&aelig;kkeh&oslash;jde &lt;FRAMESET ROWS=*&gt;&lt;/FRAMESET&gt; (* = relativ st&oslash;rrelse)
+N2.0 S&oslash;jlebredde &lt;FRAMESET COLS=,,,&gt;&lt;/FRAMESET&gt; (pixels eller %)
+N2.0 S&oslash;jlebredde &lt;FRAMESET COLS=*&gt;&lt;/FRAMESET&gt; (* = relativ st&oslash;rrelse)
+N2.0 Definer ramme &lt;FRAME&gt; (indhold af en enkelt ramme)
+N2.0 vis dokument &lt;FRAME SRC=&quot;URL&quot;&gt; 
+N2.0 Rammenavn &lt;FRAME NAME=&quot;***&quot;|_blank|_self|_parent|_top&gt; 
+N2.0 Margin-bredde &lt;FRAME MARGINWIDTH=?&gt; (venstre og h&oslash;jre margin)
+N2.0 Margin-h&oslash;jde &lt;FRAME MARGINHEIGHT=?&gt; (top og bund margin)
+N2.0 Rulleskakt? &lt;FRAME SCROLLING=&quot;YES|NO|AUTO&quot;&gt; 
+N2.0 Fast st&oslash;rrelse &lt;FRAME NORESIZE&gt; 
+N2.0 Indhold uden ramme &lt;NOFRAMES&gt;&lt;/NOFRAMES&gt; (for ikke-frames browsere) 
+ 
+
+
+
+
+
+
+</FONT>
+</PRE>
+
+<P>
+<A NAME="misc"><B><FONT SIZE=5>Diverse</FONT></B></A>
+<PRE>
+     Kommentar &lt;!-- *** --&gt; (vises ikke af browseren)
+     Prolog <A HREF="barebone_annotation.html#prologue">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;</A> 
+3.0  Prolog <A HREF="barebone_annotation.html#prologue">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3O//DTD W3 HTML 3.0//EN&quot;&gt;</A> 
+     S&oslash;gbar &lt;ISINDEX&gt; (indikerer et s&oslash;gbart index)
+N1.0 Prompt &lt;ISINDEX PROMPT=&quot;***&quot;&gt; (tekst der prompter for inddata)
+     Send s&oslash;gning &lt;A HREF=&quot;URL?***&quot;&gt;&lt;/a&gt; (brug et rigtigt sp&oslash;rsm&aring;lstegn)
+     URL af denne side &lt;BASE HREF=&quot;URL&quot;&gt; (skal v&aelig;re i hovedet)
+N2.0 Basis vindue navn &lt;BASE TARGET=&quot;***&quot;&gt; (skal v&aelig;re i hovedet)
+     Relation &lt;LINK REV=&quot;***&quot; REL=&quot;***&quot; HREF=&quot;URL&quot;&gt; (in hovedet)
+     Meta-information &lt;META&gt; (skal v&aelig;re i hovedet) 
+ 
+
+
+
+
+
+
+
+
+</FONT>
+</PRE>
+
+<P>
+Copyright &copy; 1995-1997 <A HREF="mailto:barebones@werbach.com">Kevin Werbach</A>.
+Dansk overs&aelig;ttelse copyright &copy; 1996 <A HREF="mailto:wkn@mailhost.net">Werner Knudsen</A>.
+Ikke-kommerciel distribution er tilladt. Denne vejledning er ikke
+et produkt af <A HREF="http://www.barebones.com">Bare Bones Software</A>,
+sk&oslash;nt den distribueres med nogle versioner af BBEdit text
+editor; navneligheden er tilf&aelig;ldig. 
+<P>
+<CENTER><A HREF="#contents">Indhold</A> | <A HREF="#general">Liste af koder</A>
+| <A HREF="bbt_dk.txt">Tekstversion</A> | <A href="../home.html">Kevin's Home Page</A>
+</CENTER>
+</BODY>
+
+</HTML>

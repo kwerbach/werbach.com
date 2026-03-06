@@ -1,0 +1,264 @@
+<HTML>
+<HEAD>
+<TITLE>La Gu&iacute;a Bare Bones al HTML: Notas
+</TITLE>
+</HEAD>
+<BODY>
+
+<hr>
+<p>
+<a name="HTML"><h2>El desarrollo del HTML </h2></a>
+</p>
+
+<p>HTML es el lenguaje de marcas que se usa para crear documentos del 
+World Wide Web. Aunque las especificaciones oficiales del HTML se han 
+estado desarroyando durante alg&uacute;n tiempo, los visores de Web 
+pueder reconocer marcas especializadas que no se incluyen en las 
+especificaciones. Cuando la mayor&iacute;a de los usuarios piden una 
+lista de "Todas las marcas de Hipertexto"; generalmente lo que quieren 
+saber es cuales marcas pueden inclu&iacute;r en sus p&aacute;ginas del 
+WWW con una seguridad razonable de que la gente que visite estas 
+p&aacute;ginas ver&aacute;n lo que el autor quiere.
+pages will see what the author wants.  <em>La Gu&iacute;a  Bare Bones 
+al HTML</em> est&aacute; dise&ntilde;ada para cubrir esta 
+nbecesidad. He intentado incluri todas las marcas soportadas por los 
+visores m&aacute;s importantes de lactualidad, pero hay algunas 
+inconveniencias que hacen de esto un proceso inherentemente impreciso.</p>
+
+<p>
+La organizaci&oacute;n que se encarga de dictar los est&aacute;ndares 
+oficiales para el HTML  es el
+<a href="http://www.w3.org/">World Wide Web Consortium</a> (W3C),
+que est&aacute; afiliado con el 
+<a href="http://www.ietf.org/">Equipo de Ingenier&iacute;a del 
+Internet (Internet
+Engineering Task Force) </a> (IETF). El W3C ha sacado varias versiones de 
+la especificacion HTML, incluyendo HTML 2.0, HTML 3.0 y mas recientemente 
+HTML 3.2. Al mismo tiempo, de cualquier manera los productores de 
+Browsers, tales como Netscape y mircrosoft, han desarrollado 
+frecuentemente sus propias "extensiones" al HTML fuera del proceso de 
+est&aacute;ndares y las han incorporado a sus browsers. En algunos casos, 
+tal como la marca &lt;CENTER&gt; de Netscape, se han convertido 
+est&aacute;s <i>de facto</i> adoptados por otros productores de browsers,
+</p>
+
+<p>El <a href="http://www.w3.org/pub/WWW/MarkUp/html-spec/">HTML
+2.0</a>,que codificaba el estado actual de HTML hasta Junio de 1994, es 
+el est&aacute;ndar base que todos los browsers de hoy __ incluyendo los 
+browsers basados en texto -- deben soportar. El HTML 2.0 refleja la 
+concepci&oacute;n original del HTML como un lenguaje de marcas 
+independiente de dispositivos para mostrar informaci&oacute;n en vez 
+de especificar exactamente como las paginas se deben mostrar. Si 
+quieres estas seguro de que todos los usuarios seran capaces de ver 
+todo lo que est&eacute; en tus p&aacute;ginas, use solamente marcas 
+de HTML 2.0.
+</p>
+
+<p>El <a
+href="http://www.w3.org/pub/WWW/MarkUp/html3/">borrador de HTML 3.0
+draft</a>, publicado en 1995, intent&oacute; incrementar sobre 
+HTML2.0 con adici&oacute;n de funciones tales como tablas y mayor 
+control del flujo de texto alrededor de las gr&aacute;ficas. Aun 
+que algunas de las funciones de HYTML 3.0 han sido ampliamente 
+adoptadas por los desarrolladores de browsers, muchas no lo han 
+sido. En algunos casos aproximaciones alternativas han sido implementadas 
+por desarrolladores de browsers se han diseminado m&aacute;s que las 
+marcas &quot;officiales&quot; El borrador HTML 3.0 ha expirado y no es 
+por tanto un est&aacute;ndar oficial.
+</p>
+
+<p>En mayo de 1996, el W3C public&oacute; el  <a
+href="http://www.w3.org/pub/WWW/MarkUp/Wilbur/">borrador de HTML 3.2
+</a>, que estaba dise&ntilde;ado para reflejar y estandarizar las 
+pr&aacute;cticas generalmente aceptadas. Por tanto, HTML 3.2 incluye 
+las marcas de HTML 3.0 que fueron adoptadas por desarrolladores de 
+browsers tales como Netscape y Microsoft, asi como las extensiones al 
+HTML m&aacute;s diseminadas.  En su  <a
+href="http://www.w3.org/pub/WWW/MarkUp/Activity">Declaraci&oacute;n 
+respecto al HTML </a>, el W3C recomienda que los proveedores de 
+informacion usen la especificaci&oacute;n de HTML 3.2. Es por esto 
+que la version 3.0 de la gu&iacute;a Bare Bones al HTML incluye 
+todas las marcas de HTML 3.2. Las versiones actuales de los 
+browsers deben soportar todas, o virtualmente todas estas marcas.
+</p>
+
+<p>Adem&aacute;s hay algunas extensiones de Netscape y Microsoft al 
+HTML que no son partes del borrador de HTML 3.2, ya sea porque casi no 
+se usan o porque fueron implementadas despu&eacute;s de que la 
+especificaci&oacute;n fue escrita. Debido a que Netscape Navigator 
+estaba entre los browsers que soportaban ciertas funciones del HTML 3.0 
+ y Netscape controla casi el 70% del mercado de browsers, mucha gente 
+erroneamente cree que todas las extensiones de Netscape (incluyendo 
+marcas tales como &lt;BLINK&gt; y funciones tales como Frames) son partes 
+de HTML 3.0 o HTML 3.2.
+</P>
+
+<p>Al decidir si usar cualquiera de las marcas listadas como extensiones 
+de Netscape o Microsoft, recuerde que la gente que usa otros browsers no 
+veran sus p&aacute;ginas reproducidas en la forma que lo desee. 
+Deber&aacute; tambi&eacute;n tomar en cuenta que no hay garant&iacute; de 
+que las marcas no estandares ser&aacute;n soportadas en browsers futuros. 
+Asi que depende de usted si usa marcas de Netscape o Microsoft. Mucha 
+gente tiene sentimientos fuertes acerca de si se deben o no se deben usar 
+marcas que no son parte del est&aacute;ndar oficial HTML. Mi punto de 
+vista es que mientras tu entiendas la diferencia, deberias hacer lo que 
+funcione mejor para t&iacute; y tu p&uacute;blico. La Gu&iacute;a 
+Barebones no es una especificaci&oacute;n oficial pero deber&aacute; 
+darte una idea de que marcas est&aacute;n ampliamente implementadas y a 
+que est&aacute;ndar se apegan.
+</P>
+
+<p align=center>
+<a href="barebones_espanol.html">Regresar a la Gu&iacute;a</a>
+</p> 
+
+
+<hr>
+<br>
+<a name="prologue"><h2>Pr&oacute;logo</h2></a>
+
+<p>El art&iacute;culo de pr&oacute;logo debe ir al principio de tu 
+archivo. El pr&oacute no es requerido para que los browsers reconozcan el 
+documento como HTML, aunque esto puede dar a los browsers y gente que lea 
+tu fuente de HTML una indicaci&oacute;n de cuales son las marcas que 
+utilizas. La sintaxis est&aacute;ndar del pr&oacute;logo var&iacute;a 
+dependiendo de que version del HTML DTD (Definicion del Tipo de 
+Documento) est&eacute;s utilizando. He incluido el prologo a utilizar si 
+el documento se apega a HTML 3.2; no uses esto si incluyes extensiones de 
+Netscape o Microsoft.
+</p>
+
+<p align=center>
+<a href="barebones_espanol.html">Regresar a la Gu&iacute;a</a>
+</p> 
+
+<hr>
+<br>
+
+<a name="xmp"><h2>&lt;XMP&gt;</h2></a>
+
+<p>La especificaci&oacute;n actual de HTML recomienda que no se utilice 
+la marca  &lt;XMP&gt; porque ocasiona  &quot;algunas interacciones 
+desafortunadas con las t&eacute;cnicas de procesamiento y tiende a ser 
+usada e implementada inconsistentemente.&quot;  La marca &lt;PRE&gt; 
+deber&aacute; ser utilizada en su lugar        
+</p>
+
+<p align=center>
+<a href="barebones_espanol.html">Regresar a la Gu&iacute;a</a>
+</p> 
+
+<hr><br>
+
+<a name="blockquote"><h2>&lt;BLOCKQUOTE&gt;</h2></a>
+
+<p>La forma sugerida de mostrar la marca &lt;BLOCKQUOTE&gt;es indentar los 
+m&aacute;rgenes derechos e izquierdos, y esta marca frecuentemente se 
+utiliza para lograr indentaci&oacute;n (que HTML 2.0 no soporta 
+directamente) en vez de ser utilizada para material citado.
+Sea conciente de que no todos los browsers muestran esta marca de esta 
+manera, aun que la mayor&iacute;a de los browsers parecen estar haciendo 
+esto conforme el tiempo pasa. </P>
+
+<p align=center>
+<a href="barebones_espanol.html">Regresar a la Gu&iacute;a</a>
+</p> 
+<hr><br>
+
+<a name="align"><h2>Marcas de alineamiento</h2></a>
+
+<p>El borrador de HTML 3.2 soporta los atributos de alineamiento para 
+las marcas de p&aacute;rrafo y encabezado y la marca de &lt;CENTER&gt; 
+originalmente desarrollada por Netscape. Actualmente, el &aacute;rea 
+principal en que 
+&lt;CENTER&gt; es necesaria, es en situaciones tales como centrar una 
+tabla en Netscape Navigator, donde el browser no reconoce los atributos 
+de alineamiento.
+</p>
+
+<p>El problema m&aacute;s grande con 
+&lt;CENTER&gt; es que implica un salto de linea alrededor del material 
+centrado, pero browsers que no reconocen la marca &lt;CENTER&gt; 
+simplemente la ignorar&aacute;n. y por esto no mostrar&aacute;n el 
+documento de la manera que el autor lo desea. Conforme m&aacute;s 
+browsers reconozcan las marcas de alineaci&oacute;n, usar 
+&lt;P ALIGN=CENTER&gt;&lt;/P&gt; ser&aacute; cada vez m&aacute;s 
+preferible a el no est&aacute;ndar
+&lt;CENTER&gt;</p>
+
+<p align=center>
+<a href="barebones_espanol.html">Regresar a la gu&iacute;a</a>
+</p> 
+<hr><br>
+
+<a name="paragraph"><h2>La marca &lt;P&gt;</h2></a>
+
+<p>La mayor&iacute de las marcas de HTML son 
+&quot;envolventes;&quot; tienen una marca inicial y una marca final, con 
+el texto en el medio. (P.ej. &lt;B&gt;Esto esta en negritas&lt;/B&gt;).La 
+marca &lt;P&gt; en contraste, fue originalmente definida como una marca 
+solitaria que indicaba espacio entre p&aacute;rrafos. El problema con 
+este principio es que no permit&iacute;a funciontes tales como el 
+centrado o p&aacute;rrafos alineados a la derecha, por que no habia 
+manera de marcar el principio y final del texto a ser alineado.
+Como consecuencia, la proposici&oacuteln de HTML 3.0 desde sus 
+primeros d&iacute;as ha definido &lt;P&gt; como una marca envolvente, de 
+tal manera que los p&aacute;rrafos ser&aacute;n representados como 
+&lt;P&gt;Aqu&iacute; hay alg&uacute;n texto&lt;/P&gt;,y el 
+&lt;P&gt; inicial puede contener alineaci&oacute;n u otros atributos.
+&lt;/P&gt;final puede frecuentemente omitirse cuando no se especifican 
+propiedades de alineaci&oacute;n en el p&aacute;rrafo, aun que usarlo 
+hace que el c&oacute;digo fuente de HTML sea mas limpio. 
+</p>
+
+<p align=center>
+<a href="barebones_espanol.html">Regresar a la Gu&iacute;a</a>
+</p> 
+
+
+<hr><br>
+<a name="color"><h2>Marcas de Color</h2></a>
+<p>
+Los valores para definir colores se especifican en forma de una 
+tripleta hexadecimal, especificando los valores de rojo, verde y azul.
+the form of a hexadecimal triplet specifying red, green, and blue.  Mi <a 
+href="http://werbach.com/web/wwwhelp.html#color">WWW Help Page</a> 
+tiene una secci&oacute;n de ligas a utiler&iacute;as que pueden generar 
+estos c&oacuteldigos por ti.
+
+<p align=center>
+<a href="barebones_espanol.html">Regresar a la Gu&iacute;a</a>
+</p> 
+
+
+<hr><br>
+<a name="tables"><h2>Marcas de Tabla</h2></a>
+
+<p>A&uacute;n hay algun debate sobre las marcas de tablas, 
+espec&iacute;ficamente el metodo de Netscape que permite que el ancho y 
+alto de una tabla sean especificados como porcentajes adem&aacute;s de el 
+n&uacute;mero absoluto de pixeles. En general, la implementaci&oacute;n 
+de tablas es consistente en los browsers mas poderosos.
+</p>
+
+
+<p align=center>
+<a href="barebone.html">Regresar a la Gu&iacute;a</a>
+</p> 
+<hr>
+
+<p align=center>Copyright &#169; 1995, 1996 Kevin Werbach.<br>
+Ultima actualizaci&oacute;n  Agosto 20, 1996.</p>
+
+<br>
+<table align=right border=1><tr><td><font size=-1>
+Traducci&oacute;n al castellano:<br>
+<a href="http://orca.ens.cetys.mx/hlecuanda">
+<b>H&eacute;ctor Lecuanda</b></a><br>
+<i>Webteam </i>&copy; MCMXCVII<br>
+Inform&aacute;tica, Cetys Mexicali<br>
+<a href=mailto:lecuanda@infux.mxl.cetys.mx>
+<address>lecuanda@infux.mxl.cetys.mx</address></a>
+</font></td></tr></table>
+</BODY>
+</HTML>

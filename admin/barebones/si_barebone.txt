@@ -1,0 +1,840 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+                           VODI» BARE BONES JEZIKA HTML
+
+                                avtor Kevin Werbach
+
+                          RazliËica 3.0 -- 21. Julij 1996
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+Zadnjo razliËico tega dokumenta dobite na naslovu
+
+<http://werbach.com/barebones/>.
+
+
+
+V vodiËu so zapisani vsi ukazi, ki jih najverjetneje uporablja veËina
+
+pregledovalnikov. Zapisal sem tudi vse ukaze razliËice jezika HTML 3.2, kakor
+
+tudi ukaze, ki so jih podpirali pregledovalniki Netscape Navigator do
+
+razliËice 3.0b5. VodiË je zapisan v karseda zgoöËeni obliki; veË informacij o
+
+jeziku HTML dobite na moji strani WWW Help Page. Pojasnila in nasveti so vedno
+
+dobrodoöli.
+
+
+
+
+
+OBLIKA TEGA DOKUMENTA
+
+---------------------------------------------------------------------------
+
+Ta dokument je najlaûje brati, ko uporabljamo za prikaz besedila Ërke enake 
+
+öirine.  
+
+
+
+Zaradi veËje preglednosti sem razliËne elemente istega ukaza zapisal v veË
+
+vrsticah. Praviloma piöemo te elemente v eni sami vrstici. 
+
+
+
+Elementi ukazov so zapisani z velikimi Ërkami zgolj zaradi preglednosti.
+
+VeËino jih lahko zapisana tudi z malimi Ërkami.
+
+
+
+
+
+UPORABLJENI SIMBOLI
+
+---------------------------------------------------------------------------
+
+URL    URL je zunanja datoteka (ali ime datoteke v trenutnem imeniku)
+
+?      Poljubna ötevilka (npr. <H?> pomeni <H1>, <H2>, <H3> itd.
+
+%      Poljuben odstotek (npr. <HR WIDTH="%"> pomeni <HR WIDTH="50%">, itd.)
+
+***    Poljubno besedilo (npr. ALT="***" pomeni, zapolni z besedilom)    
+
+$$$$$$ Poljubno öestnajstiöko ötevilo (npr. BGCOLOR="#$$$$$$" pomeni 
+
+       BGCOLOR="#00FF1C", itd.)
+
+,,,    Vejice (npr. COORDS=",,," pomenijo COORDS="0,0,50,50", itd.)
+
+|      Moûnosti (npr. ALIGN=LEFT|RIGHT|CENTER pomeni, da lahko izberemo eno 
+
+       izmed teh moûnosti)
+
+
+
+
+
+ZDRUéJIVOST (pomni, HTML in pregledovalniki WEB-a se razvijajo)
+
+---------------------------------------------------------------------------
+
+       (brez opombe) - moralo bi delovati na vseh pregledovalnikih 
+
+N1.0   Netscape ukazi, ki so bili uvedeni v programu Navigator 1.0
+
+N1.1   Netscape ukazi, ki so bili uvedeni v programu Navigator 1.1
+
+N2.0   Netscape ukazi, ki so bili uvedeni v programu Navigator 2.0
+
+N3.0B  Netscape ukazi, ki so bili uvedeni v programu Navigator 3.0 beta
+
+
+
+===========================================================================
+
+===========================================================================
+
+
+
+
+
+OSNOVNI ELEMENTI
+
+------------------------------------------------------------------------------
+
+       Tip dokoumenta    <HTML></HTML>    (zaËetek in konec datoteke) 
+
+       Naslov            <TITLE></TITLE>  (nahajati se mora v glavi dokumenta) 
+
+       Glava             <HEAD></HEAD>    (opisne informacije; na primer naslov) 
+
+       Telo              <BODY></BODY>    (vsebina strani) 
+
+
+
+
+
+LOGI»NI SLOGI BESEDILA
+
+------------------------------------------------------------------------------
+
+       Poglavja           <H?></H?>         (uporabimo lahko 6 velikosti znakov) 
+
+       Poravnava poglavij <H? ALIGN=LEFT|CENTER|RIGHT></H?> 
+
+       Delitev            <DIV></DIV>
+
+       Poravnava pri      <DIV ALIGN=LEFT|RIGHT|CENTER></DIV> 
+
+       delitvi          
+
+       Citati             <BLOCKQUOTE></BLOCKQUOTE>  (najpogosteje so prikazani 
+
+                                                     z umikom)
+
+       Poudarek           <EM></EM>                  (najpogosteje so zapisani 
+
+                                                     z nagnjeno pisavo) 
+
+       MoËni poudarek     <STRONG></STRONG>          (najpogosteje je zapisan s 
+
+                                                     krepko pisavo) 
+
+       Navedek            <CITE></CITE>              (najpogosteje je zapisan 
+
+                                                     z nagnjeno pisavo) 
+
+       Kode               <CODE></CODE>              (uporabljamo za zapis 
+
+                                                     programskih kod) 
+
+       Primer             <SAMP></SAMP>                                                               
+
+       Tipkovnica         <KBD></KBD> 
+
+       Spremenljivka      <VAR></VAR> 
+
+       Definicija         <DFN></DFN>                (redka uporaba ukaza) 
+
+       Naslov avtorja     <ADDRESS></ADDRESS> 
+
+       »rke veËje         <BIG></BIG>
+
+       velikosti                     
+
+       »rke manjöe        <SMALL></SMALL>
+
+       velikosti  
+
+
+
+
+
+OBLIKOVNI SLOGI BESEDILA
+
+--------------------------------------------------------------------------------
+
+       Krepka pisava      <B></B> 
+
+       Nagnjena pisava    <I></I> 
+
+N3.0b  PodËrtana pisava   <U></U>                   (redka uporaba ukaza) 
+
+       PreËrtana pisava   <STRIKE></STRIKE>         (redka uporaba ukaza) 
+
+N3.0b  PreËrtana pisava   <S></S>                   (redka uporaba ukaza) 
+
+       Podpisano besedilo <SUB></SUB> 
+
+       Nadpisano besedilo <SUP></SUP> 
+
+       Pisalni stroj      <TT></TT>                 (besedilo je prikazano 
+
+                                                    s Ërkami enake öirine) 
+
+       Predhodno 
+
+       oblikovana pisava  <PRE></PRE>               (prikaûe presledke v obliki,
+
+                                                    kot so zapisani) 
+
+       äirina             <PRE WIDTH=?></PRE>       (ötevilo Ërk) 
+
+       Sredinska          <CENTER<>/CENTER>         (uporabna za besedilo in
+
+       poravnava                                    (slike) 
+
+N1.0   Utripanje          <BLINK></BLINK>           (najbolj zasmehovani ukaz) 
+
+       Velikost Ërk       <FONT SIZE=?></FONT>      (velikosti so v mejeh od 1 
+
+       Sprememba                                    do 7) 
+
+       velikosti Ërk      <FONT SIZE="+|-?"></FONT> 
+
+N1.0   Osnovna velikost 
+
+       Ërk                <BASEFONT SIZE=?>        (v mejah od 1 do 7; osnovna 
+
+                                                   velikost je 3) 
+
+       Barva Ërk          <FONT COLOR="#$$$$$$"></FONT> 
+
+N3.0b  Izbor pisave       <FONT FACE="***"></FONT> 
+
+N3.0b  Pisanje v stolpcih <MULTICOL COLS=?></MULTICOL> 
+
+N3.0b  Rob stolpca        <MULTICOL GUTTER=?></MULTICOL>    (osnova je 10 toËk) 
+
+N3.0b  äirina stolpca     <MULTICOL WIDTH=?></MULTICOL> 
+
+N3.0b  Presledek          <SPACER> 
+
+N3.0b  Tip presledka      <SPACER TYPE=horizontal|
+
+                          vertical|block> 
+
+N3.0b  Velikost presledka <SPACER SIZE=?> 
+
+N3.0b  Dimenzije 
+
+       presledka          <SPACER WIDTH=? HEIGHT=?> 
+
+N3.0b  Poravnava 
+
+       presledka          <SPACER ALIGN=left|right|center> 
+
+
+
+POVEZAVE IN SLIKE
+
+-----------------------------------------------------------------------------
+
+       Poljubna povezava   <A HREF="URL"></A> 
+
+       Notranja povezava   <A HREF="URL#***"></A>    (notranja povezava v 
+
+                                                     zunanji dokument) 
+
+                           <A HREF="#***"></A>       (notranja povezava v 
+
+                                                     trenutnem dokumentu) 
+
+N2.0   Povezava na novo 
+
+       okno (okvir)        <A HREF="URL" TARGET="***|
+
+                           |_blank|_self|_parent|_top"></A>
+
+       DoloËitev sidriöËa, 
+
+       na katerega kaûe 
+
+       povezava            <A NAME="***"></A> 
+
+       Razmerje med 
+
+       dokumenti           <A REL="***"></A>      (ukaz se uporablja zelo redko) 
+
+       Nasprotno razmerje 
+
+       med dokumenti       <A REV="***"></A>      (ukaz se uporablja zelo redko) 
+
+       Prikaz slike        <IMG SRC="URL"> 
+
+       Poravnava           <IMG SRC="URL"
+
+                           ALIGN=TOP|BOTTOM|MIDDLE|LEFT|RIGHT>
+
+N1.0   Poravnava           <IMG SRC="URL"
+
+                           ALIGN=TEXTTOP|
+
+                           ABSMIDDLE|BASELINE|ABSBOTTOM>
+
+       Nadomestni napis    <IMG SRC="URL" ALT="***">    (prikaûe se v primeru, 
+
+                                                        ko se slika ne prikaûe) 
+
+       Koordinatna slika   <IMG SRC="URL" ISMAP>        (za uporabo tega ukaza 
+
+                                                        moramo uporabiti skript) 
+
+       Koordinatna slika 
+
+       odjemalca           <IMG SRC="URL" USEMAP="URL"> 
+
+       Ime koordinatne 
+
+       slike               <MAP NAME="***"></MAP> 
+
+       Razdelitev 
+
+       koordinatne slike   <AREA SHAPE="RECT"
+
+                           COORDS=",,,"
+
+                           HREF="URL"|NOHREF> 
+
+       Velikost slike      <IMG SRC="URL" WIDTH=?
+
+                           HEIGHT=?>                   (v toËkah) 
+
+       Robovi              <IMG SRC="URL" BORDER=?>    (v toËkah) 
+
+       Razdalje okrog 
+
+       slike               <IMG SRC="URL" HSPACE=?
+
+                           VSPACE=?>                   (v toËkah) 
+
+N1.0   Prikaz slike z 
+
+       majho resolucijo    <IMG SRC="URL" LOWSRC="URL"> 
+
+N1.1   Postopek 
+
+       Client Pull         <META HTTP-EQUIV="Refresh"
+
+                           CONTENT="?; URL=URL"> 
+
+N2.0   Vstavljeni objekti  <EMBED SRC="URL">        (v dokument vstavi poljuben 
+
+                                                    objekt ) 
+
+N2.0   Velikost 
+
+       vstavljenega 
+
+       dokumenta           <EMBED SRC="URL" WIDTH=? HEIGHT=?> 
+
+   
+
+
+
+DELIVCI
+
+------------------------------------------------------------------------------
+
+       Odstavek            <P></P>            (konËni element bloka ni potreben) 
+
+       Poravnava 
+
+       besedila            <P ALIGN=LEFT|CENTER|RIGHT></P>
+
+       Prelom vrstice      <BR> 
+
+       Popoln prelom       <BR CLEAR=LEFT|RIGHT|ALL> 
+
+       Vodoravna Ërta      <HR> 
+
+       Poravnava           <HR ALIGN=LEFT|RIGHT|CENTER> 
+
+       Debelina            <HR SIZE=?>                           (v toËkah) 
+
+       äirina              <HR WIDTH=?>                          (v toËkah) 
+
+N1.0   äirina v odstotkih  <HR WIDTH="%">          (odstotek öirine strani) 
+
+       »rta brez okvira    <HR NOSHADE>            (brez 3-D robov) 
+
+N1.0   Brez preloma        <NOBR></NOBR>           (prepove prelom vrstice na 
+
+                                                   robovih prikazovalnika) 
+
+N1.0   Prelom vrstice      <WBR>                   (Ëe ûelimo ustvariti v bloku 
+
+                                                  NOBR prelom vrstice) 
+
+
+
+SEZNAMI 
+
+-------------------------------------------------------------------------------
+
+       NeoötevilËeni                            (<LI> pred vsakim elementom 
+
+       seznam           <UL><LI></UL>           seznama) 
+
+       ZgoöËeni seznam  <UL COMPACT></UL> 
+
+       Tip simbolov     <UL TYPE=DISC|CIRCLE|SQUARE>  (velja za celoten seznam) 
+
+                        <LI TYPE=DISC|CIRCLE|SQUARE>  (ta in naslednji elementi) 
+
+       OötevilËeni                                  (<LI> pred vsakim elementom 
+
+       seznam           <OL><LI></OL>               seznama) 
+
+       ZgoöËeni seznam  <OL COMPACT></OL> 
+
+       Tipi ötevilk     <OL TYPE=A|a|I|i|1>     (velja za celoten seznam) 
+
+                        <LI TYPE=A|a|I|i|1>     (ta in naslednji elementi) 
+
+       ZaËetna ötevilka <OL START=?>            (velja za celoten seznam) 
+
+                        <LI VALUE=?>            (ta in naslednji elementi) 
+
+       Seznam definicij <DL><DT><DD></DL>       (<DT>=el. seznama, 
+
+                                                <DD>=njegova definicija) 
+
+       ZgoöËeni seznam  <DL COMPACT></DL> 
+
+       Menijski seznam  <MENU><LI></MENU>       (<LI> pred vsakim elementom 
+
+                                                seznama) 
+
+       ZgoöËeni seznam  <MENU COMPACT></MENU> 
+
+       Seznam DIR       <DIR><LI></DIR>         (<LI> pred vsakim elementom 
+
+                                                seznama) 
+
+       ZgoöËeni seznam  <DIR COMPACT></DIR> 
+
+ 
+
+
+
+OZADJA IN BARVE
+
+-------------------------------------------------------------------------------
+
+       Slikovno ozadje  <BODY BACKGROUND="URL"> 
+
+       Barva ozadja     <BODY BGCOLOR="#$$$$$$">  (Vrstni red je RGB - rdeËa, 
+
+                                                  zelena, modra) 
+
+       Barva besedila   <BODY TEXT="#$$$$$$">  
+
+       Barva povezave   <BODY LINK="#$$$$$$"> 
+
+       Barva pregledane 
+
+       povezave         <BODY VLINK="#$$$$$$">  
+
+       Barva aktivne 
+
+       povezave         <BODY ALINK="#$$$$$$">   (Barva se prikaûe, ko drûimo 
+
+                                                 pritisnjen miökin gumb) 
+
+
+
+(VeË informacij se nahaja na http://werbach.com/web/wwwhelp.html#color) 
+
+
+
+
+
+POSEBNI ZNAKI
+
+(ukaze moramo zapisati z malimi Ërkami)
+
+-------------------------------------------------------------------------------
+
+       Posebni znak     &#?;              (na mesto ? zapiöemo znak ISO 8859-1) 
+
+       <                &lt; 
+
+       >                &gt; 
+
+       &                &amp; 
+
+       "                &quot; 
+
+       Registritani 
+
+       znak TM          &reg; 
+
+       Copyright        &copy; 
+
+       Presledek, ki 
+
+       ne omogoËa 
+
+       preloma          &nbsp; 
+
+
+
+(Popoln spisek se nahaja na strani http://www.uni-passau.de/%7Eramsch/iso8859-1.html) 
+
+
+
+
+
+OBRAZCI
+
+------------------------------------------------------------------------------------
+
+       Oznaka obrazca   <FORM ACTION="URL"
+
+                        METHOD=GET|POST></FORM> 
+
+N2.0   Poöiljanje gor 
+
+       (Upload)         <FORM ENCTYPE="multipart/form-data"></FORM> 
+
+       Polje za vnos 
+
+       besedila         <INPUT
+
+                        TYPE="TEXT|PASSWORD|CHECKBOX|RADIO|
+
+                        IMAGE|HIDDEN|SUBMIT|RESET"> 
+
+       Ime polja        <INPUT NAME="***"> 
+
+       Vrednost polja   <INPUT VALUE="***"> 
+
+       OznaËena moûnost <INPUT CHECKED>        (za izbirne gumbe in 
+
+                                               kvadratke za potrditev) 
+
+       Velikost polja   <INPUT SIZE=?>         (ötevilo Ërk) 
+
+       NajveËja dolûina 
+
+       vpisa            <INPUT MAXLENGTH=?>    (ötevilo Ërk) 
+
+       Seznam elementov <SELECT></SELECT> 
+
+       Ime seznama      <SELECT
+
+                        NAME="***"></SELECT> 
+
+       ätevilo moûnosti <SELECT SIZE=?></SELECT> 
+
+       SoËasna izbira 
+
+       veË moûnosti     <SELECT MULTIPLE>      (izbira veË kot ene moûnosti) 
+
+       Zapis moûnosti   <OPTION>               (to so izbire, ki jih lahko 
+
+                                               oznaËimo) 
+
+       Privzeto 
+
+       oznaËena moûnost <OPTION SELECTED> 
+
+       Polje za vpis 
+
+       daljöega 
+
+       besedila         <TEXTAREA ROWS=? COLS=?></TEXTAREA> 
+
+       Ime polje za 
+
+       vpis daljöega 
+
+       besedila         <TEXTAREA NAME="***"></TEXTAREA> 
+
+N2.0   Prelom vrstic 
+
+       besedila         <TEXTAREA
+
+                        WRAP=OFF|VIRTUAL|PHYSICAL></TEXTAREA>
+
+
+
+
+
+TABELE
+
+---------------------------------------------------------------------------------
+
+       DoloËitev tabele <TABLE></TABLE> [*] 
+
+       Robovi tabele    <TABLE BORDER=?></TABLE> 
+
+       Razmik med 
+
+       celicami         <TABLE CELLSPACING=?> 
+
+       Notranji ramik   <TABLE CELLPADDING=?> 
+
+       äirina tabele    <TABLE WIDTH=?>        (ötevilo toËk) 
+
+       äirina v 
+
+       odstotkih        <TABLE WIDTH="%">      (odstotki öirine strani) 
+
+       Vrstica tabele   <TR></TR> 
+
+       Poravnava        <TR ALIGN=LEFT|RIGHT|
+
+                        CENTER|MIDDLE|BOTTOM 
+
+                        VALIGN=TOP|BOTTOM|MIDDLE> 
+
+       Celica           <TD></TD>         (zapisana mora biti v bloku vrstice) 
+
+       Poravnava        <TD ALIGN=LEFT|RIGHT|
+
+                        CENTER|MIDDLE|BOTTOM 
+
+                        VALIGN=TOP|BOTTOM|MIDDLE> 
+
+       Brez preloma     <TD NOWRAP> 
+
+       Zdruûitev 
+
+       stolpcev         <TD COLSPAN=?> 
+
+       Zdruûitev vrstic <TD ROWSPAN=?> 
+
+N1.1   éelena öirina    <TD WIDTH=?>            (ötevilo toËk) 
+
+N1.1   äirina v 
+
+       odstotkih        <TD WIDTH="%">          (odstotki tabele) 
+
+N3.0b  Barva celice     <TD BGCOLOR="#$$$$$$"> 
+
+       Glava vrstice 
+
+       ali stolpca      <TH></TH>        (kot podatki, a zapisana s 
+
+                                         krepko pisavo in sredinsko poravnana) 
+
+       Poravnava        <TH ALIGN=LEFT|RIGHT|
+
+                        CENTER|MIDDLE|BOTTOM 
+
+                        VALIGN=TOP|BOTTOM|MIDDLE> 
+
+       Brez preloma 
+
+       vrstic           <TH NOWRAP> 
+
+       Zdruûitev 
+
+       stolpcev         <TH COLSPAN=?> 
+
+       Zdruûitev vrstic <TH ROWSPAN=?> 
+
+N1.1   éelena öirina    <TH WIDTH=?>     (ötevilo toËk) 
+
+N1.1   äirina v 
+
+       odstotkih        <TH WIDTH="%">   (odstoki tabele) 
+
+N3.0b  Barva celice     <TH BGCOLOR="#$$$$$$"> 
+
+       Naslov tabele    <CAPTION></CAPTION> 
+
+       Poravnava        <CAPTION ALIGN=TOP|BOTTOM>  (zgornji ali spodnji rob 
+
+                                                    tabele) 
+
+
+
+
+
+OKVIRI
+
+-------------------------------------------------------------------------------
+
+N2.0   Dokument z okviri <FRAMESET></FRAMESET>          (namesto ukaza <BODY>) 
+
+N2.0   Viöina okvirov    <FRAMESET ROWS=,,,></FRAMESET> (v toËkah ali %) 
+
+N2.0   Viöina okvirov    <FRAMESET ROWS=*></FRAMESET>   (* = relativna velikost) 
+
+N2.0   äirina okvirov    <FRAMESET COLS=,,,></FRAMESET> (v toËkah ali %) 
+
+N2.0   äirina okvirov    <FRAMESET COLS=*></FRAMESET>   (* = relativna velikost) 
+
+N3.0b  äirina robov      <FRAMESET BORDER=?> 
+
+N3.0b  Robovi            <FRAMESET FRAMEBORDER="yes|no"> 
+
+N3.0b  Barva robov       <FRAMESET BORDERCOLOR="#$$$$$$"> 
+
+N2.0   Definiranje 
+
+       okvira            <FRAME>                   (vsebina posameznega okvira) 
+
+N2.0   Prikaz dokumenta  <FRAME SRC="URL"> 
+
+N2.0   Ime okvira        <FRAME
+
+                         NAME="***"|_blank|_self|
+
+                         _parent|_top> 
+
+N2.0   äirina odmika od 
+
+       roba              <FRAME MARGINWIDTH=?>               (levi in desni rob) 
+
+N2.0   Viöina odmika od 
+
+       roba              <FRAME MARGINHEIGHT=?>         (spodnji in zgornji rob) 
+
+N2.0   Drsnik?           <FRAME SCROLLING="YES|NO|AUTO"> 
+
+N2.0   Okviru ne moremo 
+
+       spreminjati 
+
+       velikosti         <FRAME NORESIZE> 
+
+N3.0b  Rob okrog okvira  <FRAME FRAMEBORDER="yes|no"> 
+
+N3.0b  Barva robov       <FRAME BORDERCOLOR="#$$$$$$"> 
+
+N2.0   Vsebina brez 
+
+       okvirov           <NOFRAMES></NOFRAMES>     (to prikaûejo prikazovalniki, ki ne 
+
+                                                   morejo prikazati okvirov)  
+
+
+
+JAVA
+
+-------------------------------------------------------------------------------
+
+       Applet            <APPLET></APPLET> 
+
+       Ime Applet
+
+       datoteke          <APPLET CODE="***"> 
+
+       Preklopi          <APPLET PARAM NAME="***"> 
+
+       Lokacija Appleta  <APPLET CODEBASE="URL"> 
+
+       Ime Appleta       <APPLET NAME="***">       (za klicanje od koderkoli 
+
+                                                   iz dokumenta) 
+
+       Nadomestno 
+
+       besedilo          <APPLET ALT="***">    (za pregledovalnike, ki ne morejo 
+
+                                               prikazati ukazov jezika Java) 
+
+       Poravnava         <APPLET ALIGN="LEFT|RIGHT|CENTER"> 
+
+       Velikost          <APPLET WIDTH=? HEIGHT=?>              (v toËkah) 
+
+       Razmik            <APPLET HSPACE=? VSPACE=?>             (v toËkah) 
+
+
+
+
+
+RAZNO
+
+-------------------------------------------------------------------------------
+
+       Komentar        <!-- *** -->       (pregledovalniki ga ne prikaûejo) 
+
+       Definicija 
+
+       dokumenta 
+
+       HTML 3.2        <!DOCTYPE HTML PUBLIC
+
+                       "-//W3C//DTD HTML 3.2//EN">
+
+       Iskanje         <ISINDEX>         (kaûe, da je povezan z bazo podatkov 
+
+                                         za iskanje) 
+
+       ZaËetnik        <ISINDEX PROMPT="***">              (zaËetno besedilo) 
+
+       ZaËni z 
+
+       iskanjem        <A HREF="URL?***"></a>              (uporabi vpraöaj) 
+
+       URL nasov te 
+
+       datoteke        <BASE HREF="URL">        (biti mora v glavi dokumenta) 
+
+ N2.0  Osnovno ime 
+
+       okna            <BASE TARGET="***">      (biti mora v glavi dokumenta) 
+
+       Razmerja        <LINK REV="***" REL="***"
+
+                       HREF="URL">              (biti mora v glavi dokumenta) 
+
+       Informacija 
+
+       Meta            <META>                   (biti mora v glavi dokumenta) 
+
+       Oblikovni slogi <STYLE></STYLE>  (brez veËje podpore pregledovalnikov) 
+
+       Skript          <SCRIPT></SCRIPT> 
+
+         
+
+
+
+Copyright (c)1995-1997 Kevin Werbach. Dovoljeno je razmnoûevanje v 
+
+nekomercialne namene. VodiË ni izdelek podjetja Bare Bones Software; podobnost
+
+med imenoma je zgolj sluËajna. 
+
+
+
+
+
+Prevod in delna priredba: Peter Hribar.
+
+VeË informacij dobite na moji domaËi strani <http://www.arctur.si/flamingo>
+

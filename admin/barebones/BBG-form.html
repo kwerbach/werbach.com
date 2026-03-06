@@ -1,0 +1,358 @@
+<HTML>
+<HEAD
+<TITLE> das HTML-Gerippe</TITLE>
+</HEAD>
+<BODY>
+<HR SIZE="8" WIDTH=480 noshade>
+<H1 ALIGN=CENTER>DAS HTML-GERIPPE</H1>
+<H3 ALIGN=CENTER>
+deutsche  &Uuml;bersetzung des Bare Bones Guide to HTML</H3>
+<P ALIGN=CENTER><B> von <A HREF="mailto:barebones@werbach.com"> Kevin Werbach </a></B><BR>
+
+<P ALIGN="center"><I>Version 3.0 formatiert -- 07.08.1996</I><BR>
+&Uuml;bersetzung: <A HREF="mailto:Martin.Weinelt@kiel.netsurf.de">Martin Weinelt</A></P>
+<HR SIZE="8" WIDTH=480 noshade>
+
+<P>Die letzte Version dieses Dokumentes ist immer unter
+&lt;<A HREF="http://werbach.com/barebones/">http://werbach.com/barebones/</A>&gt; verf&uuml;gbar.
+</P>
+
+<P>Das HTML-Gerippe f&uuml;hrt alle tags auf, die die aktuellen Versionen der
+meisten Browser verstehen. Alle tags der <A HREF="http://www.w3.org/pub/WWW/MarkUp/Wilbur/"> HTML-Spezifikation 3.2</A> sind aufgef&uuml;hrt, ebenso wie die Netscape-Erweiterungen der Navigator-Version bis zu 3.0b5. Die Anleitung wurde so knapp wie m&ouml;glich verfa&szlig;t, deshalb bietet sie auch keinerlei Details dar&uuml;ber, wie man die tags im einzelnen
+benutzen soll. Es gibt zahlreiche Schritt-f&uuml;r-Schritt-Anleitungen im Web, 
+viele davon sind unter <A HREF="http://werbach.com/web/wwwhelp.html#guides"> http://werbach.com/web/wwwhelp.html</A> gelistet und gelinkt. Kommentare und 
+Vorschl&auml;ge immer sehr willkommen.
+</P>
+
+<H3> SYMBOLE </H3>
+<HR>
+<TABLE><TR>
+<TD> URL <TD>URL einer externen Datei (oder Dateiname, falls im selben Verzeichnis 
+<TR><TD> ? <TD>beliebige Zahl (z.B. &lt;H?&gt; hei&szlig;t &lt;H1&gt;, &lt;H2&gt;, &lt;H3&gt;, etc.) 
+<TR><TD> % <TD>beliebiger Prozentwert (z.B. &lt;HR WIDTH=%&gt; hei&szlig;t &lt;HR WIDTH=50%&gt;, etc.) 
+<TR><TD> *** <TD>beliebige Text (z.B. ALT=***" hei&szlig;t: Text einf&uuml;gen)" 
+<TR><TD> $$$$$$ <TD>beliebige Hex-Wert (z.B. BGCOLOR=#$$$" hei&szlig;t BGCOLOR="#00FF1C", etc.)" 
+<TR><TD> ,,, <TD>Komma-Trennung (z.B. COORDS=,,," hei&szlig;t COORDS="0,0,50,50",etc.) " 
+<TR><TD> | <TD>Alternativen (z.B. ALIGN=LEFT|RIGHT|CENTER hei&szlig;t: eins davon ausw&auml;hlen) 
+ </TABLE>
+ <HR>
+ 
+ <H3>KOMPATIBILIT&Auml;T (Stand 21.06. 1996)</H3> 
+<TABLE><TR><TD></TD><TD>
+       (keine Annotation) Teil der HTML3.2 Spez.; sollte f&uuml;r alle browser darstellbar sein <BR>
+ <TR><TD>N1.0 <TD>Netscape-Erweiterung eingef&uuml;hrt mit Navigator Version 1.0 <BR>
+ <TR><TD>N1.1 <TD>Netscape-Erweiterung eingef&uuml;hrt mit Navigator Version 1.1 <BR>
+ <TR><TD>N2.0 <TD>Netscape-Erweiterung eingef&uuml;hrt mit Navigator Version 2.0 <BR>
+ <TR><TD>N3.0b <TD>Netscape-Erweiterung eingef&uuml;hrt mit Navigator Version 3.0 beta<BR> 
+</TABLE>
+
+<P> <STRONG>Wichig:</STRONG> Bei Unklarheiten &uuml;ber die Unterschiede zwischen HTML2.0, HTML 3.0, HTML 3.2 und den Netscape Erweiterungen  sollte man <A HREF="http://www.w3.org/pub/WWW/MarkUp/Activity"> die Stellungname des W3C zu Entwicklung von HTML</A> lesen. </P>
+
+<HR>
+
+<P><A NAME="contents"></A></P>
+<b>Inhalt:</b><BR>
+<B>HTML TAGS</B>
+   
+   <UL>
+      <LI><A HREF="#general"><B>ALLGEMEIN</B></A>
+      <LI><A HREF="#structure"><B>LOGISCHES FORMATIEREN</B></A> (erscheint je nach Stil-Definitionen des browsers)
+      <LI><A HREF="#presentation"><B>HARTES FORMATIEREN</B></A> (AutorIn bestimmt, wie der Text erscheint)
+      <LI><A HREF="#links"><B>VERWEISE UND GRAFIKEN</B></A>
+      <LI><A HREF="#dividers"><B>DOKUMENT-GLIEDERUNG</B></A>
+      <LI><A HREF="#lists"><B>LISTEN</B></A>
+      <LI><A HREF="#color"><B>HINTERGRUND UND FARBEN  </B></A>
+      <LI><A HREF="#special"><B>UMLAUTE UND SONDERZEICHEN</B></A>
+      <LI><A HREF="#forms"><B>FORMULARE</B></A>
+      <LI><A HREF="#tables"><B>TABELLEN</B></A>
+      <LI><A HREF="#frames"><B>RAHMEN</B></A>
+      <LI><A HREF="#java"><B>JAVA</B></A>
+      <LI><A HREF="#misc"><B>VERSCHIEDENES</B></A>
+   </UL>
+   
+<HR> 
+
+<H3><A NAME="general">ALLGEMEIN</A> (alle HTML -Dokumente sollten (m&uuml;ssen aber nicht) die folgenden tags enthalten</H3>  
+<TABLE BORDER> 
+
+<TR VALIGN="top"><TD> </TD><TD> Dokument-Typ </TD><TD><SAMP> &lt;HTML&gt;&lt;/HTML&gt; </SAMP></TD><TD> (Anfang und Ende der Datei) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Titel </TD><TD><SAMP> &lt;TITLE&gt;&lt;/TITLE&gt; </SAMP></TD><TD> (Dokument Titel, in den Header) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Kopf </TD><TD><SAMP> &lt;HEAD&gt;&lt;/HEAD&gt; </SAMP></TD><TD> (beschreib. Infos, wie z.B. Titel) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Rumpf </TD><TD><SAMP> &lt;BODY&gt;&lt;/BODY&gt; </SAMP></TD><TD> (Hauptteil der Seite) </TD></TR>
+ 
+</TABLE>
+
+ 
+<H3><A NAME="structure">LOGISCHES FORMATIEREN </A>(erscheint je nach Stil-Definitionen des browsers) </H3>
+<TABLE BORDER>
+<TR VALIGN="top"><TD> </TD><TD> Ueberschrift </TD><TD><SAMP> <H?&gt;&lt;/H?&gt; </SAMP></TD><TD> (die Spez. definieren 6 Ebenen) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - Ausrichtung </TD><TD><SAMP> &lt;H? ALIGN=LEFT|CENTER|RIGHT&gt;&lt;/H?&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Teilung </TD><TD><SAMP> &lt;DIV&gt;&lt;/DIV&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - Ausrichtung </TD><TD><SAMP> &lt;DIV ALIGN=LEFT|RIGHT|CENTER|JUSTIFY&gt;&lt;/DIV&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Block-Zitat </TD><TD><SAMP> &lt;BLOCKQUOTE&gt;&lt;/BLOCKQUOTE&gt; </SAMP></TD><TD> (gew&ouml;hn. einger&uuml;ckt) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Hervorhebung </TD><TD><SAMP> &lt;EM&gt;&lt;/EM&gt; </SAMP></TD><TD> (gew&ouml;hnlich kursiv dargestellt) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> starke Hervorh. </TD><TD><SAMP> &lt;STRONG&gt;&lt;/STRONG&gt; </SAMP></TD><TD> (gew&ouml;hnlich fett dargestellt) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Pre/ohne tags </TD><TD><SAMP> &lt;XMP&gt;&lt;/XMP&gt; </SAMP></TD><TD> (kaum mehr benutzt) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Zitat </TD><TD><SAMP> &lt;CITE&gt;&lt;/CITE&gt; </SAMP></TD><TD> (gew&ouml;hnlich kursiv) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Code </TD><TD><SAMP> &lt;CODE&gt;&lt;/CODE&gt; </SAMP></TD><TD> (f&uuml;r Quell-Code-Listen) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Beispiel-Ausgabe </TD><TD><SAMP> &lt;SAMP&gt;&lt;/SAMP&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Tastatur-Eingabe </TD><TD><SAMP> &lt;KBD&gt;&lt;/KBD&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Variable </TD><TD><SAMP> &lt;VAR&gt;&lt;/VAR&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Definition </TD><TD><SAMP> &lt;DFN&gt;&lt;/DFN&gt; </SAMP></TD><TD> (nicht oft implementiert) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Autoren Adresse </TD><TD><SAMP> &lt;ADDRESS&gt;&lt;/ADDRESS&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Gro&szlig;er Font </TD><TD><SAMP> &lt;BIG&gt;&lt;/BIG&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> kleiner Font </TD><TD><SAMP> &lt;SMALL&gt;&lt;/SMALL&gt; </SAMP></TD><TD> </TD></TR>
+ 
+</TABLE>
+
+ 
+<H3><A NAME="presentation">HARTES FORMATIEREN</A> (AutorIn bestimmt, wie der Text erscheint)</H3>
+<TABLE BORDER> 
+<TR VALIGN="top"><TD> </TD><TD> Fett </TD><TD><SAMP> &lt;B&gt;&lt;/B&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Kursiv </TD><TD><SAMP> &lt;I&gt;&lt;/I&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> unterstrichen </TD><TD><SAMP> &lt;U&gt;&lt;/U&gt; </SAMP></TD><TD> (noch nicht oft implementiert) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> durchgestrichen </TD><TD><SAMP> &lt;S&gt;&lt;/S&gt; </SAMP></TD><TD> (noch nicht oft implementiert) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Subscript </TD><TD><SAMP> &lt;SUB&gt;&lt;/SUB&gt; </SAMP></TD><TD> (tiefgestellt) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Superscript </TD><TD><SAMP> &lt;SUP&gt;&lt;/SUP&gt; </SAMP></TD><TD> (hochgestellt) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Schreibmaschine </TD><TD><SAMP> &lt;TT&gt;&lt;/TT&gt; </SAMP></TD><TD> (nicht-proportionaler Font) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> vorformatiert </TD><TD><SAMP> &lt;PRE&gt;&lt;/PRE&gt; </SAMP></TD><TD> (zeigt Text wie in der Datei formatiert, incl. returns, etc. ) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Breite </TD><TD><SAMP> &lt;PRE WIDTH=?&gt;&lt;/PRE&gt; </SAMP></TD><TD> (in Zeichen) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Zentrieren </TD><TD><SAMP> &lt;CENTER&gt;&lt;/CENTER&gt; </SAMP></TD><TD> (Kurzform f&uuml;r &lt;DIV ALIGN=&quot;center&quot;&gt;) </TD></TR>
+<TR VALIGN="top"><TD> N1.0 </TD><TD> blinkender Text </TD><TD><SAMP> &lt;BLINK&gt;&lt;/BLINK&gt; </SAMP></TD><TD> (schlimmstes tag aller Zeiten) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Font-Gr&ouml;&szlig;e </TD><TD><SAMP> &lt;FONT SIZE=?&gt;&lt;/FONT&gt; </SAMP></TD><TD> (reicht von 1-7) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - &auml;ndern </TD><TD><SAMP> &lt;FONT SIZE=+|-?&gt;&lt;/FONT&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> N1.0 </TD><TD> Gr&ouml;&szlig;e des Basis-Fonts </TD><TD><SAMP> &lt;BASEFONT SIZE=?&gt; </SAMP></TD><TD> (von 1-7; Voreinstellung ist 3) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Font-Farbe </TD><TD><SAMP> &lt;FONT COLOR=&quot;#$$$$$$&quot;&gt;&lt;/FONT&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> N3.0b </TD><TD> Font weahlen </TD><TD><SAMP> &lt;FONT FACE=&quot;***&lt;/FONT&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> N3.0b </TD><TD> mehrsp. Satz </TD><TD><SAMP> &lt;MULTICOL COLS=&quot;?&quot;&gt;&lt;/MULTICOL&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> N3.0b </TD><TD> Abstand </TD><TD><SAMP> &lt;MULTICOL GUTTER=?&gt;&lt;/MULTICOL&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> N3.0b </TD><TD> Breite </TD><TD><SAMP> &lt;MULTICOL WIDTH=?&gt;&lt;/MULTICOL&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> N3.0b </TD><TD> Abstand </TD><TD><SAMP> &lt;SPACER&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> N3.0b </TD><TD> Typ </TD><TD><SAMP> &lt;SPACER TYPE=horizontal|vertical|block&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> N3.0b </TD><TD> Gr&ouml;&szlig;e </TD><TD><SAMP> &lt;SPACER SIZE=?&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> N3.0b </TD><TD> Ma&szlig;e </TD><TD><SAMP> &lt;SPACER WIDTH=? HEIGHT=?&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> N3.0b </TD><TD> Ausrichtung </TD><TD><SAMP> &lt;SPACER ALIGN=left|right|center&gt; </SAMP></TD><TD> </TD></TR>
+ 
+</TABLE>
+
+<A NAME="links"> </A>
+<H3>VERWEISE UND GRAFIKEN</H3>
+<TABLE BORDER>
+<TR VALIGN="top"><TD> </TD><TD> Verweis </TD><TD><SAMP> &lt;A HREF=&quot;URL&quot;&gt;&lt;/A&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Verw. auf Ziel <A HREF=URL#***"></A> </TD><TD><SAMP> &lt;A HREF=&quot;URL#***&quot;&gt;&lt;/A&gt; </SAMP></TD><TD> (in anderem Dokument) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> </TD><TD><SAMP> &lt;A HREF=&quot;#***&quot;&gt;&lt;/A&gt; </SAMP></TD><TD> (im selben Dokument) </TD></TR>
+<TR VALIGN="top"><TD> N2.0 </TD><TD> Ziel-Fenster </TD><TD><SAMP> &lt;A HREF=&quot;URL&quot; TARGET=&quot;***&quot;&gt;&lt;/A&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Markierung def. </TD><TD><SAMP> &lt;A NAME=&quot;***&quot;&gt;&lt;/A&gt; &quot; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Grafik zeigen </TD><TD><SAMP> &lt;IMG SRC=&quot;URL&quot;&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Ausrichtung </TD><TD><SAMP> &lt;IMG SRC=&quot;URL&quot; ALIGN=TOP|BOTTOM|MIDDLE|LEFT|RIGHT&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> N1.0 </TD><TD> Ausrichtung </TD><TD><SAMP> &lt;IMG SRC=&quot;URL&quot; ALIGN=TEXTTOP|ABSMIDDLE|BASELINE|ABSBOTTOM&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Alternativ-Text </TD><TD><SAMP> &lt;IMG SRC=&quot;URL&quot; ALT=&quot;***&quot;&gt; (wenn Grafik nicht gezeigt)&quot; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Ma&szlig;e </TD><TD><SAMP> &lt;IMG SRC=&quot;URL&quot; WIDTH=? HEIGHT=?&gt; </SAMP></TD><TD> (in Pixel) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Rand </TD><TD><SAMP> &lt;IMG SRC=&quot;URL&quot; BORDER=?&gt; </SAMP></TD><TD> (in Pixel) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Platz um Bild </TD><TD><SAMP> &lt;IMG SRC=&quot;URL&quot; HSPACE=? VSPACE=?&gt; </SAMP></TD><TD> (in Pixel) </TD></TR>
+<TR VALIGN="top"><TD> N1.0 </TD><TD> Proxy mit ger.Aufl&ouml;sung </TD><TD><SAMP> &lt;IMG SRC=&quot;URL&quot; LOWSRC=&quot;URL&quot;&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Bild-Karte </TD><TD><SAMP> &lt;IMG SRC=&quot;URL&quot; ISMAP&gt; </SAMP></TD><TD> (ben&ouml;tigt server script) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Bild-Karte </TD><TD><SAMP> &lt;IMG SRC=&quot;URL&quot; USEMAP=&quot;URL&quot;&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Karte </TD><TD><SAMP> &lt;MAP NAME=&quot;***&quot;&gt;&lt;/MAP&gt; </SAMP></TD><TD> (beschreibt die Karte) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Sektion </TD><TD><SAMP> &lt;AREA HREF=&quot;URL&quot;|NOHREF ALT=&quot;***&quot; SHAPE=&quot;RECT&quot; COORDS=&quot; , , , &quot;&gt; &quot; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> N1.1 </TD><TD> Client Pull </TD><TD><SAMP> &lt;META HTTP-EQUIV=&quot;Refresh&quot; CONTENT=&quot;?; URL=URL&quot;&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> N2.0 </TD><TD> Objekt einbetten </TD><TD><SAMP> &lt;EMBED SRC=&quot;URL&quot;&gt; </SAMP></TD><TD> (insert object into page) </TD></TR>
+<TR VALIGN="top"><TD> N2.0 </TD><TD> Objekt Gr&ouml;&szlig;e </TD><TD><SAMP> &lt;EMBED SRC=&quot;URL&quot; WIDTH=&quot;?&quot; HEIGHT=&quot;?&quot;&gt; </SAMP></TD><TD> </TD></TR>
+ 
+ </TABLE>
+
+
+<H3><A NAME="dividers">DOKUMENT-GLIEDERUNG</A></H3>
+<TABLE BORDER>
+<TR VALIGN="top"><TD> </TD><TD> Absatz </TD><TD><SAMP> &lt;P&gt;&lt;/P&gt; </SAMP></TD><TD> (Wagenr&uuml;cklauf, meist mit folgender Leerzeile) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - Ausrichtung </TD><TD><SAMP> &lt;P ALIGN=LEFT|CENTER|RIGHT&gt;&lt;/P&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Zeilen-Umbruch </TD><TD><SAMP> &lt;BR&gt; </SAMP></TD><TD> (Wagenr&uuml;cklauf, neue Zeile) </TD></TR>
+<TR VALIGN="top"><TD> N1.0 </TD><TD> Clear Textwrap </TD><TD><SAMP> &lt;BR CLEAR=LEFT|RIGHT|ALL&gt; </SAMP></TD><TD> (bitte um Vorschlag ;-) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> horiz. Linie </TD><TD><SAMP> &lt;HR&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Ausrichtung </TD><TD><SAMP> &lt;HR ALIGN=LEFT|RIGHT|CENTER&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Dicke </TD><TD><SAMP> &lt;HR SIZE=?&gt; </SAMP></TD><TD> (in Pixel) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Breite </TD><TD><SAMP> &lt;HR WIDTH=?&gt; </SAMP></TD><TD> (in Pixel) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Breite in Proz. </TD><TD><SAMP> &lt;HR WIDTH=%&gt; </SAMP></TD><TD> (in Prozent der Seiten-Breite) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> gef&uuml;llte Linie </TD><TD><SAMP> &lt;HR NOSHADE&gt; </SAMP></TD><TD> (ohne 3D-Effekt) </TD></TR>
+<TR VALIGN="top"><TD> N1.0 </TD><TD> kein Zeilenumbruch </TD><TD><SAMP> &lt;NOBR&gt;&lt;/NOBR&gt; </SAMP></TD><TD> (verhindert Zeilenumbruch) </TD></TR>
+<TR VALIGN="top"><TD> N1.0 </TD><TD> Wort-Umbruch falls n&ouml;tig </TD><TD><SAMP> &lt;WBR&gt; </SAMP></TD><TD> (wo ein Zeilenumbr. geschehen soll, </TD></TR>
+
+</TABLE>
+
+ 
+<H3><A NAME="lists">LISTEN </A>(Listen k&ouml;nnen veschachtelt sein)</H3>
+<TABLE BORDER> 
+<TR VALIGN="top"><TD> </TD><TD> unnumerierte Liste </TD><TD><SAMP> &lt;UL&gt;&lt;LI&gt;&lt;/UL&gt; </SAMP></TD><TD> (&lt;LI&gt; vor jedem Listen-Element) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> 'Bullet'-Typ </TD><TD><SAMP> &lt;UL TYPE=DISC|CIRCLE|SQUARE&gt; </SAMP></TD><TD> (f&uuml;r gesamte Liste) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> </TD><TD><SAMP> &lt;LI TYPE=DISC|CIRCLE|SQUARE&gt; </SAMP></TD><TD> (dies &lt;LI&gt; und folgende) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> numerierte Liste </TD><TD><SAMP>&lt;OL&gt; &lt;LI&gt;&lt;/OL&gt;</SAMP> </TD><TD>(&lt;LI&gt; vor jedem Listen-Element) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - kompakt </TD><TD><SAMP> &lt;OL COMPACT&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Ordinal-Typ </TD><TD><SAMP> &lt;OL TYPE=A|a|I|i|1&gt; </SAMP></TD><TD> (f&uuml;r gesamte Liste) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> <LI TYPE=A|a|I|i|1> </TD><TD><SAMP> (dies LI und folgende) </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Anfangs-Zahl </TD><TD><SAMP> &lt;OL VALUE=?&gt; </SAMP></TD><TD> (f&uuml;r gesamte Liste) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> <LI VALUE=?> </TD><TD><SAMP> (dies LI und folgende) </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Definitionsliste </TD><TD><SAMP> &lt;DL&gt;&lt;DT&gt;&lt;DD&gt;&lt;/DL&gt; </SAMP></TD><TD> (&lt;DT&gt;=Term, &lt;DD&gt;=Definition) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - kompakt </TD><TD><SAMP> &lt;DL COMPACT&gt; &lt;/DL&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Menue-Liste </TD><TD><SAMP> &lt;MENU&gt;&lt;LI&gt;&lt;/MENU&gt; </SAMP></TD><TD> (&lt;LI&gt; vor jedem Listen-Element) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - kompakt </TD><TD><SAMP> &lt;MENU COMPACT&gt; &lt;/MENU&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Verzeichnis </TD><TD><SAMP> &lt;DIR&gt;&lt;LI&gt;&lt;/DIR&gt; </SAMP></TD><TD> (&lt;LI&gt; vor jedem Listen-Element) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - kompakt </TD><TD><SAMP> &lt;DIR COMPACT&gt;&lt;/DIR&gt; </SAMP></TD><TD> </TD></TR>
+
+</TABLE>
+
+ 
+<H3><A NAME="color">HINTERGRUND UND FARBEN</A></H3>
+<TABLE BORDER> 
+<TR VALIGN="top"><TD> </TD><TD> Grafik-Hintergr. </TD><TD><SAMP> &lt;BODY BACKGROUND=&quot;URL&quot;&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Hintergr.-Farbe </TD><TD><SAMP> &lt;BODY BGCOLOR=&quot;#$$$$$$&quot;&gt; </SAMP></TD><TD> (Rot/Gr&uuml;n/Blau) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Text-Farbe </TD><TD><SAMP> &lt;BODY TEXT=&quot;#$$$$$$&quot;&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Link-Farbe </TD><TD><SAMP> &lt;BODY LINK=&quot;#$$$$$$&quot;&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> verfolgtes Link </TD><TD><SAMP> &lt;BODY VLINK=&quot;#$$$$$$&quot;&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> aktives Link </TD><TD><SAMP> &lt;BODY ALINK=&quot;#$$$$$$&quot;&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD COLSPAN=4> (Mehr Infos: <A HREF="http://werbach.com/web/wwwhelp.html#color"> http://werbach.com/web/wwwhelp.html#color</A>)</TD></TR>
+ 
+</TABLE>
+
+ 
+<H3><A NAME="special">UMLAUTE UND SONDERZEICHEN</A> (in Kleinschreibung)</H3>
+<TABLE BORDER>
+<TR VALIGN="top"><TD> </TD><TD> Sonderzeichen </TD><TD><SAMP> &amp;#?; </SAMP></TD><TD> ('?' ist der ISO 8859-1-Code) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> &lt; </TD><TD><SAMP> &amp;lt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> &gt; </TD><TD><SAMP> &amp;gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> &amp; </TD><TD><SAMP> &amp;amp; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> &quot; </TD><TD><SAMP> &amp;quot; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Reg. Warenz. &#174; </TD><TD><SAMP> &amp;#174; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> &#169; </TD><TD><SAMP> &amp;#169; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> &copy; </TD><TD><SAMP> &amp;copy; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Non-Breaking Spc </TD><TD><SAMP> &amp;nbsp; </SAMP></TD><TD> (kein Zeilenumbruch an diesem Space) </TD></TR>
+<TR VALIGN="top"><TD COLSPAN=4> (Vollst&auml;ndige Liste: <A HREF="http://www.uni-passau.de/%7Eramsch/iso8859-1.html"> http://www.uni-passau.de/%7Eramsch/iso8859-1.html</A>)</TD></TR>
+
+</TABLE>
+ 
+ 
+<H3><A NAME="forms">FORMULARE</A> (ben&ouml;tigen in der Regel server script)</H3>
+<TABLE BORDER>
+<TR VALIGN="top"><TD> </TD><TD> Fromular definieren </TD><TD><SAMP> &lt;FORM ACTION=&quot;URL&quot; METHOD=GET|POST&gt;&lt;/FORM&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> N2.0 </TD><TD> Datei-Upload </TD><TD><SAMP> &lt;FORM ENCTYPE=&quot;multipart/form-data&gt;&lt;/FORM&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Eingabe-Feld </TD><TD><SAMP> &lt;INPUT TYPE=&quot;TEXT|PASSWORD|CHECKBOX|RADIO|IMAGE|HIDDEN|SUBMIT|RESET&quot;&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - Feld Name </TD><TD><SAMP> &lt;INPUT NAME=&quot;***&quot;&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - Feld-Wert </TD><TD><SAMP> &lt;INPUT VALUE&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - markiert? </TD><TD><SAMP> &lt;INPUT CHECKED&gt; </SAMP></TD><TD> ('checkbox' und 'radio button') </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - Feld-Gr&ouml;&szlig;e </TD><TD><SAMP> &lt;INPUT SIZE=?&gt; </SAMP></TD><TD> (in Zeichen) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - max. L&auml;nge </TD><TD><SAMP> &lt;INPUT MAXLENGTH=?&gt; </SAMP></TD><TD> (in Zeichen) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Auswahl-Liste </TD><TD><SAMP> &lt;SELECT&gt;&lt;/SELECT&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - Name der Liste </TD><TD><SAMP> &lt;SELECT NAME=&quot;***&quot;&gt;&lt;/SELECT&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - Zahl der Listeneintr&auml;ge </TD><TD><SAMP> &lt;SELECT SIZE=?&gt;&lt;/SELECT&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - Mehrfach-Wahl </TD><TD><SAMP> &lt;SELECT MULTIPLE&gt; </SAMP></TD><TD> (mehr als eins w&auml;hlbar) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Option </TD><TD><SAMP> &lt;OPTION&gt; </SAMP></TD><TD> (was man ausw&auml;hlen kann) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - Vorgabe </TD><TD><SAMP> &lt;OPTION SELECTED&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Gr&ouml;&szlig;e Eingabefeld </TD><TD><SAMP> &lt;TEXTAREA ROWS=? COLS=?&gt;&lt;/TEXTAREA&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - Name Eingabefeld </TD><TD><SAMP> &lt;TEXTAREA NAME=&quot;***&quot;&gt;&lt;/TEXTAREA&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> N2.0 </TD><TD> - Text-Umbruch </TD><TD><SAMP> &lt;TEXTAREA WRAP=OFF|VIRTUAL|PHYSICAL&gt;&lt;/TEXTAREA&gt; </SAMP></TD><TD> </TD></TR>
+ 
+ </TABLE>
+
+
+<H3><A NAME="tables">TABELLEN</A></H3>
+<TABLE BORDER>
+<TR VALIGN="top"><TD> </TD><TD> Tabelle def. </TD><TD><SAMP> &lt;TABLE&gt;&lt;/TABLE&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - Tabellen-Rand </TD><TD><SAMP> &lt;TABLE BORDER&gt;&lt;/TABLE&gt; </SAMP></TD><TD> (Tabelle erh&auml;lt Rand) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - Tabellen-Rand </TD><TD><SAMP> &lt;TABLE BORDER=?&gt;&lt;/TABLE&gt; </SAMP></TD><TD> (Randst&auml;rke in Pixel) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - Zellen-Gr&ouml;&szlig;e </TD><TD><SAMP> &lt;TABLE CELLSPACING=?&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - Zellen-Padding </TD><TD><SAMP> &lt;TABLE CELLPADDING=?&gt; </SAMP></TD><TD> ('Luft' zw. Inhalt und Rand) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - Breite </TD><TD><SAMP> &lt;TABLE WIDTH=?&gt; </SAMP></TD><TD> (in Pixel) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - in Prozent </TD><TD><SAMP> &lt;TABLE WIDTH=%&gt; </SAMP></TD><TD> (Prozent der Seiten-Breite) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Tabellen-Zeile </TD><TD><SAMP> &lt;TR&gt;&lt;/TR&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - Ausrichtung </TD><TD><SAMP> &lt;TR ALIGN=LEFT|RIGHT|CENTER VALIGN=TOP|MIDDLE|BOTTOM&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Tabellen-Zelle </TD><TD><SAMP> &lt;TD&gt;&lt;/TD&gt; </SAMP></TD><TD> (erscheint inerhalb von Tab.-Zeilen) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - Alignment </TD><TD><SAMP> &lt;TD ALIGN=LEFT|RIGHT|CENTER VALIGN=TOP|MIDDLE|BOTTOM&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - kein Zeilenumbr. </TD><TD><SAMP> &lt;TD NOWRAP&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - umfa&szlig;t ? Spalten </TD><TD><SAMP> &lt;TD COLSPAN=?&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - umfa&szlig;t ? Zeilen </TD><TD><SAMP> &lt;TD ROWSPAN=?&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> N1.1 </TD><TD> - Breite </TD><TD><SAMP> &lt;TD WIDTH=?&gt; </SAMP></TD><TD> (in Pixel) </TD></TR>
+<TR VALIGN="top"><TD> N1.1 </TD><TD> - in Prozent </TD><TD><SAMP> &lt;TD WIDTH=%&gt; </SAMP></TD><TD> (Prozent der Seiten-Breite) </TD></TR>
+<TR VALIGN="top"><TD> N3.0b </TD><TD> - Zellenfarbe </TD><TD><SAMP> &lt;TD BGCOLOR=#$$$$$$&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Spalten-Kopf </TD><TD><SAMP> &lt;TH&gt;&lt;/TH&gt; </SAMP></TD><TD> (wie Zelle, aber meist fett, zentriert) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - Ausrichtung </TD><TD><SAMP> &lt;TH ALIGN=LEFT|RIGHT|CENTER VALIGN=TOP|MIDDLE|BOTTOM&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - kein Zeilenumbr. </TD><TD><SAMP> &lt;TH NOWRAP&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - umfa&szlig;t ? Spalten </TD><TD><SAMP> &lt;TH COLSPAN=?&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - umfa&szlig;t ? Spalten </TD><TD><SAMP> &lt;TH ROWSPAN=?&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> N1.1 </TD><TD> - Breite </TD><TD><SAMP> &lt;TH WIDTH=?&gt; </SAMP></TD><TD> (in Pixel) </TD></TR>
+<TR VALIGN="top"><TD> N1.1 </TD><TD> - in Prozent </TD><TD><SAMP> &lt;TH WIDTH=%&gt; </SAMP></TD><TD> (Prozent der Seiten-Breite) </TD></TR>
+<TR VALIGN="top"><TD> N3.0b </TD><TD> - Zellenfarbe </TD><TD><SAMP> &lt;TH BGCOLOR=#$$$$$$&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - Tabellen-Ueberschrift </TD><TD><SAMP> &lt;CAPTION&gt;&lt;/CAPTION&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - Ausrichtung </TD><TD><SAMP> &lt;CAPTION ALIGN=TOP|BOTTOM&gt; </SAMP></TD><TD> (&uuml;ber/unter Tabelle) </TD></TR>
+
+</TABLE>
+
+ 
+<H3><A NAME="frames">RAHMEN</A> (zur Definition und Handhabung spezieller Teile des Fensters)</H3>
+<TABLE BORDER> 
+<TR VALIGN="top"><TD> N2.0 </TD><TD> Rahmen Dokument </TD><TD><SAMP> &lt;FRAMESET&gt;&lt;/FRAMESET&gt; </SAMP></TD><TD> (statt <BODY>) </TD></TR>
+<TR VALIGN="top"><TD> N2.0 </TD><TD> - Zeilen-H&ouml;he </TD><TD><SAMP> &lt;FRAMESET ROWS=,,,&gt;&lt;/FRAMESET&gt; </SAMP></TD><TD> (Pixel oder %) </TD></TR>
+<TR VALIGN="top"><TD> N2.0 </TD><TD> - Zeilen-H&ouml;he </TD><TD><SAMP> &lt;FRAMESET ROWS=*&gt;&lt;/FRAMESET&gt; </SAMP></TD><TD> (* = relative Gr&ouml;&szlig;e) </TD></TR>
+<TR VALIGN="top"><TD> N2.0 </TD><TD> - Spalten-Breite </TD><TD><SAMP> &lt;FRAMESET COLS=,,,&gt;&lt;/FRAMESET&gt; </SAMP></TD><TD> (Pixel oder %) </TD></TR>
+<TR VALIGN="top"><TD> N2.0 </TD><TD> - Spalten-Breite </TD><TD><SAMP> &lt;FRAMESET COLS=*&gt;&lt;/FRAMESET&gt; </SAMP></TD><TD> (* = relative Gr&ouml;&szlig;e) </TD></TR>
+<TR VALIGN="top"><TD> N3.0b </TD><TD> - Rand </TD><TD><SAMP> &lt;FRAMESET FRAMEBORDER=&quot;yes|no&quot;&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> N3.0b </TD><TD> - Randbreite </TD><TD><SAMP> &lt;FRAMESET BORDER=?&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> N3.0b </TD><TD> - Randfarbe </TD><TD><SAMP> &lt;FRAMESET BORDERCOLOR=&quot;#$$$$$$&quot;&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> N2.0 </TD><TD> Rahmen def. </TD><TD><SAMP> &lt;FRAME&gt; </SAMP></TD><TD> (Inh. eines einzelnen Rahmens) </TD></TR>
+<TR VALIGN="top"><TD> N2.0 </TD><TD> - Dokum. anzeigen </TD><TD><SAMP> &lt;FRAME SRC=&quot;URL&quot;&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> N2.0 </TD><TD> - Rahmen-Name </TD><TD><SAMP> &lt;FRAME NAME=&quot;***&quot;|_blank|_self|_parent|_top&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> N2.0 </TD><TD> - Rand-Breite </TD><TD><SAMP> &lt;FRAME MARGINWIDTH=?&gt; </SAMP></TD><TD> (linker u. rechter Rand) </TD></TR>
+<TR VALIGN="top"><TD> N2.0 </TD><TD> - Rand-H&ouml;he </TD><TD><SAMP> &lt;FRAME MARGINHEIGHT=?&gt; </SAMP></TD><TD> (Rand oben u. unten) </TD></TR>
+<TR VALIGN="top"><TD> N2.0 </TD><TD> - Scrollbalken?? </TD><TD><SAMP> &lt;FRAME SCROLLING=&quot;YES|NO|AUTO&quot;&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> N2.0 </TD><TD> - nicht ver&auml;nderbar </TD><TD><SAMP> &lt;FRAME NORESIZE&gt; </SAMP></TD><TD> (...in der Gr&ouml;&szlig;e) </TD></TR>
+<TR VALIGN="top"><TD> N3.0b </TD><TD> - R&auml;nder </TD><TD><SAMP> &lt;FRAME FRAMEBORDER=&quot;yes|no&quot;&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> N3.0b </TD><TD> - Randfarbe </TD><TD><SAMP> &lt;FRAME BORDERCOLOR=&quot;#$$$$$$&quot;&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> N2.0 </TD><TD> Inhalt kein R. </TD><TD><SAMP> &lt;NOFRAMES&gt;&lt;/NOFRAMES&gt; </SAMP></TD><TD> (f&uuml;r browser o. Rahmen) </TD></TR>
+ 
+ </TABLE>
+
+ 
+<H3><A NAME="java">JAVA</A></H3>
+<TABLE BORDER>
+<TR VALIGN="top"><TD> </TD><TD> Applet </TD><TD><SAMP> &lt;APPLET&gt;&lt;/APPLET&gt; </SAMP></TD><TD> (Progr&auml;mmchen) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - Dateiname </TD><TD><SAMP> &lt;APPLET CODE=&quot;***&quot;&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - Parameter </TD><TD><SAMP> &lt;APPLET PARAM NAME=&quot;***&quot;&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - Lokation </TD><TD><SAMP> &lt;APPLET CODEBASE=&quot;URL&quot;&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - int. Name </TD><TD><SAMP> &lt;APPLET NAME=&quot;***&quot;&gt; </SAMP></TD><TD> (f&uuml;r Bez&uuml;ge) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - alt. Text </TD><TD><SAMP> &lt;APPLET ALT=&quot;***&quot;&gt; </SAMP></TD><TD> (f&uuml;r nicht-Java-Browser) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - Ausrichtung </TD><TD><SAMP> &lt;APPLET ALIGN=&quot;LEFT|RIGHT|CENTER&quot;&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - Gr&ouml;&szlig;e </TD><TD><SAMP> &lt;APPLET WIDTH=? HEIGHT=?&gt; </SAMP></TD><TD> (in Pixeln) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> - Abstand </TD><TD><SAMP> &lt;APPLET HSPACE=? VSPACE=?&gt; </SAMP></TD><TD> (in Pixeln) </TD></TR>
+ 
+</TABLE> 
+
+ 
+<H3><A NAME="misc">VERSCHIEDENES</A></H3>
+<TABLE BORDER>
+<TR VALIGN="top"><TD> </TD><TD> Kommentar </TD><TD><SAMP> &lt;!-- *** --&gt; </SAMP></TD><TD> (wird nicht angezeigt) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Prologue </TD><TD><SAMP> &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2//EN&quot;&gt; </SAMP></TD><TD> </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Indizierbar </TD><TD><SAMP> &lt;ISINDEX&gt; </SAMP></TD><TD> (f&uuml;r Index referenzierbar) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Prompt </TD><TD><SAMP> &lt;ISINDEX PROMPT=&quot;***&quot;&gt; </SAMP></TD><TD> (Text-Prompt f&uuml;r Eingabe) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Suche beginnen </TD><TD><SAMP> &lt;A HREF=&quot;URL?***&quot;&gt;&lt;/a&gt; </SAMP></TD><TD> (echtes '?' benutzen) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> URL dieser Datei </TD><TD><SAMP> &lt;BASE HREF=&quot;URL&quot;&gt; </SAMP></TD><TD> (im header) </TD></TR>
+<TR VALIGN="top"><TD> N2.0 </TD><TD> Name Basis-Fenst. </TD><TD><SAMP> &lt;BASE TARGET=&quot;***&quot;&gt; </SAMP></TD><TD> (im header) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Bezug </TD><TD><SAMP> &lt;LINK REV=&quot;***&quot; REL=&quot;***&quot; HREF=&quot;URL&quot;&gt; </SAMP></TD><TD> (im header) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Meta-Information </TD><TD><SAMP> &lt;META&gt; </SAMP></TD><TD> (im header) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Style Sheets </TD><TD><SAMP> &lt;STYLE&gt;&lt;/STYLE&gt; </SAMP></TD><TD> (Stil-Definitionen, kaum unterst&uuml;tzt) </TD></TR>
+<TR VALIGN="top"><TD> </TD><TD> Skripte </TD><TD><SAMP> &lt;SCRIPT&gt;&lt;/SCRIPT&gt; </SAMP></TD><TD> (kaum unterst&uuml;tzt) </TD></TR>
+ 
+</TABLE> 
+<HR>
+<P ALIGN=CENTER><B> Weiter zu: </B> <BR>
+///<A HREF="BBG-text-dt.txt">HTML-Gerippe Text-Version</A> /// 
+<A HREF="gerippe-eingang.html">Eingangsseite</A>///
+</P>
+
+<HR> 
+ 
+ <P>
+ Copyright (c) 1995-1997 Kevin Werbach. Nichtkommerzielle Verbreitung gestattet. 
+ Diese Anleitung ist kein Produkt von Bare Bones Software. Wenden Sie sich an den 
+ Autor f&uuml;r weitere Informationen. 
+</P><P>
+ &Uuml;bersetzung: <A HREF="mailto:Martin.Weinelt@kiel.netsurf.de">Martin Weinelt</A> 
+</BODY>
+</HTML>

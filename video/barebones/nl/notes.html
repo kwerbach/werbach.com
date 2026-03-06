@@ -1,0 +1,384 @@
+<HTML>
+
+<HEAD>
+
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.02 [en] (Win95; I) [Netscape]">
+
+   <TITLE>HTML Kort en Krachtig - Annotaties</TITLE>
+
+</HEAD>
+
+<BODY>
+
+
+
+<HR>
+
+
+
+<P><A NAME="HTML"></A>
+
+<H2>
+
+De ontwikkeling van HTML</H2>
+
+HTML is de opmaaktaal die wordt gebruikt voor het maken van documenten
+
+voor het World Wide Web. Hoewel er al enige tijd gewerkt wordt aan offici&euml;le
+
+specificaties voor HTML, kan het voorkomen dat bepaalde Web browsers "eigen"
+
+tags accepteren die niet opgenomen zijn in de specificaties. Als mensen
+
+vragen om een lijst van "alle HTML tags" dan willen ze meestal weten welke
+
+tags ze in hun pagina's kunnen gebruiken met een redelijke zekerheid dat
+
+de mensen die die pagina's bekijken ook zien wat de maker wil. <I>HTML
+
+kort en krachtig</I> is gemaakt om aan deze behoefte tegemoet te komen.
+
+Ik heb geprobeerd om alle tags op te nemen die door de voornaamste browsers
+
+van vandaag ondersteund worden, maar er is een aantal nuances die dit proces
+
+al bij voorbaat onzorgvuldig doen zijn.
+
+
+
+<P>De offici&euml;le organisatie die standaarden maakt voor HTML is het
+
+<A HREF="http://www.w3.org/">World Wide Web Consortium</A> (W3C). Het W3C
+
+heeft verschillende versies van de HTML specificatie uitgebracht, waaronder
+
+HTML 2.0, HTML 3.0, HTML 3.2 en als laatste HTML 4.0. Tegelijkertijd echter
+
+hebben de makers van browsers zoals Netscape and Microsoft vaak hun eigen
+
+"uitbreidingen" ontwikkeld, buiten het standaardiseringsproces om, en deze
+
+opgenomen in hun browsers. In sommige gevallen, zoals bijvoorbeeld bij
+
+de &lt;CENTER> tag van Netscape, zijn deze uitbreidingen feitelijke standaarden
+
+geworden, en overgenomen door andere browser-producenten
+
+
+
+<P><A HREF="http://www.w3.org/pub/WWW/MarkUp/html-spec/">HTML 2.0</A>,
+
+waarin de stand van zaken wat betreft HTML in juni 1994 is vastgelegd,
+
+is de basis-standaard die alle browsers van dit moment zouden moeten ondersteunen,
+
+met inbegrip van de niet-grafische browsers. HTML 2.0 geeft het oorspronkelijke
+
+idee weer van HTML als een platform-onafhankelijke opmaaktaal, die de organisatie
+
+van informatie weergeeft in plaats van exact aan te geven hoe pagina's
+
+op het scherm getoond moeten worden. Als u er zeker van wilt zijn dat alle
+
+gebruikers alles op uw pagina's kunnen zien, gebruik dan alleen tags die
+
+in HTML 2.0 staan.
+
+
+
+<P>In het <A HREF="http://www.w3.org/pub/WWW/MarkUp/html3/">voorstel voor
+
+HTML 3.0</A>, uitgekomen in 1995, werd geprobeerd HTML 2.0 uit te bouwen
+
+met toevoeging van dingen zoals tabellen en een grotere beheersing van
+
+de uitlijning van tekst rondom plaatjes. Hoewel sommige kenmerken van HTML
+
+3.0 algemeen werden overgenomen door ontwikkelaars van browsers, gold voor
+
+veel kenmerken het tegendeel. In sommige gevallen kregen alternatieven
+
+aangedragen door ontwikkelaars van een browser een grotere verspreiding
+
+dan de "offici&euml;le" tags. Het HTML 3.0 voorstel is nu niet meer geldig,
+
+en is daarom geen offici&euml;le standaard meer.
+
+
+
+<P>In januari 1997, nam het W3C de <A HREF="http://www.w3.org/TR/REC-html32.html">aanbeveling
+
+voor HTML 3.2&nbsp;</A> aan, die was ontworpen om de inmiddels algemeen
+
+geaccepteerde praktijk weer te geven en te standaardiseren. Daarom bevat
+
+HTML 3.2 die tags uit HTML 3.0 tags die zijn overgenomen door browser-ontwikkelaars
+
+als Netscape en Microsoft, naast algemeen ondersteunde uitbreidingen van
+
+HTML.
+
+
+
+<P><A HREF="http://www.w3.org/TR/REC-html40/">HTML 4.0</A>, de huidige
+
+standaard, werd een aanbeveling van het W3C in april 1998. Deze versie
+
+bevat een aantal nieuwe opmaakmogelijkheden, veranderingen die samenhangen
+
+met scripts en stijlbladen, en verschillende wijzigingen die Web-pagina's
+
+toegankelijker moeten maken voor gehandicapten. De huidige versies van
+
+de belangrijkste browsers zouden deze tags allemaal, of bijna allemaal,
+
+moeten ondersteunen.
+
+
+
+<P>Voor de toekomst werk het W3C aan een herformulering van HTML in de
+
+context van de uitbreidbare opmaaktaal XML, een bredere en meer flexibele
+
+standaard. Meer informatie kunt u vinden in de huidige <A HREF="http://www.w3.org/TR/WD-html-in-xml/">W3C
+
+werkversie</A>, aangenomen in december 1998.
+
+
+
+<P>Er zijn ook een paar HTML-uitbreidingen van Netscape en Microsoft die
+
+niet zijn opgenomen in de offici&euml;le HTML-standaard. Op veler verzoek
+
+zijn deze opgenomen in "HTML Kort en Krachtig". Voordat u een van de tags
+
+wilt gaan gebruiken waarbij staat aangegeven dat het Netscape- of Microsoft-uitbreidingen
+
+betreft, moet u bedenken dat mensen die andere browsers gebruiken de pagina's
+
+wellicht niet zo te zien krijgen als u had bedoeld.
+
+<CENTER></CENTER>
+
+
+
+<CENTER><A HREF="barebone.html">Terug naar de Gids</A></CENTER>
+
+
+
+<HR>
+
+<BR><A NAME="prologue"></A>
+
+<H2>
+
+Proloog</H2>
+
+De proloog moet helemaal aan het begin van uw bestand staan. Browsers hebben
+
+de proloog niet nodig om een bestand als HTML-document te herkennen, maar
+
+het kan browsers en mensen die het HTML-brondocument lezen een indicatie
+
+geven van de tags die erin voorkomen. De precieze syntax van de proloog
+
+hangt af van de versie van de HTML DTD (document-type definitie) die u
+
+gebruikt. Ik heb de proloog opgenomen die u kunt gebruiken als u zich in
+
+uw document houdt aan de HTML 4.0 standaard; gebruik de proloog niet als
+
+u Netscape- of Microsoft-uitbreidingen opneemt.
+
+<CENTER></CENTER>
+
+
+
+<CENTER><A HREF="barebone.html">Terug naar de Gids</A></CENTER>
+
+
+
+<HR>
+
+<BR><A NAME="xmp"></A>
+
+<H2>
+
+&lt;XMP></H2>
+
+Eerdere versies van HTML bevatten ook de &lt;XMP> (voorbeeld) tag, en sommige
+
+mensen gebruiken deze nog steeds om niet omgezette HTML-codes op een pagina
+
+zichtbaar te maken. Browsers gaan echter op een inconsistente manier om
+
+met &lt;XMP> en de tag is in de huidige HTML-specificatie opgenomen als
+
+verouderd. In plaats ervan kan beter de &lt;PRE> tag gebruikt worden.
+
+<CENTER></CENTER>
+
+
+
+<CENTER><A HREF="barebone.html">Terug naar de Gids</A></CENTER>
+
+
+
+<HR>
+
+<BR><A NAME="blockquote"></A>
+
+<H2>
+
+&lt;BLOCKQUOTE></H2>
+
+Het gesuggereerde resultaat van de &lt;BLOCKQUOTE> tag is het laten inspringen
+
+van de linker- en rechterkantlijn, en deze tag wordt vaak gebruikt om in
+
+te springen (wat in HTML 2.0 niet rechtstreeks kan), in plaats van voor
+
+het aanduiden van geciteerde tekst. Weest u ervan bewust dat niet alle
+
+browsers de tag op deze manier weergeven, hoewel met het verloop van de
+
+tijd steeds meer browsers over lijken te gaan op inspringen.
+
+<CENTER></CENTER>
+
+
+
+<CENTER><A HREF="barebone.html">Terug naar de Gids</A></CENTER>
+
+
+
+<HR>
+
+<BR><A NAME="align"></A>
+
+<H2>
+
+Tags voor uitlijnen</H2>
+
+De HTML 4.0 specificatie bevat zowel de uitlijn-attributen van de tags
+
+voor alinea's en kopjes als de &lt;CENTER> tag, die oorspronkelijk ontwikkeld
+
+is door Netscape. Tegenwoordig is &lt;CENTER> vooral nodig in die situaties
+
+waar een browser de uitlijn-attributen niet ondersteunt, zoals bijvoorbeeld
+
+bij het centreren van een tabel in Netscape Navigator.
+
+
+
+<P>Het grootste probleem met &lt;CENTER> is dat het een alinea-scheiding
+
+rond het gecentreerde materiaal impliceert, maar browsers die de &lt;CENTER>
+
+tag niet ondersteunen zullen deze eenvoudigweg overslaan, en het document
+
+dus niet weergeven op de manier die de maker bedoeld had. Omdat nu steeds
+
+meer browsers het uitlijnen ondersteunen zal het gebruik van &lt;P ALIGN=CENTER>&lt;/P>
+
+steeds meer te verkiezen zijn boven het gebruik van de niet gestandaardiseerde
+
+&lt;CENTER> tag.
+
+<CENTER></CENTER>
+
+
+
+<CENTER><A HREF="barebone.html">Terug naar de Gids</A></CENTER>
+
+
+
+<HR>
+
+<BR><A NAME="paragraph"></A>
+
+<H2>
+
+De &lt;P> tag</H2>
+
+De meeste HTML-tags zijn "omsluitend;"; zij hebben een begin- en een eind-tag,
+
+met tekst ertussenin (bijvoorbeeld &lt;B>Dit is vetgedrukt&lt;/B>). De
+
+&lt;P> tag daarentegen, werd oorspronkelijk gedefinieerd als een opzichzelfstaande
+
+tag die de ruimte tussen alinea's aangaf. Het probleem met deze benadering
+
+is dat ze niet de mogelijkheid gaf voor zaken zoals het centreren of tegen
+
+de rechter kantlijn uitlijnen van alinea's, omdat het niet mogelijk was
+
+begin en eind van de uit te lijnen tekst aan te geven. Als gevolg hiervan
+
+werd in het HTML 3.0 voorstel vanaf het begin de &lt;P> tag als een omsluitende
+
+tag gedefinieerd, zodat alinea's moeten worden aangegeven als &lt;P>Hier
+
+staat wat tekst&lt;/P>, en de begin-tag &lt;P> attributen voor uitlijnen
+
+en andere dingen kan bevatten. De eind-tag &lt;/P> kan vaak worden weggelaten
+
+wanneer u geen uitlijning van een alinea opgeeft, hoewel het gebruik ervan
+
+de grenzen tussen de alinea's helderder maakt in een HTML-bronbestand.
+
+<CENTER></CENTER>
+
+
+
+<CENTER><A HREF="barebone.html">Terug naar de Gids</A></CENTER>
+
+
+
+<HR>
+
+<BR><A NAME="color"></A>
+
+<H2>
+
+Tags voor kleur</H2>
+
+De waarde van een kleur wordt opgegeven in de vorm van een hexadecimale
+
+set van drie getallen die de waarden voor rood, groen en blauw aangeven.
+
+Mijn <A HREF="http://werbach.com/web/wwwhelp.html#color">WWW Help Page</A>
+
+bevat een gedeelte met links naar utilities die deze codes voor u kunnen
+
+genereren.
+
+<CENTER></CENTER>
+
+
+
+<CENTER><A HREF="barebone.html">Terug naar de Gids</A></CENTER>
+
+
+
+<HR>
+
+<CENTER></CENTER>
+
+
+
+<CENTER>Copyright &copy; 1995-1999 Kevin Werbach.</CENTER>
+
+
+
+<CENTER>Voor het laatst geactualiseerd op 1 februari 1999.</CENTER>
+
+
+
+</BODY>
+
+</HTML>
+

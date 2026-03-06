@@ -1,0 +1,2359 @@
+<HTML>
+<HEAD>
+   <TITLE>HTML &iacute; hnotskurn</TITLE>
+</HEAD>
+<BODY>
+
+<H1 ALIGN=CENTER><HR SIZE="8" WIDTH=480 noshade>HTML &iacute; HNOTSKURN<br>
+<font size="-1">(The Bare Bones Guide to HTML)</font>
+</H1>
+<P ALIGN=CENTER>eftir <A HREF="mailto:barebones@werbach.com">Kevin Werbach</a><br>
+&Iacute;slenskun:<a href="mailto:arsaellb@ifi.uio.no"> &Aacute;rs&aelig;ll Benediktsson</a><BR>
+
+<I>&Uacute;tg&aacute;fa 3.0 t&ouml;fluform -- 21. j&uacute;l&iacute;, 1996</I><BR>
+
+<HR SIZE="8" WIDTH=480 noshade></P>
+
+<font size=4>
+<P>
+&THORN;essi s&iacute;&eth;a inniheldur allar skipanir &aacute; hinum "opinbera" <A HREF="http://www.w3.org/pub/WWW/MarkUp/Wilbur/">HTML 3.2</a> lista, auk Netscape aukat&aacute;kna, &aacute; saman&thorn;j&ouml;ppu&eth;u og skipulegu formi. Markmi&eth; h&ouml;fundar er a&eth; l&aacute;ta s&iacute;&eth;una endurspegla n&yacute;ustu kynsl&oacute;&eth; af HTML. S&iacute;&eth;asta &uacute;tg&aacute;fan(frum&uacute;tg&aacute;fan &aacute; ensku) af s&iacute;&eth;unni er &aacute; <a
+href="http://werbach.com/barebones/">http://werbach.com/barebones/</a>. S&iacute;&eth;an er hugsu&eth; sem uppsl&aacute;ttarverk me&eth; HTML-skipunum, ekki sem fr&aelig;&eth;slus&iacute;&eth;a. &Aacute;  
+<A HREF="http://werbach.com/web/wwwhelp.html#guides">"WWW Help Page"</A> sem h&ouml;fundur hefur teki&eth; saman er listi yfir fleiri HTML-s&iacute;&eth;ur.<br>&Iacute; <a href="http://www.ifi.uio.no/~arsaellb/ishtml.html">HTML safni</a> &thorn;&yacute;&eth;anda eru enn fleiri HTML tengingar.
+</P>
+</font>
+
+<P><A NAME="contents"></A></P>
+<font size=4><b>Efnisyfirlit</b></font>
+
+<ol>
+<li><b>INNGANGUR</b>
+<ul>
+<li><a href="http://werbach.com/barebones/barebone_introduction.html#unique"><B>Hva&eth; einkennir &thorn;essa s&iacute;&eth;u(&aacute; ensku)?</B></A>
+   
+   <LI><A HREF="http://werbach.com/barebones/barebone_introduction.html#included"><B>Hva&eth;a skipanir eru með &aacute; &thorn;essum lista?(&aacute; ensku)</B></A>
+   
+   <LI><A HREF="http://werbach.com/barebones/barebone_introduction.html#formatting"><B>GER&ETH; "HTML Í HNOTSKURN"(&aacute; ensku)</B></A> (me&eth &uacute;tsk&yacute;ringum &aacute; t&aacute;knum og styttingum)
+ </ul> 
+ <p>
+   <LI><B>HTML  SKIPANIR</B>
+   
+   <uL>
+      <LI><A HREF="#general"><B>grunnskipanir</B></A> (l&aacute;gmarks-skipanirnar fyrir heimas&iacute;&eth;ur)
+      
+      <LI><A HREF="#structure"><B>uppbyggingarskilgreining</B></A> (útlitið stjórnast af stillingum(preference) í vefskoðaranum)
+      
+      <LI><A HREF="#presentation"><B>útlitsskilgreining</B></A> (útlitið stjórnast af vefaranum, ekki af vefskoðaranum)
+      
+      <LI><A HREF="#links"><B>tengingar og myndir</B></A>
+      
+      <LI><A HREF="#dividers"><B>skil</B></A>
+      
+      <LI><A HREF="#lists"><B>listar</B></A>
+      
+      <LI><A HREF="#color"><B>bakgrunnar og litir</B></A>
+      
+      <LI><A HREF="#special"><B>s&eacute;rt&aacute;kn</B></A>
+      
+      <LI><A HREF="#forms"><B>innsl&aacute;ttarform</B></A>
+      
+      <LI><A HREF="#tables"><B>t&ouml;flur</B></A>
+      
+      <LI><A HREF="#frames"><B>rammar(frames)</B></A>
+      
+      <LI><A HREF="#java"><B>java</B></A>
+      
+      <LI><A HREF="#misc"><B>&yacute;mislegt</B></A>
+   </UL>
+   
+   <P>
+   <A HREF="http://www.w3.org/pub/WWW/MarkUp/Activity">W3C Aktivity</A> er "opinbera" s&iacute;&eth;an sem greinir fr&aacute; muninum &aacute; milli HTML sta&eth;lanna(2, 3 og 3,2), auk Netscape-aukaskipanna.</P>
+</OL>
+
+<P ALIGN=CENTER><A NAME="general"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>GRUNNSKIPANIR</FONT><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=120>
+         <P><B>Ger&eth; skjals</B>
+      </TD><TD VALIGN=top width=140>
+         <P><TT>&lt;HTML&gt;&lt;/HTML&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(byrjun og endir skjals)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Titill</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TITLE&gt;&lt;/TITLE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(sett &iacute; haus&lt;head&gt;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Haus</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HEAD&gt;&lt;/HEAD&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(hausinn: uppl&yacute;sing um s&iacute;&eth;una, kemur allra efst &iacute; vefs&iacute;&eth;usko&eth;aranum)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>A&eth;alhluti</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BODY&gt;&lt;/BODY&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(megni&eth; af s&iacute;&eth;unni kemur h&eacute;r)
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER> 
+&nbsp;
+&nbsp;</PRE>
+
+<P ALIGN=CENTER><A NAME="structure"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>UPPBYGGINGARSKILGREINING </FONT><HR SIZE="1"
+         noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>Fyrirsagnir</B>
+      </TD><TD VALIGN=top width=240>
+         <P><TT>&lt;H?&gt;&lt;/H?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(h&aelig;gt a&eth; skilgreina 6 mismunandi st&aelig;r&eth;ir &aacute; fyrirs&ouml;gn. 1 er minnst, 6 er st&aelig;rst)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Sta&eth;setning fyrirsagnar</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;H? ALIGN=LEFT|CENTER|RIGHT&gt;&lt;/H?&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#align">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Skipting HTML-skjals &iacute; hluta</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;DIV&gt;&lt;/DIV&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Sta&eth;setning hvers hluta</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;DIV ALIGN=LEFT|RIGHT|CENTER&gt;&lt;/DIV&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Tilvitnun</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BLOCKQUOTE&gt;&lt;/BLOCKQUOTE&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#blockquote">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>(kemur oftast fram me&eth: auka-greinarskil(indented))
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&Aacute;hersluauki</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;EM&gt;&lt;/EM&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(oftast sk&aacute;letra&eth;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Meiri &aacute;hersluauki</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;STRONG&gt;&lt;/STRONG&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(oftast feitletra&eth;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Tilvitnun</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;CITE&gt;&lt;/CITE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(venjulega sk&aacute;letra&eth;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Skipanalisti</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;CODE&gt;&lt;/CODE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(fyrir lista yfir skipanir &iacute; HTML skjali, d&aelig;mi um jafnst&oacute;rt letur(monospace), &thorn;, e. me&eth; jafna st&aelig;r&eth &aacute; b&oacute;kst&ouml;fum og millibili)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>S&yacute;nishornskipun</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SAMP&gt;&lt;/SAMP&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(d&aelig;mi um jafnst&oacute;rt letur(monospace))
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Slegi&eth; inn fr&aacute; lyklabor&eth;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;KBD&gt;&lt;/KBD&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(d&aelig;mi um jafnst&oacute;rt letur(monospace))
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Breyta(variable)</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;VAR&gt;&lt;/VAR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(oftast sk&aacute;letra&eth;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Skilgreining</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;DFN&gt;&lt;/DFN&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(margir veraldarvefsko&eth;arar skilja ekki &thorn;essa skipun)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Heimilisfang(netfang) h&ouml;fundar</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;ADDRESS&gt;&lt;/ADDRESS&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>St&oacute;rir b&oacute;kstafir</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BIG&gt;&lt;/BIG&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Litlir b&oacute;kstafir</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SMALL&gt;&lt;/SMALL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER> 
+&nbsp;</PRE>
+
+<P ALIGN=CENTER><A NAME="presentation"></A><TABLE BORDER=0
+CELLPADDING=3 WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>ÚTLITSSKILGREINING </FONT><HR SIZE="1"
+         noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>Feitletrun</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;B&gt;&lt;/B&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Sk&aacute;letrun</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;I&gt;&lt;/I&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Undirstrikun</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;U&gt;&lt;/U&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(ekki allir veflesarar skilja &thorn;essa skipun)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Yfirstrikun</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;STRIKE&gt;&lt;/STRIKE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(ekki allir veflesarar skilja &thorn;essa skipun)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Yfirstrikun</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;S&gt;&lt;/S&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(ekki allir veflesarar skilja &thorn;essa skipun)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Letur sta&eth;sett ne&eth;ar en annar texti</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SUB&gt;&lt;/SUB&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>d&aelig;mi: H<sub>2</sub>O
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Letur sta&eth;sett ofar en annar texti</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SUP&gt;&lt;/SUP&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>d&aelig;mi: A<sup>2</sup>
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>V&eacute;lritunarskrift</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TT&gt;&lt;/TT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(d&aelig;mi um jafnst&oacute;rt letur(monospace))
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Forsni&eth;inn texti</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;PRE&gt;&lt;/PRE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(textinn kemur fram eins og hann er settur upp)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Leturbreidd</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;PRE WIDTH=?&gt;&lt;/PRE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Mi&eth;stilling</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;CENTER&gt;&lt;/CENTER&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#align">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>(fyrir b&aelig;&eth;i texta og myndir)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.0
+      </TD><TD VALIGN=top>
+         <P><B>Blikkandi texti</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BLINK&gt;&lt;/BLINK&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P><blink>blikkandi texti</blink>
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Leturst&aelig;r&eth;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FONT SIZE=?&gt;&lt;/FONT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(fr&aacute; 1-7, 1 er minnst)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Breyta leturst&aelig;r&eth;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FONT SIZE="+|-?"&gt;&lt;/FONT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.0
+      </TD><TD VALIGN=top>
+         <P><B>Grunnletur st&aelig;r&eth;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BASEFONT SIZE=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>skilgreinir grunnst&aelig;r&eth; sem hlutfallsleg st&aelig;r&eth;arbreyting fyrir &lt;font&gt; byggir &aacute;(fr&aacute; 1-7; grunntala er 3)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Leturlitur</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FONT COLOR="#$$$$$$"&gt;&lt;/FONT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Velja leturger&eth;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FONT FACE="***"&gt;&lt;/FONT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Fleir-d&aacute;lkatexti</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;MULTICOL COLS=?&gt;&lt;/MULTICOL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Breidd &aacute; milli d&aacute;lka</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;MULTICOL GUTTER=?&gt;&lt;/MULTICOL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(default is 10 pixels)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>D&aacute;lkabreidd</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;MULTICOL WIDTH=?&gt;&lt;/MULTICOL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>R&yacute;mi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SPACER&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>R&yacute;mi-ger&eth;</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;SPACER TYPE=horizontal| vertical|block&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>R&yacute;mi-st&aelig;r&eth;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SPACER SIZE=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top width140>
+         <P><B>H&aelig;&eth/breidd r&yacute;mis</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SPACER WIDTH=? HEIGHT=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>R&yacute;mi-sta&eth;setning</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SPACER ALIGN=left|right|center&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER> 
+&nbsp;
+&nbsp;</PRE>
+
+<P ALIGN=CENTER><A NAME="links"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>TENGINGAR OG MYNDIR</FONT><HR SIZE="1"
+         noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>Tengja URL</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;A HREF="URL"&gt;&lt;/A&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top ROWSPAN=2>
+         <P>&nbsp;
+      </TD><TD VALIGN=top ROWSPAN=2>
+         <P><B>Tengja vissan sta&eth; innan URL</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;A HREF="URL#***"&gt;&lt;/A&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>
+      </TD></TR>
+   <TR><TD VALIGN=top>
+         <P><TT>&lt;A HREF="#***"&gt;&lt;/A&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Bent &aacute; &aacute; mark &iacute; ramma</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;A HREF="URL" TARGET="***| |_blank|_self|_parent|_top"&gt;&lt;/A&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Skilgreining &aacute; marki &iacute; skjali</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;A NAME="***"&gt;&lt;/A&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+      
+    <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Samband tenginga</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;A REL="***"&gt;&lt;/A&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(ekki allir veflesarar skilja &thorn;essa skipun)
+      </TD></TR>
+  <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Sn&uacute;a sambandi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;A REV="***"&gt;&lt;/A&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(ekki allir veflesarar skilja &thorn;essa skipun)
+      </TD></TR>
+ 
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Birta mynd</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;IMG SRC="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Sta&eth;setja URL</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;IMG SRC="URL" ALIGN=TOP|BOTTOM|MIDDLE|LEFT|RIGHT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.0
+      </TD><TD VALIGN=top>
+         <P><B>Sta&eth;setja URL</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;IMG SRC="URL" ALIGN=TEXTTOP| ABSMIDDLE|BASELINE|ABSBOTTOM&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Texti &iacute; sta&eth; myndar</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;IMG SRC="URL" ALT="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(ef mynd birtist ekki)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Mynd me&eth; v&iacute;sunum(server-side imagemap)</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;IMG SRC="URL" ISMAP&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(forrit(script) er nau&eth;synlegt)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Mynd me&eth; v&iacute;sunum(client-side imagemap)</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;IMG SRC="URL" USEMAP="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>L&yacute;sing &aacute; korti(map)</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;MAP NAME="***"&gt;&lt;/MAP&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Sv&aelig;&eth;i &aacute; korti(map)</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;AREA SHAPE="RECT" COORDS=",,," HREF="URL"|NOHREF&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>St&aelig;r&eth; myndar</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;IMG SRC="URL" WIDTH=? HEIGHT=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(&iacute; pixlum)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>St&aelig;r&eth; ramma &igrave; kringum mynd</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;IMG SRC="URL" BORDER=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(&iacute; pixlum)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>R&yacute;mi umhverfis mynd</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;IMG SRC="URL" HSPACE=? VSPACE=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(&iacute; pixlum)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.0
+      </TD><TD VALIGN=top>
+         <P><B>Mynd me&eth; minni upplausn innifalin</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;IMG SRC="URL" LOWSRC="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.1
+      </TD><TD VALIGN=top>
+         <P><B>Togun(Client Pull)</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;META HTTP-EQUIV="Refresh" CONTENT="?; URL=URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Innsetning hlutar(Embed Object)</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;EMBED SRC="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(setja hlut &iacute; vefs&iacute;&eth;u t.d. hlj&oacute;&eth;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>St&aelig;r&eth; hlutar</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;EMBED SRC="URL" WIDTH=? HEIGHT=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER> 
+&nbsp;</PRE>
+
+<P ALIGN=CENTER><A NAME="dividers"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>SKIL</FONT><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>M&aacute;lsgrein</B>
+      </TD><TD VALIGN=top width=240>
+         <P><TT>&lt;P&gt;&lt;/P&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#paragraph">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>(&lt;/P&gt; er ekki nau&eth;synlegt)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Sta&eth;setning texta</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;P ALIGN=LEFT|CENTER|RIGHT&gt;&lt;/P&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#align">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Greinaskil</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>L&oacute;&eth;r&eacute;tt r&yacute;mi vi&eth; greinaskil</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BR CLEAR=LEFT|RIGHT|ALL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>L&aacute;r&eacute;tt l&iacute;na</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Sta&eth;setning l&aacute;r&eacute;ttrar l&iacute;nu</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HR ALIGN=LEFT|RIGHT|CENTER&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>H&aelig;&eth; l&aacute;r&eacute;ttrar l&iacute;nu</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HR SIZE=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(&iacute; "pixlum")
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Breidd l&aacute;r&eacute;ttrar l&iacute;nu</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HR WIDTH=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(&iacute; "pixlum")
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.0
+      </TD><TD VALIGN=top>
+         <P><B>Breidd l&aacute;r&eacute;ttrar l&iacute;nu &iacute; pr&oacute;sentum</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HR WIDTH="%"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(pr&oacute;senta s&iacute;&eth;ubreiddar)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>"M&ouml;tt" l&iacute;na</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HR NOSHADE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(&aacute;n &thorn;r&iacute;v&iacute;ddar&uacute;tlits)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.0
+      </TD><TD VALIGN=top>
+         <P><B>Hindrun greinaskila</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;NOBR&gt;&lt;/NOBR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(kemur &iacute; veg fyrir greinaskil)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.0
+      </TD><TD VALIGN=top>
+         <P><B>Or&eth;askil</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;WBR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(gefur til kynna sta&eth;setningu greinaskila ef &thorn;&ouml;rf er &aacute;)
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER> 
+&nbsp;</PRE>
+
+<P ALIGN=CENTER><A NAME="lists"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>LISTAR </FONT><HR SIZE="1" noshade>
+      </TH><TH>
+         <P ALIGN=LEFT>&nbsp;
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>&Oacute;n&uacute;mera&eth;ur  listi</B>
+      </TD><TD VALIGN=top width=240>
+         <P><TT>&lt;UL&gt;&lt;LI&gt;&lt;/UL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(<TT>&lt;LI&gt;</TT> er sett fyrir framan hvert atri&eth;i &iacute; listanum, birtir hnapp)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+        <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Saman&thorn;jappa&eth;ur listi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;UL COMPACT&gt;&lt;/UL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top ROWSPAN=2>
+         <P>&nbsp;
+      </TD><TD VALIGN=top ROWSPAN=2>
+         <P><B>Ger&eth; hnappa</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;UL TYPE=DISC|CIRCLE|SQUARE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(fyrir allan listann)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR><TD VALIGN=top>
+         <P><TT>&lt;LI TYPE=DISC|CIRCLE|SQUARE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(fyrir &thorn;ennan lista og &aacute;framhald)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>N&uacute;mera&eth;ur listi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;OL&gt;&lt;LI&gt;&lt;/OL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(<TT>&lt;LI&gt;</TT> er sett fyrir framan hvert atri&eth;i &iacute; listanum, birtir hnapp)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+              <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Saman&thorn;jappa&eth;ur listi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;OL COMPACT&gt;&lt;/OL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top ROWSPAN=2>
+         <P>&nbsp;
+      </TD><TD VALIGN=top ROWSPAN=2>
+         <P><B>Ger&eth; n&uacute;mers</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;OL TYPE=A|a|I|i|1&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(fyrir allan listann)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR><TD VALIGN=top>
+         <P><TT>&lt;LI TYPE=A|a|I|i|1&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(fyrir &thorn;ennan lista og &aacute;framhald)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top ROWSPAN=2>
+         <P>&nbsp;
+      </TD><TD VALIGN=top ROWSPAN=2>
+         <P><B>Byrjunarn&uacute;mer</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;OL START=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(skilgreinir fyrsta n&uacute;meri&eth; &aacute; listanum)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR><TD VALIGN=top>
+         <P><TT>&lt;LI VALUE=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(fyrir &thorn;ennan lista og &aacute;framhald)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Skilgreiningarlisti</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;DL&gt;&lt;DT&gt;&lt;DD&gt;&lt;/DL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(<TT>&lt;DT&gt;=hugtak, &lt;DD&gt;</TT>=skilgreining)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+              <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Saman&thorn;jappa&eth;ur listi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;DL COMPACT&gt;&lt;/DL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&Oacute;n&uacute;mera&eth;ur listi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;MENU&gt;&lt;LI&gt;&lt;/MENU&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(<TT>&lt;LI&gt;</TT> er sett fyrir framan hvert atri&eth;i &iacute; listanum, birtir hnapp)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+              <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Saman&thorn;jappa&eth;ur listi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;MENU COMPACT&gt;&lt;/MENU&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&Oacute;n&uacute;mera&eth;ur listi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;DIR&gt;&lt;LI&gt;&lt;/DIR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(<TT>&lt;LI&gt;</TT> er sett fyrir framan hvert atri&eth;i &iacute; listanum, birtir hnapp)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+              <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Saman&thorn;jappa&eth;ur listi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;DIR COMPACT&gt;&lt;/DIR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER> 
+&nbsp;</PRE>
+
+<P ALIGN=CENTER><A NAME="color"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>BAKGRUNNAR OG LITUR</FONT><HR SIZE="1"
+         noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>Bakgrunnslitur me&eth: skr&aacute;(file)</B>
+      </TD><TD VALIGN=top width=240>
+         <P><TT>&lt;BODY BACKGROUND="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+    <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Bakgrunnslitur</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BODY BGCOLOR="#$$$$$$"&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#color">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>(r&ouml;&eth;in er rautt/gr&aelig;nt/bl&aacute;tt)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Texta litur</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BODY TEXT="#$$$$$$"&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#color">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Tengingalitur</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BODY LINK="#$$$$$$"&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#color">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Notu&eth; tenging</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BODY VLINK="#$$$$$$"&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#color">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Virk tenging</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BODY ALINK="#$$$$$$"&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#color">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top COLSPAN=4 align=center>
+         <P ALIGN=CENTER>(Meiri uppl&yacute;singar &aacute;
+         <A HREF="http://werbach.com/web/wwwhelp.html#color">
+         http://werbach.com/web/wwwhelp.html#color</A>)
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER> </PRE>
+
+<P ALIGN=CENTER><A NAME="special"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>S&Eacute;RT&Aacute;KN </FONT><I>(noti&eth; litla b&oacute;kstafi)</I><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>S&eacute;rt&aacute;kn</B>
+      </TD><TD VALIGN=top width=240>
+         <P>&amp;#?;
+      </TD><TD VALIGN=top>
+         <P>(? er ISO 8859-1 t&aacute;kn)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&lt;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;lt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&gt;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&amp;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;amp;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>"</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;quot;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&reg;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;reg;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&copy;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;copy;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>millibil</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;nbsp;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+
+<TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&ETH;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;ETH;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+
+<TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&eth;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;eth;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+
+<TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&THORN;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;THORN;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+
+<TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&thorn;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;thorn;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+
+<TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&Aacute;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;Aacute;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+
+<TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&aacute;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;aacute;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+
+<TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&Eacute;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;Eacute;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+
+<TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&eacute;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;eacute;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+
+<TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&Iacute;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;lacute;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+
+<TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&iacute;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;iacute;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+
+<TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&Oacute;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;Oacute;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+
+<TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&oacute;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;oacute;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+
+<TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&Uacute;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;Uacute;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+
+<TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&uacute;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;uacute;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+
+<TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&Yacute;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;Yacute;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+
+<TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&yacute;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;yacute;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+
+
+   <TR>
+      <TD VALIGN=top COLSPAN=4 align=center>
+         <P ALIGN=CENTER>(&Yacute;tarlegur listi &aacute;
+         <A HREF="http://www.uni-passau.de/%7Eramsch/iso8859-1.html">
+         http://www.uni-passau.de/%7Eramsch/iso8859-1.html</A>)
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER> </PRE>
+
+<P ALIGN=CENTER><A NAME="forms"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>INNSLÁTTARFORM </FONT><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>Skilgreina Formi&eth;</B>
+      </TD><TD VALIGN=top width=240>
+         <P><TT>&lt;FORM ACTION="URL" METHOD=GET|POST&gt;&lt;/FORM&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>File Upload</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FORM
+         ENCTYPE="multipart/form-data"&gt;&lt;/FORM&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ger&eth: innsl&aacute;ttar</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;INPUT TYPE="TEXT|PASSWORD|CHECKBOX|RADIO| IMAGE|HIDDEN|SUBMIT|RESET"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Nafn innsl&aacute;ttar</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;INPUT NAME="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Gildi innsl&aacute;ttar</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;INPUT VALUE="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Valinn?</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;INPUT CHECKED&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(reitur til a&eth; merkja vi&eth; valkost)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>St&aelig;r&eth: reitar</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;INPUT SIZE=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(&iacute; st&ouml;fum)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>H&aacute;marks lengd</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;INPUT MAXLENGTH=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(&iacute; st&ouml;fum)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Valkostalisti</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SELECT&gt;&lt;/SELECT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Nafn &aacute; lista</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;SELECT NAME="***"&gt;&lt;/SELECT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B># af valkostum</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;SELECT SIZE=?&gt;&lt;/SELECT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Fj&ouml;lval</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SELECT MULTIPLE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(h&aelig;gt a&eth; velja meir en einn valkost)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Valkostir</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;OPTION&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(valkostir sem eru &iacute; bo&eth;i)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Fyrirfram valinn valkostur</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;OPTION SELECTED&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>St&aelig;r&eth; innsl&aacute;ttarreits</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TEXTAREA ROWS=? COLS=?&gt;&lt;/TEXTAREA&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Nafn innsl&aacute;ttarreits</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TEXTAREA NAME="***"&gt;&lt;/TEXTAREA&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Samman&thorn;j&ouml;ppun texta</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;TEXTAREA WRAP=OFF|VIRTUAL|PHYSICAL&gt;&lt;/TEXTAREA&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER> 
+&nbsp;</PRE>
+
+<P ALIGN=CENTER><A NAME="tables"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>T&Ouml;FLUR</FONT><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>Skilgreina t&ouml;flur</B>
+      </TD><TD VALIGN=top width=240>
+         <P><TT>&lt;TABLE&gt;&lt;/TABLE&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#tables">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Rammi kringum t&ouml;fluna</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;table border=?&gt;&lt;/TABLE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>R&yacute;mi &iacute; kant t&ouml;flunnar</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TABLE CELLSPACING=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>R&yacute;mi &aacute; milli kants og innihalds</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TABLE CELLPADDING=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>T&ouml;flubreidd</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TABLE WIDTH=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(&iacute; pixlum)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>T&ouml;flubreidd</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TABLE WIDTH="%"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(&iacute; pr&oacute;sentum)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>T&ouml;lfur&ouml;&eth;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TR&gt;&lt;/TR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Sta&eth;setning af t&ouml;flur&ouml;&eth;</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;TR ALIGN=LEFT|RIGHT| CENTER|MIDDLE|BOTTOM&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Skilgreinir einstakan t&ouml;flureit</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TD&gt;&lt;/TD&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(ver&eth;ur a&eth; vera innan t&ouml;flura&eth;ar &thorn;. e. &lt;TR&gt;h&eacuter&lt;/TR&gt;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Sta&ethsetning innihalds &iacute; t&ouml;flureit</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;TD ALIGN=LEFT|RIGHT| CENTER|MIDDLE|BOTTOM&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Hindrun greinaskila</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TD NOWRAP&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>D&aacute;lkar a&eth; spanna</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TD COLSPAN=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(fj&ouml;ldi d&aacute;lka sem ein r&ouml;&eth; spannar)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ra&eth;ir a&eth; spannna</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TD ROWSPAN=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(fj&ouml;ldi ra&eth;a sem einn d&aacute;lkur spannar)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.1
+      </TD><TD VALIGN=top>
+         <P><B>Breidd reitar</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TD WIDTH=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(in pixels)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.1
+      </TD><TD VALIGN=top>
+         <P><B>Breidd reitar</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TD WIDTH="%"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(&iacute; pr&oacute;sentum af t&ouml;flunni &iacute; heild)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Bakgrunnslitur reitar</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TD BGCOLOR="#$$$$$$"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Töfluhaus</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TH&gt;&lt;/TH&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(hefur s&ouml;mu &aacute;hrif og: &lt;TD&gt;&lt;B&gt;&lt;/B&gt;&lt;/TD&gt;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Sta&eth;setning</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;TH ALIGN=LEFT|RIGHT| CENTER|MIDDLE|BOTTOM&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Hindrun greinaskila</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TH NOWRAP&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>D&aacute;lkar a&eth; spanna</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TH COLSPAN=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ra&eth;ir a&eth; spannna</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TH ROWSPAN=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.1
+      </TD><TD VALIGN=top>
+         <P><B>Breidd reitar</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TH WIDTH=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(&iacute; pixlum)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.1
+      </TD><TD VALIGN=top>
+         <P><B>Breidd reitar</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TH WIDTH="%"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(&iacute; pr&oacute;sentum af t&ouml;flunni &iacute; heild )
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Bakgrunnslitur reitar</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TH BGCOLOR="#$$$$$$"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Merking &aacute; t&ouml;flu</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;CAPTION&gt;&lt;/CAPTION&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Sta&eth;setning</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;CAPTION ALIGN=TOP|BOTTOM&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(yfir/undir t&ouml;flu)
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER>&nbsp;</PRE>
+
+<P ALIGN=CENTER><A NAME="frames"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>RAMMAR(FRAMES) </FONT><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>N2.0
+      </TD><TD VALIGN=top width=140>
+         <P><B>Skjal rammans</B>
+      </TD><TD VALIGN=top width=240>
+         <P><TT>&lt;FRAMESET&gt;&lt;/FRAMESET&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(&iacute; sta&eth; <TT>&lt;BODY&gt;</TT>)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>H&aelig;&eth; ra&eth;a</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET ROWS=,,,&gt;&lt;/FRAMESET&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(pixlar e&eth;a %)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>H&aelig;&eth; ra&eth;a</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET ROWS=*&gt;&lt;/FRAMESET&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(* = hlutfallsleg st&aelig;r&eth;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Breidd d&aacute;lka</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET COLS=,,,&gt;&lt;/FRAMESET&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(pixlar e&eth;a %)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Breidd d&aacute;lka</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET COLS=*&gt;&lt;/FRAMESET&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(* = hlutfallsleg st&aelig;r&eth;)
+      </TD></TR>
+         <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Breidd kanta</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET BORDER=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+         <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>kantar</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET FRAMEBORDER="yes|no"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Litur kants</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET BORDERCOLOR="#$$$$$$"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Skilgreina ramma</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(innihald einstaka ramma)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>S&yacute;ning &aacute; skjali</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME SRC="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Nafn ramma</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;FRAME NAME="***"|_blank|_self| _parent|_top&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Breidd ja&eth;ars</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME MARGINWIDTH=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(h&aelig;gri og vinstri ja&eth;ar)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>H&aelig;&eth; ja&eth;ars</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME MARGINHEIGHT=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(efsti og ne&eth;st ja&eth;ar)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Flettikantur e&eth;a ekki?</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME SCROLLING="YES|NO|AUTO"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>&Oacute;breytanleg st&aelig;r&eth;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME NORESIZE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+    <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Kantar</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME FRAMEBORDER="yes|no"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Litur kants</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME BORDERCOLOR="#$$$$$$"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+  <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Innihald utan ramma</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;NOFRAMES&gt;&lt;/NOFRAMES&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(fyrir netlesara sem sty&eth;ja ekki ramma)
+      </TD></TR>
+</TABLE></P>
+
+<P ALIGN=CENTER>&nbsp;</P>
+
+<P ALIGN=CENTER><A NAME="java"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>JAVA</FONT><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>Java-forrit(applet)</B>
+      </TD><TD VALIGN=top width=240>
+         <P><TT>&lt;APPLET&gt;&lt;/APPLET&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Nafn &aacute; skjali(file) java-forritsins</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET CODE="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Parameters</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET PARAM NAME="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Sta&eth; java-forrits</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET CODEBASE="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Einkenni java-forrits</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET NAME="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(forritinu er gefi&eth; merki til a&eth; h&aelig;gt s&eacute; a&eth; v&iacute;sa til &thorn;ess annars sta&eth;ar &iacute; skjalinu)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Varatexti</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET ALT="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(fyrir veflesara sem skilja ekki java)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Sta&eth;setning</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET ALIGN="LEFT|RIGHT|CENTER"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>St&aelig;r&eth;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET WIDTH=? HEIGHT=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(&iacute; pixlum)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>R&yacute;mi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET HSPACE=? VSPACE=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(&iacute; pixlum)
+      </TD></TR>
+</TABLE></P>
+
+<P ALIGN=CENTER>&nbsp;</P>
+
+<P ALIGN=CENTER><A NAME="misc"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>&Yacute;MISLEGT</FONT><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>Athugasemdir</B>
+      </TD><TD VALIGN=top width=240>
+         <P><TT>&lt;!-- *** --&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(texti sem kemur ekki fram &iacute; netlesaranum)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>HTML 3.2 fyrirs&ouml;gn</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN"&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/barebone_annotation.html#prologue">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>(gefur til kynna a&eth; skjali&eth; er skrifa&eth; me&eth; HTML 3.2 sta&eth;linum)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Leit m&ouml;guleg</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;ISINDEX&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(gefur til kynna skr&aacute; sem h&aelig;gt er a&eth; leita &iacute;)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>A&eth;ger&eth;(prompt)</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;ISINDEX PROMPT="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(texti sem kynnir innsl&aacute;tt)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Leitun sent</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;A HREF="URL?***"&gt;&lt;/a&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(nota&eth;u raunverulegt spurningamerki)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>URL &iacute; &thorn;essu skjali</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BASE HREF="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(sta&ethsett &iacute; haus)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Nafn &aacute; grunnramma</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BASE TARGET="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(sta&ethsett &iacute; haus)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Samband</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;LINK REV="***" REL="***" HREF="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(sta&ethsett &iacute; haus)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Vi&eth;b&oacute;tarbreyta</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;META&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(sta&ethsett &iacute; haus)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&Uacute;tlitsskjal</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;STYLE&gt;&lt;/STYLE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(ekki allir veflesarar skilja &thorn;essa skipun)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Forrit</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SCRIPT&gt;&lt;/SCRIPT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(ekki allir veflesarar skilja &thorn;essa skipun)
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER> 
+&nbsp;
+&nbsp;</PRE>
+
+<P ALIGN=CENTER><TABLE BORDER=1 CELLPADDING=5 WIDTH="100%">
+   <TR>
+      <TD VALIGN=top>
+         <P>Copyright &copy;1995-1997
+         <A HREF="mailto:barebones@werbach.com">Kevin Werbach</A>.
+         Noncommercial redistribution permitted. This Guide is not a
+         product of <A HREF="http://www.barebones.com">Bare Bones
+         Software</A>; the similarity of names is purely
+         coincidental.
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER>&nbsp;</PRE>
+
+<P ALIGN=CENTER><A HREF="#contents">Contents</A> |
+<A HREF="#general">LIST OF TAGS</A> |
+<A HREF="ice_barebone.txt">Plain Text Version</A> |
+<A HREF="http://werbach.com/home.html">Kevin's Home Page</A></P>
+</BODY>
+</HTML>
+
+

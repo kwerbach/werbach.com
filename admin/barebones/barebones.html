@@ -1,0 +1,1934 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive 4">
+		<title>Bare Bones Guide to HTML</title>
+	</head>
+
+	<body bgcolor="white">
+		<table width="100%" border="0">
+			<tr>
+				<td bgcolor="#ffffcc">
+					<center>
+<!-- BEGIN RICH-MEDIA BURST! CODE --> 
+
+<script language="JavaScript"> 
+
+<!-- /* © 1997-1999 BURST! Media, LLC. All Rights Reserved.*/ 
+
+var TheAdcode = 'ad5894a'; 
+
+var bN = navigator.appName; 
+
+var bV = parseInt(navigator.appVersion); 
+
+var base='http://www.burstnet.com/'; 
+
+var Tv=''; 
+
+var agt=navigator.userAgent.toLowerCase(); 
+
+if (bV>=4) 
+
+  {ts=window.location.pathname+window.location.search; 
+
+   i=0; Tv=0; while (i< ts.length) 
+
+      { Tv=Tv+ts.charCodeAt(i); i=i+1; } Tv="/"+Tv;} 
+
+  else   {Tv=escape(window.location.pathname); 
+
+   if( Tv.charAt(0)!='/' ) Tv="/"+Tv; 
+
+          else if (Tv.charAt(1)=="/")
+Tv=""; 
+
+  if( Tv.charAt(Tv.length-1) == "/") 
+
+    Tv = Tv + "_";} 
+
+if (bN=='Netscape'){ 
+
+     if ((bV>=4)&&(agt.indexOf("mac")==-1))
+{  document.write('<s'+'cript src="'+ 
+
+      base+'cgi-bin/ads/'+TheAdcode+'.cgi/RETURN-CODE/JS' 
+
+      +Tv+'">'); 
+
+     document.write('</'+'script>');    
+} 
+
+     else if (bV>=3) {document.write('<'+'a href="'+base+'ads/'+ 
+
+        TheAdcode+'-map.cgi'+Tv+'"target=_top>'); 
+
+        document.write('<img src="' + base + 'cgi-bin/ads/' + 
+
+        TheAdcode + '.cgi' + Tv + '" ismap width="468" height="60"' + 
+
+        ' border="0" alt="Click Here"></a>');} 
+
+ } 
+
+if (bN=='Microsoft Internet Explorer') 
+
+ document.write('<ifr'+'ame id="BURST" src="'+base+'cgi-bin/ads/'
++ 
+
+  TheAdcode + '.cgi' + Tv + '/RETURN-CODE" width="468" height="60"' + 
+
+  'marginwidth="0" marginheight="0" hspace="0" vspace="0" ' + 
+
+  'frameborder="0" scrolling="no"></ifr'+'ame>'); 
+
+// --> 
+
+</script> 
+<noscript>
+</noscript> 
+
+<!-- END BURST CODE --><br>
+						<img height="100" width="468" src="images99/bbgh_logo_yellow2.gif" border="0" alt="-- THE BARE BONES GUIDE TO HTML --" vspace="10"></center>
+				</td>
+			</tr>
+		</table>
+		<center>
+			<p><i><b>Version 4.0 Formatted -- February 1999 </b></i><b><br>
+			</b></p>
+		</center>
+		<p>The latest version of this document is available at <a href="http://werbach.com/barebones/">http://werbach.com/barebones/</a>, where you will also find the text version, translations, and background materials.</p>
+		<p>The Bare Bones Guide to HTML lists all the tags that current browsers are likely to recognize. I have included all the elements in the official HTML 4.0 recommendation with common attributes, as well as Netscape and Microsoft extensions. This document is a quick reference, not a complete specification; for official information about HTML and its development, see the World Wide Web Consortium site at <a href="http://www.w3.org/MarkUp/">http://www.w3.org/MarkUp/</a>.</p>
+		<p>The Guide is designed to be as concise as possible, and therefore it doesn't go into any detail about how to use the various tags. A few tags link to notes that address frequently-asked questions. If you're looking for more detailed step-by-step information, see my <a href="http://werbach.com/web/wwwhelp.html">WWW Help Page</a>.</p>
+		<p><a name="contents"></a></p>
+		<p><font size="4"><b>Table of Contents </b></font></p>
+		<ol>
+			<li><b>INTRODUCTORY MATERIAL </b>
+			<ul>
+				<li><a href="intro.html#unique"><b>What is unique about this guide </b></a>
+				<li><a href="intro.html#included"><b>Which HTML tags are included </b></a>
+				<li><a href="intro.html#formatting"><b>How this document is formatted </b></a>(including a description of symbols and abbreviations)
+			</ul>
+			<li><b>HTML TAGS </b>
+			<ul>
+				<li><a href="#general"><b>basic elements </b></a>(all HTML documents should have these)
+				<li><a href="#structure"><b>structural definition </b></a>(appearance controlled by the browser's preferences)
+				<li><a href="#presentation"><b>presentation formatting </b></a>(author specifies text appearance)
+				<li><a href="#links"><b>links, graphics, and sounds </b></a>
+				<li><a href="#positioning"><b>positioning </b></a>
+				<li><a href="#dividers"><b>dividers </b></a>
+				<li><a href="#lists"><b>lists </b></a>
+				<li><a href="#color"><b>backgrounds and colors </b></a>
+				<li><a href="#special"><b>special characters </b></a>
+				<li><a href="#forms"><b>forms </b></a>
+				<li><a href="#tables"><b>tables </b></a>
+				<li><a href="#frames"><b>frames </b></a>
+				<li><a href="#java"><b>scripts and java </b></a>
+				<li><a href="#miscellaneous"><b>miscellaneous </b></a>
+			</ul>
+			<p><b>Important: </b>If you are not clear about the differences between the various versions of HTML, I suggest that you read my discussion of <a href="notes.html#HTML">the development of HTML</a>, or the <a href="http://www.w3.org/pub/WWW/MarkUp/Activity">World Wide Web Consortium HTML activity statement.</a></p>
+		</ol>
+		<center>
+			<p><a name="general"></a>
+			<table border="0" width="100%">
+				<tr>
+					<th colspan="4"><font size="6">BASIC ELEMENTS </font>
+						<hr size="1" noshade>
+					</th>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Document Type </b></td>
+					<td width="200"><tt>&lt;HTML&gt;&lt;/HTML&gt; </tt></td>
+					<td>(beginning and end of file)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Title </b></td>
+					<td width="200"><tt>&lt;TITLE&gt;&lt;/TITLE&gt; </tt></td>
+					<td>(must be in header)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Header </b></td>
+					<td width="200"><tt>&lt;HEAD&gt;&lt;/HEAD&gt; </tt></td>
+					<td>(descriptive info, such as title)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Body </b></td>
+					<td width="200"><tt>&lt;BODY&gt;&lt;/BODY&gt; </tt></td>
+					<td>(bulk of the page)</td>
+				</tr>
+			</table>
+			</p>
+		</center>
+		<center>
+			<p><a name="structure"></a>
+			<table border="0" width="100%">
+				<tr>
+					<th colspan="4"><font size="6">STRUCTURAL DEFINITION </font>
+						<hr size="1" noshade>
+					</th>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Heading </b></td>
+					<td width="200"><tt>&lt;H?&gt;&lt;/H?&gt; </tt></td>
+					<td>(the spec. defines 6 levels)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Align Heading </b></td>
+					<td width="200"><tt>&lt;H? ALIGN=LEFT|CENTER|RIGHT&gt;&lt;/H?&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Division </b></td>
+					<td width="200"><tt>&lt;DIV&gt;&lt;/DIV&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Align Division </b></td>
+					<td colspan="2"><tt>&lt;DIV ALIGN=LEFT|RIGHT|CENTER|JUSTIFY&gt;&lt;/DIV&gt; </tt></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Defined Content </b></td>
+					<td width="200"><tt>&lt;SPAN&gt;&lt;/SPAN&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><a href="notes.html#blockquote"><b>Block Quote</b></a><b> </b></td>
+					<td width="200"><tt>&lt;BLOCKQUOTE&gt;&lt;/BLOCKQUOTE&gt; </tt></td>
+					<td>(usually indented)</td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Quote </b></td>
+					<td width="200"><tt>&lt;Q&gt;&lt;/Q&gt; </tt></td>
+					<td>(for short quotations)</td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Citation </b></td>
+					<td width="200"><tt>&lt;Q CITE=&quot;URL&quot;&gt;&lt;/Q&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Emphasis </b></td>
+					<td width="200"><tt>&lt;EM&gt;&lt;/EM&gt; </tt></td>
+					<td>(usually displayed as italic)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Strong Emphasis </b></td>
+					<td width="200"><tt>&lt;STRONG&gt;&lt;/STRONG&gt; </tt></td>
+					<td>(usually displayed as bold)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Citation </b></td>
+					<td width="200"><tt>&lt;CITE&gt;&lt;/CITE&gt; </tt></td>
+					<td>(usually italics)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Code </b></td>
+					<td width="200"><tt>&lt;CODE&gt;&lt;/CODE&gt; </tt></td>
+					<td>(for source code listings)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Sample Output </b></td>
+					<td width="200"><tt>&lt;SAMP&gt;&lt;/SAMP&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Keyboard Input </b></td>
+					<td width="200"><tt>&lt;KBD&gt;&lt;/KBD&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Variable </b></td>
+					<td width="200"><tt>&lt;VAR&gt;&lt;/VAR&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Definition </b></td>
+					<td width="200"><tt>&lt;DFN&gt;&lt;/DFN&gt; </tt></td>
+					<td>(not widely implemented)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Author's Address </b></td>
+					<td width="200"><tt>&lt;ADDRESS&gt;&lt;/ADDRESS&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Large Font Size </b></td>
+					<td width="200"><tt>&lt;BIG&gt;&lt;/BIG&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Small Font Size </b></td>
+					<td width="200"><tt>&lt;SMALL&gt;&lt;/SMALL&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Insert </b></td>
+					<td width="200"><tt>&lt;INS&gt;&lt;/INS&gt; </tt></td>
+					<td>(marks additions in a new version)</td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Time of Change </b></td>
+					<td width="200"><tt>&lt;INS DATETIME=&quot;:::&quot;&gt;&lt;/INS&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Comments </b></td>
+					<td width="200"><tt>&lt;INS CITE=&quot;URL&quot;&gt;&lt;/INS&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Delete </b></td>
+					<td width="200"><tt>&lt;DEL&gt;&lt;/DEL&gt; </tt></td>
+					<td>(marks deletions in a new version)</td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Time of Change </b></td>
+					<td width="200"><tt>&lt;DEL DATETIME=&quot;:::&quot;&gt;&lt;/DEL&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Comments </b></td>
+					<td width="200"><tt>&lt;DEL CITE=&quot;URL&quot;&gt;&lt;/DEL&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Acronym </b></td>
+					<td width="200"><tt>&lt;ACRONYM&gt;&lt;/ACRONYM&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Abbreviation </b></td>
+					<td width="200"><tt>&lt;ABBR&gt;&lt;/ABBR&gt; </tt></td>
+					<td></td>
+				</tr>
+			</table>
+			</p>
+		</center>
+		<center>
+			<p><a name="presentation"></a>
+			<table border="0" width="100%">
+				<tr>
+					<th colspan="4"><font size="6">PRESENTATION FORMATTING </font>
+						<hr size="1" noshade>
+					</th>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Bold </b></td>
+					<td width="200"><tt>&lt;B&gt;&lt;/B&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Italic </b></td>
+					<td width="200"><tt>&lt;I&gt;&lt;/I&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Underline </b></td>
+					<td width="200"><tt>&lt;U&gt;&lt;/U&gt; </tt></td>
+					<td>(not widely implemented)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Strikeout </b></td>
+					<td width="200"><tt>&lt;STRIKE&gt;&lt;/STRIKE&gt; </tt></td>
+					<td>(not widely implemented)</td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Strikeout </b></td>
+					<td width="200"><tt>&lt;S&gt;&lt;/S&gt; </tt></td>
+					<td>(not widely implemented)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Subscript </b></td>
+					<td width="200"><tt>&lt;SUB&gt;&lt;/SUB&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Superscript </b></td>
+					<td width="200"><tt>&lt;SUP&gt;&lt;/SUP&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Typewriter </b></td>
+					<td width="200"><tt>&lt;TT&gt;&lt;/TT&gt; </tt></td>
+					<td>(displays in a monospaced font)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><a href="notes.html#xmp"><b>Preformatted</b></a><b> </b></td>
+					<td width="200"><tt>&lt;PRE&gt;&lt;/PRE&gt; </tt></td>
+					<td>(display text spacing as-is)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Width </b></td>
+					<td width="200"><tt>&lt;PRE WIDTH=?&gt;&lt;/PRE&gt; </tt></td>
+					<td>(in characters)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><a href="notes.html#align"><b>Center</b></a><b> </b></td>
+					<td width="200"><tt>&lt;CENTER&gt;&lt;/CENTER&gt; </tt></td>
+					<td>(for both text and images)</td>
+				</tr>
+				<tr>
+					<td width="40">N1</td>
+					<td width="120"><b>Blinking </b></td>
+					<td width="200"><tt>&lt;BLINK&gt;&lt;/BLINK&gt; </tt></td>
+					<td>(the most derided tag ever)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Font Size </b></td>
+					<td width="200"><tt>&lt;FONT SIZE=?&gt;&lt;/FONT&gt; </tt></td>
+					<td>(ranges from 1-7)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Change Font Size </b></td>
+					<td width="200"><tt>&lt;FONT SIZE=&quot;+|-?&quot;&gt;&lt;/FONT&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Font Color </b></td>
+					<td width="200"><tt>&lt;FONT COLOR=&quot;#$$$$$$&quot;&gt;&lt;/FONT&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Select Font </b></td>
+					<td width="200"><tt>&lt;FONT FACE=&quot;***&quot;&gt;&lt;/FONT&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">N4</td>
+					<td width="120"><b>Point size </b></td>
+					<td width="200"><tt>&lt;FONT POINT-SIZE=?&gt;&lt;/FONT&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">N4</td>
+					<td width="120"><b>Weight </b></td>
+					<td width="200"><tt>&lt;FONT WEIGHT=?&gt;&lt;/FONT&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Base Font Size </b></td>
+					<td width="200"><tt>&lt;BASEFONT SIZE=?&gt; </tt></td>
+					<td>(from 1-7; default is 3)</td>
+				</tr>
+				<tr>
+					<td width="40">MS</td>
+					<td width="120"><b>Marquee </b></td>
+					<td width="200"><tt>&lt;MARQUEE&gt;&lt;/MARQUEE&gt; </tt></td>
+					<td></td>
+				</tr>
+			</table>
+			</p>
+		</center>
+		<center>
+			<p><a name="positioning"></a>
+			<table border="0" width="100%">
+				<tr>
+					<th colspan="4"><font size="6">POSITIONING </font>
+						<hr size="1" noshade>
+					</th>
+				</tr>
+				<tr>
+					<td width="40">N3</td>
+					<td width="120"><b>Multi-Column </b></td>
+					<td width="200"><tt>&lt;MULTICOL COLS=?&gt;&lt;/MULTICOL&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">N3</td>
+					<td width="120"><b>Column Gutter </b></td>
+					<td width="200"><tt>&lt;MULTICOL GUTTER=?&gt;&lt;/MULTICOL&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">N3</td>
+					<td width="120"><b>Column Width </b></td>
+					<td width="200"><tt>&lt;MULTICOL WIDTH=?&gt;&lt;/MULTICOL&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">N3</td>
+					<td width="120"><b>Spacer </b></td>
+					<td width="200"><tt>&lt;SPACER&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">N3</td>
+					<td width="120"><b>Spacer Type </b></td>
+					<td width="200"><tt>&lt;SPACER TYPE=HORIZONTAL|VERTICAL|BLOCK&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">N3</td>
+					<td width="120"><b>Size </b></td>
+					<td width="200"><tt>&lt;SPACER SIZE=?&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">N3</td>
+					<td width="120"><b>Dimensions </b></td>
+					<td width="200"><tt>&lt;SPACER WIDTH=? HEIGHT=?&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">N3</td>
+					<td width="120"><b>Alignment </b></td>
+					<td width="200"><tt>&lt;SPACER ALIGN=LEFT|RIGHT|CENTER&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">N4</td>
+					<td width="120"><b>Layer </b></td>
+					<td width="200"><tt>&lt;LAYER&gt;&lt;/LAYER&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">N4</td>
+					<td width="120"><b>Name </b></td>
+					<td width="200"><tt>&lt;LAYER ID=&quot;***&quot;&gt;&lt;/LAYER&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">N4</td>
+					<td width="120"><b>Location </b></td>
+					<td width="200"><tt>&lt;LAYER LEFT=? TOP=?&gt;&lt;/LAYER&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">N4</td>
+					<td width="120"><b>Rel. Position </b></td>
+					<td width="200"><tt>&lt;LAYER PAGEX=? PAGEY=?&gt;&lt;/LAYER&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">N4</td>
+					<td width="120"><b>Source File </b></td>
+					<td width="200"><tt>&lt;LAYER SRC=&quot;***&quot;&gt;&lt;/LAYER&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">N4</td>
+					<td width="120"><b>Stacking </b></td>
+					<td width="200"><tt>&lt;LAYER Z-INDEX=?&gt;&lt;/LAYER&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">N4</td>
+					<td width="120"><b>Stack Position </b></td>
+					<td width="200"><tt>&lt;LAYER ABOVE=&quot;***&quot; BELOW=&quot;***&quot;&gt;&lt;/LAYER&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">N4</td>
+					<td width="120"><b>Dimensions </b></td>
+					<td width="200"><tt>&lt;LAYER HEIGHT=? WIDTH=?&gt;&lt;/LAYER&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">N4</td>
+					<td width="120"><b>Clipping Path </b></td>
+					<td width="200"><tt>&lt;LAYER CLIP=,,,&gt;&lt;/LAYER&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">N4</td>
+					<td width="120"><b>Visible? </b></td>
+					<td colspan="2"><tt>&lt;LAYER VISIBILITY=SHOW|HIDDEN|INHERIT&gt;&lt;/LAYER&gt; </tt></td>
+				</tr>
+				<tr>
+					<td width="40">N4</td>
+					<td width="120"><b>Background </b></td>
+					<td width="200"><tt>&lt;LAYER BACKGROUND=&quot;$$$$$$&quot;&gt;&lt;/LAYER&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">N4</td>
+					<td width="120"><b>Color </b></td>
+					<td width="200"><tt>&lt;LAYER BGCOLOR=&quot;$$$$$$&quot;&gt;&lt;/LAYER&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">N4</td>
+					<td width="120"><b>Inline Layer </b></td>
+					<td width="200"><tt>&lt;ILAYER&gt;&lt;/ILAYER&gt; </tt></td>
+					<td>(takes same attributes as LAYER)</td>
+				</tr>
+				<tr>
+					<td width="40">N4</td>
+					<td width="120"><b>Alt. Content </b></td>
+					<td width="200"><tt>&lt;NOLAYER&gt;&lt;/NOLAYER&gt; </tt></td>
+					<td></td>
+				</tr>
+			</table>
+			</p>
+		</center>
+		<center>
+			<p><a name="links"></a>
+			<table border="0" width="100%">
+				<tr>
+					<th colspan="4"><font size="6">LINKS, GRAPHICS, AND SOUNDS </font>
+						<hr size="1" noshade>
+					</th>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Link Something </b></td>
+					<td width="200"><tt>&lt;A HREF=&quot;URL&quot;&gt;&lt;/A&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Link to Location </b></td>
+					<td width="200"><tt>&lt;A HREF=&quot;URL#***&quot;&gt;&lt;/A&gt; </tt></td>
+					<td>(if in another document)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"></td>
+					<td width="200"><tt>&lt;A HREF=&quot;#***&quot;&gt;&lt;/A&gt; </tt></td>
+					<td>(if in current document)</td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Target Window </b></td>
+					<td width="200"><tt>&lt;A HREF=&quot;URL&quot; TARGET=&quot;***&quot;&gt;&lt;/A&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Action on Click </b></td>
+					<td width="200"><tt>&lt;A HREF=&quot;URL&quot; ONCLICK=&quot;***&quot;&gt;&lt;/A&gt; </tt></td>
+					<td>(Javascript)</td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Mouseover Action </b></td>
+					<td width="200"><tt>&lt;A HREF=&quot;URL&quot; ONMOUSEOVER=&quot;***&quot;&gt;&lt;/A&gt; </tt></td>
+					<td>(Javascript)</td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Mouse out Action </b></td>
+					<td width="200"><tt>&lt;A HREF=&quot;URL&quot; ONMOUSEOUT=&quot;***&quot;&gt;&lt;/A&gt; </tt></td>
+					<td>(Javascript)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Link to Email </b></td>
+					<td width="200"><tt>&lt;A HREF=&quot;mailto:@&quot;&gt;&lt;/A&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">N, MS</td>
+					<td width="120"><b>Specify Subject </b></td>
+					<td width="200"><tt>&lt;A HREF=&quot;mailto:@?SUBJECT=***&quot;&gt;&lt;/A&gt; </tt></td>
+					<td>(use a real question mark)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Define Location </b></td>
+					<td width="200"><tt>&lt;A NAME=&quot;***&quot;&gt;&lt;/A&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Display Image </b></td>
+					<td width="200"><tt>&lt;IMG SRC=&quot;URL&quot;&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Alignment </b></td>
+					<td colspan="2"><tt>&lt;IMG SRC=&quot;URL&quot; ALIGN=TOP|BOTTOM|MIDDLE|LEFT|RIGHT&gt; </tt></td>
+				</tr>
+				<tr>
+					<td width="40">N1</td>
+					<td width="120"><b>Alignment </b></td>
+					<td colspan="2"><tt>&lt;IMG SRC=&quot;URL&quot; ALIGN=TEXTTOP|ABSMIDDLE|BASELINE|ABSBOTTOM&gt; </tt></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Alternate </b></td>
+					<td width="200"><tt>&lt;IMG SRC=&quot;URL&quot; ALT=&quot;***&quot;&gt; </tt></td>
+					<td>(if image not displayed)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Dimensions </b></td>
+					<td width="200"><tt>&lt;IMG SRC=&quot;URL&quot; WIDTH=? HEIGHT=?&gt; </tt></td>
+					<td>(in pixels)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"></td>
+					<td width="200"><tt>&lt;IMG SRC=&quot;URL&quot; WIDTH=% HEIGHT=%&gt; </tt></td>
+					<td>(as percentage of page width/height)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Border </b></td>
+					<td width="200"><tt>&lt;IMG SRC=&quot;URL&quot; BORDER=?&gt; </tt></td>
+					<td>(in pixels)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Runaround Space </b></td>
+					<td width="200"><tt>&lt;IMG SRC=&quot;URL&quot; HSPACE=? VSPACE=?&gt; </tt></td>
+					<td>(in pixels)</td>
+				</tr>
+				<tr>
+					<td width="40">N1</td>
+					<td width="120"><b>Low-Res Proxy </b></td>
+					<td width="200"><tt>&lt;IMG SRC=&quot;URL&quot; LOWSRC=&quot;URL&quot;&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Imagemap </b></td>
+					<td width="200"><tt>&lt;IMG SRC=&quot;URL&quot; ISMAP&gt; </tt></td>
+					<td>(requires a script)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Imagemap </b></td>
+					<td width="200"><tt>&lt;IMG SRC=&quot;URL&quot; USEMAP=&quot;URL&quot;&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">MS</td>
+					<td width="120"><b>Movie Clip </b></td>
+					<td width="200"><tt>&lt;IMG DYNSRC=&quot;***&quot; START=&quot;***&quot; LOOP=?&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">MS</td>
+					<td width="120"><b>Background Sound </b></td>
+					<td width="200"><tt>&lt;BGSOUND SRC=&quot;***&quot; LOOP=?|INFINITE&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Client-Side Map </b></td>
+					<td width="200"><tt>&lt;MAP NAME=&quot;***&quot;&gt;&lt;/MAP&gt; </tt></td>
+					<td>(describes the map)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Map Section </b></td>
+					<td colspan="2"><tt>&lt;AREA SHAPE=&quot;DEFAULT|RECT|CIRCLE|POLY&quot; COORDS=&quot;,,,&quot; HREF=&quot;URL&quot;|NOHREF&gt; </tt></td>
+				</tr>
+				<tr>
+					<td width="40">N1</td>
+					<td width="120"><b>Client Pull </b></td>
+					<td colspan="2"><tt>&lt;META HTTP-EQUIV=&quot;Refresh&quot; CONTENT=&quot;?; URL=URL&quot;&gt; </tt></td>
+				</tr>
+				<tr>
+					<td width="40">N2</td>
+					<td width="120"><b>Embed Object </b></td>
+					<td width="200"><tt>&lt;EMBED SRC=&quot;URL&quot;&gt; </tt></td>
+					<td>(insert object into page)</td>
+				</tr>
+				<tr>
+					<td width="40">N2</td>
+					<td width="120"><b>Object Size </b></td>
+					<td width="200"><tt>&lt;EMBED SRC=&quot;URL&quot; WIDTH=? HEIGHT=?&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Object </b></td>
+					<td width="200"><tt>&lt;OBJECT&gt;&lt;/OBJECT&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Parameters </b></td>
+					<td width="200"><tt>&lt;PARAM&gt; </tt></td>
+					<td></td>
+				</tr>
+			</table>
+			</p>
+		</center>
+		<center>
+			<p><a name="dividers"></a>
+			<table border="0" width="100%">
+				<tr>
+					<th colspan="4"><font size="6">DIVIDERS </font>
+						<hr size="1" noshade>
+					</th>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><a href="notes.html#paragraph"><b>Paragraph</b></a><b> </b></td>
+					<td width="200"><tt>&lt;P&gt;&lt;/P&gt; </tt></td>
+					<td>(closing tag often unnecessary)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><a href="notes.html#align"><b>Align Text</b></a><b> </b></td>
+					<td width="200"><tt>&lt;P ALIGN=LEFT|CENTER|RIGHT&gt;&lt;/P&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">N</td>
+					<td width="120"><b>Justify Text </b></td>
+					<td width="200"><tt>&lt;P ALIGN=JUSTIFY&gt;&lt;/P&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Line Break </b></td>
+					<td width="200"><tt>&lt;BR&gt; </tt></td>
+					<td>(a single carriage return)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Clear Textwrap </b></td>
+					<td width="200"><tt>&lt;BR CLEAR=LEFT|RIGHT|ALL&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Horizontal Rule </b></td>
+					<td width="200"><tt>&lt;HR&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Alignment </b></td>
+					<td width="200"><tt>&lt;HR ALIGN=LEFT|RIGHT|CENTER&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Thickness </b></td>
+					<td width="200"><tt>&lt;HR SIZE=?&gt; </tt></td>
+					<td>(in pixels)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Width </b></td>
+					<td width="200"><tt>&lt;HR WIDTH=?&gt; </tt></td>
+					<td>(in pixels)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Width Percent </b></td>
+					<td width="200"><tt>&lt;HR WIDTH=&quot;%&quot;&gt; </tt></td>
+					<td>(as a percentage of page width)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Solid Line </b></td>
+					<td width="200"><tt>&lt;HR NOSHADE&gt; </tt></td>
+					<td>(without the 3D cutout look)</td>
+				</tr>
+				<tr>
+					<td width="40">N1</td>
+					<td width="120"><b>No Break </b></td>
+					<td width="200"><tt>&lt;NOBR&gt;&lt;/NOBR&gt; </tt></td>
+					<td>(prevents line breaks)</td>
+				</tr>
+				<tr>
+					<td width="40">N1</td>
+					<td width="120"><b>Word Break </b></td>
+					<td width="200"><tt>&lt;WBR&gt; </tt></td>
+					<td>(where to break a line if needed)</td>
+				</tr>
+			</table>
+			</p>
+		</center>
+		<center>
+			<p><a name="lists"></a>
+			<table border="0" width="100%">
+				<tr>
+					<th colspan="4"><font size="6">LISTS </font>
+						<hr size="1" noshade>
+					</th>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Unordered List </b></td>
+					<td width="200"><tt>&lt;UL&gt;&lt;LI&gt;&lt;/UL&gt; </tt></td>
+					<td>(before each list item)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Compact </b></td>
+					<td width="200"><tt>&lt;UL COMPACT&gt;&lt;/UL&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Bullet Type </b></td>
+					<td width="200"><tt>&lt;UL TYPE=DISC|CIRCLE|SQUARE&gt; </tt></td>
+					<td>(for the whole list)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Bullet Type </b></td>
+					<td width="200"><tt>&lt;LI TYPE=DISC|CIRCLE|SQUARE&gt; </tt></td>
+					<td>(this &amp; subsequent)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Ordered List </b></td>
+					<td width="200"><tt>&lt;OL&gt;&lt;LI&gt;&lt;/OL&gt; </tt></td>
+					<td>(before each list item)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Compact </b></td>
+					<td width="200"><tt>&lt;OL COMPACT&gt;&lt;/OL&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Numbering Type </b></td>
+					<td width="200"><tt>&lt;OL TYPE=A|a|I|i|1&gt; </tt></td>
+					<td>(for the whole list)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Numbering Type </b></td>
+					<td width="200"><tt>&lt;LI TYPE=A|a|I|i|1&gt; </tt></td>
+					<td>(this &amp; subsequent)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Starting Number </b></td>
+					<td width="200"><tt>&lt;OL START=?&gt; </tt></td>
+					<td>(for the whole list)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Starting Number </b></td>
+					<td width="200"><tt>&lt;LI VALUE=?&gt; </tt></td>
+					<td>(this &amp; subsequent)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Definition List </b></td>
+					<td width="200"><tt>&lt;DL&gt;&lt;DT&gt;&lt;DD&gt;&lt;/DL&gt; </tt></td>
+					<td>(&lt;DT&gt;=term, &lt;DD&gt;=definition)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Compact </b></td>
+					<td width="200"><tt>&lt;DL COMPACT&gt;&lt;/DL&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Menu List </b></td>
+					<td width="200"><tt>&lt;MENU&gt;&lt;LI&gt;&lt;/MENU&gt; </tt></td>
+					<td>(before each list item)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Compact </b></td>
+					<td width="200"><tt>&lt;MENU COMPACT&gt;&lt;/MENU&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Directory List </b></td>
+					<td width="200"><tt>&lt;DIR&gt;&lt;LI&gt;&lt;/DIR&gt; </tt></td>
+					<td>(before each list item)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Compact </b></td>
+					<td width="200"><tt>&lt;DIR COMPACT&gt;&lt;/DIR&gt; </tt></td>
+					<td></td>
+				</tr>
+			</table>
+			</p>
+		</center>
+		<center>
+			<p><a name="color"></a>
+			<table border="0" width="100%">
+				<tr>
+					<th colspan="4"><font size="6">BACKGROUNDS AND <a href="notes.html#color">COLORS</a> </font>
+						<hr size="1" noshade>
+					</th>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Tiled Bkground </b></td>
+					<td width="200"><tt>&lt;BODY BACKGROUND=&quot;URL&quot;&gt; </tt></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">MS</td>
+					<td width="120"><b>Watermark </b></td>
+					<td width="200"><tt>&lt;BODY BGPROPERTIES=&quot;FIXED&quot;&gt; </tt></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Bkground Color </b></td>
+					<td width="200"><tt>&lt;BODY BGCOLOR=&quot;#$$$$$$&quot;&gt; </tt></td>
+					<td>(order is red/green/blue)</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Text Color </b></td>
+					<td width="200"><tt>&lt;BODY TEXT=&quot;#$$$$$$&quot;&gt; </tt></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Link Color </b></td>
+					<td width="200"><tt>&lt;BODY LINK=&quot;#$$$$$$&quot;&gt; </tt></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Visited Link </b></td>
+					<td width="200"><tt>&lt;BODY VLINK=&quot;#$$$$$$&quot;&gt; </tt></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Active Link </b></td>
+					<td width="200"><tt>&lt;BODY ALINK=&quot;#$$$$$$&quot;&gt; </tt></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td colspan="4">(More info at <a href="http://werbach.com/web/wwwhelp.html#color">http://werbach.com/web/wwwhelp.html#color</a>)</td>
+				</tr>
+			</table>
+			</p>
+		</center>
+		<center>
+			<p><a name="special"></a>
+			<table border="0" width="100%">
+				<tr>
+					<th colspan="4"><font size="6">SPECIAL CHARACTERS </font>
+						<hr size="1" noshade>
+					</th>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Special Character </b></td>
+					<td width="60"><tt>&amp;#?; </tt></td>
+					<td>(where ? is the ISO 8859-1 code)</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>&lt; </b></td>
+					<td width="60"><tt>&amp;lt; </tt></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>&gt; </b></td>
+					<td width="60"><tt>&amp;gt; </tt></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>&amp; </b></td>
+					<td width="60"><tt>&amp;amp; </tt></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>&quot; </b></td>
+					<td width="60"><tt>&amp;quot; </tt></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Registered TM </b></td>
+					<td width="60"><tt>&amp;#174; </tt></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Registered TM </b></td>
+					<td width="60"><tt>&amp;reg; </tt></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Copyright </b></td>
+					<td width="60"><tt>&amp;#169; </tt></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Copyright </b></td>
+					<td width="60"><tt>&amp;copy; </tt></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Non-Breaking Space </b></td>
+					<td width="60"><tt>&amp;nbsp; </tt></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td colspan="4">(Complete list at <a href="http://www.htmlhelp.com/reference/charset">http://www.htmlhelp.com/reference/charset</a>)</td>
+				</tr>
+			</table>
+			</p>
+		</center>
+		<center>
+			<p><a name="forms"></a>
+			<table border="0" width="100%">
+				<tr>
+					<th colspan="4"><font size="6">FORMS </font>
+						<hr size="1" noshade>
+					</th>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Define Form </b></td>
+					<td width="200"><tt>&lt;FORM ACTION=&quot;URL&quot; METHOD=GET|POST&gt;&lt;/FORM&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>File Upload </b></td>
+					<td colspan="2"><tt>&lt;FORM ENCTYPE=&quot;multipart/form-data&quot;&gt;&lt;/FORM&gt; </tt></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Input Field </b></td>
+					<td colspan="2"><tt>&lt;INPUT TYPE=&quot;TEXT|PASSWORD|CHECKBOX|RADIO|<br>
+						FILE|BUTTON|IMAGE|HIDDEN|SUBMIT|RESET&quot;&gt; </tt></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Field Name </b></td>
+					<td width="200"><tt>&lt;INPUT NAME=&quot;***&quot;&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Field Value </b></td>
+					<td width="200"><tt>&lt;INPUT VALUE=&quot;***&quot;&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Checked? </b></td>
+					<td width="200"><tt>&lt;INPUT CHECKED&gt; </tt></td>
+					<td>(checkboxes and radio boxes)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Field Size </b></td>
+					<td width="200"><tt>&lt;INPUT SIZE=?&gt; </tt></td>
+					<td>(in characters)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Max Length </b></td>
+					<td width="200"><tt>&lt;INPUT MAXLENGTH=?&gt; </tt></td>
+					<td>(in characters)</td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Button </b></td>
+					<td width="200"><tt>&lt;BUTTON&gt;&lt;/BUTTON&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Button Name </b></td>
+					<td width="200"><tt>&lt;BUTTON NAME=&quot;***&quot;&gt;&lt;/BUTTON&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Button Type </b></td>
+					<td colspan="2"><tt>&lt;BUTTON TYPE=&quot;SUBMIT|RESET|BUTTON&quot;&gt;&lt;/BUTTON&gt; </tt></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Default Value </b></td>
+					<td width="200"><tt>&lt;BUTTON VALUE=&quot;***&quot;&gt;&lt;/BUTTON&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Label </b></td>
+					<td width="200"><tt>&lt;LABEL&gt;&lt;/LABEL&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Item Labelled </b></td>
+					<td width="200"><tt>&lt;LABEL FOR=&quot;***&quot;&gt;&lt;/LABEL&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Selection List </b></td>
+					<td width="200"><tt>&lt;SELECT&gt;&lt;/SELECT&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Name of List </b></td>
+					<td width="200"><tt>&lt;SELECT NAME=&quot;***&quot;&gt;&lt;/SELECT&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b># of Options </b></td>
+					<td width="200"><tt>&lt;SELECT SIZE=?&gt;&lt;/SELECT&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Multiple Choice </b></td>
+					<td width="200"><tt>&lt;SELECT MULTIPLE&gt; </tt></td>
+					<td>(can select more than one)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Option </b></td>
+					<td width="200"><tt>&lt;OPTION&gt; </tt></td>
+					<td>(items that can be selected)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Default Option </b></td>
+					<td width="200"><tt>&lt;OPTION SELECTED&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Option Value </b></td>
+					<td width="200"><tt>&lt;OPTION VALUE=&quot;***&quot;&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Option Group </b></td>
+					<td width="200"><tt>&lt;OPTGROUP LABEL=&quot;***&quot;&gt;&lt;/OPTGROUP&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Input Box Size </b></td>
+					<td width="200"><tt>&lt;TEXTAREA ROWS=? COLS=?&gt;&lt;/TEXTAREA&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Name of Box </b></td>
+					<td width="200"><tt>&lt;TEXTAREA NAME=&quot;***&quot;&gt;&lt;/TEXTAREA&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">N2</td>
+					<td width="120"><b>Wrap Text </b></td>
+					<td colspan="2"><tt>&lt;TEXTAREA WRAP=OFF|HARD|SOFT&gt;&lt;/TEXTAREA&gt; </tt></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Group elements </b></td>
+					<td width="200"><tt>&lt;FIELDSET&gt;&lt;/FIELDSET&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Legend </b></td>
+					<td width="200"><tt>&lt;LEGEND&gt;&lt;/LEGEND&gt; </tt></td>
+					<td>(caption for fieldsets)</td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Alignment </b></td>
+					<td colspan="2"><tt>&lt;LEGEND ALIGN=&quot;TOP|BOTTOM|LEFT|RIGHT&quot;&gt;&lt;/LEGEND&gt; </tt></td>
+				</tr>
+			</table>
+			</p>
+		</center>
+		<center>
+			<p><a name="tables"></a>
+			<table border="0" width="100%">
+				<tr>
+					<th colspan="4"><font size="6">TABLES </font>
+						<hr size="1" noshade>
+					</th>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Define Table </b></td>
+					<td width="200"><tt>&lt;TABLE&gt;&lt;/TABLE&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Table Alignment </b></td>
+					<td width="200"><tt>&lt;TABLE ALIGN=LEFT|RIGHT|CENTER&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Table Border </b></td>
+					<td width="200"><tt>&lt;TABLE BORDER&gt;&lt;/TABLE&gt; </tt></td>
+					<td>(either on or off)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Table Border </b></td>
+					<td width="200"><tt>&lt;TABLE BORDER=?&gt;&lt;/TABLE&gt; </tt></td>
+					<td>(you can set the value)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Cell Spacing </b></td>
+					<td width="200"><tt>&lt;TABLE CELLSPACING=?&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Cell Padding </b></td>
+					<td width="200"><tt>&lt;TABLE CELLPADDING=?&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Desired Width </b></td>
+					<td width="200"><tt>&lt;TABLE WIDTH=?&gt; </tt></td>
+					<td>(in pixels)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Width Percent </b></td>
+					<td width="200"><tt>&lt;TABLE WIDTH=%&gt; </tt></td>
+					<td>(percentage of page)</td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Table Color </b></td>
+					<td width="200"><tt>&lt;TABLE BGCOLOR=&quot;$$$$$$&quot;&gt;&lt;/TABLE&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Table Frame </b></td>
+					<td colspan="2"><tt>&lt;TABLE FRAME=VOID|ABOVE|BELOW|HSIDES|LHS|RHS|<br>
+						VSIDES|BOX|BORDER&gt;&lt;/TABLE&gt; </tt></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Table Rules </b></td>
+					<td colspan="2"><tt>&lt;TABLE RULES=NONE|GROUPS|ROWS|COLS|ALL&gt;&lt;/TABLE&gt; </tt></td>
+				</tr>
+				<tr>
+					<td width="40">MS</td>
+					<td width="120"><b>Border Color </b></td>
+					<td width="200"><tt>&lt;TABLE BORDERCOLOR=&quot;$$$$$$&quot;&gt;&lt;/TABLE&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">MS</td>
+					<td width="120"><b>Dark Border </b></td>
+					<td width="200"><tt>&lt;TABLE BORDERCOLORDARK=&quot;$$$$$$&quot;&gt;&lt;/TABLE&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">MS</td>
+					<td width="120"><b>Light Border </b></td>
+					<td width="200"><tt>&lt;TABLE BORDERCOLORLIGHT=&quot;$$$$$$&quot;&gt;&lt;/TABLE&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Table Row </b></td>
+					<td width="200"><tt>&lt;TR&gt;&lt;/TR&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Alignment </b></td>
+					<td colspan="2"><tt>&lt;TR ALIGN=LEFT|RIGHT|CENTER|MIDDLE|BOTTOM&gt; </tt></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Table Cell </b></td>
+					<td width="200"><tt>&lt;TD&gt;&lt;/TD&gt; </tt></td>
+					<td>(must appear within table rows)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Alignment </b></td>
+					<td colspan="2"><tt>&lt;TD ALIGN=LEFT|RIGHT|CENTER VALIGN=TOP|MIDDLE|BOTTOM&gt; </tt></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>No linebreaks </b></td>
+					<td width="200"><tt>&lt;TD NOWRAP&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Columns to Span </b></td>
+					<td width="200"><tt>&lt;TD COLSPAN=?&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Rows to Span </b></td>
+					<td width="200"><tt>&lt;TD ROWSPAN=?&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Desired Width </b></td>
+					<td width="200"><tt>&lt;TD WIDTH=?&gt; </tt></td>
+					<td>(in pixels)</td>
+				</tr>
+				<tr>
+					<td width="40">N3</td>
+					<td width="120"><b>Width Percent </b></td>
+					<td width="200"><tt>&lt;TD WIDTH=&quot;%&quot;&gt; </tt></td>
+					<td>(percentage of table)</td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Cell Color </b></td>
+					<td width="200"><tt>&lt;TD BGCOLOR=&quot;#$$$$$$&quot;&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Header Cell </b></td>
+					<td width="200"><tt>&lt;TH&gt;&lt;/TH&gt; </tt></td>
+					<td>(same as data, except bold centered)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Alignment </b></td>
+					<td colspan="2"><tt>&lt;TH ALIGN=LEFT|RIGHT|CENTER|MIDDLE|BOTTOM&gt; </tt></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>No Linebreaks </b></td>
+					<td width="200"><tt>&lt;TH NOWRAP&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Columns to Span </b></td>
+					<td width="200"><tt>&lt;TH COLSPAN=?&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Rows to Span </b></td>
+					<td width="200"><tt>&lt;TH ROWSPAN=?&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Desired Width </b></td>
+					<td width="200"><tt>&lt;TH WIDTH=?&gt; </tt></td>
+					<td>(in pixels)</td>
+				</tr>
+				<tr>
+					<td width="40">N3</td>
+					<td width="120"><b>Width Percent </b></td>
+					<td width="200"><tt>&lt;TH WIDTH=&quot;%&quot;&gt; </tt></td>
+					<td>(percentage of table)</td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Cell Color </b></td>
+					<td width="200"><tt>&lt;TH BGCOLOR=&quot;#$$$$$$&quot;&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Table Body </b></td>
+					<td width="200"><tt>&lt;TBODY&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Table Footer </b></td>
+					<td width="200"><tt>&lt;TFOOT&gt;&lt;/TFOOT&gt; </tt></td>
+					<td>(must come before <tt>THEAD&gt; </tt></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Table Header </b></td>
+					<td width="200"><tt>&lt;THEAD&gt;&lt;/THEAD&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Table Caption </b></td>
+					<td width="200"><tt>&lt;CAPTION&gt;&lt;/CAPTION&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Alignment </b></td>
+					<td width="200"><tt>&lt;CAPTION ALIGN=TOP|BOTTOM|LEFT|RIGHT&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Column </b></td>
+					<td width="200"><tt>&lt;COL&gt;&lt;/COL&gt; </tt></td>
+					<td>(groups column attributes)</td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Columns Spanned </b></td>
+					<td width="200"><tt>&lt;COL SPAN=?&gt;&lt;/COL&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Column Width </b></td>
+					<td width="200"><tt>&lt;COL WIDTH=?&gt;&lt;/COL&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Width Percent </b></td>
+					<td width="200"><tt>&lt;COL WIDTH=&quot;%&quot;&gt;&lt;/COL&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Group columns </b></td>
+					<td width="200"><tt>&lt;COLGROUP&gt;&lt;/COLGROUP&gt; </tt></td>
+					<td>(groups column structure)</td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Columns Spanned </b></td>
+					<td width="200"><tt>&lt;COLGROUP SPAN=?&gt;&lt;/COLGROUP&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Group Width </b></td>
+					<td width="200"><tt>&lt;COLGROUP WIDTH=?&gt;&lt;/COLGROUP&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Width Percent </b></td>
+					<td width="200"><tt>&lt;COLGROUP WIDTH=&quot;%&quot;&gt;&lt;/COLGROUP&gt; </tt></td>
+					<td></td>
+				</tr>
+			</table>
+			</p>
+		</center>
+		<center>
+			<p><a name="frames"></a>
+			<table border="0" width="100%">
+				<tr>
+					<th colspan="4"><font size="6">FRAMES </font>
+						<hr size="1" noshade>
+					</th>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Frame Document </b></td>
+					<td width="200"><tt>&lt;FRAMESET&gt;&lt;/FRAMESET&gt; </tt></td>
+					<td>(instead of &lt;BODY&gt;)</td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Row Heights </b></td>
+					<td width="200"><tt>&lt;FRAMESET ROWS=,,,&gt;&lt;/FRAMESET&gt; </tt></td>
+					<td>(pixels or %)</td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Row Heights </b></td>
+					<td width="200"><tt>&lt;FRAMESET ROWS=*&gt;&lt;/FRAMESET&gt; </tt></td>
+					<td>(* = relative size)</td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Column Widths </b></td>
+					<td width="200"><tt>&lt;FRAMESET COLS=,,,&gt;&lt;/FRAMESET&gt; </tt></td>
+					<td>(pixels or %)</td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Column Widths </b></td>
+					<td width="200"><tt>&lt;FRAMESET COLS=*&gt;&lt;/FRAMESET&gt; </tt></td>
+					<td>(* = relative size)</td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Borders </b></td>
+					<td colspan="2"><tt>&lt;FRAMESET FRAMEBORDER=&quot;yes|no&quot;&gt;&lt;/FRAMESET&gt; </tt></td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Border Width </b></td>
+					<td width="200"><tt>&lt;FRAMESET BORDER=?&gt;&lt;/FRAMESET&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Border Color </b></td>
+					<td colspan="2"><tt>&lt;FRAMESET BORDERCOLOR=&quot;#$$$$$$&quot;&gt;&lt;/FRAMESET&gt; </tt></td>
+				</tr>
+				<tr>
+					<td width="40">N3</td>
+					<td width="120"><b>Frame Spacing </b></td>
+					<td width="200"><tt>&lt;FRAMESET FRAMESPACING=?&gt;&lt;/FRAMESET&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Define Frame </b></td>
+					<td width="200"><tt>&lt;FRAME&gt; </tt></td>
+					<td>(contents of an individual frame)</td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Display Document </b></td>
+					<td width="200"><tt>&lt;FRAME SRC=&quot;URL&quot;&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Frame Name </b></td>
+					<td colspan="2"><tt>&lt;FRAME NAME=&quot;***&quot;|_blank|_self|_parent|_top&gt; </tt></td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Margin Width </b></td>
+					<td width="200"><tt>&lt;FRAME MARGINWIDTH=?&gt; </tt></td>
+					<td>(left and right margins)</td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Margin Height </b></td>
+					<td width="200"><tt>&lt;FRAME MARGINHEIGHT=?&gt; </tt></td>
+					<td>(top and bottom margins)</td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Scrollbar? </b></td>
+					<td width="200"><tt>&lt;FRAME SCROLLING=&quot;YES|NO|AUTO&quot;&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Not Resizable </b></td>
+					<td width="200"><tt>&lt;FRAME NORESIZE&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Borders </b></td>
+					<td width="200"><tt>&lt;FRAME FRAMEBORDER=&quot;yes|no&quot;&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Border Color </b></td>
+					<td width="200"><tt>&lt;FRAME BORDERCOLOR=&quot;#$$$$$$&quot;&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Unframed Content </b></td>
+					<td width="200"><tt>&lt;NOFRAMES&gt;&lt;/NOFRAMES&gt; </tt></td>
+					<td>(for non-frames browsers)</td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Inline Frame </b></td>
+					<td width="200"><tt>&lt;IFRAME&gt;&lt;/IFRAME&gt; </tt></td>
+					<td>(takes same attributes as FRAME)</td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Dimensions </b></td>
+					<td width="200"><tt>&lt;IFRAME WIDTH=? HEIGHT=?&gt;&lt;/IFRAME&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Dimensions </b></td>
+					<td width="200"><tt>&lt;IFRAME WIDTH=&quot;%&quot; HEIGHT=&quot;%&quot;&gt;&lt;/IFRAME&gt; </tt></td>
+					<td></td>
+				</tr>
+			</table>
+			</p>
+		</center>
+		<center>
+			<p><a name="java"></a>
+			<table border="0" width="100%">
+				<tr>
+					<th colspan="4"><font size="6">SCRIPTS AND JAVA </font>
+						<hr size="1" noshade>
+					</th>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Script </b></td>
+					<td width="200"><tt>&lt;SCRIPT&gt;&lt;/SCRIPT&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Location </b></td>
+					<td width="200"><tt>&lt;SCRIPT SRC=&quot;URL&quot;&gt;&lt;/SCRIPT&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Type </b></td>
+					<td width="200"><tt>&lt;SCRIPT TYPE=&quot;***&quot;&gt;&lt;/SCRIPT&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Language </b></td>
+					<td width="200"><tt>&lt;SCRIPT LANGUAGE=&quot;***&quot;&gt;&lt;/SCRIPT&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Other Content </b></td>
+					<td width="200"><tt>&lt;NOSCRIPT&gt;&lt;/NOSCRIPT&gt; </tt></td>
+					<td>(if scripts not supported)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Applet </b></td>
+					<td width="200"><tt>&lt;APPLET&gt;&lt;/APPLET&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>File Name </b></td>
+					<td width="200"><tt>&lt;APPLET CODE=&quot;***&quot;&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Parameters </b></td>
+					<td width="200"><tt>&lt;APPLET PARAM NAME=&quot;***&quot;&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Location </b></td>
+					<td width="200"><tt>&lt;APPLET CODEBASE=&quot;URL&quot;&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Identifier </b></td>
+					<td width="200"><tt>&lt;APPLET NAME=&quot;***&quot;&gt; </tt></td>
+					<td>(for references)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Alt Text </b></td>
+					<td width="200"><tt>&lt;APPLET ALT=&quot;***&quot;&gt; </tt></td>
+					<td>(for non-Java browsers)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Alignment </b></td>
+					<td width="200"><tt>&lt;APPLET ALIGN=&quot;LEFT|RIGHT|CENTER&quot;&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Size </b></td>
+					<td width="200"><tt>&lt;APPLET WIDTH=? HEIGHT=?&gt; </tt></td>
+					<td>(in pixels)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Spacing </b></td>
+					<td width="200"><tt>&lt;APPLET HSPACE=? VSPACE=?&gt; </tt></td>
+					<td>(in pixels)</td>
+				</tr>
+				<tr>
+					<td width="40">N4</td>
+					<td width="120"><b>Server Script </b></td>
+					<td width="200"><tt>&lt;SERVER&gt;&lt;/SERVER&gt; </tt></td>
+					<td></td>
+				</tr>
+			</table>
+			</p>
+		</center>
+		<center>
+			<p><a name="miscellaneous"></a>
+			<table border="0" width="100%">
+				<tr>
+					<th colspan="4"><font size="6">MISCELLANEOUS </font>
+						<hr size="1" noshade>
+					</th>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Comment </b></td>
+					<td width="200"><tt>&lt;!-- *** --&gt; </tt></td>
+					<td>(not displayed by the browser)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><a href="notes.html#prologue"><b>Prologue</b></a><b> </b></td>
+					<td colspan="2"><tt>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot;&gt; </tt></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Searchable </b></td>
+					<td width="200"><tt>&lt;ISINDEX&gt; </tt></td>
+					<td>(indicates a searchable index)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Prompt </b></td>
+					<td width="200"><tt>&lt;ISINDEX PROMPT=&quot;***&quot;&gt; </tt></td>
+					<td>(text to prompt input)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Send Search </b></td>
+					<td width="200"><tt>&lt;A HREF=&quot;URL?***&quot;&gt;&lt;/a&gt; </tt></td>
+					<td>(use a real question mark)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>URL of This File </b></td>
+					<td width="200"><tt>&lt;BASE HREF=&quot;URL&quot;&gt; </tt></td>
+					<td>(must be in header)</td>
+				</tr>
+				<tr>
+					<td width="40">4.0*</td>
+					<td width="120"><b>Base Window Name </b></td>
+					<td width="200"><tt>&lt;BASE TARGET=&quot;***&quot;&gt; </tt></td>
+					<td>(must be in header)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Relationship </b></td>
+					<td width="200"><tt>&lt;LINK REV=&quot;***&quot; REL=&quot;***&quot; HREF=&quot;URL&quot;&gt; </tt></td>
+					<td>(in header)</td>
+				</tr>
+				<tr>
+					<td width="40">N4</td>
+					<td width="120"><b>Linked File </b></td>
+					<td width="200"><tt>&lt;LINK TYPE=&quot;***&quot; SRC=&quot;***&quot;&gt;&lt;/LINK&gt; </tt></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Meta Information </b></td>
+					<td width="200"><tt>&lt;META&gt; </tt></td>
+					<td>(must be in header)</td>
+				</tr>
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="120"><b>Style Sheets </b></td>
+					<td width="200"><tt>&lt;STYLE&gt;&lt;/STYLE&gt; </tt></td>
+					<td>(implementations vary)</td>
+				</tr>
+				<tr>
+					<td width="40">4.0</td>
+					<td width="120"><b>Bidirect Off </b></td>
+					<td width="200"><tt>&lt;BDO DIR=LTR|RTL&gt;&lt;/BDO&gt; </tt></td>
+					<td>(for certain character sets)</td>
+				</tr>
+			</table>
+			</p>
+		</center>
+		<pre> </pre>
+		<p>
+		<table border="0" cellpadding="6" width="100%" bgcolor="#ffffcc">
+			<tr>
+				<td>
+					<center>Copyright &copy;1995-2001 <a href="http://werbach.com/barebones">Kevin Werbach</a>. Redistribution is permitted, so long as there is no charge and this document is included without alteration in its entirety. This Guide is not a product of Bare Bones Software. More information is available at <a href="http://werbach.com/barebones">http://werbach.com/barebones</a>.<br>
+						<a href="http://validator.w3.org/"><img border="0" src="http://validator.w3.org/images/vh40.gif" alt="Valid HTML 4.0!" height="31" width="88" vspace="6"></a></center>
+				</td>
+			</tr>
+		</table>
+	</body>
+
+</html>

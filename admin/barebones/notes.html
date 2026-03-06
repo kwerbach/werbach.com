@@ -1,0 +1,182 @@
+<HTML>
+<HEAD>
+<TITLE>Bare Bones Guide to HTML: Notes</TITLE>
+</HEAD>
+<BODY>
+
+<hr>
+<p>
+<a name="HTML"><h2>The Development of HTML</h2></a>
+</p>
+
+<p>HTML is the markup language used to create World Wide Web
+documents.  Although official HTML specifications have been in
+development for some time, individual Web browsers may recognize
+proprietary tags that are not included
+in the specifications.  When most people ask for a list of &quot;all the
+HTML tags&quot; they generally want to know which tags they can
+include in their pages with reasonable certainty that people viewing those
+pages will see what the author wants.  <em>The Bare Bones Guide to
+HTML</em> is
+designed to meet this need.  I have attempted to include all of the tags
+supported by major browsers today, but there are a number of nuances that
+make
+this an inherently imprecise process.</p>
+
+<p>
+The official standards body for HTML is the <a
+href="http://www.w3.org/">World Wide Web Consortium</a> (W3C).  The W3C has issued several
+versions of the HTML specification, including HTML 2.0, HTML 3.0, HTML 3.2, and most recently HTML 4.0.  At the same time, however, browser manufacturers, such as Netscape and Microsoft, have often developed their own "extensions" to HTML outside of the standards process and
+incorporated them into their browsers.  In some cases, such as Netscape's
+&lt;CENTER&gt; tag, these extensions have become incorporated into the official standard.</p>
+
+<p><a href="http://www.w3.org/pub/WWW/MarkUp/html-spec/">HTML
+2.0</a>, which codified the current state of HTML as of June, 1994, is the
+baseline standard that all browsers today -- including text-based browsers --
+should support.  HTML 2.0 reflects the original conception of HTML as a
+device-independent markup language for displaying the organization of
+information, rather than specifying exactly how pages should be displayed. 
+If you want to be sure that all users will be able to view everything on your
+pages, use only HTML 2.0 tags.</p>
+
+<p>The <a
+href="http://www.w3.org/pub/WWW/MarkUp/html3/">HTML 3.0
+draft</a>, issued in 1995, attempted to build upon HTML 2.0 with the
+addition of features such as tables and greater control of text flow around
+graphics.  Although some HTML 3.0 features were widely adopted by
+browser developers, many were not.  In some cases, alternative
+approaches implemented by browser developers became more widespread
+than the &quot;official&quot; tags.  The HTML 3.0 draft has now expired,
+and is therefore no longer an official standard.</p>
+
+<p>In January 1997, W3C adopted the <a
+href="http://www.w3.org/TR/REC-html32.html">HTML 3.2
+recommendation</a>, which was designed to reflect and standardize
+generally-accepted practices.  Therefore, HTML 3.2 includes the HTML
+3.0 tags that were adopted by browser developers such as Netscape and
+Microsoft, as well as widely-supported extensions to HTML.</p>
+
+<p><A HREF="http://www.w3.org/TR/REC-html40/">HTML 4.0</A>, the current standard, became a W3C recommendation in April 1998.  This version includes a number of new formatting elements, changes related to scripts and style sheets, and several modifications to make Web pages more accessible to people with disabilities.  The current versions of
+major browsers should support all, or virtually all, these tags.</p>
+
+<p>For the future, W3C is working to refomulate HTML in the context of the extensible markup language (XML), a broader and more flexible standard.  For more information, see the current <a href="http://www.w3.org/TR/WD-html-in-xml/">W3C working draft</a>, adopted in December 1998.</p>
+
+<p>There are also some Netscape and Microsoft extensions to HTML that
+were not incorporated into the official HTML standard.  By popular request, they are listed in the Bare Bones Guide to HTML.  In deciding whether to use any of the tags listed as Netscape or Microsoft extensions, remember that people using other browsers may not
+see your pages rendered the way you intend.</p>
+
+<p align=center>
+<a href="barebone.html">Back to the Guide</a>
+</p> 
+
+
+<hr>
+<br>
+<a name="prologue"><h2>Prologue</h2></a>
+
+<p>The prologue item should go at the very beginning of your file.  The
+prologue is not required for browsers to recognize an HTML document,
+although this can provide browsers and people reading your HTML source
+file with an indication of which tags it includes.  The exact syntax of the
+prologue varies depending on which version of the HTML DTD (document
+type definition) you are using.  I've included the prologue to use if your
+document conforms to HTML 4.0; don't use this if you include Netscape or
+Microsoft extensions.</p>
+
+<p align=center>
+<a href="barebone.html">Back to the Guide</a>
+</p> 
+
+<hr>
+<br>
+
+<a name="xmp"><h2>&lt;XMP&gt;</h2></a>
+
+<p>Earlier version of HTML also included the &lt;XMP&gt; (example) tag, and some people still use it to display un-rendered HTML syntax on a page.  However, browsers handle &lt;XMP&gt; inconsistently, and the tag is listed as obsolute in the current HTML specification.  The &lt;PRE&gt; tag should be used instead.</p>
+
+<p align=center>
+<a href="barebone.html">Back to the Guide</a>
+</p> 
+
+<hr><br>
+
+<a name="blockquote"><h2>&lt;BLOCKQUOTE&gt;</h2></a>
+
+<p>The suggested rendering of the &lt;BLOCKQUOTE&gt; tag is to indent
+the left
+and right margins, and this tag is frequently used to achieve indenting
+(which
+HTML 2.0 does not support directly) rather than for quoted material.  Be
+aware that not all browsers display the tag this way, although more
+browsers seem to be indenting it as time goes on.</p>
+
+<p align=center>
+<a href="barebone.html">Back to the Guide</a>
+</p> 
+<hr><br>
+
+<a name="align"><h2>Alignment Tags</h2></a>
+
+<p>The HTML 4.0 specification includes both the alignment attributes for
+paragraph and header tags, and the &lt;CENTER&gt; tag originally
+developed by Netscape.  These days, the main area in which &lt;CENTER&gt; is
+necessary is in situations (such as centering a table in Netscape Navigator), 
+where a browser doesn't recognize the alignment attributes.</p>
+
+<p>The biggest problem with &lt;CENTER&gt; is that it implies
+a paragraph break around the centered material, but browsers that don't
+recognize the &lt;CENTER&gt; tag will simply ignore it, and thus not render
+the document the way the author intended it.  As more browsers today recognize
+the alignment tags, using &lt;P ALIGN=CENTER&gt;&lt;/P&gt; will
+increasingly be preferable to the nonstandard &lt;CENTER&gt; tag.</p>
+
+<p align=center>
+<a href="barebone.html">Back to the Guide</a>
+</p> 
+<hr><br>
+
+<a name="paragraph"><h2>The &lt;P&gt; Tag</h2></a>
+
+<p>Most HTML tags are &quot;containers;&quot; they have a beginning
+and an ending tag, with text in the middle (e.g. &lt;B&gt;This is in
+boldface&lt;/B&gt;).  The &lt;P&gt; tag, by contrast, was originally defined
+as a standalone tag that marked the space between paragraphs.  The
+problem
+with this approach is that it didn't allow for features such as centering and
+right-aligned paragraphs, because there was no way to mark the beginning
+and
+end of the text to be aligned.  Consequently, the HTML 3.0 proposal from
+its
+early days has defined &lt;P&gt; as a container tag, so that paragraphs
+should
+be represented as &lt;P&gt;Here's some text&lt;/P&gt;, and the opening
+&lt;P&gt; tag can contain alignment and other attributes.  The closing
+&lt;/P&gt; tag can often be left off when you are not setting the alignment
+of a paragraph, although using it may make the boundaries of paragraphs
+cleaner in your HTML source file.</p>
+
+<p align=center>
+<a href="barebone.html">Back to the Guide</a>
+</p> 
+
+
+<hr><br>
+<a name="color"><h2>Color Tags</h2></a>
+<p>
+Color values are entered in the form of a hexadecimal triplet specifying red, green, and blue
+values.  My <a href="http://werbach.com/web/wwwhelp.html#color">WWW Help Page</a> 
+has a section of links to utilities that can generate these codes for you.
+<p align=center>
+<a href="barebone.html">Back to the Guide</a>
+</p> 
+
+
+<p align=center>
+<a href="barebone.html">Back to the Guide</a>
+</p> 
+<hr>
+
+<p align=center>Copyright &#169; 1995-1999 Kevin Werbach.<br>
+Last updated February 1, 1999.</p>
+</BODY>
+</HTML>

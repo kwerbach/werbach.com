@@ -1,0 +1,365 @@
+<HTML>
+<HEAD>
+   <TITLE>Bare Bones Guide to HTML: Introduction</TITLE>
+</HEAD>
+<BODY bgcolor="#ffffff">
+
+<H2 ALIGN=CENTER>The Bare Bones Guide to HTML</H2>
+
+<H1 ALIGN=CENTER>I N T R O D U C T I O N</H1>
+
+<P><BR>
+
+<BR>
+
+<A NAME="thanks"></A></P>
+
+<H2>Credit where credit is due<BR>
+
+<hr align=left width=400 size=6 noshade></H2>
+
+<P>Many people have provided suggestions and assistance as the Bare Bones Guide to HTML has developed.  My thanks go out to everyone who has contributed to the effort.  
+ </TD></TR>
+</TABLE>
+
+<P ALIGN=CENTER>| <A HREF="index.html">UP to Gateway Page</A> ||
+<A HREF="barebones.txt">Plain Text</A> |
+<A HREF="barebones.html">Formatted</A> ||
+<A HREF="http://werbach.com/home.html">Kevin's Home Page</A> |</P>
+
+<P><BR>
+
+<A NAME="unique"></A></P>
+
+<H2>What is unique about this guide<BR>
+<hr align=left width=400 size=6 noshade></H2>
+
+<P><I>Several people have created excellent HTML guides and made them
+available on the Web -- who needs another one?</I></P>
+
+<P>This document is designed to serve a particular niche. It is
+intended as a concise "cheat sheet" that you can use to look up the
+correct forms of tags as you are creating Web pages.
+<A HREF="http://werbach.com/web/wwwhelp.html#guides">Other HTML
+guides</A> provide significantly more descriptive material about how
+to use particular tags or how HTML works in general. If you are a
+beginner, you might try one of those guides first.</P>
+
+<P>There are also several
+<A HREF="http://werbach.com/web/wwwhelp.html#style">style guides</A>
+that focus more on how to write pages that look good and work on
+different browsers. I encourage you to read one or more of them if
+you are planning on creating Web pages; far too many people ignore
+the fact that their pages are going to be read by other people and
+that there are better and worse ways of doing things.</P>
+
+<P>My <A HREF="http://werbach.com/web/wwwhelp.html">WWW Help Page</A>
+has links to numerous other sites that provide information on HTML
+and Web page design. It's a good place to start if you have specific
+questions that go beyond the "bare bones" information provided here.
+</P>
+
+<P><I>This guide is designed for people who know enough not to need
+step-by-step instructions, but who haven't memorized the exact format
+of every HTML tag yet.</I> If you want a "quick reference" that you
+can glance at without having to read through additional descriptive
+material, this guide is for you.</P>
+
+<P ALIGN=CENTER>| <A HREF="index.html">UP to Gateway Page</A> ||
+<A HREF="barebones.txt">Plain Text</A> |
+<A HREF="barebones.html">Formatted</A> ||
+<A HREF="http://werbach.com/home.html">Kevin's Home Page</A> |</P>
+
+<P><BR>
+
+<A NAME="included"></A></P>
+
+<H2>Which tags are included<BR>
+
+<hr align=left width=400 size=6 noshade></H2>
+
+<P>The other distinguishing aspect of this guide is what it includes.
+<I>The Bare Bones Guide to HTML is intended to include all of the
+tags in common usage on Web pages today.</I> Specifically, the Guide
+lists the following:</P>
+
+<UL>
+   <LI>HTML 4.0 tags
+   
+   <LI>Netscape and Microsoft extensions to HTML
+   
+</UL>
+
+<P>The development of HTML has been a confusing process, as attempts
+to adopt formal standards have often been overrun by developments in
+the marketplace. The <A HREF="http://www.w3.org/">World Wide Web
+Consortium</A> (W3C) is the official standards body for HTML.  The current 
+W3C recommendation is HTML 4.0.</P>
+
+<P>In its
+<A HREF="http://www.w3.org/pub/WWW/MarkUp/Activity">Position
+Statement on HTML</A>, W3C recommends that information providers use
+the HTML 4.0 specification, but that tools also be backward-compatible with earlier versions. Therefore, version 4.0 of the Bare Bones
+Guide to HTML includes all the HTML 4.0 tags, but distinguishes tags introduced in version 4.0 from those in version 3.2 as well.</P>
+
+<P>I have also included all of the Netscape and Microsoft extensions to HTML, with the exception of some server interaction tags such as server push animation. Some of these extensions will not display properly if people viewing your
+pages are using another browser, so you should think about your
+audience before deciding whether to use them.</P>
+
+<P><BR>
+
+</P>
+
+<P ALIGN=CENTER>| <A HREF="index.html">UP to Gateway Page</A> ||
+<A HREF="barebones.txt">Plain Text</A> |
+<A HREF="barebones.html">Formatted</A> ||
+<A HREF="http://werbach.com/home.html">Kevin's Home Page</A> |</P>
+
+</P>
+
+<PRE>&nbsp;</PRE>
+
+<H2><A NAME="formatting"></A>FORMATTING OF THIS DOCUMENT
+<hr align=left width=400 size=6 noshade></H2>
+
+<p>
+For clarity, I have separated out different attributes that can be applied to
+the same tag onto separate lines.  Generally, multiple attributes can be
+combined in the same tag.
+</p>
+<p>
+Tags are listed in upper case for ease of reading, although most tags are
+not case sensitive.
+</p>
+
+<H3>SYMBOLS USED<HR></H3>
+
+<PRE>
+URL    URL of an external file (or just file name if in the same directory)
+?      Arbitrary number (i.e. &lt;H?&gt; means &lt;H1&gt;, &lt;H2&gt;, &lt;H3&gt;, etc.)
+%      Arbitrary percentage (i.e. &lt;HR WIDTH=&quot;%&quot;&gt; means &lt;HR WIDTH=&quot;50%&quot;&gt;, etc.)
+***    Arbitrary text (i.e. ALT=&quot;***&quot; means fill in with text)    
+$$$$$$ Arbitrary hex (i.e. BGCOLOR=&quot;#$$$$$$&quot; means BGCOLOR=&quot;#00FF1C&quot;, etc.)
+:::    Arbitrary date (i.e. DATETIME=&quot;:::&quot; means &quot;1994-11-05T08:15:30&quot; etc.)
+@      Email address (i.e. &quot;mailto:@&quot; means &quot;mailto:kevin@werbach.com&quot; etc.)
+,,,    Comma-delimited (i.e. COORDS=&quot;,,,&quot; means COORDS=&quot;0,0,50,50&quot;, etc.)
+|      Alternatives (i.e. ALIGN=LEFT|RIGHT|CENTER means pick one of these)
+&nbsp;
+&nbsp;</PRE>
+
+<H3>COMPATIBILITY</H3>
+
+<I>(remember, HTML is evolving and browser implementations vary)</I><HR>
+<pre>     (no notation) In the HTML 3.2 spec.; should work on all browsers 
+4.0  Introduced in HTML 4.0 recommendation
+N1   Netscape extension introduced with Navigator version 1.0 or 1.1
+N2   Netscape extension introduced with Navigator version 2.0 
+N3   Netscape extension introduced with Navigator version 3.0
+N4   Netscape extension introduced with Navigator/Communicator version 4.0
+MS   Microsoft Internet Explorer extension
+*    Netscape extension now included in the HTML 4.0 specification
+&nbsp;
+&nbsp;</PRE>
+
+<P ALIGN=CENTER>| <A HREF="index.html">UP to Gateway Page</A> ||
+<A HREF="barebones.txt">Plain Text</A> |
+<A HREF="barebones.html">Formatted</A> ||
+<A HREF="http://werbach.com/home.html">Kevin's Home Page</A> |</P>
+
+<P><BR>
+
+<A NAME="version"></A></P>
+
+<H2>Version History<BR>
+
+<hr align=left width=400 size=6 noshade></H2>
+
+<P><B>Version 4.0 -- January 1999.</B></P>
+<ul>
+<li>Updated everything to comply with the <a href="http://www.w3.org/TR/REC-html40/">HTML 4.0</a> specification.
+<li>Redesigned the layout of the main index page.
+<li>Combined the tables and formatted versions, since all major browsers now support tables.
+</ul>
+
+<P><B>Version 3.0 -- July 21, 1996.</B></P>
+
+<UL>
+   <LI>Updated everything to conform to the
+   <A HREF="http://www.w3.org/pub/WWW/MarkUp/Wilbur/">HTML 3.2</A>
+   specification.
+   
+   <LI>Added a new section for Java tags supported by HTML 3.2
+   
+   <LI>Revised the introductory material and annotations.
+      
+   <LI>Redesigned the layout of the "tables" version, in order to
+   make it easier to read.
+   
+   <LI>All major browsers now support tables, so to save time I have
+   decided to eliminate the separate non-table "HTML" version of the
+   Guide, and to rename the "tables" version as the "formatted"
+   version. Users who cannot view this version can still use the
+   "plain text" version.
+   
+   <LI>Added the new tags implemented by beta versions of Netscape
+   Navigator 3.0 up to 3.0b5, including:
+   
+  <ul><li>table cell colors
+  <li>multi-column text
+  <li>spacers
+  <li>frame border control
+  <li>strikeout via the &lt;S&gt; tag and underlining via the &lt;U&gt; tag. 
+  These were in HTML 3.0 but not HTML 3.2, so I list them as Netscape extensions.
+  <li>the FACE attribute for the &lt;FONT&gt; tag (originally a Microsoft extension)
+  </ul>
+   
+   <li>Fixed more typos.
+</UL>
+
+<P><B>Version 2.0 -- October 7, 1995.</B> Lots of changes and
+corrections in this version.</P>
+
+<UL>
+   <LI>Rewrote the introductory material and compatibility table
+   language
+   
+   <LI>Added + notation for Netscape extensions that have been
+   adopted by most major browsers. This notation is by nature
+   approximate; it represents my judgment about which tags have are
+   widely supported even though they are not (and may never be) in
+   HTML 3.0.
+   
+   <LI>Added ,,, notation in table of symbols for comma-delimited
+   lists.
+   
+   <LI>Restructured the Hard Formatting and Soft Formatting sections
+   into Presentation Formatting and Structural Definition. This
+   change makes clear the important distinction between
+   presentation-based and structural markup. A few tags have been
+   moved around as a result of this change, and the &lt;ADDRESS&gt;
+   tag has been moved up from Miscellaneous into Structural
+   Definition.
+   
+   <LI>Eliminated the Alignment section by shifting the tags listed
+   there into either Structural Definition or Presentation
+   Formatting. Although this results in the Netscape &lt;CENTER&gt;
+   tag being split up from the other alignment tags, it allows the
+   alignment attributes of tags such as &lt;P&gt; and &lt;H?&gt; to
+   be associated with the underlying tags they operate on. This
+   change is consistent with the HTML 3.0 philosophy of handling
+   alignment through attributes to existing tags rather than through
+   dedicated tags.
+   
+   <LI>Added listing for Netscape client pull animation (this has
+   been around since Netscape 1.1, but was not listed in the Guide).
+   
+   <LI>Support for new Netscape anML 3.0 tags implemented in
+   Netscape 2.0:
+   
+   <UL>
+      <LI>Frames (added a whole new section)
+      
+      <LI>Embedded Objects (in Links and Graphics)
+      
+      <LI>Divisions (in Structural Definition)
+      
+      <LI>Font Color (in Presentation Formatting)
+      
+      <LI>Big/Small font size (in Structural Definition)
+      
+      <LI>Superscript/Subscript (in Presentation Formatting)
+      
+      <LI>File Upload (in Forms)
+      
+      <LI>Text wrap (in Forms)
+      
+      <LI>Target Windows (in Links and Graphics) and Base Target (in
+      Miscellaneous)
+      
+      <LI>Client-side imagemaps (in Links and Graphics)
+   </UL>
+   
+   <LI>Removed &lt;XMP&gt; tag, because I have been convinced that it
+   is archaic.
+   
+   <LI>Moved prologue tags to Miscellaneous section, to indicate that
+   they are not required and reduce confusion.
+   
+   <LI>Fixed listing for &lt;NOBR&gt; container by adding a closing
+   tag
+   
+   <LI>Changed "outline type" to "numbering type" for Netscape
+   extension to ordered lists, in order to avoid confusion about what
+   this attribute does.
+   
+   <LI>Changed wording of &lt;P&gt; tag description to indicate that
+   it is "usually" rendered as a double return.
+   
+   <LI>Changed notation for hex triplet from $$$ to $$$$$$ to
+   indicate that six characters are required to reference the three
+   hex values.
+   
+   <LI>improved consistency of column alignment in the text version.
+</UL>
+
+<P><B>Version 1.22 -- August 18, 1995</B>. Added a tag and some
+attributes that had been accidentally omitted from the forms section,
+and corrected the listing of which color tags are in the HTML 3.0
+spec.</P>
+
+<P><B>Version 1.21 -- July 26, 1995</B>. Removed the archaic
+&lt;NEXTID&gt; tag and added some annotations to the HTML and table
+versions.</P>
+
+<P><B>Version 1.2 -- July 25, 1995</B>. Several revisions to improve
+compliance with the official HTML specifications, and to acknowledge
+more widespread implementation of certain HTML 3.0 tags.</P>
+
+<P><B>Version 1.1 -- July 19, 1995</B>. Cleaned up a number of things
+in the introductory material, and correctly specified the ISO 8859-1
+character set instead of ASCII.</P>
+
+<P><B>Version 1.03 -- July 12, 1995</B>. Updated copyright notices to
+eliminate confusion with Bare Bones Software. Added Netscape relative
+font sizing tag, and changed the link to the list of ASCII symbol
+codes.</P>
+
+<P><B>Version 1.02 -- April 24, 1995</B>. Corrected some additional
+typos, fixed the link to this version history, and added the standard
+copyright and registered TM codes to go along with the Netscape
+versions.</P>
+
+<P><B>Version 1.01 -- April 11, 1995</B>. Fixed a couple minor typos
+and ambiguities pointed out by helpful folks, including some errors
+in the list tags section.</P>
+
+<P><B>Version 1.0 HTML -- April 6, 1995</B>. Has some additional
+introductory material, but the text is otherwise identical to version
+1.0. Formatted for WWW viewing, with assistance from John Berkin.
+</P>
+
+<P><B>Version 1.0 -- April 2, 1995.</B> Corrected some errors pointed
+out by other people, and made some minor revisions to the
+introduction and the formatting of certain sections.</P>
+
+<P><B>Version 0.9b -- March 30, 1995.</B> First public version.
+Posted on comp.infosystems.www.providers.</P>
+
+<P ALIGN=CENTER>| <A HREF="index.html">UP to Gateway Page</A> ||
+<A HREF="barebones.txt">Plain Text</A> |
+<A HREF="barebones.html">Formatted</A> ||
+<A HREF="http://werbach.com/home.html">Kevin's Home Page</A> |</P>
+
+<P ALIGN=CENTER>Copyright &copy;1995-2003
+<A HREF="mailto:barebones@werbach.com">Kevin Werbach</A>.<BR>
+
+Last updated February 1, 1999.</P>
+
+<center>
+</center>
+
+	
+</p>
+
+</BODY>
+</HTML>

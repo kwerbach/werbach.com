@@ -1,0 +1,2215 @@
+<HTML>
+<HEAD>
+   <TITLE>La guida Bare Bones di HTML</TITLE>
+</HEAD>
+<BODY>
+<H1 ALIGN=CENTER><HR SIZE="8" WIDTH=480 noshade>LA GUIDA BARE BONES DI HTML</H1>
+
+<P ALIGN=CENTER><B>di <A HREF="mailto:barebones@werbach.com">Kevin Werbach</a></B><BR>
+
+
+<I>Versione 3.0  --  21 luglio 1996</I><BR>
+
+<HR SIZE="8" WIDTH=480 noshade></P>
+
+<font size=4>
+<P>L'ultima versione di questo documento &egrave; disponibile a
+&lt;<A HREF="http://werbach.com/barebones/">http://werbach.com/barebones/</A>&gt;.
+</P>
+
+
+<P>La guida elenca tutti i comandi che le versioni attuali della
+maggioranza dei browser probabilmente supportano. Ho incluso
+tutti i comandi presenti nelle specifiche di
+<A HREF="http://www.w3.org/pub/WWW/MarkUp/Wilbur/">HTML 3.2
+</A>, come pure le estensioni presenti in Netscape Navigator, fino alla
+versione 3.0b5.
+
+Questa guida &egrave; stata ideata per essere pi&ugrave; sintetica
+possibile; sono disponibili informazioni pi&ugrave; dettagliate nella
+mia <A HREF="http://werbach.com/web/wwwhelp.html#guides">WWW Help Page</A>.
+Sono sempre benvenuti commenti e suggerimenti.
+</P>
+</font>
+
+<P><A NAME="contents"></A></P>
+<font size=4><b>Indice</b></font>
+
+<ol>
+<li><b>INTRODUZIONE</b>
+<ul>
+<li><a href="it_barebone_introduction.html#unique"><B>
+   Caratteristiche di questa guida</B></A>
+
+   <LI><A HREF="http://werbach.com/barebones/barebone_introduction.html#included"><B>
+   I comandi HTML inclusi</B></A>
+
+   <LI><A HREF="http://werbach.com/barebones/barebone_introduction.html#formatting"><B>
+   Impaginazione di questo documento</B></A> (include una
+   descrizione dei simboli e delle abbreviazioni)
+ </ul>
+ <p>
+   <LI><B>I COMANDI HTML</B>
+
+   <uL>
+      <LI><A HREF="#general"><B>Elementi di base</B></A>
+      (tutti i documenti HTML devono contenere questi comandi)
+
+
+      <LI><A HREF="#structure"><B>Formattazione di struttura</B></A>
+      (la visualizzazione del testo &egrave; controllata dalla
+       configurazione del browser)
+
+      <LI><A HREF="#presentation"><B>Formattazione di presentazione</B></A>
+      (l'autore specifica come deve essere visualizzato il testo)
+
+      <LI><A HREF="#links"><B>Collegamenti e grafici</B></A>
+
+      <LI><A HREF="#dividers"><B>Divisori</B></A>
+
+      <LI><A HREF="#lists"><B>Liste</B></A>
+
+      <LI><A HREF="#color"><B>Sfondi e colori</B></A>
+
+      <LI><A HREF="#special"><B>Caratteri speciali</B></A>
+
+      <LI><A HREF="#forms"><B>Moduli</B></A>
+
+      <LI><A HREF="#tables"><B>Tabelle</B></A>
+
+      <LI><A HREF="#frames"><B>Frame (quadri)</B></A>
+
+      <LI><A HREF="#java"><B>Java</B></A>
+
+      <LI><A HREF="#misc"><B>Vari</B></A>
+   </UL>
+
+   <P><b>Importante:</b>  Se non &egrave; chiara la differenza tra i comandi
+   HTML 2.0, HTML 3.0, HTML 3.2 e le estensioni di Netscape, consiglio di leggere il
+   <A HREF="http://www.w3.org/pub/WWW/MarkUp/Activity">W3C
+   statement</A> sullo sviluppo di HTML.</P>
+</OL>
+
+
+<P ALIGN=CENTER><A NAME="general"></A>
+<TABLE BORDER=0 CELLPADDING=3 WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>ELEMENTI DI BASE</FONT><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=120>
+         <P><B>Tipo</B>
+      </TD><TD VALIGN=top width=140>
+         <P><TT>&lt;HTML&gt;&lt;/HTML&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(inizio e fine del file)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Titolo</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TITLE&gt;&lt;/TITLE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(titolo del documento; deve essere nella testata)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Testata</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HEAD&gt;&lt;/HEAD&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(informazioni descrittive; come il titolo)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Corpo</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BODY&gt;&lt;/BODY&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(contenuto della pagina)
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER>
+&nbsp;
+&nbsp;</PRE>
+
+<P ALIGN=CENTER><A NAME="structure"></A>
+
+<TABLE BORDER=0 CELLPADDING=3 WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>FORMATTAZIONE DI STRUTTURA</FONT><HR SIZE="1"
+         noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>Intestazioni (Headings)</B>
+      </TD><TD VALIGN=top width=240>
+         <P><TT>&lt;H?&gt;&lt;/H?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(sono definiti 6 livelli)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Allineamento</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;H? ALIGN=LEFT|CENTER|RIGHT&gt;&lt;/H?&gt;</TT>
+         <B><A HREF="it_barebone_annotation.html#align">[*]</A></B>
+
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Blocchi divisi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;DIV&gt;&lt;/DIV&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Allineamento</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;DIV ALIGN=LEFT|RIGHT|CENTER&gt;&lt;/DIV&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Blocco di citazioni</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BLOCKQUOTE&gt;&lt;/BLOCKQUOTE&gt;</TT>
+         <B><A HREF="it_barebone_annotation.html#blockquote">[*]</A></B>
+
+      </TD><TD VALIGN=top>
+         <P>(generalmente rientrato)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Evidenziato (Emphasis)</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;EM&gt;&lt;/EM&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(generalmente visualizzato in corsivo)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Molto evidenziato</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;STRONG&gt;&lt;/STRONG&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(generalmente in neretto)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Citazione</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;CITE&gt;&lt;/CITE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(generalmente in corsivo)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Codice</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;CODE&gt;&lt;/CODE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(per listati di programmazione)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Esempio di output</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SAMP&gt;&lt;/SAMP&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Immissione da tastiera</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;KBD&gt;&lt;/KBD&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Variabile</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;VAR&gt;&lt;/VAR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Definizione</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;DFN&gt;&lt;/DFN&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(non molto diffuso)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Indirizzo dell'autore</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;ADDRESS&gt;&lt;/ADDRESS&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Il font pi&ugrave; grande</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BIG&gt;&lt;/BIG&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Il font pi&ugrave; piccolo</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SMALL&gt;&lt;/SMALL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER>
+&nbsp;</PRE>
+
+<P ALIGN=CENTER><A NAME="presentation"></A><TABLE BORDER=0
+CELLPADDING=3 WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>FORMATTAZIONE DI PRESENTAZIONE</FONT><HR SIZE="1"
+         noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>Neretto (Bold)</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;B&gt;&lt;/B&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Corsivo (Italic)</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;I&gt;&lt;/I&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Sottolineato (Underline)</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;U&gt;&lt;/U&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(non ancora molto diffuso)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Depennato (Strikeout)</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;STRIKE&gt;&lt;/STRIKE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(non ancora molto diffuso)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Depennato (Strikeout)</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;S&gt;&lt;/S&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(non ancora molto diffuso)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Deponente (Subscript)</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SUB&gt;&lt;/SUB&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Esponente (Superscript)</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SUP&gt;&lt;/SUP&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Macchina da scrivere (Typewriter)</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TT&gt;&lt;/TT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(visualizzato a spaziatura fissa)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Preformattato</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;PRE&gt;&lt;/PRE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(visualizzato tale e quale)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Larghezza</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;PRE WIDTH=?&gt;&lt;/PRE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(in caratteri)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Centrato</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;CENTER&gt;&lt;/CENTER&gt;</TT>
+         <B><A HREF="it_barebone_annotation.html#align">[*]</A></B>
+
+      </TD><TD VALIGN=top>
+         <P>(sia per testo che immagini)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.0
+      </TD><TD VALIGN=top>
+         <P><B>Lampeggiante (Blinking)</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BLINK&gt;&lt;/BLINK&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(il comando pi&ugrave; ridicolo)
+
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Grandezza del Font</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FONT SIZE=?&gt;&lt;/FONT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(valori da 1 a 7)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Cambio grandezza font</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FONT SIZE="+|-?"&gt;&lt;/FONT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.0
+      </TD><TD VALIGN=top>
+         <P><B>Grandezza font di base</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BASEFONT SIZE=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(da 1 a 7; default 3)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Colore del font</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FONT COLOR="#$$$$$$"&gt;&lt;/FONT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Selezione del Font</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FONT FACE="***"&gt;&lt;/FONT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Testo in pi&ugrave; colonne</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;MULTICOL COLS=?&gt;&lt;/MULTICOL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Spazio tra le colonne</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;MULTICOL GUTTER=?&gt;&lt;/MULTICOL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(lo standard &egrave; di 10 pixel)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Larghezza della colonna</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;MULTICOL WIDTH=?&gt;&lt;/MULTICOL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Spazio (Spacer)</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SPACER&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Tipo di spazio</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;SPACER TYPE=horizontal| vertical|block&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Grandezza dello spazio</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SPACER SIZE=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top width140>
+         <P><B>Dimensione dello spazio</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SPACER WIDTH=? HEIGHT=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Allineamento dello spazio</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SPACER ALIGN=left|right|center&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER>
+&nbsp;
+&nbsp;</PRE>
+
+<P ALIGN=CENTER><A NAME="links"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>COLLEGAMENTI E GRAFICI</FONT><HR SIZE="1"
+         noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>Collegamento generale</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;A HREF="URL"&gt;&lt;/A&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top ROWSPAN=2>
+         <P>&nbsp;
+      </TD><TD VALIGN=top ROWSPAN=2>
+         <P><B>ad un punto(target)</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;A HREF="URL#***"&gt;&lt;/A&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(se in un altro documento)
+      </TD></TR>
+   <TR><TD VALIGN=top>
+         <P><TT>&lt;A HREF="#***"&gt;&lt;/A&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(se nello stesso documento)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>ad una finestra (target)</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;A HREF="URL" TARGET="***| |_blank|_self|_parent|_top"&gt;&lt;/A&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Definizione del punto </B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;A NAME="***"&gt;&lt;/A&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+
+    <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Relazione</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;A REL="***"&gt;&lt;/A&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(non ancora molto diffuso)
+      </TD></TR>
+  <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Relazione inversa</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;A REV="***"&gt;&lt;/A&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(non ancora molto diffuso)
+      </TD></TR>
+
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Visualizzazione immagine</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;IMG SRC="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Allineamento</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;IMG SRC="URL" ALIGN=TOP|BOTTOM|MIDDLE|LEFT|RIGHT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.0
+      </TD><TD VALIGN=top>
+         <P><B>Allineamento</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;IMG SRC="URL" ALIGN=TEXTTOP| ABSMIDDLE|BASELINE|ABSBOTTOM&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>testo alternativo</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;IMG SRC="URL" ALT="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(quando non viene visualizzata l'immagine)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Mappa navigabile (Imagemap)</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;IMG SRC="URL" ISMAP&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(richiede un script)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Mappa navigabile locale  </B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;IMG SRC="URL" USEMAP="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Denominazione della mappa</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;MAP NAME="***"&gt;&lt;/MAP&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Sezioni della mappa</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;AREA SHAPE="RECT" COORDS=",,," HREF="URL"|NOHREF&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Dimensioni</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;IMG SRC="URL" WIDTH=? HEIGHT=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(in pixel)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Bordi</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;IMG SRC="URL" BORDER=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(in pixel)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>spazio circostante</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;IMG SRC="URL" HSPACE=? VSPACE=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(in pixel)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.0
+      </TD><TD VALIGN=top>
+         <P><B>bassa risoluzione</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;IMG SRC="URL" LOWSRC="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.1
+      </TD><TD VALIGN=top>
+         <P><B>Metodo Client Pull</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;META HTTP-EQUIV="Refresh" CONTENT="?; URL=URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Incorporazione di oggetti</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;EMBED SRC="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(inserimento oggetto nella pagina)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>grandezza oggetto</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;EMBED SRC="URL" WIDTH=? HEIGHT=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER>
+&nbsp;</PRE>
+
+<P ALIGN=CENTER><A NAME="dividers"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>DIVISORI</FONT><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>Paragrafo</B>
+      </TD><TD VALIGN=top width=240>
+         <P><TT>&lt;P&gt;&lt;/P&gt;</TT>
+         <B><A HREF="it_barebone_annotation.html#paragraph">[*]</A></B>
+
+      </TD><TD VALIGN=top>
+         <P>(spesso il tag di chiusura non &egrave; necessario)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Allineamento</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;P ALIGN=LEFT|CENTER|RIGHT&gt;&lt;/P&gt;</TT>
+         <B><A HREF="it_barebone_annotation.html#align">[*]</A></B>
+
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Interruzione riga</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(singolo ritorno a capo)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Pulizia margini</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BR CLEAR=LEFT|RIGHT|ALL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Riga orizzontale</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Allineamento</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HR ALIGN=LEFT|RIGHT|CENTER&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Spessore</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HR SIZE=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(in pixel)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Larghezza</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HR WIDTH=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(in pixel)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.0
+      </TD><TD VALIGN=top>
+         <P><B>Larghezza in percentuale</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HR WIDTH="%"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(come percentuale rispetto alla larghezza della pagina)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Riga piena</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HR NOSHADE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(senza l'effetto 3D)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.0
+      </TD><TD VALIGN=top>
+         <P><B>Senza interruzione</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;NOBR&gt;&lt;/NOBR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(per evitare l'interruzione automatica della riga)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.0
+      </TD><TD VALIGN=top>
+         <P><B>Interruzione</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;WBR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(per inserire l'interruzione dove desiderato in NOBR)
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER>
+&nbsp;</PRE>
+
+<P ALIGN=CENTER><A NAME="lists"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>LISTE </FONT><HR SIZE="1" noshade>
+      </TH><TH>
+         <P ALIGN=LEFT>&nbsp;
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>Liste senza ordine</B>
+      </TD><TD VALIGN=top width=240>
+         <P><TT>&lt;UL&gt;&lt;LI&gt;&lt;/UL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(<TT>&lt;LI&gt;</TT> prima di ogni elemento)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+        <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>compatta</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;UL COMPACT&gt;&lt;/UL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top ROWSPAN=2>
+         <P>&nbsp;
+      </TD><TD VALIGN=top ROWSPAN=2>
+         <P><B>tipo di pallina</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;UL TYPE=DISC|CIRCLE|SQUARE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(per tutta la lista)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR><TD VALIGN=top>
+         <P><TT>&lt;LI TYPE=DISC|CIRCLE|SQUARE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(questo e successivi)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Liste numerate</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;OL&gt;&lt;LI&gt;&lt;/OL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(<TT>&lt;LI&gt;</TT> prima di ogni elemento)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+              <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>compatta</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;OL COMPACT&gt;&lt;/OL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top ROWSPAN=2>
+         <P>&nbsp;
+      </TD><TD VALIGN=top ROWSPAN=2>
+         <P><B>tipo di numero</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;OL TYPE=A|a|I|i|1&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(per tutta la lista)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR><TD VALIGN=top>
+         <P><TT>&lt;LI TYPE=A|a|I|i|1&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(questo e successivi)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top ROWSPAN=2>
+         <P>&nbsp;
+      </TD><TD VALIGN=top ROWSPAN=2>
+         <P><B>numero di partenza</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;OL START=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(per tutta la lista)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR><TD VALIGN=top>
+         <P><TT>&lt;LI VALUE=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(questo e successivi)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Lista di definizioni</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;DL&gt;&lt;DT&gt;&lt;DD&gt;&lt;/DL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(<TT>&lt;DT&gt;=termine, &lt;DD&gt;</TT>=definizione)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+              <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>compatta</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;DL COMPACT&gt;&lt;/DL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Lista tipo Menu</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;MENU&gt;&lt;LI&gt;&lt;/MENU&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(<TT>&lt;LI&gt;</TT> prima di ogni elemento)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+              <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>compatta</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;MENU COMPACT&gt;&lt;/MENU&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Lista tipo Directory</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;DIR&gt;&lt;LI&gt;&lt;/DIR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(<TT>&lt;LI&gt;</TT> prima di ogni elemento)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+              <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>compatta</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;DIR COMPACT&gt;&lt;/DIR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER>
+&nbsp;</PRE>
+
+<P ALIGN=CENTER><A NAME="color"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>SFONDO E COLORI</FONT><HR SIZE="1"
+         noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>Immagine di sfondo</B>
+      </TD><TD VALIGN=top width=240>
+         <P><TT>&lt;BODY BACKGROUND="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+    <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Colore di sfondo</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BODY BGCOLOR="#$$$$$$"&gt;</TT>
+         <B><A HREF="it_barebone_annotation.html#color">[*]</A></B>
+
+      </TD><TD VALIGN=top>
+         <P>(in ordine di Red/Green/Blue)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>colore del testo</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BODY TEXT="#$$$$$$"&gt;</TT>
+         <B><A HREF="it_barebone_annotation.html#color">[*]</A></B>
+
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>colore dei collegamenti </B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BODY LINK="#$$$$$$"&gt;</TT>
+         <B><A HREF="it_barebone_annotation.html#color">[*]</A></B>
+
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>colore dei collegamenti visitati</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BODY VLINK="#$$$$$$"&gt;</TT>
+         <B><A HREF="it_barebone_annotation.html#color">[*]</A></B>
+
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>colore del collegamento selezionato</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BODY ALINK="#$$$$$$"&gt;</TT>
+         <B><A HREF="it_barebone_annotation.html#color">[*]</A></B>
+
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top COLSPAN=4 align=center>
+         <P ALIGN=CENTER>(Sono disponibili informazioni pi&ugrave; dettagliate a
+         <A HREF="http://werbach.com/web/wwwhelp.html#color">
+         http://werbach.com/web/wwwhelp.html#color</A>)
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER> </PRE>
+
+<P ALIGN=CENTER><A NAME="special"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>CARATTERI SPECIALI  </FONT><I>
+         (devono essere digitati in caratteri minuscoli)
+         </I><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>carattere speciale</B>
+      </TD><TD VALIGN=top width=240>
+         <P>&amp;#?;
+      </TD><TD VALIGN=top>
+         <P>(dove ? indica il codice ISO 8859-1)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&lt;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;lt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&gt;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&amp;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;amp;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>"</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;quot;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Registered TM</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;reg;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Copyright</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;copy;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Non-Breaking Space</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;nbsp;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top COLSPAN=4 align=center>
+         <P ALIGN=CENTER>(La lista completa &egrave; disponibile a
+         <A HREF="http://www.uni-passau.de/%7Eramsch/iso8859-1.html">
+         http://www.uni-passau.de/%7Eramsch/iso8859-1.html</A>)
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER> </PRE>
+
+<P ALIGN=CENTER><A NAME="forms"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>MODULI </FONT><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>Definizione</B>
+      </TD><TD VALIGN=top width=240>
+         <P><TT>&lt;FORM ACTION="URL" METHOD=GET|POST&gt;&lt;/FORM&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Upload di file</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FORM
+         ENCTYPE="multipart/form-data"&gt;&lt;/FORM&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>campo di immissione</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;INPUT TYPE="TEXT|PASSWORD|CHECKBOX|RADIO| IMAGE|HIDDEN|SUBMIT|RESET"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>denominazione del campo</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;INPUT NAME="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>valore del campo</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;INPUT VALUE="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>barrato?</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;INPUT CHECKED&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(checkbox e radio)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>grandezza</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;INPUT SIZE=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(in caratteri)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>lunghezza massima</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;INPUT MAXLENGTH=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(in caratteri)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>lista di selezione</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SELECT&gt;&lt;/SELECT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>denominazione del campo</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;SELECT NAME="***"&gt;&lt;/SELECT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>numero di opzioni</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;SELECT SIZE=?&gt;&lt;/SELECT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>scelta multipla</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SELECT MULTIPLE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(per selezionare pi&ugrave; di un elemento)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Opzioni</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;OPTION&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(elementi che possono essere selezionati)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>opzione proposta</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;OPTION SELECTED&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Finestra di immissione</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TEXTAREA ROWS=? COLS=?&gt;&lt;/TEXTAREA&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>denominazione del campo</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TEXTAREA NAME="***"&gt;&lt;/TEXTAREA&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>divisione del testo</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;TEXTAREA WRAP=OFF|VIRTUAL|PHYSICAL&gt;&lt;/TEXTAREA&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER>
+&nbsp;</PRE>
+
+<P ALIGN=CENTER><A NAME="tables"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>TABELLE</FONT><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>Definizione</B>
+      </TD><TD VALIGN=top width=240>
+         <P><TT>&lt;TABLE&gt;&lt;/TABLE&gt;</TT>
+         <B><A HREF="it_barebone_annotation.html#tables">[*]</A></B>
+
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>bordo</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;table border=?&gt;&lt;/TABLE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>spazio tra celle</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TABLE CELLSPACING=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>spazio all'interno</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TABLE CELLPADDING=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>larghezza desiderata</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TABLE WIDTH=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(in pixel)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Larghezza in percentuale</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TABLE WIDTH="%"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(percentuale rispetto alla pagina)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>riga</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TR&gt;&lt;/TR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>allineamento</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;TR ALIGN=LEFT|RIGHT| CENTER|MIDDLE|BOTTOM&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>cella</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TD&gt;&lt;/TD&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(deve essere all'interno di una riga)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>allineamento</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;TD ALIGN=LEFT|RIGHT| CENTER|MIDDLE|BOTTOM&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>senza interruzione</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TD NOWRAP&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>colonne da occupare</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TD COLSPAN=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>righe da occupare</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TD ROWSPAN=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.1
+      </TD><TD VALIGN=top>
+         <P><B>larghezza desiderata</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TD WIDTH=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(in pixel)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.1
+      </TD><TD VALIGN=top>
+         <P><B>larghezza desiderata in percentuale</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TD WIDTH="%"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(percentuale rispetto alla tabella)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>colore di sfondo della cella</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TD BGCOLOR="#$$$$$$"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Intestazioni delle celle</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TH&gt;&lt;/TH&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(uguale alle celle di dati, ma in neretto e centrata)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>allineamento</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;TH ALIGN=LEFT|RIGHT| CENTER|MIDDLE|BOTTOM&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>senza interruzione</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TH NOWRAP&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>colonne da occupare</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TH COLSPAN=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>righe da occupare</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TH ROWSPAN=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.1
+      </TD><TD VALIGN=top>
+         <P><B>larghezza desiderata</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TH WIDTH=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(in pixel)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.1
+      </TD><TD VALIGN=top>
+         <P><B>larghezza desiderata in percentuale</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TH WIDTH="%"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(percentuale rispetto alla tabella)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>colore di sfondo della cella</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TH BGCOLOR="#$$$$$$"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Legenda della tabella</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;CAPTION&gt;&lt;/CAPTION&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>allineamento</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;CAPTION ALIGN=TOP|BOTTOM&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(sopra o sotto la tabella)
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER>&nbsp;</PRE>
+
+<P ALIGN=CENTER><A NAME="frames"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>FRAME (quadri) </FONT><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>N2.0
+      </TD><TD VALIGN=top width=140>
+         <P><B>Documento Frame</B>
+      </TD><TD VALIGN=top width=240>
+         <P><TT>&lt;FRAMESET&gt;&lt;/FRAMESET&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(al posto di <TT>&lt;BODY&gt;</TT>)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>altezza in righe</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET ROWS=,,,&gt;&lt;/FRAMESET&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(pixel o %)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>altezza in righe</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET ROWS=*&gt;&lt;/FRAMESET&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(* = misura relativa)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>larghezza in colonne</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET COLS=,,,&gt;&lt;/FRAMESET&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(pixel o %)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>larghezza in colonne</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET COLS=*&gt;&lt;/FRAMESET&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(* = misura relativa)
+      </TD></TR>
+         <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>larghezza della cornice</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET BORDER=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+         <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>cornice</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET FRAMEBORDER="yes|no"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>colore della cornice</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET BORDERCOLOR="#$$$$$$"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Definizione del Frame</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(contenuto di ogni singolo riquadro)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>documento da visualizzare</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME SRC="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>denominazione del frame</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;FRAME NAME="***"|_blank|_self|_parent|_top&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>larghezza dei margini</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME MARGINWIDTH=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(margine destro e sinistro)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>altezza dei margini</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME MARGINHEIGHT=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(margine alto e basso)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>barra di scorrimento?</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME SCROLLING="YES|NO|AUTO"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>dimensione non modificabile</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME NORESIZE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+    <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>cornice</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME FRAMEBORDER="yes|no"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>colore della cornice</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME BORDERCOLOR="#$$$$$$"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+  <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>contenuto in assenza di frame</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;NOFRAMES&gt;&lt;/NOFRAMES&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(per i browser che non supportano i frame)
+      </TD></TR>
+</TABLE></P>
+
+<P ALIGN=CENTER>&nbsp;</P>
+
+<P ALIGN=CENTER><A NAME="java"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>JAVA</FONT><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>Applet</B>
+      </TD><TD VALIGN=top width=240>
+         <P><TT>&lt;APPLET&gt;&lt;/APPLET&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>nome del file</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET CODE="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>parametri</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET PARAM NAME="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>ubicazione del file</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET CODEBASE="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>denominazione del applet</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET NAME="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(per riferimenti presenti nella pagina)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>testo in alternativa</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET ALT="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(per i browser che non supportano Java)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>allineamento</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET ALIGN="LEFT|RIGHT|CENTER"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>dimensioni</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET WIDTH=? HEIGHT=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(in pixel)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>spaziatura</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET HSPACE=? VSPACE=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(in pixel)
+      </TD></TR>
+</TABLE></P>
+
+<P ALIGN=CENTER>&nbsp;</P>
+
+<P ALIGN=CENTER><A NAME="misc"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>VARI</FONT><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>Commenti</B>
+      </TD><TD VALIGN=top width=240>
+         <P><TT>&lt;!-- *** --&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(non visualizzati dal browser)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>HTML 3.2 prologo</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN"&gt;</TT>
+         <B><A HREF="it_barebone_annotation.html#prologue">[*]</A></B>
+
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ricerca</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;ISINDEX&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(indica che e' un documento collegato ad un database
+            indicizzato in cui &egrave; possibile fare ricerche)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Prompt</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;ISINDEX PROMPT="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(testo da anteporre alla casella di inserimento)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Invio ricerca</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;A HREF="URL?***"&gt;&lt;/a&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(usare il punto di domanda)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>URL base di questo file</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BASE HREF="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(deve essere nella testata)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>denominazione di base della finestra</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BASE TARGET="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(deve essere nella testata)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Relazioni</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;LINK REV="***" REL="***" HREF="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(deve essere nella testata)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Meta Informazioni</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;META&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(deve essere nella testata)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Fogli di stile (Style Sheets)</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;STYLE&gt;&lt;/STYLE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(non ancora molto diffusi)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Scripts</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SCRIPT&gt;&lt;/SCRIPT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(non ancora molto diffusi)
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER>
+&nbsp;
+&nbsp;</PRE>
+
+<P ALIGN=CENTER><TABLE BORDER=1 CELLPADDING=5 WIDTH="100%">
+   <TR>
+      <TD VALIGN=top>
+         <P>Copyright &copy;1995-1997
+         <A HREF="mailto:barebones@werbach.com">Kevin Werbach</A>.
+         E' permessa la distribuzione non commerciale. Questa non &egrave;
+         un prodotto di <A HREF="http://www.barebones.com">Bare Bones
+         Software</A>; la somiglianza del nome &egrave; una pura
+         coincidenza.
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER>&nbsp;</PRE>
+
+<P ALIGN=CENTER><A HREF="#contents">Indice</A> |
+<A HREF="#general">Elenco dei comandi</A> |
+<A HREF="it_barebone.txt">Versione testo</A> |
+<A HREF="http://werbach.com/home.html">Kevin's Home Page</A></P>
+
+
+<p>
+<i>Traduzione a cura di <a href="mailto:kay@kmq.inet.it">
+Kay Martha Quittan</a> (per informazioni vedi <a href="http://www.eurocube.it/kay">Kay On Line</a>)</i>
+<p>
+
+
+</BODY>
+</HTML>
+

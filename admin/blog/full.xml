@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="iso-8859-1"?> <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:admin="http://webns.net/mvcb/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+
+<channel>
+<title>Werblog Posts + Comments</title>
+<link>http://werbach.com/blog/</link>
+<description>The World According to Kevin Werbach</description>
+<dc:language>en-us</dc:language>
+<dc:creator>kevin@werbach.com</dc:creator>
+<dc:rights>Copyright 2004</dc:rights>
+<dc:date>2004-10-02T16:54:21-05:00</dc:date>
+<admin:generatorAgent rdf:resource="http://www.movabletype.org/?v=3.1" />
+<admin:errorReportsTo rdf:resource="mailto:kevin@werbach.com"/>
+<sy:updatePeriod>hourly</sy:updatePeriod>
+<sy:updateFrequency>1</sy:updateFrequency>
+<sy:updateBase>2000-01-01T12:00+00:00</sy:updateBase>
+
+<item>
+<title>test post</title>
+<link>http://werbach.com/blog/archives/002735.html</link>
+<description>this is a test...</description>
+<guid isPermaLink="false">2735@http://werbach.com/blog/</guid>
+<content:encoded><![CDATA[<p>this is a test</p></p>
+<p>
+<a href="http://werbach.com/MT/mt-tb.cgi?__mode=view&entry_id=2735" onclick="OpenTrackback(this.href); return false">TrackBack (0)</a> | ]]></content:encoded>
+<dc:subject></dc:subject>
+<dc:date>2004-10-02T16:54:21-05:00</dc:date>
+</item>
+<item>
+<title>test</title>
+<link>http://werbach.com/blog/archives/002734.html</link>
+<description>this is a test...</description>
+<guid isPermaLink="false">2734@http://werbach.com/blog/</guid>
+<content:encoded><![CDATA[<p>this is a test</p></p>
+<p>
+<a href="http://werbach.com/MT/mt-tb.cgi?__mode=view&entry_id=2734" onclick="OpenTrackback(this.href); return false">TrackBack (0)</a> | ]]></content:encoded>
+<dc:subject></dc:subject>
+<dc:date>2004-09-01T09:17:49-05:00</dc:date>
+</item>
+<item>
+<title>back soon</title>
+<link>http://werbach.com/blog/archives/002732.html</link>
+<description>Sorry -- haven&apos;t had a chance to do much with the blog the past couple months....</description>
+<guid isPermaLink="false">2732@http://werbach.com/blog/</guid>
+<content:encoded><![CDATA[<p>Sorry -- haven't had a chance to do much with the blog the past couple months.</p></p>
+<p>
+<a href="http://werbach.com/MT/mt-tb.cgi?__mode=view&entry_id=2732" onclick="OpenTrackback(this.href); return false">TrackBack (0)</a> | ]]></content:encoded>
+<dc:subject></dc:subject>
+<dc:date>2004-09-01T09:15:39-05:00</dc:date>
+</item>
+<item>
+<title>back soon</title>
+<link>http://werbach.com/blog/archives/002733.html</link>
+<description>Sorry -- haven&apos;t had a chance to do much with the blog the past couple months....</description>
+<guid isPermaLink="false">2733@http://werbach.com/blog/</guid>
+<content:encoded><![CDATA[<p>Sorry -- haven't had a chance to do much with the blog the past couple months.</p></p>
+<p>
+<a href="http://werbach.com/MT/mt-tb.cgi?__mode=view&entry_id=2733" onclick="OpenTrackback(this.href); return false">TrackBack (0)</a> | ]]></content:encoded>
+<dc:subject></dc:subject>
+<dc:date>2004-09-01T09:15:39-05:00</dc:date>
+</item>
+<item>
+<title></title>
+<link>http://werbach.com/blog/archives/002731.html</link>
+<description>Susan Crawford posts from Kuala Lumpur about ICANN and Internet governance. I&apos;m particularly interested in (and worried by) the adoption of the &quot;layers model&quot; I proposed four years ago into the Internet governance debate. The problem is that layers analysis...</description>
+<guid isPermaLink="false">2731@http://werbach.com/blog/</guid>
+<content:encoded><![CDATA[<p>Susan Crawford <a href="http://scrawford.blogware.com/blog/_archives/2004/7/19/108228.html">posts </a> from Kuala Lumpur about ICANN and Internet governance.</p>
+
+<p>I'm particularly interested in (and worried by) the adoption of the "layers model" I proposed four years ago into the Internet governance debate.  The problem is that layers analysis is designed to harmonize regulation with technology, but from Susan's recap it sounds as though policy-makers are using it in ways totally at odds with technical reality.</p><p><a href="http://werbach.com/blog/archives/002731.html" title="Continue Reading: ">Continued reading ...</a><p class="font-family:Verdana, Arial, sans-serif; font-size:11px; color: #333333; background-color: #f5f5f5; border: 1px solid #c0c0c0; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 4px; display: block;"></p>
+<p>
+<a href="http://werbach.com/MT/mt-tb.cgi?__mode=view&entry_id=2731" onclick="OpenTrackback(this.href); return false">TrackBack (0)</a> | <a href="http://werbach.com/blog/archives/002731.html#comments" title="Comment on: ">Comments (0)</a></p>
+<p>Comments on this Entry:</p>
+
+</description>
+]]></content:encoded>
+<dc:subject></dc:subject>
+<dc:date>2004-07-20T08:26:35-05:00</dc:date>
+</item>
+<item>
+<title></title>
+<link>http://werbach.com/blog/archives/002730.html</link>
+<description>Jonathan Schwartz points out that video over IP will stress today&apos;s network infrastucture: &quot;When it&apos;s put onto DVD, the movie will size up to something like 5 Gigabytes. Requested by 250,000 technology executives (or more likely, their kids) on a...</description>
+<guid isPermaLink="false">2730@http://werbach.com/blog/</guid>
+<content:encoded><![CDATA[<p><a title="Jonathan Schwartz's Weblog" href="http://blogs.sun.com/roller/page/jonathan/20040708#big_data_small_computer_big">Jonathan Schwartz</a> points out that video over IP will stress today's network infrastucture:<br />
+<p><br />
+"When it's put onto DVD, the movie will size up to something like 5 Gigabytes. Requested by 250,000 technology executives (or more likely, their kids) on a quiet evening - for display on their new IP TV's or mobile handsets, or through their set top boxes - that's going to put some burden on the network. Big data (5 Gb), relatively small compute (decode, check for authorization, etc.). Caches will help, but it's a classic parallel throughput problem."</p></p>
+<p>
+<a href="http://werbach.com/MT/mt-tb.cgi?__mode=view&entry_id=2730" onclick="OpenTrackback(this.href); return false">TrackBack (1)</a> | <a href="http://werbach.com/blog/archives/002730.html#comments" title="Comment on: ">Comments (0)</a></p>
+<p>Comments on this Entry:</p>
+
+</description>
+]]></content:encoded>
+<dc:subject></dc:subject>
+<dc:date>2004-07-20T08:22:48-05:00</dc:date>
+</item>
+<item>
+<title>Welcome to the New Werblog</title>
+<link>http://werbach.com/blog/archives/002729.html</link>
+<description>I&apos;ve been managing the various incarnations of my personal Weblog with Userland&apos;s Manila and Radio tools for five years. Hard to believe it has been that long. (The original &quot;Weblog 1.0&quot; is long gone, but preserved at the Internet archive.)...</description>
+<guid isPermaLink="false">2729@http://werbach.com/blog/</guid>
+<content:encoded><![CDATA[<p>I've been managing the various incarnations of my personal Weblog with Userland's Manila and Radio tools for five years.  Hard to believe it has been that long.  (The original "Weblog 1.0" is long gone, but preserved at the <a href="http://web.archive.org/web/20000601221103/release1.userland.com/1999/08/06">Internet archive</a>.)  Werblog dates to early 2002, as I was preparing to leave EDventure Holdings and strike out on my own.  </p>
+
+<p>I still like many things about Radio, but for various reasons I've decided to switch over to Movable Type.  In the process, I've also given the blog a slight facelift.  All the old Werblog posts have been imported.  There probably are loose ends that will take a bit of time to clean up; please bear with me.</p>
+
+<p>I've remapped the domain name so that the blog appears in the same place as before.  The new RSS feed is at <a href="http://werblog.com/index.xml">http://werblog.com/index.xml</a></p></p>
+<p>
+<a href="http://werbach.com/MT/mt-tb.cgi?__mode=view&entry_id=2729" onclick="OpenTrackback(this.href); return false">TrackBack (0)</a> | <a href="http://werbach.com/blog/archives/002729.html#comments" title="Comment on: Welcome to the New Werblog">Comments (0)</a></p>
+<p>Comments on this Entry:</p>
+
+</description>
+]]></content:encoded>
+<dc:subject></dc:subject>
+<dc:date>2004-07-14T10:57:03-05:00</dc:date>
+</item>
+<item>
+<title>P2P trends</title>
+<link>http://werbach.com/blog/archives/002728.html</link>
+<description>News.com: Over six months of surveying, the British company found that Kazaa use had slipped far behind rival BitTorrent, which accounted for 53 percent of actual peer-to-peer network traffic. It found also that overall traffic has not been falling, as...</description>
+<guid isPermaLink="false">2728@http://werbach.com/blog/</guid>
+<content:encoded><![CDATA[<p><a href="http://news.com.com/Survey%3A+Movie-swapping+up%3B+Kazaa+down/2100-1025_3-5267992.html?tag=nefd.hed">News.com</a>: Over six months of surveying, the British company found that Kazaa use had slipped far behind rival BitTorrent, which accounted for 53 percent of actual peer-to-peer network traffic. It found also that overall traffic has not been falling, as some have suggested. By June, an average of 8 million users were online at any given time, sharing a petabyte (10 million gigabytes) of data.</p></p>
+<p>
+<a href="http://werbach.com/MT/mt-tb.cgi?__mode=view&entry_id=2728" onclick="OpenTrackback(this.href); return false">TrackBack (0)</a> | <a href="http://werbach.com/blog/archives/002728.html#comments" title="Comment on: P2P trends">Comments (0)</a></p>
+<p>Comments on this Entry:</p>
+
+</description>
+]]></content:encoded>
+<dc:subject></dc:subject>
+<dc:date>2004-07-14T07:27:12-05:00</dc:date>
+</item>
+<item>
+<title>Community Wireless Summit</title>
+<link>http://werbach.com/blog/archives/002727.html</link>
+<description>On August 20-22, 2004, Champaign-Urbana Community Wireless Network , Free Press , and Prairienet Community Network will host the 2004 National Summit for Community Wireless Networks. It will be the largest community wireless networking event to date and will bring...</description>
+<guid isPermaLink="false">2727@http://werbach.com/blog/</guid>
+<content:encoded><![CDATA[<p>On August 20-22, 2004, Champaign-Urbana Community Wireless Network <http://www.cuwireless.net>, Free Press <http://www.freepress.net/index.php>, and Prairienet Community Network <http://www.prairienet.org> will host the 2004 National Summit for Community Wireless Networks. It will be the largest community wireless networking event to date and will bring together technology and policy leaders, decision-makers, students, researchers, and other participants in wireless networking and community networking initiatives for the express purpose of discussing policy issues and practical solutions to problems facing community wireless networks.</p>
+
+<p>For information: <a href="http://www.communitywirelesssummit.org/">www.communitywirelesssummit.org/</a></p><p><a href="http://werbach.com/blog/archives/002727.html" title="Continue Reading: Community Wireless Summit">Continued reading Community Wireless Summit...</a><p class="font-family:Verdana, Arial, sans-serif; font-size:11px; color: #333333; background-color: #f5f5f5; border: 1px solid #c0c0c0; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 4px; display: block;"></p>
+<p>
+<a href="http://werbach.com/MT/mt-tb.cgi?__mode=view&entry_id=2727" onclick="OpenTrackback(this.href); return false">TrackBack (0)</a> | ]]></content:encoded>
+<dc:subject></dc:subject>
+<dc:date>2004-07-09T11:04:05-05:00</dc:date>
+</item>
+<item>
+<title>Community Wireless</title>
+<link>http://werbach.com/blog/archives/002726.html</link>
+<description>Jim Thompson: &quot;Community wireless networks will happen, and there is nothing that the carriers or telcos can do that will stop it.&quot;...</description>
+<guid isPermaLink="false">2726@http://werbach.com/blog/</guid>
+<content:encoded><![CDATA[<p><a title="Sex, Drugs & Unix" href="http://www.smallworks.com/archives/00000072.htm">Jim Thompson</a>: "Community wireless networks will happen, and there is nothing that the carriers or telcos can do that will stop it."</p></p>
+<p>
+<a href="http://werbach.com/MT/mt-tb.cgi?__mode=view&entry_id=2726" onclick="OpenTrackback(this.href); return false">TrackBack (0)</a> | <a href="http://werbach.com/blog/archives/002726.html#comments" title="Comment on: Community Wireless">Comments (0)</a></p>
+<p>Comments on this Entry:</p>
+
+</description>
+]]></content:encoded>
+<dc:subject></dc:subject>
+<dc:date>2004-07-07T08:24:22-05:00</dc:date>
+</item>
+<item>
+<title>More mobile phones than people</title>
+<link>http://werbach.com/blog/archives/002725.html</link>
+<description>Sweden now has a mobile phone penetration rate of 100.1%. In other words, there are more mobile phone accounts than people in the country, largely because many subscribers have both home and business mobile numbers. And Sweden are nearly twice...</description>
+<guid isPermaLink="false">2725@http://werbach.com/blog/</guid>
+<content:encoded><![CDATA[<p>Sweden now has a mobile phone penetration rate of <a href="http://www.smh.com.au/articles/2004/07/05/1088879406263.html?oneclick=true">100.1%</a>.    In other words, there are more mobile phone accounts than people in the country, largely because many subscribers have both home and business mobile numbers.  And Sweden are nearly twice as many mobile phone accounts as fixed lines -- 9 million to 5.4 million.  Is this the future of telecom?</p></p>
+<p>
+<a href="http://werbach.com/MT/mt-tb.cgi?__mode=view&entry_id=2725" onclick="OpenTrackback(this.href); return false">TrackBack (0)</a> | <a href="http://werbach.com/blog/archives/002725.html#comments" title="Comment on: More mobile phones than people">Comments (0)</a></p>
+<p>Comments on this Entry:</p>
+
+</description>
+]]></content:encoded>
+<dc:subject></dc:subject>
+<dc:date>2004-07-06T08:42:03-05:00</dc:date>
+</item>
+<item>
+<title>Jonathan Schwartz starts a blog</title>
+<link>http://werbach.com/blog/archives/002723.html</link>
+<description><![CDATA[Jonathan Schwartz, the President and COO of Sun Microsystems, now has a weblog.&nbsp; I've known Jonathan for several years, and he's one of the smartest, most with-it executives in high-tech. All you need to know about him is that he...]]></description>
+<guid isPermaLink="false">2723@http://werbach.com/blog/</guid>
+<content:encoded><![CDATA[<p>Jonathan Schwartz, the President and COO of Sun Microsystems, now has a <a href="http://blogs.sun.com/jonathan">weblog</a>.&nbsp;  <br><br />
+I've known Jonathan for several years, and he's one of the smartest,<br />
+most with-it executives in high-tech.  All you need to know about<br />
+him is that he was thrilled when I introduced him at <a href="http://www.supernova2004.com/">Supernova </a>last<br />
+week as a "maverick."  At the same time, he's totally focused on<br />
+returning Sun to its former glory, and reinvigorating the IT sector<br />
+along the way.  We had a great conversation at the conference -- check out Heath Row's <a href="http://blog.fastcompany.com/archives/2004/06/25/jonathan_schwartz_perspective.html#more">transcript</a>.<br><br />
+<br><br />
+I fully expect that the blog will reflect the man himself, not some PR scribe.  <br><br />
+--------</p></p>
+<p>
+<a href="http://werbach.com/MT/mt-tb.cgi?__mode=view&entry_id=2723" onclick="OpenTrackback(this.href); return false">TrackBack (0)</a> | <a href="http://werbach.com/blog/archives/002723.html#comments" title="Comment on: Jonathan Schwartz starts a blog">Comments (0)</a></p>
+<p>Comments on this Entry:</p>
+
+</description>
+]]></content:encoded>
+<dc:subject>Weblogs</dc:subject>
+<dc:date>2004-06-29T12:39:38-05:00</dc:date>
+</item>
+<item>
+<title>Another Super Supernova</title>
+<link>http://werbach.com/blog/archives/002722.html</link>
+<description><![CDATA[I'm back and catching up after Supernova, which was spectacular this year.&nbsp; Other than the flaky WiFi connection (grrrr...) and some other annoyances, it really went as well as I could have hoped.&nbsp; When a couple dozen people are still...]]></description>
+<guid isPermaLink="false">2722@http://werbach.com/blog/</guid>
+<content:encoded><![CDATA[<p>I'm back and catching up after <a href="http://www.supernova2004.com">Supernova</a>,<br />
+which was spectacular this year.&nbsp; Other than the flaky WiFi<br />
+connection (grrrr...) and some other annoyances, it really went as well<br />
+as I could have hoped.&nbsp; When a couple dozen people are still in<br />
+the room, talking, half an hour after the conference wraps up, you know<br />
+you've made an impression.<br><br />
+<br><br />
+Thanks to everyone who helped make Supernova 2004 a success.&nbsp; If you weren't there, check out the <a href="http://supernova.typepad.com">blog </a>for notes and analysis.<br><br />
+<br><br />
+We'll be doing something slightly different next year.&nbsp; All I can<br />
+say right now is that will take all that's great about Supernova and<br />
+make it even better.&nbsp; Stay tuned for details.&nbsp; <br></p>
+
+<p>--------</p></p>
+<p>
+<a href="http://werbach.com/MT/mt-tb.cgi?__mode=view&entry_id=2722" onclick="OpenTrackback(this.href); return false">TrackBack (0)</a> | <a href="http://werbach.com/blog/archives/002722.html#comments" title="Comment on: Another Super Supernova">Comments (0)</a></p>
+<p>Comments on this Entry:</p>
+
+</description>
+]]></content:encoded>
+<dc:subject>Supernova</dc:subject>
+<dc:date>2004-06-28T11:17:09-05:00</dc:date>
+</item>
+<item>
+<title>Wake Me Up When It&apos;s Over</title>
+<link>http://werbach.com/blog/archives/002721.html</link>
+<description><![CDATA[Supernova is, as expected, coming together nicely.&nbsp; Of course, nice is a relative word.&nbsp; There are always multiple fire drills in the weeks prior to an event, which I've been completely focused on recently.&nbsp; The good news is that registrations...]]></description>
+<guid isPermaLink="false">2721@http://werbach.com/blog/</guid>
+<content:encoded><![CDATA[<p><a href="http://www.supernova2004.com">Supernova </a>is, as expected,<br />
+coming together nicely.&nbsp; Of course, nice is a relative word.&nbsp;<br />
+There are always multiple fire drills in the weeks prior to an event,<br />
+which I've been completely focused on recently.&nbsp; The good news is<br />
+that registrations are going great, and we've got some fantastic <a href="http://www.supernova2004.com/schedule.html">sessions </a>in store for the event.<br><br />
+<br><br />
+If you're in the Bay Area, please consider joining us next week (June<br />
+24-25) for what promises to be an extroardinary gathering of<br />
+innovators, thinkers, implementers, investors, and other thought<br />
+leaders of the technology world.&nbsp; <br><br />
+<br><br />
+Check out our <a href="http://www.supernova2004.com/communitytools.html">Community Connection</a><br />
+for the conference weblog, wiki, and other interactive tools.&nbsp;<br />
+Supernova always generates a virtual event in parallel with the<br />
+physical conference; this year, we've kicked the cyber-component up a<br />
+notch.&nbsp; <br><br />
+<br><br />
+And don't forget to sign up for <a href="http://www.socialtext.net/supernova/index.cgi?joi_ito_s_pre_conference_party">Joi's Pre-Conference Dinner </a>on Wednesday June 23.&nbsp; It's open to anyone who RSVPs,whether you're attending Supernova or not.<br><br />
+<br><br />
+Back to the salt mines....<br></p>
+
+<p>--------</p></p>
+<p>
+<a href="http://werbach.com/MT/mt-tb.cgi?__mode=view&entry_id=2721" onclick="OpenTrackback(this.href); return false">TrackBack (0)</a> | <a href="http://werbach.com/blog/archives/002721.html#comments" title="Comment on: Wake Me Up When It's Over">Comments (0)</a></p>
+<p>Comments on this Entry:</p>
+
+</description>
+]]></content:encoded>
+<dc:subject>Supernova</dc:subject>
+<dc:date>2004-06-17T01:08:24-05:00</dc:date>
+</item>
+<item>
+<title>WirelessUnleashed Launches</title>
+<link>http://werbach.com/blog/archives/002720.html</link>
+<description><![CDATA[Earlier this week, with a little help from my friends, I launched a WirelessUnleashed, a group weblog on unlicensed wireless issues.&nbsp; Between getting this online and Supernova planning, I've been so busy that I neglected to post a pointer here!...]]></description>
+<guid isPermaLink="false">2720@http://werbach.com/blog/</guid>
+<content:encoded><![CDATA[<p>Earlier this week, with a little help from my friends, I launched a <a href="http://www.wirelessunleashed.com">WirelessUnleashed</a>, a group weblog on unlicensed wireless issues.&nbsp; Between getting this online and <a href="http://www.supernova2004.com/">Supernova</a> planning, I've been so busy that I neglected to post a pointer here!<br><br />
+<br><br />
+The site focuses on the benefits of reallocating low-frequency wireless<br />
+capacity from broadcasting to unlicensed applications, both here and<br />
+around the world.&nbsp; There is a huge amount of capacity which could<br />
+be used for two-way applications like broadband to the home, but which<br />
+is locked up in broadcast allocations based on 1950s technology.&nbsp;<br />
+Freeing it up could create massive opportunities for innovation, and<br />
+could dramatically lower the costs of wireless connectivity in<br />
+developing countries. <br><br />
+<br><br />
+My co-conspirators are Clay Shirky, Andrew Odlyzko, and David Isenberg.<br />
+It's not often you find the brainpower that these three bring to the<br />
+table in one place. <br />
+--------</p></p>
+<p>
+<a href="http://werbach.com/MT/mt-tb.cgi?__mode=view&entry_id=2720" onclick="OpenTrackback(this.href); return false">TrackBack (0)</a> | <a href="http://werbach.com/blog/archives/002720.html#comments" title="Comment on: WirelessUnleashed Launches">Comments (0)</a></p>
+<p>Comments on this Entry:</p>
+
+</description>
+]]></content:encoded>
+<dc:subject>COMMUNICATIONS; Open Spectrum</dc:subject>
+<dc:date>2004-06-04T08:27:57-05:00</dc:date>
+</item>
+
+
+</channel>
+</rss>

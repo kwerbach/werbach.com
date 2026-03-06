@@ -1,0 +1,2214 @@
+<HTML>
+<HEAD>
+<TITLE>Î³¡ŒÀ¦‰ ³¹À¦×¦Ÿ²Œ×¦ ­¦ ‹ŽÀ¹ HTML</TITLE>
+</HEAD>
+<BODY>
+<small>If you cannot read this coding, try another one:<br>
+[ <b href="ru_koi8_barebone.html">KOI8</b> | <a href="ru_cp1251_barebone.html">Windows CP1251</a> | <a href="ru_cp866_barebone.html">DOS CP866</a> ]<br>
+</small>
+<H1 ALIGN=CENTER><HR SIZE="8" WIDTH=480 noshade>ÎÚ·ÙÎÔÂ ÚžÎÔ—Ô”ÛÙ—Ô •Ô HTML</H1>
+
+<P ALIGN=CENTER><B>·×Œ¦³: <A HREF="mailto:barebones@werbach.com">Kevin Werbach</a></B><BR>
+<b>•‰³‰×¦Ÿ: <a href="mailto:frodo@cs.huji.ac.il">Stanislav Malyshev</a></b><br>
+
+<I>—‰³²Š‹ 3.0 Ê¦³Õ¡ŒŠ³¦×¡‘¡‹ -- 21 Š¿Ã‹ 1996</I><BR>
+
+<HR SIZE="8" WIDTH=480 noshade></P>
+
+<font size=4>
+<P>•¦²Ã‰Ÿ‘‹‹ ×‰³²Š‹
+ÐŒ¦«¦ Ÿ¦À¹Õ‰‘Œ¡ ‘¡»¦ŸŠŒ²‹ ­¦ ¡Ÿ³‰²¹ &lt;<A
+HREF="http://werbach.com/barebones/">http://werbach.com/barebones/</A>&gt;.
+</p>
+
+<P>¸Œ¦ ³¹À¦×¦Ÿ²Œ×¦ ¦­Š²×¡‰Œ ×²‰ ÐÃ‰Õ‰‘ HTML, À¦Œ¦³‰ ×¦²­³Š‘ŠÕ¡¿Œ²‹
+¬¦Ãÿ¤Š‘²Œ×¦Õ ­³¦²Õ¦Œ³¤ŠÀ¦×. Ò ×ÀÃ¿ÞŠÃ ×²‰ ÐÃ‰Õ‰‘Œ ŠŽ
+<A HREF="http://www.w3.org/pub/WWW/MarkUp/Wilbur/">HTML 3.2</A>, Œ¡À÷‰ À¡À ³¡²¤Š³‰‘Š‹ Netscape ×­Ã¦Œÿ Ÿ¦ ×‰³²ŠŠ Netscape Navigator 3.0b5.
+Ó¡²Œ¦‹ð‰‰ ³¹À¦×¦Ÿ²Œ×¦ ²Ÿ‰Ã¡‘¦ À¡À Õ¦÷‘¦ ¬¦Ã‰‰ À³¡ŒÀŠÕ,
+Ÿ¦­¦Ã‘ŠŒ‰Ãÿ¹¿ Š‘¦³Õ¡ˆŠ¿ ¦ HTML Õ¦÷‘¦ ‘¡ ŒŠ ‘¡ <A
+HREF="http://werbach.com/web/wwwhelp.html#guides">ÛŒ³¡‘Šˆ‰ ­¦Õ¦ðŠ ­¦ WWW</a>.
+<p>
+—²‰«Ÿ¡ ³¡Ÿ À¦ÕÕ‰‘Œ¡³Š‹Õ Š ­³‰ŸÃ¦÷‰‘Š‹Õ.<br>
+<b>ÔŒ ­‰³‰×¦ŸÞŠÀ¡</b>: ‰²ÃŠ ‰²Œÿ À¡ÀŠ‰-Œ¦ Ž¡Õ‰Þ¡‘Š‹ ­¦ ­‰³‰×¦Ÿ¹, ­Š¤ŠŒ‰ Õ‘‰:
+&lt;<a href="mailto:frodo@cs.huji.ac.il">frodo@cs.huji.ac.il</a>&gt;. Ò ‘‰ ­³¦‰²²Š¦‘¡Ãÿ‘  ­‰³‰×¦ŸÞŠÀ, Œ¡À ÞŒ¦ À¡Þ‰²Œ×¦ ­‰³‰×¦Ÿ¡ Õ¦÷‰Œ ­¦‘³¡×ŠŒ²‹ ‘‰ ×²‰Õ. Do it better if you can - ²Ÿ‰Ã¡ Œ‰ Ã¹Þ¤‰, ‰²ÃŠ Õ¦÷‰Œ‰.:)
+</p>   
+
+</P>
+</font>
+
+<P><A NAME="contents"></A></P>
+<font size=4><b>Û¦Ÿ‰³÷¡‘Š‰</b></font>
+
+<ol>
+<li><b>•ÚÂ”ÈÛÏÔ—ÈÂ</b>
+<ul>
+<li><a href="http://werbach.com/barebones/ru_koi8_barebone_introduction.html#unique"><B>œ‰Õ Ž¡Õ‰Þ¡Œ‰Ãÿ‘¦ ÐŒ¦ ³¹À¦×¦Ÿ²Œ×¦</B></A>
+   
+   <LI><A HREF="http://werbach.com/barebones/ru_koi8_barebone_introduction.html#included"><B>Î¡ÀŠ‰ ÐÃ‰Õ‰‘Œ HTML ×ÀÃ¿Þ‰‘</B></A>
+   
+   <LI><A HREF="http://werbach.com/barebones/ru_koi8_barebone_introduction.html#formatting"><B>Ê¦³Õ¡Œ ÐŒ¦«¦ Ÿ¦À¹Õ‰‘Œ¡
+</b></a> (×ÀÃ¿Þ¡‹ ¦­Š²¡‘Š‰ ²ŠÕ×¦Ã¦× Š ¡¬¬³‰×Š¡Œ¹³)
+ </ul> 
+ <p>
+   <LI><B>Û•ÈÛÔÎ ¸ÏÂÌÂÓÙÔ— HTML</B>
+   
+   <uL>
+      <LI><A HREF="#general"><B>¬¡ŽŠ²‘‰ ÐÃ‰Õ‰‘Œ</B></A> (×²‰ Ÿ¦À¹Õ‰‘Œ ‘¡  HTML Ÿ¦Ã÷‘ ²¦Ÿ‰³÷¡Œÿ Š»)
+      
+      <LI><A HREF="#structure"><B>¦­³‰Ÿ‰Ã‰‘Š‰ ²Œ³¹ÀŒ¹³</B></A> (×ŠŸ Ž¡Ÿ¡‰Œ²‹ ­¡³¡Õ‰Œ³¡ÕŠ ­³¦«³¡ÕÕ-­³¦²Õ¦Œ³ðŠÀ¡)
+      
+      <LI><A HREF="#presentation"><B>×‘‰¤‘Š  ×ŠŸ</B></A> (¡×Œ¦³ ¦­³‰Ÿ‰Ã‹‰Œ ×‘‰¤‘Š  ×ŠŸ Œ‰À²Œ¡)
+      
+      <LI><A HREF="#links"><B>²²ÃÀŠ Š «³¡ŠÀ¡</B></A>
+      
+      <LI><A HREF="#dividers"><B>³¡ŽŸ‰ÃŠŒ‰ÃŠ</B></A>
+      
+      <LI><A HREF="#lists"><B>²­Š²ÀŠ</B></A>
+      
+      <LI><A HREF="#color"><B>¦‘ Š ˆ×‰Œ¡</B></A>
+      
+      <LI><A HREF="#special"><B>²­‰ˆŠ¡Ãÿ‘‰ ²ŠÕ×¦Ã</B></A>
+      
+      <LI><A HREF="#forms"><B>¦³Õ</B></A>
+      
+      <LI><A HREF="#tables"><B>Œ¡¬ÃŠˆ</B></A>
+      
+      <LI><A HREF="#frames"><B>³‰ Õ (frames)</B></A>
+      
+      <LI><A HREF="#java"><B>‹ŽÀ Java</B></A>
+      
+      <LI><A HREF="#misc"><B>³¡Ž‘¦‰</B></A>
+   </UL>
+   
+   <p><b>—‘ŠÕ¡‘Š‰:</b> Â²ÃŠ ×¡Õ ‘‰ ‹²‘¡ ³¡Ž‘Šˆ¡ Õ‰÷Ÿ¹ HTML
+   2.0, HTML 3.0, HTML 3.2, Š Ÿ¦­¦Ã‘‰‘Š‹ÕŠ Netscape, ‹ ²¦×‰Œ¹¿ ­³¦ÞŠŒ¡Œÿ
+   <a HREF="http://www.w3.org/pub/WWW/MarkUp/Activity">À¦ÕÕ‰‘Œ¡³ŠŠ W3C</A> ¦ ³¡Ž×ŠŒŠŠ ‹ŽÀ¡ HTML.</P>
+</OL>
+
+<P ALIGN=CENTER><A NAME="general"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>’·™ÈÛÓ˜Â ¸ÏÂÌÂÓÙ˜</FONT><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=120>
+         <P><B>ÙŠ­ Ÿ¦À¹Õ‰‘Œ¡</B>
+      </TD><TD VALIGN=top width=140>
+         <P><TT>&lt;HTML&gt;&lt;/HTML&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(‘¡Þ¡Ã¦ Š À¦‘‰ˆ ¡ Ã¡)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>ÈÕ‹ Ÿ¦À¹Õ‰‘Œ¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TITLE&gt;&lt;/TITLE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(Ÿ¦Ã÷‘¦ ¬Œÿ × Ž¡«¦Ã¦×À‰)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>™¡«¦Ã¦×¦À</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HEAD&gt;&lt;/HEAD&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(¦­Š²¡‘Š‰ Ÿ¦À¹Õ‰‘Œ¡, ‘¡­³ŠÕ‰³ ‰«¦ ŠÕ‹)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ù‰Ã¦</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BODY&gt;&lt;/BODY&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(²¦Ÿ‰³÷ŠÕ¦‰ ²Œ³¡‘Šˆ)
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER> 
+&nbsp;
+&nbsp;</PRE>
+
+<P ALIGN=CENTER><A NAME="structure"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>Ô•ÚÂ”ÂÏÂÓÈÂ ÛÙÚžÎÙžÚ˜</FONT><HR SIZE="1"
+         noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>™¡«Ã¡×Š‰</B>
+      </TD><TD VALIGN=top width=240>
+         <P><TT>&lt;H?&gt;&lt;/H?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(²Œ¡‘Ÿ¡³Œ ¦­³‰Ÿ‰Ã‹‰Œ 6 ¹³¦×‘‰ )
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>² ×³¡×‘Š×¡‘Š‰Õ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;H? ALIGN=LEFT|CENTER|RIGHT&gt;&lt;/H?&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/ru_koi8_barebone_annotation.html#align">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Û‰ÀˆŠ‹</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;DIV&gt;&lt;/DIV&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>² ×³¡×‘Š×¡‘Š‰Õ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;DIV ALIGN=LEFT|RIGHT|CENTER&gt;&lt;/DIV&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>“ŠŒ¡Œ¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BLOCKQUOTE&gt;&lt;/BLOCKQUOTE&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/ru_koi8_barebone_annotation.html#blockquote">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>(¦¬Þ‘¦ ×Ÿ‰Ã‹‰Œ²‹ ¦Œ²Œ¹­¦Õ)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>—Ÿ‰Ã‰‘Š‰</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;EM&gt;&lt;/EM&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(¦¬Þ‘¦ ŠŽ¦¬³¡÷¡‰Œ²‹ À¹³²Š×¦Õ)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>”¦­¦Ã‘ŠŒ‰Ãÿ‘¦‰ ×Ÿ‰Ã‰‘Š‰</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;STRONG&gt;&lt;/STRONG&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(¦¬Þ‘¦ ŠŽ¦¬³¡÷¡‰Œ²‹ ÷Š³‘Õ ¤³ŠŒ¦Õ)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>ÔŒ²ÃÀ¡, ˆŠŒ¡Œ¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;CITE&gt;&lt;/CITE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(¦¬Þ‘¦ À¹³²Š×)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Î¦Ÿ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;CODE&gt;&lt;/CODE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(ŸÃ‹ ÃŠ²ŒŠ‘«¦× À¦Ÿ¡)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>•³ŠÕ‰³ ××¦Ÿ¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SAMP&gt;&lt;/SAMP&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>—×¦Ÿ ² ÀÃ¡×Š¡Œ¹³</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;KBD&gt;&lt;/KBD&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>•‰³‰Õ‰‘‘¡‹</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;VAR&gt;&lt;/VAR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ô­³‰Ÿ‰Ã‰‘Š‰</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;DFN&gt;&lt;/DFN&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(Þ¡²Œ¦ ‘‰ ­¦ŸŸ‰³÷Š×¡‰Œ²‹)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>·Ÿ³‰² ¡×Œ¦³¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;ADDRESS&gt;&lt;/ADDRESS&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>’¦Ãÿ¤¦  ¤³ŠŒ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BIG&gt;&lt;/BIG&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ì¡Ã‰‘ÿÀŠ  ¤³ŠŒ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SMALL&gt;&lt;/SMALL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER> 
+&nbsp;</PRE>
+
+<P ALIGN=CENTER><A NAME="presentation"></A><TABLE BORDER=0
+CELLPADDING=3 WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>—ÓÂšÓÈÍ —È”</FONT><HR SIZE="1"
+         noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>–Š³‘ </B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;B&gt;&lt;/B&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Î¹³²Š×</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;I&gt;&lt;/I&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>•¦ŸÞ‰³À‘¹Œ </B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;U&gt;&lt;/U&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(Þ¡²Œ¦ ‘‰ ­¦ŸŸ‰³÷Š×¡‰Œ²‹)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>•‰³‰Þ‰³À‘¹Œ </B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;STRIKE&gt;&lt;/STRIKE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(Þ¡²Œ¦ ‘‰ ­¦ŸŸ‰³÷Š×¡‰Œ²‹)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>•‰³‰Þ‰³À‘¹Œ </B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;S&gt;&lt;/S&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(Þ¡²Œ¦ ‘‰ ­¦ŸŸ‰³÷Š×¡‰Œ²‹)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>—‰³»‘Š  Š‘Ÿ‰À²</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SUB&gt;&lt;/SUB&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>ÓŠ÷‘Š  Š‘Ÿ‰À²</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SUP&gt;&lt;/SUP&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>•‰Þ¡Œ‘¡‹ Õ¡¤Š‘À¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TT&gt;&lt;/TT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(ŠŽ¦¬³¡÷¡‰Œ²‹ À¡À ¤³ŠŒ ŠÀ²Š³¦×¡‘¦  ¤Š³Š‘)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ê¦³Õ¡ŒŠ³¦×¡‘ </B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;PRE&gt;&lt;/PRE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(²¦»³¡‘ŠŒÿ ¦³Õ¡Œ Œ‰À²Œ¡ À¡À ‰²Œÿ)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>šŠ³Š‘¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;PRE WIDTH=?&gt;&lt;/PRE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(× ²ŠÕ×¦Ã¡»)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>“‰‘Œ³Š³¦×¡Œÿ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;CENTER&gt;&lt;/CENTER&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/ru_koi8_barebone_annotation.html#align">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>(À¡À Œ‰À²Œ, Œ¡À Š «³¡ŠÀ¡)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.0
+      </TD><TD VALIGN=top>
+         <P><B>ÌŠ«¡¿ðŠ </B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BLINK&gt;&lt;/BLINK&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(‘¡Š¬¦Ã‰‰ ¦²Õ‰‹‘‘  ÐÃ‰Õ‰‘Œ)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ú¡ŽÕ‰³ ¤³ŠŒ¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FONT SIZE=?&gt;&lt;/FONT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(¦Œ 1 Ÿ¦ 7)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>ÈŽÕ‰‘ŠŒÿ ³¡ŽÕ‰³ ¤³ŠŒ¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FONT SIZE="+|-?"&gt;&lt;/FONT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.0
+      </TD><TD VALIGN=top>
+         <P><B>’¡Ž¦×  ³¡ŽÕ‰³ ¤³ŠŒ¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BASEFONT SIZE=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(¦Œ 1 Ÿ¦ 7; ­¦ ¹Õ¦ÃÞ¡‘Š¿ 3)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>“×‰Œ ¤³ŠŒ¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FONT COLOR="#$$$$$$"&gt;&lt;/FONT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>—¬¦³ ¤³ŠŒ¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FONT FACE="***"&gt;&lt;/FONT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>Ì‘¦«¦À¦Ã¦‘¦Þ‘  Œ‰À²Œ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;MULTICOL COLS=?&gt;&lt;/MULTICOL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>•³¦¬‰Ã Õ‰÷Ÿ¹ À¦Ã¦‘À¡ÕŠ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;MULTICOL GUTTER=?&gt;&lt;/MULTICOL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(­¦ ¹Õ¦ÃÞ¡‘Š¿ 10 Œ¦Þ‰À)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>šŠ³Š‘¡ À¦Ã¦‘ÀŠ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;MULTICOL WIDTH=?&gt;&lt;/MULTICOL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>•¹²Œ¦  ¬Ã¦À</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SPACER&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>ÙŠ­ ­¹²Œ¦«¦ ¬Ã¦À¡</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;SPACER TYPE=horizontal| vertical|block&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>—‰ÃŠÞŠ‘¡ ­¹²Œ¦«¦ ¬Ã¦À¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SPACER SIZE=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top width140>
+         <P><B>Ú¡ŽÕ‰³ ­¹²Œ¦«¦ ¬Ã¦À¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SPACER WIDTH=? HEIGHT=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>—³¡×‘Š×¡‘Š‰</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SPACER ALIGN=left|right|center&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER> 
+&nbsp;
+&nbsp;</PRE>
+
+<P ALIGN=CENTER><A NAME="links"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>ÛÛ˜ÏÎÈ È ÁÚ·ÊÈÎ·</FONT><HR SIZE="1"
+         noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>Û²ÃÀ¡</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;A HREF="URL"&gt;&lt;/A&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top ROWSPAN=2>
+         <P>&nbsp;
+      </TD><TD VALIGN=top ROWSPAN=2>
+         <P><B>Û²ÃÀ¡ ‘¡ Ž¡ÀÃ¡ŸÀ¹</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;A HREF="URL#***"&gt;&lt;/A&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(× Ÿ³¹«¦Õ Ÿ¦À¹Õ‰‘Œ‰)
+      </TD></TR>
+   <TR><TD VALIGN=top>
+         <P><TT>&lt;A HREF="#***"&gt;&lt;/A&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(× Œ¦Õ ÷‰ Ÿ¦À¹Õ‰‘Œ‰)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Ó¡ Ÿ³¹«¦‰ ¦À‘¦</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;A HREF="URL" TARGET="***| |_blank|_self|_parent|_top"&gt;&lt;/A&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ô­³‰Ÿ‰ÃŠŒÿ Ž¡ÀÃ¡ŸÀ¹</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;A NAME="***"&gt;&lt;/A&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+      
+    <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>ÔŒ‘¦¤‰‘Š‰</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;A REL="***"&gt;&lt;/A&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(Þ¡²Œ¦ ‘‰ ­¦ŸŸ‰³÷Š×¡‰Œ²‹)
+      </TD></TR>
+  <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ô¬³¡Œ‘¦‰ ¦Œ‘¦¤‰‘Š‰</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;A REV="***"&gt;&lt;/A&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(Þ¡²Œ¦ ‘‰ ­¦ŸŸ‰³÷Š×¡‰Œ²‹)
+      </TD></TR>
+ 
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Á³¡ŠÀ¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;IMG SRC="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>—³¡×‘Š×¡‘Š‰</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;IMG SRC="URL" ALIGN=TOP|BOTTOM|MIDDLE|LEFT|RIGHT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.0
+      </TD><TD VALIGN=top>
+         <P><B>—³¡×‘Š×¡‘Š‰</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;IMG SRC="URL" ALIGN=TEXTTOP| ABSMIDDLE|BASELINE|ABSBOTTOM&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>·ÃÿŒ‰³‘¡ŒŠ×¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;IMG SRC="URL" ALT="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P> (××¦ŸŠŒ²‹ ‰²ÃŠ À¡³ŒŠ‘À¡ ‘‰ ŠŽ¦¬³¡÷¡‰Œ²‹)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Î¡³Œ¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;IMG SRC="URL" ISMAP&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(‘¹÷‘¡ Œ¡À÷‰ ­³¦«³¡ÕÕ¡)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ï¦À¡Ãÿ‘¡‹ À¡³Œ¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;IMG SRC="URL" USEMAP="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ô­³‰Ÿ‰Ã‰‘Š‰ À¡³Œ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;MAP NAME="***"&gt;&lt;/MAP&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ô¬Ã¡²ŒŠ À¡³Œ</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;AREA SHAPE="RECT" COORDS=",,," HREF="URL"|NOHREF&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ú¡ŽÕ‰³</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;IMG SRC="URL" WIDTH=? HEIGHT=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(× Œ¦ÞÀ¡»)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>ÔÀ¡‘Œ¦×À¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;IMG SRC="URL" BORDER=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(× Œ¦ÞÀ¡»)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>ÔŒ²Œ¹­</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;IMG SRC="URL" HSPACE=? VSPACE=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(× Œ¦ÞÀ¡»)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.0
+      </TD><TD VALIGN=top>
+         <P><B>™¡Õ‰‘ŠŒ‰Ãÿ × ‘ŠŽÀ¦Õ ³¡Ž³‰¤‰‘ŠŠ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;IMG SRC="URL" LOWSRC="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.1
+      </TD><TD VALIGN=top>
+         <P><B>Ô¬‘¦×ŠŒÿ</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;META HTTP-EQUIV="Refresh" CONTENT="?; URL=URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>—ÀÃ¿ÞŠŒÿ ¦¬þ‰ÀŒ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;EMBED SRC="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(×²Œ¡×ŠŒÿ ¦¬þ‰ÀŒ × ²Œ³¡‘Šˆ¹)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B> Ú¡ŽÕ‰³ ¦¬þ‰ÀŒ¡</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;EMBED SRC="URL" WIDTH=? HEIGHT=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER> 
+&nbsp;</PRE>
+
+<P ALIGN=CENTER><A NAME="dividers"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>Ú·™”ÂÏÈÙÂÏÈ</FONT><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>•¡³¡«³¡</B>
+      </TD><TD VALIGN=top width=240>
+         <P><TT>&lt;P&gt;&lt;/P&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/ru_koi8_barebone_annotation.html#paragraph">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>(Ž¡À³×¡Œÿ ÐÃ‰Õ‰‘Œ Þ¡²Œ¦ ‘‰ ¦¬‹Ž¡Œ‰Ãÿ‘¦)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>—³¡×‘Š×¡‘Š‰</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;P ALIGN=LEFT|CENTER|RIGHT&gt;&lt;/P&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/ru_koi8_barebone_annotation.html#align">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ó¦×¡‹ ²Œ³¦À¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P> (¦ŸŠ‘¦Þ‘  ­‰³‰×¦Ÿ ²Œ³¦ÀŠ)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>ž¬³¡Œÿ ×³¡×‘Š×¡‘Š‰</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BR CLEAR=LEFT|RIGHT|ALL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Á¦³ŠŽ¦‘Œ¡Ãÿ‘  ³¡ŽŸ‰ÃŠŒ‰Ãÿ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>—³¡×‘Š×¡‘Š‰</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HR ALIGN=LEFT|RIGHT|CENTER&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ù¦ÃðŠ‘¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HR SIZE=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(× Œ¦ÞÀ¡»)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>šŠ³Š‘¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HR WIDTH=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(× Œ¦ÞÀ¡»)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.0
+      </TD><TD VALIGN=top>
+         <P><B>šŠ³Š‘¡ × ­³¦ˆ‰‘Œ¡»</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HR WIDTH="%"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(× ­³¦ˆ‰‘Œ¡» ¦Œ ¤Š³Š‘ ²Œ³¡‘Šˆ)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Û­Ã¦¤‘¡‹ ÃŠ‘Š‹</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;HR NOSHADE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(¬‰Ž Œ³‰»Õ‰³‘» Ð‰ÀŒ¦×)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.0
+      </TD><TD VALIGN=top>
+         <P><B>Ó‰Œ ³¡Ž¬Š×ÀŠ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;NOBR&gt;&lt;/NOBR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(Ž¡­³‰ð¡‰Œ ­‰³‰×¦Ÿ ²Œ³¦ÀŠ)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.0
+      </TD><TD VALIGN=top>
+         <P><B>•‰³‰‘¦²</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;WBR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(«Ÿ‰ ³¡Ž¬Š×¡Œÿ ²Œ³¦À¹ ŸÃ‹ ­‰³‰‘¦²¡ ­³Š ‘‰¦¬»¦ŸŠÕ¦²ŒŠ)
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER> 
+&nbsp;</PRE>
+
+<P ALIGN=CENTER><A NAME="lists"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>Û•ÈÛÎÈ</FONT><HR SIZE="1" noshade>
+      </TH><TH>
+         <P ALIGN=LEFT>&nbsp;
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=170>
+         <P><B>Ó‰¹­¦³‹Ÿ¦Þ‰‘‘ </B>
+      </TD><TD VALIGN=top width=240>
+         <P><TT>&lt;UL&gt;&lt;LI&gt;&lt;/UL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(<TT>&lt;LI&gt;</TT> ­‰³‰Ÿ À¡÷ŸÕ ÐÃ‰Õ‰‘Œ¦Õ)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+        <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Î¦Õ­¡ÀŒ‘ </B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;UL COMPACT&gt;&lt;/UL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top ROWSPAN=2>
+         <P>&nbsp;
+      </TD><TD VALIGN=top ROWSPAN=2>
+         <P><B>ÙŠ­ Õ‰ŒÀŠ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;UL TYPE=DISC|CIRCLE|SQUARE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(ŸÃ‹ ×²‰«¦ ²­Š²À¡)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR><TD VALIGN=top>
+         <P><TT>&lt;LI TYPE=DISC|CIRCLE|SQUARE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(ÐŒ¦Œ Š ­¦²Ã‰Ÿ¹¿ðŠ‰)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ó¹Õ‰³¦×¡‘ </B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;OL&gt;&lt;LI&gt;&lt;/OL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(<TT>&lt;LI&gt;</TT> ­‰³‰Ÿ À¡÷ŸÕ ÐÃ‰Õ‰‘Œ¦Õ)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+              <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Î¦Õ­¡ÀŒ‘ </B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;OL COMPACT&gt;&lt;/OL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top ROWSPAN=2>
+         <P>&nbsp;
+      </TD><TD VALIGN=top ROWSPAN=2>
+         <P><B>ÙŠ­ ‘¹Õ‰³¡ˆŠŠ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;OL TYPE=A|a|I|i|1&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(ŸÃ‹ ×²‰«¦ ²­Š²À¡)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR><TD VALIGN=top>
+         <P><TT>&lt;LI TYPE=A|a|I|i|1&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(ÐŒ¦Œ Š ²Ã‰Ÿ¹¿ðŠ‰)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top ROWSPAN=2>
+         <P>&nbsp;
+      </TD><TD VALIGN=top ROWSPAN=2>
+         <P><B>•‰³×  ‘¦Õ‰³</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;OL START=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(ŸÃ‹ ×²‰«¦ ²­Š²À¡)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR><TD VALIGN=top>
+         <P><TT>&lt;LI VALUE=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(ÐŒ¦Œ Š ²Ã‰Ÿ¹¿ðŠ‰)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Û­Š²¦À ¦­³‰Ÿ‰Ã‰‘Š </B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;DL&gt;&lt;DT&gt;&lt;DD&gt;&lt;/DL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(<TT>&lt;DT&gt;=Œ‰³ÕŠ‘, &lt;DD&gt;</TT>=¦­³‰Ÿ‰Ã‰‘Š‰)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+              <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Î¦Õ­¡ÀŒ‘ </B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;DL COMPACT&gt;&lt;/DL&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ì‰‘¿</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;MENU&gt;&lt;LI&gt;&lt;/MENU&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(<TT>&lt;LI&gt;</TT> ­‰³‰Ÿ À¡÷ŸÕ ÐÃ‰Õ‰‘Œ¦Õ)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+              <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Î¦Õ­¡ÀŒ‘¦‰</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;MENU COMPACT&gt;&lt;/MENU&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Î¡Œ¡Ã¦«</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;DIR&gt;&lt;LI&gt;&lt;/DIR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(<TT>&lt;LI&gt;</TT>  ­‰³‰Ÿ À¡÷ŸÕ ÐÃ‰Õ‰‘Œ¦Õ)
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+              <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Î¦Õ­¡ÀŒ‘ </B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;DIR COMPACT&gt;&lt;/DIR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER> 
+&nbsp;</PRE>
+
+<P ALIGN=CENTER><A NAME="color"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>ÊÔÓ È “—ÂÙ·</FONT><HR SIZE="1"
+         noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>Ê¦‘¦×¡‹ À¡³ŒŠ‘À¡</B>
+      </TD><TD VALIGN=top width=240>
+         <P><TT>&lt;BODY BACKGROUND="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+    <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>“×‰Œ ¦‘¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BODY BGCOLOR="#$$$$$$"&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/ru_koi8_barebone_annotation.html#color">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P> (­¦³‹Ÿ¦À: À³¡²‘ /Ž‰Ã‰‘ /²Š‘Š )
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>“×‰Œ Œ‰À²Œ¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BODY TEXT="#$$$$$$"&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/ru_koi8_barebone_annotation.html#color">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>“×‰Œ ²²ÃÀŠ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BODY LINK="#$$$$$$"&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/ru_koi8_barebone_annotation.html#color">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>•³¦ Ÿ‰‘‘¡‹ ²²ÃÀ¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BODY VLINK="#$$$$$$"&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/ru_koi8_barebone_annotation.html#color">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>·ÀŒŠ×‘¡‹ ²²ÃÀ¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BODY ALINK="#$$$$$$"&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/ru_koi8_barebone_annotation.html#color">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top COLSPAN=4 align=center>
+         <P ALIGN=CENTER>(”¦­¦Ã‘ŠŒ‰Ãÿ‘¡‹ Š‘¦³Õ¡ˆŠ‹ ­¦ ¡Ÿ³‰²¹:
+         <A HREF="http://werbach.com/web/wwwhelp.html#color">
+         http://werbach.com/web/wwwhelp.html#color</A>)
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER> </PRE>
+
+<P ALIGN=CENTER><A NAME="special"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>Û•Â“È·Ï¯Ó˜Â ÛÈÌ—ÔÏ˜</FONT><I>(¦¬‹Ž¡‘ ¬Œÿ × ‘Š÷‘‰Õ ³‰«Š²Œ³‰)</I><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>Û­‰ˆŠ¡Ãÿ‘  ²ŠÕ×¦Ã</B>
+      </TD><TD VALIGN=top width=240>
+         <P>&amp;#?;
+      </TD><TD VALIGN=top>
+         <P>(«Ÿ‰ ? ÐŒ¦ À¦Ÿ ISO 8859-1)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&lt;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;lt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&gt;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>&amp;</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;amp;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>"</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;quot;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ù¦³«¦×¡‹ Õ¡³À¡ ÙÌ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;reg;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Copyright</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;copy;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ó‰³¡ŽŸ‰Ã‹¿ðŠ  ­³¦¬‰Ã</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&amp;nbsp;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top COLSPAN=4 align=center>
+         <P ALIGN=CENTER>(•¦Ã‘  ²­Š²¦À:
+<A HREF="http://www.uni-passau.de/%7Eramsch/iso8859-1.html">
+         http://www.uni-passau.de/%7Eramsch/iso8859-1.html</A>)
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER> </PRE>
+
+<P ALIGN=CENTER><A NAME="forms"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>ÊÔÚÌ˜ </FONT><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>Ô­³‰Ÿ‰ÃŠŒÿ ¦³Õ¹</B>
+      </TD><TD VALIGN=top width=240>
+         <P><TT>&lt;FORM ACTION="URL" METHOD=GET|POST&gt;&lt;/FORM&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>•¦²ÃÀ¡ ¡ Ã¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FORM
+         ENCTYPE="multipart/form-data"&gt;&lt;/FORM&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>•¦Ã‰ ××¦Ÿ¡</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;INPUT TYPE="TEXT|PASSWORD|CHECKBOX|RADIO| IMAGE|HIDDEN|SUBMIT|RESET"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>ÈÕ‹ ­¦Ã‹</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;INPUT NAME="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>™‘¡Þ‰‘Š‰ ­¦Ã‹</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;INPUT VALUE="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>ÔŒÕ‰Þ‰‘?</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;INPUT CHECKED&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(checkboxes Š radio boxes)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ú¡ŽÕ‰³ ­¦Ã‹</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;INPUT SIZE=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(× ²ŠÕ×¦Ã¡»)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ì¡À²ŠÕ¡Ãÿ‘¡‹ ŸÃŠ‘¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;INPUT MAXLENGTH=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(× ²ŠÕ×¦Ã¡»)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Û­Š²¦À ×¡³Š¡‘Œ¦×</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SELECT&gt;&lt;/SELECT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>ÈÕ‹ ²­Š²À¡</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;SELECT NAME="***"&gt;&lt;/SELECT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>œŠ²Ã¦ ×¡³Š¡‘Œ¦×</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;SELECT SIZE=?&gt;&lt;/SELECT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ì¡‘¦÷‰²Œ×‰‘‘Š  ×¬¦³</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SELECT MULTIPLE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(Õ¦÷‘¦ ×¬³¡Œÿ ¬¦Ãÿ¤‰ ¦Ÿ‘¦«¦)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ô­ˆŠ‹</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;OPTION&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(ÐÃ‰Õ‰‘Œ À¦Œ¦³  Õ¦÷‰Œ ¬Œÿ ×¬³¡‘)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ô­ˆŠ‹ ­¦ ¹Õ¦ÃÞ¡‘Š¿</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;OPTION SELECTED&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>—×¦Ÿ Œ‰À²Œ¡, ³¡ŽÕ‰³</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TEXTAREA ROWS=? COLS=?&gt;&lt;/TEXTAREA&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>ÈÕ‹ Œ‰À²Œ¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TEXTAREA NAME="***"&gt;&lt;/TEXTAREA&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Ú¡Ž¬Š×À¡ ‘¡ ²Œ³¦ÀŠ</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;TEXTAREA WRAP=OFF|VIRTUAL|PHYSICAL&gt;&lt;/TEXTAREA&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER> 
+&nbsp;</PRE>
+
+<P ALIGN=CENTER><A NAME="tables"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>Ù¡¬ÃŠˆ</FONT><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>Ô­³‰Ÿ‰ÃŠŒÿ Œ¡¬ÃŠˆ¹</B>
+      </TD><TD VALIGN=top width=240>
+         <P><TT>&lt;TABLE&gt;&lt;/TABLE&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/ru_koi8_barebone_annotation.html#tables">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>ÔÀ¡‘Œ¦×À¡ Œ¡¬ÃŠˆ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;table border=?&gt;&lt;/TABLE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ú¡²²Œ¦‹‘Š‰ Õ‰÷Ÿ¹ ‹Þ‰ À¡ÕŠ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TABLE CELLSPACING=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>”¦­¦Ã‘‰‘Š‰ ‹Þ‰‰À</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TABLE CELLPADDING=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>–‰Ã¡‰Õ¡‹ ¤Š³Š‘¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TABLE WIDTH=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(× Œ¦ÞÀ¡»)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>šŠ³Š‘¡ × ­³¦ˆ‰‘Œ¡»</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TABLE WIDTH="%"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(­³¦ˆ‰‘Œ ¦Œ ¤Š³Š‘ ²Œ³¡‘Šˆ)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>ÛŒ³¦À¡ Œ¡¬ÃŠˆ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TR&gt;&lt;/TR&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>—³¡×‘Š×¡‘Š‰</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;TR ALIGN=LEFT|RIGHT| CENTER|MIDDLE|BOTTOM&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>ÒÞ‰ À¡ Œ¡¬ÃŠˆ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TD&gt;&lt;/TD&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(Ÿ¦Ã÷‘¡ ¬Œÿ ×‘¹Œ³Š ²Œ³¦ÀŠ)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>—³¡×‘Š×¡‘Š‰</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;TD ALIGN=LEFT|RIGHT| CENTER|MIDDLE|BOTTOM&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>’‰Ž ­‰³‰×¦Ÿ¡ ²Œ³¦ÀŠ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TD NOWRAP&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ú¡²Œ‹«Š×¡‘Š‰ ­¦ À¦Ã¦‘À‰</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TD COLSPAN=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ú¡²Œ‹«Š×¡‘Š‰ ­¦ ²Œ³¦À‰</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TD ROWSPAN=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.1
+      </TD><TD VALIGN=top>
+         <P><B>–‰Ã¡‰Õ¡‹ ¤Š³Š‘¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TD WIDTH=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(× Œ¦ÞÀ¡»)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.1
+      </TD><TD VALIGN=top>
+         <P><B>šŠ³Š‘¡ × ­³¦ˆ‰‘Œ¡»</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TD WIDTH="%"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(­³¦ˆ‰‘Œ ¦Œ ¤Š³Š‘ ²Œ³¡‘Šˆ)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>“×‰Œ ‹Þ‰ ÀŠ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TD BGCOLOR="#$$$$$$"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>™¡«¦Ã¦×¦À Œ¡¬ÃŠˆ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TH&gt;&lt;/TH&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(À¡À Ÿ¡‘‘‰, ‘¦ ÷Š³‘  ¤³ŠŒ Š ˆ‰‘Œ³¦×À¡)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>—³¡×‘Š×¡‘Š‰</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;TH ALIGN=LEFT|RIGHT| CENTER|MIDDLE|BOTTOM&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>’‰Ž ­‰³‰×¦Ÿ¡ ²Œ³¦ÀŠ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TH NOWRAP&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ú¡²Œ‹«Š×¡‘Š‰ ­¦ À¦Ã¦‘À‰</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TH COLSPAN=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ú¡²Œ‹«Š×¡‘Š‰ ­¦ ²Œ³¦À‰</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TH ROWSPAN=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.1
+      </TD><TD VALIGN=top>
+         <P><B>–‰Ã¡‰Õ¡‹ ¤Š³Š‘¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TH WIDTH=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(× Œ¦ÞÀ¡»)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N1.1
+      </TD><TD VALIGN=top>
+         <P><B>šŠ³Š‘¡ × ­³¦ˆ‰‘Œ¡»</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TH WIDTH="%"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(­³¦ˆ‰‘Œ ¤Š³Š‘ Œ¡¬ÃŠˆ)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>“×‰Œ ‹Þ‰ ÀŠ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;TH BGCOLOR="#$$$$$$"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>™¡«Ã¡×Š‰ Œ¡¬ÃŠˆ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;CAPTION&gt;&lt;/CAPTION&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>—³¡×‘Š×¡‘Š‰</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;CAPTION ALIGN=TOP|BOTTOM&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(²×‰³»¹/²‘ŠŽ¹ Œ¡¬ÃŠˆ)
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER>&nbsp;</PRE>
+
+<P ALIGN=CENTER><A NAME="frames"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>ÊÚÂÍÌ˜ </FONT><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>N2.0
+      </TD><TD VALIGN=top width=140>
+         <P><B>”¦À¹Õ‰‘Œ ² ³‰ Õ¡ÕŠ</B>
+      </TD><TD VALIGN=top width=240>
+         <P><TT>&lt;FRAMESET&gt;&lt;/FRAMESET&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(×Õ‰²Œ¦ <TT>&lt;BODY&gt;</TT>)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>—²¦Œ¡ ²Œ³¦À</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET ROWS=,,,&gt;&lt;/FRAMESET&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(Œ¦ÞÀŠ ŠÃŠ %)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>—²¦Œ¡ ²Œ³¦À</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET ROWS=*&gt;&lt;/FRAMESET&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(* = ¦Œ‘¦²ŠŒ‰Ãÿ‘  ³¡ŽÕ‰³)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>šŠ³Š‘¡ À¦Ã¦‘¦À</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET COLS=,,,&gt;&lt;/FRAMESET&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(Œ¦ÞÀŠ ŠÃŠ %)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>šŠ³Š‘¡ À¦Ã¦‘¦À</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET COLS=*&gt;&lt;/FRAMESET&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(* = ¦Œ‘¦²ŠŒ‰Ãÿ‘  ³¡ŽÕ‰³)
+      </TD></TR>
+         <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>šŠ³Š‘¡ ¦À¡‘Œ¦×ÀŠ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET BORDER=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+         <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>ÔÀ¡‘Œ¦×À¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET FRAMEBORDER="yes|no"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>“×‰Œ ¦À¡‘Œ¦×ÀŠ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAMESET BORDERCOLOR="#$$$$$$"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Ô­³‰Ÿ‰ÃŠŒÿ ³‰ Õ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(²¦Ÿ‰³÷¡‘Š‰ ¦ŒŸ‰Ãÿ‘¦«¦ ³‰ Õ¡)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>”¦À¹Õ‰‘Œ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME SRC="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>ÈÕ‹ ³‰ Õ¡</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;FRAME NAME="***"|_blank|_self| _parent|_top&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>šŠ³Š‘¡ «³¡‘Šˆ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME MARGINWIDTH=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(­³¡×¡‹ Š Ã‰×¡‹ «³¡‘Šˆ)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>—²¦Œ¡ «³¡‘Šˆ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME MARGINHEIGHT=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(×‰³»‘‹‹ Š ‘Š÷‘‹‹ «³¡‘Šˆ)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>ÛÀ³¦ÃÃŠ‘«?</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME SCROLLING="YES|NO|AUTO"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>•¦²Œ¦‹‘‘  ³¡ŽÕ‰³</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME NORESIZE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+    <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>ÔÀ¡‘Œ¦×À¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME FRAMEBORDER="yes|no"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N3.0b
+      </TD><TD VALIGN=top>
+         <P><B>“×‰Œ ¦À¡‘Œ¦×ÀŠ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;FRAME BORDERCOLOR="#$$$$$$"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+  <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>Û¦Ÿ‰³÷¡‘Š‰ ¬‰Ž ³‰ Õ¦×</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;NOFRAMES&gt;&lt;/NOFRAMES&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(ŸÃ‹ ­³¦²Õ¦Œ³ðŠÀ¦× ‘‰ ­¦ŸŸ‰³÷Š×¡¿ðŠ» ³‰ Õ)
+      </TD></TR>
+</TABLE></P>
+
+<P ALIGN=CENTER>&nbsp;</P>
+
+<P ALIGN=CENTER><A NAME="java"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>Ò™˜Î JAVA</FONT><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>Applet</B>
+      </TD><TD VALIGN=top width=240>
+         <P><TT>&lt;APPLET&gt;&lt;/APPLET&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Applet - ŠÕ‹ ¡ Ã¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET CODE="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>•¡³¡Õ‰Œ³</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET PARAM NAME="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Applet - ¡Ÿ³‰²</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET CODEBASE="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Applet - ŠÕ‹</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET NAME="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(ŸÃ‹ ²²Ã¦À ŠŽ Ÿ³¹«Š» Þ¡²Œ‰  ²Œ³¡‘Šˆ)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>·ÃÿŒ‰³‘¡ŒŠ×‘  Œ‰À²Œ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET ALT="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(ŸÃ‹ ­³¦«³¡ÕÕ ‘‰ ­¦ŸŸ‰³÷Š×¡¿ðŠ» Java)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>—³¡×‘Š×¡‘Š‰</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET ALIGN="LEFT|RIGHT|CENTER"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ú¡ŽÕ‰³</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET WIDTH=? HEIGHT=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(× Œ¦ÞÀ¡»)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>ÔŒ²Œ¹­</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;APPLET HSPACE=? VSPACE=?&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(× Œ¦ÞÀ¡»)
+      </TD></TR>
+</TABLE></P>
+
+<P ALIGN=CENTER>&nbsp;</P>
+
+<P ALIGN=CENTER><A NAME="misc"></A><TABLE BORDER=0 CELLPADDING=3
+WIDTH="100%">
+   <TR>
+      <TH COLSPAN=4>
+         <P><FONT SIZE=6>Ú·™ÓÔÂ</FONT><HR SIZE="1" noshade>
+      </TH></TR>
+   <TR>
+      <TD VALIGN=top width=40>
+         <P>&nbsp;
+      </TD><TD VALIGN=top width=140>
+         <P><B>Î¦ÕÕ‰‘Œ¡³Š </B>
+      </TD><TD VALIGN=top width=240>
+         <P><TT>&lt;!-- *** --&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(Š«‘¦³Š³¹‰Œ²‹ ­³¦²Õ¦Œ³ðŠÀ¦Õ)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>•³¦Ã¦« HTML 3.2</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN"&gt;</TT>
+         <B><A HREF="http://werbach.com/barebones/ru_koi8_barebone_annotation.html#prologue">[*]</A></B>
+      
+      </TD><TD VALIGN=top>
+         <P>&nbsp;
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>•¦Š²À</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;ISINDEX&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(¦Ž‘¡Þ¡‰Œ ‘¡Þ¡Ãÿ‘¹¿ Œ¦ÞÀ¹ ­¦Š²À¡)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>•³Š«Ã¡¤‰‘Š‰</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;ISINDEX PROMPT="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(Œ‰À²Œ ­³Š«Ã¡¤‰‘Š‹ ŸÃ‹ ­¦Ã‹ ××¦Ÿ¡)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>™¡­¹²ŒŠŒÿ ­¦Š²À</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;A HREF="URL?***"&gt;&lt;/a&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(Š²­¦ÃÿŽ¹ Œ‰ Ÿ‰ ²Œ×ŠŒ‰Ãÿ‘¦ Ž‘¡À ×¦­³¦²¡)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>URL ÐŒ¦«¦ ¡ Ã¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BASE HREF="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(Ÿ¦Ã÷‘¦ ¬Œÿ × Ž¡«¦Ã¦×À‰)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>N2.0
+      </TD><TD VALIGN=top>
+         <P><B>ÈÕ‹ ¬¡Ž¦×¦«¦ ¦À‘¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;BASE TARGET="***"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(Ÿ¦Ã÷‘¦ ¬Œÿ × Ž¡«¦Ã¦×À‰)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>ÔŒ‘¦¤‰‘Š‰</B>
+      </TD><TD VALIGN=top width=220>
+         <P><TT>&lt;LINK REV="***" REL="***" HREF="URL"&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(Ÿ¦Ã÷‘¦ ¬Œÿ × Ž¡«¦Ã¦×À‰)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>Ì‰Œ¡Š‘¦³Õ¡ˆŠ‹</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;META&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(Ÿ¦Ã÷‘¦ ¬Œÿ × Ž¡«¦Ã¦×À‰)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>ÛŒŠÃŠ</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;STYLE&gt;&lt;/STYLE&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(Þ¡²Œ¦ ‘‰ ­¦ŸŸ‰³÷Š×¡‰Œ²‹)
+      </TD></TR>
+   <TR>
+      <TD VALIGN=top>
+         <P>&nbsp;
+      </TD><TD VALIGN=top>
+         <P><B>•³¦«³¡ÕÕ¡</B>
+      </TD><TD VALIGN=top>
+         <P><TT>&lt;SCRIPT&gt;&lt;/SCRIPT&gt;</TT>
+      </TD><TD VALIGN=top>
+         <P>(Þ¡²Œ¦ ‘‰ ­¦ŸŸ‰³÷Š×¡‰Œ²‹)
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER> 
+&nbsp;
+&nbsp;</PRE>
+
+<P ALIGN=CENTER><TABLE BORDER=1 CELLPADDING=5 WIDTH="100%">
+   <TR>
+      <TD VALIGN=top>
+         <P>Copyright &copy;1995-1997
+         <A HREF="mailto:barebones@werbach.com">Kevin Werbach</A>.
+         Noncommercial redistribution permitted. This Guide is not a
+         product of <A HREF="http://www.barebones.com">Bare Bones
+         Software</A>; the similarity of names is purely
+         coincidental.
+      </TD></TR>
+</TABLE></P>
+<P ALIGN=CENTER><TABLE BORDER=1 CELLPADDING=5 WIDTH="100%">
+   <TR>
+      <TD VALIGN=top>
+         <P>Copyright &copy;1995-1997
+         <A HREF="mailto:barebones@werbach.com">Kevin Werbach</A>.
+         Ú¡Ž³‰¤¡‰Œ²‹ ‘‰À¦ÕÕ‰³Þ‰²À¦‰ ³¡²­³¦²Œ³¡‘‰‘Š‰. ¸Œ¦ ³¹À¦×¦Ÿ²Œ×¦ ‘‰ ‹×Ã‹‰Œ²‹
+         ­³¦Ÿ¹ÀŒ¦Õ <A HREF="http://www.barebones.com">Bare Bones
+         Software</A>; ²»¦Ÿ²Œ×¦ ŠÕ‰‘ ÞŠ²Œ¦ ²Ã¹Þ¡ ‘¦‰.
+      </TD></TR>
+</TABLE></P>
+
+<P ALIGN=CENTER><TABLE BORDER=1 CELLPADDING=5 WIDTH="100%">
+   <TR>
+      <TD VALIGN=top>
+         <P>·×Œ¦³²ÀŠ‰ ­³¡×¡ ‘¡ ­‰³‰×¦Ÿ ­³Š‘¡ŸÃ‰÷¡Œ &copy;1995-1997
+         <A HREF="mailto:frodo@cs.huji.ac.il">ÛŒ¡‘Š²Ã¡×¹ Ì¡Ã¤‰×¹</A>.
+         Ú¡Ž³‰¤¡‰Œ²‹ ‘‰À¦ÕÕ‰³Þ‰²À¦‰ ³¡²­³¦²Œ³¡‘‰‘Š‰.
+      </TD></TR>
+</TABLE></P>
+
+<PRE ALIGN=CENTER>&nbsp;</PRE>
+
+<P ALIGN=CENTER><A HREF="#contents">Û¦Ÿ‰³÷¡‘Š‰</A> |
+<A HREF="#general">Û•ÈÛÔÎ ¸ÏÂÌÂÓÙÔ—</A> |
+<A HREF="http://werbach.com/barebones/ru_koi8_barebone.txt">Ù‰À²Œ¦×¡‹ ×‰³²Š‹</A> |
+<A HREF="http://werbach.com/home.html">ÛŒ³¡‘Šˆ¡ Kevin'¡</A></P>
+</BODY>
+</HTML>
