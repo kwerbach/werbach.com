@@ -213,6 +213,19 @@ npm run build        # Production build to src-site/dist/
 - **deploy.yml** rsync filter rules — these protect other sites hosted on the same server
 - **.htaccess** files — routing rules for Apache
 
+## Multi-Machine Setup
+
+The user works across two Macs. The sync strategy is:
+
+- **Dropbox** (`~/Dropbox/`) syncs code, projects, and files between both machines. Any project that needs to be available on both machines should live under `~/Dropbox/`.
+- **Obsidian Sync** handles the Obsidian vault (`~/Obsidian/`) separately — it is NOT in Dropbox.
+- **Machine-local state** (Python venvs, LaunchAgent plists in `~/Library/LaunchAgents/`, caches) does NOT sync and must be set up per machine. Scripts should auto-create local state (e.g., venvs) on first run.
+- **LaunchAgents** need `run.sh install` on each machine after initial setup or plist changes.
+
+### Automated Tools in Dropbox
+
+- **Meme Digest** (`~/Dropbox/meme-digest/`) — Weekly meme curation. Scrapes Reddit + Know Your Meme, curates with Claude, delivers to Obsidian inbox. See `~/Dropbox/meme-digest/run.sh help`. Venv lives at `~/.local/meme-digest-venv` (machine-local, auto-created). Schedule: Sundays 10am via LaunchAgent.
+
 ## Notes for Claude
 
 - When asked to "add an article" or "add a new paper," create the markdown file, commit, and push. The deploy pipeline handles everything else.
