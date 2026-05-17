@@ -10,6 +10,8 @@ export interface PublicationItem {
 }
 
 export const scholarlyArticles: PublicationItem[] = [
+  { title: "Supervising Risk: A New Deal for Artificial Intelligence (with Peter Conti-Brown)", publication: "Working Paper", year: "2026", link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6781380", tags: ["AI Governance"] },
+  { title: "Agents Inc.", publication: "Villanova Law Review (forthcoming)", year: "2026", link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6465238", tags: ["AI Governance"] },
   { title: "Trust in AI", publication: "AI in Society (Oxford Intersections)", year: "2025", link: "https://academic.oup.com/edited-volume/59762/chapter-abstract/538531919?redirectedFrom=fulltext", tags: ["AI Governance"] },
   { title: "Blockchain Governance in the Wild", publication: "Cryptoeconomic Systems", year: "2024", link: "https://cryptoeconomicsystems.pubpub.org/pub/blockchain-governance-wild/release/1?readingCollection=2f054553", tags: ["Blockchain", "DAOs"] },
   { title: "Digital Asset Regulation: Peering into the Past, Peering into the Future", publication: "William & Mary Law Review", year: "2023", link: "https://scholarship.law.wm.edu/wmlr/vol64/iss4/9/", tags: ["Blockchain"] },
