@@ -85,6 +85,7 @@ export const whitePapersAndReports: PublicationItem[] = [
 ];
 
 export const generalAndTradePress: PublicationItem[] = [
+  { title: "AI Regulation Needs a Bank Examiner (with Peter Conti-Brown)", publication: "Wall Street Journal", year: "2026", link: "https://www.wsj.com/opinion/ai-regulation-needs-a-bank-examiner-6c3cb707", tags: ["AI Governance"] },
   { title: "Stablecoins Are Gaining Momentum, but Key Questions Are Unanswered", publication: "World Economic Forum", year: "2026", link: "https://www.weforum.org/stories/2026/02/new-research-answers-fundamental-questions-about-stablecoins/", tags: ["Blockchain"] },
   { title: "The Computer in the Casino: Why Web3 Can't Shake its Speculative Roots", publication: "Duckbucks", year: "2025", link: "https://duckbucks.com/a/web3-casino-computer", tags: ["Blockchain"] },
   { title: "Sensible Regulations Vital for Crypto", publication: "Central Penn Business Journal", year: "2024", link: "https://www.cpbj.com/sensible-regulations-vital-for-crypto/", tags: ["Blockchain"] },
