@@ -6,3 +6,6 @@
 # Source site build artifacts
 src-site/node_modules/
 src-site/dist/
+
+# Claude Code scratch worktrees
+.claude/
