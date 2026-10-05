@@ -9,3 +9,6 @@ src-site/dist/
 
 # Claude Code scratch worktrees
 .claude/
+
+# Dropbox sync conflict files
+*conflicted copy*
